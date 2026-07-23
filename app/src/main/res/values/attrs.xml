@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularScanView">
+        <attr name="csvStrokeWidth" format="dimension" />
+        <attr name="csvStartColor" format="color" />
+        <attr name="csvEndColor" format="color" />
+        <attr name="csvTrackColor" format="color" />
+        <attr name="csvIndeterminate" format="boolean" />
+    </declare-styleable>
+</resources>
