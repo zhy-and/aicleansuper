@@ -10,12 +10,12 @@ import android.text.format.Formatter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.MediaController
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import coil.load
 import com.example.cleansuperai.R
 import com.example.cleansuperai.databinding.FragmentVideoCompressBinding
 import com.example.cleansuperai.ui.cleaner.CompressionResult
@@ -23,12 +23,14 @@ import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeout
 
 class VideoCompressFragment : Fragment() {
     private var _binding: FragmentVideoCompressBinding? = null
     private val binding get() = _binding!!
     private var selectedUri: Uri? = null
     private var originalBytes: Long = 0
+    private var compressedPreviewFile: File? = null
 
     private val picker = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
         uri?.let(::showSelection)
@@ -48,71 +50,155 @@ class VideoCompressFragment : Fragment() {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.btnChooseVideo.setOnClickListener { picker.launch("video/*") }
         binding.emptyGuide.setOnClickListener { picker.launch("video/*") }
-        binding.btnCompress.setOnClickListener { compressSelected() }
+        binding.btnSaveCompressed.setOnClickListener { saveCompressedPreview() }
+        setupVideoPreview()
     }
 
     override fun onDestroyView() {
+        runCatching { binding.videoPreviewBefore.stopPlayback() }
+        runCatching { binding.videoPreviewAfter.stopPlayback() }
+        clearCompressedPreview()
         super.onDestroyView()
         _binding = null
     }
 
     private fun showSelection(uri: Uri) {
         selectedUri = uri
+        clearCompressedPreview()
         originalBytes = requireContext().contentResolver.openAssetFileDescriptor(uri, "r")
             ?.use { it.length.coerceAtLeast(0) } ?: 0
         binding.emptyGuide.isVisible = false
-        binding.imagePreview.isVisible = true
-        binding.imagePreview.load(uri)
+        binding.previewContainer.isVisible = true
+        binding.tvBeforeLabel.isVisible = true
+        binding.cardBeforePreview.isVisible = true
+        binding.tvAfterLabel.isVisible = false
+        binding.cardAfterPreview.isVisible = false
+        bindVideo(binding.videoPreviewBefore, uri)
         binding.tvCompressionResult.isVisible = true
         binding.tvCompressionResult.text = getString(
             R.string.original_size_format,
             Formatter.formatFileSize(requireContext(), originalBytes),
         )
-        binding.btnCompress.isEnabled = true
+        binding.btnSaveCompressed.isEnabled = false
         binding.progressCompress.isVisible = false
         binding.progressCompress.progress = 0
+        compressSelected()
     }
 
     private fun compressSelected() {
         val uri = selectedUri ?: return
-        binding.btnCompress.isEnabled = false
+        clearCompressedPreview()
         binding.btnChooseVideo.isEnabled = false
-        binding.btnCompress.text = getString(R.string.compressing)
         binding.progressCompress.isVisible = true
+        binding.progressCompress.isIndeterminate = true
         binding.progressCompress.progress = 0
+        binding.tvCompressionResult.text =
+            buildString {
+                append(
+                    getString(
+                        R.string.original_size_format,
+                        Formatter.formatFileSize(requireContext(), originalBytes),
+                    ),
+                )
+                append('\n')
+                append(getString(R.string.video_compression_preparing))
+            }
         viewLifecycleOwner.lifecycleScope.launch {
             runCatching {
-                val compressedFile = VideoCompressor.compress(
-                    context = requireContext(),
-                    inputUri = uri,
-                    onProgress = { progress ->
-                        viewLifecycleOwner.lifecycleScope.launch {
-                            _binding?.progressCompress?.progress = (progress * 100).toInt()
+                withTimeout(VIDEO_COMPRESSION_TIMEOUT_MS) {
+                    val compressedFile = VideoCompressor.compress(
+                        context = requireContext(),
+                        inputUri = uri,
+                        onProgress = { progress ->
+                            val percent = (progress * 100).toInt().coerceIn(0, 100)
+                            viewLifecycleOwner.lifecycleScope.launch {
+                                _binding?.progressCompress?.isIndeterminate = false
+                                _binding?.progressCompress?.progress = percent
+                                if (percent in 1..98) {
+                                    _binding?.tvCompressionResult?.text =
+                                        buildString {
+                                            append(
+                                                getString(
+                                                    R.string.original_size_format,
+                                                    Formatter.formatFileSize(requireContext(), originalBytes),
+                                                ),
+                                            )
+                                            append('\n')
+                                            append(
+                                                getString(
+                                                    R.string.video_compression_progress_format,
+                                                    percent,
+                                                ),
+                                            )
+                                        }
+                                } else if (percent >= 99) {
+                                    _binding?.tvCompressionResult?.text =
+                                        buildString {
+                                            append(
+                                                getString(
+                                                    R.string.original_size_format,
+                                                    Formatter.formatFileSize(requireContext(), originalBytes),
+                                                ),
+                                            )
+                                            append('\n')
+                                            append(getString(R.string.video_compression_finishing))
+                                        }
+                                }
+                            }
                         }
-                    },
-                )
-                withContext(Dispatchers.IO) {
-                    val compressedBytes = compressedFile.length()
-                    saveToMediaStore(compressedFile)
-                    compressedFile.delete()
-                    CompressionResult(originalBytes, compressedBytes)
+                    )
+                    withContext(Dispatchers.IO) {
+                        compressedFile to CompressionResult(originalBytes, compressedFile.length())
+                    }
                 }
-            }.onSuccess { result ->
+            }.onSuccess { (file, result) ->
+                clearCompressedPreview()
+                compressedPreviewFile = file
+                binding.tvAfterLabel.isVisible = true
+                binding.cardAfterPreview.isVisible = true
+                bindVideo(binding.videoPreviewAfter, Uri.fromFile(file))
                 val compressed = Formatter.formatFileSize(requireContext(), result.compressedBytes)
                 val saved = Formatter.formatFileSize(requireContext(), result.savedBytes)
                 binding.tvCompressionResult.isVisible = true
                 binding.tvCompressionResult.text =
                     getString(R.string.compressed_result_format, compressed, saved)
+                binding.btnSaveCompressed.isEnabled = true
+            }.onFailure {
+                clearCompressedPreview()
+                binding.tvCompressionResult.text =
+                    getString(
+                        R.string.original_size_format,
+                        Formatter.formatFileSize(requireContext(), originalBytes),
+                    )
+                val messageRes = if (it is kotlinx.coroutines.TimeoutCancellationException) {
+                    R.string.video_compression_timeout
+                } else {
+                    R.string.video_compression_failed
+                }
+                Toast.makeText(requireContext(), messageRes, Toast.LENGTH_SHORT).show()
+            }
+            binding.btnChooseVideo.isEnabled = true
+            binding.progressCompress.isVisible = false
+            binding.progressCompress.isIndeterminate = false
+        }
+    }
+
+    private fun saveCompressedPreview() {
+        val file = compressedPreviewFile ?: return
+        binding.btnSaveCompressed.isEnabled = false
+        viewLifecycleOwner.lifecycleScope.launch {
+            runCatching {
+                withContext(Dispatchers.IO) {
+                    saveToMediaStore(file)
+                }
+            }.onSuccess {
                 Toast.makeText(requireContext(), R.string.video_compression_saved, Toast.LENGTH_SHORT)
                     .show()
             }.onFailure {
+                binding.btnSaveCompressed.isEnabled = true
                 Toast.makeText(requireContext(), R.string.video_compression_failed, Toast.LENGTH_SHORT)
                     .show()
             }
-            binding.btnCompress.isEnabled = selectedUri != null
-            binding.btnChooseVideo.isEnabled = true
-            binding.btnCompress.text = getString(R.string.compress_and_save)
-            binding.progressCompress.isVisible = false
         }
     }
 
@@ -147,5 +233,41 @@ class VideoCompressFragment : Fragment() {
             resolver.delete(target, null, null)
             throw throwable
         }
+    }
+
+    private fun setupVideoPreview() {
+        attachVideoController(binding.videoPreviewBefore)
+        attachVideoController(binding.videoPreviewAfter)
+    }
+
+    private fun attachVideoController(videoView: android.widget.VideoView) {
+        val controller = MediaController(requireContext())
+        controller.setAnchorView(videoView)
+        videoView.setMediaController(controller)
+        videoView.setOnPreparedListener { mediaPlayer ->
+            mediaPlayer.isLooping = true
+            videoView.seekTo(1)
+        }
+    }
+
+    private fun bindVideo(videoView: android.widget.VideoView, uri: Uri) {
+        videoView.setVideoURI(uri)
+        videoView.seekTo(1)
+    }
+
+    private fun clearCompressedPreview() {
+        _binding?.videoPreviewAfter?.let { videoView ->
+            runCatching { videoView.stopPlayback() }
+            videoView.setVideoURI(null)
+        }
+        compressedPreviewFile?.takeIf { it.exists() }?.delete()
+        compressedPreviewFile = null
+        _binding?.tvAfterLabel?.isVisible = false
+        _binding?.cardAfterPreview?.isVisible = false
+        _binding?.btnSaveCompressed?.isEnabled = false
+    }
+
+    companion object {
+        private const val VIDEO_COMPRESSION_TIMEOUT_MS = 180_000L
     }
 }

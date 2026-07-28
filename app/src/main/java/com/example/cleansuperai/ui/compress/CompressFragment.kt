@@ -31,6 +31,8 @@ class CompressFragment : Fragment() {
     private val binding get() = _binding!!
     private var selectedUri: Uri? = null
     private var originalBytes: Long = 0
+    private var compressedPreviewBytes: ByteArray? = null
+    private var compressedPreviewBitmap: Bitmap? = null
 
     private val picker = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
         uri?.let(::showSelection)
@@ -54,34 +56,53 @@ class CompressFragment : Fragment() {
         }
         binding.btnChoosePhoto.setOnClickListener { picker.launch("image/*") }
         binding.emptyGuide.setOnClickListener { picker.launch("image/*") }
-        binding.btnCompress.setOnClickListener { compressSelected() }
+        binding.btnSaveCompressed.setOnClickListener { saveCompressedPreview() }
     }
 
     override fun onDestroyView() {
+        clearCompressedPreview()
         super.onDestroyView()
         _binding = null
     }
 
     private fun showSelection(uri: Uri) {
         selectedUri = uri
+        clearCompressedPreview()
         originalBytes = requireContext().contentResolver.openAssetFileDescriptor(uri, "r")
             ?.use { it.length.coerceAtLeast(0) } ?: 0
         binding.emptyGuide.isVisible = false
-        binding.imagePreview.isVisible = true
-        binding.imagePreview.setImageURI(uri)
+        binding.previewContainer.isVisible = true
+        binding.tvBeforeLabel.isVisible = true
+        binding.cardBeforePreview.isVisible = true
+        binding.imagePreviewBefore.setImageURI(uri)
+        binding.tvAfterLabel.isVisible = false
+        binding.cardAfterPreview.isVisible = false
         binding.tvCompressionResult.isVisible = true
         binding.tvCompressionResult.text =
             getString(
                 R.string.original_size_format,
                 Formatter.formatFileSize(requireContext(), originalBytes),
             )
-        binding.btnCompress.isEnabled = true
+        binding.btnSaveCompressed.isEnabled = false
+        compressSelected()
     }
 
     private fun compressSelected() {
         val uri = selectedUri ?: return
-        binding.btnCompress.isEnabled = false
-        binding.btnCompress.setText(R.string.compressing)
+        clearCompressedPreview()
+        binding.btnChoosePhoto.isEnabled = false
+        binding.progressCompress.isVisible = true
+        binding.tvCompressionResult.text =
+            buildString {
+                append(
+                    getString(
+                        R.string.original_size_format,
+                        Formatter.formatFileSize(requireContext(), originalBytes),
+                    ),
+                )
+                append('\n')
+                append(getString(R.string.compressing))
+            }
         viewLifecycleOwner.lifecycleScope.launch {
             runCatching {
                 withContext(Dispatchers.IO) {
@@ -91,21 +112,50 @@ class CompressFragment : Fragment() {
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 70, output)
                     if (!bitmap.isRecycled) bitmap.recycle()
                     val bytes = output.toByteArray()
-                    saveToMediaStore(bytes)
-                    CompressionResult(originalBytes, bytes.size.toLong())
+                    val previewBitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
+                        ?: error("Preview decode failed")
+                    Triple(bytes, previewBitmap, CompressionResult(originalBytes, bytes.size.toLong()))
                 }
-            }.onSuccess { result ->
+            }.onSuccess { (bytes, previewBitmap, result) ->
+                clearCompressedPreview()
+                compressedPreviewBytes = bytes
+                compressedPreviewBitmap = previewBitmap
+                binding.tvAfterLabel.isVisible = true
+                binding.cardAfterPreview.isVisible = true
+                binding.imagePreviewAfter.setImageBitmap(previewBitmap)
                 val compressed = Formatter.formatFileSize(requireContext(), result.compressedBytes)
                 val saved = Formatter.formatFileSize(requireContext(), result.savedBytes)
                 binding.tvCompressionResult.isVisible = true
                 binding.tvCompressionResult.text =
                     getString(R.string.compressed_result_format, compressed, saved)
-                Toast.makeText(requireContext(), R.string.compression_saved, Toast.LENGTH_SHORT).show()
+                binding.btnSaveCompressed.isEnabled = true
             }.onFailure {
+                binding.tvCompressionResult.text =
+                    getString(
+                        R.string.original_size_format,
+                        Formatter.formatFileSize(requireContext(), originalBytes),
+                    )
                 Toast.makeText(requireContext(), R.string.compression_failed, Toast.LENGTH_SHORT).show()
             }
-            binding.btnCompress.isEnabled = true
-            binding.btnCompress.setText(R.string.compress_and_save)
+            binding.btnChoosePhoto.isEnabled = true
+            binding.progressCompress.isVisible = false
+        }
+    }
+
+    private fun saveCompressedPreview() {
+        val bytes = compressedPreviewBytes ?: return
+        binding.btnSaveCompressed.isEnabled = false
+        viewLifecycleOwner.lifecycleScope.launch {
+            runCatching {
+                withContext(Dispatchers.IO) {
+                    saveToMediaStore(bytes)
+                }
+            }.onSuccess {
+                Toast.makeText(requireContext(), R.string.compression_saved, Toast.LENGTH_SHORT).show()
+            }.onFailure {
+                binding.btnSaveCompressed.isEnabled = true
+                Toast.makeText(requireContext(), R.string.compression_failed, Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -151,5 +201,16 @@ class CompressFragment : Fragment() {
             resolver.delete(target, null, null)
             throw throwable
         }
+    }
+
+    private fun clearCompressedPreview() {
+        compressedPreviewBytes = null
+        compressedPreviewBitmap?.takeIf { !it.isRecycled }?.recycle()
+        compressedPreviewBitmap = null
+        _binding?.tvAfterLabel?.isVisible = false
+        _binding?.cardAfterPreview?.isVisible = false
+        _binding?.imagePreviewAfter?.setImageDrawable(null)
+        _binding?.btnSaveCompressed?.isEnabled = false
+        _binding?.progressCompress?.isVisible = false
     }
 }

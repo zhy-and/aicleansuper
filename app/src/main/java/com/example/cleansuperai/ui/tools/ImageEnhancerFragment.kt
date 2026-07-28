@@ -67,8 +67,12 @@ class ImageEnhancerFragment : Fragment() {
         enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
         enhancedBitmap = null
         binding.emptyGuide.isVisible = false
-        binding.imagePreview.isVisible = true
-        binding.imagePreview.setImageURI(uri)
+        binding.previewContainer.isVisible = true
+        binding.tvBeforeLabel.isVisible = true
+        binding.cardBeforePreview.isVisible = true
+        binding.imagePreviewBefore.setImageURI(uri)
+        binding.tvAfterLabel.isVisible = false
+        binding.cardAfterPreview.isVisible = false
         binding.tvStatus.isVisible = true
         binding.tvStatus.setText(R.string.image_enhancer_ready)
         binding.btnEnhance.isEnabled = true
@@ -90,7 +94,9 @@ class ImageEnhancerFragment : Fragment() {
             }.onSuccess { bitmap ->
                 enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
                 enhancedBitmap = bitmap
-                binding.imagePreview.setImageBitmap(bitmap)
+                binding.tvAfterLabel.isVisible = true
+                binding.cardAfterPreview.isVisible = true
+                binding.imagePreviewAfter.setImageBitmap(bitmap)
                 binding.tvStatus.isVisible = true
                 binding.tvStatus.setText(R.string.image_enhancer_done)
                 binding.btnSave.isEnabled = true

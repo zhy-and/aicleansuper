@@ -93,16 +93,6 @@
                     android:background="@drawable/bg_divider" />
 
                 <include
-                    android:id="@+id/rowFeedback"
-                    layout="@layout/view_tool_item" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="76dp"
-                    android:background="@drawable/bg_divider" />
-
-                <include
                     android:id="@+id/rowClearCache"
                     layout="@layout/view_tool_item" />
             </LinearLayout>

@@ -15,7 +15,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.content.edit
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -30,7 +29,9 @@ class PhotoDetailFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var monthLabel: String
+    private lateinit var reviewStore: SwipeReviewStore
     private var photoUris: MutableList<Uri> = mutableListOf()
+    private var monthPhotoUriStrings: Set<String> = emptySet()
     private var pendingDeleteUris: List<Uri> = emptyList()
 
     private val trashAdapter = TrashBinAdapter(::restoreTrashItem)
@@ -48,7 +49,10 @@ class PhotoDetailFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         monthLabel = requireArguments().getString(ARG_MONTH).orEmpty()
-        photoUris = PhotoSelectionStore.take().toMutableList()
+        reviewStore = SwipeReviewStore(requireContext())
+        val monthUris = PhotoSelectionStore.take()
+        monthPhotoUriStrings = monthUris.mapTo(mutableSetOf(), Uri::toString)
+        photoUris = reviewStore.filterReviewable(monthUris).toMutableList()
     }
 
     override fun onCreateView(
@@ -173,7 +177,9 @@ class PhotoDetailFragment : Fragment() {
     private fun reviewCurrent(commitToBin: Boolean) {
         val uri = currentUri() ?: return
         if (commitToBin) {
-            addToReviewBin(uri)
+            reviewStore.moveToTrash(uri)
+        } else {
+            reviewStore.markKept(uri)
         }
         photoUris.removeAt(0)
         render()
@@ -181,7 +187,7 @@ class PhotoDetailFragment : Fragment() {
 
     private fun render() {
         val currentUri = currentUri()
-        binding.tvTitle.text = getString(R.string.feature_swipe_title)
+        binding.tvTitle.text = monthLabel.ifEmpty { getString(R.string.feature_swipe_title) }
         binding.emptyState.isVisible = currentUri == null
         binding.cardPhoto.isVisible = currentUri != null
         binding.imagePhoto.isVisible = currentUri != null
@@ -240,17 +246,13 @@ class PhotoDetailFragment : Fragment() {
         )
     }
 
-    private fun addToReviewBin(uri: Uri) {
-        val updated = preferences().getStringSet(KEY_PENDING, emptySet()).orEmpty().toMutableSet()
-        updated += uri.toString()
-        preferences().edit { putStringSet(KEY_PENDING, updated) }
-    }
-
     private fun restoreTrashItem(item: TrashPhotoItem) {
-        val updated = preferences().getStringSet(KEY_PENDING, emptySet()).orEmpty().toMutableSet()
-        updated.remove(item.uri.toString())
-        preferences().edit { putStringSet(KEY_PENDING, updated) }
-        renderTrashBinSummary()
+        reviewStore.restoreFromTrash(item.uri)
+        if (item.uri.toString() in monthPhotoUriStrings && item.uri !in photoUris) {
+            photoUris.add(0, item.uri)
+        }
+        pendingDeleteUris = pendingDeleteUris.filterNot { it == item.uri }
+        render()
     }
 
     private fun deletePendingPhotos() {
@@ -279,27 +281,14 @@ class PhotoDetailFragment : Fragment() {
     }
 
     private fun clearReviewBin() {
-        if (pendingDeleteUris.isEmpty()) return
-        val deletedUriStrings = pendingDeleteUris.mapTo(mutableSetOf(), Uri::toString)
-        val remaining = preferences().getStringSet(KEY_PENDING, emptySet()).orEmpty()
-            .filterNot { it in deletedUriStrings }
-            .toSet()
-        preferences().edit {
-            if (remaining.isEmpty()) {
-                remove(KEY_PENDING)
-            } else {
-                putStringSet(KEY_PENDING, remaining)
-            }
-        }
+        reviewStore.clearDeleted(pendingDeleteUris)
         pendingDeleteUris = emptyList()
         closeTrashBin()
         renderTrashBinSummary()
     }
 
     private fun loadTrashEntries(): List<TrashPhotoItem> {
-        return preferences().getStringSet(KEY_PENDING, emptySet())
-            .orEmpty()
-            .map(Uri::parse)
+        return reviewStore.loadTrashUris()
             .map { uri -> TrashPhotoItem(uri, querySizeBytes(uri)) }
             .sortedByDescending(TrashPhotoItem::sizeBytes)
     }
@@ -324,12 +313,8 @@ class PhotoDetailFragment : Fragment() {
         }.getOrDefault(0L)
     }
 
-    private fun preferences() =
-        requireContext().getSharedPreferences("photo_review_bin", 0)
-
     companion object {
         private const val ARG_MONTH = "month"
-        private const val KEY_PENDING = "pending_uris"
 
         fun newInstance(month: MediaMonth) = PhotoDetailFragment().apply {
             PhotoSelectionStore.set(month.photos.map(MediaPhoto::uri))

@@ -1,8 +1,6 @@
 package com.example.cleansuperai.ui.profile
 
 import android.app.AlertDialog
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -55,13 +53,6 @@ class ProfileFragment : Fragment() {
             R.string.settings_privacy_policy_title,
             R.string.settings_privacy_policy_subtitle,
         ) { showPrivacyPolicy() }
-
-        configureRow(
-            binding.rowFeedback,
-            R.drawable.ic_mail,
-            R.string.settings_feedback_title,
-            R.string.settings_feedback_subtitle,
-        ) { sendFeedback() }
 
         configureRow(
             binding.rowClearCache,
@@ -120,19 +111,6 @@ class ProfileFragment : Fragment() {
             .setMessage(R.string.settings_privacy_policy_body)
             .setPositiveButton(android.R.string.ok, null)
             .show()
-    }
-
-    private fun sendFeedback() {
-        val intent = Intent(Intent.ACTION_SENDTO).apply {
-            data = Uri.parse("mailto:")
-            putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.settings_feedback_email)))
-            putExtra(Intent.EXTRA_SUBJECT, getString(R.string.settings_feedback_subject))
-        }
-        runCatching {
-            startActivity(Intent.createChooser(intent, getString(R.string.settings_feedback_title)))
-        }.onFailure {
-            showToast(getString(R.string.settings_feedback_unavailable))
-        }
     }
 
     private fun confirmClearCache() {

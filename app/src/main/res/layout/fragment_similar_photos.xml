@@ -105,18 +105,17 @@
         android:id="@+id/actionContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_surface_panel"
+        android:background="@drawable/bg_bottom_action_panel"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="12dp"
-        android:paddingBottom="4dp"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnSelectRecommended"
-            style="@style/Widget.Cleansuperai.Button.Secondary"
+            style="@style/Widget.Cleansuperai.Button.ActionSecondary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -125,10 +124,10 @@
 
         <Button
             android:id="@+id/btnDeleteSelected"
-            style="@style/Widget.Cleansuperai.Button.Danger"
+            style="@style/Widget.Cleansuperai.Button.ActionDanger"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:minWidth="0dp"
             android:text="@string/delete_selected_action" />

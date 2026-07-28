@@ -3,8 +3,9 @@ package com.example.cleansuperai.widget
 import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.LinearGradient
+import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.RadialGradient
 import android.graphics.RectF
 import android.graphics.Shader
 import android.graphics.SweepGradient
@@ -13,6 +14,7 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import androidx.core.content.ContextCompat
 import com.example.cleansuperai.R
+import kotlin.math.min
 
 /**
  * 环形扫描进度指示器：底层轨道 + 上层渐变扫描弧，可旋转动画。
@@ -34,6 +36,16 @@ class CircularScanView @JvmOverloads constructor(
         strokeCap = Paint.Cap.ROUND
     }
 
+    private val progressGlowPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        style = Paint.Style.STROKE
+        strokeCap = Paint.Cap.ROUND
+        alpha = 76
+    }
+
+    private val innerGlowPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        style = Paint.Style.FILL
+    }
+
     private val rect = RectF()
 
     private var stroke = 12f
@@ -49,9 +61,7 @@ class CircularScanView @JvmOverloads constructor(
 
     init {
         attrs?.let { applyAttrs(it) }
-        trackPaint.color = trackColor
-        trackPaint.strokeWidth = stroke
-        progressPaint.strokeWidth = stroke
+        updatePaints()
     }
 
     private fun applyAttrs(a: AttributeSet) {
@@ -65,9 +75,14 @@ class CircularScanView @JvmOverloads constructor(
         } finally {
             ta.recycle()
         }
+        updatePaints()
+    }
+
+    private fun updatePaints() {
         trackPaint.color = trackColor
         trackPaint.strokeWidth = stroke
         progressPaint.strokeWidth = stroke
+        progressGlowPaint.strokeWidth = stroke + (stroke * 0.55f)
     }
 
     fun setProgress(value: Float) {
@@ -112,24 +127,48 @@ class CircularScanView @JvmOverloads constructor(
         super.onSizeChanged(w, h, oldw, oldh)
         val inset = stroke / 2f
         rect.set(inset, inset, w - inset, h - inset)
-        progressPaint.shader = SweepGradient(
-            w / 2f, h / 2f, intArrayOf(startColor, endColor, startColor), null
+        val sweepGradient = SweepGradient(
+            w / 2f,
+            h / 2f,
+            intArrayOf(startColor, endColor, startColor),
+            null
+        )
+        progressPaint.shader = sweepGradient
+        progressGlowPaint.shader = sweepGradient
+        innerGlowPaint.shader = RadialGradient(
+            w / 2f,
+            h / 2f,
+            min(w, h) * 0.26f,
+            intArrayOf(
+                withAlpha(startColor, 0.16f),
+                withAlpha(endColor, 0.08f),
+                Color.TRANSPARENT
+            ),
+            floatArrayOf(0f, 0.72f, 1f),
+            Shader.TileMode.CLAMP
         )
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        // track
+        canvas.drawCircle(width / 2f, height / 2f, min(width, height) * 0.22f, innerGlowPaint)
         canvas.drawArc(rect, 0f, 360f, false, trackPaint)
 
         if (indeterminate) {
             canvas.save()
             canvas.rotate(rotation, width / 2f, height / 2f)
+            canvas.drawArc(rect, -90f, 270f, false, progressGlowPaint)
             canvas.drawArc(rect, -90f, 270f, false, progressPaint)
             canvas.restore()
         } else {
             val sweep = 360f * progress
+            canvas.drawArc(rect, -90f, sweep, false, progressGlowPaint)
             canvas.drawArc(rect, -90f, sweep, false, progressPaint)
         }
+    }
+
+    private fun withAlpha(color: Int, alphaFraction: Float): Int {
+        val alpha = (alphaFraction.coerceIn(0f, 1f) * 255).toInt()
+        return Color.argb(alpha, Color.red(color), Color.green(color), Color.blue(color))
     }
 }

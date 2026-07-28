@@ -39,6 +39,7 @@ class SwipeFragment : Fragment() {
     private var _binding: FragmentSwipeBinding? = null
     private val binding get() = _binding!!
     private val adapter = PhotoMonthAdapter(::openMonth)
+    private lateinit var reviewStore: SwipeReviewStore
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -51,11 +52,19 @@ class SwipeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        reviewStore = SwipeReviewStore(requireContext())
         binding.btnPremium.isVisible = false
         binding.btnSettings.setOnClickListener { (activity as? MainActivity)?.openProfile() }
         binding.recyclerMonths.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerMonths.adapter = adapter
         loadPhotos()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (view != null) {
+            loadPhotos()
+        }
     }
 
     override fun onDestroyView() {
@@ -73,9 +82,13 @@ class SwipeFragment : Fragment() {
 
         viewLifecycleOwner.lifecycleScope.launch {
             val photos = withContext(Dispatchers.IO) { queryPhotos() }
-            val byId = photos.associateBy(MediaPhoto::id)
+            reviewStore.pruneToExisting(photos.map(MediaPhoto::uri))
+            val reviewableUris = reviewStore.filterReviewable(photos.map(MediaPhoto::uri))
+                .mapTo(mutableSetOf(), Uri::toString)
+            val reviewablePhotos = photos.filter { photo -> photo.uri.toString() in reviewableUris }
+            val byId = reviewablePhotos.associateBy(MediaPhoto::id)
             val months = PhotoMonthGrouper.group(
-                photos.map { PhotoRecord(it.id, it.dateModifiedMs) },
+                reviewablePhotos.map { PhotoRecord(it.id, it.dateModifiedMs) },
             ).map { group ->
                 MediaMonth(group.label, group.photos.mapNotNull { byId[it.id] })
             }

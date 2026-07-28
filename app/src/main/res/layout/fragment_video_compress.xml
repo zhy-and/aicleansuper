@@ -54,7 +54,7 @@
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     android:clipChildren="false">
 
                     <LinearLayout
@@ -106,14 +106,71 @@
                             android:textStyle="bold" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/imagePreview"
+                    <LinearLayout
+                        android:id="@+id/previewContainer"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:contentDescription="@string/selected_video_preview"
-                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
                         android:visibility="gone" />
                 </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvBeforeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/preview_original_video_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardBeforePreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/surface_dark_secondary"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <VideoView
+                        android:id="@+id/videoPreviewBefore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/selected_video_preview" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tvAfterLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/preview_compressed_video_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAfterPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/surface_dark_secondary"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <VideoView
+                        android:id="@+id/videoPreviewAfter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/selected_video_preview" />
+                </com.google.android.material.card.MaterialCardView>
 
                 <TextView
                     android:id="@+id/tvCompressionResult"
@@ -144,13 +201,13 @@
                     android:text="@string/choose_video" />
 
                 <Button
-                    android:id="@+id/btnCompress"
+                    android:id="@+id/btnSaveCompressed"
                     style="@style/Widget.Cleansuperai.Button.Secondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="12dp"
                     android:enabled="false"
-                    android:text="@string/compress_and_save" />
+                    android:text="@string/save_compressed_video" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

@@ -24,6 +24,7 @@
     <color name="accent_secondary_soft">#FFEEF7F2</color>
     <color name="accent_soft">#FFDDECE4</color>
     <color name="accent_primary_dim">#FF1F6048</color>
+    <color name="accent_primary_disabled">#FFB2C8BC</color>
 
     <!-- Text -->
     <color name="text_primary">#FF18221D</color>
@@ -36,6 +37,8 @@
     <color name="success_soft">#FFE7F4ED</color>
     <color name="danger">#FFD95858</color>
     <color name="danger_soft">#FFFFEEEE</color>
+    <color name="danger_soft_strong">#FFFFE4E4</color>
+    <color name="danger_stroke">#FFF3C9C9</color>
     <color name="warning_soft">#FFFFF5E4</color>
     <color name="action_keep">#FF2F54E7</color>
     <color name="action_keep_soft">#FFEAF0FF</color>
@@ -54,6 +57,8 @@
     <color name="surface_gold">#FFFFF6DF</color>
     <color name="gold_text">#FF9A6A16</color>
     <color name="surface_hint_blue">#FFE7ECFF</color>
+    <color name="surface_panel_border">#FFE0E7E1</color>
+    <color name="surface_pressed">#FFEDF2EE</color>
 
     <!-- Bottom nav -->
     <color name="bottom_nav_selected">#FF28785B</color>

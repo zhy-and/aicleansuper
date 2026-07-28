@@ -2,7 +2,9 @@ package com.example.cleansuperai
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.cleansuperai.ads.AdConfig
 import com.example.cleansuperai.databinding.ActivitySplashBinding
@@ -17,6 +19,8 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         val binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

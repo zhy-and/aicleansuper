@@ -216,7 +216,7 @@
 
             <Button
                 android:id="@+id/btnOpenTrash"
-                style="@style/Widget.Cleansuperai.Button.Primary"
+                style="@style/Widget.Cleansuperai.Button.ActionPrimary"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:minHeight="46dp"
@@ -323,7 +323,7 @@
 
                 <Button
                     android:id="@+id/btnClearPending"
-                    style="@style/Widget.Cleansuperai.Button.Primary"
+                    style="@style/Widget.Cleansuperai.Button.ActionPrimary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="18dp"
