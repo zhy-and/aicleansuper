@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="88dp"
-    android:layout_height="108dp"
-    android:layout_marginEnd="10dp"
-    android:background="@drawable/bg_media_thumb"
-    android:foreground="?attr/selectableItemBackground">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="96dp"
+    android:layout_height="96dp"
+    android:layout_marginEnd="10dp">
 
     <ImageView
         android:id="@+id/imageThumb"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bg_media_thumb"
         android:contentDescription="@null"
+        android:foreground="?attr/selectableItemBackground"
         android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:id="@+id/btnSelect"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="top|end">
+
+        <ImageView
+            android:id="@+id/imageSelect"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_select_checkbox"
+            android:contentDescription="@string/select_all_action"
+            android:padding="2dp"
+            android:src="@drawable/ic_circle_outline"
+            app:tint="@color/white" />
+    </FrameLayout>
 
     <CheckBox
         android:id="@+id/checkSelected"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|end"
-        android:clickable="false"
-        android:focusable="false" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
 </FrameLayout>

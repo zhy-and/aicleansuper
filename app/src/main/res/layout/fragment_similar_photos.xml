@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_primary"
-    android:paddingStart="20dp"
+    android:paddingStart="18dp"
     android:paddingTop="12dp"
-    android:paddingEnd="20dp"
+    android:paddingEnd="18dp"
     android:paddingBottom="16dp">
 
     <FrameLayout
@@ -32,123 +32,61 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="@string/similar_page_title"
-        android:textColor="@color/text_primary"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Cleansuperai.Title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnBack" />
 
     <TextView
-        android:id="@+id/tvSubtitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:text="@string/similar_page_subtitle"
-        android:textColor="@color/text_secondary"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
-
-    <TextView
         android:id="@+id/tvNote"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/bg_pill_accent"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="5dp"
-        android:text="@string/similar_page_badge"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
         android:textColor="@color/accent_primary"
-        android:textSize="11sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardSummary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        app:cardBackgroundColor="@color/surface_card"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/surface_brand"
         app:cardCornerRadius="24dp"
         app:cardElevation="0dp"
-        app:strokeColor="@color/stroke_light"
-        app:strokeWidth="1dp"
+        app:strokeWidth="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvNote">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@drawable/bg_glow_top" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvSummaryTitle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="22dp">
+                android:textColor="@color/text_primary"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_premium_pill"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="5dp"
-                    android:text="@string/similar_page_badge"
-                    android:textColor="@color/gold_text"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvSummarySubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:id="@+id/tvSummaryTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
-                    android:textColor="@color/text_primary"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/tvSummarySubtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="13sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/bg_glass_card_small"
-                    android:orientation="vertical"
-                    android:padding="14dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/similar_page_note"
-                        android:textColor="@color/text_primary"
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/similar_page_hero_hint"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </FrameLayout>
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -167,9 +105,11 @@
         android:id="@+id/actionContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="end"
+        android:background="@drawable/bg_surface_panel"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -177,20 +117,20 @@
         <Button
             android:id="@+id/btnSelectRecommended"
             style="@style/Widget.Cleansuperai.Button.Secondary"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:minWidth="0dp"
-            android:paddingHorizontal="18dp"
             android:text="@string/similar_select_candidates_action" />
 
         <Button
             android:id="@+id/btnDeleteSelected"
-            style="@style/Widget.Cleansuperai.Button.Primary"
-            android:layout_width="wrap_content"
+            style="@style/Widget.Cleansuperai.Button.Danger"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:layout_weight="1"
             android:minWidth="0dp"
-            android:paddingHorizontal="18dp"
             android:text="@string/delete_selected_action" />
     </LinearLayout>
 

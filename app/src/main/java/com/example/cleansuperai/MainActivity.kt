@@ -14,6 +14,7 @@ import androidx.fragment.app.commit
 import com.example.cleansuperai.databinding.ActivityMainBinding
 import com.example.cleansuperai.ui.compress.CompressFragment
 import com.example.cleansuperai.ui.home.HomeFragment
+import com.example.cleansuperai.ui.profile.LanguageSettingsFragment
 import com.example.cleansuperai.ui.profile.ProfileFragment
 import com.example.cleansuperai.ui.swipe.SwipeFragment
 import com.example.cleansuperai.ui.tools.ToolsFragment
@@ -104,6 +105,10 @@ class MainActivity : AppCompatActivity() {
 
     fun openProfile() {
         openDetail(ProfileFragment(), "profile")
+    }
+
+    fun openLanguageSettings() {
+        openDetail(LanguageSettingsFragment(), "language_settings")
     }
 
     fun openDetail(fragment: Fragment, tag: String) {

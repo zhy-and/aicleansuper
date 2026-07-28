@@ -3,6 +3,7 @@ package com.example.cleansuperai.ui.similar
 import android.text.format.Formatter
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -96,9 +97,18 @@ class SimilarGroupAdapter(
                     size(192)
                     transformations(RoundedCornersTransformation(cornerPx))
                 }
-                thumbBinding.checkSelected.isChecked = selectedIds.contains(item.id)
+                val selected = selectedIds.contains(item.id)
+                if (selected) {
+                    thumbBinding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox_checked)
+                    thumbBinding.imageSelect.setImageResource(R.drawable.ic_check)
+                } else {
+                    thumbBinding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox)
+                    thumbBinding.imageSelect.setImageResource(R.drawable.ic_circle_outline)
+                }
+                thumbBinding.imageSelect.imageTintList =
+                    ContextCompat.getColorStateList(context, R.color.white)
                 thumbBinding.imageThumb.setOnClickListener { onPreview(item) }
-                thumbBinding.root.setOnClickListener { onToggle(item) }
+                thumbBinding.btnSelect.setOnClickListener { onToggle(item) }
                 binding.othersContainer.addView(thumbBinding.root)
             }
         }

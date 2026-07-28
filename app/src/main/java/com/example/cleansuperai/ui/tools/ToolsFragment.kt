@@ -11,7 +11,6 @@ import com.example.cleansuperai.R
 import com.example.cleansuperai.databinding.FragmentToolsBinding
 import com.example.cleansuperai.databinding.ViewToolItemBinding
 import com.example.cleansuperai.ui.clean.CleanCenterFragment
-import com.example.cleansuperai.ui.privacy.PrivacyFragment
 
 class ToolsFragment : Fragment() {
     private var _binding: FragmentToolsBinding? = null
@@ -31,13 +30,12 @@ class ToolsFragment : Fragment() {
         binding.btnPremium.isVisible = false
         binding.btnSettings.setOnClickListener { (activity as? MainActivity)?.openProfile() }
 
-        configure(binding.toolFileManager, R.string.tool_file_manager, R.string.tool_file_manager_desc, R.drawable.ic_clean)
-        configure(binding.toolMediaCompressor, R.string.tool_media_compressor, R.string.tool_media_compressor_desc, R.drawable.ic_nav_compress)
-        configure(binding.toolSecretSpace, R.string.tool_secret_space, R.string.tool_secret_space_desc, R.drawable.ic_shield)
-        configure(binding.toolAppManager, R.string.tool_app_manager, R.string.tool_app_manager_desc, R.drawable.ic_apps)
-        configure(binding.toolCalendar, R.string.tool_clean_calendar, R.string.tool_clean_calendar_desc, R.drawable.ic_calendar)
-        configure(binding.toolEnhancer, R.string.tool_ai_enhancer, R.string.tool_ai_enhancer_desc, R.drawable.ic_enhance)
-        configure(binding.toolSpeedTest, R.string.tool_speed_test, R.string.tool_speed_test_desc, R.drawable.ic_speed)
+        configure(binding.toolFileManager, R.string.tool_file_manager, R.drawable.ic_clean)
+        configure(binding.toolMediaCompressor, R.string.tool_media_compressor, R.drawable.ic_nav_compress)
+        configure(binding.toolAppManager, R.string.tool_app_manager, R.drawable.ic_apps)
+        configure(binding.toolCalendar, R.string.tool_clean_calendar, R.drawable.ic_calendar)
+        configure(binding.toolEnhancer, R.string.tool_ai_enhancer, R.drawable.ic_enhance)
+        configure(binding.toolSpeedTest, R.string.tool_speed_test, R.drawable.ic_speed)
 
         binding.toolFileManager.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(CleanCenterFragment(), "clean_center")
@@ -54,9 +52,6 @@ class ToolsFragment : Fragment() {
         binding.toolEnhancer.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(ImageEnhancerFragment(), "image_enhancer")
         }
-        binding.toolSecretSpace.root.setOnClickListener {
-            (activity as? MainActivity)?.openDetail(PrivacyFragment(), "privacy")
-        }
         binding.toolSpeedTest.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(SpeedTestFragment(), "speed_test")
         }
@@ -70,11 +65,10 @@ class ToolsFragment : Fragment() {
     private fun configure(
         item: ViewToolItemBinding,
         titleRes: Int,
-        subtitleRes: Int,
         iconRes: Int,
     ) {
         item.tvToolTitle.setText(titleRes)
-        item.tvToolSubtitle.setText(subtitleRes)
+        item.tvToolSubtitle.isVisible = false
         item.ivToolIcon.setImageResource(iconRes)
     }
 }

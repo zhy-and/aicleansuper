@@ -47,6 +47,7 @@ class VideoCompressFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.btnChooseVideo.setOnClickListener { picker.launch("video/*") }
+        binding.emptyGuide.setOnClickListener { picker.launch("video/*") }
         binding.btnCompress.setOnClickListener { compressSelected() }
     }
 
@@ -59,7 +60,10 @@ class VideoCompressFragment : Fragment() {
         selectedUri = uri
         originalBytes = requireContext().contentResolver.openAssetFileDescriptor(uri, "r")
             ?.use { it.length.coerceAtLeast(0) } ?: 0
+        binding.emptyGuide.isVisible = false
+        binding.imagePreview.isVisible = true
         binding.imagePreview.load(uri)
+        binding.tvCompressionResult.isVisible = true
         binding.tvCompressionResult.text = getString(
             R.string.original_size_format,
             Formatter.formatFileSize(requireContext(), originalBytes),
@@ -96,6 +100,7 @@ class VideoCompressFragment : Fragment() {
             }.onSuccess { result ->
                 val compressed = Formatter.formatFileSize(requireContext(), result.compressedBytes)
                 val saved = Formatter.formatFileSize(requireContext(), result.savedBytes)
+                binding.tvCompressionResult.isVisible = true
                 binding.tvCompressionResult.text =
                     getString(R.string.compressed_result_format, compressed, saved)
                 Toast.makeText(requireContext(), R.string.video_compression_saved, Toast.LENGTH_SHORT)

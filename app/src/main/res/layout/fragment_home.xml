@@ -6,9 +6,10 @@
     android:background="@color/bg_primary"
     android:clipToPadding="false"
     android:fillViewport="true"
-    android:paddingStart="20dp"
-    android:paddingEnd="20dp"
-    android:paddingBottom="28dp">
+    android:paddingStart="16dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="32dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,32 +18,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="68dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:textColor="@color/text_primary"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="@string/home_subtitle"
-                    android:textColor="@color/text_tertiary"
-                    android:textSize="12sp" />
-            </LinearLayout>
+                android:text="@string/app_name"
+                android:textColor="@color/text_primary"
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/btnPremium"
@@ -62,9 +49,9 @@
 
             <FrameLayout
                 android:id="@+id/btnSettings"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="10dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
                 android:background="@drawable/bg_icon_button">
 
                 <ImageView
@@ -81,58 +68,58 @@
             android:id="@+id/permissionContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="28dp">
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@color/surface_card"
-                app:cardCornerRadius="24dp"
+                app:cardCornerRadius="30dp"
                 app:cardElevation="0dp"
                 app:strokeColor="@color/stroke_light"
                 app:strokeWidth="1dp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="22dp"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="22dp">
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:background="@drawable/bg_glow_top" />
+                        android:layout_height="180dp"
+                        android:background="@drawable/bg_glow_center" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:orientation="vertical"
-                        android:padding="28dp">
+                        android:orientation="vertical">
 
                         <FrameLayout
-                            android:layout_width="96dp"
-                            android:layout_height="96dp">
+                            android:layout_width="168dp"
+                            android:layout_height="168dp">
 
                             <com.example.cleansuperai.widget.CircularScanView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:csvIndeterminate="true"
-                                app:csvStrokeWidth="4dp" />
+                                app:csvStrokeWidth="10dp" />
 
                             <FrameLayout
-                                android:layout_width="64dp"
-                                android:layout_height="64dp"
+                                android:layout_width="98dp"
+                                android:layout_height="98dp"
                                 android:layout_gravity="center"
-                                android:background="@drawable/bg_icon_container_accent">
+                                android:background="@drawable/bg_icon_container">
 
                                 <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
+                                    android:layout_width="42dp"
+                                    android:layout_height="42dp"
                                     android:layout_gravity="center"
                                     android:contentDescription="@null"
-                                    android:src="@drawable/ic_auto_awesome"
+                                    android:src="@drawable/ic_clean"
                                     app:tint="@color/accent_primary" />
                             </FrameLayout>
                         </FrameLayout>
@@ -140,28 +127,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="24dp"
+                            android:layout_marginTop="20dp"
                             android:gravity="center"
                             android:text="@string/permission_home_title"
                             android:textColor="@color/text_primary"
-                            android:textSize="22sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center"
-                            android:text="@string/permission_home_body"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="14sp" />
 
                         <Button
                             android:id="@+id/btnPermission"
                             style="@style/Widget.Cleansuperai.Button.Primary"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="24dp"
+                            android:layout_marginTop="18dp"
                             android:text="@string/grant_access" />
                     </LinearLayout>
                 </FrameLayout>
@@ -178,149 +156,111 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="8dp"
                 app:cardBackgroundColor="@color/surface_card"
-                app:cardCornerRadius="24dp"
+                app:cardCornerRadius="32dp"
                 app:cardElevation="0dp"
                 app:strokeColor="@color/stroke_light"
                 app:strokeWidth="1dp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="22dp"
+                    android:paddingTop="28dp"
+                    android:paddingBottom="24dp">
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:background="@drawable/bg_glow_top" />
+                        android:layout_height="220dp"
+                        android:background="@drawable/bg_glow_center" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="22dp">
+                        android:gravity="center_horizontal"
+                        android:minHeight="420dp"
+                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
+                        <FrameLayout
+                            android:layout_width="196dp"
+                            android:layout_height="196dp">
 
-                            <FrameLayout
-                                android:layout_width="88dp"
-                                android:layout_height="88dp">
+                            <com.example.cleansuperai.widget.CircularScanView
+                                android:id="@+id/scanRing"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:csvIndeterminate="true"
+                                app:csvStrokeWidth="12dp" />
 
-                                <com.example.cleansuperai.widget.CircularScanView
-                                    android:id="@+id/scanRing"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    app:csvIndeterminate="true"
-                                    app:csvStrokeWidth="5dp" />
-
-                                <TextView
-                                    android:id="@+id/tvScanPercent"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:textColor="@color/text_primary"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold"
-                                    android:visibility="gone" />
-                            </FrameLayout>
-
-                            <LinearLayout
-                                android:layout_width="0dp"
+                            <TextView
+                                android:id="@+id/tvScanPercent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="18dp"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
+                                android:layout_gravity="center"
+                                android:textColor="@color/accent_primary"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </FrameLayout>
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/home_scan_insight_title"
-                                    android:textColor="@color/text_tertiary"
-                                    android:textSize="12sp" />
+                        <TextView
+                            android:id="@+id/tvScanStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
 
-                                <TextView
-                                    android:id="@+id/tvScanStatus"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="@string/scan_running_english"
-                                    android:textColor="@color/text_primary"
-                                    android:textSize="17sp"
-                                    android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tvScanSummary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:gravity="center"
+                            android:text="@string/home_secure_analysis"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="14sp" />
 
-                                <TextView
-                                    android:id="@+id/tvReclaimValue"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:text="@string/em_dash"
-                                    android:textColor="@color/accent_secondary"
-                                    android:textSize="26sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/tvScanSummary"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="4dp"
-                                    android:text="@string/home_secure_analysis"
-                                    android:textColor="@color/text_secondary"
-                                    android:textSize="13sp" />
-                            </LinearLayout>
-                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tvReclaimValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="@string/em_dash"
+                            android:textColor="@color/accent_primary"
+                            android:textSize="44sp"
+                            android:textStyle="bold" />
 
                         <ProgressBar
                             android:id="@+id/progressScan"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="4dp"
-                            android:layout_marginTop="18dp"
+                            android:layout_height="6dp"
+                            android:layout_marginTop="16dp"
                             android:indeterminateTint="@color/accent_secondary"
                             android:progressBackgroundTint="@color/surface_dark_secondary"
-                            android:progressTint="@color/accent_primary" />
+                            android:progressTint="@color/accent_primary"
+                            android:visibility="gone" />
 
                         <Button
                             android:id="@+id/btnQuickClean"
                             style="@style/Widget.Cleansuperai.Button.Primary"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="22dp"
                             android:text="@string/home_quick_clean_action" />
                     </LinearLayout>
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/home_cleanup_library"
-                    android:textColor="@color/text_primary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_chip"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="5dp"
-                    android:text="@string/home_cleanup_badge"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                android:layout_marginTop="22dp"
+                android:text="@string/home_quick_tools"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -333,23 +273,31 @@
                     android:id="@+id/cardSimilarPhotos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="196dp"
-                    android:layout_marginEnd="7dp"
+                    android:layout_height="156dp"
+                    android:layout_marginEnd="6dp"
                     android:layout_weight="1" />
 
                 <include
                     android:id="@+id/cardDuplicatePhotos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="196dp"
-                    android:layout_marginStart="7dp"
+                    android:layout_height="156dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/cardScreenshots"
+                    layout="@layout/view_home_feature_card"
+                    android:layout_width="0dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="6dp"
                     android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="12dp"
                 android:baselineAligned="false"
                 android:orientation="horizontal">
 
@@ -357,25 +305,26 @@
                     android:id="@+id/cardDuplicateVideos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="196dp"
-                    android:layout_marginEnd="7dp"
+                    android:layout_height="156dp"
+                    android:layout_marginEnd="6dp"
                     android:layout_weight="1" />
 
                 <include
                     android:id="@+id/cardAllVideos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="196dp"
-                    android:layout_marginStart="7dp"
+                    android:layout_height="156dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/cardSwipePhotos"
+                    layout="@layout/view_home_feature_card"
+                    android:layout_width="0dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="6dp"
                     android:layout_weight="1" />
             </LinearLayout>
-
-            <include
-                android:id="@+id/cardScreenshots"
-                layout="@layout/view_home_feature_card"
-                android:layout_width="match_parent"
-                android:layout_height="174dp"
-                android:layout_marginTop="14dp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

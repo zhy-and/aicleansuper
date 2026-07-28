@@ -4,7 +4,6 @@ import android.app.Activity
 import android.app.AlertDialog
 import android.os.Build
 import android.os.Bundle
-import android.text.format.DateFormat
 import android.text.format.Formatter
 import android.view.LayoutInflater
 import android.view.View
@@ -18,13 +17,12 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.cleansuperai.R
 import com.example.cleansuperai.data.model.LargeVideoItem
 import com.example.cleansuperai.databinding.FragmentMediaListBinding
 import com.example.cleansuperai.ui.common.MediaActions
 import kotlinx.coroutines.launch
-import java.util.Date
 
 class LargeVideoListFragment : Fragment() {
     private var _binding: FragmentMediaListBinding? = null
@@ -62,14 +60,13 @@ class LargeVideoListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.tvTitle.setText(R.string.large_video_detail_title)
-        binding.tvSubtitle.setText(R.string.large_video_detail_subtitle)
         binding.actionContainer.isVisible = true
         binding.btnSecondaryAction.setText(R.string.select_all_action)
         binding.btnPrimaryAction.setText(R.string.delete_selected_action)
         binding.btnSecondaryAction.setOnClickListener { toggleSelectAll() }
         binding.btnPrimaryAction.setOnClickListener { confirmDeleteSelected() }
         binding.tvNote.setOnClickListener { cycleFilter() }
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), gridSpanCount())
         binding.recyclerView.adapter = adapter
         collectUiState()
         viewModel.load()
@@ -96,14 +93,8 @@ class LargeVideoListFragment : Fragment() {
                 stableId = item.id,
                 thumbnailUri = item.contentUri,
                 title = item.displayName,
-                metaPrimary = getString(
-                    R.string.media_item_duration_format,
-                    formatDuration(item.durationMs),
-                ),
-                metaSecondary = getString(
-                    R.string.media_item_date_format,
-                    DateFormat.format("yyyy-MM-dd HH:mm", Date(item.dateModifiedMs)).toString(),
-                ),
+                metaPrimary = "",
+                metaSecondary = "",
                 sizeText = Formatter.formatFileSize(requireContext(), item.sizeBytes),
                 isVideo = true,
                 isSelectable = true,
@@ -157,11 +148,7 @@ class LargeVideoListFragment : Fragment() {
         } else {
             getString(R.string.filter_100mb)
         }
-        binding.tvNote.text = getString(
-            R.string.video_selection_filter_format,
-            selectedIds.size,
-            filterLabel,
-        )
+        binding.tvNote.text = filterLabel
         binding.btnSecondaryAction.setText(
             if (selectedIds.size == totalItems && totalItems > 0) {
                 R.string.clear_selected_action
@@ -209,21 +196,11 @@ class LargeVideoListFragment : Fragment() {
         }
     }
 
-    private fun formatDuration(durationMs: Long): String {
-        val totalSeconds = durationMs / 1000
-        val hours = totalSeconds / 3600
-        val minutes = (totalSeconds % 3600) / 60
-        val seconds = totalSeconds % 60
-        return if (hours > 0) {
-            "%d:%02d:%02d".format(hours, minutes, seconds)
-        } else {
-            "%02d:%02d".format(minutes, seconds)
-        }
-    }
-
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
+
+    private fun gridSpanCount(): Int = if (resources.configuration.screenWidthDp >= 600) 3 else 2
 
     companion object {
         private const val THRESHOLD_100_MB = 100L * 1024L * 1024L

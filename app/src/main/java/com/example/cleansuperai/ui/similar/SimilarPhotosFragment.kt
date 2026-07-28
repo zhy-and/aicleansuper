@@ -83,22 +83,16 @@ class SimilarPhotosFragment : Fragment() {
         when (mode) {
             SimilarMediaMode.SIMILAR_PHOTOS -> {
                 binding.tvTitle.setText(R.string.similar_page_title)
-                binding.tvSubtitle.setText(R.string.similar_page_subtitle)
-                binding.tvNote.setText(R.string.similar_page_badge)
                 binding.tvEmptyTitle.setText(R.string.similar_group_empty_title)
             }
 
             SimilarMediaMode.DUPLICATE_PHOTOS -> {
                 binding.tvTitle.setText(R.string.duplicate_photos_page_title)
-                binding.tvSubtitle.setText(R.string.duplicate_photos_page_subtitle)
-                binding.tvNote.setText(R.string.duplicate_photos_page_badge)
                 binding.tvEmptyTitle.setText(R.string.duplicate_photos_empty_title)
             }
 
             SimilarMediaMode.DUPLICATE_VIDEOS -> {
                 binding.tvTitle.setText(R.string.duplicate_videos_page_title)
-                binding.tvSubtitle.setText(R.string.duplicate_videos_page_subtitle)
-                binding.tvNote.setText(R.string.duplicate_videos_page_badge)
                 binding.tvEmptyTitle.setText(R.string.duplicate_videos_empty_title)
             }
         }

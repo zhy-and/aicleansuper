@@ -17,6 +17,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.example.cleansuperai.R
@@ -49,6 +50,7 @@ class ImageEnhancerFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.btnChoosePhoto.setOnClickListener { picker.launch("image/*") }
+        binding.emptyGuide.setOnClickListener { picker.launch("image/*") }
         binding.btnEnhance.setOnClickListener { enhanceSelected() }
         binding.btnSave.setOnClickListener { saveEnhanced() }
     }
@@ -64,7 +66,10 @@ class ImageEnhancerFragment : Fragment() {
         selectedUri = uri
         enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
         enhancedBitmap = null
+        binding.emptyGuide.isVisible = false
+        binding.imagePreview.isVisible = true
         binding.imagePreview.setImageURI(uri)
+        binding.tvStatus.isVisible = true
         binding.tvStatus.setText(R.string.image_enhancer_ready)
         binding.btnEnhance.isEnabled = true
         binding.btnSave.isEnabled = false
@@ -86,6 +91,7 @@ class ImageEnhancerFragment : Fragment() {
                 enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
                 enhancedBitmap = bitmap
                 binding.imagePreview.setImageBitmap(bitmap)
+                binding.tvStatus.isVisible = true
                 binding.tvStatus.setText(R.string.image_enhancer_done)
                 binding.btnSave.isEnabled = true
             }.onFailure {

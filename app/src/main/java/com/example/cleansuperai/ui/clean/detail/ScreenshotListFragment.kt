@@ -4,7 +4,6 @@ import android.app.Activity
 import android.app.AlertDialog
 import android.os.Build
 import android.os.Bundle
-import android.text.format.DateFormat
 import android.text.format.Formatter
 import android.view.LayoutInflater
 import android.view.View
@@ -18,13 +17,12 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.cleansuperai.R
 import com.example.cleansuperai.data.model.ScreenshotItem
 import com.example.cleansuperai.databinding.FragmentMediaListBinding
 import com.example.cleansuperai.ui.common.MediaActions
 import kotlinx.coroutines.launch
-import java.util.Date
 
 class ScreenshotListFragment : Fragment() {
     private var _binding: FragmentMediaListBinding? = null
@@ -61,14 +59,13 @@ class ScreenshotListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.tvTitle.setText(R.string.screenshot_detail_title)
-        binding.tvSubtitle.setText(R.string.screenshot_detail_subtitle)
         binding.tvNote.text = getString(R.string.selected_count_format, 0)
         binding.actionContainer.isVisible = true
         binding.btnSecondaryAction.setText(R.string.select_all_action)
         binding.btnPrimaryAction.setText(R.string.delete_selected_action)
         binding.btnSecondaryAction.setOnClickListener { toggleSelectAll() }
         binding.btnPrimaryAction.setOnClickListener { confirmDeleteSelected() }
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), gridSpanCount())
         binding.recyclerView.adapter = adapter
         collectUiState()
         viewModel.load()
@@ -95,11 +92,8 @@ class ScreenshotListFragment : Fragment() {
                 stableId = item.id,
                 thumbnailUri = item.contentUri,
                 title = item.displayName,
-                metaPrimary = getString(R.string.media_item_bucket_format, item.bucketName),
-                metaSecondary = getString(
-                    R.string.media_item_date_format,
-                    DateFormat.format("yyyy-MM-dd HH:mm", Date(item.dateModifiedMs)).toString(),
-                ),
+                metaPrimary = "",
+                metaSecondary = "",
                 sizeText = Formatter.formatFileSize(requireContext(), item.sizeBytes),
                 isSelectable = true,
                 isSelected = selectedIds.contains(item.id),
@@ -189,4 +183,6 @@ class ScreenshotListFragment : Fragment() {
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
     }
+
+    private fun gridSpanCount(): Int = if (resources.configuration.screenWidthDp >= 430) 4 else 3
 }

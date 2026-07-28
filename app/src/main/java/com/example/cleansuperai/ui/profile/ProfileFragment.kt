@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.cleansuperai.MainActivity
 import com.example.cleansuperai.R
 import com.example.cleansuperai.databinding.FragmentProfileBinding
 import com.example.cleansuperai.databinding.ViewToolItemBinding
@@ -31,6 +32,15 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
+
+        configureRow(
+            binding.rowLanguage,
+            R.drawable.ic_flag,
+            R.string.settings_language_title,
+            R.string.settings_language_subtitle,
+        ) {
+            (activity as? MainActivity)?.openLanguageSettings()
+        }
 
         configureRow(
             binding.rowAbout,
@@ -59,6 +69,15 @@ class ProfileFragment : Fragment() {
             R.string.settings_clear_cache_title,
             R.string.settings_clear_cache_subtitle,
         ) { confirmClearCache() }
+
+        renderLanguageSummary()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (_binding != null) {
+            renderLanguageSummary()
+        }
     }
 
     override fun onDestroyView() {
@@ -160,5 +179,9 @@ class ProfileFragment : Fragment() {
 
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun renderLanguageSummary() {
+        binding.rowLanguage.tvToolSubtitle.text = AppLanguage.currentSelectionSummary(requireContext())
     }
 }

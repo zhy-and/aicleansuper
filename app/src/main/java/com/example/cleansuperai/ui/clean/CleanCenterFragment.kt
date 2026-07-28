@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.viewModels
@@ -114,9 +115,11 @@ class CleanCenterFragment : Fragment() {
     }
 
     private fun render(state: CleanCenterUiState) {
-        binding.progressBar.progress = if (state.isLoading) 45 else if (state.summary != null) 100 else 0
+        binding.progressBar.isVisible = state.isLoading
+        binding.progressBar.progress = if (state.isLoading) 45 else 0
 
         if (!state.hasPermission) {
+            binding.tvLoadedHint.isVisible = true
             binding.btnGrantOrRefresh.isEnabled = true
             binding.btnGrantOrRefresh.setText(R.string.permission_action_label)
             binding.tvReclaimSummary.setText(R.string.clean_permission_title)
@@ -136,10 +139,12 @@ class CleanCenterFragment : Fragment() {
         binding.btnGrantOrRefresh.isEnabled = !state.isLoading
 
         if (state.isLoading) {
+            binding.tvLoadedHint.isVisible = true
             binding.tvLoadedHint.setText(R.string.clean_loading_hint)
         } else if (state.summary != null) {
             renderSummary(state.summary)
         } else {
+            binding.tvLoadedHint.isVisible = true
             binding.tvLoadedHint.text = state.errorMessage ?: getString(R.string.clean_empty_hint)
         }
     }
@@ -151,7 +156,7 @@ class CleanCenterFragment : Fragment() {
         val largeVideoBytesText = Formatter.formatFileSize(context, summary.largeVideoBytes)
 
         binding.tvReclaimSummary.text = getString(R.string.clean_reclaim_summary_format, reclaimText)
-        binding.tvLoadedHint.setText(R.string.clean_loaded_hint)
+        binding.tvLoadedHint.isVisible = false
         binding.tvScreenshotCount.text = getString(R.string.count_image_format, summary.screenshotCount)
         binding.tvLargeVideoCount.text = getString(R.string.count_video_format, summary.largeVideoCount)
         binding.tvSimilarCount.text = getString(R.string.feature_similar_space_format, summary.similarGroupCount)

@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Base.Theme.Cleansuperai" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Cleansuperai" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowBackground">@color/bg_primary</item>
@@ -16,7 +16,7 @@
 
     <style name="Theme.Cleansuperai" parent="Base.Theme.Cleansuperai" />
 
-    <style name="Theme.Cleansuperai.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Cleansuperai.Splash" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowBackground">@color/bg_primary</item>
@@ -26,7 +26,7 @@
     <!-- Bottom navigation active indicator -->
     <style name="Widget.Cleansuperai.BottomNavigationView.ActiveIndicator"
         parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@android:color/transparent</item>
+        <item name="android:color">@color/accent_primary_soft</item>
     </style>
 
     <!-- Text appearances -->
@@ -68,9 +68,9 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:minHeight">56dp</item>
-        <item name="android:paddingHorizontal">24dp</item>
-        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="cornerRadius">14dp</item>
         <item name="elevation">0dp</item>
     </style>
 
@@ -81,9 +81,11 @@
         <item name="android:backgroundTint">@null</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:minHeight">52dp</item>
-        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="cornerRadius">14dp</item>
         <item name="elevation">0dp</item>
     </style>
 
@@ -94,9 +96,11 @@
         <item name="android:backgroundTint">@null</item>
         <item name="android:textColor">@color/danger</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:minHeight">52dp</item>
-        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="cornerRadius">14dp</item>
         <item name="elevation">0dp</item>
     </style>
 

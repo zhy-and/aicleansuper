@@ -88,8 +88,8 @@ class ContactsCleanupFragment : Fragment() {
             binding.tvPermissionTitle.setText(R.string.contacts_permission_title)
             binding.tvPermissionBody.setText(R.string.contacts_permission_body)
             binding.btnGrantOrRefresh.setText(R.string.contacts_load_action)
-            binding.tvDuplicateCount.setText(R.string.count_placeholder)
-            binding.tvEmptyCount.setText(R.string.count_placeholder)
+            binding.tvDuplicateCount.text = "—"
+            binding.tvEmptyCount.text = "—"
             binding.btnDeleteEmpty.isEnabled = false
             adapter.submitList(emptyList())
             binding.emptyContainer.isVisible = false
@@ -103,21 +103,15 @@ class ContactsCleanupFragment : Fragment() {
 
         val summary = state.summary
         if (summary == null) {
-            binding.tvPermissionTitle.setText(R.string.contacts_page_title)
-            binding.tvPermissionBody.text = state.errorMessage ?: getString(R.string.clean_loading_hint)
+            binding.tvPermissionTitle.setText(R.string.contacts_scan_title)
+            binding.tvPermissionBody.text = state.errorMessage ?: getString(R.string.contacts_scan_body)
             return
         }
 
-        binding.tvPermissionTitle.setText(R.string.contacts_page_title)
-        binding.tvPermissionBody.setText(R.string.contacts_page_subtitle)
-        binding.tvDuplicateCount.text = getString(
-            R.string.contacts_duplicate_count_format,
-            summary.duplicateGroups.size,
-        )
-        binding.tvEmptyCount.text = getString(
-            R.string.contacts_empty_count_format,
-            summary.emptyContacts.size,
-        )
+        binding.tvPermissionTitle.setText(R.string.contacts_scan_title)
+        binding.tvPermissionBody.setText(R.string.contacts_scan_body)
+        binding.tvDuplicateCount.text = summary.duplicateGroups.size.toString()
+        binding.tvEmptyCount.text = summary.emptyContacts.size.toString()
         binding.btnDeleteEmpty.isEnabled = summary.emptyContacts.isNotEmpty()
         adapter.submitList(summary.duplicateGroups)
         binding.emptyContainer.isVisible = summary.duplicateGroups.isEmpty()

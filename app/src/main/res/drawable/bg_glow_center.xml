@@ -7,7 +7,7 @@
                 android:gradientRadius="240dp"
                 android:centerX="50%"
                 android:centerY="50%"
-                android:startColor="@color/accent_secondary_soft"
+                android:startColor="#66E8F3ED"
                 android:endColor="@android:color/transparent" />
         </shape>
     </item>
