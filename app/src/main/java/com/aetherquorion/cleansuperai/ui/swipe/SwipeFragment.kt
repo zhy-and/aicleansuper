@@ -130,8 +130,9 @@ class SwipeFragment : Fragment() {
     }
 
     private fun openMonth(month: MediaMonth) {
-        parentFragmentManager.commit {
-            replace(R.id.fragmentContainer, PhotoDetailFragment.newInstance(month))
+        val fragment = PhotoDetailFragment.newInstance(month)
+        (activity as? MainActivity)?.openDetail(fragment, "photo_detail") ?: parentFragmentManager.commit {
+            replace(R.id.fragmentContainer, fragment, "photo_detail")
             addToBackStack("photo_detail")
         }
     }

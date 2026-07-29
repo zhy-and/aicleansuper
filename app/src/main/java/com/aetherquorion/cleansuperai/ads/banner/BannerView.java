@@ -65,7 +65,7 @@ public class BannerView extends FrameLayout {
     private void applyStyles() {
         if (styles == null) return;
         Drawable mainBackground = styles.getMainBackgroundColor();
-        if (mainBackground != null) {
+        if (mainBackground != null && background != null) {
             background.setBackground(mainBackground);
         }
         Typeface primary = styles.getPrimaryTextTypeface();
@@ -95,9 +95,8 @@ public class BannerView extends FrameLayout {
         if (nativeAdView == null) {
             bindViews();
         }
-        if (nativeAdView == null || nativeAd == null) {
-            return;
-        }
+        if (nativeAdView == null || nativeAd == null) return;
+
         this.nativeAd = nativeAd;
         String store = nativeAd.getStore();
         String advertiser = nativeAd.getAdvertiser();
@@ -169,8 +168,13 @@ public class BannerView extends FrameLayout {
         }
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(templateType, this);
-        // Programmatic construction (new BannerView(...)) never calls onFinishInflate(),
-        // so bind child views immediately after inflate.
+        bindViews();
+        applyStyles();
+    }
+
+    @Override
+    public void onFinishInflate() {
+        super.onFinishInflate();
         bindViews();
     }
 
@@ -188,11 +192,5 @@ public class BannerView extends FrameLayout {
         callToActionView = findViewById(R.id.cta);
         mediaView = findViewById(R.id.media_view);
         background = findViewById(R.id.background);
-    }
-
-    @Override
-    public void onFinishInflate() {
-        super.onFinishInflate();
-        bindViews();
     }
 }

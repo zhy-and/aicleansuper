@@ -25,21 +25,37 @@ import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_ST
 import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
 import com.aetherquorion.cleansuperai.ads.employment.bottomTabSwitchInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCenterInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCenterNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.compressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.contactsInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.contactsNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detAllInter
+import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.homeHf
 import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.homeTabBanner
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepHot
+import com.aetherquorion.cleansuperai.ads.employment.largeVideoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.largeVideoNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.languageListBanner
 import com.aetherquorion.cleansuperai.ads.employment.languageTranslateCy
 import com.aetherquorion.cleansuperai.ads.employment.permissionNative
 import com.aetherquorion.cleansuperai.ads.employment.qufengTabInter
+import com.aetherquorion.cleansuperai.ads.employment.screenshotListInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.screenshotListNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.settingInter
+import com.aetherquorion.cleansuperai.ads.employment.settingNative
+import com.aetherquorion.cleansuperai.ads.employment.similarImagesInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.similarImagesNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeDetailInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeDetailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
@@ -155,22 +171,32 @@ class LoadManagerTools {
             MMKV.defaultMMKV().getString(DATA_CONSTANT_AD_DATA, ""),
             AdaraImportBean::class.java,
         ) ?: return null
-        return bean.gtccxhqbvngsib?.tkronmqm?.jakvynjmamdu?.byvc
+        return bean.pzdyeqenjrku
+            ?.hktkevvwwbw
+            ?.hdvrhqxtjsr
+            ?.ntpwxttl
+            ?.xjcchmpevr
+            ?.udjpjamfklmglw
+            ?.lcpakw
     }
 
     private fun handleConfigPlace(bean: AdPlaceBean) {
         interspaceStudyHandlerData(bean)
-        when (bean.xvamby) {
-            interspaceStudyKepCold(), interspaceStudyKepHot() -> if (!TextUtils.isEmpty(bean.xchh)) interspaceStudyKpAdsId = bean.xchh
+        when (bean.vlthm) {
+            interspaceStudyKepCold(), interspaceStudyKepHot() -> if (!TextUtils.isEmpty(bean.aaojq)) interspaceStudyKpAdsId = bean.aaojq
             homeNativeAd(), swipeNativeAd(), compressNativeAd(), toolsNativeAd(), detailNativeAd(),
+            swipeDetailNativeAd(), cleanCenterNativeAd(), contactsNativeAd(), largeVideoNativeAd(),
+            similarImagesNativeAd(), screenshotListNativeAd(), duplicateVideoNativeAd(), settingNative(),
             languageListBanner(), permissionNative() -> {
-                if (!TextUtils.isEmpty(bean.xchh)) bannerSpecialToTransAdsId = bean.xchh
+                if (!TextUtils.isEmpty(bean.aaojq)) bannerSpecialToTransAdsId = bean.aaojq
             }
             homeInterstitialAd(), bottomTabSwitchInterstitialAd(), swipeInterstitialAd(), compressInterstitialAd(),
-            toolsInterstitialAd(), detailInterstitialAd(), languageTranslateCy(), detAllInter(), qufengTabInter() -> {
-                if (!TextUtils.isEmpty(bean.xchh)) interSpecialToTransAdsId = bean.xchh
+            toolsInterstitialAd(), detailInterstitialAd(), swipeDetailInterstitialAd(), cleanCenterInterstitialAd(),
+            contactsInterstitialAd(), largeVideoInterstitialAd(), similarImagesInterstitialAd(),
+            screenshotListInterstitialAd(), duplicateVideoInterstitialAd(), settingInter(), backSpecialToCy(),
+            languageTranslateCy(), detAllInter(), qufengTabInter() -> {
+                if (!TextUtils.isEmpty(bean.aaojq)) interSpecialToTransAdsId = bean.aaojq
             }
-            homeHf() -> if (!TextUtils.isEmpty(bean.xchh)) hfAdID = bean.xchh
         }
     }
 
@@ -342,9 +368,9 @@ class LoadManagerTools {
     }
 
     private fun interspaceStudyHandlerData(bean: AdPlaceBean) {
-        MMKV.mmkvWithID("enmusic").putBoolean("$DATA_CONSTANT_STU_NET_SHOW_ST-${bean.xvamby}", "0" == bean.ivbjpa)
-        MMKV.mmkvWithID("enmusic").putInt("$DATA_CONSTANT_STU_NET_CLICK_CT-${bean.xvamby}", bean.xanpxg)
-        MMKV.mmkvWithID("enmusic").putInt("$DATA_CONSTANT_STU_NET_SHOW_CT-${bean.xvamby}", bean.ahgkh)
+        MMKV.mmkvWithID("enmusic").putBoolean("$DATA_CONSTANT_STU_NET_SHOW_ST-${bean.vlthm}", "0" == bean.dhdeit)
+        MMKV.mmkvWithID("enmusic").putInt("$DATA_CONSTANT_STU_NET_CLICK_CT-${bean.vlthm}", bean.jxlwhu)
+        MMKV.mmkvWithID("enmusic").putInt("$DATA_CONSTANT_STU_NET_SHOW_CT-${bean.vlthm}", bean.dgsup)
     }
 
     private fun interspaceStudyShowKpAds(activity: Activity?) {
