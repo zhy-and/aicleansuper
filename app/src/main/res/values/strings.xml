@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">CleanSuper AI</string>
-    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="nav_home">Home</string>
     <string name="nav_swipe">Swipe</string>
     <string name="nav_compress">Compress</string>
