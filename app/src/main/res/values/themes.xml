@@ -16,6 +16,16 @@
 
     <style name="Theme.Cleansuperai" parent="Base.Theme.Cleansuperai" />
 
+    <style name="Theme.Cleansuperai.VideoPreview" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.Cleansuperai.Splash" parent="Base.Theme.Cleansuperai">
         <item name="android:windowBackground">@color/bg_primary</item>
         <item name="android:statusBarColor">@android:color/transparent</item>

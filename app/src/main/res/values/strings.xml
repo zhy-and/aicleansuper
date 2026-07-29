@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">CleanSuper AI</string>
-    <!-- Google 测试 App ID，上线前请替换为正式 ID -->
     <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="nav_home">Home</string>
     <string name="nav_swipe">Swipe</string>
@@ -75,7 +74,7 @@
     <string name="profile_page_subtitle">Manage your membership, settings, and purchases here.</string>
     <string name="profile_page_badge">Premium</string>
     <string name="profile_hero_title">Upgrade to Pro for the complete cleanup experience</string>
-    <string name="profile_hero_body">Pro includes no ads, unlimited batch actions, Private Vault, and better similar photo detection.</string>
+    <string name="profile_hero_body">Pro includes unlimited batch actions, Private Vault, and better similar photo detection.</string>
     <string name="profile_plan_status_free">Current plan: Free</string>
     <string name="profile_plan_status_pro">Pro trial is active</string>
     <string name="profile_most_popular">Most Popular</string>
@@ -223,7 +222,7 @@
     <string name="grant_access">Grant Access</string>
     <string name="go_to_settings">Go To Settings</string>
     <string name="permission_home_title">Your photos are locked</string>
-    <string name="permission_home_body">Allow photo and video access to scan your library securely on this device.</string>
+    <string name="permission_home_body">Allow photo, video, and notification access to scan your library securely on this device and send cleanup reminders.</string>
     <string name="scan_summary_format">Scanned %1$d items · %2$s can be reviewed</string>
     <string name="scan_running_english">Scanning your library…</string>
     <string name="scan_ready_english">Your library is ready</string>
@@ -278,6 +277,9 @@
     <string name="preview_compressed_video_label">After · Compressed preview</string>
     <string name="preview_enhanced_photo_label">After · Enhanced preview</string>
     <string name="selected_video_preview">Selected video preview</string>
+    <string name="play_video_preview">Play video preview</string>
+    <string name="video_preview_title">Video preview</string>
+    <string name="video_preview_failed">This video could not be played.</string>
     <string name="video_compression_saved">Compressed video saved to Movies/CleanSuperAI.</string>
     <string name="video_compression_failed">Could not compress this video.</string>
     <string name="video_compression_preparing">Preparing video compression…</string>
@@ -399,7 +401,7 @@
     <string name="settings_about_message_format">Clean Super AI\nVersion %1$s (%2$d)</string>
     <string name="settings_privacy_policy_title">Privacy Policy</string>
     <string name="settings_privacy_policy_subtitle">How we handle your data</string>
-    <string name="settings_privacy_policy_body">All media scanning and cleanup run locally on your device. We do not upload your photos, videos, or contacts to our servers. Optional analytics or ads (if enabled later) will follow store policies. You can revoke media access anytime in system settings.</string>
+    <string name="settings_privacy_policy_body">All media scanning and cleanup run locally on your device. We do not upload your photos, videos, or contacts to our servers. Optional analytics (if enabled later) will follow store policies. You can revoke media access anytime in system settings.</string>
     <string name="settings_clear_cache_title">Clear Cache</string>
     <string name="settings_clear_cache_subtitle">Free temporary app storage</string>
     <string name="settings_clear_cache_confirm">Clear temporary cache files? Your photos and settings will not be deleted.</string>

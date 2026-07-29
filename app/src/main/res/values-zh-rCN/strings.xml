@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CleanSuper AI</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="nav_home">首页</string>
     <string name="nav_swipe">滑动清理</string>
     <string name="nav_compress">压缩</string>
@@ -74,7 +75,7 @@
     <string name="profile_page_subtitle">在这里管理会员、设置与购买。</string>
     <string name="profile_page_badge">高级版</string>
     <string name="profile_hero_title">升级 Pro，获得完整体验</string>
-    <string name="profile_hero_body">Pro 包含无广告、无限批量操作、隐私空间以及更强的相似照片识别。</string>
+    <string name="profile_hero_body">Pro 包含无限批量操作、隐私空间以及更强的相似照片识别。</string>
     <string name="profile_plan_status_free">当前方案：免费版</string>
     <string name="profile_plan_status_pro">Pro 试用已开启</string>
     <string name="profile_most_popular">最受欢迎</string>
@@ -208,13 +209,13 @@
     <string name="profile_plan_free">免费版</string>
     <string name="profile_plan_pro">Pro</string>
     <string name="profile_plan_body_free">支持扫描、查看结果与基础清理。</string>
-    <string name="profile_plan_body_pro">解锁高级清理、隐私空间、无限操作与无广告体验。</string>
+    <string name="profile_plan_body_pro">解锁高级清理、隐私空间与无限操作。</string>
     <string name="profile_upgrade_action">切换到 Pro 试用</string>
     <string name="profile_restore_action">返回免费版</string>
     <string name="profile_upgrade_done">已切换到 Pro 试用。</string>
     <string name="profile_restore_done">已返回免费版。</string>
     <string name="profile_benefits_title">Pro 权益</string>
-    <string name="profile_benefits_body">1. 高级相似照片识别\n2. 无限批量清理\n3. 高级大视频筛选\n4. 增强联系人清理\n5. 隐私空间\n6. 无广告界面</string>
+    <string name="profile_benefits_body">1. 高级相似照片识别\n2. 无限批量清理\n3. 高级大视频筛选\n4. 增强联系人清理\n5. 隐私空间</string>
     <string name="detail_page_badge">详情</string>
     <string name="detail_page_hint">清理或保留前，请先核对候选内容。</string>
     <string name="premium">高级版</string>
@@ -222,7 +223,7 @@
     <string name="grant_access">授予权限</string>
     <string name="go_to_settings">前往设置</string>
     <string name="permission_home_title">照片访问已锁定</string>
-    <string name="permission_home_body">请允许访问照片和视频，以便在本机安全扫描媒体库。</string>
+    <string name="permission_home_body">请允许访问照片、视频和通知权限，以便在本机安全扫描媒体库并接收清理提醒。</string>
     <string name="scan_summary_format">已扫描 %1$d 项 · 可检查 %2$s</string>
     <string name="scan_running_english">正在扫描媒体库…</string>
     <string name="scan_ready_english">媒体库已就绪</string>
@@ -273,6 +274,9 @@
     <string name="preview_compressed_video_label">处理后 · 压缩预览</string>
     <string name="preview_enhanced_photo_label">处理后 · 增强预览</string>
     <string name="selected_video_preview">所选视频预览</string>
+    <string name="play_video_preview">播放视频预览</string>
+    <string name="video_preview_title">视频预览</string>
+    <string name="video_preview_failed">无法播放此视频。</string>
     <string name="video_compression_saved">压缩视频已保存到 Movies/CleanSuperAI。</string>
     <string name="video_compression_failed">无法压缩此视频。</string>
     <string name="video_compression_preparing">正在准备视频压缩…</string>
@@ -398,7 +402,7 @@
     <string name="settings_about_message_format">Clean Super AI\n版本 %1$s (%2$d)</string>
     <string name="settings_privacy_policy_title">隐私政策</string>
     <string name="settings_privacy_policy_subtitle">我们如何处理你的数据</string>
-    <string name="settings_privacy_policy_body">所有媒体扫描与清理均在本地设备完成。我们不会上传你的照片、视频或联系人。若后续启用可选分析或广告，将遵循应用商店政策。你可随时在系统设置中撤销媒体访问权限。</string>
+    <string name="settings_privacy_policy_body">所有媒体扫描与清理均在本地设备完成。我们不会上传你的照片、视频或联系人。若后续启用可选分析，将遵循应用商店政策。你可随时在系统设置中撤销媒体访问权限。</string>
     <string name="settings_clear_cache_title">清除缓存</string>
     <string name="settings_clear_cache_subtitle">释放应用临时存储</string>
     <string name="settings_clear_cache_confirm">清除临时缓存文件？不会删除你的照片与设置。</string>
@@ -410,5 +414,4 @@
     <string name="month_photo_count_format">%1$d 张照片</string>
     <string name="review_bin_pending_format">待审箱中有 %1$d 张照片</string>
     <string name="media_bucket_video">视频</string>
-    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
 </resources>

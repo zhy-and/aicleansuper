@@ -187,7 +187,7 @@
                             android:layout_width="164dp"
                             android:layout_height="164dp">
 
-                            <com.example.cleansuperai.widget.CircularScanView
+                            <com.aetherquorion.cleansuperai.widget.CircularScanView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 app:csvIndeterminate="true"
@@ -367,7 +367,7 @@
                                     android:layout_height="match_parent"
                                     android:background="@drawable/bg_scan_ring_backplate" />
 
-                                <com.example.cleansuperai.widget.CircularScanView
+                                <com.aetherquorion.cleansuperai.widget.CircularScanView
                                     android:id="@+id/scanRing"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"

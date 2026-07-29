@@ -136,11 +136,37 @@
                     app:cardElevation="0dp"
                     app:strokeWidth="0dp">
 
-                    <VideoView
+                    <FrameLayout
                         android:id="@+id/videoPreviewBefore"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/selected_video_preview" />
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/imageVideoPreviewBefore"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/selected_video_preview"
+                            android:scaleType="centerCrop" />
+
+                        <FrameLayout
+                            android:id="@+id/btnPlayBefore"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_icon_button"
+                            android:contentDescription="@string/play_video_preview">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_play"
+                                app:tint="@color/text_primary" />
+                        </FrameLayout>
+                    </FrameLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <TextView
@@ -165,11 +191,37 @@
                     app:cardElevation="0dp"
                     app:strokeWidth="0dp">
 
-                    <VideoView
+                    <FrameLayout
                         android:id="@+id/videoPreviewAfter"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/selected_video_preview" />
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/imageVideoPreviewAfter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/selected_video_preview"
+                            android:scaleType="centerCrop" />
+
+                        <FrameLayout
+                            android:id="@+id/btnPlayAfter"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_icon_button"
+                            android:contentDescription="@string/play_video_preview">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_play"
+                                app:tint="@color/text_primary" />
+                        </FrameLayout>
+                    </FrameLayout>
                 </com.google.android.material.card.MaterialCardView>
 
                 <TextView

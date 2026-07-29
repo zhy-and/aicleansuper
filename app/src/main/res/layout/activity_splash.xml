@@ -22,7 +22,7 @@
             android:layout_width="148dp"
             android:layout_height="148dp">
 
-            <com.example.cleansuperai.widget.CircularScanView
+            <com.aetherquorion.cleansuperai.widget.CircularScanView
                 android:id="@+id/progressRing"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
