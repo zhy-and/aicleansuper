@@ -51,6 +51,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
+    <FrameLayout
+        android:id="@+id/inlineAdContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNote" />
+
     <LinearLayout
         android:id="@+id/actionContainer"
         android:layout_width="0dp"
@@ -92,7 +102,7 @@
         app:layout_constraintBottom_toTopOf="@id/actionContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvNote"
+        app:layout_constraintTop_toBottomOf="@id/inlineAdContainer"
         tools:itemCount="8"
         tools:listitem="@layout/item_media_cleanup" />
 
@@ -107,7 +117,7 @@
         app:layout_constraintBottom_toTopOf="@id/actionContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvNote">
+        app:layout_constraintTop_toBottomOf="@id/inlineAdContainer">
 
         <FrameLayout
             android:layout_width="72dp"

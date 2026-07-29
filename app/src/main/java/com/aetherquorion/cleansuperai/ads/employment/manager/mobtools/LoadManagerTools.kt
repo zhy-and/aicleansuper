@@ -39,14 +39,11 @@ import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.homeHf
 import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
-import com.aetherquorion.cleansuperai.ads.employment.homeTabBanner
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepHot
 import com.aetherquorion.cleansuperai.ads.employment.largeVideoInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.largeVideoNativeAd
-import com.aetherquorion.cleansuperai.ads.employment.languageListBanner
 import com.aetherquorion.cleansuperai.ads.employment.languageTranslateCy
-import com.aetherquorion.cleansuperai.ads.employment.permissionNative
 import com.aetherquorion.cleansuperai.ads.employment.qufengTabInter
 import com.aetherquorion.cleansuperai.ads.employment.screenshotListInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.screenshotListNativeAd
@@ -60,7 +57,6 @@ import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
-import com.aetherquorion.cleansuperai.ads.employment.zhuanTabInter
 import com.aetherquorion.cleansuperai.ads.employment.manager.NativeTools.createFaceListener
 import com.aetherquorion.cleansuperai.ads.employment.manager.start.StartViewRequestTools
 import com.aetherquorion.cleansuperai.ads.model.AdPlaceBean
@@ -82,18 +78,12 @@ import com.tencent.mmkv.MMKV
 import org.greenrobot.eventbus.EventBus
 
 class LoadManagerTools {
-    var nativeSpecialToTransOj: NativeAd? = null
-    private var nativeSpecialToLoading = false
     var interspaceStudyKpAdsId: String? = null
-    private var bannerSpecialToTransOj: NativeAd? = null
+    private val bannerAdsByPosition = mutableMapOf<Long, NativeAd>()
+    private val bannerAdUnitIdsByPosition = mutableMapOf<Long, String>()
+    private val bannerLoadingPositions = mutableSetOf<Long>()
     var interspaceStudyAdsPos: Long = -1
-    private var interspaceStudyAdsStatus = false
-    private var bannerCTM: Long = 0
     private var interspaceStudyInterCTM: Long = 0
-    private var nativeSpecialToCTM: Long = 0
-    private var nativeSpecialToLoadingSt = false
-    private var bannerSpecialToTransAdsId: String? = null
-    private var nativeSpecialToId: String? = null
     private var interSpecialToLoading = false
     private var interSpecialToTransAdsId: String? = null
     var hfAdID: String? = null
@@ -112,8 +102,8 @@ class LoadManagerTools {
     }
 
     fun interspaceStudyLoadDefaultNativeAds() {
-        if (!AnalysisDataUtil.interspaceStudyRules(homeTabBanner())) {
-            interspaceStudyLoadTransBanner(homeTabBanner())
+        if (!AnalysisDataUtil.interspaceStudyRules(homeNativeAd())) {
+            interspaceStudyLoadTransBanner(homeNativeAd())
         }
     }
 
@@ -122,9 +112,7 @@ class LoadManagerTools {
         if (AnalysisDataUtil.interspaceStudyRules(nativePos)) return null
         if (interspaceStudyInterIsShowStatus) return null
         interspaceStudyAdsPos = nativePos
-        bannerSpecialToTransOj?.let {
-            interspaceStudyAdsStatus = false
-            bannerSpecialToTransOj = null
+        bannerAdsByPosition.remove(nativePos)?.let {
             return it
         }
         return null
@@ -186,9 +174,10 @@ class LoadManagerTools {
             interspaceStudyKepCold(), interspaceStudyKepHot() -> if (!TextUtils.isEmpty(bean.aaojq)) interspaceStudyKpAdsId = bean.aaojq
             homeNativeAd(), swipeNativeAd(), compressNativeAd(), toolsNativeAd(), detailNativeAd(),
             swipeDetailNativeAd(), cleanCenterNativeAd(), contactsNativeAd(), largeVideoNativeAd(),
-            similarImagesNativeAd(), screenshotListNativeAd(), duplicateVideoNativeAd(), settingNative(),
-            languageListBanner(), permissionNative() -> {
-                if (!TextUtils.isEmpty(bean.aaojq)) bannerSpecialToTransAdsId = bean.aaojq
+            similarImagesNativeAd(), screenshotListNativeAd(), duplicateVideoNativeAd(), settingNative() -> {
+                if (!TextUtils.isEmpty(bean.aaojq)) {
+                    bannerAdUnitIdsByPosition[bean.vlthm] = bean.aaojq.orEmpty()
+                }
             }
             homeInterstitialAd(), bottomTabSwitchInterstitialAd(), swipeInterstitialAd(), compressInterstitialAd(),
             toolsInterstitialAd(), detailInterstitialAd(), swipeDetailInterstitialAd(), cleanCenterInterstitialAd(),
@@ -206,19 +195,17 @@ class LoadManagerTools {
     }
 
     fun interspaceStudyLoadTransBanner(showAdPosition: Long, resultAdLoadBack: ListenerTrans? = null) {
-        val nativePools = false
         try {
             var position = showAdPosition
-            var unitId = ""
-            if (nativeLoading(nativePools)) return
-            if (nativeCheckExists(nativePools)) {
+            if (bannerLoadingPositions.contains(position)) return
+            if (bannerAdsByPosition.containsKey(position)) {
                 resultAdLoadBack?.loadTransAdStatus(true)
                 return
             }
-            nativeSpecialToLoading = true
-            bannerSpecialToTransAdsId?.let { unitId = it }
+            bannerLoadingPositions.add(position)
+            val unitId = bannerAdUnitIdsByPosition[position].orEmpty()
             if (TextUtils.isEmpty(unitId)) {
-                notifyNative(nativePools, false)
+                bannerLoadingPositions.remove(position)
                 return
             }
             val context = CleanSuperAiApp.app ?: return
@@ -227,15 +214,15 @@ class LoadManagerTools {
                     nativeAd.setOnPaidEventListener {
                         createFaceListener(it, "Native", unitId, position)
                     }
-                    bannerSpecialToTransOj = nativeAd
-                    bannerCTM = System.currentTimeMillis()
-                    notifyNative(nativePools, false)
+                    bannerAdsByPosition.remove(position)?.destroy()
+                    bannerAdsByPosition[position] = nativeAd
+                    bannerLoadingPositions.remove(position)
                     resultAdLoadBack?.loadTransAdStatus(true)
                 }
                 .withAdListener(object : AdListener() {
                     var clicked = false
                     override fun onAdFailedToLoad(adError: LoadAdError) {
-                        notifyNative(nativePools, false)
+                        bannerLoadingPositions.remove(position)
                         resultAdLoadBack?.loadTransAdStatus(false)
                     }
 
@@ -257,7 +244,7 @@ class LoadManagerTools {
                 .build()
             loader.loadAd(AdRequest.Builder().build())
         } catch (e: Exception) {
-            notifyNative(nativePools, false)
+            bannerLoadingPositions.remove(showAdPosition)
             e.printStackTrace()
         }
     }
@@ -286,7 +273,6 @@ class LoadManagerTools {
 
     fun interspaceStudyLoadDefaultCyAds(viewSic: Activity?) {
         viewSic ?: return
-        if (AnalysisDataUtil.interCanInterceptor()) initCurrentLoadCy(zhuanTabInter())
         if (!AnalysisDataUtil.interspaceStudyRules(backSpecialToCy())) initCurrentLoadCy(backSpecialToCy())
     }
 
@@ -447,18 +433,6 @@ class LoadManagerTools {
         interstitialAd?.setOnPaidEventListener {
             createFaceListener(it, "Interstitial", interstitialAd.adUnitId, pos)
         }
-    }
-
-    private fun nativeCheckExists(pools: Boolean): Boolean {
-        return if (pools) nativeSpecialToTransOj != null else bannerSpecialToTransOj != null
-    }
-
-    private fun nativeLoading(pools: Boolean): Boolean {
-        return if (pools) nativeSpecialToLoadingSt else nativeSpecialToLoading
-    }
-
-    private fun notifyNative(pools: Boolean, status: Boolean) {
-        if (pools) nativeSpecialToLoadingSt = status else nativeSpecialToLoading = status
     }
 
     companion object {

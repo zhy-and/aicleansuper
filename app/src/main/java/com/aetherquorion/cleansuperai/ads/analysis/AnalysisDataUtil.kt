@@ -25,9 +25,7 @@ import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepHot
 import com.aetherquorion.cleansuperai.ads.employment.largeVideoInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.largeVideoNativeAd
-import com.aetherquorion.cleansuperai.ads.employment.languageListBanner
 import com.aetherquorion.cleansuperai.ads.employment.languageTranslateCy
-import com.aetherquorion.cleansuperai.ads.employment.permissionNative
 import com.aetherquorion.cleansuperai.ads.employment.qufengTabInter
 import com.aetherquorion.cleansuperai.ads.employment.screenshotListInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.screenshotListNativeAd
@@ -176,8 +174,6 @@ object AnalysisDataUtil {
             settingNative() -> "settingNative pos :"
             settingInter() -> "settingInter pos :"
             backSpecialToCy() -> "backSpecialToCy pos :"
-            languageListBanner() -> "languageListBanner interspaceStudy pos :"
-            permissionNative() -> "txtBanner interspaceStudy pos :"
             languageTranslateCy() -> "languageTranslateCy interspaceStudy pos :"
             qufengTabInter() -> "historyCy interspaceStudy pos :"
             detAllInter() -> "resTranslateCy interspaceStudy pos :"

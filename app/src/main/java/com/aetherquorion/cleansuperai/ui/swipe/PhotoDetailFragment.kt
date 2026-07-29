@@ -17,11 +17,19 @@ import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentPhotoDetailBinding
 import com.aetherquorion.cleansuperai.databinding.ItemTrashBinPhotoBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kotlin.math.abs
 
 class PhotoDetailFragment : Fragment() {
@@ -33,6 +41,8 @@ class PhotoDetailFragment : Fragment() {
     private var photoUris: MutableList<Uri> = mutableListOf()
     private var monthPhotoUriStrings: Set<String> = emptySet()
     private var pendingDeleteUris: List<Uri> = emptyList()
+    private var trashEntries: List<TrashPhotoItem> = emptyList()
+    private var trashLoadJob: Job? = null
 
     private val trashAdapter = TrashBinAdapter(::restoreTrashItem)
     private var dragStartX = 0f
@@ -76,13 +86,17 @@ class PhotoDetailFragment : Fragment() {
         binding.btnClearPending.setOnClickListener { deletePendingPhotos() }
 
         binding.recyclerTrashBin.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.recyclerTrashBin.setHasFixedSize(true)
+        binding.recyclerTrashBin.itemAnimator = null
         binding.recyclerTrashBin.adapter = trashAdapter
         attachSwipeGesture()
         render()
+        loadTrashBinSummaryAsync()
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
+        trashLoadJob?.cancel()
         _binding = null
     }
 
@@ -91,6 +105,8 @@ class PhotoDetailFragment : Fragment() {
             if (photoUris.isEmpty()) return@setOnTouchListener false
             when (event.actionMasked) {
                 MotionEvent.ACTION_DOWN -> {
+                    binding.cardPhoto.animate().cancel()
+                    binding.cardPhoto.setLayerType(View.LAYER_TYPE_HARDWARE, null)
                     dragStartX = event.rawX
                     dragActive = true
                     true
@@ -162,6 +178,9 @@ class PhotoDetailFragment : Fragment() {
             .scaleX(1f)
             .scaleY(1f)
             .alpha(1f)
+            .withEndAction {
+                binding.cardPhoto.setLayerType(View.LAYER_TYPE_NONE, null)
+            }
         if (immediate) {
             animator.setDuration(0L)
         } else {
@@ -182,6 +201,10 @@ class PhotoDetailFragment : Fragment() {
             reviewStore.markKept(uri)
         }
         photoUris.removeAt(0)
+        if (commitToBin) {
+            addPendingTrashEntry(uri)
+            loadTrashBinSummaryAsync()
+        }
         render()
     }
 
@@ -195,15 +218,19 @@ class PhotoDetailFragment : Fragment() {
         binding.btnMoveToBin.isVisible = currentUri != null
         binding.btnShare.isVisible = currentUri != null
         if (currentUri != null) {
-            binding.imagePhoto.setImageURI(currentUri)
+            binding.imagePhoto.load(currentUri) {
+                placeholder(R.drawable.ic_media_placeholder)
+                error(R.drawable.ic_media_placeholder)
+                crossfade(false)
+                size(1280)
+            }
         } else {
             binding.imagePhoto.setImageDrawable(null)
         }
         renderTrashBinSummary()
     }
 
-    private fun renderTrashBinSummary() {
-        val entries = loadTrashEntries()
+    private fun renderTrashBinSummary(entries: List<TrashPhotoItem> = trashEntries) {
         val count = entries.size
         binding.tvTrashCount.text = count.toString()
         binding.tvPending.text = getString(
@@ -223,8 +250,24 @@ class PhotoDetailFragment : Fragment() {
         trashAdapter.submit(entries)
     }
 
+    private fun addPendingTrashEntry(uri: Uri) {
+        if (trashEntries.any { it.uri == uri }) return
+        trashEntries = listOf(TrashPhotoItem(uri, 0L)) + trashEntries
+        renderTrashBinSummary()
+    }
+
+    private fun loadTrashBinSummaryAsync() {
+        trashLoadJob?.cancel()
+        trashLoadJob = viewLifecycleOwner.lifecycleScope.launch {
+            val entries = withContext(Dispatchers.IO) { loadTrashEntries() }
+            trashEntries = entries
+            renderTrashBinSummary()
+        }
+    }
+
     private fun openTrashBin() {
         renderTrashBinSummary()
+        loadTrashBinSummaryAsync()
         binding.trashOverlay.isVisible = true
     }
 
@@ -248,6 +291,7 @@ class PhotoDetailFragment : Fragment() {
 
     private fun restoreTrashItem(item: TrashPhotoItem) {
         reviewStore.restoreFromTrash(item.uri)
+        trashEntries = trashEntries.filterNot { it.uri == item.uri }
         if (item.uri.toString() in monthPhotoUriStrings && item.uri !in photoUris) {
             photoUris.add(0, item.uri)
         }
@@ -256,7 +300,7 @@ class PhotoDetailFragment : Fragment() {
     }
 
     private fun deletePendingPhotos() {
-        val entries = loadTrashEntries()
+        val entries = trashEntries
         if (entries.isEmpty()) return
         pendingDeleteUris = entries.map(TrashPhotoItem::uri)
 
@@ -264,24 +308,32 @@ class PhotoDetailFragment : Fragment() {
             val request = MediaStore.createDeleteRequest(requireContext().contentResolver, pendingDeleteUris)
             deleteLauncher.launch(IntentSenderRequest.Builder(request.intentSender).build())
         } else {
-            val deleted = pendingDeleteUris.sumOf { uri ->
-                runCatching { requireContext().contentResolver.delete(uri, null, null) }.getOrDefault(0)
-            }
-            if (deleted > 0) {
-                clearReviewBin()
-                Toast.makeText(
-                    requireContext(),
-                    getString(R.string.photos_deleted_format, deleted),
-                    Toast.LENGTH_SHORT,
-                ).show()
-            } else {
-                Toast.makeText(requireContext(), R.string.delete_photos_failed, Toast.LENGTH_SHORT).show()
+            viewLifecycleOwner.lifecycleScope.launch {
+                val deleted = withContext(Dispatchers.IO) {
+                    pendingDeleteUris.sumOf { uri ->
+                        runCatching {
+                            requireContext().contentResolver.delete(uri, null, null)
+                        }.getOrDefault(0)
+                    }
+                }
+                if (deleted > 0) {
+                    clearReviewBin()
+                    Toast.makeText(
+                        requireContext(),
+                        getString(R.string.photos_deleted_format, deleted),
+                        Toast.LENGTH_SHORT,
+                    ).show()
+                } else {
+                    Toast.makeText(requireContext(), R.string.delete_photos_failed, Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
 
     private fun clearReviewBin() {
-        reviewStore.clearDeleted(pendingDeleteUris)
+        val deletedUris = pendingDeleteUris.toSet()
+        reviewStore.clearDeleted(deletedUris)
+        trashEntries = trashEntries.filterNot { it.uri in deletedUris }
         pendingDeleteUris = emptyList()
         closeTrashBin()
         renderTrashBinSummary()
@@ -332,13 +384,13 @@ private data class TrashPhotoItem(
 
 private class TrashBinAdapter(
     private val onRestore: (TrashPhotoItem) -> Unit,
-) : RecyclerView.Adapter<TrashBinAdapter.TrashViewHolder>() {
-    private var items: List<TrashPhotoItem> = emptyList()
+) : ListAdapter<TrashPhotoItem, TrashBinAdapter.TrashViewHolder>(DiffCallback) {
 
-    fun submit(newItems: List<TrashPhotoItem>) {
-        items = newItems
-        notifyDataSetChanged()
+    init {
+        setHasStableIds(true)
     }
+
+    fun submit(newItems: List<TrashPhotoItem>) = submitList(newItems)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TrashViewHolder {
         val binding = ItemTrashBinPhotoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -346,19 +398,34 @@ private class TrashBinAdapter(
     }
 
     override fun onBindViewHolder(holder: TrashViewHolder, position: Int) {
-        holder.bind(items[position])
+        holder.bind(getItem(position))
     }
 
-    override fun getItemCount(): Int = items.size
+    override fun getItemId(position: Int): Long = getItem(position).uri.toString().hashCode().toLong()
 
     inner class TrashViewHolder(
         private val binding: ItemTrashBinPhotoBinding,
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: TrashPhotoItem) {
-            binding.imageThumb.setImageURI(item.uri)
+            binding.imageThumb.load(item.uri) {
+                placeholder(R.drawable.ic_media_placeholder)
+                error(R.drawable.ic_media_placeholder)
+                crossfade(false)
+                size(360)
+            }
             binding.tvSize.text = Formatter.formatShortFileSize(binding.root.context, item.sizeBytes)
             binding.btnRestore.setOnClickListener { onRestore(item) }
             binding.root.setOnClickListener { onRestore(item) }
+        }
+    }
+
+    private object DiffCallback : DiffUtil.ItemCallback<TrashPhotoItem>() {
+        override fun areItemsTheSame(oldItem: TrashPhotoItem, newItem: TrashPhotoItem): Boolean {
+            return oldItem.uri == newItem.uri
+        }
+
+        override fun areContentsTheSame(oldItem: TrashPhotoItem, newItem: TrashPhotoItem): Boolean {
+            return oldItem == newItem
         }
     }
 }
