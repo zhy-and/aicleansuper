@@ -53,6 +53,18 @@
     public static final android.os.Parcelable$Creator *;
 }
 
+# Strip Android Log calls from optimized release builds.
+-assumenosideeffects class android.util.Log {
+    public static int v(...);
+    public static int d(...);
+    public static int i(...);
+    public static int w(...);
+    public static int e(...);
+    public static int wtf(...);
+    public static int println(...);
+    public static java.lang.String getStackTraceString(java.lang.Throwable);
+}
+
 -keepclassmembers class * implements java.io.Serializable {
     static final long serialVersionUID;
     private static final java.io.ObjectStreamField[] serialPersistentFields;

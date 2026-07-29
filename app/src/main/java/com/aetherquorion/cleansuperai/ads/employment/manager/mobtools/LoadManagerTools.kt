@@ -410,12 +410,13 @@ class LoadManagerTools {
                 Log.e(TAG, "inter cache timeout ------" + AnalysisDataUtil.eventAds(recAds))
                 interspaceStudyInterOj = null
                 interspaceStudyInterCTM = 0
+                initCurrentLoadCy(recAds)
                 return
             }
             interspaceStudyInterIsShowStatus = true
+            interspaceStudyHandlerInter(ad, recAds)
             ad.show(context)
             Log.e(TAG, "inter showing current pos ===== " + AnalysisDataUtil.eventAds(recAds))
-            interspaceStudyHandlerInter(ad, recAds)
             interspaceStudyInterOj = null
         } else {
             Log.e(TAG, "inter cache no to load new  ===== " + AnalysisDataUtil.eventAds(recAds))
