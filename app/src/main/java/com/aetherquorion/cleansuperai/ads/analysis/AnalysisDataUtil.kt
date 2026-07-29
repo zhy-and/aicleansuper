@@ -19,6 +19,7 @@ import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detAllInter
 import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.homeHf
 import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
@@ -173,6 +174,7 @@ object AnalysisDataUtil {
             duplicateVideoInterstitialAd() -> "duplicateVideoInterstitialAd pos :"
             settingNative() -> "settingNative pos :"
             settingInter() -> "settingInter pos :"
+            homeHf() -> "homeHf pos :"
             backSpecialToCy() -> "backSpecialToCy pos :"
             languageTranslateCy() -> "languageTranslateCy interspaceStudy pos :"
             qufengTabInter() -> "historyCy interspaceStudy pos :"

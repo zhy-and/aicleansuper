@@ -4,6 +4,7 @@ import android.app.Activity
 import android.os.Handler
 import android.os.Looper
 import android.text.TextUtils
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import com.aetherquorion.cleansuperai.CleanSuperAiApp
@@ -93,6 +94,11 @@ class LoadManagerTools {
         bannerView ?: return
         val button = bannerView.findViewById<TextView>(R.id.cta)
         val position = interspaceStudyAdsPos
+        Log.e(
+            TAG,
+            " ad btn visble =====" + AnalysisDataUtil.eventAds(position) +
+                MMKV.defaultMMKV().getInt("$DATA_CONSTANT_STU_NET_BUT_ST-$position", 2),
+        )
         when (MMKV.defaultMMKV().getInt("$DATA_CONSTANT_STU_NET_BUT_ST-$position", 2)) {
             2 -> {
                 button.visibility = View.VISIBLE
@@ -103,31 +109,54 @@ class LoadManagerTools {
 
     fun interspaceStudyLoadDefaultNativeAds() {
         if (!AnalysisDataUtil.interspaceStudyRules(homeNativeAd())) {
+            Log.e(TAG, "default native to load ------" + AnalysisDataUtil.eventAds(homeNativeAd()))
             interspaceStudyLoadTransBanner(homeNativeAd())
+        } else {
+            Log.e(TAG, "default native limit ------" + AnalysisDataUtil.eventAds(homeNativeAd()))
         }
     }
 
     fun getCurSpecialToNative(nativePos: Long, context: Activity): NativeAd? {
-        if (context.isDestroyed || context.isFinishing) return null
-        if (AnalysisDataUtil.interspaceStudyRules(nativePos)) return null
-        if (interspaceStudyInterIsShowStatus) return null
+        if (context.isDestroyed || context.isFinishing) {
+            Log.e(TAG, "native host invalid ------" + AnalysisDataUtil.eventAds(nativePos))
+            return null
+        }
+        if (AnalysisDataUtil.interspaceStudyRules(nativePos)) {
+            Log.e(TAG, "native  limit ------" + AnalysisDataUtil.eventAds(nativePos))
+            return null
+        }
+        if (interspaceStudyInterIsShowStatus) {
+            Log.e(TAG, "native skip, inter showing ------" + AnalysisDataUtil.eventAds(nativePos))
+            return null
+        }
         interspaceStudyAdsPos = nativePos
         bannerAdsByPosition.remove(nativePos)?.let {
+            Log.e(TAG, "banner cache hit ------" + AnalysisDataUtil.eventAds(nativePos))
             return it
         }
+        Log.e(TAG, "banner cache empty ------" + AnalysisDataUtil.eventAds(nativePos))
         return null
     }
 
     fun responseDatas(baseTrans: Activity?, homeToLoad: Boolean = false) {
         try {
-            val byvcBeans = readConfigPlaces() ?: return
+            val byvcBeans = readConfigPlaces() ?: run {
+                Log.e(TAG, "ad config empty, responseDatas return")
+                return
+            }
+            Log.e(TAG, "ad config place count ------${byvcBeans.size}")
             byvcBeans.forEach { handleConfigPlace(it) }
             if (!homeToLoad && isUmeng()) {
+                Log.e(TAG, "load um  true ----  ")
                 createKepingInit(baseTrans)
             }
             if (skipReturns(homeToLoad)) return
-            if (!isUmeng()) return
+            if (!isUmeng()) {
+                Log.e(TAG, "skip  ----  ")
+                return
+            }
             if (!AnalysisDataUtil.kpCanLoadInterceptor()) {
+                Log.e(TAG, "kp cannot load, to load inter ----")
                 interspaceStudyLoadDefaultCyAds(baseTrans)
             }
             interspaceStudyLoadDefaultNativeAds()
@@ -138,13 +167,21 @@ class LoadManagerTools {
 
     fun middleConfigDispatcher(baseTrans: Activity?, homeToLoad: Boolean = false) {
         try {
-            val byvcBeans = readConfigPlaces() ?: return
+            val byvcBeans = readConfigPlaces() ?: run {
+                Log.e(TAG, "ad config empty, middleConfigDispatcher return")
+                return
+            }
+            Log.e(TAG, "middle ad config place count ------${byvcBeans.size}")
             byvcBeans.forEach { handleConfigPlace(it) }
             if (!homeToLoad && isUmeng()) {
+                Log.e(TAG, "middle load um true ----")
                 newKepingInit(baseTrans)
             }
             if (skipReturns(homeToLoad)) return
-            if (!isUmeng()) return
+            if (!isUmeng()) {
+                Log.e(TAG, "middle skip ----")
+                return
+            }
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -153,6 +190,7 @@ class LoadManagerTools {
     private fun readConfigPlaces(): MutableList<AdPlaceBean>? {
         if (TextUtils.isEmpty(MMKV.defaultMMKV().getString(DATA_CONSTANT_AD_DATA, ""))) {
             MMKV.defaultMMKV().putLong(DATA_CONSTANT_AD_CACHE_TM, 0)
+            Log.e(TAG, "ad config cache empty")
             return null
         }
         val bean = Gson().fromJson(
@@ -171,12 +209,16 @@ class LoadManagerTools {
     private fun handleConfigPlace(bean: AdPlaceBean) {
         interspaceStudyHandlerData(bean)
         when (bean.vlthm) {
-            interspaceStudyKepCold(), interspaceStudyKepHot() -> if (!TextUtils.isEmpty(bean.aaojq)) interspaceStudyKpAdsId = bean.aaojq
+            interspaceStudyKepCold(), interspaceStudyKepHot() -> if (!TextUtils.isEmpty(bean.aaojq)) {
+                interspaceStudyKpAdsId = bean.aaojq
+                Log.e(TAG, "config kp id ------" + AnalysisDataUtil.eventAds(bean.vlthm) + bean.aaojq)
+            }
             homeNativeAd(), swipeNativeAd(), compressNativeAd(), toolsNativeAd(), detailNativeAd(),
             swipeDetailNativeAd(), cleanCenterNativeAd(), contactsNativeAd(), largeVideoNativeAd(),
             similarImagesNativeAd(), screenshotListNativeAd(), duplicateVideoNativeAd(), settingNative() -> {
                 if (!TextUtils.isEmpty(bean.aaojq)) {
                     bannerAdUnitIdsByPosition[bean.vlthm] = bean.aaojq.orEmpty()
+                    Log.e(TAG, "config native id ------" + AnalysisDataUtil.eventAds(bean.vlthm) + bean.aaojq)
                 }
             }
             homeInterstitialAd(), bottomTabSwitchInterstitialAd(), swipeInterstitialAd(), compressInterstitialAd(),
@@ -184,7 +226,16 @@ class LoadManagerTools {
             contactsInterstitialAd(), largeVideoInterstitialAd(), similarImagesInterstitialAd(),
             screenshotListInterstitialAd(), duplicateVideoInterstitialAd(), settingInter(), backSpecialToCy(),
             languageTranslateCy(), detAllInter(), qufengTabInter() -> {
-                if (!TextUtils.isEmpty(bean.aaojq)) interSpecialToTransAdsId = bean.aaojq
+                if (!TextUtils.isEmpty(bean.aaojq)) {
+                    interSpecialToTransAdsId = bean.aaojq
+                    Log.e(TAG, "config inter id ------" + AnalysisDataUtil.eventAds(bean.vlthm) + bean.aaojq)
+                }
+            }
+            homeHf() -> {
+                if (!TextUtils.isEmpty(bean.aaojq)) {
+                    hfAdID = bean.aaojq
+                    Log.e(TAG, "config hf id ------" + AnalysisDataUtil.eventAds(bean.vlthm) + bean.aaojq)
+                }
             }
         }
     }
@@ -197,8 +248,12 @@ class LoadManagerTools {
     fun interspaceStudyLoadTransBanner(showAdPosition: Long, resultAdLoadBack: ListenerTrans? = null) {
         try {
             var position = showAdPosition
-            if (bannerLoadingPositions.contains(position)) return
+            if (bannerLoadingPositions.contains(position)) {
+                Log.e(TAG, "banner ad is loading ------" + AnalysisDataUtil.eventAds(position))
+                return
+            }
             if (bannerAdsByPosition.containsKey(position)) {
+                Log.e(TAG, "banner cache pools has cache,stop cac ------" + AnalysisDataUtil.eventAds(position))
                 resultAdLoadBack?.loadTransAdStatus(true)
                 return
             }
@@ -206,11 +261,18 @@ class LoadManagerTools {
             val unitId = bannerAdUnitIdsByPosition[position].orEmpty()
             if (TextUtils.isEmpty(unitId)) {
                 bannerLoadingPositions.remove(position)
+                Log.e(TAG, "native id error------" + AnalysisDataUtil.eventAds(position))
                 return
             }
-            val context = CleanSuperAiApp.app ?: return
+            Log.e(TAG, "----$unitId")
+            val context = CleanSuperAiApp.app ?: run {
+                bannerLoadingPositions.remove(position)
+                Log.e(TAG, "native context null ------" + AnalysisDataUtil.eventAds(position))
+                return
+            }
             val loader = AdLoader.Builder(context, unitId)
                 .forNativeAd { nativeAd ->
+                    Log.e(TAG, "ban ad load suc${unitId}curr pos is ${AnalysisDataUtil.eventAds(position)}")
                     nativeAd.setOnPaidEventListener {
                         createFaceListener(it, "Native", unitId, position)
                     }
@@ -222,6 +284,10 @@ class LoadManagerTools {
                 .withAdListener(object : AdListener() {
                     var clicked = false
                     override fun onAdFailedToLoad(adError: LoadAdError) {
+                        Log.e(
+                            TAG,
+                            "native  onAdFailedToLoad ------" + AnalysisDataUtil.eventAds(position) + adError,
+                        )
                         bannerLoadingPositions.remove(position)
                         resultAdLoadBack?.loadTransAdStatus(false)
                     }
@@ -232,13 +298,25 @@ class LoadManagerTools {
                             AnalysisDataUtil.interspaceStudyClickAnys(position)
                             clicked = true
                         }
+                        Log.e(TAG, "native clicked ------" + AnalysisDataUtil.eventAds(position))
                         CleanSuperAiApp.isClicked = true
+                    }
+
+                    override fun onAdClosed() {
+                        Log.e(TAG, "native closed ------" + AnalysisDataUtil.eventAds(position))
                     }
 
                     override fun onAdImpression() {
                         if (interspaceStudyAdsPos.toInt() != -1) position = interspaceStudyAdsPos
                         AnalysisDataUtil.interspaceStudyShowAnys(position)
-                        mainHandler.postDelayed({ interspaceStudyLoadTransBanner(position) }, 1500)
+                        mainHandler.postDelayed({
+                            Log.e(TAG, "native  load a new ad ------" + AnalysisDataUtil.eventAds(position))
+                            interspaceStudyLoadTransBanner(position)
+                        }, 1500)
+                    }
+
+                    override fun onAdOpened() {
+                        Log.e(TAG, "native opened ------" + AnalysisDataUtil.eventAds(position))
                     }
                 })
                 .build()
@@ -250,21 +328,28 @@ class LoadManagerTools {
     }
 
     fun createKepingInit(baseTrans: Activity?) {
-        if (!AnalysisDataUtil.kpCanLoadInterceptor()) return
+        if (!AnalysisDataUtil.kpCanLoadInterceptor()) {
+            Log.e(TAG, "kp load limit ----")
+            return
+        }
         StartViewRequestTools.adClass.addAdId(interspaceStudyKpAdsId)
         mainHandler.post {
             if (StartViewRequestTools.adClass.interspaceStudyAppOpenAd == null) {
+                Log.e(TAG, "kp cache empty, request ----")
                 StartViewRequestTools.adClass.requestSpecialToKp(baseTrans, object : TransLateLoadedLis {
                     override fun kepRequestSuc() {
+                        Log.e(TAG, "kp request suc ----")
                         interspaceStudyLoadDefaultCyAds(baseTrans)
                         interspaceStudyShowKpAds(baseTrans)
                     }
 
                     override fun kepLoadedError() {
+                        Log.e(TAG, "kp request error ----")
                         interspaceStudyLoadDefaultCyAds(baseTrans)
                     }
                 })
             } else {
+                Log.e(TAG, "kp cached has ad, show ----")
                 interspaceStudyLoadDefaultCyAds(baseTrans)
                 interspaceStudyShowKpAds(baseTrans)
             }
@@ -273,26 +358,41 @@ class LoadManagerTools {
 
     fun interspaceStudyLoadDefaultCyAds(viewSic: Activity?) {
         viewSic ?: return
-        if (!AnalysisDataUtil.interspaceStudyRules(backSpecialToCy())) initCurrentLoadCy(backSpecialToCy())
+        if (!AnalysisDataUtil.interspaceStudyRules(backSpecialToCy())) {
+            Log.e(TAG, "default inter to load ------" + AnalysisDataUtil.eventAds(backSpecialToCy()))
+            initCurrentLoadCy(backSpecialToCy())
+        } else {
+            Log.e(TAG, "default inter limit ------" + AnalysisDataUtil.eventAds(backSpecialToCy()))
+        }
     }
 
     fun newKepingInit(baseTrans: Activity?) {
-        if (!AnalysisDataUtil.kpCanLoadInterceptor()) return
+        if (!AnalysisDataUtil.kpCanLoadInterceptor()) {
+            Log.e(TAG, "middle kp load limit ----")
+            return
+        }
         StartViewRequestTools.adClass.addAdId(interspaceStudyKpAdsId)
         mainHandler.post {
             if (StartViewRequestTools.adClass.interspaceStudyAppOpenAd == null) {
-                if (AnalysisDataUtil.interspaceStudyRules(interspaceStudyKepHot())) return@post
+                if (AnalysisDataUtil.interspaceStudyRules(interspaceStudyKepHot())) {
+                    Log.e(TAG, "middle kp hot limit ----")
+                    return@post
+                }
+                Log.e(TAG, "middle kp cache empty, request ----")
                 StartViewRequestTools.adClass.requestSpecialToKp(baseTrans, object : TransLateLoadedLis {
                     override fun kepRequestSuc() {
+                        Log.e(TAG, "middle kp request suc ----")
                         interspaceStudyLoadDefaultCyAds(baseTrans)
                         middleShowKpAds(baseTrans)
                     }
 
                     override fun kepLoadedError() {
+                        Log.e(TAG, "middle kp request error ----")
                         interspaceStudyLoadDefaultCyAds(baseTrans)
                     }
                 })
             } else {
+                Log.e(TAG, "middle kp cached has ad, show ----")
                 interspaceStudyLoadDefaultCyAds(baseTrans)
                 middleShowKpAds(baseTrans)
             }
@@ -300,20 +400,34 @@ class LoadManagerTools {
     }
 
     fun getShowCyAds(recAds: Long, context: Activity) {
-        if (AnalysisDataUtil.interspaceStudyRules(recAds)) return
+        if (AnalysisDataUtil.interspaceStudyRules(recAds)) {
+            Log.e(TAG, "inter flag limit ------" + AnalysisDataUtil.eventAds(recAds))
+            return
+        }
         val ad = interspaceStudyInterOj
         if (ad != null) {
             if (AnalysisDataUtil.interspaceStudyCheckHT(interspaceStudyInterCTM)) {
+                Log.e(TAG, "inter cache timeout ------" + AnalysisDataUtil.eventAds(recAds))
                 interspaceStudyInterOj = null
                 interspaceStudyInterCTM = 0
                 return
             }
             interspaceStudyInterIsShowStatus = true
             ad.show(context)
+            Log.e(TAG, "inter showing current pos ===== " + AnalysisDataUtil.eventAds(recAds))
             interspaceStudyHandlerInter(ad, recAds)
             interspaceStudyInterOj = null
         } else {
-            initCurrentLoadCy(recAds)
+            Log.e(TAG, "inter cache no to load new  ===== " + AnalysisDataUtil.eventAds(recAds))
+            initCurrentLoadCy(recAds, object : TemTranslateIntersLis {
+                override fun loadTransInterStatus(interResult: Boolean) {
+                    if (interResult) {
+                        Log.e(TAG, "inter cache no to load new suc  ===== " + AnalysisDataUtil.eventAds(recAds))
+                    } else {
+                        Log.e(TAG, "inter cache no to load new  error  ===== " + AnalysisDataUtil.eventAds(recAds))
+                    }
+                }
+            })
         }
     }
 
@@ -321,20 +435,31 @@ class LoadManagerTools {
         mainHandler.post {
             try {
                 var adId = ""
-                if (interSpecialToLoading) return@post
+                if (interSpecialToLoading) {
+                    Log.e(TAG, "inter is loading return=====" + AnalysisDataUtil.eventAds(interPos))
+                    return@post
+                }
                 if (interspaceStudyInterOj != null && !AnalysisDataUtil.interspaceStudyCheckHT(interspaceStudyInterCTM)) {
+                    Log.e(TAG, "inter cached has ads return=====" + AnalysisDataUtil.eventAds(interPos))
                     lis?.loadTransInterStatus(true)
                     return@post
                 }
                 interSpecialToLoading = true
                 interSpecialToTransAdsId?.run { adId = this }
                 if (TextUtils.isEmpty(adId)) {
+                    Log.e(TAG, "inter id empty=====" + AnalysisDataUtil.eventAds(interPos))
                     interSpecialToLoading = false
                     return@post
                 }
-                val context = CleanSuperAiApp.app ?: return@post
+                Log.e(TAG, "inter load start =====" + AnalysisDataUtil.eventAds(interPos) + adId)
+                val context = CleanSuperAiApp.app ?: run {
+                    interSpecialToLoading = false
+                    Log.e(TAG, "inter context null=====" + AnalysisDataUtil.eventAds(interPos))
+                    return@post
+                }
                 InterstitialAd.load(context, adId, AdRequest.Builder().build(), object : InterstitialAdLoadCallback() {
                     override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                        Log.e(TAG, "inter ad load suc =====" + AnalysisDataUtil.eventAds(interPos))
                         interspaceStudyInterOj = interstitialAd
                         interspaceStudyInterCTM = System.currentTimeMillis()
                         interSpecialToLoading = false
@@ -342,6 +467,7 @@ class LoadManagerTools {
                     }
 
                     override fun onAdFailedToLoad(loadAdError: LoadAdError) {
+                        Log.e(TAG, "inter ad load error =====" + AnalysisDataUtil.eventAds(interPos) + loadAdError)
                         interSpecialToLoading = false
                         lis?.loadTransInterStatus(false)
                     }
@@ -409,25 +535,33 @@ class LoadManagerTools {
                     clicked = true
                     AnalysisDataUtil.interspaceStudyClickAnys(pos)
                 }
+                Log.e(TAG, "inter clicked ------" + AnalysisDataUtil.eventAds(pos))
                 CleanSuperAiApp.isClicked = true
             }
 
             override fun onAdDismissedFullScreenContent() {
+                Log.e(TAG, "inter dismissed ------" + AnalysisDataUtil.eventAds(pos))
                 interspaceStudyInterIsShowStatus = false
             }
 
             override fun onAdFailedToShowFullScreenContent(fa: AdError) {
+                Log.e(TAG, "inter failed to show ------" + AnalysisDataUtil.eventAds(pos) + fa)
                 interspaceStudyInterIsShowStatus = false
             }
 
             override fun onAdImpression() {
+                Log.e(TAG, "inter impression ------" + AnalysisDataUtil.eventAds(pos))
                 interspaceStudyInterIsShowStatus = true
             }
 
             override fun onAdShowedFullScreenContent() {
                 interspaceStudyInterIsShowStatus = true
                 AnalysisDataUtil.interspaceStudyShowAnys(pos)
-                mainHandler.postDelayed({ initCurrentLoadCy(pos) }, 1500)
+                Log.e(TAG, "inter showed ------" + AnalysisDataUtil.eventAds(pos))
+                mainHandler.postDelayed({
+                    Log.e(TAG, AnalysisDataUtil.eventAds(pos) + "load a new cy ad")
+                    initCurrentLoadCy(pos)
+                }, 1500)
             }
         }
         interstitialAd?.setOnPaidEventListener {
@@ -440,5 +574,6 @@ class LoadManagerTools {
             LoadManagerTools()
         }
         private val mainHandler = Handler(Looper.getMainLooper())
+        private const val TAG = "LoadManagerTools"
     }
 }
