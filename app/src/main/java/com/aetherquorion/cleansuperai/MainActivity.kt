@@ -25,7 +25,6 @@ import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoNativeAd
-import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.largeVideoInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.largeVideoNativeAd
@@ -55,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     private var systemBottomInset = 0
     private var currentAdHost: FrameLayout? = null
     private var currentNativePosition: Long? = null
-//
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -88,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                 else -> null
             }
             fragment?.let {
-                showInterstitial(tabInterstitialPosition(item.itemId))
+                tabInterstitialPosition(item.itemId)?.let(::showInterstitial)
                 supportFragmentManager.popBackStack(
                     null,
                     androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE,
@@ -123,20 +122,10 @@ class MainActivity : AppCompatActivity() {
         if (showingDetail) {
             params.bottomToTop = ConstraintLayout.LayoutParams.UNSET
             params.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID
-            val adParams = binding.adContainer.layoutParams as ConstraintLayout.LayoutParams
-            adParams.bottomToTop = ConstraintLayout.LayoutParams.UNSET
-            adParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            adParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-            binding.adContainer.layoutParams = adParams
             binding.fragmentContainer.updatePadding(bottom = systemBottomInset)
         } else {
             params.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
             params.bottomToTop = binding.bottomNavigation.id
-            val adParams = binding.adContainer.layoutParams as ConstraintLayout.LayoutParams
-            adParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            adParams.bottomToTop = binding.bottomNavigation.id
-            adParams.topToTop = ConstraintLayout.LayoutParams.UNSET
-            binding.adContainer.layoutParams = adParams
             binding.fragmentContainer.updatePadding(bottom = 0)
         }
         params.topToBottom = ConstraintLayout.LayoutParams.UNSET
@@ -182,6 +171,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showNativeAdIfAvailable(position: Long, loadIfMissing: Boolean) {
+        val targetHost = currentInlineAdHost()
+        if (targetHost == null) {
+            currentAdHost?.removeAllViews()
+            currentAdHost?.isVisible = false
+            currentAdHost = null
+            return
+        }
         val nativeAd = LoadManagerTools.adSpInstance.getCurSpecialToNative(position, this)
         if (nativeAd == null) {
             if (loadIfMissing) {
@@ -203,12 +199,10 @@ class MainActivity : AppCompatActivity() {
         val bannerView = BannerView(this, null).apply {
             setNativeAd(nativeAd)
         }
-        val targetHost = currentInlineAdHost() ?: binding.adContainer
         if (currentAdHost !== targetHost) {
             currentAdHost?.removeAllViews()
             currentAdHost?.isVisible = false
         }
-        binding.adContainer.isVisible = targetHost === binding.adContainer
         targetHost.removeAllViews()
         targetHost.addView(
             bannerView,
@@ -219,7 +213,6 @@ class MainActivity : AppCompatActivity() {
         )
         targetHost.isVisible = true
         currentAdHost = targetHost
-        updateActivityAdPlacement(targetHost === binding.adContainer)
         LoadManagerTools.adSpInstance.bannerShowButton(bannerView)
     }
 
@@ -227,18 +220,6 @@ class MainActivity : AppCompatActivity() {
         return supportFragmentManager.findFragmentById(R.id.fragmentContainer)
             ?.view
             ?.findViewById(R.id.inlineAdContainer)
-    }
-
-    private fun updateActivityAdPlacement(usingActivityAd: Boolean) {
-        val params = binding.fragmentContainer.layoutParams as ConstraintLayout.LayoutParams
-        if (usingActivityAd) {
-            params.topToTop = ConstraintLayout.LayoutParams.UNSET
-            params.topToBottom = binding.adContainer.id
-        } else {
-            params.topToBottom = ConstraintLayout.LayoutParams.UNSET
-            params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
-        }
-        binding.fragmentContainer.layoutParams = params
     }
 
     private fun showInterstitial(position: Long) {
@@ -254,12 +235,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun tabInterstitialPosition(itemId: Int): Long {
+    private fun tabInterstitialPosition(itemId: Int): Long? {
         return when (itemId) {
             R.id.menu_swipe -> swipeInterstitialAd()
             R.id.menu_compress -> compressInterstitialAd()
             R.id.menu_tools -> toolsInterstitialAd()
-            else -> homeInterstitialAd()
+            else -> null
         }
     }
 

@@ -45,6 +45,13 @@
             android:layout_height="0dp"
             android:visibility="gone" />
 
+        <FrameLayout
+            android:id="@+id/inlineAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:visibility="gone" />
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPermission"
             android:layout_width="match_parent"

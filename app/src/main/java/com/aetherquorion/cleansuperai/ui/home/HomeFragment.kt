@@ -101,7 +101,7 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-//todo        activity?.let { referAdaraTranslateLoads(it, true) }
+        activity?.let { referAdaraTranslateLoads(it, true) }
         val granted = MediaPermissionHelper.hasPermissions(requireContext())
         val notificationGranted = hasNotificationPermission()
         if (granted) {

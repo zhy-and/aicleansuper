@@ -11,8 +11,11 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentSwipeBinding
@@ -56,8 +59,9 @@ class SwipeFragment : Fragment() {
         binding.btnPremium.isVisible = false
         binding.btnSettings.setOnClickListener { (activity as? MainActivity)?.openProfile() }
         binding.recyclerMonths.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerMonths.setHasFixedSize(true)
+        binding.recyclerMonths.itemAnimator = null
         binding.recyclerMonths.adapter = adapter
-        loadPhotos()
     }
 
     override fun onResume() {
@@ -81,16 +85,20 @@ class SwipeFragment : Fragment() {
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
-            val photos = withContext(Dispatchers.IO) { queryPhotos() }
-            reviewStore.pruneToExisting(photos.map(MediaPhoto::uri))
-            val reviewableUris = reviewStore.filterReviewable(photos.map(MediaPhoto::uri))
-                .mapTo(mutableSetOf(), Uri::toString)
-            val reviewablePhotos = photos.filter { photo -> photo.uri.toString() in reviewableUris }
-            val byId = reviewablePhotos.associateBy(MediaPhoto::id)
-            val months = PhotoMonthGrouper.group(
-                reviewablePhotos.map { PhotoRecord(it.id, it.dateModifiedMs) },
-            ).map { group ->
-                MediaMonth(group.label, group.photos.mapNotNull { byId[it.id] })
+            binding.progressLoading.isVisible = true
+            binding.tvEmpty.isVisible = false
+            val months = withContext(Dispatchers.IO) {
+                val photos = queryPhotos()
+                reviewStore.pruneToExisting(photos.map(MediaPhoto::uri))
+                val reviewableUris = reviewStore.filterReviewable(photos.map(MediaPhoto::uri))
+                    .mapTo(mutableSetOf(), Uri::toString)
+                val reviewablePhotos = photos.filter { photo -> photo.uri.toString() in reviewableUris }
+                val byId = reviewablePhotos.associateBy(MediaPhoto::id)
+                PhotoMonthGrouper.group(
+                    reviewablePhotos.map { PhotoRecord(it.id, it.dateModifiedMs) },
+                ).map { group ->
+                    MediaMonth(group.label, group.photos.mapNotNull { byId[it.id] })
+                }
             }
             binding.progressLoading.isVisible = false
             binding.tvEmpty.isVisible = months.isEmpty()
@@ -140,24 +148,24 @@ class SwipeFragment : Fragment() {
 
 private class PhotoMonthAdapter(
     private val onClick: (MediaMonth) -> Unit,
-) : RecyclerView.Adapter<PhotoMonthAdapter.MonthViewHolder>() {
-    private var items: List<MediaMonth> = emptyList()
+) : ListAdapter<MediaMonth, PhotoMonthAdapter.MonthViewHolder>(DiffCallback) {
 
-    fun submit(newItems: List<MediaMonth>) {
-        items = newItems
-        notifyDataSetChanged()
+    init {
+        setHasStableIds(true)
     }
+
+    fun submit(newItems: List<MediaMonth>) = submitList(newItems)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MonthViewHolder {
         val binding = ItemPhotoMonthBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MonthViewHolder(binding)
     }
 
-    override fun getItemCount(): Int = items.size
-
     override fun onBindViewHolder(holder: MonthViewHolder, position: Int) {
-        holder.bind(items[position])
+        holder.bind(getItem(position))
     }
+
+    override fun getItemId(position: Int): Long = getItem(position).label.hashCode().toLong()
 
     inner class MonthViewHolder(
         private val binding: ItemPhotoMonthBinding,
@@ -168,8 +176,23 @@ private class PhotoMonthAdapter(
                 R.string.month_photo_count_format,
                 item.photos.size,
             )
-            binding.imageCover.setImageURI(item.photos.firstOrNull()?.uri)
+            binding.imageCover.load(item.photos.firstOrNull()?.uri) {
+                placeholder(R.drawable.ic_media_placeholder)
+                error(R.drawable.ic_media_placeholder)
+                crossfade(false)
+                size(220)
+            }
             binding.root.setOnClickListener { onClick(item) }
+        }
+    }
+
+    private object DiffCallback : DiffUtil.ItemCallback<MediaMonth>() {
+        override fun areItemsTheSame(oldItem: MediaMonth, newItem: MediaMonth): Boolean {
+            return oldItem.label == newItem.label
+        }
+
+        override fun areContentsTheSame(oldItem: MediaMonth, newItem: MediaMonth): Boolean {
+            return oldItem == newItem
         }
     }
 }

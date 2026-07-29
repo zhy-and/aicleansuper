@@ -81,6 +81,17 @@ public class BannerView extends FrameLayout {
         if (styles.getTertiaryTextTypefaceColor() > 0 && tertiaryView != null) tertiaryView.setTextColor(styles.getTertiaryTextTypefaceColor());
         if (styles.getCallToActionTypefaceColor() > 0 && callToActionView != null) callToActionView.setTextColor(styles.getCallToActionTypefaceColor());
         if (styles.getCallToActionTextSize() > 0 && callToActionView != null) callToActionView.setTextSize(styles.getCallToActionTextSize());
+        if (styles.getPrimaryTextSize() > 0 && primaryView != null) primaryView.setTextSize(styles.getPrimaryTextSize());
+        if (styles.getSecondaryTextSize() > 0 && secondaryView != null) secondaryView.setTextSize(styles.getSecondaryTextSize());
+        if (styles.getTertiaryTextSize() > 0 && tertiaryView != null) tertiaryView.setTextSize(styles.getTertiaryTextSize());
+        Drawable ctaBackground = styles.getCallToActionBackgroundColor();
+        if (ctaBackground != null && callToActionView != null) callToActionView.setBackground(ctaBackground);
+        Drawable primaryBackground = styles.getPrimaryTextBackgroundColor();
+        if (primaryBackground != null && primaryView != null) primaryView.setBackground(primaryBackground);
+        Drawable secondaryBackground = styles.getSecondaryTextBackgroundColor();
+        if (secondaryBackground != null && secondaryView != null) secondaryView.setBackground(secondaryBackground);
+        Drawable tertiaryBackground = styles.getTertiaryTextBackgroundColor();
+        if (tertiaryBackground != null && tertiaryView != null) tertiaryView.setBackground(tertiaryBackground);
         invalidate();
         requestLayout();
     }

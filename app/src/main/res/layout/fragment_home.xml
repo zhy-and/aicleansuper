@@ -64,6 +64,13 @@
             </FrameLayout>
         </LinearLayout>
 
+        <FrameLayout
+            android:id="@+id/inlineAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -239,13 +246,6 @@
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-
-        <FrameLayout
-            android:id="@+id/inlineAdContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:visibility="gone" />
 
         <LinearLayout
             android:id="@+id/contentContainer"
