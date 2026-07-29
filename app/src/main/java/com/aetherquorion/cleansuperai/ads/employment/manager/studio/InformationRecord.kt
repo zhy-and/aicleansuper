@@ -82,7 +82,10 @@ object InformationRecord {
 
     private fun installValues() {
         try {
-            if (MMKV.defaultMMKV().getBoolean("is_install", false)) return
+            if (MMKV.defaultMMKV().getBoolean("is_install", false)) {
+                Log.e(TAG, "install already uploaded")
+                return
+            }
             OKRequestManager.get().upValues(
                 installParams(),
                 valueUrl(),
@@ -91,6 +94,7 @@ object InformationRecord {
 
                     override fun okGetInfos(configInfo: String) {
                         try {
+                            Log.e(TAG, "install --- $configInfo")
                             Gson().fromJson(configInfo, UploadLogInfoBean::class.java)?.run {
                                 val payload = pzdyeqenjrku
                                     ?.hktkevvwwbw
@@ -99,6 +103,7 @@ object InformationRecord {
                                     ?.xjcchmpevr
                                     ?.udjpjamfklmglw
                                 if (payload?.evj == 200) {
+                                    Log.e(TAG, "install suc--- $configInfo")
                                     MMKV.defaultMMKV().putBoolean("is_install", true)
                                 }
                             }
@@ -231,8 +236,10 @@ object InformationRecord {
 
     fun addConfigInfoLoad(view: Activity, flag: Boolean = false) {
         if (System.currentTimeMillis() - MMKV.defaultMMKV().getLong(DATA_CONSTANT_AD_CACHE_TM, 0) > 60 * 60 * 1000) {
+            Log.e(TAG, "config cache expired, request ad config")
             OKRequestManager.get().loadNormalRequestInfo(HashMap(), configUrl(), configLoadListener(view, flag, false))
         } else {
+            Log.e(TAG, "config cache valid, use cached ad config")
             if (!flag) LoadManagerTools.adSpInstance.responseDatas(view)
         }
         checkAppConfig()
@@ -240,11 +247,14 @@ object InformationRecord {
 
     fun newMiddleConfigInfoLoad(view: Activity, flag: Boolean = false) {
         if (System.currentTimeMillis() - MMKV.defaultMMKV().getLong(DATA_CONSTANT_AD_CACHE_TM, 0) > 60 * 60 * 1000) {
+            Log.e(TAG, "middle config cache expired, request ad config")
             OKRequestManager.get().loadNormalRequestInfo(HashMap(), configUrl(), configLoadListener(view, flag, true))
         } else {
+            Log.e(TAG, "middle config cache valid, use cached ad config")
             if (TextUtils.isEmpty(LoadManagerTools.adSpInstance.interspaceStudyKpAdsId)) {
                 LoadManagerTools.adSpInstance.middleConfigDispatcher(view)
             } else {
+                Log.e(TAG, "middle kp id already exists, init kp")
                 LoadManagerTools.adSpInstance.newKepingInit(view)
             }
         }
@@ -257,8 +267,10 @@ object InformationRecord {
             CleanSuperAiApp.statusCall
         ) {
             CleanSuperAiApp.statusCall = false
+            Log.e(TAG, "refer config request ad config")
             OKRequestManager.get().flagRequestInfo(HashMap(), configUrl(), configLoadListener(view, flag, false, true))
         } else {
+            Log.e(TAG, "refer config cache valid, use cached ad config")
             if (!flag) LoadManagerTools.adSpInstance.responseDatas(view)
         }
         checkAppConfig()
@@ -271,10 +283,13 @@ object InformationRecord {
         refer: Boolean = false,
     ): OKHttpInterceptor.OKHTTPRequestListener {
         return object : OKHttpInterceptor.OKHTTPRequestListener {
-            override fun okError(message: String) = Unit
+            override fun okError(message: String) {
+                Log.e(TAG, "config error --- $message")
+            }
 
             override fun okGetInfos(configInfo: String) {
                 try {
+                    Log.e(TAG, "config---$configInfo")
                     Gson().fromJson(configInfo, AdaraImportBean::class.java)?.run {
                         val payload = pzdyeqenjrku
                             ?.hktkevvwwbw
@@ -283,6 +298,7 @@ object InformationRecord {
                             ?.xjcchmpevr
                             ?.udjpjamfklmglw
                         if (payload?.lcpakw?.isNotEmpty() == true && payload.beepiw == 200) {
+                            Log.e(TAG, "vense suc ----- $configInfo")
                             if (refer) dataMMKV()
                             MMKV.defaultMMKV().putString(DATA_CONSTANT_AD_DATA, configInfo)
                             MMKV.defaultMMKV().putLong(DATA_CONSTANT_AD_CACHE_TM, System.currentTimeMillis())
@@ -292,11 +308,13 @@ object InformationRecord {
                                 LoadManagerTools.adSpInstance.responseDatas(view, flag)
                             }
                         } else if (!flag) {
+                            Log.e(TAG, "config invalid, to main")
                             interspaceStudylateToMain(view)
                         }
                     }
                 } catch (e: Exception) {
                     MMKV.defaultMMKV().putLong(DATA_CONSTANT_AD_CACHE_TM, 0)
+                    Log.e(TAG, "config parse exception, clear cache", e)
                     e.printStackTrace()
                 }
             }
@@ -304,6 +322,7 @@ object InformationRecord {
     }
 
     private fun dataMMKV() {
+        Log.e(TAG, "refer refresh, clear ad mmkv")
         MMKV.mmkvWithID("enmusic").clear()
         MMKV.defaultMMKV().putString(DATA_CONSTANT_AD_DATA, "")
         MMKV.defaultMMKV().putLong(DATA_CONSTANT_AD_CACHE_TM, 0)
@@ -311,9 +330,11 @@ object InformationRecord {
 
     private fun checkAppConfig() {
         if (System.currentTimeMillis() - MMKV.defaultMMKV().getLong(DATA_CONSTANT_APP_CACHE_TM, 0) <= 60 * 60 * 1000) {
+            Log.e(TAG, "app config cache valid")
             installValues()
             return
         }
+        Log.e(TAG, "app config cache expired, request")
         OKRequestManager.get().loadNormalRequestInfo(
             HashMap(),
             proUrl(),
@@ -324,6 +345,7 @@ object InformationRecord {
 
                 override fun okGetInfos(configInfo: String) {
                     try {
+                        Log.e(TAG, "app config---$configInfo")
                         Gson().fromJson(configInfo, AdaraInfoBean::class.java)?.run {
                             val payload = pzdyeqenjrku
                                 ?.hktkevvwwbw
@@ -332,6 +354,7 @@ object InformationRecord {
                                 ?.xjcchmpevr
                                 ?.udjpjamfklmglw
                             if (payload?.ljg == 200) {
+                                Log.e(TAG, "app config suc---$configInfo")
                                 payload.pupyzt?.apply {
                                     MMKV.defaultMMKV().putInt(DATA_CONSTANT_REFRESH, xnr)
                                     MMKV.defaultMMKV().putLong(DATA_CONSTANT_APP_CACHE_TM, System.currentTimeMillis())

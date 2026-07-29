@@ -7,6 +7,7 @@ import android.provider.Settings
 import android.telephony.TelephonyManager
 import android.text.TextUtils
 import android.util.Base64
+import android.util.Log
 import com.aetherquorion.cleansuperai.BuildConfig
 import com.aetherquorion.cleansuperai.CleanSuperAiApp
 import com.aetherquorion.cleansuperai.ads.analysis.EasyMethodManager
@@ -78,15 +79,19 @@ object NativeTools {
     @JvmStatic
     fun createFaceListener(adValue: AdValue, adType: String, adId: String, pos: Long) {
         try {
+            Log.d(TAG, "-------- 收到 AdMob onPaidEvent 回调 --------")
             var configValues = 0.0
             val distanceTimes = MMKV.defaultMMKV().getString(GLOBAL_CONSTANT_FB_SYS, "100")!!.toLong()
             if (System.currentTimeMillis() - InformationRecord.getInstallSys() <= distanceTimes * 60 * 60 * 1000) {
                 val value = BigDecimal(adValue.valueMicros.toString()).divide(BigDecimal(1000000.0))
+                Log.d(TAG, "【价值换算】原始微美金: ${adValue.valueMicros}, 换算后: $value ${adValue.currencyCode}")
+                Log.d(TAG, "【精度类型】Type: ${adValue.precisionType}")
                 val lines = MMKV.defaultMMKV().getString(GLOBAL_CONSTANT_LINES, "0")!!.toDouble()
                 if (value.toDouble() >= lines) {
                     val coef = MMKV.defaultMMKV().getString(GLOBAL_CONSTANT_COEFS, "1")!!.toDouble()
                     Currency.getInstance(adValue.currencyCode)
                     configValues = BigDecimal(coef * value.toDouble()).toDouble()
+                    Log.d(TAG, "【上报事件】AppsFlyer purchase/ad revenue, type=$adType, pos=$pos, adId=$adId, value=$configValues")
 
                     val appsFlyer = AppsFlyerLib.getInstance()
                     val eventValues = hashMapOf<String, Any>(
@@ -114,9 +119,15 @@ object NativeTools {
                     appsFlyer.logAdRevenue(adRevenueData, additionalParameters)
 
                     // TODO: restore Facebook purchase upload if the target project keeps Facebook analytics.
+                } else {
+                    Log.d(TAG, "【阈值未达】当前价值 $value < 阈值 $lines，仅上传广告价值日志")
                 }
+            } else {
+                Log.d(TAG, "【窗口期外】跳过 AppsFlyer purchase，仅上传广告价值日志")
             }
+            Log.d(TAG, "【上报广告价值】type=$adType, pos=$pos, adId=$adId, micros=${adValue.valueMicros}")
             InformationRecord.upPekVas(adId, adType, adValue, configValues, pos)
+            Log.d(TAG, "-------- 本次回调处理完成 --------")
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -198,4 +209,6 @@ object NativeTools {
             throw RuntimeException("decrypt fail!", e)
         }
     }
+
+    private const val TAG = "NativeTools"
 }

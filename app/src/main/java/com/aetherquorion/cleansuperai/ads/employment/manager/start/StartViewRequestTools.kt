@@ -33,7 +33,11 @@ class StartViewRequestTools {
             Log.e(TAG, "start id empty")
             return
         }
-        if (interspaceStudyKpIsLoading || isAdAvailable()) return
+        Log.e(TAG, "start load kp")
+        if (interspaceStudyKpIsLoading || isAdAvailable()) {
+            Log.d(TAG, "AppOpenAd request skipped. loading=$interspaceStudyKpIsLoading available=${isAdAvailable()}")
+            return
+        }
         interspaceStudyKpIsLoading = true
         val request = AdRequest.Builder().build()
         AppOpenAd.load(
@@ -45,6 +49,7 @@ class StartViewRequestTools {
                     interspaceStudyAppOpenAd = ad
                     interspaceStudyKpIsLoading = false
                     kpCurrentLoTm = Date().time
+                    Log.d(TAG, "AppOpenAdLoadCallback onAdLoaded.")
                     loadedLis?.kepRequestSuc()
                 }
 
@@ -67,18 +72,33 @@ class StartViewRequestTools {
 
     fun interspaceStudyShowedKp(context: Activity?, showComListener: TranslateKepShowStatusLis? = null) {
         context ?: return
-        val pos = if (interspaceStudyStatus) interspaceStudyKepCold() else interspaceStudyKepHot()
+        val pos = if (interspaceStudyStatus) {
+            Log.e(TAG, "kp  pos ------ cold")
+            interspaceStudyKepCold()
+        } else {
+            Log.e(TAG, "kp  pos ------ hot")
+            interspaceStudyKepHot()
+        }
         if (AnalysisDataUtil.interspaceStudyRules(pos)) {
             Log.e(TAG, "kp pod limit ------" + AnalysisDataUtil.eventAds(pos))
             return
         }
-        if (interspaceStudyKpIsShowing || context.isDestroyed || context.isFinishing) return
+        if (interspaceStudyKpIsShowing) {
+            Log.d(TAG, "The app open ad is already showing.")
+            return
+        }
+        if (context.isDestroyed || context.isFinishing) {
+            Log.d(TAG, "The app open host is invalid.")
+            return
+        }
         if (!isAdAvailable()) {
+            Log.d(TAG, "The app open ad is not ready yet. cache tm more than 4 h")
             interspaceStudyAppOpenAd = null
             requestSpecialToKp(context)
             return
         }
 
+        Log.d(TAG, "Will show ad.")
         interspaceStudyAppOpenAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
             var kpClicked = false
 
@@ -88,13 +108,16 @@ class StartViewRequestTools {
                     kpClicked = true
                     AnalysisDataUtil.interspaceStudyClickAnys(pos)
                 }
+                Log.d(TAG, "AppOpenAd clicked.")
                 CleanSuperAiApp.isClicked = true
             }
 
             override fun onAdDismissedFullScreenContent() {
                 interspaceStudyAppOpenAd = null
                 interspaceStudyKpIsShowing = false
+                Log.d(TAG, "onAdDismissedFullScreenContent.")
                 if (CleanSuperAiApp.isIntercept && MMKV.defaultMMKV().getBoolean(DATA_CONSTANT_LAUCH_MODE, true)) {
+                    Log.d(TAG, "middle jump intercept .")
                     return
                 }
                 showComListener?.statusShowedSuc()
@@ -103,10 +126,12 @@ class StartViewRequestTools {
             override fun onAdFailedToShowFullScreenContent(adError: AdError) {
                 interspaceStudyAppOpenAd = null
                 interspaceStudyKpIsShowing = false
+                Log.d(TAG, "onAdFailedToShowFullScreenContent: ${adError.message}")
                 showComListener?.statusShowedSuc()
             }
 
             override fun onAdShowedFullScreenContent() {
+                Log.d(TAG, "onAdShowedFullScreenContent.")
                 showComListener?.statusShowedFa()
                 AnalysisDataUtil.interspaceStudyShowAnys(pos)
             }
