@@ -14,6 +14,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.data.model.MediaScanSummary
 import com.aetherquorion.cleansuperai.databinding.FragmentCleanCenterBinding
@@ -99,10 +100,7 @@ class CleanCenterFragment : Fragment() {
         }
 
         binding.cardContacts.setOnClickListener {
-            parentFragmentManager.commit {
-                replace(R.id.fragmentContainer, ContactsCleanupFragment())
-                addToBackStack("contacts_cleanup")
-            }
+            openDetail(ContactsCleanupFragment(), "contacts_cleanup")
         }
     }
 
@@ -180,26 +178,24 @@ class CleanCenterFragment : Fragment() {
     }
 
     private fun openScreenshots() {
-        parentFragmentManager.commit {
-            replace(R.id.fragmentContainer, ScreenshotListFragment())
-            addToBackStack("screenshot_list")
-        }
+        openDetail(ScreenshotListFragment(), "screenshot_list")
     }
 
     private fun openLargeVideos() {
-        parentFragmentManager.commit {
-            replace(R.id.fragmentContainer, LargeVideoListFragment())
-            addToBackStack("large_video_list")
-        }
+        openDetail(LargeVideoListFragment(), "large_video_list")
     }
 
     private fun openSimilar() {
-        parentFragmentManager.commit {
-            replace(
-                R.id.fragmentContainer,
-                SimilarPhotosFragment.newInstance(SimilarMediaMode.SIMILAR_PHOTOS),
-            )
-            addToBackStack("similar_photos")
+        openDetail(
+            SimilarPhotosFragment.newInstance(SimilarMediaMode.SIMILAR_PHOTOS),
+            "similar_photos",
+        )
+    }
+
+    private fun openDetail(fragment: Fragment, tag: String) {
+        (activity as? MainActivity)?.openDetail(fragment, tag) ?: parentFragmentManager.commit {
+            replace(R.id.fragmentContainer, fragment, tag)
+            addToBackStack(tag)
         }
     }
 

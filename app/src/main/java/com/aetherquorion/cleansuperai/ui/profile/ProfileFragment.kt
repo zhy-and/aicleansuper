@@ -1,6 +1,8 @@
 package com.aetherquorion.cleansuperai.ui.profile
 
 import android.app.AlertDialog
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -52,7 +54,7 @@ class ProfileFragment : Fragment() {
             R.drawable.ic_shield,
             R.string.settings_privacy_policy_title,
             R.string.settings_privacy_policy_subtitle,
-        ) { showPrivacyPolicy() }
+        ) { openPrivacyPolicy() }
 
         configureRow(
             binding.rowClearCache,
@@ -105,12 +107,8 @@ class ProfileFragment : Fragment() {
             .show()
     }
 
-    private fun showPrivacyPolicy() {
-        AlertDialog.Builder(requireContext())
-            .setTitle(R.string.settings_privacy_policy_title)
-            .setMessage(R.string.settings_privacy_policy_body)
-            .setPositiveButton(android.R.string.ok, null)
-            .show()
+    private fun openPrivacyPolicy() {
+        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_POLICY_URL)))
     }
 
     private fun confirmClearCache() {
@@ -161,5 +159,9 @@ class ProfileFragment : Fragment() {
 
     private fun renderLanguageSummary() {
         binding.rowLanguage.tvToolSubtitle.text = AppLanguage.currentSelectionSummary(requireContext())
+    }
+
+    private companion object {
+        private const val PRIVACY_POLICY_URL = "https://aewt.cleansuperai.com/privacyPolicy.html"
     }
 }

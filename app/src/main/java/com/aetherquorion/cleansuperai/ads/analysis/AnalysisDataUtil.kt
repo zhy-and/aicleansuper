@@ -6,20 +6,37 @@ import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NATIVE_SH
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_CLICK_CT
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_CT
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_ST
+import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
 import com.aetherquorion.cleansuperai.ads.employment.bottomTabSwitchInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCenterInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCenterNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.compressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.contactsInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.contactsNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detAllInter
+import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepHot
+import com.aetherquorion.cleansuperai.ads.employment.largeVideoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.largeVideoNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.languageListBanner
 import com.aetherquorion.cleansuperai.ads.employment.languageTranslateCy
 import com.aetherquorion.cleansuperai.ads.employment.permissionNative
 import com.aetherquorion.cleansuperai.ads.employment.qufengTabInter
+import com.aetherquorion.cleansuperai.ads.employment.screenshotListInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.screenshotListNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.settingInter
+import com.aetherquorion.cleansuperai.ads.employment.settingNative
+import com.aetherquorion.cleansuperai.ads.employment.similarImagesInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.similarImagesNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeDetailInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeDetailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
@@ -42,7 +59,16 @@ object AnalysisDataUtil {
             !interspaceStudyRules(detailInterstitialAd()) ||
             !interspaceStudyRules(languageTranslateCy()) ||
             !interspaceStudyRules(detAllInter()) ||
-            !interspaceStudyRules(qufengTabInter())
+            !interspaceStudyRules(qufengTabInter()) ||
+            !interspaceStudyRules(swipeDetailInterstitialAd()) ||
+            !interspaceStudyRules(cleanCenterInterstitialAd()) ||
+            !interspaceStudyRules(contactsInterstitialAd()) ||
+            !interspaceStudyRules(largeVideoInterstitialAd()) ||
+            !interspaceStudyRules(similarImagesInterstitialAd()) ||
+            !interspaceStudyRules(screenshotListInterstitialAd()) ||
+            !interspaceStudyRules(duplicateVideoInterstitialAd()) ||
+            !interspaceStudyRules(settingInter()) ||
+            !interspaceStudyRules(backSpecialToCy())
     }
 
     fun interspaceStudyRules(artPos: Long): Boolean {
@@ -133,6 +159,23 @@ object AnalysisDataUtil {
             toolsInterstitialAd() -> "toolsInterstitialAd pos :"
             detailNativeAd() -> "detailNativeAd pos :"
             detailInterstitialAd() -> "detailInterstitialAd pos :"
+            swipeDetailNativeAd() -> "swipeDetailNativeAd pos :"
+            swipeDetailInterstitialAd() -> "swipeDetailInterstitialAd pos :"
+            cleanCenterNativeAd() -> "cleanCenterNativeAd pos :"
+            cleanCenterInterstitialAd() -> "cleanCenterInterstitialAd pos :"
+            contactsNativeAd() -> "contactsNativeAd pos :"
+            contactsInterstitialAd() -> "contactsInterstitialAd pos :"
+            largeVideoNativeAd() -> "largeVideoNativeAd pos :"
+            largeVideoInterstitialAd() -> "largeVideoInterstitialAd pos :"
+            similarImagesNativeAd() -> "similarImagesNativeAd pos :"
+            similarImagesInterstitialAd() -> "similarImagesInterstitialAd pos :"
+            screenshotListNativeAd() -> "screenshotListNativeAd pos :"
+            screenshotListInterstitialAd() -> "screenshotListInterstitialAd pos :"
+            duplicateVideoNativeAd() -> "duplicateVideoNativeAd pos :"
+            duplicateVideoInterstitialAd() -> "duplicateVideoInterstitialAd pos :"
+            settingNative() -> "settingNative pos :"
+            settingInter() -> "settingInter pos :"
+            backSpecialToCy() -> "backSpecialToCy pos :"
             languageListBanner() -> "languageListBanner interspaceStudy pos :"
             permissionNative() -> "txtBanner interspaceStudy pos :"
             languageTranslateCy() -> "languageTranslateCy interspaceStudy pos :"

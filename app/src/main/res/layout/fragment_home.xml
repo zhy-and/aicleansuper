@@ -240,6 +240,13 @@
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
+        <FrameLayout
+            android:id="@+id/inlineAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
         <LinearLayout
             android:id="@+id/contentContainer"
             android:layout_width="match_parent"

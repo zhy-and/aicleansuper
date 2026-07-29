@@ -409,8 +409,8 @@ class HomeFragment : Fragment() {
             requestPermission()
             return
         }
-        parentFragmentManager.commit {
-            replace(R.id.fragmentContainer, fragment)
+        (activity as? MainActivity)?.openDetail(fragment, tag) ?: parentFragmentManager.commit {
+            replace(R.id.fragmentContainer, fragment, tag)
             addToBackStack(tag)
         }
     }

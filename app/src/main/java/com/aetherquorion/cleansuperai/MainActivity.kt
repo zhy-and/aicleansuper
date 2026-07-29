@@ -1,6 +1,8 @@
 package com.aetherquorion.cleansuperai
 
 import android.os.Bundle
+import android.view.ViewGroup
+import android.widget.FrameLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -11,13 +13,30 @@ import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import com.aetherquorion.cleansuperai.ads.ListenerTrans
 import com.aetherquorion.cleansuperai.ads.banner.BannerView
+import com.aetherquorion.cleansuperai.ads.employment.cleanCenterInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCenterNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.compressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.contactsInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.contactsNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.duplicateVideoNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.largeVideoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.largeVideoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.screenshotListInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.screenshotListNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.settingInter
+import com.aetherquorion.cleansuperai.ads.employment.settingNative
+import com.aetherquorion.cleansuperai.ads.employment.similarImagesInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.similarImagesNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeDetailInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeDetailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
@@ -34,6 +53,8 @@ import com.aetherquorion.cleansuperai.ui.tools.ToolsFragment
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var systemBottomInset = 0
+    private var currentAdHost: FrameLayout? = null
+    private var currentNativePosition: Long? = null
 //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -73,6 +94,7 @@ class MainActivity : AppCompatActivity() {
                     androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE,
                 )
                 showFragment(it, item.itemId.toString())
+                supportFragmentManager.executePendingTransactions()
                 showNativeAd(tabNativePosition(item.itemId))
                 true
             } ?: false
@@ -100,22 +122,25 @@ class MainActivity : AppCompatActivity() {
         val params = binding.fragmentContainer.layoutParams as ConstraintLayout.LayoutParams
         if (showingDetail) {
             params.bottomToTop = ConstraintLayout.LayoutParams.UNSET
-            params.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            params.bottomToTop = binding.adContainer.id
+            params.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID
             val adParams = binding.adContainer.layoutParams as ConstraintLayout.LayoutParams
             adParams.bottomToTop = ConstraintLayout.LayoutParams.UNSET
-            adParams.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID
+            adParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
+            adParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
             binding.adContainer.layoutParams = adParams
             binding.fragmentContainer.updatePadding(bottom = systemBottomInset)
         } else {
             params.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
-            params.bottomToTop = binding.adContainer.id
+            params.bottomToTop = binding.bottomNavigation.id
             val adParams = binding.adContainer.layoutParams as ConstraintLayout.LayoutParams
             adParams.bottomToBottom = ConstraintLayout.LayoutParams.UNSET
             adParams.bottomToTop = binding.bottomNavigation.id
+            adParams.topToTop = ConstraintLayout.LayoutParams.UNSET
             binding.adContainer.layoutParams = adParams
             binding.fragmentContainer.updatePadding(bottom = 0)
         }
+        params.topToBottom = ConstraintLayout.LayoutParams.UNSET
+        params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
         binding.fragmentContainer.layoutParams = params
     }
 
@@ -136,12 +161,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openDetail(fragment: Fragment, tag: String) {
-        showInterstitial(detailInterstitialAd())
+        showInterstitial(detailInterstitialPosition(tag))
         supportFragmentManager.commit {
             replace(R.id.fragmentContainer, fragment, tag)
             addToBackStack(tag)
         }
-        showNativeAd(detailNativeAd())
+        supportFragmentManager.executePendingTransactions()
+        showNativeAd(detailNativePosition(tag))
     }
 
     private fun showFragment(fragment: Fragment, tag: String) {
@@ -151,18 +177,68 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showNativeAd(position: Long) {
+        currentNativePosition = position
+        showNativeAdIfAvailable(position, loadIfMissing = true)
+    }
+
+    private fun showNativeAdIfAvailable(position: Long, loadIfMissing: Boolean) {
         val nativeAd = LoadManagerTools.adSpInstance.getCurSpecialToNative(position, this)
         if (nativeAd == null) {
-            LoadManagerTools.adSpInstance.interspaceStudyLoadTransBanner(position)
+            if (loadIfMissing) {
+                LoadManagerTools.adSpInstance.interspaceStudyLoadTransBanner(
+                    position,
+                    object : ListenerTrans {
+                        override fun loadTransAdStatus(callResult: Boolean) {
+                            if (!callResult) return
+                            runOnUiThread {
+                                val activePosition = currentNativePosition ?: return@runOnUiThread
+                                showNativeAdIfAvailable(activePosition, loadIfMissing = false)
+                            }
+                        }
+                    },
+                )
+            }
             return
         }
         val bannerView = BannerView(this, null).apply {
             setNativeAd(nativeAd)
         }
-        binding.adContainer.removeAllViews()
-        binding.adContainer.addView(bannerView)
-        binding.adContainer.isVisible = true
+        val targetHost = currentInlineAdHost() ?: binding.adContainer
+        if (currentAdHost !== targetHost) {
+            currentAdHost?.removeAllViews()
+            currentAdHost?.isVisible = false
+        }
+        binding.adContainer.isVisible = targetHost === binding.adContainer
+        targetHost.removeAllViews()
+        targetHost.addView(
+            bannerView,
+            ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+            ),
+        )
+        targetHost.isVisible = true
+        currentAdHost = targetHost
+        updateActivityAdPlacement(targetHost === binding.adContainer)
         LoadManagerTools.adSpInstance.bannerShowButton(bannerView)
+    }
+
+    private fun currentInlineAdHost(): FrameLayout? {
+        return supportFragmentManager.findFragmentById(R.id.fragmentContainer)
+            ?.view
+            ?.findViewById(R.id.inlineAdContainer)
+    }
+
+    private fun updateActivityAdPlacement(usingActivityAd: Boolean) {
+        val params = binding.fragmentContainer.layoutParams as ConstraintLayout.LayoutParams
+        if (usingActivityAd) {
+            params.topToTop = ConstraintLayout.LayoutParams.UNSET
+            params.topToBottom = binding.adContainer.id
+        } else {
+            params.topToBottom = ConstraintLayout.LayoutParams.UNSET
+            params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID
+        }
+        binding.fragmentContainer.layoutParams = params
     }
 
     private fun showInterstitial(position: Long) {
@@ -184,6 +260,34 @@ class MainActivity : AppCompatActivity() {
             R.id.menu_compress -> compressInterstitialAd()
             R.id.menu_tools -> toolsInterstitialAd()
             else -> homeInterstitialAd()
+        }
+    }
+
+    private fun detailNativePosition(tag: String): Long {
+        return when (tag) {
+            "profile", "language_settings" -> settingNative()
+            "photo_detail" -> swipeDetailNativeAd()
+            "clean_center" -> cleanCenterNativeAd()
+            "contacts_cleanup" -> contactsNativeAd()
+            "videos", "large_video_list" -> largeVideoNativeAd()
+            "screenshots", "screenshot_list" -> screenshotListNativeAd()
+            "duplicate_videos" -> duplicateVideoNativeAd()
+            "similar", "duplicates", "similar_photos" -> similarImagesNativeAd()
+            else -> detailNativeAd()
+        }
+    }
+
+    private fun detailInterstitialPosition(tag: String): Long {
+        return when (tag) {
+            "profile", "language_settings" -> settingInter()
+            "photo_detail" -> swipeDetailInterstitialAd()
+            "clean_center" -> cleanCenterInterstitialAd()
+            "contacts_cleanup" -> contactsInterstitialAd()
+            "videos", "large_video_list" -> largeVideoInterstitialAd()
+            "screenshots", "screenshot_list" -> screenshotListInterstitialAd()
+            "duplicate_videos" -> duplicateVideoInterstitialAd()
+            "similar", "duplicates", "similar_photos" -> similarImagesInterstitialAd()
+            else -> detailInterstitialAd()
         }
     }
 

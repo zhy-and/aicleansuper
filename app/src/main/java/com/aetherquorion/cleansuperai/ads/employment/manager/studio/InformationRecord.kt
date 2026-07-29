@@ -34,6 +34,7 @@ import com.aetherquorion.cleansuperai.ads.model.UploadLogInfoBean
 import com.aetherquorion.cleansuperai.network.OKHttpInterceptor
 import com.aetherquorion.cleansuperai.network.OKRequestManager
 import com.blankj.utilcode.util.ActivityUtils
+import com.blankj.utilcode.util.JsonUtils
 import com.google.android.gms.ads.AdValue
 import com.google.gson.Gson
 import com.tencent.mmkv.MMKV
@@ -91,7 +92,13 @@ object InformationRecord {
                     override fun okGetInfos(configInfo: String) {
                         try {
                             Gson().fromJson(configInfo, UploadLogInfoBean::class.java)?.run {
-                                if (gtccxhqbvngsib?.tkronmqm?.jakvynjmamdu?.qttza == 200) {
+                                val payload = pzdyeqenjrku
+                                    ?.hktkevvwwbw
+                                    ?.hdvrhqxtjsr
+                                    ?.ntpwxttl
+                                    ?.xjcchmpevr
+                                    ?.udjpjamfklmglw
+                                if (payload?.evj == 200) {
                                     MMKV.defaultMMKV().putBoolean("is_install", true)
                                 }
                             }
@@ -116,22 +123,22 @@ object InformationRecord {
         val params = HashMap<String, String>()
         val context = CleanSuperAiApp.app ?: return params
         try {
-            params["erztv"] = context.getString(com.aetherquorion.cleansuperai.R.string.app_name)
-            params["rtug"] = "Android"
-            params["xkuvm"] = Build.MODEL
-            params["tgyhb"] = "10001"
+            params["nijua"] = context.getString(com.aetherquorion.cleansuperai.R.string.app_name)
+            params["xpcxd"] = "Android"
+            params["qyeogv"] = Build.MODEL
+            params["ltxbs"] = "10001"
             if (!TextUtils.isEmpty(MMKV.defaultMMKV().getString("gaid", ""))) {
-                params["udgnwq"] = MMKV.defaultMMKV().getString("gaid", "") ?: ""
+                params["olbcoi"] = MMKV.defaultMMKV().getString("gaid", "") ?: ""
             }
-            params["owkq"] = System.currentTimeMillis().toString()
-            params["jczgvm"] = currentActivityName()
-            params["jfqm"] = adArgsJson(value, adsId, adsType, fbIpValue, pos).orEmpty()
-            params["rgbn"] = MMKV.defaultMMKV().getString(DATA_CONSTANT_REFER_INFO, "").orEmpty()
-            params["ujocvg"] = configId()
-            params["jwkhmt"] = getDevAndId(context)
-            params["mhtp"] = Build.VERSION.RELEASE
-            params["vjc"] = Build.MANUFACTURER
-            params["lmk"] = appVersionName()
+            params["hemxkr"] = System.currentTimeMillis().toString()
+            params["ddkvjn"] = currentActivityName()
+            params["rbmr"] = JsonUtils.formatJson(adArgsJson(value, adsId, adsType, fbIpValue, pos))
+            params["yzl"] = MMKV.defaultMMKV().getString(DATA_CONSTANT_REFER_INFO, "").orEmpty()
+            params["mhesy"] = configId()
+            params["jri"] = getDevAndId(context)
+            params["uvjfze"] = Build.VERSION.RELEASE
+            params["xmv"] = Build.MANUFACTURER
+            params["qyyh"] = appVersionName()
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -140,8 +147,10 @@ object InformationRecord {
 
     private fun lauchArgsParams(): HashMap<String, String> {
         val params = installParams()
-        params["tgyhb"] = "10005"
-        params["jfqm"] = lauchJson().orEmpty()
+        params["ltxbs"] = "10005"
+        params["hemxkr"] = System.currentTimeMillis().toString()
+        params["ddkvjn"] = currentActivityName()
+        params["rbmr"] = JsonUtils.formatJson(lauchJson())
         return params
     }
 
@@ -149,21 +158,19 @@ object InformationRecord {
         val params = HashMap<String, String>()
         val context = CleanSuperAiApp.app ?: return params
         try {
-            params["erztv"] = context.getString(com.aetherquorion.cleansuperai.R.string.app_name)
-            params["rtug"] = "Android"
-            params["xkuvm"] = Build.MODEL
-            params["tgyhb"] = "10003"
+            params["nijua"] = context.getString(com.aetherquorion.cleansuperai.R.string.app_name)
+            params["xpcxd"] = "Android"
+            params["qyeogv"] = Build.MODEL
+            params["ltxbs"] = "10003"
             if (!TextUtils.isEmpty(MMKV.defaultMMKV().getString("gaid", ""))) {
-                params["udgnwq"] = MMKV.defaultMMKV().getString("gaid", "") ?: ""
+                params["olbcoi"] = MMKV.defaultMMKV().getString("gaid", "") ?: ""
             }
-            params["owkq"] = System.currentTimeMillis().toString()
-            params["jczgvm"] = currentActivityName()
-            params["rgbn"] = MMKV.defaultMMKV().getString(DATA_CONSTANT_REFER_INFO, "").orEmpty()
-            params["ujocvg"] = configId()
-            params["jwkhmt"] = getDevAndId(context)
-            params["mhtp"] = Build.VERSION.RELEASE
-            params["vjc"] = Build.MANUFACTURER
-            params["lmk"] = appVersionName()
+            params["yzl"] = MMKV.defaultMMKV().getString(DATA_CONSTANT_REFER_INFO, "").orEmpty()
+            params["mhesy"] = configId()
+            params["jri"] = getDevAndId(context)
+            params["uvjfze"] = Build.VERSION.RELEASE
+            params["xmv"] = Build.MANUFACTURER
+            params["qyyh"] = appVersionName()
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -174,15 +181,15 @@ object InformationRecord {
         val catPa = HashMap<String, String>()
         try {
             val context = CleanSuperAiApp.app
-            catPa["hkll"] = adId.replace("/", "-")
-            catPa["pnntgy"] = "Show"
-            catPa["dopip"] = pos.toString()
-            catPa["ndzq"] = AnalysisDataUtil.launchPhaseLabel()
-            catPa["krok"] = adsType
-            catPa["iddw"] = value.valueMicros.toString()
-            catPa["moor"] = value.currencyCode
-            catPa["eqs"] = value.precisionType.toString()
-            catPa["rielm"] = getCountryInfo(context).lowercase()
+            catPa["abi"] = adId.replace("/", "-")
+            catPa["hlylfl"] = "Show"
+            catPa["rqdmgb"] = pos.toString()
+            catPa["pxamc"] = AnalysisDataUtil.launchPhaseLabel()
+            catPa["fktgg"] = adsType
+            catPa["koolnd"] = value.valueMicros.toString()
+            catPa["xdhgv"] = value.currencyCode
+            catPa["itz"] = value.precisionType.toString()
+            catPa["setg"] = getCountryInfo(context).lowercase()
             catPa["enFirstIns"] = getInstallSys().toString()
             catPa["enUploadValue"] = fbIpValue.toString()
             catPa["enFirstOp"] = MMKV.defaultMMKV().getLong(DATA_CONSTANT_FO, 0).toString()
@@ -194,25 +201,22 @@ object InformationRecord {
     }
 
     private fun lauchJson(): String {
-        return hashMapOf("ndzq" to AnalysisDataUtil.launchPhaseLabel()).toString()
+        return hashMapOf("pxamc" to AnalysisDataUtil.launchPhaseLabel()).toString()
     }
 
     @JvmStatic
     fun configInfo(): String {
-        // TODO: replace baseUrl with the target project API domain.
-        return "https://igqv.enumusic.com"
+        return "https://dcau.cleansuperai.com"
     }
 
     @JvmStatic
     fun configKy(): String {
-        // TODO: replace AES key for the target project.
-        return "LYZY5ZO4UEZ3M6LU"
+        return "BJUW46G1LHUQLLKU"
     }
 
     @JvmStatic
     fun configId(): String {
-        // TODO: replace app id/config id for the target project.
-        return "98044530"
+        return "76713380"
     }
 
     fun getInstallSys(): Long {
@@ -272,8 +276,13 @@ object InformationRecord {
             override fun okGetInfos(configInfo: String) {
                 try {
                     Gson().fromJson(configInfo, AdaraImportBean::class.java)?.run {
-                        val payload = gtccxhqbvngsib?.tkronmqm?.jakvynjmamdu
-                        if (payload?.byvc?.isNotEmpty() == true && payload.vrvqt == 200) {
+                        val payload = pzdyeqenjrku
+                            ?.hktkevvwwbw
+                            ?.hdvrhqxtjsr
+                            ?.ntpwxttl
+                            ?.xjcchmpevr
+                            ?.udjpjamfklmglw
+                        if (payload?.lcpakw?.isNotEmpty() == true && payload.beepiw == 200) {
                             if (refer) dataMMKV()
                             MMKV.defaultMMKV().putString(DATA_CONSTANT_AD_DATA, configInfo)
                             MMKV.defaultMMKV().putLong(DATA_CONSTANT_AD_CACHE_TM, System.currentTimeMillis())
@@ -316,21 +325,27 @@ object InformationRecord {
                 override fun okGetInfos(configInfo: String) {
                     try {
                         Gson().fromJson(configInfo, AdaraInfoBean::class.java)?.run {
-                            if (gtccxhqbvngsib?.tkronmqm?.jakvynjmamdu?.qdlo == 200) {
-                                gtccxhqbvngsib?.tkronmqm?.jakvynjmamdu?.aufnfo?.apply {
-                                    MMKV.defaultMMKV().putInt(DATA_CONSTANT_REFRESH, tpv)
+                            val payload = pzdyeqenjrku
+                                ?.hktkevvwwbw
+                                ?.hdvrhqxtjsr
+                                ?.ntpwxttl
+                                ?.xjcchmpevr
+                                ?.udjpjamfklmglw
+                            if (payload?.ljg == 200) {
+                                payload.pupyzt?.apply {
+                                    MMKV.defaultMMKV().putInt(DATA_CONSTANT_REFRESH, xnr)
                                     MMKV.defaultMMKV().putLong(DATA_CONSTANT_APP_CACHE_TM, System.currentTimeMillis())
-                                    qieq?.forEach {
-                                        when (it.pao) {
-                                            "standard_line" -> MMKV.defaultMMKV().putString(GLOBAL_CONSTANT_LINES, it.hsdq)
-                                            "upload_coef" -> MMKV.defaultMMKV().putString(GLOBAL_CONSTANT_COEFS, it.hsdq)
-                                            "window_period_time" -> MMKV.defaultMMKV().putString(GLOBAL_CONSTANT_FB_SYS, it.hsdq)
-                                            "start_mode" -> MMKV.defaultMMKV().putBoolean(DATA_CONSTANT_LAUCH_MODE, it.hsdq == "2")
-                                            "native_content" -> MMKV.defaultMMKV().putString(DATA_CONSTANT_NATIVE_CONTENT, it.hsdq)
-                                            "total_line_first" -> MMKV.defaultMMKV().putString(VALUE_TOTAL_LINES, it.hsdq)
-                                            "total_line_second" -> MMKV.defaultMMKV().putString(VALUE_TOTAL_LINES_TWO, it.hsdq)
-                                            "notification_title" -> MMKV.defaultMMKV().putString(MMKV_NOTIFICATION_TITLE, it.hsdq)
-                                            "notification_content" -> MMKV.defaultMMKV().putString(MMKV_NOTIFICATION_CONTENT, it.hsdq)
+                                    yhanof?.forEach {
+                                        when (it.walj) {
+                                            "standard_line" -> MMKV.defaultMMKV().putString(GLOBAL_CONSTANT_LINES, it.hqcz)
+                                            "upload_coef" -> MMKV.defaultMMKV().putString(GLOBAL_CONSTANT_COEFS, it.hqcz)
+                                            "window_period_time" -> MMKV.defaultMMKV().putString(GLOBAL_CONSTANT_FB_SYS, it.hqcz)
+                                            "start_mode" -> MMKV.defaultMMKV().putBoolean(DATA_CONSTANT_LAUCH_MODE, it.hqcz == "2")
+                                            "native_content" -> MMKV.defaultMMKV().putString(DATA_CONSTANT_NATIVE_CONTENT, it.hqcz)
+                                            "total_line_first" -> MMKV.defaultMMKV().putString(VALUE_TOTAL_LINES, it.hqcz)
+                                            "total_line_second" -> MMKV.defaultMMKV().putString(VALUE_TOTAL_LINES_TWO, it.hqcz)
+                                            "notification_title" -> MMKV.defaultMMKV().putString(MMKV_NOTIFICATION_TITLE, it.hqcz)
+                                            "notification_content" -> MMKV.defaultMMKV().putString(MMKV_NOTIFICATION_CONTENT, it.hqcz)
                                         }
                                     }
                                 }
@@ -355,14 +370,14 @@ object InformationRecord {
 
     private fun configUrl(): String {
         val context = CleanSuperAiApp.app
-        return "${configInfo()}/peu/bmaonb/uuieru/vera1/hulge?tdvp=${getDevAndId(context)}&hmpa=${configId()}"
+        return "${configInfo()}/vuiyyf/qno/cfqwzw/build1/hyxe?puhmr=${configId()}&tokqoz=${getDevAndId(context)}"
     }
 
-    private fun valueUrl(): String = "${configInfo()}/lsny/jrk/lak/tag2/anck"
+    private fun valueUrl(): String = "${configInfo()}/jle/pkuap/umaie/build2/fdgl"
 
     private fun proUrl(): String {
         val context = CleanSuperAiApp.app
-        return "${configInfo()}/xic/hvhup/jqebml/release1/bvtwmu/nblny?yej=${getDevAndId(context)}&hfyx=${configId()}"
+        return "${configInfo()}/deaqll/diqcpk/upfp/build1/cox/dlw?dowwj=${configId()}&sscp=${getDevAndId(context)}"
     }
 
     private fun currentActivityName(): String = runCatching {

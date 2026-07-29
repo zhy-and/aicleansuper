@@ -50,6 +50,13 @@
             </FrameLayout>
         </LinearLayout>
 
+        <FrameLayout
+            android:id="@+id/inlineAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardVideo"
             android:layout_width="match_parent"

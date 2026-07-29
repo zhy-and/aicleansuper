@@ -40,6 +40,7 @@ public class BannerView extends FrameLayout {
 
     public BannerView(Context context) {
         super(context);
+        initView(context, null);
     }
 
     public BannerView(Context context, @Nullable AttributeSet attrs) {
@@ -64,7 +65,7 @@ public class BannerView extends FrameLayout {
     private void applyStyles() {
         if (styles == null) return;
         Drawable mainBackground = styles.getMainBackgroundColor();
-        if (mainBackground != null) {
+        if (mainBackground != null && background != null) {
             background.setBackground(mainBackground);
         }
         Typeface primary = styles.getPrimaryTextTypeface();
@@ -91,6 +92,11 @@ public class BannerView extends FrameLayout {
     }
 
     public void setNativeAd(NativeAd nativeAd) {
+        if (nativeAdView == null) {
+            bindViews();
+        }
+        if (nativeAdView == null || nativeAd == null) return;
+
         this.nativeAd = nativeAd;
         String store = nativeAd.getStore();
         String advertiser = nativeAd.getAdvertiser();
@@ -162,11 +168,17 @@ public class BannerView extends FrameLayout {
         }
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(templateType, this);
+        bindViews();
+        applyStyles();
     }
 
     @Override
     public void onFinishInflate() {
         super.onFinishInflate();
+        bindViews();
+    }
+
+    private void bindViews() {
         nativeAdView = findViewById(R.id.native_ad_view);
         primaryView = findViewById(R.id.primary);
         secondaryView = findViewById(R.id.secondary);

@@ -77,8 +77,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginHorizontal="28dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="22dp"
             app:cardElevation="0dp"
@@ -89,9 +89,8 @@
                 android:id="@+id/imagePhoto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:adjustViewBounds="true"
                 android:contentDescription="@string/current_photo"
-                android:scaleType="centerCrop" />
+                android:scaleType="fitCenter" />
         </com.google.android.material.card.MaterialCardView>
 
         <LinearLayout
