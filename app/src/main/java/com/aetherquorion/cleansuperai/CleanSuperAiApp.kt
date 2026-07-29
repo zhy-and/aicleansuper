@@ -7,6 +7,8 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.text.TextUtils
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.DefaultLifecycleObserver
@@ -33,6 +35,7 @@ class CleanSuperAiApp : Application() {
     private var defaultLifecycleObserver: DefaultLifecycleObserver? = null
     private var referrerClient: InstallReferrerClient? = null
     private var pendingBackgroundPushRunnable: Runnable? = null
+    private val mainHandler = Handler(Looper.getMainLooper())
 
     override fun onCreate() {
         super.onCreate()
@@ -91,8 +94,9 @@ class CleanSuperAiApp : Application() {
     }
 
     private fun initAppFly() {
-        AppsFlyerLib.getInstance().init("", null, this)
+        AppsFlyerLib.getInstance().init("TX2uVpH9Wi74UNhFV9RLvY", null, this)
         AppsFlyerLib.getInstance().start(this)
+        //todo
         AppsFlyerLib.getInstance().setDebugLog(true)
     }
 
@@ -105,12 +109,12 @@ class CleanSuperAiApp : Application() {
             createNotification(title, content, title)
         }
         pendingBackgroundPushRunnable = runnable
-        android.os.Handler(mainLooper).postDelayed(runnable, 5000)
+        mainHandler.postDelayed(runnable, 5000)
     }
 
     private fun cancelBackgroundPush() {
         pendingBackgroundPushRunnable?.let {
-            android.os.Handler(mainLooper).removeCallbacks(it)
+            mainHandler.removeCallbacks(it)
             pendingBackgroundPushRunnable = null
         }
     }

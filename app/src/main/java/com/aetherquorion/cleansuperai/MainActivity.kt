@@ -12,9 +12,16 @@ import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import com.aetherquorion.cleansuperai.ads.banner.BannerView
-import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
-import com.aetherquorion.cleansuperai.ads.employment.homeTabBanner
-import com.aetherquorion.cleansuperai.ads.employment.zhuanTabInter
+import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.compressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.manager.mobtools.LoadManagerTools
 import com.aetherquorion.cleansuperai.databinding.ActivityMainBinding
 import com.aetherquorion.cleansuperai.ui.compress.CompressFragment
@@ -60,13 +67,13 @@ class MainActivity : AppCompatActivity() {
                 else -> null
             }
             fragment?.let {
-                showInterstitial(zhuanTabInter())
+                showInterstitial(tabInterstitialPosition(item.itemId))
                 supportFragmentManager.popBackStack(
                     null,
                     androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE,
                 )
                 showFragment(it, item.itemId.toString())
-                showNativeAd(homeTabBanner())
+                showNativeAd(tabNativePosition(item.itemId))
                 true
             } ?: false
         }
@@ -78,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             binding.bottomNavigation.selectedItemId = R.id.menu_home
         }
-        showNativeAd(homeTabBanner())
+        showNativeAd(homeNativeAd())
     }
 
     /**
@@ -129,12 +136,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openDetail(fragment: Fragment, tag: String) {
-        showInterstitial(backSpecialToCy())
+        showInterstitial(detailInterstitialAd())
         supportFragmentManager.commit {
             replace(R.id.fragmentContainer, fragment, tag)
             addToBackStack(tag)
         }
-        showNativeAd(homeTabBanner())
+        showNativeAd(detailNativeAd())
     }
 
     private fun showFragment(fragment: Fragment, tag: String) {
@@ -160,6 +167,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun showInterstitial(position: Long) {
         LoadManagerTools.adSpInstance.getShowCyAds(position, this)
+    }
+
+    private fun tabNativePosition(itemId: Int): Long {
+        return when (itemId) {
+            R.id.menu_swipe -> swipeNativeAd()
+            R.id.menu_compress -> compressNativeAd()
+            R.id.menu_tools -> toolsNativeAd()
+            else -> homeNativeAd()
+        }
+    }
+
+    private fun tabInterstitialPosition(itemId: Int): Long {
+        return when (itemId) {
+            R.id.menu_swipe -> swipeInterstitialAd()
+            R.id.menu_compress -> compressInterstitialAd()
+            R.id.menu_tools -> toolsInterstitialAd()
+            else -> homeInterstitialAd()
+        }
     }
 
 }

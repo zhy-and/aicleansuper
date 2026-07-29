@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185075769909",
+    "project_id": "cleansuper-ai-android",
+    "storage_bucket": "cleansuper-ai-android.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185075769909:android:11ee326a63fac6ef23877c",
+        "android_client_info": {
+          "package_name": "com.aetherquorion.cleansuperai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBznKCI4pdMqxTm2tZptImaJ0hfYEPfwy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

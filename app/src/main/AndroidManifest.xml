@@ -40,7 +40,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/admob_app_id" />
+            android:value="ca-app-pub-7939871296303059~6259166440" />
 
         <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
@@ -74,7 +74,6 @@
             </intent-filter>
         </activity>
 
-        <!-- TODO: add app/google-services.json and enable Firebase plugins when the real Firebase project is ready. -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@mipmap/ic_launcher" />

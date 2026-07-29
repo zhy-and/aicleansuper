@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CleanSuper AI</string>
-    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
     <string name="nav_home">首页</string>
     <string name="nav_swipe">滑动清理</string>
     <string name="nav_compress">压缩</string>

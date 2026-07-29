@@ -6,21 +6,24 @@ import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NATIVE_SH
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_CLICK_CT
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_CT
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_ST
-import com.aetherquorion.cleansuperai.ads.employment.albumTabBanner
-import com.aetherquorion.cleansuperai.ads.employment.artistTabInter
-import com.aetherquorion.cleansuperai.ads.employment.artistTabNative
-import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
+import com.aetherquorion.cleansuperai.ads.employment.bottomTabSwitchInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.compressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detAllInter
-import com.aetherquorion.cleansuperai.ads.employment.homeTabBanner
+import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepHot
 import com.aetherquorion.cleansuperai.ads.employment.languageListBanner
 import com.aetherquorion.cleansuperai.ads.employment.languageTranslateCy
 import com.aetherquorion.cleansuperai.ads.employment.permissionNative
 import com.aetherquorion.cleansuperai.ads.employment.qufengTabInter
-import com.aetherquorion.cleansuperai.ads.employment.songTabBanner
-import com.aetherquorion.cleansuperai.ads.employment.songTabInter
-import com.aetherquorion.cleansuperai.ads.employment.zhuanTabInter
+import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
 import com.tencent.mmkv.MMKV
 import java.util.Calendar
 
@@ -31,13 +34,15 @@ object AnalysisDataUtil {
     }
 
     fun interCanInterceptor(): Boolean {
-        return !interspaceStudyRules(artistTabInter()) ||
+        return !interspaceStudyRules(homeInterstitialAd()) ||
+            !interspaceStudyRules(bottomTabSwitchInterstitialAd()) ||
+            !interspaceStudyRules(swipeInterstitialAd()) ||
+            !interspaceStudyRules(compressInterstitialAd()) ||
+            !interspaceStudyRules(toolsInterstitialAd()) ||
+            !interspaceStudyRules(detailInterstitialAd()) ||
+            !interspaceStudyRules(languageTranslateCy()) ||
             !interspaceStudyRules(detAllInter()) ||
-            !interspaceStudyRules(backSpecialToCy()) ||
-            !interspaceStudyRules(qufengTabInter()) ||
-            !interspaceStudyRules(zhuanTabInter()) ||
-            !interspaceStudyRules(songTabInter()) ||
-            !interspaceStudyRules(languageTranslateCy())
+            !interspaceStudyRules(qufengTabInter())
     }
 
     fun interspaceStudyRules(artPos: Long): Boolean {
@@ -117,19 +122,22 @@ object AnalysisDataUtil {
 
     fun eventAds(position: Long): String {
         return when (position) {
-            homeTabBanner() -> "homeBanner interspaceStudy pos :"
-            artistTabNative() -> "historyBanner interspaceStudy pos :"
+            homeNativeAd() -> "homeNativeAd pos :"
+            homeInterstitialAd() -> "homeInterstitialAd pos :"
+            bottomTabSwitchInterstitialAd() -> "bottomTabSwitchInterstitialAd pos :"
+            swipeNativeAd() -> "swipeNativeAd pos :"
+            swipeInterstitialAd() -> "swipeInterstitialAd pos :"
+            compressNativeAd() -> "compressNativeAd pos :"
+            compressInterstitialAd() -> "compressInterstitialAd pos :"
+            toolsNativeAd() -> "toolsNativeAd pos :"
+            toolsInterstitialAd() -> "toolsInterstitialAd pos :"
+            detailNativeAd() -> "detailNativeAd pos :"
+            detailInterstitialAd() -> "detailInterstitialAd pos :"
             languageListBanner() -> "languageListBanner interspaceStudy pos :"
-            songTabBanner() -> " resBanner "
             permissionNative() -> "txtBanner interspaceStudy pos :"
-            albumTabBanner() -> "voiceBanner interspaceStudy pos :"
             languageTranslateCy() -> "languageTranslateCy interspaceStudy pos :"
             qufengTabInter() -> "historyCy interspaceStudy pos :"
-            backSpecialToCy() -> "backSpecialToCy interspaceStudy pos :"
-            songTabInter() -> "takeTranslateCy interspaceStudy pos :"
-            zhuanTabInter() -> "txtTranslateCy interspaceStudy pos :"
             detAllInter() -> "resTranslateCy interspaceStudy pos :"
-            artistTabInter() -> "voiceTranslateCy interspaceStudy pos :"
             interspaceStudyKepCold() -> "interspaceStudyKepCold interspaceStudy pos :"
             interspaceStudyKepHot() -> "interspaceStudyKepHot interspaceStudy pos :"
             else -> "unknown interspaceStudy pos :"

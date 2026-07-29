@@ -4,7 +4,6 @@ import android.app.Activity
 import android.os.Handler
 import android.os.Looper
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import android.widget.TextView
 import com.aetherquorion.cleansuperai.CleanSuperAiApp
@@ -24,12 +23,16 @@ import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_BUT_S
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_CLICK_CT
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_CT
 import com.aetherquorion.cleansuperai.ads.employment.DATA_CONSTANT_STU_NET_SHOW_ST
-import com.aetherquorion.cleansuperai.ads.employment.albumTabBanner
-import com.aetherquorion.cleansuperai.ads.employment.artistTabInter
-import com.aetherquorion.cleansuperai.ads.employment.artistTabNative
 import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
+import com.aetherquorion.cleansuperai.ads.employment.bottomTabSwitchInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.compressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.detailInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.detailNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.detAllInter
 import com.aetherquorion.cleansuperai.ads.employment.homeHf
+import com.aetherquorion.cleansuperai.ads.employment.homeInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.homeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.homeTabBanner
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepCold
 import com.aetherquorion.cleansuperai.ads.employment.interspaceStudyKepHot
@@ -37,8 +40,10 @@ import com.aetherquorion.cleansuperai.ads.employment.languageListBanner
 import com.aetherquorion.cleansuperai.ads.employment.languageTranslateCy
 import com.aetherquorion.cleansuperai.ads.employment.permissionNative
 import com.aetherquorion.cleansuperai.ads.employment.qufengTabInter
-import com.aetherquorion.cleansuperai.ads.employment.songTabBanner
-import com.aetherquorion.cleansuperai.ads.employment.songTabInter
+import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.zhuanTabInter
 import com.aetherquorion.cleansuperai.ads.employment.manager.NativeTools.createFaceListener
 import com.aetherquorion.cleansuperai.ads.employment.manager.start.StartViewRequestTools
@@ -157,10 +162,12 @@ class LoadManagerTools {
         interspaceStudyHandlerData(bean)
         when (bean.xvamby) {
             interspaceStudyKepCold(), interspaceStudyKepHot() -> if (!TextUtils.isEmpty(bean.xchh)) interspaceStudyKpAdsId = bean.xchh
-            homeTabBanner(), songTabBanner(), artistTabNative(), languageListBanner(), permissionNative(), albumTabBanner() -> {
+            homeNativeAd(), swipeNativeAd(), compressNativeAd(), toolsNativeAd(), detailNativeAd(),
+            languageListBanner(), permissionNative() -> {
                 if (!TextUtils.isEmpty(bean.xchh)) bannerSpecialToTransAdsId = bean.xchh
             }
-            zhuanTabInter(), languageTranslateCy(), artistTabInter(), detAllInter(), songTabInter(), qufengTabInter(), backSpecialToCy() -> {
+            homeInterstitialAd(), bottomTabSwitchInterstitialAd(), swipeInterstitialAd(), compressInterstitialAd(),
+            toolsInterstitialAd(), detailInterstitialAd(), languageTranslateCy(), detAllInter(), qufengTabInter() -> {
                 if (!TextUtils.isEmpty(bean.xchh)) interSpecialToTransAdsId = bean.xchh
             }
             homeHf() -> if (!TextUtils.isEmpty(bean.xchh)) hfAdID = bean.xchh
