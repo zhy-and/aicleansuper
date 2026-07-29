@@ -40,6 +40,7 @@ public class BannerView extends FrameLayout {
 
     public BannerView(Context context) {
         super(context);
+        initView(context, null);
     }
 
     public BannerView(Context context, @Nullable AttributeSet attrs) {
@@ -91,6 +92,12 @@ public class BannerView extends FrameLayout {
     }
 
     public void setNativeAd(NativeAd nativeAd) {
+        if (nativeAdView == null) {
+            bindViews();
+        }
+        if (nativeAdView == null || nativeAd == null) {
+            return;
+        }
         this.nativeAd = nativeAd;
         String store = nativeAd.getStore();
         String advertiser = nativeAd.getAdvertiser();
@@ -162,11 +169,12 @@ public class BannerView extends FrameLayout {
         }
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(templateType, this);
+        // Programmatic construction (new BannerView(...)) never calls onFinishInflate(),
+        // so bind child views immediately after inflate.
+        bindViews();
     }
 
-    @Override
-    public void onFinishInflate() {
-        super.onFinishInflate();
+    private void bindViews() {
         nativeAdView = findViewById(R.id.native_ad_view);
         primaryView = findViewById(R.id.primary);
         secondaryView = findViewById(R.id.secondary);
@@ -180,5 +188,11 @@ public class BannerView extends FrameLayout {
         callToActionView = findViewById(R.id.cta);
         mediaView = findViewById(R.id.media_view);
         background = findViewById(R.id.background);
+    }
+
+    @Override
+    public void onFinishInflate() {
+        super.onFinishInflate();
+        bindViews();
     }
 }

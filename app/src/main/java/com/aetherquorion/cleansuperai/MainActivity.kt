@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
             LoadManagerTools.adSpInstance.interspaceStudyLoadTransBanner(position)
             return
         }
-        val bannerView = BannerView(this, null).apply {
+        val bannerView = BannerView(this).apply {
             setNativeAd(nativeAd)
         }
         binding.adContainer.removeAllViews()
