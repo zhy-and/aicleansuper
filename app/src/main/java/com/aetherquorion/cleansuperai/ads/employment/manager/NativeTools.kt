@@ -125,6 +125,7 @@ object NativeTools {
             } else {
                 Log.d(TAG, "【窗口期外】跳过 AppsFlyer purchase，仅上传广告价值日志")
             }
+            AdMobTaichiAroHandler.handlePaidEvent(adValue)
             Log.d(TAG, "【上报广告价值】type=$adType, pos=$pos, adId=$adId, micros=${adValue.valueMicros}")
             InformationRecord.upPekVas(adId, adType, adValue, configValues, pos)
             Log.d(TAG, "-------- 本次回调处理完成 --------")

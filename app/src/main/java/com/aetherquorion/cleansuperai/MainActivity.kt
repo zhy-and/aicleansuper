@@ -12,9 +12,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
 import com.aetherquorion.cleansuperai.ads.ListenerTrans
 import com.aetherquorion.cleansuperai.ads.banner.BannerView
+import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
 import com.aetherquorion.cleansuperai.ads.employment.cleanCenterInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.cleanCenterNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.compressInterstitialAd
@@ -54,6 +56,8 @@ class MainActivity : AppCompatActivity() {
     private var systemBottomInset = 0
     private var currentAdHost: FrameLayout? = null
     private var currentNativePosition: Long? = null
+    private var previousBackStackEntryCount = 0
+    private var suppressNextBackInterstitial = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -88,10 +92,7 @@ class MainActivity : AppCompatActivity() {
             }
             fragment?.let {
                 tabInterstitialPosition(item.itemId)?.let(::showInterstitial)
-                supportFragmentManager.popBackStack(
-                    null,
-                    androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE,
-                )
+                clearDetailBackStackForNavigation()
                 showFragment(it, item.itemId.toString())
                 supportFragmentManager.executePendingTransactions()
                 showNativeAd(tabNativePosition(item.itemId))
@@ -99,8 +100,9 @@ class MainActivity : AppCompatActivity() {
             } ?: false
         }
 
+        previousBackStackEntryCount = supportFragmentManager.backStackEntryCount
         supportFragmentManager.addOnBackStackChangedListener {
-            applyDetailChrome()
+            handleBackStackChanged()
         }
 
         if (savedInstanceState == null) {
@@ -134,10 +136,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun selectDestination(itemId: Int) {
-        supportFragmentManager.popBackStack(
-            null,
-            androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE,
-        )
+        clearDetailBackStackForNavigation()
         binding.bottomNavigation.selectedItemId = itemId
     }
 
@@ -163,6 +162,26 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.commit {
             replace(R.id.fragmentContainer, fragment, tag)
         }
+    }
+
+    private fun clearDetailBackStackForNavigation() {
+        if (supportFragmentManager.backStackEntryCount > 0) {
+            suppressNextBackInterstitial = true
+            supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+        }
+    }
+
+    private fun handleBackStackChanged() {
+        val currentBackStackEntryCount = supportFragmentManager.backStackEntryCount
+        if (currentBackStackEntryCount < previousBackStackEntryCount) {
+            if (suppressNextBackInterstitial) {
+                suppressNextBackInterstitial = false
+            } else {
+                showInterstitial(backSpecialToCy())
+            }
+        }
+        previousBackStackEntryCount = currentBackStackEntryCount
+        applyDetailChrome()
     }
 
     private fun showNativeAd(position: Long) {
