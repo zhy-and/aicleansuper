@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">A fixação de widgets não é compatível com este dispositivo</string>
+    <string name="widget_already_added">Widget já adicionado</string>
+    <string name="home_tip_notification">Mantenha-se informado sobre o acúmulo de arquivos inúteis.</string>
+    <string name="home_tip_notification_action">Habilitar</string>
+    <string name="home_tip_widget">Ative widgets de desktop com um clique</string>
+    <string name="home_tip_widget_action">Permitir</string>
+    <string name="home_tip_all_files">Varredura autorizada para detectar vestígios residuais.</string>
+    <string name="home_tip_all_files_action">Permitir</string>
+</resources>

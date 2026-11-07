@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Kaldır</string>
+    <string name="uninstall_guide_back">Geri</string>
+    <string name="uninstall_guide_wait">Bir dakika…</string>
+    <string name="uninstall_guide_more_space">%1$s daha fazla alan açsın</string>
+    <string name="uninstall_guide_smart_clean">Akıllı temizlemeyi başlat</string>
+    <string name="uninstall_guide_scan_files">Silmek isteyebileceğiniz dosyaları tara</string>
+    <string name="uninstall_guide_scan_now">Şimdi tara</string>
+    <string name="uninstall_guide_unused_apps">Kullanılmayan uygulamaları görüntüle</string>
+    <string name="uninstall_guide_find_apps">Artık ihtiyacınız olmayan uygulamaları bul</string>
+    <string name="uninstall_guide_view_apps">Uygulamaları görüntüle</string>
+    <string name="uninstall_guide_keep">%1$s uygulamasını tut</string>
+    <string name="uninstall_guide_continue">Kaldırmaya devam et</string>
+    <string name="uninstall_guide_why">%1$s uygulamasını neden kaldırıyorsunuz?</string>
+    <string name="uninstall_reason_no_need">Artık ihtiyacım yok</string>
+    <string name="uninstall_reason_ads">Çok fazla reklam var</string>
+    <string name="uninstall_reason_space">Yeterince alan açmadı</string>
+    <string name="uninstall_reason_missing_files">Temizlemek istediğim dosyaları bulamıyorum</string>
+    <string name="uninstall_reason_hard">Kullanımı zor</string>
+    <string name="uninstall_reason_slow">Uygulama yavaş veya kararsız</string>
+    <string name="uninstall_reason_other">Diğer</string>
+    <string name="uninstall_guide_private">Geri bildiriminiz dosyalarınızı içermez.</string>
+    <string name="action_cancel">İptal etmek</string>
+    <string name="action_uninstall">Kaldır</string>
+    <string name="photo_photos_label">Fotoğraflar</string>
+    <string name="notif_large_file">Büyük Dosya</string>
+    <string name="notif_junk">Çöp</string>
+    <string name="notif_apps">Uygulamalar</string>
+    <string name="notif_clean_now">Şimdi Temizle</string>
+    <string name="notif_speed_unit">KB/sn</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Menyematkan widget tidak didukung pada perangkat ini</string>
+    <string name="widget_already_added">Widget sudah ditambahkan</string>
+    <string name="home_tip_notification">Tetap terinformasi tentang akumulasi file sampah.</string>
+    <string name="home_tip_notification_action">Memungkinkan</string>
+    <string name="home_tip_widget">Aktifkan widget desktop dengan satu klik</string>
+    <string name="home_tip_widget_action">Mengizinkan</string>
+    <string name="home_tip_all_files">Pemindaian resmi untuk mendeteksi jejak sisa.</string>
+    <string name="home_tip_all_files_action">Mengizinkan</string>
+</resources>

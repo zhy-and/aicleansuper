@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Avinstallera</string>
+    <string name="uninstall_guide_back">Tillbaka</string>
+    <string name="uninstall_guide_wait">Vänta lite…</string>
+    <string name="uninstall_guide_more_space">Låt %1$s frigöra mer utrymme</string>
+    <string name="uninstall_guide_smart_clean">Starta smart rensning</string>
+    <string name="uninstall_guide_scan_files">Sök efter filer som du kanske vill ta bort</string>
+    <string name="uninstall_guide_scan_now">Sök nu</string>
+    <string name="uninstall_guide_unused_apps">Visa oanvända appar</string>
+    <string name="uninstall_guide_find_apps">Hitta appar du inte längre behöver</string>
+    <string name="uninstall_guide_view_apps">Visa appar</string>
+    <string name="uninstall_guide_keep">Behåll %1$s</string>
+    <string name="uninstall_guide_continue">Fortsätt avinstallera</string>
+    <string name="uninstall_guide_why">Varför avinstallerar du %1$s?</string>
+    <string name="uninstall_reason_no_need">Jag behöver den inte längre</string>
+    <string name="uninstall_reason_ads">För många annonser</string>
+    <string name="uninstall_reason_space">Den frigjorde inte tillräckligt med utrymme</string>
+    <string name="uninstall_reason_missing_files">Jag hittar inte filerna jag vill rensa</string>
+    <string name="uninstall_reason_hard">Den är svår att använda</string>
+    <string name="uninstall_reason_slow">Appen är långsam eller instabil</string>
+    <string name="uninstall_reason_other">Annat</string>
+    <string name="uninstall_guide_private">Din feedback innehåller inte dina filer.</string>
+    <string name="action_cancel">Avboka</string>
+    <string name="action_uninstall">Avinstallera</string>
+    <string name="photo_photos_label">Foton</string>
+    <string name="notif_large_file">Stor fil</string>
+    <string name="notif_junk">Skräp</string>
+    <string name="notif_apps">Appar</string>
+    <string name="notif_clean_now">Rengör nu</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

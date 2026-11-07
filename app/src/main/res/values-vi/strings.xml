@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Gỡ cài đặt</string>
+    <string name="uninstall_guide_back">Quay lại</string>
+    <string name="uninstall_guide_wait">Đợi một chút…</string>
+    <string name="uninstall_guide_more_space">Để %1$s giúp giải phóng thêm dung lượng</string>
+    <string name="uninstall_guide_smart_clean">Chạy dọn dẹp thông minh</string>
+    <string name="uninstall_guide_scan_files">Quét các tệp bạn có thể muốn xóa</string>
+    <string name="uninstall_guide_scan_now">Quét ngay</string>
+    <string name="uninstall_guide_unused_apps">Xem ứng dụng không dùng đến</string>
+    <string name="uninstall_guide_find_apps">Tìm ứng dụng bạn không còn cần</string>
+    <string name="uninstall_guide_view_apps">Xem ứng dụng</string>
+    <string name="uninstall_guide_keep">Giữ %1$s</string>
+    <string name="uninstall_guide_continue">Tiếp tục gỡ cài đặt</string>
+    <string name="uninstall_guide_why">Vì sao bạn gỡ cài đặt %1$s?</string>
+    <string name="uninstall_reason_no_need">Tôi không còn cần ứng dụng</string>
+    <string name="uninstall_reason_ads">Quá nhiều quảng cáo</string>
+    <string name="uninstall_reason_space">Không giải phóng đủ dung lượng</string>
+    <string name="uninstall_reason_missing_files">Tôi không tìm thấy tệp cần dọn dẹp</string>
+    <string name="uninstall_reason_hard">Khó sử dụng</string>
+    <string name="uninstall_reason_slow">Ứng dụng chậm hoặc không ổn định</string>
+    <string name="uninstall_reason_other">Lý do khác</string>
+    <string name="uninstall_guide_private">Phản hồi của bạn không bao gồm các tệp của bạn.</string>
+    <string name="action_cancel">Hủy bỏ</string>
+    <string name="action_uninstall">Gỡ cài đặt</string>
+    <string name="photo_photos_label">Ảnh</string>
+    <string name="notif_large_file">Tệp lớn</string>
+    <string name="notif_junk">Rác</string>
+    <string name="notif_apps">Ứng dụng</string>
+    <string name="notif_clean_now">Dọn dẹp ngay</string>
+    <string name="notif_speed_unit">KB/giây</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

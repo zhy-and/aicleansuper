@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Disinstalla</string>
+    <string name="uninstall_guide_back">Indietro</string>
+    <string name="uninstall_guide_wait">Un momento…</string>
+    <string name="uninstall_guide_more_space">Lascia che %1$s liberi altro spazio</string>
+    <string name="uninstall_guide_smart_clean">Avvia la pulizia intelligente</string>
+    <string name="uninstall_guide_scan_files">Scansiona i file che potresti eliminare</string>
+    <string name="uninstall_guide_scan_now">Scansiona ora</string>
+    <string name="uninstall_guide_unused_apps">Visualizza le app inutilizzate</string>
+    <string name="uninstall_guide_find_apps">Trova le app che non ti servono più</string>
+    <string name="uninstall_guide_view_apps">Visualizza le app</string>
+    <string name="uninstall_guide_keep">Mantieni %1$s</string>
+    <string name="uninstall_guide_continue">Continua a disinstallare</string>
+    <string name="uninstall_guide_why">Perché vuoi disinstallare %1$s?</string>
+    <string name="uninstall_reason_no_need">Non mi serve più</string>
+    <string name="uninstall_reason_ads">Troppi annunci</string>
+    <string name="uninstall_reason_space">Non ha liberato abbastanza spazio</string>
+    <string name="uninstall_reason_missing_files">Non trovo i file da pulire</string>
+    <string name="uninstall_reason_hard">È difficile da usare</string>
+    <string name="uninstall_reason_slow">L’app è lenta o instabile</string>
+    <string name="uninstall_reason_other">Altro</string>
+    <string name="uninstall_guide_private">Il tuo feedback non include i tuoi file.</string>
+    <string name="action_cancel">Cancellare</string>
+    <string name="action_uninstall">Disinstallare</string>
+    <string name="photo_photos_label">Foto</string>
+    <string name="notif_large_file">File di grandi dimensioni</string>
+    <string name="notif_junk">Rifiuti</string>
+    <string name="notif_apps">App</string>
+    <string name="notif_clean_now">Pulisci adesso</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

@@ -61,9 +61,7 @@ class LargeVideoListFragment : Fragment() {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.tvTitle.setText(R.string.large_video_detail_title)
         binding.actionContainer.isVisible = true
-        binding.btnSecondaryAction.setText(R.string.select_all_action)
-        binding.btnPrimaryAction.setText(R.string.delete_selected_action)
-        binding.btnSecondaryAction.setOnClickListener { toggleSelectAll() }
+        binding.checkSelectAll.setOnClickListener { toggleSelectAll() }
         binding.btnPrimaryAction.setOnClickListener { confirmDeleteSelected() }
         binding.tvNote.setOnClickListener { cycleFilter() }
         binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), gridSpanCount())
@@ -104,6 +102,7 @@ class LargeVideoListFragment : Fragment() {
         adapter.submitList(items)
 
         binding.recyclerView.isVisible = items.isNotEmpty()
+        binding.loadingView.root.isVisible = state.isLoading
         binding.emptyContainer.isVisible = !state.isLoading && items.isEmpty()
         binding.tvEmptyTitle.setText(R.string.empty_large_video_title)
         binding.tvEmptyBody.text = state.errorMessage ?: getString(R.string.empty_large_video_body)
@@ -149,13 +148,8 @@ class LargeVideoListFragment : Fragment() {
             getString(R.string.filter_100mb)
         }
         binding.tvNote.text = filterLabel
-        binding.btnSecondaryAction.setText(
-            if (selectedIds.size == totalItems && totalItems > 0) {
-                R.string.clear_selected_action
-            } else {
-                R.string.select_all_action
-            },
-        )
+        binding.checkSelectAll.isChecked = totalItems > 0 && selectedIds.size == totalItems
+        binding.btnPrimaryAction.text = getString(R.string.similar_delete_count_action, selectedIds.size)
         binding.btnPrimaryAction.isEnabled = selectedIds.isNotEmpty()
     }
 

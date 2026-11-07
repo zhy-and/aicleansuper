@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">此設備不支援固定小部件</string>
+    <string name="widget_already_added">小部件已添加</string>
+    <string name="home_tip_notification">隨時了解垃圾檔案的累積情況。</string>
+    <string name="home_tip_notification_action">使能夠</string>
+    <string name="home_tip_widget">一鍵啟用桌面小工具</string>
+    <string name="home_tip_widget_action">允許</string>
+    <string name="home_tip_all_files">授權掃描以偵測殘留痕跡。</string>
+    <string name="home_tip_all_files_action">允許</string>
+</resources>

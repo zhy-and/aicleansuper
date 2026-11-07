@@ -1,5 +1,6 @@
 package com.aetherquorion.cleansuperai
 
+import android.Manifest
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -7,6 +8,7 @@ import android.os.Looper
 import android.util.Log
 import android.view.KeyEvent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.aetherquorion.cleansuperai.ads.analysis.AnalysisDataUtil
@@ -17,24 +19,39 @@ import com.aetherquorion.cleansuperai.ads.employment.manager.studio.InformationR
 import com.aetherquorion.cleansuperai.ads.employment.manager.studio.InformationRecord.lauchUpload
 import com.aetherquorion.cleansuperai.ads.model.InfoDestroySp
 import com.aetherquorion.cleansuperai.databinding.ActivitySplashBinding
+import com.aetherquorion.cleansuperai.notification.NotificationPermissionFlow
+import com.aetherquorion.cleansuperai.analytics.PathAnalytics
+import com.aetherquorion.cleansuperai.analytics.PathEvent
+import com.aetherquorion.cleansuperai.keepalive.KeepAliveCoordinator
+import com.aetherquorion.cleansuperai.keepalive.KeepAliveReason
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 import java.util.concurrent.atomic.AtomicBoolean
 
 class SplashActivity : AppCompatActivity() {
+    private val notificationPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        NotificationPermissionFlow.recordResult(granted)
+        PathAnalytics.track(this, if (granted) PathEvent.NOTIF_PERM_GRANTED else PathEvent.NOTIF_PERM_DENIED)
+        if (granted) KeepAliveCoordinator.bootstrap(this, KeepAliveReason.MANUAL)
+    }
     private var messages: Handler? = null
     private val adsInitializeCalled = AtomicBoolean(false)
     private lateinit var binding: ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        PathAnalytics.track(this, PathEvent.COLD_START)
         AnalysisDataUtil.markColdLaunch()
         enableEdgeToEdge()
         WindowCompat.setDecorFitsSystemWindows(window, false)
         messages = Handler(Looper.getMainLooper())
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        if (NotificationPermissionFlow.shouldRequest(android.os.Build.VERSION.SDK_INT, NotificationPermissionFlow.isGranted(this))) {
+            PathAnalytics.track(this, PathEvent.NOTIF_PERM_SHOWN)
+            notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this)
         }
@@ -81,7 +98,11 @@ class SplashActivity : AppCompatActivity() {
 
     private fun jmHome() {
         messages?.postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java).apply {
+                intent?.getStringExtra(MainActivity.EXTRA_WIDGET_ROUTE)?.let {
+                    putExtra(MainActivity.EXTRA_WIDGET_ROUTE, it)
+                }
+            })
             finish()
         }, 12_000)
     }

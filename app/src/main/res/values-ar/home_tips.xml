@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">تثبيت الأدوات غير مدعوم على هذا الجهاز</string>
+    <string name="widget_already_added">تمت إضافة القطعة بالفعل</string>
+    <string name="home_tip_notification">كن على علم بتراكم الملفات غير المرغوب فيها.</string>
+    <string name="home_tip_notification_action">يُمكَِن</string>
+    <string name="home_tip_widget">تمكين أدوات سطح المكتب بنقرة واحدة</string>
+    <string name="home_tip_widget_action">يسمح</string>
+    <string name="home_tip_all_files">المسح المعتمد للكشف عن الآثار المتبقية.</string>
+    <string name="home_tip_all_files_action">يسمح</string>
+</resources>

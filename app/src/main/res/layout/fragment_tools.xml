@@ -279,6 +279,18 @@
                 <include
                     android:id="@+id/toolSpeedTest"
                     layout="@layout/view_tool_item" />
+                <include
+                    android:id="@+id/toolNetworkTraffic"
+                    layout="@layout/view_tool_item" />
+                <include
+                    android:id="@+id/toolBatteryInfo"
+                    layout="@layout/view_tool_item" />
+                <include
+                    android:id="@+id/toolDeviceInfo"
+                    layout="@layout/view_tool_item" />
+                <include
+                    android:id="@+id/toolPrivateVault"
+                    layout="@layout/view_tool_item" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

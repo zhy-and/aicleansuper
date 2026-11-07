@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Odinstaluj</string>
+    <string name="uninstall_guide_back">Wstecz</string>
+    <string name="uninstall_guide_wait">Chwileczkę…</string>
+    <string name="uninstall_guide_more_space">Zwolnij więcej miejsca dzięki %1$s</string>
+    <string name="uninstall_guide_smart_clean">Uruchom inteligentne czyszczenie</string>
+    <string name="uninstall_guide_scan_files">Skanuj pliki, które możesz chcieć usunąć</string>
+    <string name="uninstall_guide_scan_now">Skanuj teraz</string>
+    <string name="uninstall_guide_unused_apps">Wyświetl nieużywane aplikacje</string>
+    <string name="uninstall_guide_find_apps">Znajdź aplikacje, których już nie potrzebujesz</string>
+    <string name="uninstall_guide_view_apps">Wyświetl aplikacje</string>
+    <string name="uninstall_guide_keep">Zachowaj %1$s</string>
+    <string name="uninstall_guide_continue">Kontynuuj odinstalowywanie</string>
+    <string name="uninstall_guide_why">Dlaczego odinstalowujesz %1$s?</string>
+    <string name="uninstall_reason_no_need">Już jej nie potrzebuję</string>
+    <string name="uninstall_reason_ads">Za dużo reklam</string>
+    <string name="uninstall_reason_space">Nie zwolniła wystarczająco dużo miejsca</string>
+    <string name="uninstall_reason_missing_files">Nie mogę znaleźć plików do wyczyszczenia</string>
+    <string name="uninstall_reason_hard">Jest trudna w obsłudze</string>
+    <string name="uninstall_reason_slow">Aplikacja działa wolno lub niestabilnie</string>
+    <string name="uninstall_reason_other">Inny powód</string>
+    <string name="uninstall_guide_private">Twoja opinia nie zawiera Twoich plików.</string>
+    <string name="action_cancel">Anulować</string>
+    <string name="action_uninstall">Odinstaluj</string>
+    <string name="photo_photos_label">Zdjęcia</string>
+    <string name="notif_large_file">Duży plik</string>
+    <string name="notif_junk">Śmieci</string>
+    <string name="notif_apps">Aplikacje</string>
+    <string name="notif_clean_now">Wyczyść teraz</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

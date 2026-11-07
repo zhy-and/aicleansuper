@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">إلغاء التثبيت</string>
+    <string name="uninstall_guide_back">رجوع</string>
+    <string name="uninstall_guide_wait">انتظر لحظة…</string>
+    <string name="uninstall_guide_more_space">دع %1$s يساعدك على توفير مساحة أكبر</string>
+    <string name="uninstall_guide_smart_clean">بدء التنظيف الذكي</string>
+    <string name="uninstall_guide_scan_files">فحص الملفات التي قد ترغب في حذفها</string>
+    <string name="uninstall_guide_scan_now">الفحص الآن</string>
+    <string name="uninstall_guide_unused_apps">عرض التطبيقات غير المستخدمة</string>
+    <string name="uninstall_guide_find_apps">البحث عن التطبيقات التي لم تعد بحاجة إليها</string>
+    <string name="uninstall_guide_view_apps">عرض التطبيقات</string>
+    <string name="uninstall_guide_keep">الاحتفاظ بـ %1$s</string>
+    <string name="uninstall_guide_continue">متابعة إلغاء التثبيت</string>
+    <string name="uninstall_guide_why">لماذا تريد إلغاء تثبيت %1$s؟</string>
+    <string name="uninstall_reason_no_need">لم أعد بحاجة إليه</string>
+    <string name="uninstall_reason_ads">إعلانات كثيرة جدًا</string>
+    <string name="uninstall_reason_space">لم يوفر مساحة كافية</string>
+    <string name="uninstall_reason_missing_files">لا أستطيع العثور على الملفات التي أريد تنظيفها</string>
+    <string name="uninstall_reason_hard">يصعب استخدامه</string>
+    <string name="uninstall_reason_slow">التطبيق بطيء أو غير مستقر</string>
+    <string name="uninstall_reason_other">سبب آخر</string>
+    <string name="uninstall_guide_private">لا تتضمن ملاحظاتك ملفاتك.</string>
+    <string name="action_cancel">يلغي</string>
+    <string name="action_uninstall">إلغاء التثبيت</string>
+    <string name="photo_photos_label">صور</string>
+    <string name="notif_large_file">ملف كبير</string>
+    <string name="notif_junk">نفايات</string>
+    <string name="notif_apps">تطبيقات</string>
+    <string name="notif_clean_now">تنظيف الآن</string>
+    <string name="notif_speed_unit">كيلو بايت / ثانية</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+</resources>

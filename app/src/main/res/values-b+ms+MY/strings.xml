@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Nyahpasang</string>
+    <string name="uninstall_guide_back">Kembali</string>
+    <string name="uninstall_guide_wait">Tunggu sebentar…</string>
+    <string name="uninstall_guide_more_space">Biar %1$s membantu mengosongkan lebih banyak ruang</string>
+    <string name="uninstall_guide_smart_clean">Mulakan pembersihan pintar</string>
+    <string name="uninstall_guide_scan_files">Imbas fail yang mungkin ingin anda padam</string>
+    <string name="uninstall_guide_scan_now">Imbas sekarang</string>
+    <string name="uninstall_guide_unused_apps">Lihat aplikasi yang tidak digunakan</string>
+    <string name="uninstall_guide_find_apps">Cari aplikasi yang tidak diperlukan lagi</string>
+    <string name="uninstall_guide_view_apps">Lihat aplikasi</string>
+    <string name="uninstall_guide_keep">Kekalkan %1$s</string>
+    <string name="uninstall_guide_continue">Teruskan menyahpasang</string>
+    <string name="uninstall_guide_why">Mengapa nyahpasang %1$s?</string>
+    <string name="uninstall_reason_no_need">Saya tidak memerlukannya lagi</string>
+    <string name="uninstall_reason_ads">Terlalu banyak iklan</string>
+    <string name="uninstall_reason_space">Tidak mengosongkan ruang yang mencukupi</string>
+    <string name="uninstall_reason_missing_files">Saya tidak menemui fail yang ingin dibersihkan</string>
+    <string name="uninstall_reason_hard">Sukar untuk digunakan</string>
+    <string name="uninstall_reason_slow">Aplikasi perlahan atau tidak stabil</string>
+    <string name="uninstall_reason_other">Lain-lain</string>
+    <string name="uninstall_guide_private">Maklum balas anda tidak mengandungi fail anda.</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_uninstall">Nyahpasang</string>
+    <string name="photo_photos_label">Foto</string>
+    <string name="notif_large_file">Fail Besar</string>
+    <string name="notif_junk">Sampah</string>
+    <string name="notif_apps">Apl</string>
+    <string name="notif_clean_now">Bersih Sekarang</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+</resources>

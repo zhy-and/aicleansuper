@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">הצמדת ווידג\'טים אינה נתמכת במכשיר זה</string>
+    <string name="widget_already_added">ווידג\'ט כבר נוסף</string>
+    <string name="home_tip_notification">הישאר מעודכן לגבי הצטברות קבצי זבל.</string>
+    <string name="home_tip_notification_action">לְאַפשֵׁר</string>
+    <string name="home_tip_widget">אפשר ווידג\'טים לשולחן העבודה בלחיצה אחת</string>
+    <string name="home_tip_widget_action">לְהַתִיר</string>
+    <string name="home_tip_all_files">סריקה מורשית לאיתור שאריות עקבות.</string>
+    <string name="home_tip_all_files_action">לְהַתִיר</string>
+</resources>

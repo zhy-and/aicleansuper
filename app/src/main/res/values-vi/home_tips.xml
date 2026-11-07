@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Ghim tiện ích không được hỗ trợ trên thiết bị này</string>
+    <string name="widget_already_added">Tiện ích đã được thêm</string>
+    <string name="home_tip_notification">Cập nhật thông tin về việc tích tụ các tập tin rác.</string>
+    <string name="home_tip_notification_action">Cho phép</string>
+    <string name="home_tip_widget">Kích hoạt các widget trên máy tính để bàn chỉ bằng một cú nhấp chuột</string>
+    <string name="home_tip_widget_action">Cho phép</string>
+    <string name="home_tip_all_files">Quét được ủy quyền để phát hiện dấu vết còn sót lại.</string>
+    <string name="home_tip_all_files_action">Cho phép</string>
+</resources>

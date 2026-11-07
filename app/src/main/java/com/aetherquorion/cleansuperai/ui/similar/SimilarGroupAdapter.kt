@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
 import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.aetherquorion.cleansuperai.R
@@ -41,17 +42,24 @@ class SimilarGroupAdapter(
         private val onToggle: (SimilarPhotoItem) -> Unit,
     ) : RecyclerView.ViewHolder(binding.root) {
         private val cornerPx = binding.root.resources.displayMetrics.density * 12f
+        private val thumbnails = ThumbnailAdapter(selectedIds, onPreview, onToggle)
+
+        init {
+            binding.othersList.layoutManager = LinearLayoutManager(binding.root.context, RecyclerView.HORIZONTAL, false)
+            binding.othersList.setHasFixedSize(true)
+            binding.othersList.adapter = thumbnails
+        }
 
         fun bind(group: SimilarPhotoGroup, position: Int) {
             val context = binding.root.context
             val reclaimText = Formatter.formatFileSize(context, group.estimatedReclaimBytes)
             val keep = group.recommendedKeep
 
-            binding.tvGroupTitle.text = context.getString(
-                R.string.similar_group_card_title_format,
-                position,
-                group.bucketName,
-            )
+            binding.tvGroupTitle.text = if (position == 1) {
+                context.getString(R.string.similar_group_card_title_format, position, group.bucketName)
+            } else {
+                context.getString(R.string.similar_group_number_format, position)
+            }
             binding.tvGroupSubtitle.text = context.getString(
                 R.string.similar_group_card_subtitle_format,
                 group.items.size,
@@ -82,34 +90,42 @@ class SimilarGroupAdapter(
             binding.keepRow.setOnClickListener { onPreview(keep) }
 
             val others = group.items.filterNot { it.id == group.recommendedKeepId }
-            binding.othersContainer.removeAllViews()
-            val inflater = LayoutInflater.from(context)
-            others.forEach { item ->
-                val thumbBinding = ItemSimilarThumbBinding.inflate(
-                    inflater,
-                    binding.othersContainer,
-                    false,
-                )
-                thumbBinding.imageThumb.load(item.contentUri) {
-                    crossfade(true)
+            thumbnails.submitList(others) { thumbnails.notifyDataSetChanged() }
+        }
+    }
+
+    private class ThumbnailAdapter(
+        private val selectedIds: Set<Long>,
+        private val onPreview: (SimilarPhotoItem) -> Unit,
+        private val onToggle: (SimilarPhotoItem) -> Unit,
+    ) : ListAdapter<SimilarPhotoItem, ThumbnailAdapter.Holder>(object : DiffUtil.ItemCallback<SimilarPhotoItem>() {
+        override fun areItemsTheSame(oldItem: SimilarPhotoItem, newItem: SimilarPhotoItem) = oldItem.id == newItem.id
+        override fun areContentsTheSame(oldItem: SimilarPhotoItem, newItem: SimilarPhotoItem) = oldItem == newItem
+    }) {
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder = Holder(
+            ItemSimilarThumbBinding.inflate(LayoutInflater.from(parent.context), parent, false),
+        )
+
+        override fun onBindViewHolder(holder: Holder, position: Int) {
+            holder.bind(getItem(position), selectedIds, onPreview, onToggle)
+        }
+
+        class Holder(private val binding: ItemSimilarThumbBinding) : RecyclerView.ViewHolder(binding.root) {
+            fun bind(item: SimilarPhotoItem, selectedIds: Set<Long>, onPreview: (SimilarPhotoItem) -> Unit,
+                     onToggle: (SimilarPhotoItem) -> Unit) {
+                binding.imageThumb.load(item.contentUri) {
+                    crossfade(false)
                     placeholder(R.drawable.ic_media_placeholder)
                     error(R.drawable.ic_media_placeholder)
                     size(192)
-                    transformations(RoundedCornersTransformation(cornerPx))
                 }
-                val selected = selectedIds.contains(item.id)
-                if (selected) {
-                    thumbBinding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox_checked)
-                    thumbBinding.imageSelect.setImageResource(R.drawable.ic_check)
-                } else {
-                    thumbBinding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox)
-                    thumbBinding.imageSelect.setImageResource(R.drawable.ic_circle_outline)
-                }
-                thumbBinding.imageSelect.imageTintList =
-                    ContextCompat.getColorStateList(context, R.color.white)
-                thumbBinding.imageThumb.setOnClickListener { onPreview(item) }
-                thumbBinding.btnSelect.setOnClickListener { onToggle(item) }
-                binding.othersContainer.addView(thumbBinding.root)
+                binding.imageSelect.setBackgroundResource(
+                    if (item.id in selectedIds) R.drawable.bg_select_checkbox_checked else R.drawable.bg_select_checkbox,
+                )
+                binding.imageSelect.setImageResource(if (item.id in selectedIds) R.drawable.ic_check else R.drawable.ic_circle_outline)
+                binding.imageSelect.imageTintList = ContextCompat.getColorStateList(binding.root.context, R.color.white)
+                binding.imageThumb.setOnClickListener { onPreview(item) }
+                binding.btnSelect.setOnClickListener { onToggle(item) }
             }
         }
     }

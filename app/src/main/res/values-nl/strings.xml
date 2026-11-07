@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Verwijderen</string>
+    <string name="uninstall_guide_back">Terug</string>
+    <string name="uninstall_guide_wait">Even geduld…</string>
+    <string name="uninstall_guide_more_space">Maak meer ruimte vrij met %1$s</string>
+    <string name="uninstall_guide_smart_clean">Slim opschonen starten</string>
+    <string name="uninstall_guide_scan_files">Scan bestanden die je mogelijk wilt verwijderen</string>
+    <string name="uninstall_guide_scan_now">Nu scannen</string>
+    <string name="uninstall_guide_unused_apps">Ongebruikte apps bekijken</string>
+    <string name="uninstall_guide_find_apps">Vind apps die je niet meer nodig hebt</string>
+    <string name="uninstall_guide_view_apps">Apps bekijken</string>
+    <string name="uninstall_guide_keep">%1$s behouden</string>
+    <string name="uninstall_guide_continue">Doorgaan met verwijderen</string>
+    <string name="uninstall_guide_why">Waarom wil je %1$s verwijderen?</string>
+    <string name="uninstall_reason_no_need">Ik heb de app niet meer nodig</string>
+    <string name="uninstall_reason_ads">Te veel advertenties</string>
+    <string name="uninstall_reason_space">Er kwam niet genoeg ruimte vrij</string>
+    <string name="uninstall_reason_missing_files">Ik kan de bestanden die ik wil opschonen niet vinden</string>
+    <string name="uninstall_reason_hard">De app is lastig te gebruiken</string>
+    <string name="uninstall_reason_slow">De app is traag of instabiel</string>
+    <string name="uninstall_reason_other">Anders</string>
+    <string name="uninstall_guide_private">Je feedback bevat je bestanden niet.</string>
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_uninstall">Verwijderen</string>
+    <string name="photo_photos_label">Foto\'s</string>
+    <string name="notif_large_file">Groot bestand</string>
+    <string name="notif_junk">Rommel</string>
+    <string name="notif_apps">Apps</string>
+    <string name="notif_clean_now">Maak nu schoon</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

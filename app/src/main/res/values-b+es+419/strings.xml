@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Desinstalar</string>
+    <string name="uninstall_guide_back">Atrás</string>
+    <string name="uninstall_guide_wait">Espera un momento…</string>
+    <string name="uninstall_guide_more_space">Deja que %1$s libere más espacio</string>
+    <string name="uninstall_guide_smart_clean">Iniciar limpieza inteligente</string>
+    <string name="uninstall_guide_scan_files">Analiza archivos que quizá quieras eliminar</string>
+    <string name="uninstall_guide_scan_now">Analizar ahora</string>
+    <string name="uninstall_guide_unused_apps">Ver aplicaciones sin usar</string>
+    <string name="uninstall_guide_find_apps">Encuentra aplicaciones que ya no necesitas</string>
+    <string name="uninstall_guide_view_apps">Ver aplicaciones</string>
+    <string name="uninstall_guide_keep">Conservar %1$s</string>
+    <string name="uninstall_guide_continue">Continuar con la desinstalación</string>
+    <string name="uninstall_guide_why">¿Por qué desinstalas %1$s?</string>
+    <string name="uninstall_reason_no_need">Ya no la necesito</string>
+    <string name="uninstall_reason_ads">Demasiados anuncios</string>
+    <string name="uninstall_reason_space">No liberó suficiente espacio</string>
+    <string name="uninstall_reason_missing_files">No encuentro los archivos que quiero limpiar</string>
+    <string name="uninstall_reason_hard">Es difícil de usar</string>
+    <string name="uninstall_reason_slow">La aplicación es lenta o inestable</string>
+    <string name="uninstall_reason_other">Otro motivo</string>
+    <string name="uninstall_guide_private">Tus comentarios no incluyen tus archivos.</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_uninstall">Desinstalar</string>
+    <string name="photo_photos_label">Fotos</string>
+    <string name="notif_large_file">Archivo grande</string>
+    <string name="notif_junk">Basura</string>
+    <string name="notif_apps">Aplicaciones</string>
+    <string name="notif_clean_now">Limpiar ahora</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+</resources>

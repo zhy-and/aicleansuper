@@ -93,6 +93,14 @@
                     android:id="@+id/rowPrivacyPolicy"
                     layout="@layout/view_tool_item" />
 
+                <include
+                    android:id="@+id/rowTermsOfUse"
+                    layout="@layout/view_tool_item" />
+
+                <include
+                    android:id="@+id/rowWidget"
+                    layout="@layout/view_tool_item" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"

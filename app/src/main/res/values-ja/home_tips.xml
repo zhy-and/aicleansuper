@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">このデバイスではウィジェットの固定はサポートされていません</string>
+    <string name="widget_already_added">ウィジェットはすでに追加されています</string>
+    <string name="home_tip_notification">ジャンク ファイルの蓄積に関する最新情報を入手してください。</string>
+    <string name="home_tip_notification_action">有効にする</string>
+    <string name="home_tip_widget">ワンクリックでデスクトップウィジェットを有効にする</string>
+    <string name="home_tip_widget_action">許可する</string>
+    <string name="home_tip_all_files">残留痕跡を検出するための承認されたスキャン。</string>
+    <string name="home_tip_all_files_action">許可する</string>
+</resources>

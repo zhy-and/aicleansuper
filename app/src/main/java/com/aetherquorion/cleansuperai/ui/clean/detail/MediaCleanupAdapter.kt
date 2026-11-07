@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.decode.VideoFrameDecoder
+import coil.request.CachePolicy
 import coil.load
-import coil.transform.RoundedCornersTransformation
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.ItemMediaCleanupBinding
 
@@ -42,8 +42,6 @@ class MediaCleanupAdapter(
         private val onPreviewClick: (DisplayMediaItem) -> Unit,
         private val onSelectionClick: (DisplayMediaItem) -> Unit,
     ) : RecyclerView.ViewHolder(binding.root) {
-        private val cornerPx = binding.root.resources.displayMetrics.density * 16f
-
         fun bind(item: DisplayMediaItem) {
             binding.tvTitle.text = item.title
             binding.tvSize.text = item.sizeText
@@ -63,12 +61,15 @@ class MediaCleanupAdapter(
                     ContextCompat.getColorStateList(binding.root.context, R.color.white)
             }
 
-            binding.imageThumb.load(item.thumbnailUri) {
-                crossfade(true)
+            binding.imageThumb.load(if (item.isAudio) R.drawable.ic_volume else item.thumbnailUri) {
+                crossfade(false)
                 placeholder(R.drawable.ic_media_placeholder)
                 error(R.drawable.ic_media_placeholder)
-                size(480)
-                transformations(RoundedCornersTransformation(cornerPx))
+                size(240)
+                if (item.isPrivate) {
+                    memoryCachePolicy(CachePolicy.DISABLED)
+                    diskCachePolicy(CachePolicy.DISABLED)
+                }
                 if (item.isVideo) {
                     decoderFactory(VideoFrameDecoder.Factory())
                 }

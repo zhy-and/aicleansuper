@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="screen_bg">#FFF3F3F3</color>
+    <color name="soft_gray">#FFF3F7FA</color>
+    <color name="gray_icon">#FF9C9C9C</color>
+    <color name="tab_selected">#FF0EB193</color>
+    <color name="accent_teal">#FF2AC4A8</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
@@ -36,12 +41,16 @@
     <color name="success">#FF2F8464</color>
     <color name="success_soft">#FFE7F4ED</color>
     <color name="danger">#FFD95858</color>
+    <color name="danger_primary">#FFB43434</color>
+    <color name="danger_pressed">#FF922727</color>
     <color name="danger_soft">#FFFFEEEE</color>
     <color name="danger_soft_strong">#FFFFE4E4</color>
     <color name="danger_stroke">#FFF3C9C9</color>
     <color name="warning_soft">#FFFFF5E4</color>
     <color name="action_keep">#FF2F54E7</color>
     <color name="action_keep_soft">#FFEAF0FF</color>
+    <color name="home_tool_card">#FFF0F5F1</color>
+    <color name="home_tool_card_stroke">#FFE1EBE3</color>
     <color name="home_orange_soft">#FFFFF1DE</color>
     <color name="home_blue_soft">#FFE6F0FF</color>
     <color name="home_green_soft">#FFE9F8E5</color>

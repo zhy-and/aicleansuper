@@ -26,6 +26,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.aetherquorion.cleansuperai.MainActivity
+import com.aetherquorion.cleansuperai.widget.WidgetPinHelper
+import com.aetherquorion.cleansuperai.analytics.PathAnalytics
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.ads.employment.manager.studio.InformationRecord.referAdaraTranslateLoads
 import com.aetherquorion.cleansuperai.data.model.MediaScanSummary
@@ -36,8 +38,18 @@ import com.aetherquorion.cleansuperai.ui.clean.CleanCenterFragment
 import com.aetherquorion.cleansuperai.ui.clean.detail.LargeVideoListFragment
 import com.aetherquorion.cleansuperai.ui.clean.detail.ScreenshotListFragment
 import com.aetherquorion.cleansuperai.ui.common.MediaPermissionHelper
+import com.aetherquorion.cleansuperai.ui.common.FeatureAccess
+import com.aetherquorion.cleansuperai.ui.common.FeaturePermissionCoordinator
+import com.aetherquorion.cleansuperai.ui.common.StoragePermissionDialog
+import com.aetherquorion.cleansuperai.ui.common.StoragePermissionGuideActivity
 import com.aetherquorion.cleansuperai.ui.contacts.ContactsCleanupFragment
 import com.aetherquorion.cleansuperai.ui.similar.SimilarPhotosFragment
+import com.aetherquorion.cleansuperai.ui.tools.SystemInfoFragment
+import com.aetherquorion.cleansuperai.ui.largefiles.LargeFilesFragment
+import com.aetherquorion.cleansuperai.ui.cache.CacheCleanupFragment
+import com.aetherquorion.cleansuperai.ui.tools.NetworkTrafficFragment
+import com.aetherquorion.cleansuperai.ui.vault.VaultFragment
+import com.aetherquorion.cleansuperai.ui.media.CategoryMediaFragment
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
 
@@ -50,6 +62,9 @@ class HomeFragment : Fragment() {
     private var notificationPermissionDenied = false
     private var heroAnimated = false
     private var lastScanStatus: HomeUiState.ScanStatus? = null
+    private var pendingDetailTag: String? = null
+    private var pendingDetailFragment: Fragment? = null
+    private var permissionDialog: android.app.AlertDialog? = null
 
     private val permissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
@@ -57,13 +72,17 @@ class HomeFragment : Fragment() {
             val notificationGranted = hasNotificationPermission()
 
             if (mediaGranted) {
+                PathAnalytics.track(requireContext(), com.aetherquorion.cleansuperai.analytics.PathEvent.STORAGE_PERM_GRANTED)
                 permissionDenied = false
                 savePermissionDenied(false)
                 notificationPermissionDenied = !notificationGranted
                 saveNotificationPermissionDenied(!notificationGranted)
                 renderPermission(true)
                 viewModel.scanMedia()
+                PathAnalytics.track(requireContext(), com.aetherquorion.cleansuperai.analytics.PathEvent.SCAN_AFTER_STORAGE_GRANT)
+                resumePendingDetail()
             } else {
+                PathAnalytics.track(requireContext(), com.aetherquorion.cleansuperai.analytics.PathEvent.STORAGE_PERM_DENIED)
                 permissionDenied = true
                 savePermissionDenied(true)
                 notificationPermissionDenied = !notificationGranted
@@ -72,6 +91,31 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(), R.string.permission_denied_message, Toast.LENGTH_SHORT).show()
             }
         }
+
+    private val allFilesLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            val granted = MediaPermissionHelper.hasPermissions(requireContext())
+            permissionDenied = !granted
+            savePermissionDenied(!granted)
+            renderPermission(granted)
+            if (granted) viewModel.scanMedia()
+            PathAnalytics.track(requireContext(), if (granted)
+                com.aetherquorion.cleansuperai.analytics.PathEvent.STORAGE_PERM_GRANTED else
+                com.aetherquorion.cleansuperai.analytics.PathEvent.STORAGE_PERM_DENIED)
+            if (granted) PathAnalytics.track(requireContext(),
+                com.aetherquorion.cleansuperai.analytics.PathEvent.SCAN_AFTER_STORAGE_GRANT)
+            if (granted) resumePendingDetail()
+        }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        pendingDetailTag = savedInstanceState?.getString(KEY_PENDING_DETAIL)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(KEY_PENDING_DETAIL, pendingDetailTag)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -88,13 +132,24 @@ class HomeFragment : Fragment() {
         notificationPermissionDenied =
             permissionPreferences().getBoolean(KEY_NOTIFICATION_PERMISSION_DENIED, false)
         setupHeader()
+        val requestNotification = View.OnClickListener {
+            (activity as? MainActivity)?.requestNotificationPermissionFromHomeTip()
+        }
+        binding.homeNotificationTip.setOnClickListener(requestNotification)
+        binding.homeNotificationTipButton.setOnClickListener(requestNotification)
+        val requestWidget = View.OnClickListener {
+            WidgetPinHelper.requestPin(requireContext(), "home_tip")
+        }
+        binding.homeWidgetTip.setOnClickListener(requestWidget)
+        binding.homeWidgetTipButton.setOnClickListener(requestWidget)
+        val requestAllFiles = View.OnClickListener { requestAllFilesFromTip() }
+        binding.homeAllFilesTip.setOnClickListener(requestAllFiles)
+        binding.homeAllFilesTipButton.setOnClickListener(requestAllFiles)
+        refreshHomeTips()
         setupCards()
-        binding.btnPermission.setOnClickListener {
-            if (permissionDenied) openAppSettings() else requestPermission()
-        }
-        binding.btnQuickClean.setOnClickListener {
-            (activity as? MainActivity)?.openDetail(CleanCenterFragment(), "clean_center")
-        }
+        val openCleanCenter = View.OnClickListener { openDetail(CleanCenterFragment(), "clean_center") }
+        binding.cardAiDriven.setOnClickListener(openCleanCenter)
+        binding.btnQuickClean.setOnClickListener(openCleanCenter)
         collectUiState()
         binding.root.post { maybeRequestHomePermissions() }
     }
@@ -104,6 +159,7 @@ class HomeFragment : Fragment() {
         activity?.let { referAdaraTranslateLoads(it, true) }
         val granted = MediaPermissionHelper.hasPermissions(requireContext())
         val notificationGranted = hasNotificationPermission()
+        refreshHomeTips()
         if (granted) {
             permissionDenied = false
             savePermissionDenied(false)
@@ -113,6 +169,8 @@ class HomeFragment : Fragment() {
             saveNotificationPermissionDenied(false)
         }
         renderPermission(granted)
+        if (!granted) render(viewModel.uiState.value)
+        if (granted) resumePendingDetail()
         if (granted && viewModel.uiState.value.scanStatus == HomeUiState.ScanStatus.IDLE) {
             viewModel.scanMedia()
         }
@@ -121,6 +179,8 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         summaryAnimator?.cancel()
         summaryAnimator = null
+        permissionDialog?.dismiss()
+        permissionDialog = null
         super.onDestroyView()
         _binding = null
     }
@@ -128,6 +188,16 @@ class HomeFragment : Fragment() {
     private fun setupHeader() {
         binding.btnPremium.isVisible = false
         binding.btnSettings.setOnClickListener { (activity as? MainActivity)?.openProfile() }
+    }
+
+    fun refreshNotificationTip() = refreshHomeTips()
+
+    private fun refreshHomeTips() {
+        val views = _binding ?: return
+        val currentContext = context ?: return
+        views.homeNotificationTip.isVisible = !hasNotificationPermission()
+        views.homeWidgetTip.isVisible = !WidgetPinHelper.hasPinnedWidget(currentContext)
+        views.homeAllFilesTip.isVisible = !MediaPermissionHelper.hasPermissions(currentContext)
     }
 
     private fun setupCards() {
@@ -194,6 +264,42 @@ class HomeFragment : Fragment() {
         binding.cardSwipePhotos.root.setOnClickListener {
             openDetail(ContactsCleanupFragment(), "contacts_cleanup")
         }
+        configureCard(binding.cardBatteryInfo, getString(R.string.home_battery_info), null, "", R.drawable.ic_bolt, R.drawable.bg_home_tool_icon_orange)
+        configureCard(binding.cardDeviceInfo, getString(R.string.home_device_info), null, "", R.drawable.ic_phone, R.drawable.bg_home_tool_icon_blue)
+        binding.cardBatteryInfo.root.setOnClickListener {
+            openDetail(SystemInfoFragment.battery(), "battery_info")
+        }
+        binding.cardDeviceInfo.root.setOnClickListener {
+            openDetail(SystemInfoFragment.device(), "device_info")
+        }
+        configureCard(binding.cardLargeFiles, getString(R.string.home_large_files), null, "", R.drawable.ic_list, R.drawable.bg_home_tool_icon_green)
+        binding.cardLargeFiles.root.setOnClickListener {
+            openDetail(LargeFilesFragment(), "large_files")
+        }
+        configureCard(binding.cardCacheCleanup, getString(R.string.home_cache_cleanup), null, "", R.drawable.ic_delete, R.drawable.bg_home_tool_icon_teal)
+        binding.cardCacheCleanup.root.setOnClickListener {
+            openDetail(CacheCleanupFragment(), "cache_cleanup")
+        }
+        configureCard(binding.cardNetworkTraffic, getString(R.string.home_network_traffic), null, "", R.drawable.ic_chart, R.drawable.bg_home_tool_icon_blue)
+        binding.cardNetworkTraffic.root.setOnClickListener {
+            openDetail(NetworkTrafficFragment(), "network_traffic")
+        }
+        configureCard(binding.cardVault, getString(R.string.home_private_vault), null, "", R.drawable.ic_lock, R.drawable.bg_home_tool_icon_pink)
+        binding.cardVault.root.setOnClickListener {
+            openDetail(VaultFragment(), "vault")
+        }
+        configureCard(binding.cardPictureCleanup, getString(R.string.home_picture_cleanup), null, "", R.drawable.ic_image, R.drawable.bg_home_tool_icon_pink)
+        configureCard(binding.cardVideoCleanup, getString(R.string.home_video_cleanup), null, "", R.drawable.ic_video_library, R.drawable.bg_home_tool_icon_blue)
+        configureCard(binding.cardAudioCleanup, getString(R.string.home_audio_cleanup), null, "", R.drawable.ic_volume, R.drawable.bg_home_tool_icon_orange)
+        binding.cardPictureCleanup.root.setOnClickListener {
+            openDetail(CategoryMediaFragment.picture(), "picture_cleanup")
+        }
+        binding.cardVideoCleanup.root.setOnClickListener {
+            openDetail(CategoryMediaFragment.video(), "video_cleanup")
+        }
+        binding.cardAudioCleanup.root.setOnClickListener {
+            openDetail(CategoryMediaFragment.audio(), "audio_cleanup")
+        }
     }
 
     private fun configureCard(
@@ -205,7 +311,7 @@ class HomeFragment : Fragment() {
         iconBackgroundRes: Int,
     ) {
         card.tvFeatureTitle.text = title
-        card.tvFeatureValue.isVisible = !value.isNullOrBlank()
+        card.tvFeatureValue.isVisible = false
         card.tvFeatureValue.text = value.orEmpty()
         card.tvFeatureCount.text = subtitle
         card.ivFeatureIcon.setImageResource(iconRes)
@@ -222,15 +328,22 @@ class HomeFragment : Fragment() {
 
     private fun renderPermission(granted: Boolean) {
         if (_binding == null) return
-        binding.permissionContainer.isVisible = !granted
-        binding.contentContainer.isVisible = granted
-        binding.btnPermission.setText(if (permissionDenied) R.string.go_to_settings else R.string.grant_access)
+        binding.contentContainer.isVisible = true
         if (granted) {
             animateHeroEntry()
         }
     }
 
     private fun render(state: HomeUiState) {
+        if (!MediaPermissionHelper.hasPermissions(requireContext())) {
+            binding.tvScanSummary.setText(R.string.storage_permission_title)
+            binding.tvReclaimValue.text = getString(R.string.em_dash)
+            binding.progressScan.isVisible = false
+            binding.scanRing.setIndeterminate(false)
+            binding.scanRing.setProgress(0f)
+            binding.tvScanPercent.isVisible = false
+            return
+        }
         when (state.scanStatus) {
             HomeUiState.ScanStatus.IDLE,
             HomeUiState.ScanStatus.SCANNING,
@@ -346,11 +459,38 @@ class HomeFragment : Fragment() {
         }
     }
 
+    private fun showStoragePermissionPrompt() {
+        if (!isAdded || MediaPermissionHelper.hasPermissions(requireContext())) return
+        if (permissionDialog?.isShowing == true) return
+        PathAnalytics.track(requireContext(), com.aetherquorion.cleansuperai.analytics.PathEvent.STORAGE_PERM_SHOWN)
+        permissionDialog = StoragePermissionDialog.show(requireContext()) { requestPermission() }
+    }
+
     private fun requestPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&
+            !MediaPermissionHelper.hasPermissions(requireContext())) {
+            allFilesLauncher.launch(
+                FeaturePermissionCoordinator.settingsIntent(requireContext(), FeatureAccess.ALL_FILES)
+            )
+            startActivity(Intent(requireContext(), StoragePermissionGuideActivity::class.java))
+            return
+        }
         val permissions = requiredHomePermissions()
         if (permissions.isNotEmpty()) {
             permissionLauncher.launch(permissions)
         }
+    }
+
+    private fun requestAllFilesFromTip() {
+        if (MediaPermissionHelper.hasPermissions(requireContext())) {
+            refreshHomeTips()
+            return
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            allFilesLauncher.launch(
+                FeaturePermissionCoordinator.settingsIntent(requireContext(), FeatureAccess.ALL_FILES)
+            )
+        } else requestPermission()
     }
 
     private fun openAppSettings() {
@@ -375,22 +515,26 @@ class HomeFragment : Fragment() {
 
     private fun maybeRequestHomePermissions() {
         if (!isAdded) return
+        if ((activity as? MainActivity)?.homePermissionSequencePending == true) return
 
         val mediaGranted = MediaPermissionHelper.hasPermissions(requireContext())
         val notificationGranted = hasNotificationPermission()
 
         when {
-            !mediaGranted && !permissionDenied -> requestPermission()
-            mediaGranted && !notificationGranted && !notificationPermissionDenied -> requestPermission()
+            !mediaGranted && !entryPromptShownThisProcess -> {
+                entryPromptShownThisProcess = true
+                showStoragePermissionPrompt()
+            }
         }
+    }
+
+    fun continueHomePermissionsAfterNotification() {
+        if (isAdded) maybeRequestHomePermissions()
     }
 
     private fun requiredHomePermissions(): Array<String> {
         val permissions = buildList {
             addAll(MediaPermissionHelper.requiredPermissions().filterNot(::hasPermission))
-            if (shouldRequestNotificationPermission() && !hasNotificationPermission()) {
-                add(Manifest.permission.POST_NOTIFICATIONS)
-            }
         }
         return permissions.toTypedArray()
     }
@@ -405,8 +549,27 @@ class HomeFragment : Fragment() {
         !shouldRequestNotificationPermission() || hasPermission(Manifest.permission.POST_NOTIFICATIONS)
 
     private fun openDetail(fragment: Fragment, tag: String) {
-        if (!MediaPermissionHelper.hasPermissions(requireContext())) {
-            requestPermission()
+        val feature = when (tag) {
+            "clean_center", "cache_cleanup" -> "cache"
+            "large_files" -> "large"
+            "picture_cleanup" -> "picture"
+            "screenshots" -> "screenshots"
+            "similar" -> "similar"
+            "duplicates", "duplicate_videos" -> "duplicate"
+            "contacts_cleanup" -> "swipe"
+            "videos", "video_cleanup" -> "video"
+            "audio_cleanup" -> "audio"
+            "battery_info" -> "battery"
+            "network_traffic" -> "network"
+            "device_info" -> "device"
+            "vault" -> "vault"
+            else -> null
+        }
+        feature?.let { PathAnalytics.trackFeatureClick(requireContext(), it) }
+        if (HomeStorageGate.requiresAllFiles(tag) && !MediaPermissionHelper.hasPermissions(requireContext())) {
+            pendingDetailTag = tag
+            pendingDetailFragment = fragment
+            showStoragePermissionPrompt()
             return
         }
         (activity as? MainActivity)?.openDetail(fragment, tag) ?: parentFragmentManager.commit {
@@ -415,8 +578,33 @@ class HomeFragment : Fragment() {
         }
     }
 
+    private fun resumePendingDetail() {
+        val tag = pendingDetailTag ?: return
+        if (!MediaPermissionHelper.hasPermissions(requireContext())) return
+        pendingDetailTag = null
+        val fragment = pendingDetailFragment ?: when (tag) {
+            "clean_center" -> CleanCenterFragment()
+            "similar" -> SimilarPhotosFragment.newInstance(SimilarMediaMode.SIMILAR_PHOTOS)
+            "duplicates" -> SimilarPhotosFragment.newInstance(SimilarMediaMode.DUPLICATE_PHOTOS)
+            "duplicate_videos" -> SimilarPhotosFragment.newInstance(SimilarMediaMode.DUPLICATE_VIDEOS)
+            "videos" -> LargeVideoListFragment()
+            "screenshots" -> ScreenshotListFragment()
+            "large_files" -> LargeFilesFragment()
+            "cache_cleanup" -> CacheCleanupFragment()
+            "picture_cleanup" -> CategoryMediaFragment.picture()
+            "video_cleanup" -> CategoryMediaFragment.video()
+            "audio_cleanup" -> CategoryMediaFragment.audio()
+            "vault" -> VaultFragment()
+            else -> return
+        }
+        pendingDetailFragment = null
+        (activity as? MainActivity)?.openDetail(fragment, tag)
+    }
+
     companion object {
+        private var entryPromptShownThisProcess = false
         private const val KEY_PERMISSION_DENIED = "permission_denied"
         private const val KEY_NOTIFICATION_PERMISSION_DENIED = "notification_permission_denied"
+        private const val KEY_PENDING_DETAIL = "pending_detail"
     }
 }

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notif_toolbar_surface"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingTop="2dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="2dp">
+
+    <LinearLayout
+        android:id="@+id/notif_action_cache"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <FrameLayout android:layout_width="31dp" android:layout_height="31dp">
+            <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_gravity="bottom|start" android:background="@drawable/bg_notif_feature_cache" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_placeholder_broom" android:tint="@android:color/white" />
+            <ImageView android:layout_width="9dp" android:layout_height="9dp" android:layout_gravity="top|end" android:background="@drawable/bg_notif_tip_dot" android:contentDescription="@null" />
+        </FrameLayout>
+        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_junk" android:textColor="#203742" android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notif_action_photos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <FrameLayout android:layout_width="31dp" android:layout_height="31dp">
+            <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_gravity="bottom|start" android:background="@drawable/bg_notif_feature_photos" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_notif_photos" />
+            <ImageView android:layout_width="9dp" android:layout_height="9dp" android:layout_gravity="top|end" android:background="@drawable/bg_notif_tip_dot" android:contentDescription="@null" />
+        </FrameLayout>
+        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/photo_photos_label" android:textColor="#203742" android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notif_action_apps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_marginTop="4dp" android:background="@drawable/bg_notif_feature_apps" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_notif_apps" android:tint="@android:color/white" />
+        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_apps" android:textColor="#203742" android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notif_action_large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_marginTop="4dp" android:background="@drawable/bg_notif_feature_large" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_placeholder_folder" android:tint="@android:color/white" />
+        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_large_file" android:textColor="#203742" android:textSize="10sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_notif_divider" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notif_speed_value"
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notif_speed_value_placeholder"
+                android:textColor="#203742"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notif_speed_unit"
+                style="@style/TextAppearance.Compat.Notification.Line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notif_speed_unit"
+                android:textColor="#203742"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_circle_blue"
+            android:contentDescription="@null"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_notif_download" />
+    </LinearLayout>
+</LinearLayout>

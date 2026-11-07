@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">I-uninstall</string>
+    <string name="uninstall_guide_back">Bumalik</string>
+    <string name="uninstall_guide_wait">Sandali lang…</string>
+    <string name="uninstall_guide_more_space">Hayaan ang %1$s na magbakante pa ng espasyo</string>
+    <string name="uninstall_guide_smart_clean">Simulan ang smart cleaning</string>
+    <string name="uninstall_guide_scan_files">I-scan ang mga file na maaaring gusto mong burahin</string>
+    <string name="uninstall_guide_scan_now">I-scan ngayon</string>
+    <string name="uninstall_guide_unused_apps">Tingnan ang mga hindi ginagamit na app</string>
+    <string name="uninstall_guide_find_apps">Hanapin ang mga app na hindi mo na kailangan</string>
+    <string name="uninstall_guide_view_apps">Tingnan ang mga app</string>
+    <string name="uninstall_guide_keep">Panatilihin ang %1$s</string>
+    <string name="uninstall_guide_continue">Ituloy ang pag-uninstall</string>
+    <string name="uninstall_guide_why">Bakit mo ia-uninstall ang %1$s?</string>
+    <string name="uninstall_reason_no_need">Hindi ko na ito kailangan</string>
+    <string name="uninstall_reason_ads">Napakaraming ad</string>
+    <string name="uninstall_reason_space">Hindi sapat ang nabakanteng espasyo</string>
+    <string name="uninstall_reason_missing_files">Hindi ko makita ang mga file na gusto kong linisin</string>
+    <string name="uninstall_reason_hard">Mahirap itong gamitin</string>
+    <string name="uninstall_reason_slow">Mabagal o hindi matatag ang app</string>
+    <string name="uninstall_reason_other">Iba pa</string>
+    <string name="uninstall_guide_private">Hindi kasama ang mga file mo sa feedback mo.</string>
+    <string name="action_cancel">Kanselahin</string>
+    <string name="action_uninstall">I-uninstall</string>
+    <string name="photo_photos_label">Mga larawan</string>
+    <string name="notif_large_file">Malaking File</string>
+    <string name="notif_junk">Basura</string>
+    <string name="notif_apps">Mga app</string>
+    <string name="notif_clean_now">Malinis Ngayon</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+</resources>

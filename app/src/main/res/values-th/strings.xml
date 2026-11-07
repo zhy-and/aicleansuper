@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">ถอนการติดตั้ง</string>
+    <string name="uninstall_guide_back">ย้อนกลับ</string>
+    <string name="uninstall_guide_wait">รอสักครู่…</string>
+    <string name="uninstall_guide_more_space">ให้ %1$s ช่วยเพิ่มพื้นที่ว่างอีกไหม</string>
+    <string name="uninstall_guide_smart_clean">เริ่มการล้างอัจฉริยะ</string>
+    <string name="uninstall_guide_scan_files">สแกนไฟล์ที่คุณอาจต้องการลบ</string>
+    <string name="uninstall_guide_scan_now">สแกนตอนนี้</string>
+    <string name="uninstall_guide_unused_apps">ดูแอปที่ไม่ได้ใช้</string>
+    <string name="uninstall_guide_find_apps">ค้นหาแอปที่คุณไม่ต้องการแล้ว</string>
+    <string name="uninstall_guide_view_apps">ดูแอป</string>
+    <string name="uninstall_guide_keep">เก็บ %1$s ไว้</string>
+    <string name="uninstall_guide_continue">ดำเนินการถอนการติดตั้งต่อ</string>
+    <string name="uninstall_guide_why">ทำไมจึงถอนการติดตั้ง %1$s?</string>
+    <string name="uninstall_reason_no_need">ไม่ต้องการใช้อีกแล้ว</string>
+    <string name="uninstall_reason_ads">โฆษณามากเกินไป</string>
+    <string name="uninstall_reason_space">เพิ่มพื้นที่ว่างได้ไม่เพียงพอ</string>
+    <string name="uninstall_reason_missing_files">หาไฟล์ที่ต้องการล้างไม่พบ</string>
+    <string name="uninstall_reason_hard">ใช้งานยาก</string>
+    <string name="uninstall_reason_slow">แอปช้าหรือไม่เสถียร</string>
+    <string name="uninstall_reason_other">อื่น ๆ</string>
+    <string name="uninstall_guide_private">ความคิดเห็นของคุณจะไม่มีไฟล์ของคุณรวมอยู่</string>
+    <string name="action_cancel">ยกเลิก</string>
+    <string name="action_uninstall">ถอนการติดตั้ง</string>
+    <string name="photo_photos_label">ภาพถ่าย</string>
+    <string name="notif_large_file">ไฟล์ขนาดใหญ่</string>
+    <string name="notif_junk">ขยะ</string>
+    <string name="notif_apps">แอพ</string>
+    <string name="notif_clean_now">ทำความสะอาดทันที</string>
+    <string name="notif_speed_unit">กิโลไบต์/วินาที</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+</resources>

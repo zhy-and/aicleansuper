@@ -1,6 +1,9 @@
 package com.aetherquorion.cleansuperai.ui.profile
 
 import android.app.AlertDialog
+import android.appwidget.AppWidgetManager
+import android.content.ComponentName
+import android.os.Build
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -13,6 +16,7 @@ import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentProfileBinding
 import com.aetherquorion.cleansuperai.databinding.ViewToolItemBinding
+import com.aetherquorion.cleansuperai.widget.CleanWidgetProvider
 import java.io.File
 import java.util.Locale
 
@@ -55,6 +59,20 @@ class ProfileFragment : Fragment() {
             R.string.settings_privacy_policy_title,
             R.string.settings_privacy_policy_subtitle,
         ) { openPrivacyPolicy() }
+
+        configureRow(
+            binding.rowTermsOfUse,
+            R.drawable.ic_about,
+            R.string.settings_terms_title,
+            R.string.settings_terms_subtitle,
+        ) { (activity as? MainActivity)?.openDetail(TermsOfUseFragment(), "terms_of_use") }
+
+        configureRow(
+            binding.rowWidget,
+            R.drawable.ic_clean,
+            R.string.settings_widget_title,
+            R.string.settings_widget_subtitle,
+        ) { pinWidget() }
 
         configureRow(
             binding.rowClearCache,
@@ -109,6 +127,16 @@ class ProfileFragment : Fragment() {
 
     private fun openPrivacyPolicy() {
         startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_POLICY_URL)))
+    }
+
+    private fun pinWidget() {
+        val manager = AppWidgetManager.getInstance(requireContext())
+        val provider = ComponentName(requireContext(), CleanWidgetProvider::class.java)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && manager.isRequestPinAppWidgetSupported) {
+            manager.requestPinAppWidget(provider, null, null)
+        } else {
+            showToast(getString(R.string.settings_widget_subtitle))
+        }
     }
 
     private fun confirmClearCache() {

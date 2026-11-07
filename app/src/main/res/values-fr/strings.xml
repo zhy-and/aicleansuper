@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Désinstaller</string>
+    <string name="uninstall_guide_back">Retour</string>
+    <string name="uninstall_guide_wait">Un instant…</string>
+    <string name="uninstall_guide_more_space">Laissez %1$s libérer plus d’espace</string>
+    <string name="uninstall_guide_smart_clean">Lancer le nettoyage intelligent</string>
+    <string name="uninstall_guide_scan_files">Analyser les fichiers à supprimer</string>
+    <string name="uninstall_guide_scan_now">Analyser</string>
+    <string name="uninstall_guide_unused_apps">Voir les applications inutilisées</string>
+    <string name="uninstall_guide_find_apps">Trouver les applications inutiles</string>
+    <string name="uninstall_guide_view_apps">Voir les applications</string>
+    <string name="uninstall_guide_keep">Garder %1$s</string>
+    <string name="uninstall_guide_continue">Continuer la désinstallation</string>
+    <string name="uninstall_guide_why">Pourquoi désinstaller %1$s ?</string>
+    <string name="uninstall_reason_no_need">Je n’en ai plus besoin</string>
+    <string name="uninstall_reason_ads">Trop de publicités</string>
+    <string name="uninstall_reason_space">Pas assez d’espace libéré</string>
+    <string name="uninstall_reason_missing_files">Je ne trouve pas les fichiers à nettoyer</string>
+    <string name="uninstall_reason_hard">Difficile à utiliser</string>
+    <string name="uninstall_reason_slow">L’application est lente ou instable</string>
+    <string name="uninstall_reason_other">Autre</string>
+    <string name="uninstall_guide_private">Vos fichiers ne sont pas inclus dans vos commentaires.</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="action_uninstall">Désinstaller</string>
+    <string name="photo_photos_label">Photos</string>
+    <string name="notif_large_file">Fichier volumineux</string>
+    <string name="notif_junk">Déchets</string>
+    <string name="notif_apps">Applications</string>
+    <string name="notif_clean_now">Nettoyer maintenant</string>
+    <string name="notif_speed_unit">Ko/s</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

@@ -1,0 +1,603 @@
+{
+  "version": 0,
+  "enabled": true,
+  "global": {
+    "first_max": 20,
+    "daily_max": 20,
+    "no_click_stop": 10,
+    "cooldown_sec": 0,
+    "max_visible": 5,
+    "skip_foreground": true,
+    "install_age_sec": 0,
+    "repeat_submit": {
+      "enabled": true,
+      "interval_ms": 3000,
+      "first_day_extra_count": 2,
+      "later_day_extra_count": 5,
+      "samsung_first_day_extra_count": 1,
+      "samsung_later_day_extra_count": 1
+    }
+  },
+  "buckets": {
+    "normal_ntf": {
+      "enabled": true,
+      "interval_sec": 3600,
+      "daily_max": 10,
+      "no_click_stop": 10,
+      "cooldown_sec": 0,
+      "repetitions": 1,
+      "max_visible": 5
+    },
+    "res_ntf": {
+      "enabled": true,
+      "interval_sec": 14400,
+      "daily_max": 1,
+      "no_click_stop": 10,
+      "cooldown_sec": 14400,
+      "repetitions": 1,
+      "max_visible": 3
+    },
+    "apk_ntf": {
+      "enabled": true,
+      "interval_sec": -1,
+      "daily_max": 2,
+      "no_click_stop": 10,
+      "cooldown_sec": 28800,
+      "repetitions": 1,
+      "max_visible": 3
+    }
+  },
+  "scenes": {
+    "screenshot_capture": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 90,
+      "daily_max": 20,
+      "cooldown_sec": 2,
+      "template_ids": [
+        "style_black_big",
+        "style_yellow_big"
+      ],
+      "router": "screenshot_cleaner"
+    },
+    "app_install": {
+      "enabled": true,
+      "bucket": "apk_ntf",
+      "periodic": false,
+      "priority": 80,
+      "daily_max": 1,
+      "cooldown_sec": 28800,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "app_manager"
+    },
+    "app_uninstall": {
+      "enabled": true,
+      "bucket": "res_ntf",
+      "periodic": false,
+      "priority": 75,
+      "daily_max": 1,
+      "cooldown_sec": 28800,
+      "template_ids": [
+        "style_red_event"
+      ],
+      "router": "cache_clean"
+    },
+    "clean_reminder": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": true,
+      "priority": 60,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_yellow_clean"
+      ],
+      "router": "cache_clean"
+    },
+    "battery_below_50": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 70,
+      "daily_max": 1,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "battery_info"
+    },
+    "battery_below_20": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 85,
+      "daily_max": 1,
+      "cooldown_sec": 10800,
+      "template_ids": [
+        "style_red_event"
+      ],
+      "router": "battery_info"
+    },
+    "charging": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 65,
+      "daily_max": 1,
+      "cooldown_sec": 14400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "battery_info"
+    },
+    "charging_full": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 80,
+      "daily_max": 1,
+      "cooldown_sec": 43200,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "battery_info"
+    },
+    "charging_to_80": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 72,
+      "daily_max": 1,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "battery_info"
+    },
+    "charging_disconnect": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 64,
+      "daily_max": 1,
+      "cooldown_sec": 14400,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "battery_info"
+    },
+    "app_update": {
+      "enabled": true,
+      "bucket": "apk_ntf",
+      "periodic": false,
+      "priority": 78,
+      "daily_max": 1,
+      "cooldown_sec": 28800,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "app_manager"
+    },
+    "network_change": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 50,
+      "daily_max": 1,
+      "cooldown_sec": 7200,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "network_traffic"
+    },
+    "screen_lock": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 10800,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "cache_clean"
+    },
+    "screen_on_after_lock": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 54,
+      "daily_max": 1,
+      "cooldown_sec": 10800,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "cache_clean"
+    },
+    "storage_free_drop": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": true,
+      "priority": 68,
+      "daily_max": 1,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "cache_clean"
+    },
+    "scheduled_push_1": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 58,
+      "daily_max": 1,
+      "cooldown_sec": 43200,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "home",
+      "times": [
+        "10:00",
+        "21:00"
+      ]
+    },
+    "scheduled_push_2": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 57,
+      "daily_max": 1,
+      "cooldown_sec": 43200,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "home",
+      "times": [
+        "12:00",
+        "19:00"
+      ]
+    },
+    "scheduled_push_3": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 56,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "home",
+      "times": [
+        "15:00"
+      ]
+    },
+    "scheduled_storage_clean": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "cache_clean",
+      "times": [
+        "10:00"
+      ]
+    },
+    "scheduled_large_files": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "large_file",
+      "times": [
+        "11:00"
+      ]
+    },
+    "scheduled_duplicate_photos": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "picture_clean",
+      "times": [
+        "12:00"
+      ]
+    },
+    "scheduled_similar_photos": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "picture_clean",
+      "times": [
+        "14:00"
+      ]
+    },
+    "scheduled_videos": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "video_clean",
+      "times": [
+        "15:00"
+      ]
+    },
+    "scheduled_audio": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "audio_clean",
+      "times": [
+        "16:00"
+      ]
+    },
+    "scheduled_apps": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "app_manager",
+      "times": [
+        "18:00"
+      ]
+    },
+    "scheduled_data": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "network_traffic",
+      "times": [
+        "19:00"
+      ]
+    },
+    "app_inactive": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": true,
+      "priority": 62,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_yellow_clean"
+      ],
+      "router": "home"
+    },
+    "app_background": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 52,
+      "daily_max": 3,
+      "cooldown_sec": 1800,
+      "delay_sec": 5,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "cache_clean"
+    },
+    "scan_done_uncleaned": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 74,
+      "daily_max": 1,
+      "cooldown_sec": 21600,
+      "delay_sec": 300,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "cache_clean"
+    },
+    "scan_interrupted": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 73,
+      "daily_max": 1,
+      "cooldown_sec": 21600,
+      "delay_sec": 300,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "home"
+    },
+    "image_deleted": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 88,
+      "daily_max": 20,
+      "cooldown_sec": 0,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "picture_clean"
+    },
+    "video_deleted": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 87,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "video_clean"
+    },
+    "audio_deleted": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 86,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_blue_event"
+      ],
+      "router": "audio_clean"
+    },
+    "file_deleted": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 85,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_yellow_event"
+      ],
+      "router": "large_file"
+    },
+    "image_download": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 82,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "picture_clean"
+    },
+    "video_download": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 81,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "video_clean"
+    },
+    "audio_download": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 80,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "audio_clean"
+    },
+    "file_download": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 79,
+      "daily_max": 2,
+      "cooldown_sec": 21600,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "large_file"
+    },
+    "trash_emptied": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 86,
+      "daily_max": 1,
+      "cooldown_sec": 43200,
+      "template_ids": [
+        "style_red_event"
+      ],
+      "router": "picture_clean"
+    }
+  },
+  "templates": {
+    "style_blue_event": {
+      "layout": "small",
+      "button_bg": "#0B7CFF",
+      "button_text": "#FFFFFF",
+      "button_anim": "scale"
+    },
+    "style_green_event": {
+      "layout": "small",
+      "button_bg": "#14B86A",
+      "button_text": "#FFFFFF",
+      "button_anim": "scale"
+    },
+    "style_red_event": {
+      "layout": "small",
+      "button_bg": "#FF5A3D",
+      "button_text": "#FFFFFF",
+      "button_anim": "scale"
+    },
+    "style_yellow_event": {
+      "layout": "small",
+      "button_bg": "#FFE66D",
+      "button_text": "#222222",
+      "button_anim": "scale"
+    },
+    "style_yellow_clean": {
+      "layout": "reminder_day",
+      "button_bg": "#FFE66D",
+      "button_text": "#222222",
+      "button_anim": "scale"
+    },
+    "style_yellow_big": {
+      "layout": "big",
+      "button_bg": "#FFE66D",
+      "button_text": "#222222",
+      "button_anim": "scale"
+    },
+    "style_black_big": {
+      "layout": "small",
+      "button_bg": "#000000",
+      "button_text": "#ffffff",
+      "button_anim": "scale"
+    }
+  }
+}

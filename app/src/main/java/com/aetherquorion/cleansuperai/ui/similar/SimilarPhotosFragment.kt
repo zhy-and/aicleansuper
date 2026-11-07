@@ -66,7 +66,7 @@ class SimilarPhotosFragment : Fragment() {
             onToggle = ::toggleSelection,
         )
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
-        binding.btnSelectRecommended.setOnClickListener { selectAllCandidates() }
+        binding.checkSelectCandidates.setOnClickListener { selectAllCandidates() }
         binding.btnDeleteSelected.setOnClickListener { confirmDeleteSelected() }
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = adapter
@@ -118,15 +118,16 @@ class SimilarPhotosFragment : Fragment() {
             initializedSelection = true
         }
 
-        adapter.submitList(state.groups.toList()) {
-            adapter.notifyDataSetChanged()
-        }
+        if (adapter.currentList !== state.groups) adapter.submitList(state.groups)
+        binding.loadingView.root.isVisible = state.isLoading
         binding.recyclerView.isVisible = state.groups.isNotEmpty()
         binding.emptyContainer.isVisible = !state.isLoading && state.groups.isEmpty()
         binding.actionContainer.isVisible = state.groups.isNotEmpty()
         binding.tvEmptyBody.text = state.errorMessage ?: emptyBodyForMode()
         binding.btnDeleteSelected.isEnabled = selectedIds.isNotEmpty()
         binding.tvNote.text = getString(R.string.selected_count_format, selectedIds.size)
+        binding.checkSelectCandidates.isChecked = validIds.isNotEmpty() && selectedIds.size == validIds.size
+        binding.btnDeleteSelected.text = getString(R.string.similar_delete_count_action, selectedIds.size)
 
         val reclaimBytes = state.groups.sumOf { it.estimatedReclaimBytes }
         val reclaimText = Formatter.formatFileSize(requireContext(), reclaimBytes)
@@ -167,6 +168,7 @@ class SimilarPhotosFragment : Fragment() {
             selectedIds.add(item.id)
         }
         render(viewModel.uiState.value)
+        adapter.notifyDataSetChanged()
     }
 
     private fun selectAllCandidates() {
@@ -180,6 +182,7 @@ class SimilarPhotosFragment : Fragment() {
             selectedIds.addAll(candidates)
         }
         render(viewModel.uiState.value)
+        adapter.notifyDataSetChanged()
     }
 
     private fun confirmDeleteSelected() {

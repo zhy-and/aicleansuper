@@ -61,9 +61,7 @@ class ScreenshotListFragment : Fragment() {
         binding.tvTitle.setText(R.string.screenshot_detail_title)
         binding.tvNote.text = getString(R.string.selected_count_format, 0)
         binding.actionContainer.isVisible = true
-        binding.btnSecondaryAction.setText(R.string.select_all_action)
-        binding.btnPrimaryAction.setText(R.string.delete_selected_action)
-        binding.btnSecondaryAction.setOnClickListener { toggleSelectAll() }
+        binding.checkSelectAll.setOnClickListener { toggleSelectAll() }
         binding.btnPrimaryAction.setOnClickListener { confirmDeleteSelected() }
         binding.recyclerView.layoutManager = GridLayoutManager(requireContext(), gridSpanCount())
         binding.recyclerView.adapter = adapter
@@ -102,6 +100,7 @@ class ScreenshotListFragment : Fragment() {
         adapter.submitList(items)
 
         binding.recyclerView.isVisible = items.isNotEmpty()
+        binding.loadingView.root.isVisible = state.isLoading
         binding.emptyContainer.isVisible = !state.isLoading && items.isEmpty()
         binding.tvEmptyTitle.setText(R.string.empty_screenshot_title)
         binding.tvEmptyBody.text = state.errorMessage ?: getString(R.string.empty_screenshot_body)
@@ -133,13 +132,8 @@ class ScreenshotListFragment : Fragment() {
 
     private fun renderSelectionState(totalItems: Int) {
         binding.tvNote.text = getString(R.string.selected_count_format, selectedIds.size)
-        binding.btnSecondaryAction.setText(
-            if (selectedIds.size == totalItems && totalItems > 0) {
-                R.string.clear_selected_action
-            } else {
-                R.string.select_all_action
-            },
-        )
+        binding.checkSelectAll.isChecked = totalItems > 0 && selectedIds.size == totalItems
+        binding.btnPrimaryAction.text = getString(R.string.similar_delete_count_action, selectedIds.size)
         binding.btnPrimaryAction.isEnabled = selectedIds.isNotEmpty()
     }
 

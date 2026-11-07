@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Deinstallieren</string>
+    <string name="uninstall_guide_back">Zurück</string>
+    <string name="uninstall_guide_wait">Einen Moment…</string>
+    <string name="uninstall_guide_more_space">Mit %1$s mehr Speicherplatz freigeben</string>
+    <string name="uninstall_guide_smart_clean">Intelligente Bereinigung starten</string>
+    <string name="uninstall_guide_scan_files">Dateien finden, die Sie löschen möchten</string>
+    <string name="uninstall_guide_scan_now">Jetzt scannen</string>
+    <string name="uninstall_guide_unused_apps">Ungenutzte Apps ansehen</string>
+    <string name="uninstall_guide_find_apps">Apps finden, die Sie nicht mehr brauchen</string>
+    <string name="uninstall_guide_view_apps">Apps ansehen</string>
+    <string name="uninstall_guide_keep">%1$s behalten</string>
+    <string name="uninstall_guide_continue">Mit der Deinstallation fortfahren</string>
+    <string name="uninstall_guide_why">Warum %1$s deinstallieren?</string>
+    <string name="uninstall_reason_no_need">Ich brauche die App nicht mehr</string>
+    <string name="uninstall_reason_ads">Zu viele Anzeigen</string>
+    <string name="uninstall_reason_space">Es wurde nicht genug Speicherplatz frei</string>
+    <string name="uninstall_reason_missing_files">Ich finde die zu bereinigenden Dateien nicht</string>
+    <string name="uninstall_reason_hard">Die Nutzung ist schwierig</string>
+    <string name="uninstall_reason_slow">Die App ist langsam oder instabil</string>
+    <string name="uninstall_reason_other">Sonstiges</string>
+    <string name="uninstall_guide_private">Ihr Feedback enthält keine Ihrer Dateien.</string>
+    <string name="action_cancel">Stornieren</string>
+    <string name="action_uninstall">Deinstallieren</string>
+    <string name="photo_photos_label">Fotos</string>
+    <string name="notif_large_file">Große Datei</string>
+    <string name="notif_junk">Datenmüll</string>
+    <string name="notif_apps">Apps</string>
+    <string name="notif_clean_now">Jetzt reinigen</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+</resources>

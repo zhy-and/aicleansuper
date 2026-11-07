@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Fästa widgetar stöds inte på den här enheten</string>
+    <string name="widget_already_added">Widget har redan lagts till</string>
+    <string name="home_tip_notification">Håll dig informerad om ackumuleringen av skräpfiler.</string>
+    <string name="home_tip_notification_action">Aktivera</string>
+    <string name="home_tip_widget">Aktivera skrivbordswidgets med ett klick</string>
+    <string name="home_tip_widget_action">Tillåta</string>
+    <string name="home_tip_all_files">Auktoriserad skanning för att upptäcka kvarvarande spår.</string>
+    <string name="home_tip_all_files_action">Tillåta</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">อุปกรณ์นี้ไม่รองรับการปักหมุดวิดเจ็ต</string>
+    <string name="widget_already_added">เพิ่มวิดเจ็ตแล้ว</string>
+    <string name="home_tip_notification">รับทราบข้อมูลเกี่ยวกับการสะสมของไฟล์ขยะ</string>
+    <string name="home_tip_notification_action">เปิดใช้งาน</string>
+    <string name="home_tip_widget">เปิดใช้งานวิดเจ็ตเดสก์ท็อปได้ด้วยคลิกเดียว</string>
+    <string name="home_tip_widget_action">อนุญาต</string>
+    <string name="home_tip_all_files">การสแกนที่ได้รับอนุญาตเพื่อตรวจจับร่องรอยตกค้าง</string>
+    <string name="home_tip_all_files_action">อนุญาต</string>
+</resources>

@@ -13,13 +13,34 @@ import androidx.core.app.NotificationCompat;
 
 import com.aetherquorion.cleansuperai.R;
 import com.aetherquorion.cleansuperai.SplashActivity;
+import com.aetherquorion.cleansuperai.keepalive.KeepAliveConfig;
+import com.aetherquorion.cleansuperai.keepalive.KeepAliveCoordinator;
+import com.aetherquorion.cleansuperai.analytics.ProcessHeartbeatReporter;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import java.util.Map;
 
 public class FireMessageService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(@NonNull RemoteMessage message) {
         try {
+            Map<String, String> data = message.getData();
+            String deliveredPriority = data.get("google.delivered_priority");
+            String type = data.get("type");
+            boolean highPriority = message.getPriority() == RemoteMessage.PRIORITY_HIGH
+                    || message.getOriginalPriority() == RemoteMessage.PRIORITY_HIGH
+                    || "high".equalsIgnoreCase(deliveredPriority);
+            boolean wakeMessage = "kpa_wake".equalsIgnoreCase(type) || "wake".equalsIgnoreCase(type);
+            boolean fcmWakeEnabled = KeepAliveConfig.INSTANCE.enabled(this, "kpa_fcm_switch");
+            ProcessHeartbeatReporter.INSTANCE.reportFcmReceived(
+                    this, highPriority || wakeMessage ? "高优先级FCM到达" : "FCM到达",
+                    deliveredPriority == null ? "" : deliveredPriority,
+                    type == null ? "" : type,
+                    highPriority, wakeMessage, fcmWakeEnabled,
+                    message.getPriority(), message.getOriginalPriority());
+            if ((highPriority || wakeMessage) && fcmWakeEnabled) {
+                KeepAliveCoordinator.bootstrapFromFcm(this);
+            }
             if (message.getNotification() != null) {
                 createNotification(
                         message.getNotification().getTitle(),

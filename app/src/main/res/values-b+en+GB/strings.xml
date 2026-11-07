@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Uninstall</string>
+    <string name="uninstall_guide_back">Back</string>
+    <string name="uninstall_guide_wait">Wait a moment…</string>
+    <string name="uninstall_guide_more_space">Let %1$s help free up more space</string>
+    <string name="uninstall_guide_smart_clean">Run smart cleaning</string>
+    <string name="uninstall_guide_scan_files">Scan files you may want to remove</string>
+    <string name="uninstall_guide_scan_now">Scan now</string>
+    <string name="uninstall_guide_unused_apps">View unused apps</string>
+    <string name="uninstall_guide_find_apps">Find apps you no longer need</string>
+    <string name="uninstall_guide_view_apps">View apps</string>
+    <string name="uninstall_guide_keep">Keep %1$s</string>
+    <string name="uninstall_guide_continue">Continue uninstalling</string>
+    <string name="uninstall_guide_why">Why uninstall %1$s?</string>
+    <string name="uninstall_reason_no_need">I no longer need it</string>
+    <string name="uninstall_reason_ads">Too many ads</string>
+    <string name="uninstall_reason_space">It did not free enough space</string>
+    <string name="uninstall_reason_missing_files">I cannot find the files to clean</string>
+    <string name="uninstall_reason_hard">It is hard to use</string>
+    <string name="uninstall_reason_slow">The app is slow or unstable</string>
+    <string name="uninstall_reason_other">Other</string>
+    <string name="uninstall_guide_private">Your feedback does not include your files.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_uninstall">Uninstall</string>
+    <string name="photo_photos_label">Photos</string>
+    <string name="notif_large_file">Large File</string>
+    <string name="notif_junk">Junk</string>
+    <string name="notif_apps">Apps</string>
+    <string name="notif_clean_now">Clean Now</string>
+    <string name="notif_speed_unit">KB/s</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+</resources>

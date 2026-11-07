@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Het vastzetten van widgets wordt niet ondersteund op dit apparaat</string>
+    <string name="widget_already_added">Widget al toegevoegd</string>
+    <string name="home_tip_notification">Blijf op de hoogte van de opeenstapeling van ongewenste bestanden.</string>
+    <string name="home_tip_notification_action">Inschakelen</string>
+    <string name="home_tip_widget">Schakel bureaubladwidgets in met één klik</string>
+    <string name="home_tip_widget_action">Toestaan</string>
+    <string name="home_tip_all_files">Geautoriseerd scannen om restsporen te detecteren.</string>
+    <string name="home_tip_all_files_action">Toestaan</string>
+</resources>

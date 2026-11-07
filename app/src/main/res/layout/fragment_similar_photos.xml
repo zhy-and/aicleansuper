@@ -116,32 +116,41 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_bottom_action_panel"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/btnSelectRecommended"
-            style="@style/Widget.Cleansuperai.Button.ActionSecondary"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:minWidth="0dp"
-            android:text="@string/similar_select_candidates_action" />
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkSelectCandidates"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:buttonTint="@color/similar_select_checkbox_tint"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:paddingEnd="8dp"
+            android:text="@string/similar_select_all_candidates"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnDeleteSelected"
-            style="@style/Widget.Cleansuperai.Button.ActionDanger"
+            style="@style/Widget.Cleansuperai.Button.ActionDangerPrimary"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
-            android:minWidth="0dp"
             android:text="@string/delete_selected_action" />
     </LinearLayout>
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/view_media_loading"
+        app:layout_constraintBottom_toTopOf="@id/actionContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardSummary" />
 
     <LinearLayout
         android:id="@+id/emptyContainer"

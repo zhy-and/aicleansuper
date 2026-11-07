@@ -10,6 +10,8 @@ data class DisplayMediaItem(
     val metaSecondary: String,
     val sizeText: String,
     val isVideo: Boolean = false,
+    val isAudio: Boolean = false,
+    val isPrivate: Boolean = false,
     val isSelectable: Boolean = false,
     val isSelected: Boolean = false,
 )
