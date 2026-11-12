@@ -44,9 +44,17 @@
         </FrameLayout>
 
         <TextView
+            android:id="@+id/tvLoadingStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="@string/app_name"
             android:textColor="@color/text_primary"
             android:textSize="30sp"
@@ -59,5 +67,6 @@
             android:text="@string/splash_tagline"
             android:textColor="@color/text_secondary"
             android:textSize="14sp" />
+
     </LinearLayout>
 </FrameLayout>
