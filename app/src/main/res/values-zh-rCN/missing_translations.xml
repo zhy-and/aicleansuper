@@ -1,0 +1,318 @@
+<resources>
+    <string name="shortcut_uninstall">卸载</string>
+    <string name="uninstall_guide_back">返回</string>
+    <string name="uninstall_guide_wait">稍等一下……</string>
+    <string name="uninstall_guide_more_space">让%1$s帮助释放更多空间</string>
+    <string name="uninstall_guide_smart_clean">运行智能清理</string>
+    <string name="uninstall_guide_scan_files">扫描您可能想要删除的文件</string>
+    <string name="uninstall_guide_scan_now">立即扫描</string>
+    <string name="uninstall_guide_unused_apps">查看未使用的应用程序</string>
+    <string name="uninstall_guide_find_apps">查找您不再需要的应用程序</string>
+    <string name="uninstall_guide_view_apps">查看应用程序</string>
+    <string name="uninstall_guide_keep">保留%1$s</string>
+    <string name="uninstall_guide_continue">继续卸载</string>
+    <string name="uninstall_guide_why">为什么要卸载%1$s？</string>
+    <string name="uninstall_reason_no_need">我不再需要它</string>
+    <string name="uninstall_reason_ads">广告太多</string>
+    <string name="uninstall_reason_space">它没有释放足够的空间</string>
+    <string name="uninstall_reason_missing_files">我找不到要清理的文件</string>
+    <string name="uninstall_reason_hard">很难用</string>
+    <string name="uninstall_reason_slow">该应用程序速度缓慢或不稳定</string>
+    <string name="uninstall_reason_other">其他</string>
+    <string name="uninstall_guide_private">您的反馈不包括您的文件。</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_uninstall">卸载</string>
+    <string name="photo_photos_label">照片</string>
+    <string name="home_tip_notification">随时了解垃圾文件的积累情况。</string>
+    <string name="home_tip_notification_action">启用</string>
+    <string name="home_tip_widget">一键启用桌面小部件</string>
+    <string name="home_tip_widget_action">允许</string>
+    <string name="widget_pin_unsupported">此设备不支持固定小部件</string>
+    <string name="widget_already_added">小部件已添加</string>
+    <string name="home_tip_all_files">授权扫描以检测残留痕迹。</string>
+    <string name="home_tip_all_files_action">允许</string>
+    <string name="notif_cache">缓存</string>
+    <string name="notif_junk">垃圾</string>
+    <string name="notif_apps">应用程序</string>
+    <string name="notif_clean_now">立即清理</string>
+    <string name="notif_channel_name">快速清理工具栏</string>
+    <string name="notif_channel_desc">用于快速清理操作的持久工具栏</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="notif_event_channel_name">清理提醒</string>
+    <string name="notif_event_channel_desc">截图、安装、卸载后本地提醒</string>
+    <string name="notif_event_summary_channel_name">清理提醒总结</string>
+    <string name="notif_event_screenshot_title">另一张截图？ 1 是时候清理截图了</string>
+    <string name="notif_event_install_title">新应用程序已移入，缓存也已移入。清理</string>
+    <string name="notif_event_uninstall_title">卸载成功！清理文件残留</string>
+    <string name="notif_clean_reminder_title">有很多垃圾堆积起来。一次性全部清理干净。</string>
+    <string name="notif_event_battery_below_50_title">电池电量已超过一半。现在就照顾好它，它会持续到你回家为止。</string>
+    <string name="notif_event_battery_below_20_title">电池电量低。想知道谁在偷你的电吗？点击查看排名。</string>
+    <string name="notif_event_charging_title">接通电源。今晚的任务：重新填充，然后清理。</string>
+    <string name="notif_event_charging_full_title">已充满电并准备就绪。最后一项检查：垃圾是否已清除？</string>
+    <string name="notif_event_charging_to_80_title">最终冲刺是80%。卸下垃圾，轻装上阵，迎接满电。</string>
+    <string name="notif_event_charging_disconnect_title">拔掉插头并出发。请记住花时间清理垃圾并保持最佳状态。</string>
+    <string name="notif_event_app_update_title">新版本已经到来。旧版本留下的所有内容都被彻底清理。</string>
+    <string name="notif_event_network_change_title">网络改变了！查看当前网络状态1</string>
+    <string name="notif_event_screen_lock_title">放下您的手机，交给我们。休息屏幕时间=哺乳时间。</string>
+    <string name="notif_event_screen_on_after_lock_title">我们又见面了，你还困吗？大部分都是垃圾，请尝试清理掉。</string>
+    <string name="notif_event_storage_free_drop_title">存储空间发生了变化。我们看看什么占用了空间？</string>
+    <string name="notif_event_scheduled_push_1_title">堆积了这么久的垃圾一下子就被清理掉了。</string>
+    <string name="notif_event_scheduled_push_2_title">电池没有以前那么耐用了吗？一探究竟。</string>
+    <string name="notif_event_app_inactive_title">好久不见，一直在等待。回来清理垃圾。</string>
+    <string name="notif_event_scheduled_push_3_title">一键访问您的播放列表 — 设置小部件</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>一键访问您的播放列表 — 设置小部件</item>
+        <item>使用小部件让一切变得更轻松 - 添加音乐快捷方式</item>
+        <item>无需解锁即可快速畅玩 — 启用主屏幕小部件</item>
+    </string-array>
+    <string name="notif_event_app_background_title">你忘记了什么</string>
+    <string name="notif_event_app_background_content">快来完成清理工作，使其运行更顺畅。</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>你忘记了什么</item>
+        <item>还剩一步</item>
+        <item>好消息</item>
+        <item>你离开得太快</item>
+        <item>不要让垃圾过夜</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>快来完成清理工作，使其运行更顺畅。</item>
+        <item>再轻按一下即可完成清理并释放更多空间。</item>
+        <item>检测到可用空间 - 来要求一键清理。</item>
+        <item>您的手机可以更快 - 快来看看优化情况。</item>
+        <item>快来完成清理工作，使其运行更顺畅。</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">扫描结果已准备就绪 - 垃圾正在占用空间。立即清理</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>扫描结果已准备就绪 - 垃圾正在占用空间。立即清理</item>
+        <item>还剩一步：返回并立即释放空间。</item>
+        <item>扫描后忘记清理？ 10秒让你的手机变得更轻。</item>
+        <item>垃圾仍然在您的手机上 - 结果已保存。返回一键清理。</item>
+        <item>上次扫描发现多个需要清理的物品。快来完成吧。</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">清理工作还没有完成——来完成最后一步吧。</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>清理工作还没有完成——来完成最后一步吧。</item>
+        <item>清理中断：中途。完成更轻的手机。</item>
+        <item>清理即将完成 - 不要留下垃圾。</item>
+        <item>你中途干净地离开了——完成它并感受不同。</item>
+        <item>中断的清理可以随时继续。快来完成吧。</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">照片已删除 — 安全移至回收站。</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>照片已删除 — 安全移至回收站。</item>
+        <item>刚刚删除了 1 张照片 — 看看您释放了多少空间？</item>
+        <item>照片已删除 — 立即永久删除以释放空间。</item>
+        <item>照片已安全删除 — 存储状态已更新。</item>
+        <item>照片已删除 - 您也可以清理类似的屏幕截图。</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">视频已删除——释放了大空间。</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>视频已删除——释放了大空间。</item>
+        <item>删除了大视频——存储压力立即得到缓解。</item>
+        <item>视频已删除 — 检查您当前的存储状态。</item>
+        <item>删除完成 — 清空回收站以完全释放空间。</item>
+        <item>视频已删除——可能还有更多被遗忘的大视频需要清理。</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">音频被删除——小文件加起来。继续前进。</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>音频被删除——小文件加起来。继续前进。</item>
+        <item>该音频消失了 - 也可以清理更多类似的未使用文件。</item>
+        <item>音频已删除 - 存储详细信息已更新。快来看看吧。</item>
+        <item>已删除 1 个音频文件 — 刷新存储列表。</item>
+        <item>音频已删除 — 清空回收站以释放空间。</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">文件已删除 - 释放了更多存储空间。</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>文件已删除 - 释放了更多存储空间。</item>
+        <item>文件已删除 - 杂乱不会再打扰您的手机。</item>
+        <item>文件已删除 - 看看还有什么可以清理。</item>
+        <item>文件已删除 - 更改已同步，存储状态已更新。</item>
+        <item>该文件已被清除——现在正在回收空间。</item>
+    </string-array>
+    <string name="notif_event_image_download_title">图片已下载 - 打开并查看。</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>图片已下载 - 打开并查看。</item>
+        <item>图片已下载 — 清理相册中的重复照片</item>
+        <item>下载完成 — 图像安全保存。快来看看类似的照片</item>
+    </string-array>
+    <string name="notif_event_video_download_title">下载的视频——它并不小。查看旧视频可以释放多少空间</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>下载的视频——它并不小。查看旧视频可以释放多少空间</item>
+        <item>已保存新视频 - 查找要删除的大视频并释放空间。点我</item>
+        <item>视频占用空间 - 我们找到了可清理的物品来减轻您的手机重量。点击此处</item>
+        <item>下载完成！清理一些旧视频，空间就会回来。点我</item>
+        <item>新视频已排序 - 易于查找或清理。点按即可查看</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">下载音频 — 一键整理您的音乐库。点我</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>下载音频 — 一键整理您的音乐库。点我</item>
+        <item>新音频已排序 - 当您在这里时清理旧音频。点我</item>
+        <item>音乐库已满？检查可清理的音频。点击此处</item>
+        <item>下载的音频 — 一键删除重复数据。点我来整理</item>
+    </string-array>
+    <string name="notif_event_file_download_title">已保存新文件 - 清除旧文件和可用空间。点击此处</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>已保存新文件 - 清除旧文件和可用空间。点击此处</item>
+        <item>下载完成 - 查看可以清理哪些旧文件。点我</item>
+        <item>新文件准备就绪——智能存档+清理。点我开始</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">回收站已清空 — 存储已刷新。检查您的最新空间。</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>回收站已清空 — 存储已刷新。检查您的最新空间。</item>
+        <item>回收站清空——来深度清理残留文件。</item>
+        <item>已成功清空——还有更多垃圾需要清理。快来看看吧。</item>
+    </string-array>
+    <string name="notif_event_action_clean">立即清理</string>
+    <string name="notif_event_action_open_home">打开</string>
+    <string name="notif_event_action_manage">管理应用程序</string>
+    <string name="notif_event_action_check_battery">检查电池</string>
+    <string name="notif_event_action_check_network">检查网络</string>
+    <string name="notif_days_unit">日</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>存储空间发生了变化。让我们看看什么占用了空间？</item>
+        <item>检测到空间变化。可能有新的垃圾，你看看？</item>
+        <item>可用空间已移动。你知道是谁吃的吗？点击查看。</item>
+        <item>空间紧张吗？刚刚检测到变化，让我们看一下详细信息。</item>
+        <item>空间更换提醒：您可能会积累很多垃圾。一探究竟？</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>电池电量低。想知道谁在偷你的电吗？点击查看排名。</item>
+        <item>很快就见底了。如果你清理掉那些偷电的应用程序，你还能生存一段时间。</item>
+        <item>电池电量低。清除一些背景比什么都不做要好。</item>
+        <item>电池是红色的。您仍然可以保存它，单击打开它并查看。</item>
+        <item>少于 20% remains。让我们做一些省电急救和清理工作。</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>电池电量已超过一半。现在就照顾好它，它会持续到你回家为止。</item>
+        <item>电池电量已超过一半。现在保养电池比等到 20% 电量要容易得多。</item>
+        <item>电池没电了一半。能持续多久？点击查看。</item>
+        <item>电池电量已超过一半。是时候照顾后端了，别等它紧张了。</item>
+        <item>电池还剩一半。清理掉那些耗力大的球员，让下半场更加稳定。</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>最终冲刺是80%。卸下垃圾，轻装上阵，迎接满电。</item>
+        <item>距离充满还差 20%。趁现在清理一下垃圾吧。</item>
+        <item>80%：距离完美仅一步之遥。单击一次，当电池充满电时，它会完全清除。</item>
+        <item>电量达到 80%，趁充电时清理一轮吧。</item>
+        <item>最后 20% 的充电时间，也能用来清理垃圾。</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>已充满电并准备就绪。最后一项检查：垃圾是否已清除？</item>
+        <item>充电后，仪式感十足。清理垃圾来纪念一下怎么样？</item>
+        <item>今天电量已达 100%。再清理一次，手机更清爽。</item>
+        <item>100%。拔掉电源之前的最后一步：清理垃圾，三十秒。</item>
+        <item>全力完成。最后一次清理，完美。</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>网络改变了！查看当前网络状态1</item>
+        <item>网络遗弃。清理时不要看信号，只需点击它并扫描即可。</item>
+        <item>打不开页面？清理工作始终在线。</item>
+        <item>您可以离线工作，并且您的垃圾现在可以清除。</item>
+        <item>如果没有信号，则清理时不需要数据，只需点击即可。</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>接通电源。今晚的任务：重新填充，然后清理。</item>
+        <item>你在休息，它在充电。让它也清理垃圾。</item>
+        <item>充电的时候，足以清理掉长期积累的垃圾。</item>
+        <item>只有插上电，后台工作人员才敢自由工作。</item>
+        <item>充电时有点热？清除背景可以降低温度。</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>拔掉插头并出发。请记住花时间清理垃圾并保持最佳状态。</item>
+        <item>充电完毕，收拾行李出发。只要把它清理干净就完美了。</item>
+        <item>已充满电并可以使用。清理垃圾顺利，今天没有任何缺点。</item>
+        <item>充电结束。下一个空间将被清理并一次升级一级。</item>
+        <item>不要在停电时停下来。剩下一件事：清理。</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>我们又见面了，你还困吗？大部分都是垃圾，请尝试清理掉。</item>
+        <item>解锁了？先不要打开其他应用程序，并在三十秒内清除垃圾。</item>
+        <item>第一个解锁的是我们自己。清除垃圾，它会更爱你。</item>
+        <item>解锁后三十秒。最有价值的用途：清理垃圾。</item>
+        <item>你的手机说：后端有点阻塞，你能帮我吗？</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>放下您的手机，交给我们。休息屏幕时间=哺乳时间。</item>
+        <item>停止工作并不意味着停止工作。下次打开屏幕的时候我会给你一个惊喜。</item>
+        <item>在休息屏幕的同时，安静地变得更好。单击，我们将完成剩下的工作。</item>
+        <item>锁定屏幕之前的最后一件事：单击“清理”。明天早上会有新的面貌。</item>
+        <item>屏幕变暗。现在就安排，明天看看结果。</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>新应用程序已移入，缓存也已移入。清理</item>
+        <item>我们了解安装新应用程序的乐趣。只是缓存会悄悄堆积起来。</item>
+        <item>新应用程序？缓存也在这里，一键清空。</item>
+        <item>新的进来，旧的出去。经常清理并根据需要安装。</item>
+        <item>另一个？空间悄然变小，快来清理一下吧。</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>卸载成功！清理文件残留</item>
+        <item>已卸载但未清理。单击完成。</item>
+        <item>应用程序已卸载，但尾巴仍然存在。一键清理，一劳永逸地告别。</item>
+        <item>不要错过第二步：删除App+清除残留。一键点击完成。</item>
+        <item>残留物会吃掉一半的空出空间。深度扫描并清除一切。</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>新版本已经到来。旧版本留下的所有内容都被彻底清理。</item>
+        <item>+1 表示版本，+1 表示缓存，用于深度扫描。</item>
+        <item>更新完成，可一键清理剩余安装包。</item>
+        <item>更新完毕，总结一下。清理干净，我会接管。</item>
+        <item>每次更新都会留下旧文件并快速处理。</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>另一张截图？ 1 是时候清理截图了</item>
+        <item>发现新截图，点击查看清理一下~</item>
+        <item>截图越来越多，一键清理可以帮你腾出空间</item>
+        <item>截图成功，重复、模糊的可以一键过滤掉。</item>
+        <item>新的屏幕截图已添加到数据库中，重复的图像已排队等待一键清除。</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>有很多垃圾堆积起来。一次性全部清理干净。</item>
+        <item>上次清理 %1$d 几天前，点击立即处理</item>
+        <item>几天没来了，收拾一下就轻装上阵了。</item>
+        <item>今日清算额度尚未使用。当我回来时我会清除它。</item>
+        <item>缓存已满，等待您查看</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>好久不见，一直在等待。回来清理垃圾。</item>
+        <item>有几天没见到你了。垃圾没有休息的时间。回来扫一扫。</item>
+        <item>缓存已排队。单击，它们就会消失。</item>
+        <item>当您不在时，垃圾箱正忙着。一键清空，感觉焕然一新。</item>
+        <item>后退？先清理垃圾。三十秒后，手机就轻如新了。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>堆积了这么久的垃圾一下子就被清理掉了。</item>
+        <item>是时候清理了。今天的垃圾正在等你点击。</item>
+        <item>今天的《太空日报》到了。清除并保持光线充足。</item>
+        <item>有些文件比你想象的要大得多，看一下</item>
+        <item>找到那个占用了几个G的家伙并清理掉它</item>
+        <item>大文件清单已备好，快来看看吧。</item>
+        <item>谁占用的空间最多？一秒就显露出来。</item>
+        <item>连续射击很棒，完成射击很痛苦。交给我们吧。</item>
+        <item>相似的照片已排成一排，由您选择保留哪一张</item>
+        <item>类似的图片太多？我们将帮助您一键比较并删除重复项。</item>
+        <item>应清除缓存的离线视频。</item>
+        <item>剩余的音频也将被清理。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>电池没有以前那么耐用了吗？一探究竟。</item>
+        <item>谁在偷你的电？你查一下就知道了。</item>
+        <item>关闭这些将延长电池寿命。</item>
+        <item>有些应用程序已安装但从未使用过。看看他们是哪几个？</item>
+        <item>保留不使用的应用程序也是一种负担，清单已列出</item>
+        <item>关于隐私，越早处理越好。</item>
+        <item>隐藏重要的并删除不必要的。让我帮你</item>
+        <item>交通流向哪里？找出谁在使用它。</item>
+        <item>交通详情一目了然，一目了然。</item>
+        <item>有一个应用程序在后台秘密连接互联网。</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} 的垃圾 — 一键清除</string>
+    <string name="notif_scheduled_large_files">{total} 个大文件 — 轻松清理</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} 组重复照片 - 保存 {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} 张相似照片 - 选择要清理的内容</string>
+    <string name="notif_scheduled_videos">{total} 个视频 - 删除 {n} 个以释放空间</string>
+    <string name="notif_scheduled_audio">{total} 个音频文件 - 需要整理一下</string>
+    <string name="notif_scheduled_apps">{size} 由 {idle} 个空闲应用使用</string>
+    <string name="notif_scheduled_data">后台使用的数据的{back}</string>
+</resources>

@@ -27,6 +27,6 @@
     <string name="notif_junk">ขยะ</string>
     <string name="notif_apps">แอพ</string>
     <string name="notif_clean_now">ทำความสะอาดทันที</string>
-    <string name="notif_speed_unit">กิโลไบต์/วินาที</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">เข้าใจแล้ว</string>
 </resources>

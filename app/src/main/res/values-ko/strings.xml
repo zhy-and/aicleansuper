@@ -27,6 +27,6 @@
     <string name="notif_junk">쓰레기</string>
     <string name="notif_apps">앱</string>
     <string name="notif_clean_now">지금 청소하세요</string>
-    <string name="notif_speed_unit">KB/초</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">알았어요</string>
 </resources>

@@ -246,9 +246,11 @@ class LargeFilesFragment : Fragment() {
                     selected.removeAll(paths)
                     render()
                     status.text = "Deleted ${deleted.size} of ${targets.size} files"
-                    (activity as? MainActivity)?.openDetail(CleanupReportFragment.newInstance(
-                        "Large files", CleanupResult(targets.size, deleted.size, deleted.sumOf { it.sizeBytes })
-                    ), "cleanup_report")
+                    if (deleted.isNotEmpty()) {
+                        (activity as? MainActivity)?.openDetail(CleanupReportFragment.newInstance(
+                            "Large files", CleanupResult(targets.size, deleted.size, deleted.sumOf { it.sizeBytes })
+                        ), "cleanup_report")
+                    }
                 }
             }.show()
     }

@@ -21,10 +21,18 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             _uiState.value = HomeUiState(scanStatus = HomeUiState.ScanStatus.SCANNING)
 
-            runCatching { scanner.scan() }
+            runCatching {
+                scanner.scanWithProgress { progress ->
+                    _uiState.value = HomeUiState(
+                        scanStatus = HomeUiState.ScanStatus.SCANNING,
+                        scanProgress = progress,
+                    )
+                }
+            }
                 .onSuccess { summary ->
                     _uiState.value = HomeUiState(
                         scanStatus = HomeUiState.ScanStatus.DONE,
+                        scanProgress = 100,
                         summary = summary,
                     )
                 }

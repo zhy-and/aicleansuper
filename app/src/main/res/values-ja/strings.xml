@@ -1,4 +1,10 @@
 <resources>
+    <string name="storage_permission_title">ファイルへのアクセスを許可</string>
+    <string name="storage_permission_detail">重複写真や大きなファイルなど、整理できる項目を見つけるためにアクセスを許可してください。</string>
+    <string name="storage_permission_scan_point">この端末のファイルをスキャンして整理できる項目を探します。</string>
+    <string name="storage_permission_privacy_point">ファイルは端末内に保存され、アップロードされません。</string>
+    <string name="storage_permission_continue">続行</string>
+    <string name="storage_permission_close">閉じる</string>
     <string name="shortcut_uninstall">アンインストール</string>
     <string name="uninstall_guide_back">戻る</string>
     <string name="uninstall_guide_wait">ちょっと待って…</string>
@@ -27,6 +33,6 @@
     <string name="notif_junk">ごみ</string>
     <string name="notif_apps">アプリ</string>
     <string name="notif_clean_now">今すぐ掃除してください</string>
-    <string name="notif_speed_unit">KB/秒</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">わかった</string>
 </resources>

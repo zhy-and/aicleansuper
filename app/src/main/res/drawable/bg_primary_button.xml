@@ -3,9 +3,5 @@
     >
 
     <corners android:radius="14dp" />
-    <gradient android:type="linear"
-        android:angle="270"
-        android:startColor="#ff5ee2ca"
-        android:endColor="#ff00ad8d"
-        />
+    <solid android:color="@color/accent_secondary" />
 </shape>

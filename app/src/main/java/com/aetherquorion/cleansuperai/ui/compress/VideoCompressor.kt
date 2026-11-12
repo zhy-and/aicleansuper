@@ -125,6 +125,9 @@ object VideoCompressor {
 
             outputSurface = CodecOutputSurface(srcWidth, srcHeight, outWidth, outHeight)
             decoder = MediaCodec.createDecoderByType(inputMime).also {
+                // Surface decoders apply KEY_ROTATION to pixels. The muxer preserves the
+                // container rotation separately, so applying both rotates the result twice.
+                inputVideoFormat.setInteger(MediaFormat.KEY_ROTATION, 0)
                 it.configure(inputVideoFormat, outputSurface.surface, null, 0)
                 it.start()
             }

@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
@@ -31,6 +32,10 @@
         </intent>
         <intent>
             <action android:name="android.intent.action.DELETE" />
+            <data android:scheme="package" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.UNINSTALL_PACKAGE" />
             <data android:scheme="package" />
         </intent>
     </queries>
@@ -85,27 +90,31 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity android:name=".UninstallGuideActivity" android:exported="true" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UninstallGuideActivity" android:exported="true" android:screenOrientation="portrait" />
         <activity
             android:name=".ui.common.StoragePermissionGuideActivity"
             android:exported="false"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
             android:taskAffinity="com.aetherquorion.cleansuperai.permission.guide"
             android:theme="@style/Theme.Cleansuperai.StoragePermissionGuide" />
         <activity
             android:name=".ui.common.VideoPreviewActivity"
             android:exported="false"
-            android:screenOrientation="unspecified"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Cleansuperai.VideoPreview" />
         <activity
             android:name=".HotActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Cleansuperai.Splash" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Cleansuperai.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

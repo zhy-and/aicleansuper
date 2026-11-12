@@ -22,6 +22,7 @@ import org.greenrobot.eventbus.ThreadMode
 class HotActivity : AppCompatActivity() {
     private var messages: Handler? = null
     private lateinit var binding: ActivitySplashBinding
+    private lateinit var launchProgress: LaunchProgress
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +32,8 @@ class HotActivity : AppCompatActivity() {
         messages = Handler(Looper.getMainLooper())
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.progressRing.setIndeterminate(true)
+        launchProgress = LaunchProgress(binding.progressRing, binding.tvLoadingStatus)
+        launchProgress.start(11_000)
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this)
         }
@@ -55,6 +57,7 @@ class HotActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        launchProgress.stop()
         super.onDestroy()
         messages?.removeCallbacksAndMessages(null)
         messages = null
@@ -74,6 +77,7 @@ class HotActivity : AppCompatActivity() {
     }
 
     private fun navigateHomeAndFinish() {
+        launchProgress.complete()
         if (!ActivityUtils.isActivityExistsInStack(MainActivity::class.java)) {
             ActivityUtils.startActivity(MainActivity::class.java)
         }
@@ -81,8 +85,10 @@ class HotActivity : AppCompatActivity() {
     }
 
     private fun destroyHd() {
+        launchProgress.stop()
         binding.progressRing.setIndeterminate(false)
         binding.progressRing.visibility = View.GONE
+        binding.tvLoadingStatus.visibility = View.GONE
         messages?.removeCallbacksAndMessages(null)
         messages = null
     }

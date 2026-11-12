@@ -38,6 +38,7 @@ class SplashActivity : AppCompatActivity() {
     private var messages: Handler? = null
     private val adsInitializeCalled = AtomicBoolean(false)
     private lateinit var binding: ActivitySplashBinding
+    private lateinit var launchProgress: LaunchProgress
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +49,8 @@ class SplashActivity : AppCompatActivity() {
         messages = Handler(Looper.getMainLooper())
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        launchProgress = LaunchProgress(binding.progressRing, binding.tvLoadingStatus)
+        launchProgress.start(12_000)
         if (NotificationPermissionFlow.shouldRequest(android.os.Build.VERSION.SDK_INT, NotificationPermissionFlow.isGranted(this))) {
             PathAnalytics.track(this, PathEvent.NOTIF_PERM_SHOWN)
             notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
@@ -56,7 +59,6 @@ class SplashActivity : AppCompatActivity() {
             EventBus.getDefault().register(this)
         }
 
-        binding.progressRing.setIndeterminate(true)
         try {
             if (checkRules()) {
                 initUmSDK()
@@ -98,6 +100,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun jmHome() {
         messages?.postDelayed({
+            launchProgress.complete()
             startActivity(Intent(this, MainActivity::class.java).apply {
                 intent?.getStringExtra(MainActivity.EXTRA_WIDGET_ROUTE)?.let {
                     putExtra(MainActivity.EXTRA_WIDGET_ROUTE, it)
@@ -116,6 +119,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        launchProgress.stop()
         AnalysisDataUtil.markHotLaunch()
         super.onDestroy()
         messages?.removeCallbacksAndMessages(null)

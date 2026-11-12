@@ -27,6 +27,6 @@
     <string name="notif_junk">Çöp</string>
     <string name="notif_apps">Uygulamalar</string>
     <string name="notif_clean_now">Şimdi Temizle</string>
-    <string name="notif_speed_unit">KB/sn</string>
     <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Anladım</string>
 </resources>

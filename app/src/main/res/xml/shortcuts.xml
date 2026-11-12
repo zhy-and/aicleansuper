@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
     <shortcut android:shortcutId="large_files" android:enabled="true" android:icon="@drawable/ic_placeholder_folder" android:shortcutShortLabel="@string/notif_large_file" android:shortcutLongLabel="@string/notif_large_file">
-        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.aetherquorion.cleansuperai" android:targetClass="com.aetherquorion.cleansuperai.SplashActivity">
+        <intent android:action="android.intent.action.MAIN" android:targetPackage="com.aetherquorion.cleansuperai" android:targetClass="com.aetherquorion.cleansuperai.SplashActivity">
             <extra android:name="widget_route" android:value="large" />
         </intent>
     </shortcut>
     <shortcut android:shortcutId="cache" android:enabled="true" android:icon="@drawable/ic_placeholder_broom" android:shortcutShortLabel="@string/notif_cache" android:shortcutLongLabel="@string/notif_cache">
-        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.aetherquorion.cleansuperai" android:targetClass="com.aetherquorion.cleansuperai.SplashActivity">
+        <intent android:action="android.intent.action.MAIN" android:targetPackage="com.aetherquorion.cleansuperai" android:targetClass="com.aetherquorion.cleansuperai.SplashActivity">
             <extra android:name="widget_route" android:value="cache" />
         </intent>
     </shortcut>
     <shortcut android:shortcutId="apps" android:enabled="true" android:icon="@drawable/ic_notif_apps" android:shortcutShortLabel="@string/notif_apps" android:shortcutLongLabel="@string/notif_apps">
-        <intent android:action="android.intent.action.VIEW" android:targetPackage="com.aetherquorion.cleansuperai" android:targetClass="com.aetherquorion.cleansuperai.SplashActivity">
+        <intent android:action="android.intent.action.MAIN" android:targetPackage="com.aetherquorion.cleansuperai" android:targetClass="com.aetherquorion.cleansuperai.SplashActivity">
             <extra android:name="widget_route" android:value="apps" />
         </intent>
     </shortcut>

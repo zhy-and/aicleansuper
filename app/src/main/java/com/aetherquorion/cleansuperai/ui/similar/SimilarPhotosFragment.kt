@@ -30,6 +30,7 @@ class SimilarPhotosFragment : Fragment() {
     private val binding get() = _binding!!
     private val viewModel: SimilarPhotosViewModel by viewModels()
     private val selectedIds = linkedSetOf<Long>()
+    private var pendingCleanupResult: com.aetherquorion.cleansuperai.ui.flow.CleanupResult? = null
     private var initializedSelection = false
     private lateinit var adapter: SimilarGroupAdapter
     private val mode: SimilarMediaMode by lazy {
@@ -45,6 +46,10 @@ class SimilarPhotosFragment : Fragment() {
                 initializedSelection = false
                 viewModel.load(mode, force = true)
                 showToast(getString(R.string.delete_items_complete_format, count))
+                pendingCleanupResult?.let(::showCleanupReport)
+                pendingCleanupResult = null
+            } else {
+                pendingCleanupResult = null
             }
         }
 
@@ -198,28 +203,39 @@ class SimilarPhotosFragment : Fragment() {
     }
 
     private fun deleteSelectedItems() {
-        val uris = viewModel.uiState.value.groups
+        val targets = viewModel.uiState.value.groups
             .flatMap { it.items }
             .filter { selectedIds.contains(it.id) }
-            .map { it.contentUri }
+        val uris = targets.map { it.contentUri }
         if (uris.isEmpty()) return
+        val cleanupResult = com.aetherquorion.cleansuperai.ui.flow.CleanupResult(
+            targets.size, targets.size, targets.sumOf { it.sizeBytes })
 
         runCatching {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 val intentSender = MediaActions.createDeleteIntentSender(requireContext(), uris)
                     ?: return@runCatching
+                pendingCleanupResult = cleanupResult
                 deleteRequestLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
             } else {
-                MediaActions.deleteLegacy(requireContext(), uris)
+                val deleted = MediaActions.deleteLegacy(requireContext(), uris)
                 val count = selectedIds.size
                 selectedIds.clear()
                 initializedSelection = false
                 viewModel.load(mode, force = true)
                 showToast(getString(R.string.delete_items_complete_format, count))
+                if (deleted > 0) showCleanupReport(cleanupResult.copy(
+                    deleted = deleted, freedBytes = if (deleted == targets.size) cleanupResult.freedBytes else 0L))
             }
         }.onFailure {
             showToast(getString(R.string.delete_failed_message))
         }
+    }
+
+    private fun showCleanupReport(result: com.aetherquorion.cleansuperai.ui.flow.CleanupResult) {
+        (activity as? com.aetherquorion.cleansuperai.MainActivity)?.openDetail(
+            com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                getString(R.string.home_picture_cleanup), result), "cleanup_report")
     }
 
     private fun showToast(message: String) {

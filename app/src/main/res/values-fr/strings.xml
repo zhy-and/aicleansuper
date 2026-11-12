@@ -27,6 +27,6 @@
     <string name="notif_junk">Déchets</string>
     <string name="notif_apps">Applications</string>
     <string name="notif_clean_now">Nettoyer maintenant</string>
-    <string name="notif_speed_unit">Ko/s</string>
     <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">J\'ai compris</string>
 </resources>

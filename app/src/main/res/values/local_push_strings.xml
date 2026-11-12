@@ -11,7 +11,7 @@
   <string name="notif_junk">Junk</string>
   <string name="notif_apps">Apps</string>
   <string name="notif_clean_now">Clean Now</string>
-  <string name="notif_speed_unit">KB/s</string>
+  <string name="notif_speed_unit" translatable="false">KB/s</string>
   <string name="notif_channel_name">Quick Clean Toolbar</string>
   <string name="notif_channel_desc">Persistent toolbar for quick cleaning actions</string>
   <string name="notif_speed_placeholder">0.0 KB/s</string>

@@ -21,7 +21,7 @@ class VaultPinScreen(context: Context, private val onComplete: (String) -> Unit)
     private val subtitle = TextView(context)
     private val error = TextView(context)
     private val biometric = TextView(context)
-    private val back = TopFilterUi.toolbar(context, "Private vault") {}
+    private val back = TopFilterUi.toolbar(context, context.getString(R.string.tool_private_vault)) {}
 
     init {
         orientation = VERTICAL
@@ -66,7 +66,7 @@ class VaultPinScreen(context: Context, private val onComplete: (String) -> Unit)
         })
         addView(biometric.apply {
             gravity = Gravity.CENTER
-            text = "Use biometrics"
+            text = context.getString(R.string.vlt_biometric)
             textSize = 14f
             typeface = Typeface.DEFAULT_BOLD
             setTextColor(ContextCompat.getColor(context, R.color.accent_primary))

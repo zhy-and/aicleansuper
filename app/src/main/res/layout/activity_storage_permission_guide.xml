@@ -26,7 +26,7 @@
                     android:background="@drawable/bg_storage_permission_toggle_thumb" />
             </FrameLayout>
         </LinearLayout>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        <TextView android:id="@+id/permissionGuideMessage" android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginTop="20dp" android:gravity="center"
             android:text="@string/storage_permission_guide_message"
             android:textColor="@color/text_secondary" android:textSize="14sp" />

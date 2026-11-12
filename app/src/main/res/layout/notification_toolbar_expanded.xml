@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
                 <FrameLayout android:layout_width="40dp" android:layout_height="40dp">
-                    <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="bottom|start" android:background="@drawable/bg_notif_feature_cache" android:contentDescription="@null" android:padding="8dp" android:src="@drawable/ic_placeholder_broom" android:tint="@android:color/white" />
+                    <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="bottom|start" android:background="@drawable/bg_notif_feature_cache" android:contentDescription="@null" android:padding="8dp" android:src="@drawable/ic_notif_junk" />
                     <ImageView android:layout_width="10dp" android:layout_height="10dp" android:layout_gravity="top|end" android:background="@drawable/bg_notif_tip_dot" android:contentDescription="@null" />
                 </FrameLayout>
 
@@ -43,7 +43,7 @@
                     android:gravity="center"
                     android:singleLine="true"
                     android:text="@string/notif_junk"
-                    android:textColor="#203742"
+                    android:textColor="@color/text_primary"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -69,7 +69,7 @@
                     android:gravity="center"
                     android:singleLine="true"
                     android:text="@string/photo_photos_label"
-                    android:textColor="#203742"
+                    android:textColor="@color/text_primary"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -100,7 +100,7 @@
                     android:gravity="center"
                     android:singleLine="true"
                     android:text="@string/notif_apps"
-                    android:textColor="#203742"
+                    android:textColor="@color/text_primary"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -119,8 +119,7 @@
                     android:background="@drawable/bg_notif_feature_large"
                     android:contentDescription="@null"
                     android:padding="8dp"
-                    android:src="@drawable/ic_placeholder_folder"
-                    android:tint="@android:color/white" />
+                    android:src="@drawable/ic_notif_large_file" />
 
                 <TextView
                     style="@style/TextAppearance.Compat.Notification.Line2"
@@ -131,7 +130,7 @@
                     android:gravity="center"
                     android:singleLine="true"
                     android:text="@string/notif_large_file"
-                    android:textColor="#203742"
+                    android:textColor="@color/text_primary"
                     android:textSize="10sp" />
             </LinearLayout>
         </LinearLayout>
@@ -170,7 +169,7 @@
                 android:gravity="center"
                 android:singleLine="true"
                 android:text="@string/notif_speed_value_placeholder"
-                android:textColor="#203742"
+                android:textColor="@color/text_primary"
                 android:textSize="10sp" />
 
             <TextView
@@ -179,7 +178,7 @@
                 android:gravity="center"
                 android:singleLine="true"
                 android:text="@string/notif_speed_unit"
-                android:textColor="#203742"
+                android:textColor="@color/text_primary"
                 android:textSize="9sp" />
         </LinearLayout>
     </LinearLayout>

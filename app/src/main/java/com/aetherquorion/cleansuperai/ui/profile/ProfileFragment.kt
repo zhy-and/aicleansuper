@@ -148,6 +148,11 @@ class ProfileFragment : Fragment() {
                 val freed = clearAppCache()
                 val sizeText = formatBytes(freed)
                 showToast(getString(R.string.settings_clear_cache_done_format, sizeText))
+                (activity as? MainActivity)?.openDetail(
+                    com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                        getString(R.string.settings_clear_cache_title),
+                        com.aetherquorion.cleansuperai.ui.flow.CleanupResult(1, 1, freed)),
+                    "cleanup_report")
             }
             .show()
     }

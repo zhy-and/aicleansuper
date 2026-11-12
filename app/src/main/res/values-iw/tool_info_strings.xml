@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">טֶמפֶּרָטוּרָה</string>
+    <string name="sys_voltage">מֶתַח</string>
+    <string name="sys_current">זרם חשמלי</string>
+    <string name="sys_health">בְּרִיאוּת</string>
+    <string name="sys_type">סוג סוללה</string>
+    <string name="sys_capacity">קיבולת סוללה</string>
+    <string name="sys_charging">טְעִינָה</string>
+    <string name="sys_full">מָלֵא</string>
+    <string name="sys_good">טוֹב</string>
+    <string name="sys_overheat">לְחַמֵם יוֹתֵר מִדַי</string>
+    <string name="sys_dead">מֵת</string>
+    <string name="sys_over_voltage">מתח יתר</string>
+    <string name="sys_cold">קַר</string>
+    <string name="sys_unknown">לֹא יְדוּעַ</string>
+    <string name="sys_model">דֶגֶם:</string>
+    <string name="sys_brand">מותג:</string>
+    <string name="sys_manufacturer">יַצרָן:</string>
+    <string name="sys_wifi_name">שֵׁם:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">מְהִירוּת:</string>
+    <string name="traffic_month">החודש הזה</string>
+    <string name="traffic_30_days">30 ימים</string>
+    <string name="traffic_24_hours">24 שעות</string>
+    <string name="traffic_mobile">נייד</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">אפליקציות</string>
+</resources>

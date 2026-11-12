@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Utwórz 6-cyfrowy PIN</string>
+    <string name="vlt_enter_pin">Wpisz swój PIN</string>
+    <string name="vlt_confirm_pin">Potwierdź swój PIN</string>
+    <string name="vlt_warning">Odinstalowanie tej aplikacji spowoduje trwałe usunięcie plików z Privacy Space.</string>
+    <string name="vlt_pin_mismatch">PIN-y nie pasują. Spróbuj ponownie.</string>
+    <string name="vlt_pin_wrong">Nieprawidłowy PIN</string>
+    <string name="vlt_biometric">Użyj odcisku palca/twarzy</string>
+    <string name="vlt_unlock">Odblokuj przestrzeń prywatności</string>
+    <string name="vlt_use_pin">Wpisz swój PIN</string>
+    <string name="vlt_importing">Importowanie...</string>
+    <string name="vlt_imported">Zaimportowano %1$d elementów</string>
+    <string name="vlt_restore">Przywrócić</string>
+    <string name="vlt_delete">Usuwać</string>
+</resources>

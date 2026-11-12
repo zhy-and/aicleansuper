@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="screen_bg">#FFF3F3F3</color>
-    <color name="soft_gray">#FFF3F7FA</color>
+    <color name="screen_bg">#FFF5F8F5</color>
+    <color name="soft_gray">#FFE8F8EF</color>
     <color name="gray_icon">#FF9C9C9C</color>
-    <color name="tab_selected">#FF0EB193</color>
-    <color name="accent_teal">#FF2AC4A8</color>
+    <color name="tab_selected">#FF11935B</color>
+    <color name="accent_teal">#FF20B875</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <!-- Calm light surfaces -->
-    <color name="bg_primary">#FFF7F9F7</color>
+    <color name="bg_primary">#FFF5F8F5</color>
     <color name="bg_elevated">#FFFFFFFF</color>
     <color name="surface_card">#FFFFFFFF</color>
-    <color name="surface_dark">#FFF1F4F1</color>
-    <color name="surface_dark_secondary">#FFE8EEE9</color>
+    <color name="surface_dark">#FFEFF5F0</color>
+    <color name="surface_dark_secondary">#FFE3EFE7</color>
 
     <!-- Kept as semantic aliases for existing layouts; intentionally opaque in light mode -->
     <color name="surface_glass">#FFF5F7F5</color>
@@ -23,17 +23,20 @@
     <color name="stroke_strong">#FFD4DDD6</color>
 
     <!-- Accents -->
-    <color name="accent_primary">#FF28785B</color>
-    <color name="accent_secondary">#FF62A185</color>
-    <color name="accent_primary_soft">#FFE8F3ED</color>
-    <color name="accent_secondary_soft">#FFEEF7F2</color>
-    <color name="accent_soft">#FFDDECE4</color>
-    <color name="accent_primary_dim">#FF1F6048</color>
+    <color name="accent_primary">#FF11935B</color>
+    <color name="home_scan_green">#FF20B875</color>
+    <color name="home_scan_secondary">#FFD7F7E5</color>
+    <color name="home_scan_track">#66FFFFFF</color>
+    <color name="accent_secondary">#FF20B875</color>
+    <color name="accent_primary_soft">#FFE8F8EF</color>
+    <color name="accent_secondary_soft">#FFF0FAF4</color>
+    <color name="accent_soft">#FFD9F2E3</color>
+    <color name="accent_primary_dim">#FF0D7548</color>
     <color name="accent_primary_disabled">#FFB2C8BC</color>
 
     <!-- Text -->
-    <color name="text_primary">#FF18221D</color>
-    <color name="text_secondary">#FF59665F</color>
+    <color name="text_primary">#FF163128</color>
+    <color name="text_secondary">#FF62766B</color>
     <color name="text_tertiary">#FF89938D</color>
     <color name="text_inverse_secondary">#FFDDE7E1</color>
 
@@ -59,8 +62,8 @@
     <color name="overlay_scrim">#66000000</color>
 
     <!-- Brand surfaces -->
-    <color name="surface_brand">#FFECF5F0</color>
-    <color name="surface_brand_dark">#FFDDECE4</color>
+    <color name="surface_brand">#FFE8F8EF</color>
+    <color name="surface_brand_dark">#FFD6F2E1</color>
     <color name="surface_success">#FFE8F4ED</color>
     <color name="surface_warning">#FFFFF5E7</color>
     <color name="surface_gold">#FFFFF6DF</color>
@@ -70,6 +73,6 @@
     <color name="surface_pressed">#FFEDF2EE</color>
 
     <!-- Bottom nav -->
-    <color name="bottom_nav_selected">#FF28785B</color>
+    <color name="bottom_nav_selected">#FF11935B</color>
     <color name="bottom_nav_unselected">#FF8A948E</color>
 </resources>

@@ -13,11 +13,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.ScrollView
 import android.widget.TextView
 import android.view.Gravity
 import android.graphics.Typeface
+import android.graphics.drawable.Drawable
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -32,7 +34,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class NetworkTrafficFragment : Fragment() {
-    private data class Usage(val packageName: String, val label: String, val mobile: Long, val wifi: Long) {
+    private data class Usage(val packageName: String, val label: String, val icon: Drawable, val mobile: Long, val wifi: Long) {
         val total get() = mobile + wifi
     }
     private var selectedRange = NetworkRange.entries.first()
@@ -44,7 +46,7 @@ class NetworkTrafficFragment : Fragment() {
     private lateinit var list: LinearLayout
     private var asked = false
     private val access = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        if (hasAccess()) load() else status.text = "Usage access is required"
+        if (hasAccess()) load() else showAccessRequired()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, state: Bundle?): View {
@@ -54,9 +56,9 @@ class NetworkTrafficFragment : Fragment() {
             setPadding(dp(20), dp(12), dp(20), dp(16))
             setBackgroundColor(ContextCompat.getColor(ctx, R.color.bg_primary))
         }
-        root.addView(TopFilterUi.toolbar(ctx, "Network traffic") { parentFragmentManager.popBackStack() })
+        root.addView(TopFilterUi.toolbar(ctx, getString(R.string.tool_network_traffic)) { parentFragmentManager.popBackStack() })
         val bar = TopFilterUi.bar(ctx, 50).apply { setPadding(dp(3), dp(3), dp(3), dp(3)) }
-        rangeTabs = listOf("This month", "Last 30 days", "Last 24 hours").mapIndexed { index, label ->
+        rangeTabs = listOf(getString(R.string.traffic_month), getString(R.string.traffic_30_days), getString(R.string.traffic_24_hours)).mapIndexed { index, label ->
             TopFilterUi.label(ctx, label).also { tab ->
                 bar.addView(tab, LinearLayout.LayoutParams(0, -1, 1f))
                 tab.setOnClickListener {
@@ -88,11 +90,11 @@ class NetworkTrafficFragment : Fragment() {
             }, LinearLayout.LayoutParams(0, -1, 1f))
             return value
         }
-        mobileTotal = column("Mobile")
-        wifiTotal = column("Wi-Fi")
+        mobileTotal = column(getString(R.string.traffic_mobile))
+        wifiTotal = column(getString(R.string.traffic_wifi))
         root.addView(totals)
         root.addView(TextView(ctx).apply {
-            text = "Apps"
+            text = getString(R.string.traffic_apps)
             textSize = 19f
             typeface = Typeface.DEFAULT_BOLD
             setTextColor(ContextCompat.getColor(ctx, R.color.text_primary))
@@ -116,15 +118,27 @@ class NetworkTrafficFragment : Fragment() {
         if (!asked) {
             asked = true
             if (hasAccess()) load() else requestAccess()
-        }
+        } else if (hasAccess()) load()
     }
 
     private fun hasAccess() = FeaturePermissionCoordinator.hasAccess(requireContext(), FeatureAccess.USAGE)
-    private fun requestAccess() = access.launch(FeaturePermissionCoordinator.settingsIntent(requireContext(), FeatureAccess.USAGE))
+    private fun requestAccess() {
+        access.launch(FeaturePermissionCoordinator.settingsIntent(requireContext(), FeatureAccess.USAGE))
+        startActivity(Intent(requireContext(), com.aetherquorion.cleansuperai.ui.common.StoragePermissionGuideActivity::class.java).apply {
+            putExtra(com.aetherquorion.cleansuperai.ui.common.StoragePermissionGuideActivity.EXTRA_ACCESS, true)
+        })
+    }
+
+    private fun showAccessRequired() {
+        progress.visibility = View.GONE
+        status.setText(R.string.traffic_usage_required)
+        status.visibility = View.VISIBLE
+        status.setOnClickListener { requestAccess() }
+    }
 
     private fun load() {
         progress.visibility = View.VISIBLE
-        status.text = "Loading…"
+        status.text = getString(R.string.traffic_loading)
         val selected = selectedRange
         val context = requireContext().applicationContext
         viewLifecycleOwner.lifecycleScope.launch {
@@ -135,7 +149,7 @@ class NetworkTrafficFragment : Fragment() {
             val wifi = usage.sumOf { it.wifi }
             mobileTotal.text = Formatter.formatShortFileSize(context, mobile)
             wifiTotal.text = Formatter.formatShortFileSize(context, wifi)
-            status.text = if (usage.isEmpty()) "No app traffic found" else ""
+            status.text = if (usage.isEmpty()) getString(R.string.traffic_empty) else ""
             status.visibility = if (usage.isEmpty()) View.VISIBLE else View.GONE
             val max = usage.maxOfOrNull { it.total }?.coerceAtLeast(1L) ?: 1L
             usage.forEach { item ->
@@ -144,6 +158,11 @@ class NetworkTrafficFragment : Fragment() {
                     setPadding(0, dp(12), 0, dp(12))
                     addView(LinearLayout(requireContext()).apply {
                         gravity = Gravity.CENTER_VERTICAL
+                        addView(ImageView(context).apply {
+                            setImageDrawable(item.icon)
+                            scaleType = ImageView.ScaleType.FIT_CENTER
+                            contentDescription = item.label
+                        }, LinearLayout.LayoutParams(dp(36), dp(36)).apply { marginEnd = dp(12) })
                         addView(TextView(requireContext()).apply {
                             text = item.label
                             textSize = 14f
@@ -179,8 +198,10 @@ class NetworkTrafficFragment : Fragment() {
         val pm = context.packageManager
         return (mobile.keys + wifi.keys).distinct().mapNotNull { uid ->
             val name = pm.getPackagesForUid(uid)?.firstOrNull() ?: return@mapNotNull null
-            val label = runCatching { pm.getApplicationLabel(pm.getApplicationInfo(name, 0)).toString() }.getOrDefault(name)
-            Usage(name, label, mobile[uid] ?: 0L, wifi[uid] ?: 0L)
+            val appInfo = runCatching { pm.getApplicationInfo(name, 0) }.getOrNull()
+            val label = appInfo?.let { pm.getApplicationLabel(it).toString() } ?: name
+            val icon = appInfo?.let { runCatching { it.loadIcon(pm) }.getOrNull() } ?: pm.defaultActivityIcon
+            Usage(name, label, icon, mobile[uid] ?: 0L, wifi[uid] ?: 0L)
         }.filter { it.total > 0 }.sortedByDescending { it.total }
     }
 

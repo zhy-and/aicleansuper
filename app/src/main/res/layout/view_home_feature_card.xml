@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foreground="?attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/home_tool_card"
-    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/surface_card"
+    app:cardCornerRadius="20dp"
     app:cardElevation="0dp"
     app:strokeColor="@color/home_tool_card_stroke"
-    app:strokeWidth="1dp">
+    app:strokeWidth="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:id="@+id/iconContainer"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/bg_home_tool_icon_teal"
+            android:background="@drawable/bg_home_feature_icon_teal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -33,7 +33,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="@null"
                 android:src="@drawable/ic_image"
-                app:tint="@color/accent_primary" />
+                app:tint="@color/white" />
         </FrameLayout>
 
         <TextView

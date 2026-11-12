@@ -27,6 +27,6 @@
     <string name="notif_junk">குப்பை</string>
     <string name="notif_apps">பயன்பாடுகள்</string>
     <string name="notif_clean_now">இப்போது சுத்தம் செய்யுங்கள்</string>
-    <string name="notif_speed_unit">KB/s</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">கிடைத்தது</string>
 </resources>

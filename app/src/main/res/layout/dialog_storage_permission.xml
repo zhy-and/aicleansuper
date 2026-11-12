@@ -2,43 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:background="@drawable/bg_storage_permission_panel"
-    android:orientation="vertical" android:padding="24dp">
-    <TextView android:id="@+id/closeButton" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_gravity="end"
-        android:contentDescription="@string/storage_permission_close" android:text="×"
-        android:textColor="@color/text_secondary" android:textSize="26sp" />
-    <LinearLayout android:layout_width="match_parent" android:layout_height="130dp"
-        android:gravity="center" android:orientation="vertical">
-        <LinearLayout android:layout_width="250dp" android:layout_height="72dp"
-            android:background="@drawable/bg_storage_permission_row"
-            android:gravity="center_vertical" android:paddingHorizontal="20dp">
-            <TextView android:layout_width="38dp" android:layout_height="38dp"
-                android:background="@drawable/bg_button_primary" android:gravity="center"
-                android:text="≡" android:textColor="@color/white" android:textSize="24sp" />
-            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_marginStart="14dp" android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/storage_permission_example_file"
-                    android:textColor="@color/text_secondary" android:textSize="13sp" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="@string/storage_permission_example_size"
-                    android:textColor="@color/text_primary" android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <ImageView android:layout_width="30dp" android:layout_height="30dp"
-                android:padding="3dp" android:src="@drawable/ic_storage_permission_check"
-                android:contentDescription="@null" />
-        </LinearLayout>
+    android:gravity="center_horizontal" android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout android:layout_width="68dp" android:layout_height="68dp"
+        android:background="@drawable/bg_storage_permission_icon">
+        <ImageView android:layout_width="34dp" android:layout_height="34dp"
+            android:layout_gravity="center" android:contentDescription="@null"
+            android:src="@drawable/ic_storage_permission_file" />
+    </FrameLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" android:gravity="center"
+        android:text="@string/storage_permission_title"
+        android:textColor="@color/text_primary" android:textSize="21sp"
+        android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:gravity="center"
+        android:lineSpacingExtra="4dp" android:text="@string/storage_permission_detail"
+        android:textColor="@color/text_secondary" android:textSize="14sp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+            android:contentDescription="@null" android:src="@drawable/ic_storage_permission_search" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="10dp" android:layout_weight="1"
+            android:text="@string/storage_permission_scan_point"
+            android:textColor="@color/text_primary" android:textSize="13sp" />
     </LinearLayout>
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:gravity="center" android:text="@string/storage_permission_title"
-        android:textColor="@color/text_primary" android:textSize="22sp" android:textStyle="bold" />
-    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_marginTop="12dp" android:gravity="center"
-        android:text="@string/storage_permission_message" android:textColor="@color/text_secondary"
-        android:textSize="14sp" />
-    <Button android:id="@+id/continueButton" style="@style/Widget.Cleansuperai.Button.Primary"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_marginTop="24dp" android:text="@string/storage_permission_continue" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+            android:contentDescription="@null" android:src="@drawable/ic_storage_permission_shield" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="10dp" android:layout_weight="1"
+            android:text="@string/storage_permission_privacy_point"
+            android:textColor="@color/text_primary" android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button android:id="@+id/continueButton"
+        style="@style/Widget.Cleansuperai.Button.Primary"
+        android:layout_width="match_parent" android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_storage_permission_cta"
+        android:text="@string/storage_permission_continue" />
+    <TextView android:id="@+id/closeButton"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/storage_permission_close"
+        android:gravity="center" android:text="@string/storage_permission_close"
+        android:textColor="@color/text_secondary" android:textSize="14sp"
+        android:textStyle="bold" />
 </LinearLayout>

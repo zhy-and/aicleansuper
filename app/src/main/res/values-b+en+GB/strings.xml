@@ -27,6 +27,6 @@
     <string name="notif_junk">Junk</string>
     <string name="notif_apps">Apps</string>
     <string name="notif_clean_now">Clean Now</string>
-    <string name="notif_speed_unit">KB/s</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">Got it</string>
 </resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">צור PIN בן 6 ספרות</string>
+    <string name="vlt_enter_pin">הזן את ה-PIN שלך</string>
+    <string name="vlt_confirm_pin">אשר את ה-PIN שלך</string>
+    <string name="vlt_warning">הסרת ההתקנה של האפליקציה הזו תמחק לצמיתות קבצים במרחב הפרטיות.</string>
+    <string name="vlt_pin_mismatch">מספרי ה-PIN אינם תואמים. נסה שוב.</string>
+    <string name="vlt_pin_wrong">PIN שגוי</string>
+    <string name="vlt_biometric">השתמש בטביעת אצבע / פנים</string>
+    <string name="vlt_unlock">פתח את נעילת מרחב הפרטיות</string>
+    <string name="vlt_use_pin">הזן את ה-PIN שלך</string>
+    <string name="vlt_importing">מייבא...</string>
+    <string name="vlt_imported">%1$d פריטים יובאו</string>
+    <string name="vlt_restore">לְשַׁחְזֵר</string>
+    <string name="vlt_delete">לִמְחוֹק</string>
+</resources>

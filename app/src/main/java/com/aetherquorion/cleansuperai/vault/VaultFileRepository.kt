@@ -119,19 +119,24 @@ object VaultFileRepository {
         return ImportResult(success, failed)
     }
 
-    fun deleteItems(context: Context, items: List<VaultMediaItem>): Long {
+    data class DeleteResult(val deleted: Int, val freedBytes: Long)
+
+    fun deleteItems(context: Context, items: List<VaultMediaItem>): DeleteResult {
         var bytes = 0L
         val dir = vaultDir(context)
+        val removed = mutableListOf<String>()
         items.forEach { item ->
             runCatching {
                 val file = File(dir, item.vaultRelativePath)
-                val size = if (file.exists()) file.length() else item.sizeBytes
-                if (file.exists()) file.delete()
-                bytes += size
+                val size = if (file.exists()) file.length() else 0L
+                if (!file.exists() || file.delete()) {
+                    bytes += size
+                    removed += item.id
+                }
             }
         }
-        VaultStore.remove(items.map { it.id })
-        return bytes
+        VaultStore.remove(removed)
+        return DeleteResult(removed.size, bytes)
     }
 
     fun restoreItems(

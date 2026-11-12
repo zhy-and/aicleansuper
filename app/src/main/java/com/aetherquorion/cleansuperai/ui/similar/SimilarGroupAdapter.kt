@@ -55,11 +55,7 @@ class SimilarGroupAdapter(
             val reclaimText = Formatter.formatFileSize(context, group.estimatedReclaimBytes)
             val keep = group.recommendedKeep
 
-            binding.tvGroupTitle.text = if (position == 1) {
-                context.getString(R.string.similar_group_card_title_format, position, group.bucketName)
-            } else {
-                context.getString(R.string.similar_group_number_format, position)
-            }
+            binding.tvGroupTitle.text = context.getString(R.string.similar_group_number_format, position)
             binding.tvGroupSubtitle.text = context.getString(
                 R.string.similar_group_card_subtitle_format,
                 group.items.size,

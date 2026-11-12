@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">홈</string>
+    <string name="nav_swipe">스와이프</string>
+    <string name="nav_compress">압축</string>
+    <string name="nav_tools">도구</string>
+    <string name="nav_clean">깨끗하다</string>
+    <string name="nav_privacy">개인 정보 보호</string>
+    <string name="nav_profile">프로필</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">사진, 비디오, 연락처를 로컬에서 정리하세요</string>
+    <string name="home_badge_text">AI 정리</string>
+    <string name="home_quick_summary_title">오늘의 정리 팁</string>
+    <string name="home_quick_summary_body">스크린샷과 대용량 비디오로 시작하여 가장 빠르게 공간을 확보하세요.</string>
+    <string name="home_scan_insight_title">스마트 스캔 상태</string>
+    <string name="home_ready_title">4가지 강력한 정리 도구</string>
+    <string name="home_ready_body">사진, 스크린샷, 비디오, 연락처를 한 곳에서 관리하세요.</string>
+    <string name="storage_overview_title">스토리지 개요</string>
+    <string name="storage_overview_summary">최대 0.0GB까지 확보 가능</string>
+    <string name="storage_overview_detail">128GB 중 85.4GB 사용됨</string>
+    <string name="storage_overview_summary_format">최대 %1$s까지 해제 가능</string>
+    <string name="storage_overview_detail_format">%2$s의 %1$s 사용</string>
+    <string name="storage_overview_summary_done">최대 1.8GB까지 확보 가능</string>
+    <string name="storage_overview_detail_done">128GB 중 85.4GB가 사용되었습니다. 미디어 라이브러리부터 시작하세요.</string>
+    <string name="scan_button_idle">스캔 시작</string>
+    <string name="scan_button_running">스캔 중...</string>
+    <string name="scan_status_title">스캔 상태</string>
+    <string name="scan_status_idle">스캔 준비 완료</string>
+    <string name="scan_status_running">미디어 파일 분석</string>
+    <string name="scan_status_done">스캔이 완료되었습니다. 정리 제안이 준비되었습니다.</string>
+    <string name="scan_status_error">스캔에 실패했습니다. 나중에 다시 시도하세요.</string>
+    <string name="scan_status_detail_idle">스크린샷, 대용량 동영상, 유사한 사진이 먼저 확인됩니다.</string>
+    <string name="scan_status_detail_running">로컬로 스캔 중입니다. 사진과 동영상은 업로드되지 않습니다.</string>
+    <string name="scan_status_detail_midway">스크린샷과 대형 비디오를 분석했습니다. 비슷한 사진 정리하기</string>
+    <string name="scan_status_detail_done">정리할 1.8GB를 찾았습니다. 스크린샷과 큰 비디오로 시작하세요.</string>
+    <string name="scan_status_detail_done_format">정리할 %1$s를 찾았습니다. 스크린샷과 큰 비디오로 시작하세요.</string>
+    <string name="feature_section_title">필수 정리 도구</string>
+    <string name="feature_section_subtitle">첫 번째 릴리스는 가장 일반적인 4가지 정리 작업에 중점을 둡니다.</string>
+    <string name="feature_similar_title">비슷한 사진</string>
+    <string name="feature_similar_desc">비슷한 사진 정리</string>
+    <string name="feature_screenshots_title">스크린샷 정리</string>
+    <string name="feature_screenshots_desc">사용하지 않는 스크린샷 정리</string>
+    <string name="feature_videos_title">대형 비디오</string>
+    <string name="feature_videos_desc">대용량 비디오 정리</string>
+    <string name="feature_contacts_title">연락처 정리</string>
+    <string name="feature_contacts_desc">중복된 연락처 정리</string>
+    <string name="feature_similar_space_format">%1$d 그룹</string>
+    <string name="count_placeholder">스캔되지 않음</string>
+    <string name="count_similar_done">사진 128장</string>
+    <string name="count_screenshots_done">사진 364장</string>
+    <string name="count_videos_done">동영상 12개</string>
+    <string name="count_contacts_done">9개 그룹</string>
+    <string name="recent_section_title">릴리스 노트</string>
+    <string name="recent_section_body">이 버전에는 XML 홈 화면 구조, 미디어 권한 요청, 자리 표시자 스캔 흐름 및 결과 요약이 포함되어 있습니다. 다음에 MediaStore, 연락처 및 실제 정리 기능을 추가할 수 있습니다.</string>
+    <string name="permission_denied_message">스캔을 시작하려면 미디어 액세스가 필요합니다.</string>
+    <string name="mock_feature_message">이 기능에는 다음에 실제 스캔 결과가 추가될 예정입니다.</string>
+    <string name="scan_complete_message">초기 스캔 흐름이 준비되었습니다. 실제 데이터는 다음에 추가될 수 있습니다.</string>
+    <string name="scan_failed_message">스캔 실패: %1$s</string>
+    <string name="unknown_error">알 수 없는 오류</string>
+    <string name="storage_progress_label">스토리지 사용 진행 상황</string>
+    <string name="phase_two_label">2단계</string>
+    <string name="phase_three_label">3단계</string>
+    <string name="images_total_title">총 이미지</string>
+    <string name="videos_total_title">총 동영상</string>
+    <string name="clean_page_title">청소 센터</string>
+    <string name="clean_page_subtitle">가장 많은 공간을 확보하는 콘텐츠로 시작하세요.</string>
+    <string name="clean_page_badge">스마트클리너</string>
+    <string name="clean_overview_title">스캔 결과</string>
+    <string name="clean_overview_body">공간을 가장 많이 절약하는 항목을 먼저 정리한 다음 비슷한 사진과 연락처를 정리하세요.</string>
+    <string name="privacy_page_title">개인 금고</string>
+    <string name="privacy_page_subtitle">로컬 PIN은 개인 미디어와 향후 가져오기를 보호합니다.</string>
+    <string name="profile_page_title">프로필</string>
+    <string name="profile_page_subtitle">여기에서 멤버십, 설정, 구매를 관리하세요.</string>
+    <string name="profile_page_badge">프리미엄</string>
+    <string name="profile_hero_title">완벽한 정리 경험을 위해 Pro로 업그레이드하세요</string>
+    <string name="profile_hero_body">Pro에는 무제한 일괄 작업, Private Vault 및 향상된 유사 사진 감지 기능이 포함되어 있습니다.</string>
+    <string name="profile_plan_status_free">현재 요금제: 무료</string>
+    <string name="profile_plan_status_pro">프로 평가판이 활성화되었습니다</string>
+    <string name="profile_most_popular">가장 인기있는</string>
+    <string name="profile_cta_title">업그레이드하는 이유</string>
+    <string name="profile_cta_body">사진, 동영상, 연락처를 자주 정리하는 경우 Pro를 사용하면 반복적인 단계가 크게 줄어듭니다.</string>
+    <string name="placeholder_card_title">현재 단계</string>
+    <string name="placeholder_clean_body">1단계에서는 스캔 기반, 권한 및 기본 프레임워크를 다룹니다. 실제 정리 결과는 다음 단계에서 여기에 표시됩니다.</string>
+    <string name="placeholder_privacy_body">Private Vault는 아직 사용할 수 없습니다. 이 단계에는 탐색 및 레이아웃만 포함됩니다.</string>
+    <string name="placeholder_profile_body">프로필 기능이 아직 연결되지 않았습니다. 회원가입, 설정, 구매는 추후 추가될 예정입니다.</string>
+    <string name="overview_reclaim_title">예상 공간 절약</string>
+    <string name="overview_media_count_title">전체 미디어</string>
+    <string name="home_note_title">1단계 완료</string>
+    <string name="home_note_body">1. 하단 탐색 및 다중 페이지 프레임워크\n2. Android 13 이상 미디어 권한 요청\n3. 스크린샷 및 대용량 비디오를 위한 MediaStore 기반 스캐닝 기반\n4. 홈 화면 결과 바인딩 및 상태 관리</string>
+    <string name="feature_coming_soon_format">%1$s 세부정보 페이지는 해당 단계에 추가됩니다.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d 항목</string>
+    <string name="count_contact_format">%1$d 연락처</string>
+    <string name="feature_ready_label">가능</string>
+    <string name="permission_action_label">허용 및 검사</string>
+    <string name="refresh_action_label">결과 새로 고침</string>
+    <string name="clean_reclaim_summary_format">%1$s 정리 준비 완료</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d 그룹</string>
+    <string name="count_contact_group_format">%1$d 그룹</string>
+    <string name="clean_permission_title">미디어 액세스 필요</string>
+    <string name="clean_permission_body">스크린샷과 동영상을 읽을 수 있도록 액세스를 허용하세요. 모든 데이터는 로컬로 분석됩니다.</string>
+    <string name="clean_loaded_hint">세부정보를 보려면 카테고리 카드를 탭하세요.</string>
+    <string name="clean_loading_hint">스크린샷과 비디오를 로드 중입니다. 기다리세요.</string>
+    <string name="clean_empty_hint">아직 스캔 결과가 없습니다. 먼저 접근을 허용하고 검사를 실행하세요.</string>
+    <string name="detail_back">뒤로</string>
+    <string name="screenshot_detail_title">스크린샷 정리</string>
+    <string name="screenshot_detail_subtitle">실제 썸네일이 포함된 스크린샷을 찾아보세요. 사진을 눌러 미리 보거나 삭제할 항목을 선택하세요.</string>
+    <string name="large_video_detail_title">대형 비디오</string>
+    <string name="large_video_detail_subtitle">표지가 포함된 대용량 동영상을 찾아보세요. 표지를 탭하여 재생하거나 삭제할 항목을 선택하세요. 필터 라인을 탭하면 100MB / 500MB로 전환됩니다.</string>
+    <string name="empty_screenshot_title">스크린샷을 찾을 수 없습니다</string>
+    <string name="empty_screenshot_body">미디어 라이브러리에 스크린샷이 없거나 액세스 권한이 부여되지 않았습니다.</string>
+    <string name="empty_large_video_title">대용량 동영상을 찾을 수 없습니다.</string>
+    <string name="empty_large_video_body">100MB를 초과하는 동영상은 없습니다. 나중에 임계값을 조정할 수 있습니다.</string>
+    <string name="media_item_bucket_format">앨범: %1$s</string>
+    <string name="media_item_date_format">날짜: %1$s</string>
+    <string name="media_item_duration_format">기간: %1$s</string>
+    <string name="video_threshold_note">현재 대용량 비디오 임계값: 100MB</string>
+    <string name="select_all_action">모두 선택</string>
+    <string name="clear_selected_action">모두 선택 해제</string>
+    <string name="delete_selected_action">선택 항목 삭제</string>
+    <string name="selected_count_format">%1$d 선택됨</string>
+    <string name="delete_dialog_title">스크린샷을 삭제하시겠습니까?</string>
+    <string name="delete_dialog_message_format">선택한 %1$d 스크린샷이 삭제됩니다. 시스템에서 다시 확인하라는 메시지가 표시됩니다.</string>
+    <string name="delete_dialog_confirm">계속</string>
+    <string name="delete_dialog_cancel">취소</string>
+    <string name="delete_complete_message_format">%1$d 스크린샷을 처리했습니다. 목록이 새로 고쳐졌습니다.</string>
+    <string name="delete_items_complete_format">%1$d 항목을 처리했습니다. 목록이 새로 고쳐졌습니다.</string>
+    <string name="delete_failed_message">삭제할 수 없습니다. 다시 시도해 보세요.</string>
+    <string name="delete_video_dialog_title">동영상을 삭제하시겠습니까?</string>
+    <string name="delete_video_dialog_message_format">선택한 %1$d 동영상이 삭제됩니다. 시스템에서 다시 확인하라는 메시지가 표시됩니다.</string>
+    <string name="delete_similar_dialog_title">비슷한 사진을 삭제하시겠습니까?</string>
+    <string name="delete_similar_dialog_message_format">선택한 %1$d 사진이 삭제됩니다. 추천 유지 품목은 포함되어 있지 않습니다.</string>
+    <string name="video_selection_filter_format">%1$d 선택됨 · 필터: %2$s(탭하여 전환)</string>
+    <string name="video_player_unavailable">이 기기에서는 사용할 수 있는 비디오 플레이어가 없습니다.</string>
+    <string name="media_preview_title">미리보기</string>
+    <string name="similar_select_candidates_action">후보자 선택</string>
+    <string name="similar_deselect_candidates_action">모두 선택 해제</string>
+    <string name="similar_select_all_candidates">모든 후보자 선택</string>
+    <string name="similar_delete_count_action">선택 항목 삭제(%1$d)</string>
+    <string name="similar_group_number_format">그룹 %1$d</string>
+    <string name="app_manager_uninstall_unavailable">시스템 제거 프로그램을 열 수 없습니다.</string>
+    <string name="filter_100mb">100MB 이상</string>
+    <string name="filter_500mb">500MB 이상</string>
+    <string name="filter_all_videos">모든 결과</string>
+    <string name="similar_page_title">비슷한 사진</string>
+    <string name="similar_page_subtitle">썸네일로 유사한 그룹을 검토하고, 후보를 선택하고, 중복을 삭제합니다.</string>
+    <string name="similar_page_note">첫 번째 버전은 경량 그룹화 규칙을 사용합니다. 지각적 해싱 및 선명도 점수는 나중에 추가할 수 있습니다.</string>
+    <string name="similar_page_badge">스마트 유사</string>
+    <string name="similar_page_hero_hint">더 높은 해상도, 더 큰 파일, 최신 타임스탬프로 사진을 보관하세요.</string>
+    <string name="similar_group_summary_format">앨범에서 %2$d 후보 사진이 포함된 %1$d 그룹을 찾았습니다.</string>
+    <string name="similar_group_empty_title">유사한 사진 그룹을 찾을 수 없습니다</string>
+    <string name="similar_group_empty_body">동일한 앨범에 유사한 시간 및 크기 기준을 충족하는 사진이 없습니다.</string>
+    <string name="similar_group_card_subtitle_format">%1$d 후보 · 최대 %2$s까지 해제 가능</string>
+    <string name="similar_keep_recommend_label">유지하는 것이 좋습니다</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">다른 후보자</string>
+    <string name="similar_other_items_more_format">+%1$d 더 많은 사진</string>
+    <string name="contacts_page_title">연락처 정리</string>
+    <string name="contacts_page_subtitle">중복되고 비어 있는 연락처를 찾으세요.</string>
+    <string name="contacts_page_badge">연락처 수정</string>
+    <string name="contacts_page_hero_hint">같은 번호의 연락처를 병합한 다음 비어 있는 연락처를 삭제하세요.</string>
+    <string name="contacts_permission_title">연락처 액세스 필요</string>
+    <string name="contacts_permission_body">로컬에서 연락처를 스캔할 수 있는 액세스를 허용하세요.</string>
+    <string name="contacts_scan_title">연락처 스캔</string>
+    <string name="contacts_scan_body">중복된 연락처와 비어 있는 연락처를 찾으려면 새로고침하세요.</string>
+    <string name="contacts_duplicate_title">중복된 연락처</string>
+    <string name="contacts_empty_title">빈 연락처</string>
+    <string name="contacts_duplicate_count_format">%1$d 중복 그룹</string>
+    <string name="contacts_empty_count_format">정리할 %1$d 빈 접점</string>
+    <string name="contacts_load_action">연락처 허용 및 로드</string>
+    <string name="contacts_refresh_action">연락처 새로 고침</string>
+    <string name="contacts_empty_group_title">중복된 연락처가 없습니다.</string>
+    <string name="contacts_empty_group_body">중복된 전화번호가 있는 연락처를 찾을 수 없습니다.</string>
+    <string name="contacts_delete_empty_action">빈 연락처 제거</string>
+    <string name="contacts_merge_action">그룹 병합</string>
+    <string name="contacts_view_action">연락처에서 보기</string>
+    <string name="contacts_group_title_format">%1$s · %2$d 연락처</string>
+    <string name="contacts_group_number_format">기본 번호: %1$s</string>
+    <string name="contacts_group_members_format">멤버: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">빈 연락처를 삭제하시겠습니까?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d 빈 연락처나 번호가 없는 연락처는 삭제됩니다.</string>
+    <string name="contacts_merge_complete_message">시스템에서 이 연락처 그룹을 병합하라는 요청을 받았습니다.</string>
+    <string name="contacts_cleanup_complete_message_format">%1$d 빈 연락처를 제거했습니다.</string>
+    <string name="contacts_action_failed">연락 작업에 실패했습니다. 다시 시도해 보세요.</string>
+    <string name="privacy_status_title">로컬 보호 상태</string>
+    <string name="privacy_page_badge">개인 금고</string>
+    <string name="privacy_hero_title">개인 콘텐츠를 정리와 별도로 유지</string>
+    <string name="privacy_hero_body">먼저 로컬 PIN 보호를 설정한 다음 개인 미디어 가져오기, 잠금 해제 및 복구를 추가하세요.</string>
+    <string name="privacy_status_enabled">4자리 PIN 세트</string>
+    <string name="privacy_status_disabled">PIN이 설정되지 않았습니다.</string>
+    <string name="privacy_status_body_enabled">나중에 가져온 개인 미디어는 로컬 PIN으로 보호됩니다.</string>
+    <string name="privacy_status_body_disabled">개인 미디어 가져오기 및 잠금 해제 기능을 추가하기 전에 4자리 PIN을 설정하세요.</string>
+    <string name="privacy_set_pin_action">PIN 설정</string>
+    <string name="privacy_reset_pin_action">PIN 재설정</string>
+    <string name="privacy_pin_dialog_title">4자리 PIN을 설정하세요</string>
+    <string name="privacy_pin_dialog_hint">4자리를 입력하세요</string>
+    <string name="privacy_pin_invalid">4자리 PIN을 입력하세요.</string>
+    <string name="privacy_pin_saved">로컬 PIN이 저장되었습니다.</string>
+    <string name="privacy_pin_reset_confirm">현재 PIN을 삭제하시겠습니까?</string>
+    <string name="privacy_pin_reset_done">PIN 재설정.</string>
+    <string name="privacy_feature_lock_title">로컬 잠금 해제</string>
+    <string name="privacy_feature_lock_body">첫 번째 버전은 로컬 보호를 위해 PIN을 사용합니다. 생체 인식은 나중에 추가할 수 있습니다.</string>
+    <string name="privacy_feature_vault_title">비공개 미디어</string>
+    <string name="privacy_feature_vault_body">나중에 가져온 개인 사진과 비디오는 별도로 저장되며 기본 앨범 정리 과정에서 제외됩니다.</string>
+    <string name="privacy_feature_scope_title">현재 단계</string>
+    <string name="privacy_feature_scope_body">이 버전에는 PIN 상태와 페이지 구조가 추가되었습니다. 그 다음에는 비공개 미디어 가져오기 및 로컬 암호화가 제공됩니다.</string>
+    <string name="profile_plan_title">현재 계획</string>
+    <string name="profile_plan_free">무료</string>
+    <string name="profile_plan_pro">프로</string>
+    <string name="profile_plan_body_free">스캔하고, 결과를 보고, 기본 정리를 사용하세요.</string>
+    <string name="profile_plan_body_pro">고급 정리, 개인 금고, 무제한 작업, 광고 없는 환경을 잠금 해제하세요.</string>
+    <string name="profile_upgrade_action">Pro 평가판으로 전환</string>
+    <string name="profile_restore_action">무료로 돌아가기</string>
+    <string name="profile_upgrade_done">Pro 평가판으로 전환되었습니다.</string>
+    <string name="profile_restore_done">무료로 돌아왔습니다.</string>
+    <string name="profile_benefits_title">프로 혜택</string>
+    <string name="profile_benefits_body">1. 고급 유사 사진 감지\n2. 무제한 일괄 정리\n3. 고급 대형 비디오 필터\n4. 향상된 연락처 정리\n5. 프라이빗 볼트\n6. 광고 없는 인터페이스</string>
+    <string name="detail_page_badge">상세보기</string>
+    <string name="detail_page_hint">무엇을 정리하거나 보관할지 결정하기 전에 후보를 검토하세요.</string>
+    <string name="premium">프리미엄</string>
+    <string name="settings">설정</string>
+    <string name="grant_access">액세스 권한 부여</string>
+    <string name="storage_permission_title">파일 액세스 권한 부여</string>
+    <string name="storage_permission_detail">CleanSuper AI는 중복, 흐린 사진, 큰 파일을 찾기 위해 파일 접근이 필요합니다. 모든 처리는 로컬에서 이루어집니다.</string>
+    <string name="storage_permission_scan_point">저장공간에서 중복 파일, 흐린 사진, 큰 파일을 찾습니다.</string>
+    <string name="storage_permission_privacy_point">파일은 기기에만 보관되며 업로드되지 않습니다.</string>
+    <string name="storage_permission_message">로컬 스캔에만 해당됩니다. 어떠한 데이터도 업로드되거나 제3자와 공유되지 않습니다.</string>
+    <string name="storage_permission_continue">계속</string>
+    <string name="storage_permission_close">닫기</string>
+    <string name="storage_permission_example_file">이 기기의 파일</string>
+    <string name="storage_permission_example_size">스캔 준비 완료</string>
+    <string name="storage_permission_guide_title">모든 파일에 대한 액세스 허용</string>
+    <string name="storage_permission_guide_message">이 장치의 파일을 검사하고 정리하려면 설정에서 스위치를 켜세요.</string>
+    <string name="go_to_settings">설정으로 이동</string>
+    <string name="permission_home_title">사진이 잠겨 있습니다.</string>
+    <string name="permission_home_body">이 기기에서 라이브러리를 안전하게 스캔하고 정리 알림을 보내려면 사진, 동영상, 알림 액세스를 허용하세요.</string>
+    <string name="scan_summary_format">스캔된 %1$d 항목 · %2$s를 검토할 수 있습니다.</string>
+    <string name="scan_running_english">라이브러리를 스캔하는 중…</string>
+    <string name="scan_ready_english">라이브러리가 준비되었습니다</string>
+    <string name="coming_soon">출시 예정</string>
+    <string name="compression_failed">이 이미지를 압축할 수 없습니다.</string>
+    <string name="compression_saved">Pictures/CleanSuperAI에 저장된 압축 사진.</string>
+    <string name="home_secure_analysis">안전한 온디바이스 분석</string>
+    <string name="home_cleanup_library">라이브러리 검토</string>
+    <string name="home_cleanup_badge">기기 내</string>
+    <string name="home_quick_clean_action">청소 센터 열기</string>
+    <string name="home_quick_clean_compact_action">청소 센터</string>
+    <string name="home_reclaim_ready_format">%1$s 회수 가능</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">점유된 저장공간</string>
+    <string name="home_storage_detail_format">검토할 %1$s · %2$d 항목</string>
+    <string name="home_quick_tools">빠른 도구</string>
+    <string name="home_quick_tools_subtitle">가장 많이 사용되는 정리 작업이 앞에 표시됩니다.</string>
+    <string name="feature_swipe_title">스와이프 사진</string>
+    <string name="feature_swipe_desc">사진을 하나씩 검토하고 거부된 제품을 휴지통으로 보냅니다.</string>
+    <string name="home_contacts_short_desc">중복 병합</string>
+    <string name="feature_ready_short">준비</string>
+    <string name="feature_review_short">검토</string>
+    <string name="tools_section_storage">스토리지 및 미디어</string>
+    <string name="tools_section_device">장치 도구</string>
+    <string name="tools_hero_badge">7가지 유용한 도구</string>
+    <string name="tools_hero_title">유용한 도구를 한 곳에 모아보세요</string>
+    <string name="tools_hero_body">간단하고 집중적인 작업으로 스토리지와 미디어를 관리하세요.</string>
+    <string name="tool_file_manager_desc">스크린샷, 비디오 등을 찾아보고 정리하세요.</string>
+    <string name="tool_media_compressor_desc">품질 저하 없이 사진 및 비디오 크기 줄이기</string>
+    <string name="tool_secret_space_desc">보안 PIN으로 개인 사진을 잠그세요</string>
+    <string name="tool_app_manager_desc">설치된 앱 및 저장용량 사용량 보기</string>
+    <string name="tool_clean_calendar_desc">일정을 복잡하게 만드는 오래된 캘린더 이벤트를 제거하세요.</string>
+    <string name="tool_ai_enhancer_desc">AI로 흐릿하거나 조명이 어두운 사진 개선</string>
+    <string name="tool_speed_test_desc">네트워크 다운로드 및 업로드 속도를 확인하세요.</string>
+    <string name="tools_page_subtitle">더 깨끗한 전화기를 위해 필요한 모든 것</string>
+    <string name="compress_page_subtitle">순간을 놓치지 않고 공간을 절약하세요</string>
+    <string name="video_compressor">비디오 압축기</string>
+    <string name="video_compress_subtitle">온디바이스 H.264 재인코딩으로 비디오 크기 줄이기</string>
+    <string name="video_compress_card_hint">720p · 균형 잡힌 품질</string>
+    <string name="choose_video">비디오 선택</string>
+    <string name="choose_video_hint">압축할 비디오를 선택하세요</string>
+    <string name="compress_photo_guide_title">압축할 사진을 선택하세요</string>
+    <string name="compress_photo_guide_body">기기에서 처리됨 · 초 단위로 작아짐</string>
+    <string name="compress_video_guide_title">압축할 비디오를 선택하세요</string>
+    <string name="compress_video_guide_body">온디바이스 H.264 · 밸런스 720p</string>
+    <string name="compress_guide_tap">선택하려면 탭하세요.</string>
+    <string name="enhance_photo_guide_title">향상시킬 사진을 선택하세요</string>
+    <string name="enhance_photo_guide_body">밝기 · 대비 · 선명도</string>
+    <string name="preview_original_photo_label">이전 · 원본 사진</string>
+    <string name="preview_compressed_photo_label">이후 · 압축 미리보기</string>
+    <string name="preview_original_video_label">이전 · 원본 영상</string>
+    <string name="preview_compressed_video_label">이후 · 압축 미리보기</string>
+    <string name="preview_enhanced_photo_label">이후 · 향상된 미리보기</string>
+    <string name="selected_video_preview">선택한 비디오 미리보기</string>
+    <string name="play_video_preview">비디오 미리보기 재생</string>
+    <string name="video_preview_title">비디오 미리보기</string>
+    <string name="video_preview_failed">이 동영상을 재생할 수 없습니다.</string>
+    <string name="video_compression_saved">Movies/CleanSuperAI에 저장된 압축 비디오입니다.</string>
+    <string name="video_compression_failed">이 동영상을 압축할 수 없습니다.</string>
+    <string name="video_compression_preparing">비디오 압축 준비 중…</string>
+    <string name="video_compression_progress_format">동영상 압축 중… %1$d%%</string>
+    <string name="video_compression_finishing">압축된 비디오를 마무리하는 중…</string>
+    <string name="video_compression_timeout">이 영상은 압축하는데 시간이 너무 오래 걸렸습니다. 더 짧은 클립을 사용해 보세요.</string>
+    <string name="app_manager_subtitle">설치된 앱을 검토하고 시스템 설정을 열어 캐시를 제거하거나 지웁니다.</string>
+    <string name="app_manager_summary_format">%1$d 사용자 앱 발견 · 탭하여 관리</string>
+    <string name="clean_calendar_subtitle">지난 캘린더 이벤트를 찾아 더 이상 필요하지 않은 이벤트를 제거하세요.</string>
+    <string name="clean_calendar_delete">선택 항목 삭제</string>
+    <string name="clean_calendar_empty">지난 이벤트를 찾을 수 없습니다.</string>
+    <string name="clean_calendar_summary_format">%1$d 지난 이벤트 · %2$d 선택됨</string>
+    <string name="clean_calendar_delete_confirm">%1$d 선택한 과거 이벤트를 삭제하시겠습니까?</string>
+    <string name="clean_calendar_delete_done">삭제된 %1$d 이벤트</string>
+    <string name="calendar_permission_hint">지난 일정을 검색하려면 캘린더 액세스를 허용하세요.</string>
+    <string name="calendar_permission_denied">캘린더 권한이 필요합니다</string>
+    <string name="calendar_untitled">(제목 없음)</string>
+    <string name="image_enhancer_subtitle">이 기기에서 로컬로 밝기, 대비, 선명도를 개선하세요.</string>
+    <string name="image_enhancer_hint">향상시킬 사진을 선택하세요</string>
+    <string name="image_enhancer_ready">향상 준비 완료</string>
+    <string name="image_enhancer_action">사진 향상</string>
+    <string name="image_enhancer_working">강화 중…</string>
+    <string name="image_enhancer_done">향상된 미리보기 준비 · 원할 때 저장</string>
+    <string name="image_enhancer_save">향상된 사진 저장</string>
+    <string name="image_enhancer_saved">향상된 사진이 Pictures/CleanSuperAI에 저장되었습니다.</string>
+    <string name="image_enhancer_failed">이 사진을 향상할 수 없습니다.</string>
+    <string name="speed_test_subtitle">Cloudflare 서버를 사용하여 다운로드, 업로드 및 대기 시간을 측정하세요.</string>
+    <string name="speed_test_hint">간단한 네트워크 속도 확인을 실행하려면 시작을 탭하세요.</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mbps 다운로드</string>
+    <string name="speed_test_start">속도 테스트 시작</string>
+    <string name="speed_test_running">연결 테스트 중…</string>
+    <string name="speed_test_done">테스트 완료</string>
+    <string name="speed_test_failed">속도 테스트에 실패했습니다. 네트워크를 확인하고 다시 시도하세요.</string>
+    <string name="speed_test_download_idle">다운로드 · 대기 중</string>
+    <string name="speed_test_upload_idle">업로드 · 대기 중</string>
+    <string name="speed_test_latency_idle">지연 · 대기</string>
+    <string name="speed_test_download_result">다운로드 · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">업로드 · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">대기 시간 · %1$d ms</string>
+    <string name="photo_compressor">사진 압축기</string>
+    <string name="compress_quality_hint">균형 잡힌 JPEG · 70% quality</string>
+    <string name="choose_photo_hint">압축할 사진을 선택하세요.</string>
+    <string name="choose_photo">사진 선택</string>
+    <string name="compress_preview">미리보기 압축</string>
+    <string name="compress_and_save">압축 및 저장</string>
+    <string name="save_compressed_photo">압축된 사진 저장</string>
+    <string name="save_compressed_video">압축된 비디오 저장</string>
+    <string name="share">공유</string>
+    <string name="keep">유지하다</string>
+    <string name="move_to_review_bin">휴지통으로 이동</string>
+    <string name="clear_review_bin">리뷰 빈 지우기</string>
+    <string name="swipe_page_subtitle">월별 검토 · 유지하려면 오른쪽으로 스와이프하고 휴지통으로 왼쪽으로 스와이프하세요.</string>
+    <string name="swipe_trash_open">열기</string>
+    <string name="swipe_trash_label_singular">쓰레기통에 있던 사진</string>
+    <string name="swipe_trash_label_plural">쓰레기통에 있던 사진</string>
+    <string name="swipe_empty_title">모든 사진이 검토되었습니다.</string>
+    <string name="swipe_empty_body">돌아가서 다른 달을 선택하거나 휴지통을 열어 사진을 복원하세요.</string>
+    <string name="category_person_format">사람 · %1$d</string>
+    <string name="category_animal_format">동물 · %1$d</string>
+    <string name="category_vehicle_format">차량 · %1$d</string>
+    <string name="no_photos_available">사용 가능한 사진이 없습니다.</string>
+    <string name="splash_tagline">스마트한 정리. 디자인에 따라 비공개입니다.</string>
+    <string name="selected_photos_deleted">선택한 사진이 삭제되었습니다.</string>
+    <string name="added_to_review_bin">리뷰함에 추가됨</string>
+    <string name="photos_deleted_format">%1$d 사진이 삭제되었습니다.</string>
+    <string name="delete_photos_failed">선택한 사진을 삭제할 수 없습니다.</string>
+    <string name="share_photo">사진 공유</string>
+    <string name="trash_bin_title_format">쓰레기통 (%1$s)</string>
+    <string name="trash_bin_title_empty">쓰레기통</string>
+    <string name="trash_restore_hint">사진을 복원하려면 탭하세요.</string>
+    <string name="trash_empty_action">휴지통에서 모두 삭제</string>
+    <string name="trash_restored">사진이 복원되었습니다.</string>
+    <string name="trash_bin_empty">휴지통이 비어 있습니다.</string>
+    <string name="feature_smart_groups">스마트 그룹</string>
+    <string name="feature_duplicate_photos">중복된 사진</string>
+    <string name="feature_duplicate_videos">중복된 동영상</string>
+    <string name="feature_all_videos">모든 동영상</string>
+    <string name="feature_screenshots_short">스크린샷</string>
+    <string name="scan_unavailable">스캔할 수 없음</string>
+    <string name="please_try_again">다시 시도해 주세요</string>
+    <string name="tool_file_manager">파일 관리자</string>
+    <string name="tool_media_compressor">미디어 압축기</string>
+    <string name="tool_app_manager">앱 관리자</string>
+    <string name="tool_clean_calendar">클린캘린더</string>
+    <string name="tool_ai_enhancer">AI 이미지 강화기</string>
+    <string name="tool_secret_space">비밀의 공간</string>
+    <string name="tool_speed_test">속도 테스트</string>
+    <string name="compressing">압축 중…</string>
+    <string name="original_size_format">원본 · %1$s</string>
+    <string name="compressed_result_format">압축됨 · %1$s\n저장됨 · %2$s</string>
+    <string name="swipe_grant_access_hint">사진을 탐색하려면 홈에서 미디어 액세스 권한을 부여하세요.</string>
+    <string name="media_item_placeholder">미디어</string>
+    <string name="selected_image_preview">선택한 이미지 미리보기</string>
+    <string name="current_photo">현재 사진</string>
+    <string name="month_cover">월 표지</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">명 · 0</string>
+    <string name="category_animal_zero">동물 · 0</string>
+    <string name="category_vehicle_zero">차량 · 0</string>
+    <string name="duplicate_photos_page_title">중복된 사진</string>
+    <string name="duplicate_photos_page_subtitle">파일 크기와 크기별로 정확한 중복 항목을 찾은 다음 하나의 사본을 보관하세요.</string>
+    <string name="duplicate_photos_page_badge">정확한 일치</string>
+    <string name="duplicate_photos_summary_format">%2$d 중복 사진이 있는 %1$d 그룹을 찾았습니다.</string>
+    <string name="duplicate_photos_empty_title">중복된 사진이 없습니다.</string>
+    <string name="duplicate_photos_empty_body">동일한 크기와 크기의 사진을 찾을 수 없습니다.</string>
+    <string name="duplicate_videos_page_title">중복된 동영상</string>
+    <string name="duplicate_videos_page_subtitle">크기와 지속 시간을 기준으로 정확한 중복 동영상을 찾은 다음 사본 한 개를 보관하세요.</string>
+    <string name="duplicate_videos_page_badge">정확한 일치</string>
+    <string name="duplicate_videos_summary_format">%2$d 중복 동영상이 있는 %1$d 그룹을 찾았습니다.</string>
+    <string name="duplicate_videos_empty_title">중복된 동영상이 없습니다.</string>
+    <string name="duplicate_videos_empty_body">동일한 크기와 길이의 동영상을 찾을 수 없습니다.</string>
+    <string name="settings_page_title">설정</string>
+    <string name="settings_page_subtitle">언어, 앱 정보, 개인정보 보호, 캐시.</string>
+    <string name="settings_language_title">언어</string>
+    <string name="settings_language_subtitle">선호하는 앱 언어를 선택하세요</string>
+    <string name="settings_about_title">소개</string>
+    <string name="settings_about_subtitle">앱 이름 및 버전</string>
+    <string name="settings_about_message_format">클린 슈퍼 AI\n버전 %1$s(%2$d)</string>
+    <string name="settings_privacy_policy_title">개인 정보 보호 정책</string>
+    <string name="settings_privacy_policy_subtitle">당사가 귀하의 데이터를 처리하는 방법</string>
+    <string name="settings_privacy_policy_body">모든 미디어 검색 및 정리는 장치에서 로컬로 실행됩니다. 우리는 귀하의 사진, 비디오 또는 연락처를 서버에 업로드하지 않습니다. 선택적 분석(나중에 활성화된 경우)은 스토어 정책을 따릅니다. 시스템 설정에서 언제든지 미디어 액세스를 취소할 수 있습니다.</string>
+    <string name="settings_clear_cache_title">캐시 지우기</string>
+    <string name="settings_clear_cache_subtitle">무료 임시 앱 저장공간</string>
+    <string name="settings_clear_cache_confirm">임시 캐시 파일을 삭제하시겠습니까? 사진과 설정은 삭제되지 않습니다.</string>
+    <string name="settings_clear_cache_done_format">캐시의 %1$s를 지웠습니다.</string>
+    <string name="language_page_title">앱 언어</string>
+    <string name="language_page_subtitle">기본적으로 CleanSuper AI는 장치 언어를 따릅니다.</string>
+    <string name="language_follow_system_title">시스템 언어를 따르세요</string>
+    <string name="language_follow_system_subtitle_format">현재 장치 언어: %1$s</string>
+    <string name="month_photo_count_format">%1$d 사진</string>
+    <string name="review_bin_pending_format">검토 상자에 대기 중인 %1$d 사진</string>
+    <string name="media_bucket_video">비디오</string>
+    <string name="settings_terms_title">이용약관</string>
+    <string name="settings_terms_subtitle">약관 읽기</string>
+    <string name="settings_widget_title">홈 화면 위젯</string>
+    <string name="settings_widget_subtitle">청소 바로가기 추가</string>
+    <string name="tool_network_traffic">네트워크 트래픽</string>
+    <string name="tool_network_traffic_desc">앱별 사용량</string>
+    <string name="tool_battery_info">배터리 정보</string>
+    <string name="tool_battery_info_desc">충전 및 건강</string>
+    <string name="tool_device_info">장치 정보</string>
+    <string name="tool_device_info_desc">시스템 및 Wi-Fi</string>
+    <string name="tool_private_vault">개인 금고</string>
+    <string name="tool_private_vault_desc">사진 및 비디오 숨기기</string>
+    <string name="home_more_tools">더 많은 도구</string>
+    <string name="home_battery_info">배터리</string>
+    <string name="home_device_info">장치</string>
+    <string name="home_large_files">대용량 파일</string>
+    <string name="home_cache_cleanup">캐시 정리</string>
+    <string name="home_network_traffic">데이터 사용량</string>
+    <string name="home_private_vault">개인 금고</string>
+    <string name="home_picture_cleanup">사진</string>
+    <string name="home_video_cleanup">비디오</string>
+    <string name="home_audio_cleanup">오디오</string>
+    <string name="media_loading">미디어 로드 중…</string>
+    <string name="media_loading_hint">파일 정리. 기다리세요.</string>
+    <string name="media_count_summary">%1$d 항목 · %2$s · %3$d 선택됨</string>
+    <string name="media_empty_title">미디어를 찾을 수 없습니다.</string>
+    <string name="media_empty_body">해당 카테고리에는 항목이 없습니다.</string>
+    <string name="media_error_title">미디어를 로드할 수 없습니다.</string>
+    <string name="media_access_title">저장소 액세스 필요</string>
+    <string name="media_access_body">이 미디어를 탐색하려면 설정에서 모든 파일 액세스를 허용하세요.</string>
+    <string name="media_delete_title">선택한 항목을 삭제하시겠습니까?</string>
+    <string name="media_delete_message">%1$d 선택한 항목을 삭제하시겠습니까? Android에서 확인을 요청할 수 있습니다.</string>
+    <string name="media_recent_group">1개월 이내</string>
+    <string name="media_older_group">1개월 이상</string>
+    <string name="media_group_summary">%1$d 아이템 · %2$s</string>
+    <string name="audio_player_unavailable">이 장치에서는 오디오 플레이어를 사용할 수 없습니다.</string>
+    <string name="vault_items_summary">%1$d 개인 아이템</string>
+    <string name="vault_empty_gallery">개인 금고가 비어 있습니다. 사진이나 비디오를 가져와서 여기에서 확인하세요.</string>
+    <string name="cache_group_app">앱 캐시</string>
+    <string name="cache_group_apk">오래된 APK 파일</string>
+    <string name="cache_group_residual">잔여 파일</string>
+    <string name="cache_summary">%1$d 파일 · %2$s</string>
+    <string name="cleanup_report_title">청소 완료</string>
+    <string name="cleanup_report_freed">확보된 공간</string>
+    <string name="cleanup_report_count">%2$d 항목 중 %1$d가 제거되었습니다.</string>
+    <string name="cleanup_report_other">다른 파일 정리</string>
+    <string name="cleanup_report_done">완료</string>
+    <string name="exit_retain_title">CleanSuper AI를 종료하시겠습니까?</string>
+    <string name="exit_retain_message">더 빠른 청소를 위해 홈 위젯을 추가하세요</string>
+    <string name="exit_retain_confirm_exit">종료</string>
+    <string name="exit_retain_add">추가</string>
+    <string name="exit_retain_feature_cache">캐시</string>
+    <string name="exit_retain_feature_large">대용량 파일</string>
+    <string name="widget_status_storage">여유 공간</string>
+    <string name="notif_screenshot">스크린샷</string>
+    <string name="exit_retain_message_existing">홈 위젯을 빠르게 청소할 수 있습니다</string>
+    <string name="notif_cache">캐시</string>
+    <string name="notif_channel_name">빠른 정리 도구 모음</string>
+    <string name="notif_channel_desc">빠른 청소 작업을 위한 영구 도구 모음</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">알림 정리</string>
+    <string name="notif_event_channel_desc">스크린샷, 설치 및 제거 후 로컬 알림</string>
+    <string name="notif_event_summary_channel_name">알림 요약 정리</string>
+    <string name="notif_event_screenshot_title">또 다른 스크린샷이요? 1 이제 스크린샷을 정리할 시간입니다</string>
+    <string name="notif_event_install_title">새 앱이 이전되었으며 캐시도 마찬가지입니다. 청소하다</string>
+    <string name="notif_event_uninstall_title">성공적으로 제거되었습니다! 파일 잔여물을 정리하려면</string>
+    <string name="notif_clean_reminder_title">쓰레기가 잔뜩 쌓여있습니다. 한번에 모두 청소해보세요.</string>
+    <string name="notif_event_battery_below_50_title">배터리가 절반 이상 충전되었습니다. 지금 잘 처리하세요. 집에 도착할 때까지 지속됩니다.</string>
+    <string name="notif_event_battery_below_20_title">배터리가 부족합니다. 누가 당신의 전기를 훔치고 있는지 알고 싶으십니까? 클릭하시면 순위를 보실 수 있습니다.</string>
+    <string name="notif_event_charging_title">전원을 연결했습니다. 오늘 밤의 작업은 물을 채우고 청소하는 것입니다.</string>
+    <string name="notif_event_charging_full_title">완전히 충전되었으며 사용할 준비가 되었습니다. 마지막 확인: 쓰레기를 치웠나요?</string>
+    <string name="notif_event_charging_to_80_title">최종 스프린트는 80%입니다. 쓰레기를 버리고 가볍게 짐을 싸서 최대의 힘을 맞이하세요.</string>
+    <string name="notif_event_charging_disconnect_title">플러그를 뽑고 출발하세요. 시간을 내어 쓰레기를 치우고 최상의 상태를 유지하는 것을 잊지 마십시오.</string>
+    <string name="notif_event_app_update_title">새 버전이 도착했습니다. 이전 버전에서 남은 모든 것이 완전히 정리되었습니다.</string>
+    <string name="notif_event_network_change_title">웹이 변한다! 현재 네트워크 상태 보기 1</string>
+    <string name="notif_event_screen_lock_title">휴대폰은 내려놓고 저희에게 맡겨주세요. 휴식 화면 시간 = 간호 시간.</string>
+    <string name="notif_event_screen_on_after_lock_title">우리 다시 만나요, 막혔나요? 대부분이 쓰레기입니다. 청소해 보세요.</string>
+    <string name="notif_event_storage_free_drop_title">저장공간이 변경되었습니다. 공간을 차지하는 것이 무엇인지 볼까요?</string>
+    <string name="notif_event_scheduled_push_1_title">오랫동안 쌓인 쓰레기가 한 번에 치워집니다.</string>
+    <string name="notif_event_scheduled_push_2_title">배터리가 이전만큼 내구성이 없나요? 확인해 보세요.</string>
+    <string name="notif_event_app_inactive_title">오랫동안 기다려왔습니다. 돌아와서 쓰레기를 치우십시오.</string>
+    <string name="notif_event_scheduled_push_3_title">재생 목록을 한 번 탭하여 위젯을 설정하세요</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>재생 목록을 한 번 탭하여 위젯을 설정하세요</item>
+        <item>위젯으로 모든 것을 더 쉽게 만드세요 - 음악 바로가기를 추가하세요</item>
+        <item>잠금 해제 없이 빠르게 플레이 - 홈 화면 위젯을 활성화하세요</item>
+    </string-array>
+    <string name="notif_event_app_background_title">잊어버린 게 있어요</string>
+    <string name="notif_event_app_background_content">더 원활하게 작동하도록 청소를 마무리하세요.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>잊어버린 게 있어요</item>
+        <item>한 걸음 남았습니다</item>
+        <item>좋은 소식</item>
+        <item>너무 빨리 떠나셨네요</item>
+        <item>밤새도록 쓰레기를 놔두지 마세요</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>더 원활하게 작동하도록 청소를 마무리하세요.</item>
+        <item>한 번 더 탭하면 청소가 완료되고 더 많은 공간이 확보됩니다.</item>
+        <item>여유 공간이 감지되었습니다. 탭 한 번으로 청소를 요청하세요.</item>
+        <item>귀하의 휴대전화가 훨씬 더 빨라질 수 있습니다. 최적화를 확인해보세요.</item>
+        <item>더 원활하게 작동하도록 청소를 마무리하세요.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">스캔 결과가 준비되었습니다. 정크가 공간을 차지하고 있습니다. 지금 청소하세요</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>스캔 결과가 준비되었습니다. 정크가 공간을 차지하고 있습니다. 지금 청소하세요</item>
+        <item>한 단계 남았습니다. 돌아와서 즉시 여유 공간을 확보하세요.</item>
+        <item>스캔 후 청소하는 것을 잊으셨나요? 10초만 투자하면 휴대폰이 더 가벼워집니다.</item>
+        <item>정크 파일이 여전히 휴대전화에 있습니다. 결과가 저장되었습니다. 원터치 청소를 위해 다시 오세요.</item>
+        <item>마지막 스캔에서 청소할 항목이 여러 개 발견되었습니다. 와서 끝내세요.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">청소가 아직 완료되지 않았습니다. 와서 마지막 단계를 완료하세요.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>청소가 아직 완료되지 않았습니다. 와서 마지막 단계를 완료하세요.</item>
+        <item>청소 중단됨: 중간에 왔습니다. 더 가벼운 휴대폰으로 마무리하세요.</item>
+        <item>청소가 거의 완료되었습니다. 쓰레기를 남겨두지 마세요.</item>
+        <item>중간에 청소를 마쳤습니다. 마무리하고 차이를 느껴보세요.</item>
+        <item>중단된 청소는 언제든지 계속될 수 있습니다. 와서 끝내세요.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">사진이 삭제되었습니다. 휴지통으로 안전하게 이동되었습니다.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>사진이 삭제되었습니다. 휴지통으로 안전하게 이동되었습니다.</item>
+        <item>방금 사진 1장을 삭제했습니다. 얼마나 많은 공간을 확보했는지 확인하세요.</item>
+        <item>사진이 삭제되었습니다. 이제 영구 삭제하여 여유 공간을 확보하세요.</item>
+        <item>사진이 안전하게 삭제되었습니다. 저장 상태가 업데이트되었습니다.</item>
+        <item>사진이 삭제되었습니다. 유사한 스크린샷도 정리할 수 있습니다.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">비디오가 삭제되었습니다. 넓은 공간이 확보되었습니다.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>비디오가 삭제되었습니다. 넓은 공간이 확보되었습니다.</item>
+        <item>대형 비디오가 제거되었습니다. 저장 공간의 부담이 즉시 완화되었습니다.</item>
+        <item>동영상이 삭제되었습니다. 현재 저장 상태를 확인하세요.</item>
+        <item>삭제 완료 — 휴지통을 비워 공간을 완전히 확보하세요.</item>
+        <item>동영상이 삭제되었습니다. 정리해야 할 잊혀진 대용량 동영상이 더 있을 수 있습니다.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">오디오 삭제됨 - 작은 파일이 추가됩니다. 계속하세요.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>오디오 삭제됨 - 작은 파일이 추가됩니다. 계속하세요.</item>
+        <item>해당 오디오는 사라졌습니다. 더 유사한 사용하지 않는 파일도 정리할 수 있습니다.</item>
+        <item>오디오가 삭제되었습니다. 저장용량 세부정보가 업데이트되었습니다. 와서 한 번 보세요.</item>
+        <item>오디오 파일 1개 삭제됨 - 저장소 목록이 새로 고쳐졌습니다.</item>
+        <item>오디오가 삭제되었습니다. 휴지통을 비워 공간 확보를 완료하세요.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">파일이 삭제되었습니다. 조금 더 여유 공간이 확보되었습니다.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>파일이 삭제되었습니다. 조금 더 여유 공간이 확보되었습니다.</item>
+        <item>파일이 삭제되었습니다. 더 이상 휴대폰이 복잡해지지 않습니다.</item>
+        <item>파일이 삭제되었습니다. 정리할 수 있는 다른 항목을 확인하세요.</item>
+        <item>파일이 삭제됨 - 변경 사항이 동기화되고 저장소 상태가 업데이트되었습니다.</item>
+        <item>해당 파일이 지워졌습니다. 이제 공간을 확보하는 중입니다.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">이미지가 다운로드되었습니다. 이미지를 열고 살펴보세요.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>이미지가 다운로드되었습니다. 이미지를 열고 살펴보세요.</item>
+        <item>이미지 다운로드됨 - 앨범에 있는 중복 사진을 정리하는 동안</item>
+        <item>다운로드 완료 — 이미지가 안전하게 저장되었습니다. 비슷한 사진을 확인하러 오세요</item>
+    </string-array>
+    <string name="notif_event_video_download_title">다운로드된 비디오 — 작지 않습니다. 오래된 비디오에서 얼마나 많은 공간을 확보할 수 있는지 확인하세요</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>다운로드된 비디오 — 작지 않습니다. 오래된 비디오에서 얼마나 많은 공간을 확보할 수 있는지 확인하세요</item>
+        <item>새 비디오가 저장되었습니다. 삭제할 대용량 비디오를 찾아 여유 공간을 확보하세요. 나를 탭하세요</item>
+        <item>동영상은 공간을 차지합니다. 휴대전화를 가볍게 해줄 청소 가능한 품목을 찾았습니다. 여기를 탭하세요</item>
+        <item>다운로드 완료! 오래된 동영상 몇 개를 정리하면 공간이 다시 나타납니다. 나를 탭하세요</item>
+        <item>새 비디오가 정렬되어 있어 쉽게 찾거나 정리할 수 있습니다. 보려면 탭하세요.</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">오디오 다운로드 — 탭 한 번으로 음악 라이브러리를 정리하세요. 나를 탭하세요</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>오디오 다운로드 — 탭 한 번으로 음악 라이브러리를 정리하세요. 나를 탭하세요</item>
+        <item>새 오디오가 정렬되었습니다. 여기에 있는 동안 오래된 오디오를 정리하세요. 나를 탭하세요</item>
+        <item>음악 라이브러리가 가득 차나요? 청소 가능한 오디오를 확인하세요. 여기를 탭하세요</item>
+        <item>오디오 다운로드 — 탭 한 번으로 중복 제거 나를 탭해서 정리하세요</item>
+    </string-array>
+    <string name="notif_event_file_download_title">새 파일이 저장되었습니다. 오래된 파일과 여유 공간을 지웁니다. 여기를 탭하세요</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>새 파일이 저장되었습니다. 오래된 파일과 여유 공간을 지웁니다. 여기를 탭하세요</item>
+        <item>다운로드 완료 - 어떤 오래된 파일을 정리할 수 있는지 확인하세요. 나를 탭하세요</item>
+        <item>새 파일 준비 — 스마트 아카이브 + 정리. 시작하려면 저를 탭하세요</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">휴지통이 비워졌습니다. 저장소가 새로 고쳐졌습니다. 최근 공간을 확인해보세요.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>휴지통이 비워졌습니다. 저장소가 새로 고쳐졌습니다. 최근 공간을 확인해보세요.</item>
+        <item>휴지통을 비우고 남은 음식을 철저하게 청소하세요.</item>
+        <item>성공적으로 비웠습니다. 청소할 정크가 더 많습니다. 와서 한 번 보세요.</item>
+    </string-array>
+    <string name="notif_event_action_clean">지금 청소하세요</string>
+    <string name="notif_event_action_open_home">열기</string>
+    <string name="notif_event_action_manage">앱 관리</string>
+    <string name="notif_event_action_check_battery">배터리 확인</string>
+    <string name="notif_event_action_check_network">네트워크 확인</string>
+    <string name="notif_days_unit">일</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>저장공간이 변경되었습니다. 무엇이 공간을 차지하는지 볼까요?</item>
+        <item>공간적 변화가 감지되었습니다. 새로운 쓰레기가 있을지도 모릅니다. 살펴 보시겠습니까?</item>
+        <item>사용 가능한 공간이 이동되었습니다. 누가 먹었는지 아세요? 클릭해서 살펴보세요.</item>
+        <item>공간이 협소한가요? 방금 변경 사항을 감지했습니다. 세부 사항을 살펴보겠습니다.</item>
+        <item>공간 변경 알림: 쓰레기가 많이 쌓일 수 있습니다. 확인해 보세요.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>배터리가 부족합니다. 누가 당신의 전기를 훔치고 있는지 알고 싶으십니까? 클릭하시면 순위를 보실 수 있습니다.</item>
+        <item>곧 바닥이 난다. 전기를 훔치는 앱만 없애면 당분간은 살아남을 수 있다.</item>
+        <item>배터리가 부족합니다. 아무것도 하지 않는 것보다 몇 가지 배경을 지우는 것이 낫습니다.</item>
+        <item>배터리가 빨간색입니다. 여전히 저장할 수 있으며, 클릭하여 열고 살펴보세요.</item>
+        <item>20% remain 미만입니다. 절전형 응급처치를 하고 청소를 합시다.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>배터리가 절반 이상 충전되었습니다. 지금 잘 처리하세요. 집에 도착할 때까지 지속됩니다.</item>
+        <item>배터리가 절반 이상 충전되었습니다. 이제 배터리를 관리하는 것이 20%가 될 때까지 기다리는 것보다 훨씬 쉽습니다.</item>
+        <item>배터리가 반쯤 나갔네요. 얼마나 오래 지속될 수 있나요? 클릭해서 살펴보세요.</item>
+        <item>배터리가 절반 이상 충전되었습니다. 이제 백엔드를 관리할 시간입니다. 긴장할 때까지 기다리지 마세요.</item>
+        <item>배터리가 절반 남았습니다. 파워에 굶주린 큰 선수들을 제거하고 후반전을 더욱 안정되게 만드세요.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>최종 스프린트는 80%입니다. 쓰레기를 버리고 가볍게 짐을 싸서 최대의 힘을 맞이하세요.</item>
+        <item>아직 20% s완전 충전이 부족합니다. 더 이상 화면을 쳐다보지 말고 우리가 쓰레기를 처리하도록 하세요.</item>
+        <item>80%: 완벽함에서 한 발짝 떨어져 있습니다. 한 번 클릭하면 배터리가 완전히 충전되면 완전히 지워집니다.</item>
+        <item>80%, a 좋은 휴대폰에 좋은 배터리. 더운데 라운드를 청소하시나요?</item>
+        <item>우리에게 주어진 마지막 20% i입니다. 배터리를 보면 쓰레기를 청소합니다.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>완전히 충전되었으며 사용할 준비가 되었습니다. 마지막 확인: 쓰레기를 치웠나요?</item>
+        <item>충전 후 의식의 느낌이 가득합니다. 기념으로 쓰레기를 치워보는 건 어떨까요?</item>
+        <item>오늘은 100%, s테이블입니다. 한 번 더 라운드하면 완벽합니다.</item>
+        <item>100%. 플러그를 뽑기 전 마지막 단계: 30초 동안 휴지통을 비웁니다.</item>
+        <item>풀파워로 마무리했습니다. 마지막 정리가 완료되었습니다. 완벽합니다.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>웹이 변한다! 현재 네트워크 상태 보기 1</item>
+        <item>네트워크 이탈. 청소할 때 신호를 보지 말고 클릭하고 스캔하십시오.</item>
+        <item>페이지를 열 수 없나요? 정리는 항상 온라인 상태입니다.</item>
+        <item>이제 오프라인으로 작업할 수 있으며 휴지통을 비울 수 있습니다.</item>
+        <item>신호가 없으면 청소에 데이터가 필요하지 않으며 클릭만 하면 됩니다.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>전원을 연결했습니다. 오늘 밤의 작업: 물을 채우고 청소하세요.</item>
+        <item>당신은 쉬고 있고, 재충전 중입니다. 쓰레기도 치워주세요.</item>
+        <item>충전하는 동안 오랫동안 쌓인 쓰레기를 치우는 데 충분합니다.</item>
+        <item>전기가 연결되어야 무대 뒤 스태프들이 감히 자유롭게 일할 수 있다.</item>
+        <item>충전하는 동안 조금 뜨거워지나요? 배경을 지우면 온도를 낮출 수 있습니다.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>플러그를 뽑고 출발하세요. 시간을 내어 쓰레기를 치우고 최상의 상태를 유지하는 것을 잊지 마십시오.</item>
+        <item>충전이 끝나면 짐을 챙기고 출발하세요. 그냥 청소하면 완벽해질 것입니다.</item>
+        <item>완전히 충전되어 사용할 준비가 되었습니다. 쓰레기 청소도 원활하게, 오늘도 부족함이 없습니다.</item>
+        <item>충전이 종료됩니다. 다음 공간은 한 단계씩 정리하고 업그레이드할 예정이다.</item>
+        <item>정전 시에도 멈추지 마십시오. 남은 한 가지는 정리입니다.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>우리 다시 만나요, 막혔나요? 대부분이 쓰레기입니다. 청소해 보세요.</item>
+        <item>잠금 해제되었나요? 다른 앱을 먼저 열지 말고 30초 동안 휴지통을 비우세요.</item>
+        <item>가장 먼저 잠금을 해제할 대상은 바로 우리입니다. 쓰레기를 치우면 당신을 더 사랑할 것입니다.</item>
+        <item>잠금 해제 후 30초. 가장 가치 있는 용도: 쓰레기 청소.</item>
+        <item>휴대전화에 \'백엔드가 약간 막혔습니다. 도와주실 수 있나요?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>휴대폰은 내려놓고 저희에게 맡겨주세요. 휴식 화면 시간 = 간호 시간.</item>
+        <item>일을 멈추는 것은 일을 멈추는 것을 의미하지 않습니다. 다음에 화면을 켜면 깜짝 선물을 드릴게요.</item>
+        <item>화면을 쉬면서 조용히 나아지고 있어요. 클릭하시면 나머지는 저희가 알아서 처리하겠습니다.</item>
+        <item>화면을 잠그기 전 마지막으로 할 일: 정리를 클릭하세요. 내일 아침 새로운 모습.</item>
+        <item>화면이 어두워집니다. 지금 준비하고 내일 결과를 확인하세요.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>새 앱이 이전되었으며 캐시도 마찬가지입니다. 청소하다</item>
+        <item>우리는 새로운 앱을 설치하는 기쁨을 이해합니다. 단지 캐시가 조용히 쌓일 뿐입니다.</item>
+        <item>새로운 앱이요? 캐시도 여기에 있으므로 한 번의 클릭으로 지울 수 있습니다.</item>
+        <item>새로운 것이 들어오고 오래된 것이 나가게 됩니다. 자주 청소하고 원하는 대로 설치하세요.</item>
+        <item>또 하나? 공간이 조용히 작아지고 있으니 오셔서 청소해주세요.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>성공적으로 제거되었습니다! 파일 잔여물을 정리하려면</item>
+        <item>제거되었지만 정리되지 않았습니다. 완료하려면 클릭하세요.</item>
+        <item>앱은 제거되었지만 꼬리는 여전히 남아 있습니다. 한 번의 클릭으로 정리하고 영원히 작별 인사를 하세요.</item>
+        <item>두 번째 단계를 놓치지 마세요. 앱을 삭제하고 남은 부분을 삭제하세요. 한 번의 클릭으로 완료됩니다.</item>
+        <item>잔여물은 비워진 공간의 절반을 차지하게 됩니다. 정밀 스캔하고 모든 것을 지웁니다.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>새 버전이 도착했습니다. 이전 버전에서 남은 모든 것이 완전히 정리되었습니다.</item>
+        <item>심층 스캔의 경우 버전 +1, 캐시 +1입니다.</item>
+        <item>업데이트가 완료되고 한 번의 클릭으로 나머지 설치 패키지를 정리할 수 있습니다.</item>
+        <item>업데이트가 완료되었습니다. 마무리하겠습니다. 청소하면 제가 맡겠습니다.</item>
+        <item>모든 업데이트는 오래된 파일을 남기고 신속하게 처리합니다.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>또 다른 스크린샷이요? 1 이제 스크린샷을 정리할 시간입니다</item>
+        <item>새 스크린샷을 찾았습니다. 클릭하여 보고 정리하세요~</item>
+        <item>스크린샷이 점점 많아지고 있습니다. 원클릭 정리로 공간 확보에 도움이 됩니다.</item>
+        <item>스크린샷이 성공적으로 촬영되었습니다. 중복되거나 흐릿한 스크린샷은 한 번의 클릭으로 필터링할 수 있습니다.</item>
+        <item>새로운 스크린샷이 데이터베이스에 추가되고, 한 번의 클릭으로 삭제하기 위해 중복된 이미지가 대기열에 추가되었습니다.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>쓰레기가 잔뜩 쌓여있습니다. 한번에 모두 청소해보세요.</item>
+        <item>일 전에 %1$d를 마지막으로 청소했습니다. 지금 처리하려면 클릭하세요.</item>
+        <item>며칠 동안 이곳에 없었으니 깨끗이 치우고 가볍게 전장으로 돌아가겠습니다.</item>
+        <item>오늘은 청산 할당량을 사용하지 않았습니다. 돌아오면 클리어하겠습니다.</item>
+        <item>캐시가 가득 차서 확인을 기다리고 있습니다.</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>오랫동안 기다려왔습니다. 돌아와서 쓰레기를 치우십시오.</item>
+        <item>며칠 동안 당신을 보지 못했어요. 쓰레기에게는 휴식이 없습니다. 돌아와서 쓸어 버리세요.</item>
+        <item>캐시가 대기열에 추가되었습니다. 클릭하면 사라집니다.</item>
+        <item>당신이 자리를 비운 동안 휴지통이 가득 찼습니다. 한 번의 클릭으로 비우고 그 어느 때보다 상쾌한 기분을 느껴보세요.</item>
+        <item>뒤쪽에? 먼저 휴지통을 비우십시오. 30초만 지나면 전화기는 새것처럼 가벼워집니다.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>오랫동안 쌓인 쓰레기가 한 번에 치워집니다.</item>
+        <item>청소할 시간입니다. 오늘의 휴지통은 당신이 클릭하기를 기다리고 있습니다.</item>
+        <item>오늘의 스페이스 데일리가 도착했습니다. 깨끗이 비우고 밝게 유지하세요.</item>
+        <item>일부 파일은 생각보다 훨씬 큽니다. 살펴보세요.</item>
+        <item>몇 G를 차지한 놈을 찾아서 청소해</item>
+        <item>큰 문서 목록이 준비되어 있으니 오셔서 살펴보세요.</item>
+        <item>누가 가장 많은 공간을 차지합니까? 1초만에 공개됩니다.</item>
+        <item>연속 촬영은 훌륭하지만 마무리는 고통스럽습니다. 우리에게 맡겨주세요.</item>
+        <item>유사한 사진이 나열되어 있으며 어떤 사진을 유지할지는 귀하의 선택입니다</item>
+        <item>비슷한 사진이 너무 많나요? 단 한 번의 클릭으로 중복 항목을 비교하고 제거할 수 있도록 도와드리겠습니다.</item>
+        <item>캐시된 오프라인 동영상을 삭제해야 합니다.</item>
+        <item>나머지 오디오도 정리됩니다.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>배터리가 이전만큼 내구성이 없나요? 확인해 보세요.</item>
+        <item>누가 당신의 전기를 훔치고 있나요? 한번 찾아보시면 알게 될 것입니다.</item>
+        <item>이 기능을 끄면 배터리 수명이 연장됩니다.</item>
+        <item>일부 앱은 설치되었지만 사용되지 않습니다. 어떤 것들이 있는지 보시겠어요?</item>
+        <item>안쓰는 앱 보관하는것도 부담이라 목록을 만들었어요</item>
+        <item>개인정보 보호에 관해서는 빨리 처리할수록 좋습니다.</item>
+        <item>중요한 것은 숨기고 불필요한 것은 제거하세요. 내가 당신을 도와 드리겠습니다</item>
+        <item>교통은 어디로 가나요? 누가 사용하고 있는지 알아보세요.</item>
+        <item>교통 정보가 한 눈에 준비되어 명확합니다.</item>
+        <item>백그라운드에서 비밀리에 인터넷에 연결되는 앱이 있습니다.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">정크의 {size}—탭 한 번으로 정리</string>
+    <string name="notif_scheduled_large_files">{total}개의 대용량 파일—손쉬운 정리</string>
+    <string name="notif_scheduled_duplicate_photos">중복 사진 그룹 {groups}개—{size} 저장</string>
+    <string name="notif_scheduled_similar_photos">유사한 사진의 {size}—정리할 항목을 선택하세요</string>
+    <string name="notif_scheduled_videos">동영상 {total}개—공간을 확보하려면 {n}개를 삭제하세요.</string>
+    <string name="notif_scheduled_audio">{total}개의 오디오 파일—정리할 시간입니다</string>
+    <string name="notif_scheduled_apps">{idle} 유휴 앱에서 사용되는 {size}</string>
+    <string name="notif_scheduled_data">백그라운드에서 사용되는 데이터의 {back}</string>
+    <string name="app_manager_uninstall_selected">선택한 앱 제거</string>
+    <string name="app_manager_uninstall_selected_count">선택한 앱 제거 (%1$d)</string>
+    <string name="cache_removable">이동할 수 있는</string>
+    <string name="cache_clean_selected">캐시 제거</string>
+    <string name="cache_clean_selected_summary">%1$s(%2$d) 청소</string>
+</resources>

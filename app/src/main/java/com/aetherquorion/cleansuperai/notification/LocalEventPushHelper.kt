@@ -11,6 +11,9 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.media.AudioAttributes
 import android.provider.Settings
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.ForegroundColorSpan
 import android.widget.RemoteViews
 import android.view.View
 import androidx.core.app.NotificationCompat
@@ -27,6 +30,7 @@ import java.util.Locale
 
 /** All trigger producers enter through [show]; quota and style selection stay centralized. */
 object LocalEventPushHelper {
+    private const val SCHEDULED_INSIGHT_VALUE_COLOR = 0xFF16A765.toInt()
     enum class EventType(val sceneKey: String) {
         SCREENSHOT("screenshot_capture"),
         APP_INSTALL("app_install"),
@@ -181,9 +185,15 @@ object LocalEventPushHelper {
         val copiedTitle = packageEvent?.let {
             PackageEventNotificationCopy.resolve(it, appLabel, originalTitle = baseTitle)?.text
         } ?: baseTitle
-        val title = if (ScheduledInsightCopy.isInsight(sceneKey))
-            ScheduledInsightCopy.render(copiedTitle, ScheduledInsightCopy.sample(sceneKey)).text
-        else copiedTitle
+        val title: CharSequence = if (ScheduledInsightCopy.isInsight(sceneKey)) {
+            val rendered = ScheduledInsightCopy.render(copiedTitle, ScheduledInsightCopy.sample(sceneKey))
+            SpannableString(rendered.text).apply {
+                rendered.highlights.forEach { range ->
+                    setSpan(ForegroundColorSpan(SCHEDULED_INSIGHT_VALUE_COLOR),
+                        range.first, range.last + 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                }
+            }
+        } else copiedTitle
         val body = if (sceneKey == "app_background") {
             val values = context.resources.getStringArray(R.array.notif_event_app_background_contents)
             values.getOrNull(prefs.getInt("copy:$sceneKey", 0) % values.size.coerceAtLeast(1)).orEmpty()
@@ -314,7 +324,7 @@ object LocalEventPushHelper {
     }
 
     private fun buildViews(context: Context, layout: Int, mode: String, icon: Int,
-        title: String, action: String, template: LocalPushConfig.Template?, tap: PendingIntent,
+        title: CharSequence, action: String, template: LocalPushConfig.Template?, tap: PendingIntent,
         days: Int): RemoteViews = RemoteViews(context.packageName, layout).apply {
         setTextViewText(R.id.notif_event_title, title)
         setTextViewText(R.id.notif_event_action, action)

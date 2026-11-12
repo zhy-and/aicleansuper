@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Suhu</string>
+    <string name="sys_voltage">Voltan</string>
+    <string name="sys_current">Arus Elektrik</string>
+    <string name="sys_health">Kesihatan</string>
+    <string name="sys_type">Jenis bateri</string>
+    <string name="sys_capacity">Kapasiti bateri</string>
+    <string name="sys_charging">mengecas</string>
+    <string name="sys_full">penuh</string>
+    <string name="sys_good">bagus</string>
+    <string name="sys_overheat">Terlalu panas</string>
+    <string name="sys_dead">Mati</string>
+    <string name="sys_over_voltage">Lebih voltan</string>
+    <string name="sys_cold">Sejuk</string>
+    <string name="sys_unknown">tidak diketahui</string>
+    <string name="sys_model">model:</string>
+    <string name="sys_brand">Jenama:</string>
+    <string name="sys_manufacturer">Pengeluar:</string>
+    <string name="sys_wifi_name">nama:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Kelajuan:</string>
+    <string name="traffic_month">Bulan ini</string>
+    <string name="traffic_30_days">30 Hari</string>
+    <string name="traffic_24_hours">24 Jam</string>
+    <string name="traffic_mobile">Mudah alih</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">Apl</string>
+</resources>

@@ -4,10 +4,11 @@
     android:height="64dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <path android:fillColor="@color/local_push_icon_chip_stroke" android:pathData="M6,8h12l-1,12H7z" />
     <path
         android:fillColor="#00000000"
         android:pathData="M6,7h12l-1,13H7zM4,7h16M9,7V4h6v3M10,10v7M14,10v7"
-        android:strokeColor="@color/local_push_icon_red"
+        android:strokeColor="@color/local_push_icon_blue"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:strokeWidth="1.8" />

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Create a 6-digit PIN</string>
+    <string name="vlt_enter_pin">Enter your PIN</string>
+    <string name="vlt_confirm_pin">Confirm your PIN</string>
+    <string name="vlt_warning">Uninstalling this app will permanently delete files in Privacy Space.</string>
+    <string name="vlt_pin_mismatch">PINs do not match. Try again.</string>
+    <string name="vlt_pin_wrong">Incorrect PIN</string>
+    <string name="vlt_biometric">Use fingerprint / face</string>
+    <string name="vlt_unlock">Unlock Privacy Space</string>
+    <string name="vlt_use_pin">Enter your PIN</string>
+    <string name="vlt_importing">Importing...</string>
+    <string name="vlt_imported">Imported %1$d items</string>
+    <string name="vlt_restore">Restore</string>
+    <string name="vlt_delete">Delete</string>
+    <string name="vlt_select_all">Select all</string>
+    <string name="vlt_deselect_all">Deselect all</string>
+    <string name="vlt_import_media">Import photos or videos</string>
+    <string name="vlt_originals_remain">; %1$d originals remain on device</string>
+    <string name="vlt_restore_confirm">Restore %1$d files to Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">Restored %1$d of %2$d files</string>
+    <string name="vlt_delete_confirm">Permanently delete %1$d private files?</string>
+</resources>

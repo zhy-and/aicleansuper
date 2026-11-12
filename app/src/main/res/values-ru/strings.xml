@@ -27,6 +27,6 @@
     <string name="notif_junk">Мусор</string>
     <string name="notif_apps">Приложения</string>
     <string name="notif_clean_now">Очистить сейчас</string>
-    <string name="notif_speed_unit">КБ/с</string>
     <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Понятно</string>
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Температура</string>
+    <string name="sys_voltage">Напряжение</string>
+    <string name="sys_current">Электрический ток</string>
+    <string name="sys_health">Здоровье</string>
+    <string name="sys_type">Тип батареи</string>
+    <string name="sys_capacity">Емкость аккумулятора</string>
+    <string name="sys_charging">зарядка</string>
+    <string name="sys_full">полный</string>
+    <string name="sys_good">Хороший</string>
+    <string name="sys_overheat">Перегрев</string>
+    <string name="sys_dead">Мертвый</string>
+    <string name="sys_over_voltage">Перенапряжение</string>
+    <string name="sys_cold">Холодный</string>
+    <string name="sys_unknown">неизвестный</string>
+    <string name="sys_model">Модель:</string>
+    <string name="sys_brand">Бренд:</string>
+    <string name="sys_manufacturer">Производитель:</string>
+    <string name="sys_wifi_name">Имя:</string>
+    <string name="sys_wifi_ip">ИП:</string>
+    <string name="sys_wifi_speed">Скорость:</string>
+    <string name="traffic_month">В этом месяце</string>
+    <string name="traffic_30_days">30 дней</string>
+    <string name="traffic_24_hours">24 часа</string>
+    <string name="traffic_mobile">мобильный</string>
+    <string name="traffic_wifi">WI-FI</string>
+    <string name="traffic_apps">Приложения</string>
+</resources>

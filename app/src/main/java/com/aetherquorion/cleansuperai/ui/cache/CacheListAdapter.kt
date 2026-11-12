@@ -9,7 +9,7 @@ import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.ItemAudioCleanupBinding
 import com.aetherquorion.cleansuperai.databinding.ItemMediaSectionBinding
 
-data class CacheUiEntry(val path: String, val name: String, val size: Long, val kind: CacheKind, val selected: Boolean)
+data class CacheUiEntry(val path: String, val name: String, val size: Long, val kind: CacheKind, val selected: Boolean, val packageName: String? = null)
 
 class CacheListAdapter(
     private val onGroupExpand: (CacheKind) -> Unit,
@@ -87,11 +87,20 @@ class CacheListAdapter(
     private inner class FileHolder(private val binding: ItemAudioCleanupBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(entry: CacheUiEntry) {
             val context = binding.root.context
-            binding.fileIcon.setImageResource(when (entry.kind) {
-                CacheKind.APP_CACHE -> R.drawable.ic_clean
-                CacheKind.OBSOLETE_APK -> R.drawable.ic_android
-                CacheKind.RESIDUAL -> R.drawable.ic_list
-            })
+            val appIcon = entry.packageName?.let { packageName ->
+                runCatching { context.packageManager.getApplicationIcon(packageName) }.getOrNull()
+            }
+            if (appIcon != null) {
+                binding.fileIcon.imageTintList = null
+                binding.fileIcon.setImageDrawable(appIcon)
+            } else {
+                binding.fileIcon.imageTintList = ContextCompat.getColorStateList(context, R.color.accent_primary)
+                binding.fileIcon.setImageResource(when (entry.kind) {
+                    CacheKind.APP_CACHE -> R.drawable.ic_clean
+                    CacheKind.OBSOLETE_APK -> R.drawable.ic_android
+                    CacheKind.RESIDUAL -> R.drawable.ic_list
+                })
+            }
             binding.tvTitle.text = entry.name
             binding.tvMeta.text = Formatter.formatShortFileSize(context, entry.size)
             binding.imageSelect.setBackgroundResource(if (entry.selected)

@@ -143,6 +143,10 @@
     <string name="similar_select_all_candidates">全选候选</string>
     <string name="similar_delete_count_action">删除所选（%1$d）</string>
     <string name="similar_group_number_format">第 %1$d 组</string>
+    <string name="app_manager_uninstall_unavailable">无法打开系统卸载页面</string>
+    <string name="app_manager_uninstall_selected">卸载所选应用</string>
+    <string name="app_manager_uninstall_selected_count">卸载所选应用（%1$d）</string>
+    <string name="app_manager_uninstall_confirm">要卸载所选的 %1$d 个应用吗？Android 会要求你逐个确认。</string>
     <string name="filter_100mb">100MB+</string>
     <string name="filter_500mb">500MB+</string>
     <string name="filter_all_videos">全部结果</string>
@@ -154,7 +158,6 @@
     <string name="similar_group_summary_format">在相册中找到 %1$d 组，共 %2$d 张候选照片。</string>
     <string name="similar_group_empty_title">未找到相似照片组</string>
     <string name="similar_group_empty_body">同一相册中没有满足相似时间与尺寸条件的照片。</string>
-    <string name="similar_group_card_title_format">第 %1$d 组 · %2$s</string>
     <string name="similar_group_card_subtitle_format">%1$d 张候选 · 最多可释放 %2$s</string>
     <string name="similar_keep_recommend_label">建议保留</string>
     <string name="similar_keep_recommend_format">%1$s · %2$s</string>
@@ -243,6 +246,7 @@
     <string name="home_reclaim_compact_format">%1$s</string>
     <string name="home_storage_title">存储占用</string>
     <string name="home_storage_detail_format">%1$s 待整理 · %2$d 项</string>
+    <string name="home_pending_items_format">待清理项 %1$d 项</string>
     <string name="home_quick_tools">快捷工具</string>
     <string name="home_quick_tools_subtitle">把最常用的清理操作直接放到前面</string>
     <string name="home_contacts_short_desc">合并重复联系人</string>
@@ -351,7 +355,9 @@
     <string name="share_photo">分享照片</string>
     <string name="trash_bin_title_format">回收箱（%1$s）</string>
     <string name="trash_bin_title_empty">回收箱</string>
-    <string name="trash_restore_hint">点按可恢复照片</string>
+    <string name="trash_restore_hint">恢复照片</string>
+    <string name="action_got_it_short">知道了</string>
+    <string name="info_report_title">报告</string>
     <string name="trash_empty_action">删除回收箱中的全部照片</string>
     <string name="trash_restored">照片已恢复</string>
     <string name="trash_bin_empty">回收箱为空</string>
@@ -449,6 +455,9 @@
     <string name="cache_group_residual">残留文件</string>
     <string name="cache_summary">%1$d 个文件 · %2$s</string>
     <string name="cleanup_report_title">清理完成</string>
+    <string name="cleanup_report_complete">您的清理已完成。</string>
+    <string name="cleanup_report_explore">更多清理工具</string>
+    <string name="cleanup_report_go">前往</string>
     <string name="cleanup_report_freed">已释放空间</string>
     <string name="cleanup_report_count">已移除 %1$d / %2$d 项</string>
     <string name="cleanup_report_other">清理其他文件</string>
@@ -466,6 +475,9 @@
     <string name="settings_widget_title">桌面小组件</string>
     <string name="settings_widget_subtitle">添加清理快捷入口</string>
     <string name="storage_permission_title">授予文件访问权限</string>
+    <string name="storage_permission_detail">开启文件访问权限，查找重复照片、大文件等可清理内容。</string>
+    <string name="storage_permission_scan_point">扫描本机文件，发现可清理内容。</string>
+    <string name="storage_permission_privacy_point">文件仅在本机处理，不会上传。</string>
     <string name="storage_permission_message">仅用于本地扫描；不会上传数据或与第三方共享。</string>
     <string name="storage_permission_continue">继续</string>
     <string name="storage_permission_close">关闭</string>

@@ -43,7 +43,16 @@
     <!-- Bottom navigation active indicator -->
     <style name="Widget.Cleansuperai.BottomNavigationView.ActiveIndicator"
         parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/accent_primary_soft</item>
+        <item name="android:color">@color/surface_brand_dark</item>
+    </style>
+
+    <style name="TextAppearance.Cleansuperai.BottomNavigation.Active" parent="android:TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Cleansuperai.BottomNavigation.Inactive" parent="android:TextAppearance">
+        <item name="android:textSize">12sp</item>
     </style>
 
     <!-- Text appearances -->

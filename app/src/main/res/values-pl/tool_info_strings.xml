@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Temperatura</string>
+    <string name="sys_voltage">Woltaż</string>
+    <string name="sys_current">Prąd elektryczny</string>
+    <string name="sys_health">Zdrowie</string>
+    <string name="sys_type">Typ baterii</string>
+    <string name="sys_capacity">Pojemność baterii</string>
+    <string name="sys_charging">ładowanie</string>
+    <string name="sys_full">pełny</string>
+    <string name="sys_good">Dobry</string>
+    <string name="sys_overheat">Przegrzać</string>
+    <string name="sys_dead">Martwy</string>
+    <string name="sys_over_voltage">Nadmierne napięcie</string>
+    <string name="sys_cold">Zimno</string>
+    <string name="sys_unknown">nieznany</string>
+    <string name="sys_model">Model:</string>
+    <string name="sys_brand">Marka:</string>
+    <string name="sys_manufacturer">Producent:</string>
+    <string name="sys_wifi_name">Nazwa:</string>
+    <string name="sys_wifi_ip">Adres IP:</string>
+    <string name="sys_wifi_speed">Prędkość:</string>
+    <string name="traffic_month">W tym miesiącu</string>
+    <string name="traffic_30_days">30 dni</string>
+    <string name="traffic_24_hours">24 godziny</string>
+    <string name="traffic_mobile">Przenośny</string>
+    <string name="traffic_wifi">Wi-Fi</string>
+    <string name="traffic_apps">Aplikacje</string>
+</resources>

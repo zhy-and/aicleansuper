@@ -27,6 +27,6 @@
     <string name="notif_junk">垃圾</string>
     <string name="notif_apps">应用程序</string>
     <string name="notif_clean_now">立即清理</string>
-    <string name="notif_speed_unit">千字节/秒</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">知道了</string>
 </resources>

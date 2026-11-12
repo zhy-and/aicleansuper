@@ -1,6 +1,8 @@
 package com.aetherquorion.cleansuperai.ui.tools
 
 import android.content.Intent
+import android.content.ActivityNotFoundException
+import android.app.Activity
 import android.app.AlertDialog
 import android.app.usage.UsageStatsManager
 import android.content.pm.ApplicationInfo
@@ -14,6 +16,7 @@ import android.view.LayoutInflater
 import android.widget.PopupMenu
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
@@ -21,8 +24,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.databinding.FragmentAppManagerBinding
 import com.aetherquorion.cleansuperai.databinding.ItemAppManagerBinding
+import com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment
+import com.aetherquorion.cleansuperai.ui.flow.CleanupResult
 import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -47,8 +53,12 @@ class AppManagerFragment : Fragment() {
     private var apps = emptyList<InstalledAppItem>()
     private var sort = AppSort.SIZE
     private val uninstallQueue = ArrayDeque<String>()
-    private val uninstallLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        if (uninstallQueue.isNotEmpty()) launchNextUninstall() else loadApps()
+    private var uninstallAttempted = 0
+    private var uninstallSucceeded = 0
+    private val uninstallLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == Activity.RESULT_OK) uninstallSucceeded++
+        if (result.resultCode != Activity.RESULT_OK) uninstallQueue.clear()
+        if (uninstallQueue.isNotEmpty()) launchNextUninstall() else finishUninstall()
     }
 
     override fun onCreateView(
@@ -91,11 +101,12 @@ class AppManagerFragment : Fragment() {
         binding.recyclerApps.isVisible = false
         viewLifecycleOwner.lifecycleScope.launch {
             val apps = withContext(Dispatchers.IO) { queryUserApps() }
-            binding.progressLoading.isVisible = false
-            binding.recyclerApps.isVisible = true
+            val currentBinding = _binding ?: return@launch
+            currentBinding.progressLoading.isVisible = false
+            currentBinding.recyclerApps.isVisible = true
             this@AppManagerFragment.apps = apps
             adapter.submit(sortApps(apps, sort))
-            binding.tvSummary.text = getString(R.string.app_manager_summary_format, apps.size)
+            currentBinding.tvSummary.text = getString(R.string.app_manager_summary_format, apps.size)
         }
     }
 
@@ -143,7 +154,7 @@ class AppManagerFragment : Fragment() {
     private fun updateUninstallButton() {
         if (_binding != null) {
             binding.btnUninstall.isEnabled = adapter.selectedPackages().isNotEmpty()
-            binding.btnUninstall.text = "Uninstall selected (${adapter.selectedPackages().size})"
+            binding.btnUninstall.text = getString(R.string.app_manager_uninstall_selected_count, adapter.selectedPackages().size)
         }
     }
 
@@ -151,11 +162,13 @@ class AppManagerFragment : Fragment() {
         val packages = adapter.selectedPackages()
         if (packages.isEmpty()) return
         AlertDialog.Builder(requireContext())
-            .setMessage("Uninstall ${packages.size} selected apps? Android will ask you to confirm each app.")
+            .setMessage(getString(R.string.app_manager_uninstall_confirm, packages.size))
             .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton("Continue") { _, _ ->
+            .setPositiveButton(R.string.delete_dialog_confirm) { _, _ ->
                 uninstallQueue.clear()
                 uninstallQueue.addAll(packages)
+                uninstallAttempted = packages.size
+                uninstallSucceeded = 0
                 launchNextUninstall()
             }.show()
     }
@@ -163,10 +176,35 @@ class AppManagerFragment : Fragment() {
     private fun launchNextUninstall() {
         val packageName = uninstallQueue.removeFirstOrNull()
         if (packageName == null) {
-            loadApps()
+            finishUninstall()
             return
         }
-        uninstallLauncher.launch(Intent(Intent.ACTION_DELETE, Uri.parse("package:$packageName")))
+        val intent = Intent(Intent.ACTION_UNINSTALL_PACKAGE, Uri.fromParts("package", packageName, null))
+            .putExtra(Intent.EXTRA_RETURN_RESULT, true)
+        try {
+            uninstallLauncher.launch(intent)
+        } catch (error: ActivityNotFoundException) {
+            uninstallQueue.clear()
+            Toast.makeText(requireContext(), R.string.app_manager_uninstall_unavailable, Toast.LENGTH_SHORT).show()
+        } catch (error: SecurityException) {
+            uninstallQueue.clear()
+            Toast.makeText(requireContext(), R.string.app_manager_uninstall_unavailable, Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun finishUninstall() {
+        loadApps()
+        if (uninstallSucceeded > 0) {
+            (activity as? MainActivity)?.openDetail(
+                CleanupReportFragment.newInstance(
+                    getString(R.string.tool_app_manager),
+                    CleanupResult(uninstallAttempted, uninstallSucceeded, -1L),
+                ),
+                "cleanup_report",
+            )
+        }
+        uninstallAttempted = 0
+        uninstallSucceeded = 0
     }
 }
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">வெப்பநிலை</string>
+    <string name="sys_voltage">மின்னழுத்தம்</string>
+    <string name="sys_current">மின்சார மின்னோட்டம்</string>
+    <string name="sys_health">ஆரோக்கியம்</string>
+    <string name="sys_type">பேட்டரி வகை</string>
+    <string name="sys_capacity">பேட்டரி திறன்</string>
+    <string name="sys_charging">சார்ஜ்</string>
+    <string name="sys_full">முழு</string>
+    <string name="sys_good">நல்லது</string>
+    <string name="sys_overheat">அதிக வெப்பம்</string>
+    <string name="sys_dead">இறந்து போனது</string>
+    <string name="sys_over_voltage">அதிக மின்னழுத்தம்</string>
+    <string name="sys_cold">குளிர்</string>
+    <string name="sys_unknown">தெரியவில்லை</string>
+    <string name="sys_model">மாதிரி:</string>
+    <string name="sys_brand">பிராண்ட்:</string>
+    <string name="sys_manufacturer">உற்பத்தியாளர்:</string>
+    <string name="sys_wifi_name">பெயர்:</string>
+    <string name="sys_wifi_ip">ஐபி:</string>
+    <string name="sys_wifi_speed">வேகம்:</string>
+    <string name="traffic_month">இந்த மாதம்</string>
+    <string name="traffic_30_days">30 நாட்கள்</string>
+    <string name="traffic_24_hours">24 மணிநேரம்</string>
+    <string name="traffic_mobile">மொபைல்</string>
+    <string name="traffic_wifi">வைஃபை</string>
+    <string name="traffic_apps">பயன்பாடுகள்</string>
+</resources>

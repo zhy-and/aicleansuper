@@ -125,7 +125,7 @@ class CircularScanView @JvmOverloads constructor(
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
-        val inset = stroke / 2f
+        val inset = stroke * 1.55f / 2f
         rect.set(inset, inset, w - inset, h - inset)
         val sweepGradient = SweepGradient(
             w / 2f,

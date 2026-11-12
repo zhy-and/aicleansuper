@@ -27,6 +27,6 @@
     <string name="notif_junk">نفايات</string>
     <string name="notif_apps">تطبيقات</string>
     <string name="notif_clean_now">تنظيف الآن</string>
-    <string name="notif_speed_unit">كيلو بايت / ثانية</string>
     <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">فهمتها</string>
 </resources>

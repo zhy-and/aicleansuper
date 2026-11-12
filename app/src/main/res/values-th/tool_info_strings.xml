@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">อุณหภูมิ</string>
+    <string name="sys_voltage">แรงดันไฟฟ้า</string>
+    <string name="sys_current">กระแสไฟฟ้า</string>
+    <string name="sys_health">สุขภาพ</string>
+    <string name="sys_type">ประเภทแบตเตอรี่</string>
+    <string name="sys_capacity">ความจุของแบตเตอรี่</string>
+    <string name="sys_charging">กำลังชาร์จ</string>
+    <string name="sys_full">เต็ม</string>
+    <string name="sys_good">ดี</string>
+    <string name="sys_overheat">ร้อนมากเกินไป</string>
+    <string name="sys_dead">ตาย</string>
+    <string name="sys_over_voltage">แรงดันไฟฟ้าเกิน</string>
+    <string name="sys_cold">เย็น</string>
+    <string name="sys_unknown">ไม่ทราบ</string>
+    <string name="sys_model">แบบอย่าง:</string>
+    <string name="sys_brand">ยี่ห้อ:</string>
+    <string name="sys_manufacturer">ผู้ผลิต:</string>
+    <string name="sys_wifi_name">ชื่อ:</string>
+    <string name="sys_wifi_ip">ไอพี:</string>
+    <string name="sys_wifi_speed">ความเร็ว:</string>
+    <string name="traffic_month">เดือนนี้</string>
+    <string name="traffic_30_days">30 วัน</string>
+    <string name="traffic_24_hours">24 ชม</string>
+    <string name="traffic_mobile">มือถือ</string>
+    <string name="traffic_wifi">อินเตอร์เน็ตไร้สาย</string>
+    <string name="traffic_apps">แอพ</string>
+</resources>

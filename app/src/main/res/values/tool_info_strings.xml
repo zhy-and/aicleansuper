@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Temperature</string>
+    <string name="sys_voltage">Voltage</string>
+    <string name="sys_current">Electric Current</string>
+    <string name="sys_health">Health</string>
+    <string name="sys_type">Battery type</string>
+    <string name="sys_capacity">Battery capacity</string>
+    <string name="sys_charging">charging</string>
+    <string name="sys_full">full</string>
+    <string name="sys_good">Good</string>
+    <string name="sys_overheat">Overheat</string>
+    <string name="sys_dead">Dead</string>
+    <string name="sys_over_voltage">Over voltage</string>
+    <string name="sys_cold">Cold</string>
+    <string name="sys_unknown">unknown</string>
+    <string name="sys_model">Model:</string>
+    <string name="sys_brand">Brand:</string>
+    <string name="sys_manufacturer">Manufacturer:</string>
+    <string name="sys_wifi_name">Name:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Speed:</string>
+    <string name="traffic_month">This Month</string>
+    <string name="traffic_30_days">30 Days</string>
+    <string name="traffic_24_hours">24 Hours</string>
+    <string name="traffic_mobile">Mobile</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">Apps</string>
+    <string name="sys_level">Level</string>
+    <string name="sys_status">Status</string>
+    <string name="sys_discharging">Discharging</string>
+    <string name="sys_android_version">Android version</string>
+    <string name="traffic_usage_required">Usage access is required. Tap to grant access.</string>
+    <string name="traffic_loading">Loading…</string>
+    <string name="traffic_empty">No app traffic found</string>
+    <string name="traffic_guide_message">Turn on usage access for this app in Settings to show traffic by app.</string>
+</resources>

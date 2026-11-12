@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">6桁のPINを作成する</string>
+    <string name="vlt_enter_pin">PIN を入力してください</string>
+    <string name="vlt_confirm_pin">PINを確認してください</string>
+    <string name="vlt_warning">このアプリをアンインストールすると、プライバシー スペース内のファイルが完全に削除されます。</string>
+    <string name="vlt_pin_mismatch">PIN が一致しません。もう一度やり直してください。</string>
+    <string name="vlt_pin_wrong">間違ったPIN</string>
+    <string name="vlt_biometric">指紋/顔を使用する</string>
+    <string name="vlt_unlock">プライバシースペースのロックを解除する</string>
+    <string name="vlt_use_pin">PIN を入力してください</string>
+    <string name="vlt_importing">インポート中...</string>
+    <string name="vlt_imported">%1$d アイテムをインポートしました</string>
+    <string name="vlt_restore">復元する</string>
+    <string name="vlt_delete">消去</string>
+</resources>

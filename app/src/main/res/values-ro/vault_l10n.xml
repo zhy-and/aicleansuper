@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Creați un PIN din 6 cifre</string>
+    <string name="vlt_enter_pin">Introduceți codul PIN</string>
+    <string name="vlt_confirm_pin">Confirmați codul PIN</string>
+    <string name="vlt_warning">Dezinstalarea acestei aplicații va șterge definitiv fișierele din spațiul de confidențialitate.</string>
+    <string name="vlt_pin_mismatch">PIN-urile nu se potrivesc. Încearcă din nou.</string>
+    <string name="vlt_pin_wrong">PIN incorect</string>
+    <string name="vlt_biometric">Utilizați amprenta digitală/fața</string>
+    <string name="vlt_unlock">Deblocați spațiul de confidențialitate</string>
+    <string name="vlt_use_pin">Introduceți codul PIN</string>
+    <string name="vlt_importing">Se importă...</string>
+    <string name="vlt_imported">S-au importat %1$d articole</string>
+    <string name="vlt_restore">Restabili</string>
+    <string name="vlt_delete">Şterge</string>
+</resources>

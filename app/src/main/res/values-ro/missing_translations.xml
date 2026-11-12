@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Acasă</string>
+    <string name="nav_swipe">Glisați</string>
+    <string name="nav_compress">Compresa</string>
+    <string name="nav_tools">Instrumente</string>
+    <string name="nav_clean">Curat</string>
+    <string name="nav_privacy">Confidențialitate</string>
+    <string name="nav_profile">Profil</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Organizați-vă fotografiile, videoclipurile și contactele la nivel local</string>
+    <string name="home_badge_text">Curățare AI</string>
+    <string name="home_quick_summary_title">Sfaturi de curățare de astăzi</string>
+    <string name="home_quick_summary_body">Începeți cu capturi de ecran și videoclipuri mari pentru a elibera spațiu cel mai rapid.</string>
+    <string name="home_scan_insight_title">Stare scanare inteligentă</string>
+    <string name="home_ready_title">4 instrumente puternice de curățare</string>
+    <string name="home_ready_body">Gestionați fotografiile, capturile de ecran, videoclipurile și contactele într-un singur loc.</string>
+    <string name="storage_overview_title">Prezentare generală a stocării</string>
+    <string name="storage_overview_summary">Pot fi eliberați până la 0,0 GB</string>
+    <string name="storage_overview_detail">85,4 GB din 128 GB utilizate</string>
+    <string name="storage_overview_summary_format">Până la %1$s pot fi eliberate</string>
+    <string name="storage_overview_detail_format">%1$s de %2$s folosit</string>
+    <string name="storage_overview_summary_done">Se pot elibera până la 1,8 GB</string>
+    <string name="storage_overview_detail_done">85,4 GB din 128 GB utilizate. Începeți cu biblioteca dvs. media.</string>
+    <string name="scan_button_idle">Porniți scanarea</string>
+    <string name="scan_button_running">Se scanează...</string>
+    <string name="scan_status_title">Stare scanare</string>
+    <string name="scan_status_idle">Gata de scanare</string>
+    <string name="scan_status_running">Analizarea fișierelor media</string>
+    <string name="scan_status_done">Scanare finalizată. Sugestiile de curățare sunt gata.</string>
+    <string name="scan_status_error">Scanarea a eșuat. Încercați din nou mai târziu.</string>
+    <string name="scan_status_detail_idle">Capturile de ecran, videoclipurile mari și fotografiile similare vor fi verificate mai întâi.</string>
+    <string name="scan_status_detail_running">Scanare local. Fotografiile și videoclipurile tale nu vor fi încărcate.</string>
+    <string name="scan_status_detail_midway">Capturi de ecran și videoclipuri mari analizate. Organizarea de fotografii similare.</string>
+    <string name="scan_status_detail_done">S-au găsit 1,8 GB de curățat. Începeți cu capturi de ecran și videoclipuri mari.</string>
+    <string name="scan_status_detail_done_format">S-a găsit %1$s de curățat. Începeți cu capturi de ecran și videoclipuri mari.</string>
+    <string name="feature_section_title">Instrumente esențiale de curățare</string>
+    <string name="feature_section_subtitle">Prima versiune se concentrează pe cele 4 cele mai comune sarcini de curățare</string>
+    <string name="feature_similar_title">Fotografii similare</string>
+    <string name="feature_similar_desc">Curățați fotografii similare</string>
+    <string name="feature_screenshots_title">Curățare captură de ecran</string>
+    <string name="feature_screenshots_desc">Curățați capturile de ecran neutilizate</string>
+    <string name="feature_videos_title">Videoclipuri mari</string>
+    <string name="feature_videos_desc">Curățați videoclipuri mari</string>
+    <string name="feature_contacts_title">Contactați Cleanup</string>
+    <string name="feature_contacts_desc">Curățați contactele duplicate</string>
+    <string name="feature_similar_space_format">grupurile %1$d</string>
+    <string name="count_placeholder">Nu a fost scanat</string>
+    <string name="count_similar_done">128 de fotografii</string>
+    <string name="count_screenshots_done">364 de fotografii</string>
+    <string name="count_videos_done">12 videoclipuri</string>
+    <string name="count_contacts_done">9 grupuri</string>
+    <string name="recent_section_title">Note de lansare</string>
+    <string name="recent_section_body">Această versiune include structura ecranului de pornire XML, solicitări de permisiuni media, un flux de scanare cu substituenți și un rezumat al rezultatelor. MediaStore, Contacte și funcții de curățare reală pot fi adăugate în continuare.</string>
+    <string name="permission_denied_message">Este necesar accesul media pentru a începe scanarea.</string>
+    <string name="mock_feature_message">Rezultatele reale ale scanării vor fi adăugate în continuare la această caracteristică.</string>
+    <string name="scan_complete_message">Fluxul inițial de scanare este gata. Datele reale pot fi adăugate în continuare.</string>
+    <string name="scan_failed_message">Scanarea a eșuat: %1$s</string>
+    <string name="unknown_error">Eroare necunoscută</string>
+    <string name="storage_progress_label">Progresul utilizării stocării</string>
+    <string name="phase_two_label">Faza 2</string>
+    <string name="phase_three_label">Faza 3</string>
+    <string name="images_total_title">Total imagini</string>
+    <string name="videos_total_title">Total videoclipuri</string>
+    <string name="clean_page_title">Centru de curățare</string>
+    <string name="clean_page_subtitle">Începeți cu conținut care eliberează cel mai mult spațiu.</string>
+    <string name="clean_page_badge">Curatator inteligent</string>
+    <string name="clean_overview_title">Rezultatele scanării</string>
+    <string name="clean_overview_body">Curățați mai întâi cele mai mari economii de spațiu, apoi fotografii și contacte similare.</string>
+    <string name="privacy_page_title">Seif privat</string>
+    <string name="privacy_page_subtitle">Un PIN local vă protejează mediile private și importurile viitoare.</string>
+    <string name="profile_page_title">Profil</string>
+    <string name="profile_page_subtitle">Gestionați-vă abonamentul, setările și achizițiile aici.</string>
+    <string name="profile_page_badge">Premium</string>
+    <string name="profile_hero_title">Faceți upgrade la Pro pentru o experiență completă de curățare</string>
+    <string name="profile_hero_body">Pro include acțiuni nelimitate în lot, seif privat și o detectare mai bună a fotografiilor similare.</string>
+    <string name="profile_plan_status_free">Plan actual: gratuit</string>
+    <string name="profile_plan_status_pro">Proba de încercare este activă</string>
+    <string name="profile_most_popular">Cele mai populare</string>
+    <string name="profile_cta_title">De ce să faceți upgrade?</string>
+    <string name="profile_cta_body">Dacă curățați adesea fotografiile, videoclipurile și contactele, Pro reduce foarte mult pașii repetitivi.</string>
+    <string name="placeholder_card_title">Etapa Actuală</string>
+    <string name="placeholder_clean_body">Faza 1 acoperă baza scanării, permisiunile și cadrul principal. Rezultatele reale de curățare vor apărea aici în faza următoare.</string>
+    <string name="placeholder_privacy_body">Private Vault nu este încă disponibil. Această fază include doar navigarea și aspectul acesteia.</string>
+    <string name="placeholder_profile_body">Caracteristicile profilului nu sunt conectate încă. Calitatea de membru, setările și achizițiile vor fi adăugate mai târziu.</string>
+    <string name="overview_reclaim_title">Economii estimate de spațiu</string>
+    <string name="overview_media_count_title">Total Media</string>
+    <string name="home_note_title">Faza 1 finalizată</string>
+    <string name="home_note_body">1. Navigare de jos și cadru cu mai multe pagini\n2. Solicitări de permisiuni media Android 13+\n3. Fundație de scanare bazată pe MediaStore pentru capturi de ecran și videoclipuri mari\n4. Legarea rezultatelor ecranului de pornire și gestionarea stării</string>
+    <string name="feature_coming_soon_format">Pagina de detalii %1$s va fi adăugată în faza corespunzătoare.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d articole</string>
+    <string name="count_contact_format">Contacte %1$d</string>
+    <string name="feature_ready_label">Disponibil</string>
+    <string name="permission_action_label">Permite și scanează</string>
+    <string name="refresh_action_label">Actualizează rezultatele</string>
+    <string name="clean_reclaim_summary_format">%1$s gata de curățat</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">grupurile %1$d</string>
+    <string name="count_contact_group_format">grupurile %1$d</string>
+    <string name="clean_permission_title">Este necesar accesul la media</string>
+    <string name="clean_permission_body">Permiteți accesul pentru a citi capturile de ecran și videoclipurile dvs. Toate datele sunt analizate local.</string>
+    <string name="clean_loaded_hint">Atingeți un card de categorie pentru a vedea detalii.</string>
+    <string name="clean_loading_hint">Se încarcă capturi de ecran și videoclipuri. Va rugam asteptati.</string>
+    <string name="clean_empty_hint">Încă nu există rezultate de scanare. Permiteți accesul și executați mai întâi o scanare.</string>
+    <string name="detail_back">Înapoi</string>
+    <string name="screenshot_detail_title">Curățare captură de ecran</string>
+    <string name="screenshot_detail_subtitle">Răsfoiți capturi de ecran cu miniaturi reale. Atingeți o fotografie pentru a previzualiza sau selectați elementele de șters.</string>
+    <string name="large_video_detail_title">Videoclipuri mari</string>
+    <string name="large_video_detail_subtitle">Răsfoiți videoclipuri mari cu coperți. Atingeți o copertă pentru a reda sau selectați elementele de șters. Atingeți linia de filtru pentru a comuta 100MB / 500MB.</string>
+    <string name="empty_screenshot_title">Nu au fost găsite capturi de ecran</string>
+    <string name="empty_screenshot_body">Nu au fost găsite capturi de ecran în biblioteca dvs. media sau accesul nu a fost acordat.</string>
+    <string name="empty_large_video_title">Nu s-au găsit videoclipuri mari</string>
+    <string name="empty_large_video_body">Niciun videoclip nu depășește 100 MB. Puteți ajusta pragul mai târziu.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Data: %1$s</string>
+    <string name="media_item_duration_format">Durata: %1$s</string>
+    <string name="video_threshold_note">Pragul video actual mare: 100 MB</string>
+    <string name="select_all_action">Selectați Toate</string>
+    <string name="clear_selected_action">Deselectați Toate</string>
+    <string name="delete_selected_action">Ștergeți selectat</string>
+    <string name="selected_count_format">%1$d selectat</string>
+    <string name="delete_dialog_title">Ștergeți capturile de ecran?</string>
+    <string name="delete_dialog_message_format">Capturile de ecran %1$d selectate vor fi șterse. Sistemul vă va cere să confirmați din nou.</string>
+    <string name="delete_dialog_confirm">Continuă</string>
+    <string name="delete_dialog_cancel">Anulează</string>
+    <string name="delete_complete_message_format">Capturi de ecran %1$d procesate. Lista a fost reîmprospătată.</string>
+    <string name="delete_items_complete_format">Articole %1$d procesate. Lista a fost reîmprospătată.</string>
+    <string name="delete_failed_message">Nu s-a putut șterge. Încearcă din nou.</string>
+    <string name="delete_video_dialog_title">Ștergeți videoclipurile?</string>
+    <string name="delete_video_dialog_message_format">Videoclipurile %1$d selectate vor fi șterse. Sistemul vă va cere să confirmați din nou.</string>
+    <string name="delete_similar_dialog_title">Ștergeți fotografiile similare?</string>
+    <string name="delete_similar_dialog_message_format">Fotografiile %1$d selectate vor fi șterse. Elementele de păstrare recomandate nu sunt incluse.</string>
+    <string name="video_selection_filter_format">%1$d selectat · Filtru: %2$s (atingeți pentru a comuta)</string>
+    <string name="video_player_unavailable">Nu este disponibil niciun player video pe acest dispozitiv.</string>
+    <string name="media_preview_title">Previzualizare</string>
+    <string name="similar_select_candidates_action">Selectați Candidați</string>
+    <string name="similar_deselect_candidates_action">Deselectați Toate</string>
+    <string name="similar_select_all_candidates">Selectați toți candidații</string>
+    <string name="similar_delete_count_action">Ștergeți selecția (%1$d)</string>
+    <string name="similar_group_number_format">Grupa %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Nu se poate deschide programul de dezinstalare a sistemului</string>
+    <string name="filter_100mb">100 MB+</string>
+    <string name="filter_500mb">500 MB+</string>
+    <string name="filter_all_videos">Toate Rezultatele</string>
+    <string name="similar_page_title">Fotografii similare</string>
+    <string name="similar_page_subtitle">Examinați grupuri similare cu miniaturi, selectați candidați și ștergeți duplicatele.</string>
+    <string name="similar_page_note">Prima versiune folosește reguli ușoare de grupare. Hashingul perceptiv și scorul de claritate pot fi adăugate ulterior.</string>
+    <string name="similar_page_badge">Smart Similar</string>
+    <string name="similar_page_hero_hint">Păstrați fotografii cu rezoluție mai mare, fișiere mai mari și marcaje de timp mai recente.</string>
+    <string name="similar_group_summary_format">S-au găsit grupuri %1$d cu fotografii candidate %2$d în albumele dvs.</string>
+    <string name="similar_group_empty_title">Nu s-au găsit grupuri de fotografii similare</string>
+    <string name="similar_group_empty_body">Nicio fotografie din același album nu a îndeplinit criteriile de timp și dimensiuni similare.</string>
+    <string name="similar_group_card_subtitle_format">Candidații %1$d · Până la %2$s pot fi eliberați</string>
+    <string name="similar_keep_recommend_label">Recomandat de păstrat</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Alți Candidați</string>
+    <string name="similar_other_items_more_format">+%1$d mai multe fotografii</string>
+    <string name="contacts_page_title">Contactați Cleanup</string>
+    <string name="contacts_page_subtitle">Găsiți contacte duplicate și goale.</string>
+    <string name="contacts_page_badge">Contact Fix</string>
+    <string name="contacts_page_hero_hint">Îmbinați contacte cu același număr, apoi eliminați-le pe cele goale.</string>
+    <string name="contacts_permission_title">Este necesar accesul la contacte</string>
+    <string name="contacts_permission_body">Permiteți accesul pentru a scana contactele local.</string>
+    <string name="contacts_scan_title">Scanați contacte</string>
+    <string name="contacts_scan_body">Actualizează pentru a găsi duplicate și contacte goale.</string>
+    <string name="contacts_duplicate_title">Contacte duplicate</string>
+    <string name="contacts_empty_title">Contacte goale</string>
+    <string name="contacts_duplicate_count_format">%1$d grupuri duplicat</string>
+    <string name="contacts_empty_count_format">%1$d contactele goale de curățat</string>
+    <string name="contacts_load_action">Permiteți și încărcați contacte</string>
+    <string name="contacts_refresh_action">Actualizează contacte</string>
+    <string name="contacts_empty_group_title">Nu s-au găsit persoane de contact duplicate</string>
+    <string name="contacts_empty_group_body">Nu au fost găsite persoane de contact cu numere de telefon duplicat.</string>
+    <string name="contacts_delete_empty_action">Eliminați contactele goale</string>
+    <string name="contacts_merge_action">Îmbinați grupul</string>
+    <string name="contacts_view_action">Vizualizați în Contacte</string>
+    <string name="contacts_group_title_format">%1$s · %2$d contacte</string>
+    <string name="contacts_group_number_format">Număr principal: %1$s</string>
+    <string name="contacts_group_members_format">Membri: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Eliminați contactele goale?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d contactele goale sau persoanele fără numere vor fi șterse.</string>
+    <string name="contacts_merge_complete_message">Sistemului i s-a cerut să fuzioneze acest grup de contact.</string>
+    <string name="contacts_cleanup_complete_message_format">S-au eliminat contactele goale %1$d.</string>
+    <string name="contacts_action_failed">Acțiunea de contact a eșuat. Încearcă din nou.</string>
+    <string name="privacy_status_title">Starea de protecție locală</string>
+    <string name="privacy_page_badge">Seif privat</string>
+    <string name="privacy_hero_title">Păstrați conținutul privat separat de curățare</string>
+    <string name="privacy_hero_body">Configurați mai întâi protecția locală cu PIN, apoi adăugați importarea, deblocarea și recuperarea media private.</string>
+    <string name="privacy_status_enabled">Set PIN din 4 cifre</string>
+    <string name="privacy_status_disabled">Niciun cod PIN setat</string>
+    <string name="privacy_status_body_enabled">Suportul media privat importat ulterior va fi protejat de codul PIN local.</string>
+    <string name="privacy_status_body_disabled">Setați un PIN din 4 cifre înainte de a adăuga funcții de import și deblocare media private.</string>
+    <string name="privacy_set_pin_action">Setați codul PIN</string>
+    <string name="privacy_reset_pin_action">Resetați codul PIN</string>
+    <string name="privacy_pin_dialog_title">Setați un PIN din 4 cifre</string>
+    <string name="privacy_pin_dialog_hint">Introduceți 4 cifre</string>
+    <string name="privacy_pin_invalid">Introduceți un cod PIN din 4 cifre.</string>
+    <string name="privacy_pin_saved">Codul PIN local a fost salvat.</string>
+    <string name="privacy_pin_reset_confirm">Ștergeți codul PIN actual?</string>
+    <string name="privacy_pin_reset_done">Resetare PIN.</string>
+    <string name="privacy_feature_lock_title">Deblocare locală</string>
+    <string name="privacy_feature_lock_body">Prima versiune folosește un PIN pentru protecție locală. Biometria pot fi adăugate ulterior.</string>
+    <string name="privacy_feature_vault_title">Media privată</string>
+    <string name="privacy_feature_vault_body">Fotografiile și videoclipurile private importate ulterior vor fi stocate separat și excluse din fluxul principal de curățare a albumului.</string>
+    <string name="privacy_feature_scope_title">Etapa Actuală</string>
+    <string name="privacy_feature_scope_body">Această versiune adaugă statutul PIN și structura paginii. Urmează importul media privat și criptarea locală.</string>
+    <string name="profile_plan_title">Planul curent</string>
+    <string name="profile_plan_free">Gratuit</string>
+    <string name="profile_plan_pro">Pro</string>
+    <string name="profile_plan_body_free">Scanați, vizualizați rezultatele și utilizați curățarea de bază.</string>
+    <string name="profile_plan_body_pro">Deblocați curățare avansată, seif privat, acțiuni nelimitate și o experiență fără anunțuri.</string>
+    <string name="profile_upgrade_action">Comutați la Pro Trial</string>
+    <string name="profile_restore_action">Reveniți la Free</string>
+    <string name="profile_upgrade_done">Am trecut la versiunea de încercare Pro.</string>
+    <string name="profile_restore_done">A revenit la Free.</string>
+    <string name="profile_benefits_title">Beneficii Pro</string>
+    <string name="profile_benefits_body">1. Detectare avansată a fotografiilor similare\n2. Curățare nelimitată în loturi\n3. Filtre video mari avansate\n4. Curățare îmbunătățită a contactelor\n5. Seif privat\n6. Interfață fără anunțuri</string>
+    <string name="detail_page_badge">Vedere de detaliu</string>
+    <string name="detail_page_hint">Examinați candidații înainte de a decide ce să curățați sau să păstrați.</string>
+    <string name="premium">PREMIUM</string>
+    <string name="settings">Setări</string>
+    <string name="grant_access">Acordați acces</string>
+    <string name="storage_permission_title">Acordați acces la fișiere</string>
+    <string name="storage_permission_detail">CleanSuper AI are nevoie de acces la fișierele tale pentru a găsi duplicate, fotografii neclare și fișiere mari. Totul se procesează local.</string>
+    <string name="storage_permission_scan_point">Găsește duplicate, fotografii neclare și fișiere mari în spațiul de stocare.</string>
+    <string name="storage_permission_privacy_point">Fișierele tale rămân pe acest dispozitiv și nu sunt încărcate nicăieri.</string>
+    <string name="storage_permission_message">Numai pentru scanare locală; nicio dată nu este încărcată sau partajată cu terți.</string>
+    <string name="storage_permission_continue">Continuă</string>
+    <string name="storage_permission_close">Închide</string>
+    <string name="storage_permission_example_file">Fișiere de pe acest dispozitiv</string>
+    <string name="storage_permission_example_size">Gata de scanare</string>
+    <string name="storage_permission_guide_title">Permiteți accesul la toate fișierele</string>
+    <string name="storage_permission_guide_message">Activați comutatorul din Setări pentru a scana și curăța fișierele de pe acest dispozitiv.</string>
+    <string name="go_to_settings">Accesați Setări</string>
+    <string name="permission_home_title">Fotografiile tale sunt blocate</string>
+    <string name="permission_home_body">Permiteți accesul la fotografii, videoclipuri și notificări pentru a vă scana biblioteca în siguranță pe acest dispozitiv și pentru a trimite mementouri de curățare.</string>
+    <string name="scan_summary_format">Elementele %1$d scanate · %2$s pot fi revizuite</string>
+    <string name="scan_running_english">Se scanează biblioteca...</string>
+    <string name="scan_ready_english">Biblioteca ta este gata</string>
+    <string name="coming_soon">În curând</string>
+    <string name="compression_failed">Nu s-a putut comprima această imagine.</string>
+    <string name="compression_saved">Fotografie comprimată salvată în Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Analiză sigură pe dispozitiv</string>
+    <string name="home_cleanup_library">Examinați-vă biblioteca</string>
+    <string name="home_cleanup_badge">Pe dispozitiv</string>
+    <string name="home_quick_clean_action">Deschideți Centrul de curățare</string>
+    <string name="home_quick_clean_compact_action">Centru de curățare</string>
+    <string name="home_reclaim_ready_format">%1$s recuperabil</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Spațiul de depozitare ocupat</string>
+    <string name="home_storage_detail_format">%1$s pentru a revizui · %2$d articole</string>
+    <string name="home_quick_tools">Instrumente rapide</string>
+    <string name="home_quick_tools_subtitle">Cele mai utilizate acțiuni de curățare, prezentate în față</string>
+    <string name="feature_swipe_title">Glisați fotografii</string>
+    <string name="feature_swipe_desc">Examinați fotografiile una câte una și trimiteți obiectele respinse la coș</string>
+    <string name="home_contacts_short_desc">Îmbinați duplicatele</string>
+    <string name="feature_ready_short">Gata</string>
+    <string name="feature_review_short">Revizuire</string>
+    <string name="tools_section_storage">Stocare și media</string>
+    <string name="tools_section_device">Instrumente dispozitiv</string>
+    <string name="tools_hero_badge">7 instrumente utile</string>
+    <string name="tools_hero_title">Instrumente utile, într-un singur loc</string>
+    <string name="tools_hero_body">Gestionați stocarea și media cu acțiuni simple și concentrate.</string>
+    <string name="tool_file_manager_desc">Răsfoiți și curățați capturi de ecran, videoclipuri și multe altele</string>
+    <string name="tool_media_compressor_desc">Reduceți dimensiunea fotografiilor și videoclipurilor fără a pierde calitatea</string>
+    <string name="tool_secret_space_desc">Blocați fotografiile private în spatele unui PIN securizat</string>
+    <string name="tool_app_manager_desc">Vizualizați aplicațiile instalate și utilizarea spațiului de stocare</string>
+    <string name="tool_clean_calendar_desc">Eliminați evenimentele vechi din calendar care vă încurcă programul</string>
+    <string name="tool_ai_enhancer_desc">Îmbunătățiți fotografiile neclare sau cu lumină slabă cu AI</string>
+    <string name="tool_speed_test_desc">Verificați viteza de descărcare și încărcare în rețea</string>
+    <string name="tools_page_subtitle">Tot ce ai nevoie pentru un telefon mai curat</string>
+    <string name="compress_page_subtitle">Economisiți spațiu fără a pierde momentele</string>
+    <string name="video_compressor">Compresor video</string>
+    <string name="video_compress_subtitle">Reduceți dimensiunea videoclipului cu re-codificarea H.264 pe dispozitiv</string>
+    <string name="video_compress_card_hint">720p · Calitate echilibrată</string>
+    <string name="choose_video">Alegeți Video</string>
+    <string name="choose_video_hint">Alegeți un videoclip de comprimat</string>
+    <string name="compress_photo_guide_title">Alegeți o fotografie de comprimat</string>
+    <string name="compress_photo_guide_body">Procesat pe dispozitiv · mai mic în câteva secunde</string>
+    <string name="compress_video_guide_title">Alegeți un videoclip de comprimat</string>
+    <string name="compress_video_guide_body">H.264 pe dispozitiv · 720p echilibrat</string>
+    <string name="compress_guide_tap">Atingeți pentru a alege</string>
+    <string name="enhance_photo_guide_title">Alegeți o fotografie de îmbunătățit</string>
+    <string name="enhance_photo_guide_body">Luminozitate · contrast · claritate</string>
+    <string name="preview_original_photo_label">Înainte · Fotografie originală</string>
+    <string name="preview_compressed_photo_label">După · Previzualizare comprimată</string>
+    <string name="preview_original_video_label">Înainte · Videoclip original</string>
+    <string name="preview_compressed_video_label">După · Previzualizare comprimată</string>
+    <string name="preview_enhanced_photo_label">După · Previzualizare îmbunătățită</string>
+    <string name="selected_video_preview">Previzualizare video selectată</string>
+    <string name="play_video_preview">Redați previzualizare video</string>
+    <string name="video_preview_title">Previzualizare video</string>
+    <string name="video_preview_failed">Acest videoclip nu a putut fi redat.</string>
+    <string name="video_compression_saved">Videoclip comprimat salvat în Filme/CleanSuperAI.</string>
+    <string name="video_compression_failed">Nu s-a putut comprima acest videoclip.</string>
+    <string name="video_compression_preparing">Se pregătește compresia video...</string>
+    <string name="video_compression_progress_format">Se comprimă videoclipul... %1$d%%</string>
+    <string name="video_compression_finishing">Se finalizează videoclipul comprimat...</string>
+    <string name="video_compression_timeout">Comprimarea acestui videoclip a durat prea mult. Vă rugăm să încercați un clip mai scurt.</string>
+    <string name="app_manager_subtitle">Examinați aplicațiile instalate și deschideți setările de sistem pentru a dezinstala sau a șterge memoria cache.</string>
+    <string name="app_manager_summary_format">Aplicații utilizator %1$d găsite · atingeți pentru a gestiona</string>
+    <string name="clean_calendar_subtitle">Găsiți evenimentele anterioare din calendar și eliminați-le pe cele de care nu mai aveți nevoie.</string>
+    <string name="clean_calendar_delete">Ștergeți selectat</string>
+    <string name="clean_calendar_empty">Nu s-au găsit evenimente trecute</string>
+    <string name="clean_calendar_summary_format">%1$d evenimente trecute · %2$d selectat</string>
+    <string name="clean_calendar_delete_confirm">Ștergeți %1$d evenimentele trecute selectate?</string>
+    <string name="clean_calendar_delete_done">Evenimente %1$d șterse</string>
+    <string name="calendar_permission_hint">Permiteți accesul la calendar pentru a scana evenimentele trecute</string>
+    <string name="calendar_permission_denied">Este necesară permisiunea pentru calendar</string>
+    <string name="calendar_untitled">(Fără titlu)</string>
+    <string name="image_enhancer_subtitle">Îmbunătățiți luminozitatea, contrastul și claritatea la nivel local pe acest dispozitiv.</string>
+    <string name="image_enhancer_hint">Alegeți o fotografie de îmbunătățit</string>
+    <string name="image_enhancer_ready">Gata de îmbunătățire</string>
+    <string name="image_enhancer_action">Îmbunătățiți fotografia</string>
+    <string name="image_enhancer_working">Îmbunătățirea…</string>
+    <string name="image_enhancer_done">Previzualizare îmbunătățită gata · salvați când vă place</string>
+    <string name="image_enhancer_save">Salvați fotografia îmbunătățită</string>
+    <string name="image_enhancer_saved">Fotografie îmbunătățită salvată în Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Nu s-a putut îmbunătăți această fotografie.</string>
+    <string name="speed_test_subtitle">Măsurați descărcarea, încărcarea și latența folosind serverele Cloudflare.</string>
+    <string name="speed_test_hint">Atingeți Start pentru a efectua o scurtă verificare a vitezei rețelei</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Descărcare Mbps</string>
+    <string name="speed_test_start">Începeți testul de viteză</string>
+    <string name="speed_test_running">Se testează conexiunea...</string>
+    <string name="speed_test_done">Testul finalizat</string>
+    <string name="speed_test_failed">Testul de viteză a eșuat. Verificați-vă rețeaua și încercați din nou.</string>
+    <string name="speed_test_download_idle">Descărcare · în așteptare</string>
+    <string name="speed_test_upload_idle">Încărcare · în așteptare</string>
+    <string name="speed_test_latency_idle">Latență · așteptare</string>
+    <string name="speed_test_download_result">Descărcați · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Încărcare · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Latență · %1$d ms</string>
+    <string name="photo_compressor">Compresor foto</string>
+    <string name="compress_quality_hint">JPEG echilibrat · 70% qualitate</string>
+    <string name="choose_photo_hint">Alegeți o fotografie pe care să o comprimați</string>
+    <string name="choose_photo">Alegeți Fotografie</string>
+    <string name="compress_preview">Comprimare previzualizare</string>
+    <string name="compress_and_save">Comprimați și salvați</string>
+    <string name="save_compressed_photo">Salvați fotografia comprimată</string>
+    <string name="save_compressed_video">Salvați videoclipul comprimat</string>
+    <string name="share">Distribuie</string>
+    <string name="keep">Păstrează</string>
+    <string name="move_to_review_bin">Mutați în Coșul de gunoi</string>
+    <string name="clear_review_bin">Goliți coșul de examinare</string>
+    <string name="swipe_page_subtitle">Revizuire pe lună · glisați spre dreapta pentru a păstra, spre stânga pentru coșul de gunoi</string>
+    <string name="swipe_trash_open">Deschide</string>
+    <string name="swipe_trash_label_singular">Poza la coșul de gunoi</string>
+    <string name="swipe_trash_label_plural">Fotografii la coșul de gunoi</string>
+    <string name="swipe_empty_title">Toate fotografiile revizuite</string>
+    <string name="swipe_empty_body">Reveniți pentru a alege încă o lună sau deschideți coșul de gunoi pentru a restabili fotografiile.</string>
+    <string name="category_person_format">Persoană · %1$d</string>
+    <string name="category_animal_format">Animal · %1$d</string>
+    <string name="category_vehicle_format">Vehicul · %1$d</string>
+    <string name="no_photos_available">Nu există fotografii disponibile</string>
+    <string name="splash_tagline">Curățare inteligentă. Privat prin design.</string>
+    <string name="selected_photos_deleted">Fotografiile selectate au fost șterse</string>
+    <string name="added_to_review_bin">Adăugat la Coșul de recenzii</string>
+    <string name="photos_deleted_format">Fotografiile %1$d au fost șterse</string>
+    <string name="delete_photos_failed">Nu s-au putut șterge fotografiile selectate</string>
+    <string name="share_photo">Distribuiți fotografia</string>
+    <string name="trash_bin_title_format">Coș de gunoi (%1$s)</string>
+    <string name="trash_bin_title_empty">Coș de gunoi</string>
+    <string name="trash_restore_hint">Atingeți pentru a restabili fotografiile</string>
+    <string name="trash_empty_action">Ștergeți totul din coșul de gunoi</string>
+    <string name="trash_restored">Fotografie restaurată</string>
+    <string name="trash_bin_empty">Coșul de gunoi este gol</string>
+    <string name="feature_smart_groups">Grupuri inteligente</string>
+    <string name="feature_duplicate_photos">Fotografii duplicate</string>
+    <string name="feature_duplicate_videos">Videoclipuri duplicate</string>
+    <string name="feature_all_videos">Toate videoclipurile</string>
+    <string name="feature_screenshots_short">Capturi de ecran</string>
+    <string name="scan_unavailable">Scanare indisponibilă</string>
+    <string name="please_try_again">Vă rugăm să încercați din nou</string>
+    <string name="tool_file_manager">Manager de fișiere</string>
+    <string name="tool_media_compressor">Compresor media</string>
+    <string name="tool_app_manager">Manager de aplicații</string>
+    <string name="tool_clean_calendar">Calendar curat</string>
+    <string name="tool_ai_enhancer">AI Image Enhancer</string>
+    <string name="tool_secret_space">Spațiu secret</string>
+    <string name="tool_speed_test">Test de viteză</string>
+    <string name="compressing">Se comprimă…</string>
+    <string name="original_size_format">Original · %1$s</string>
+    <string name="compressed_result_format">Comprimat · %1$s\nSalvat · %2$s</string>
+    <string name="swipe_grant_access_hint">Acordați acces media din Acasă pentru a căuta fotografii</string>
+    <string name="media_item_placeholder">Media</string>
+    <string name="selected_image_preview">Previzualizarea imaginii selectate</string>
+    <string name="current_photo">Fotografie curentă</string>
+    <string name="month_cover">Acoperire de lună</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Persoană · 0</string>
+    <string name="category_animal_zero">Animal · 0</string>
+    <string name="category_vehicle_zero">Vehicul · 0</string>
+    <string name="duplicate_photos_page_title">Fotografii duplicate</string>
+    <string name="duplicate_photos_page_subtitle">Găsiți duplicate exacte după dimensiunea și dimensiunile fișierului, apoi păstrați o copie.</string>
+    <string name="duplicate_photos_page_badge">Potrivire exactă</string>
+    <string name="duplicate_photos_summary_format">S-au găsit grupuri %1$d cu fotografii duplicate %2$d.</string>
+    <string name="duplicate_photos_empty_title">Nu s-au găsit fotografii duplicate</string>
+    <string name="duplicate_photos_empty_body">Nu au fost găsite fotografii cu aceleași dimensiuni și dimensiuni.</string>
+    <string name="duplicate_videos_page_title">Videoclipuri duplicate</string>
+    <string name="duplicate_videos_page_subtitle">Găsiți videoclipuri duplicate exacte după dimensiune și durată, apoi păstrați o copie.</string>
+    <string name="duplicate_videos_page_badge">Potrivire exactă</string>
+    <string name="duplicate_videos_summary_format">S-au găsit grupuri %1$d cu videoclipuri duplicate %2$d.</string>
+    <string name="duplicate_videos_empty_title">Nu s-au găsit videoclipuri duplicate</string>
+    <string name="duplicate_videos_empty_body">Nu au fost găsite videoclipuri cu aceeași dimensiune și durată.</string>
+    <string name="settings_page_title">Setări</string>
+    <string name="settings_page_subtitle">Limbă, informații despre aplicație, confidențialitate și memorie cache.</string>
+    <string name="settings_language_title">Limba</string>
+    <string name="settings_language_subtitle">Alegeți limba preferată a aplicației</string>
+    <string name="settings_about_title">Despre</string>
+    <string name="settings_about_subtitle">Numele și versiunea aplicației</string>
+    <string name="settings_about_message_format">Clean Super AI\nVersiunea %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Politica de confidențialitate</string>
+    <string name="settings_privacy_policy_subtitle">Cum gestionăm datele dvs</string>
+    <string name="settings_privacy_policy_body">Toate scanările și curățarea media rulează local pe dispozitivul dvs. Nu încărcăm fotografiile, videoclipurile sau contactele dvs. pe serverele noastre. Analizele opționale (dacă sunt activate ulterior) vor respecta politicile magazinului. Puteți revoca oricând accesul media din setările sistemului.</string>
+    <string name="settings_clear_cache_title">Goliți memoria cache</string>
+    <string name="settings_clear_cache_subtitle">Stocare temporară gratuită a aplicației</string>
+    <string name="settings_clear_cache_confirm">Ștergeți fișierele cache temporare? Fotografiile și setările tale nu vor fi șterse.</string>
+    <string name="settings_clear_cache_done_format">S-a șters %1$s din cache.</string>
+    <string name="language_page_title">Limba aplicației</string>
+    <string name="language_page_subtitle">În mod implicit, CleanSuper AI urmează limba dispozitivului dvs.</string>
+    <string name="language_follow_system_title">Urmați limba sistemului</string>
+    <string name="language_follow_system_subtitle_format">Limba actuală a dispozitivului: %1$s</string>
+    <string name="month_photo_count_format">fotografii %1$d</string>
+    <string name="review_bin_pending_format">Fotografii %1$d în așteptare în Coșul de revizuire</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Condiții de utilizare</string>
+    <string name="settings_terms_subtitle">Citiți termenii</string>
+    <string name="settings_widget_title">Widget pentru ecranul de pornire</string>
+    <string name="settings_widget_subtitle">Adăugați o comandă rapidă de curățare</string>
+    <string name="tool_network_traffic">Trafic de rețea</string>
+    <string name="tool_network_traffic_desc">Utilizare de către aplicație</string>
+    <string name="tool_battery_info">Informații despre baterie</string>
+    <string name="tool_battery_info_desc">Încărcare și sănătate</string>
+    <string name="tool_device_info">Informații despre dispozitiv</string>
+    <string name="tool_device_info_desc">Sistem și Wi-Fi</string>
+    <string name="tool_private_vault">Seif privat</string>
+    <string name="tool_private_vault_desc">Ascunde fotografiile și videoclipurile</string>
+    <string name="home_more_tools">Mai multe instrumente</string>
+    <string name="home_battery_info">Bateria</string>
+    <string name="home_device_info">Dispozitiv</string>
+    <string name="home_large_files">Fișiere mari</string>
+    <string name="home_cache_cleanup">Curățarea cache-ului</string>
+    <string name="home_network_traffic">Utilizarea datelor</string>
+    <string name="home_private_vault">Seif privat</string>
+    <string name="home_picture_cleanup">Poze</string>
+    <string name="home_video_cleanup">Videoclipuri</string>
+    <string name="home_audio_cleanup">Audio</string>
+    <string name="media_loading">Se încarcă media...</string>
+    <string name="media_loading_hint">Organizarea fișierelor dvs. Va rugam asteptati.</string>
+    <string name="media_count_summary">Elemente %1$d · %2$s · %3$d selectate</string>
+    <string name="media_empty_title">Nu s-a găsit media</string>
+    <string name="media_empty_body">Nu există articole în această categorie.</string>
+    <string name="media_error_title">Nu s-a putut încărca media</string>
+    <string name="media_access_title">Este necesar accesul la stocare</string>
+    <string name="media_access_body">Permiteți accesul tuturor fișierelor în Setări pentru a răsfoi acest conținut media.</string>
+    <string name="media_delete_title">Ștergeți elementele selectate?</string>
+    <string name="media_delete_message">Ștergeți %1$d elementele selectate? Android vă poate cere să confirmați.</string>
+    <string name="media_recent_group">In termen de 1 luna</string>
+    <string name="media_older_group">Mai vechi de 1 lună</string>
+    <string name="media_group_summary">Articole %1$d · %2$s</string>
+    <string name="audio_player_unavailable">Nu este disponibil niciun player audio pe acest dispozitiv.</string>
+    <string name="vault_items_summary">%1$d articole private</string>
+    <string name="vault_empty_gallery">Seiful tău privat este gol. Importați fotografii sau videoclipuri pentru a le vedea aici.</string>
+    <string name="cache_group_app">Cache-ul aplicației</string>
+    <string name="cache_group_apk">Fișiere APK vechi</string>
+    <string name="cache_group_residual">Fișiere reziduale</string>
+    <string name="cache_summary">Fișiere %1$d · %2$s</string>
+    <string name="cleanup_report_title">Curățare finalizată</string>
+    <string name="cleanup_report_freed">Spațiu eliberat</string>
+    <string name="cleanup_report_count">%1$d de articole %2$d eliminate</string>
+    <string name="cleanup_report_other">Curățați alte fișiere</string>
+    <string name="cleanup_report_done">Gata</string>
+    <string name="exit_retain_title">Ieși din CleanSuper AI?</string>
+    <string name="exit_retain_message">Adăugați un widget de acasă pentru o curățare mai rapidă</string>
+    <string name="exit_retain_confirm_exit">Ieșire</string>
+    <string name="exit_retain_add">Adăugați</string>
+    <string name="exit_retain_feature_cache">Cache</string>
+    <string name="exit_retain_feature_large">Fișiere mari</string>
+    <string name="widget_status_storage">Spațiu liber</string>
+    <string name="notif_screenshot">Capturi de ecran</string>
+    <string name="exit_retain_message_existing">Widgetul dvs. de acasă este gata pentru curățare rapidă</string>
+    <string name="notif_cache">Cache</string>
+    <string name="notif_channel_name">Bara de instrumente Quick Clean</string>
+    <string name="notif_channel_desc">Bara de instrumente persistentă pentru acțiuni rapide de curățare</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Mementouri curate</string>
+    <string name="notif_event_channel_desc">Mementouri locale după capturi de ecran, instalări și dezinstalări</string>
+    <string name="notif_event_summary_channel_name">Curățați rezumatul mementoului</string>
+    <string name="notif_event_screenshot_title">O altă captură de ecran? 1 Este timpul să clarificați capturile de ecran</string>
+    <string name="notif_event_install_title">Noua aplicație s-a mutat, la fel și cache-ul. curata</string>
+    <string name="notif_event_uninstall_title">Dezinstalat cu succes! pentru a curăța reziduurile de fișiere</string>
+    <string name="notif_clean_reminder_title">Există o mulțime de gunoi îngrămădiți. Curățați-l pe toate deodată.</string>
+    <string name="notif_event_battery_below_50_title">Bateria este plină mai mult de jumătate. Ai grijă de el acum, va dura până ajungi acasă.</string>
+    <string name="notif_event_battery_below_20_title">Baterie descărcată. Vrei să știi cine îți fură electricitatea? Click pentru a vedea clasamentele.</string>
+    <string name="notif_event_charging_title">Conectat. Sarcina din seara asta: umpleți, apoi curățați.</string>
+    <string name="notif_event_charging_full_title">Complet încărcat și gata de plecare. O ultimă verificare: a fost curățat gunoiul?</string>
+    <string name="notif_event_charging_to_80_title">Sprintul final este de 80%. Descărcați gunoiul și împachetați ușor pentru a primi puterea maximă.</string>
+    <string name="notif_event_charging_disconnect_title">Deconectați și porniți. Amintiți-vă să vă faceți timp pentru a curăța gunoiul și a rămâne în formă.</string>
+    <string name="notif_event_app_update_title">A sosit o nouă versiune. Tot ce a rămas din versiunea veche este complet curățat.</string>
+    <string name="notif_event_network_change_title">Web-ul se schimbă! Vedeți starea curentă a rețelei 1</string>
+    <string name="notif_event_screen_lock_title">Pune telefonul jos și lasă-l nouă. Timp de odihnă pe ecran = timpul de alăptare.</string>
+    <string name="notif_event_screen_on_after_lock_title">Ne întâlnim din nou, ești blocat? Majoritatea sunt gunoi, încercați să-l curățați.</string>
+    <string name="notif_event_storage_free_drop_title">Spațiul de depozitare s-a schimbat. Să vedem ce ocupă spațiu?</string>
+    <string name="notif_event_scheduled_push_1_title">Gunoiul care s-a acumulat atât de mult timp este curățat imediat.</string>
+    <string name="notif_event_scheduled_push_2_title">Bateria nu este la fel de durabilă ca înainte? Verifică.</string>
+    <string name="notif_event_app_inactive_title">Multă vreme nu ne-am văzut, a așteptat. Întoarceți-vă și curățați gunoiul.</string>
+    <string name="notif_event_scheduled_push_3_title">O atingere a listelor de redare — configurați widgetul</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>O atingere a listelor de redare — configurați widgetul</item>
+        <item>Faceți totul mai ușor cu un widget - adăugați o comandă rapidă muzicală</item>
+        <item>Jucați rapid fără deblocare — activați widgetul de pe ecranul de pornire</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Ai uitat ceva</string>
+    <string name="notif_event_app_background_content">Vino, termină curățarea, astfel încât să funcționeze mai bine.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Ai uitat ceva</item>
+        <item>Un pas a mai rămas</item>
+        <item>Vești bune</item>
+        <item>Ai plecat prea repede</item>
+        <item>Nu lăsa gunoaie peste noapte</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Vino, termină curățarea, astfel încât să funcționeze mai bine.</item>
+        <item>Încă o atingere pentru a termina curățarea și a elibera mai mult spațiu.</item>
+        <item>S-a detectat spațiu liber – veniți să revendicați o curățare cu o singură atingere.</item>
+        <item>Telefonul tău poate fi și mai rapid – vino să vezi optimizarea.</item>
+        <item>Vino, termină curățarea, astfel încât să funcționeze mai bine.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Rezultatele scanării sunt gata – mesajele nedorite ocupă spațiu. Curăță acum</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Rezultatele scanării sunt gata – mesajele nedorite ocupă spațiu. Curăță acum</item>
+        <item>Un pas a mai rămas: întoarce-te și eliberează spațiu instantaneu.</item>
+        <item>Ați uitat să curățați după scanare? 10 secunde pentru a vă face telefonul mai ușor.</item>
+        <item>Numărul nedorit este încă pe telefonul dvs. — rezultate salvate. Întoarce-te pentru o curățare cu o singură atingere.</item>
+        <item>Ultima scanare a găsit mai multe elemente de curățat. Vino termină.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Curățarea nu s-a terminat încă. Vino să termini ultimul pas.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Curățarea nu s-a terminat încă. Vino să termini ultimul pas.</item>
+        <item>Curățenie întreruptă: la jumătatea drumului. Termină pentru un telefon mai ușor.</item>
+        <item>Curățarea este aproape gata - nu lăsa gunoiul în urmă.</item>
+        <item>Ai plecat la mijlocul curățeniei — termină-l și simți diferența.</item>
+        <item>Curățarea întreruptă poate continua oricând. Vino termină.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Fotografia a fost ștearsă — mutată în siguranță în coșul de reciclare.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Fotografia a fost ștearsă — mutată în siguranță în coșul de reciclare.</item>
+        <item>Tocmai ai șters o fotografie — vezi cât spațiu ai eliberat?</item>
+        <item>Fotografia a fost ștearsă — ștergeți definitiv pentru a elibera spațiu acum.</item>
+        <item>Fotografie ștearsă în siguranță — starea stocării a fost actualizată.</item>
+        <item>Fotografia a fost ștearsă — puteți curăța și capturi de ecran similare.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Videoclip șters — spațiu mare în curs de eliberare.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Videoclip șters — spațiu mare în curs de eliberare.</item>
+        <item>Videoclipul mare a fost eliminat - presiunea de stocare a scăzut imediat.</item>
+        <item>Videoclip șters — verificați starea actuală a stocării.</item>
+        <item>Ștergeți gata — goliți coșul de reciclare pentru a elibera spațiu complet.</item>
+        <item>Videoclip șters — este posibil să fie mai multe videoclipuri mari uitate de curățat.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Audio șters — fișierele mici se adună. Continuă.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Audio șters — fișierele mici se adună. Continuă.</item>
+        <item>Acel sunet a dispărut - și mai multe fișiere similare neutilizate pot fi curățate.</item>
+        <item>Audio șters — detaliile de stocare au fost actualizate. Vino să arunci o privire.</item>
+        <item>1 fișier audio șters — lista de stocare a fost reîmprospătată.</item>
+        <item>Audio șters — goliți coșul de reciclare pentru a termina de eliberat spațiu.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Fișierul a fost șters - puțin mai mult spațiu de stocare eliberat.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Fișierul a fost șters - puțin mai mult spațiu de stocare eliberat.</item>
+        <item>Fișierul a fost șters — dezordinea nu vă va mai deranja telefonul.</item>
+        <item>Fișier șters — vezi ce mai poți curăța.</item>
+        <item>Fișier șters — modificările sincronizate, starea stocării a fost actualizată.</item>
+        <item>Fișierul este șters - acum se recuperează spațiu.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Imaginea descărcată — deschideți-o și aruncați o privire.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Imaginea descărcată — deschideți-o și aruncați o privire.</item>
+        <item>Imagine descărcată — curățați fotografiile duplicate din albumul dvs. în timp ce vă aflați</item>
+        <item>Descărcare finalizată — imaginea salvată în siguranță. Vino să verifici fotografii similare</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Video descărcat - nu este mic. Vedeți cât spațiu pot elibera videoclipurile vechi</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Video descărcat - nu este mic. Vedeți cât spațiu pot elibera videoclipurile vechi</item>
+        <item>Videoclip nou salvat — găsiți videoclipuri mari de șters și eliberați spațiu. Atinge-mă</item>
+        <item>Videoclipurile ocupă spațiu — am găsit articole care pot fi curățate pentru a vă ușura telefonul. Atingeți aici</item>
+        <item>Descărcarea gata! Curățați câteva videoclipuri vechi și spațiul revine. Atinge-mă</item>
+        <item>Videoclip nou sortat — ușor de găsit sau de curățat. Atingeți pentru a vedea</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Audio descărcat — ordonați-vă biblioteca muzicală cu o singură atingere. Atinge-mă</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Audio descărcat — ordonați-vă biblioteca muzicală cu o singură atingere. Atinge-mă</item>
+        <item>Sunet nou sortat — curățați sunetul vechi cât timp sunteți aici. Atinge-mă</item>
+        <item>Biblioteca muzicală se umple? Verificați sunetul care poate fi curățat. Atingeți aici</item>
+        <item>Audio descărcat — dedupătură dintr-o singură atingere. Atinge-mă pentru a face ordine</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Fișier nou salvat — ștergeți fișierele vechi și eliberați spațiu. Atingeți aici</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Fișier nou salvat — ștergeți fișierele vechi și eliberați spațiu. Atingeți aici</item>
+        <item>Descărcare finalizată — vedeți ce fișiere vechi puteți curăța. Atinge-mă</item>
+        <item>Fișier nou gata — arhivă inteligentă + curățare. Atinge-mă pentru a începe</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Coșul de reciclare a fost golit — spațiul de stocare a fost reîmprospătat. Verificați cel mai recent spațiu al dvs.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Coșul de reciclare a fost golit — spațiul de stocare a fost reîmprospătat. Verificați cel mai recent spațiu al dvs.</item>
+        <item>Coșul de reciclare golit - vin resturi curățate în profunzime.</item>
+        <item>Golit cu succes — mai multe deșeuri de curățat. Vino să arunci o privire.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Curăță acum</string>
+    <string name="notif_event_action_open_home">Deschide</string>
+    <string name="notif_event_action_manage">Gestionați aplicațiile</string>
+    <string name="notif_event_action_check_battery">Verificați bateria</string>
+    <string name="notif_event_action_check_network">Verificați rețeaua</string>
+    <string name="notif_days_unit">zi</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Spațiul de depozitare s-a schimbat. Să vedem ce ocupă spațiu?</item>
+        <item>S-au detectat modificări spațiale. Ar putea fi niște gunoi noi, aruncați o privire?</item>
+        <item>Spațiul disponibil s-a mutat. Știi cine l-a mâncat? Faceți clic pentru a arunca o privire.</item>
+        <item>Spațiul este îngust? Tocmai am detectat modificarea, haideți să aruncăm o privire la detalii.</item>
+        <item>Memento privind schimbarea spațiului: este posibil să acumulați o mulțime de gunoi. Verifică?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Baterie descărcată. Vrei să știi cine îți fură electricitatea? Click pentru a vedea clasamentele.</item>
+        <item>Se termină în curând. Dacă ștergeți aplicațiile care fură electricitate, puteți supraviețui încă o perioadă.</item>
+        <item>Bateria este descărcată. E mai bine să ștergi câteva fundaluri decât să nu faci nimic.</item>
+        <item>Bateria este roșie. Îl puteți salva în continuare, faceți clic pentru al deschide și aruncați o privire.</item>
+        <item>Mai puțin de 20% remaine. Haideți să acordăm un prim ajutor pentru economisirea energiei și să curățăm.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Bateria este plină mai mult de jumătate. Ai grijă de el acum, va dura până ajungi acasă.</item>
+        <item>Bateria este plină mai mult de jumătate. Să ai grijă de baterie acum este mult mai ușor decât să aștepți până la 20%.</item>
+        <item>Bateria a dispărut pe jumătate. Cât poate dura? Faceți clic pentru a arunca o privire.</item>
+        <item>Bateria este plină mai mult de jumătate. Este timpul să aveți grijă de backend, nu așteptați să devină nervos.</item>
+        <item>Jumătate din baterie a rămas. Îndepărtează-i pe marii jucători avizi de putere și fă a doua jumătate mai stabilă.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Sprintul final este de 80%. Descărcați gunoiul și împachetați ușor pentru a primi puterea maximă.</item>
+        <item>Încă 20% sîncărcare completă. Nu te mai uita la ecranul tău și lasă-ne pe noi să ne ocupăm de gunoi.</item>
+        <item>80%: La un pas de perfecțiune. Faceți clic o dată și va fi complet șters când bateria este complet încărcată.</item>
+        <item>80%, a baterie bună pentru un telefon mobil bun. Curățați o rundă când este cald?</item>
+        <item>Ultimele 20% i care ni s-au dat. Te uiți la baterie și noi curățăm gunoiul.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Complet încărcat și gata de plecare. O ultimă verificare: a fost curățat gunoiul?</item>
+        <item>După încărcare, simțul ritualului este plin. Ce zici să curățați gunoiul pentru a-l comemora?</item>
+        <item>100%, stabel astăzi. Încă o rundă și e impecabilă.</item>
+        <item>100%. Ultimul pas înainte de deconectare: curățați gunoiul, treizeci de secunde.</item>
+        <item>Finisat cu putere maxima. O ultimă curățare, perfect.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Web-ul se schimbă! Vedeți starea curentă a rețelei 1</item>
+        <item>Dezertarea rețelei. Nu vă uitați la semnal când curățați, doar faceți clic pe el și scanați.</item>
+        <item>Nu puteți deschide pagina? Curățarea este întotdeauna online.</item>
+        <item>Puteți lucra offline, iar coșul de gunoi poate fi curățat acum.</item>
+        <item>Dacă nu există semnal, nu sunt necesare date pentru curățare, trebuie doar să faceți clic.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Conectat. Sarcina diseară: reumpleți, apoi curățați.</item>
+        <item>Te odihnești, se reîncarcă. Lasă-l să curețe și gunoiul.</item>
+        <item>În timpul de încărcare, este suficient să curățați gunoiul care s-a acumulat de mult timp.</item>
+        <item>Doar atunci când este conectat la priză, personalul din culise poate îndrăzni să lucreze liber.</item>
+        <item>Se încălzește puțin în timpul încărcării? Ștergerea fundalului poate scădea temperatura.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Deconectați și porniți. Amintiți-vă să vă faceți timp pentru a curăța gunoiul și a rămâne în formă.</item>
+        <item>După terminarea încărcării, împachetați și porniți. Doar curățați-l și va fi perfect.</item>
+        <item>Complet încărcat și gata de utilizare. Curățând gunoiul fără probleme, astăzi nu există niciun defect.</item>
+        <item>Încărcarea se termină. Următorul spațiu urmează să fie curățat și actualizat pe rând.</item>
+        <item>Nu te opri la pene de curent. Un lucru a mai rămas: curățare.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Ne întâlnim din nou, ești blocat? Majoritatea sunt gunoi, încercați să-l curățați.</item>
+        <item>Deblocat? Nu deschide mai întâi alte aplicații și șterge coșul de gunoi timp de treizeci de secunde.</item>
+        <item>Primul lucru de deblocat suntem noi. Scoateți gunoiul și vă va iubi mai mult.</item>
+        <item>Treizeci de secunde după deblocare. Cea mai valoroasă utilizare: curățarea gunoiului.</item>
+        <item>Telefonul tău mobil a spus: Backend-ul este puțin blocat, mă poți ajuta?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Pune telefonul jos și lasă-l nouă. Timp de odihnă pe ecran = timpul de alăptare.</item>
+        <item>Oprirea muncii nu înseamnă oprirea muncii. Îți voi face o surpriză data viitoare când pornesc ecranul.</item>
+        <item>Devine mai bine în liniște în timp ce odihnești ecranul. Faceți clic și noi ne vom ocupa de restul.</item>
+        <item>Un ultim lucru înainte de a bloca ecranul: faceți clic pe Curățare. Un nou look mâine dimineață.</item>
+        <item>Ecranul se întunecă. Faceți aranjamente acum și vedeți rezultatele mâine.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Noua aplicație s-a mutat, la fel și cache-ul. curata</item>
+        <item>Înțelegem bucuria instalării unei noi aplicații. Doar că memoria cache se va îngrămădi în liniște.</item>
+        <item>Aplicație nouă? Cache-ul este și el aici, ștergeți-l cu un singur clic.</item>
+        <item>Noul intră și vechiul se stinge. Curățați-l des și instalați-l după cum doriți.</item>
+        <item>Altul? Spațiul se micșorează în liniște, vino și curăță-l.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Dezinstalat cu succes! pentru a curăța reziduurile de fișiere</item>
+        <item>Dezinstalat, dar nu curățat. Click pentru a termina.</item>
+        <item>Aplicația este dezinstalată, dar coada este încă acolo. Curățați cu un singur clic și spuneți la revedere odată pentru totdeauna.</item>
+        <item>Nu ratați al doilea pas: ștergeți aplicația + ștergeți reziduurile. Un clic și gata.</item>
+        <item>Reziduul va consuma jumătate din spațiul eliberat. Scanați în profunzime și ștergeți totul.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>A sosit o nouă versiune. Tot ce a rămas din versiunea veche este complet curățat.</item>
+        <item>+1 pentru versiune, +1 pentru cache, pentru scanare profundă.</item>
+        <item>Actualizarea este finalizată, iar pachetele de instalare rămase pot fi curățate cu un singur clic.</item>
+        <item>Actualizarea s-a terminat, să încheiem. Curăță-l și voi prelua eu.</item>
+        <item>Fiecare actualizare va lăsa fișiere vechi și le va rezolva rapid.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>O altă captură de ecran? 1 Este timpul să clarificați capturile de ecran</item>
+        <item>Am găsit o nouă captură de ecran, faceți clic pentru a o vizualiza și curăța~</item>
+        <item>Există din ce în ce mai multe capturi de ecran, curățarea cu un singur clic vă poate ajuta să faceți spațiu</item>
+        <item>Captura de ecran a fost realizată cu succes, cele duplicate și cele neclare pot fi filtrate cu un singur clic.</item>
+        <item>Noi capturi de ecran sunt adăugate în baza de date, iar imaginile duplicate au fost puse în coadă pentru ștergere cu un singur clic.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Există o mulțime de gunoi îngrămădiți. Curățați-l pe toate deodată.</item>
+        <item>Ultima curățare %1$d cu câteva zile în urmă, faceți clic pentru a o procesa acum</item>
+        <item>Nu am fost aici de câteva zile, așa că o voi curăța și mă voi întoarce ușor pe câmpul de luptă.</item>
+        <item>Cota de compensare nu a fost folosită astăzi. Voi șterge când mă întorc.</item>
+        <item>Cache-ul se umple, așteaptă să îl verificați</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Multă vreme nu ne-am văzut, a așteptat. Întoarceți-vă și curățați gunoiul.</item>
+        <item>Nu te-am văzut de câteva zile. Nu există odihnă pentru gunoi. Vino înapoi și mătură-l.</item>
+        <item>Cache-ul este în coadă. Faceți clic și ele dispar.</item>
+        <item>Coșul de gunoi este ocupat în timp ce sunteți plecat. Goliți cu un singur clic și simțiți-vă la fel de proaspăt ca întotdeauna.</item>
+        <item>Spate? Mai întâi, curățați coșul de gunoi. În treizeci de secunde, telefonul este ușor ca nou.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Gunoiul care s-a acumulat atât de mult timp este curățat imediat.</item>
+        <item>E timpul să faci curățenie. Coșul de gunoi de astăzi vă așteaptă să dați clic pe el.</item>
+        <item>A sosit Space Daily de astăzi. Curățați-l și păstrați-l ușor.</item>
+        <item>Unele fișiere sunt mult mai mari decât credeți, aruncați o privire</item>
+        <item>Găsește-l pe tipul care a luat câteva G\ și curăță-l</item>
+        <item>Lista mare de documente este gata, vino să arunci o privire.</item>
+        <item>Cine ocupă cel mai mult spațiu? Dezvăluit într-o secundă.</item>
+        <item>Fotografierea continuă este grozavă, finisarea este dureroasă. Lasă-ne pe noi.</item>
+        <item>Fotografiile similare sunt aliniate, depinde de tine să alegi pe care să o păstrezi</item>
+        <item>Prea multe poze similare? Vă vom ajuta să comparați și să eliminați duplicatele cu un singur clic.</item>
+        <item>Videoclipurile offline stocate în cache ar trebui șterse.</item>
+        <item>Sunetul rămas va fi, de asemenea, curățat.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Bateria nu este la fel de durabilă ca înainte? Verifică.</item>
+        <item>Cine îți fură curentul? Vei ști odată ce o vei căuta.</item>
+        <item>Oprirea acestora va prelungi durata de viață a bateriei.</item>
+        <item>Unele aplicații sunt instalate, dar nu sunt folosite niciodată. Vezi care sunt?</item>
+        <item>Păstrarea aplicațiilor pe care nu le utilizați este, de asemenea, o povară, lista a fost făcută</item>
+        <item>În ceea ce privește confidențialitatea, cu cât este tratată mai repede, cu atât mai bine.</item>
+        <item>Ascunde-le pe cele importante și scapă de cele inutile. lasa-ma sa te ajut</item>
+        <item>Unde merge traficul? Aflați cine îl folosește.</item>
+        <item>Detaliile de trafic sunt gata și clare dintr-o privire.</item>
+        <item>Există o aplicație care se conectează în secret la Internet în fundal.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{dimensiunea} de nedorit - ștergeți-l dintr-o singură atingere</string>
+    <string name="notif_scheduled_large_files">{total} de fișiere mari - curățați cu ușurință</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} grupuri de fotografii duplicate—salvați {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} fotografii similare—alegeți ce să curățați</string>
+    <string name="notif_scheduled_videos">{total} de videoclipuri: ștergeți {n} pentru a elibera spațiu</string>
+    <string name="notif_scheduled_audio">{total} de fișiere audio - timpul pentru a face ordine</string>
+    <string name="notif_scheduled_apps">{size} folosit de {idle} aplicații inactive</string>
+    <string name="notif_scheduled_data">{back} a datelor utilizate în fundal</string>
+    <string name="app_manager_uninstall_selected">Dezinstalează selecția</string>
+    <string name="app_manager_uninstall_selected_count">Dezinstalează selecția (%1$d)</string>
+    <string name="cache_removable">Amovibil</string>
+    <string name="cache_clean_selected">Eliminați memoria cache</string>
+    <string name="cache_clean_selected_summary">Curățați %1$s (%2$d)</string>
+</resources>

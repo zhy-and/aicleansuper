@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Temperatura</string>
+    <string name="sys_voltage">Boltahe</string>
+    <string name="sys_current">Agos ng kuryente</string>
+    <string name="sys_health">Kalusugan</string>
+    <string name="sys_type">Uri ng baterya</string>
+    <string name="sys_capacity">Kapasidad ng baterya</string>
+    <string name="sys_charging">nagcha-charge</string>
+    <string name="sys_full">puno na</string>
+    <string name="sys_good">Mabuti</string>
+    <string name="sys_overheat">Sobrang init</string>
+    <string name="sys_dead">Patay</string>
+    <string name="sys_over_voltage">Sobrang boltahe</string>
+    <string name="sys_cold">Malamig</string>
+    <string name="sys_unknown">hindi kilala</string>
+    <string name="sys_model">modelo:</string>
+    <string name="sys_brand">Brand:</string>
+    <string name="sys_manufacturer">Tagagawa:</string>
+    <string name="sys_wifi_name">Pangalan:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Bilis:</string>
+    <string name="traffic_month">Ngayong Buwan</string>
+    <string name="traffic_30_days">30 Araw</string>
+    <string name="traffic_24_hours">24 Oras</string>
+    <string name="traffic_mobile">Mobile</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">Mga app</string>
+</resources>

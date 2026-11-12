@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Maak een pincode van 6 cijfers aan</string>
+    <string name="vlt_enter_pin">Voer uw pincode in</string>
+    <string name="vlt_confirm_pin">Bevestig uw pincode</string>
+    <string name="vlt_warning">Als u deze app verwijdert, worden bestanden in de Privacyruimte permanent verwijderd.</string>
+    <string name="vlt_pin_mismatch">Pincodes komen niet overeen. Probeer het opnieuw.</string>
+    <string name="vlt_pin_wrong">Onjuiste pincode</string>
+    <string name="vlt_biometric">Gebruik vingerafdruk/gezicht</string>
+    <string name="vlt_unlock">Ontgrendel privacyruimte</string>
+    <string name="vlt_use_pin">Voer uw pincode in</string>
+    <string name="vlt_importing">Importeren...</string>
+    <string name="vlt_imported">%1$d artikelen geïmporteerd</string>
+    <string name="vlt_restore">Herstellen</string>
+    <string name="vlt_delete">Verwijderen</string>
+</resources>

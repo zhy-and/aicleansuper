@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_swipe">Проведите пальцем по экрану</string>
+    <string name="nav_compress">Сжать</string>
+    <string name="nav_tools">Инструменты</string>
+    <string name="nav_clean">Чистый</string>
+    <string name="nav_privacy">Конфиденциальность</string>
+    <string name="nav_profile">Профиль</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Организуйте свои фотографии, видео и контакты локально</string>
+    <string name="home_badge_text">Очистка ИИ</string>
+    <string name="home_quick_summary_title">Сегодняшние советы по уборке</string>
+    <string name="home_quick_summary_body">Начните со скриншотов и больших видеороликов, чтобы быстрее освободить место.</string>
+    <string name="home_scan_insight_title">Статус интеллектуального сканирования</string>
+    <string name="home_ready_title">4 мощных инструмента очистки</string>
+    <string name="home_ready_body">Управляйте фотографиями, скриншотами, видео и контактами в одном месте.</string>
+    <string name="storage_overview_title">Обзор хранилища</string>
+    <string name="storage_overview_summary">Можно освободить до 0,0 ГБ</string>
+    <string name="storage_overview_detail">Использовано 85,4 ГБ из 128 ГБ</string>
+    <string name="storage_overview_summary_format">Можно освободить до %1$s</string>
+    <string name="storage_overview_detail_format">%1$s из %2$s используется</string>
+    <string name="storage_overview_summary_done">Можно освободить до 1,8 ГБ</string>
+    <string name="storage_overview_detail_done">Использовано 85,4 ГБ из 128 ГБ. Начните с вашей медиатеки.</string>
+    <string name="scan_button_idle">Начать сканирование</string>
+    <string name="scan_button_running">Сканирование...</string>
+    <string name="scan_status_title">Статус сканирования</string>
+    <string name="scan_status_idle">Готов к сканированию</string>
+    <string name="scan_status_running">Анализ медиафайлов</string>
+    <string name="scan_status_done">Сканирование завершено. Предложения по очистке готовы.</string>
+    <string name="scan_status_error">Сканирование не удалось. Повторите попытку позже.</string>
+    <string name="scan_status_detail_idle">Скриншоты, большие видео и подобные фотографии будут проверяться в первую очередь.</string>
+    <string name="scan_status_detail_running">Сканирование локально. Ваши фото и видео не будут загружены.</string>
+    <string name="scan_status_detail_midway">Проанализированы скриншоты и большие видеоролики. Организация похожих фотографий.</string>
+    <string name="scan_status_detail_done">Нашел 1,8 ГБ для очистки. Начните со скриншотов и больших видео.</string>
+    <string name="scan_status_detail_done_format">Нашел %1$s, требующий очистки. Начните со скриншотов и больших видео.</string>
+    <string name="feature_section_title">Основные инструменты очистки</string>
+    <string name="feature_section_subtitle">Первый выпуск посвящен 4 наиболее распространенным задачам очистки.</string>
+    <string name="feature_similar_title">Похожие фото</string>
+    <string name="feature_similar_desc">Очистить похожие фотографии</string>
+    <string name="feature_screenshots_title">Очистка скриншотов</string>
+    <string name="feature_screenshots_desc">Очистите неиспользуемые скриншоты</string>
+    <string name="feature_videos_title">Большие видео</string>
+    <string name="feature_videos_desc">Очистка больших видео</string>
+    <string name="feature_contacts_title">Очистка контактов</string>
+    <string name="feature_contacts_desc">Очистите повторяющиеся контакты</string>
+    <string name="feature_similar_space_format">Группы %1$d</string>
+    <string name="count_placeholder">Не сканируется</string>
+    <string name="count_similar_done">128 фотографий</string>
+    <string name="count_screenshots_done">364 фото</string>
+    <string name="count_videos_done">12 видео</string>
+    <string name="count_contacts_done">9 групп</string>
+    <string name="recent_section_title">Примечания к выпуску</string>
+    <string name="recent_section_body">Эта версия включает структуру главного экрана XML, запросы разрешений на использование мультимедиа, поток сканирования заполнителей и сводку результатов. Далее можно добавить MediaStore, Контакты и реальные функции очистки.</string>
+    <string name="permission_denied_message">Для начала сканирования необходим доступ к носителю.</string>
+    <string name="mock_feature_message">Реальные результаты сканирования будут добавлены к этой функции позже.</string>
+    <string name="scan_complete_message">Первоначальный поток сканирования готов. Далее можно добавить реальные данные.</string>
+    <string name="scan_failed_message">Сканирование не удалось: %1$s</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="storage_progress_label">Ход использования хранилища</string>
+    <string name="phase_two_label">Этап 2</string>
+    <string name="phase_three_label">Этап 3</string>
+    <string name="images_total_title">Всего изображений</string>
+    <string name="videos_total_title">Всего видео</string>
+    <string name="clean_page_title">Центр очистки</string>
+    <string name="clean_page_subtitle">Начните с контента, который освобождает больше всего места.</string>
+    <string name="clean_page_badge">Умный очиститель</string>
+    <string name="clean_overview_title">Результаты сканирования</string>
+    <string name="clean_overview_body">Сначала очистите самые большие объемы памяти, а затем похожие фотографии и контакты.</string>
+    <string name="privacy_page_title">Частное хранилище</string>
+    <string name="privacy_page_subtitle">Локальный PIN-код защищает ваши личные медиафайлы и будущий импорт.</string>
+    <string name="profile_page_title">Профиль</string>
+    <string name="profile_page_subtitle">Управляйте своим членством, настройками и покупками здесь.</string>
+    <string name="profile_page_badge">Премиум</string>
+    <string name="profile_hero_title">Обновите версию до версии Pro, чтобы получить полный опыт очистки.</string>
+    <string name="profile_hero_body">Pro включает в себя неограниченное количество пакетных действий, Private Vault и улучшенное обнаружение похожих фотографий.</string>
+    <string name="profile_plan_status_free">Текущий план: Бесплатно</string>
+    <string name="profile_plan_status_pro">Пробная версия Pro активна</string>
+    <string name="profile_most_popular">Самый популярный</string>
+    <string name="profile_cta_title">Зачем обновлять?</string>
+    <string name="profile_cta_body">Если вы часто очищаете фотографии, видео и контакты, Pro значительно сокращает количество повторяющихся действий.</string>
+    <string name="placeholder_card_title">Текущий этап</string>
+    <string name="placeholder_clean_body">Фаза 1 охватывает основу сканирования, разрешения и основную структуру. Реальные результаты очистки появятся здесь на следующем этапе.</string>
+    <string name="placeholder_privacy_body">Личное хранилище пока недоступно. Этот этап включает только навигацию и макет.</string>
+    <string name="placeholder_profile_body">Возможности профиля еще не подключены. Членство, настройки и покупки будут добавлены позже.</string>
+    <string name="overview_reclaim_title">Предполагаемая экономия места</string>
+    <string name="overview_media_count_title">Тотал Медиа</string>
+    <string name="home_note_title">Фаза 1 завершена</string>
+    <string name="home_note_body">1. Нижняя навигация и многостраничная структура \n2. Запросы на разрешение мультимедиа для Android 13+\n3. Основа сканирования снимков экрана и больших видео на базе MediaStore\n4. Привязка результатов на главном экране и управление состоянием</string>
+    <string name="feature_coming_soon_format">Страница сведений о %1$s будет добавлена на соответствующем этапе.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d предметы</string>
+    <string name="count_contact_format">Контакты %1$d</string>
+    <string name="feature_ready_label">Доступно</string>
+    <string name="permission_action_label">Разрешить и сканировать</string>
+    <string name="refresh_action_label">Обновить результаты</string>
+    <string name="clean_reclaim_summary_format">%1$s готов к уборке</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">Группы %1$d</string>
+    <string name="count_contact_group_format">Группы %1$d</string>
+    <string name="clean_permission_title">Необходим доступ к СМИ</string>
+    <string name="clean_permission_body">Разрешите доступ для чтения ваших скриншотов и видео. Все данные анализируются локально.</string>
+    <string name="clean_loaded_hint">Коснитесь карточки категории, чтобы просмотреть подробности.</string>
+    <string name="clean_loading_hint">Загрузка скриншотов и видео. Пожалуйста, подождите.</string>
+    <string name="clean_empty_hint">Результатов сканирования пока нет. Разрешите доступ и сначала запустите сканирование.</string>
+    <string name="detail_back">Назад</string>
+    <string name="screenshot_detail_title">Очистка скриншотов</string>
+    <string name="screenshot_detail_subtitle">Просматривайте скриншоты с реальными миниатюрами. Коснитесь фотографии для предварительного просмотра или выберите элементы для удаления.</string>
+    <string name="large_video_detail_title">Большие видео</string>
+    <string name="large_video_detail_subtitle">Просматривайте большие видео с обложками. Коснитесь обложки, чтобы воспроизвести ее, или выберите элементы, которые нужно удалить. Коснитесь строки фильтра, чтобы переключить 100 МБ / 500 МБ.</string>
+    <string name="empty_screenshot_title">Скриншоты не найдены</string>
+    <string name="empty_screenshot_body">В вашей медиатеке не найдены скриншоты или к ней не предоставлен доступ.</string>
+    <string name="empty_large_video_title">Большие видео не найдены</string>
+    <string name="empty_large_video_body">Никакие видео не превышают 100 МБ. Вы можете настроить порог позже.</string>
+    <string name="media_item_bucket_format">Альбом: %1$s</string>
+    <string name="media_item_date_format">Дата: %1$s</string>
+    <string name="media_item_duration_format">Продолжительность: %1$s</string>
+    <string name="video_threshold_note">Текущий порог большого видео: 100 МБ.</string>
+    <string name="select_all_action">Выбрать все</string>
+    <string name="clear_selected_action">Отменить выбор всех</string>
+    <string name="delete_selected_action">Удалить выбранное</string>
+    <string name="selected_count_format">%1$d выбрано</string>
+    <string name="delete_dialog_title">Удалить скриншоты?</string>
+    <string name="delete_dialog_message_format">Выбранные скриншоты %1$d будут удалены. Система попросит вас подтвердить еще раз.</string>
+    <string name="delete_dialog_confirm">Продолжить</string>
+    <string name="delete_dialog_cancel">Отмена</string>
+    <string name="delete_complete_message_format">Обработаны скриншоты %1$d. Список обновлен.</string>
+    <string name="delete_items_complete_format">Обработаны элементы %1$d. Список обновлен.</string>
+    <string name="delete_failed_message">Не удалось удалить. Попробуйте еще раз.</string>
+    <string name="delete_video_dialog_title">Удалить видео?</string>
+    <string name="delete_video_dialog_message_format">Выбранные видео %1$d будут удалены. Система попросит вас подтвердить еще раз.</string>
+    <string name="delete_similar_dialog_title">Удалить похожие фотографии?</string>
+    <string name="delete_similar_dialog_message_format">Выбранные фотографии %1$d будут удалены. Рекомендуемые предметы хранения не включены.</string>
+    <string name="video_selection_filter_format">Выбран %1$d · Фильтр: %2$s (нажмите, чтобы переключиться)</string>
+    <string name="video_player_unavailable">На этом устройстве видеоплеер недоступен.</string>
+    <string name="media_preview_title">Предварительный просмотр</string>
+    <string name="similar_select_candidates_action">Выберите кандидатов</string>
+    <string name="similar_deselect_candidates_action">Отменить выбор всех</string>
+    <string name="similar_select_all_candidates">Выбрать всех кандидатов</string>
+    <string name="similar_delete_count_action">Удалить выбранное (%1$d)</string>
+    <string name="similar_group_number_format">Группа %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Невозможно открыть программу удаления системы</string>
+    <string name="filter_100mb">100 МБ+</string>
+    <string name="filter_500mb">500 МБ+</string>
+    <string name="filter_all_videos">Все результаты</string>
+    <string name="similar_page_title">Похожие фото</string>
+    <string name="similar_page_subtitle">Просмотрите похожие группы с миниатюрами, выберите кандидатов и удалите дубликаты.</string>
+    <string name="similar_page_note">В первой версии используются упрощенные правила группировки. Перцепционное хэширование и оценка резкости могут быть добавлены позже.</string>
+    <string name="similar_page_badge">Умный аналог</string>
+    <string name="similar_page_hero_hint">Сохраняйте фотографии с более высоким разрешением, большими файлами и более поздними временными метками.</string>
+    <string name="similar_group_summary_format">В ваших альбомах обнаружены группы %1$d с фотографиями кандидатов %2$d.</string>
+    <string name="similar_group_empty_title">Похожих фотогрупп не найдено</string>
+    <string name="similar_group_empty_body">Ни одна фотография в одном альбоме не соответствовала одинаковым критериям времени и размера.</string>
+    <string name="similar_group_card_subtitle_format">Кандидаты %1$d · Можно освободить до %2$s</string>
+    <string name="similar_keep_recommend_label">Рекомендуется сохранить</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Другие кандидаты</string>
+    <string name="similar_other_items_more_format">+%1$d еще фото</string>
+    <string name="contacts_page_title">Очистка контактов</string>
+    <string name="contacts_page_subtitle">Найдите повторяющиеся и пустые контакты.</string>
+    <string name="contacts_page_badge">Контактное исправление</string>
+    <string name="contacts_page_hero_hint">Объедините контакты с одинаковыми номерами, а затем удалите пустые.</string>
+    <string name="contacts_permission_title">Требуется доступ к контактам</string>
+    <string name="contacts_permission_body">Разрешить доступ к локальному сканированию контактов.</string>
+    <string name="contacts_scan_title">Сканировать контакты</string>
+    <string name="contacts_scan_body">Обновите, чтобы найти дубликаты и пустые контакты.</string>
+    <string name="contacts_duplicate_title">Дублирующиеся контакты</string>
+    <string name="contacts_empty_title">Пустые контакты</string>
+    <string name="contacts_duplicate_count_format">%1$d повторяющиеся группы</string>
+    <string name="contacts_empty_count_format">%1$d пустые контакты для очистки</string>
+    <string name="contacts_load_action">Разрешить и загрузить контакты</string>
+    <string name="contacts_refresh_action">Обновить контакты</string>
+    <string name="contacts_empty_group_title">Повторяющихся контактов не найдено</string>
+    <string name="contacts_empty_group_body">Контакты с повторяющимися номерами телефонов не найдены.</string>
+    <string name="contacts_delete_empty_action">Удалить пустые контакты</string>
+    <string name="contacts_merge_action">Объединить группу</string>
+    <string name="contacts_view_action">Посмотреть в Контактах</string>
+    <string name="contacts_group_title_format">%1$s · %2$d контакты</string>
+    <string name="contacts_group_number_format">Первичный номер: %1$s</string>
+    <string name="contacts_group_members_format">Участники: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Удалить пустые контакты?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d Пустые контакты или контакты без номеров будут удалены.</string>
+    <string name="contacts_merge_complete_message">Системе было предложено объединить эту группу контактов.</string>
+    <string name="contacts_cleanup_complete_message_format">Удалены пустые контакты %1$d.</string>
+    <string name="contacts_action_failed">Не удалось связаться с пользователем. Попробуйте еще раз.</string>
+    <string name="privacy_status_title">Статус локальной защиты</string>
+    <string name="privacy_page_badge">Частное хранилище</string>
+    <string name="privacy_hero_title">Храните личный контент отдельно от очистки</string>
+    <string name="privacy_hero_body">Сначала настройте локальную защиту PIN-кодом, а затем добавьте импорт, разблокировку и восстановление частных медиафайлов.</string>
+    <string name="privacy_status_enabled">Набор 4-значного PIN-кода</string>
+    <string name="privacy_status_disabled">PIN-код не установлен</string>
+    <string name="privacy_status_body_enabled">Частные медиафайлы, импортированные позже, будут защищены вашим местным PIN-кодом.</string>
+    <string name="privacy_status_body_disabled">Прежде чем добавлять функции импорта и разблокировки личных медиафайлов, установите четырехзначный PIN-код.</string>
+    <string name="privacy_set_pin_action">Установить PIN-код</string>
+    <string name="privacy_reset_pin_action">Сбросить PIN-код</string>
+    <string name="privacy_pin_dialog_title">Установите 4-значный PIN-код</string>
+    <string name="privacy_pin_dialog_hint">Введите 4 цифры</string>
+    <string name="privacy_pin_invalid">Введите 4-значный PIN-код.</string>
+    <string name="privacy_pin_saved">Локальный PIN-код сохранен.</string>
+    <string name="privacy_pin_reset_confirm">Удалить текущий PIN-код?</string>
+    <string name="privacy_pin_reset_done">Сброс PIN-кода.</string>
+    <string name="privacy_feature_lock_title">Локальная разблокировка</string>
+    <string name="privacy_feature_lock_body">Первая версия использует PIN-код для локальной защиты. Биометрию можно добавить позже.</string>
+    <string name="privacy_feature_vault_title">Частные СМИ</string>
+    <string name="privacy_feature_vault_body">Частные фотографии и видео, импортированные позже, будут храниться отдельно и исключаться из основного процесса очистки альбома.</string>
+    <string name="privacy_feature_scope_title">Текущий этап</string>
+    <string name="privacy_feature_scope_body">В этой версии добавлен статус PIN-кода и структура страницы. Далее будут импорт частного мультимедиа и локальное шифрование.</string>
+    <string name="profile_plan_title">Текущий план</string>
+    <string name="profile_plan_free">Бесплатно</string>
+    <string name="profile_plan_pro">Про</string>
+    <string name="profile_plan_body_free">Сканируйте, просматривайте результаты и используйте базовую очистку.</string>
+    <string name="profile_plan_body_pro">Разблокируйте расширенную очистку, Private Vault, неограниченное количество действий и работу без рекламы.</string>
+    <string name="profile_upgrade_action">Перейти на пробную версию Pro</string>
+    <string name="profile_restore_action">Вернуться в бесплатное</string>
+    <string name="profile_upgrade_done">Перешел на пробную версию Pro.</string>
+    <string name="profile_restore_done">Вернулся на Свободный.</string>
+    <string name="profile_benefits_title">Профессиональные преимущества</string>
+    <string name="profile_benefits_body">1. Расширенное обнаружение аналогичных фотографий\n2. Неограниченная пакетная очистка\n3. Усовершенствованные большие видеофильтры \n4. Улучшенная очистка контактов\n5. Частное хранилище\n6. Интерфейс без рекламы</string>
+    <string name="detail_page_badge">Детальный вид</string>
+    <string name="detail_page_hint">Просмотрите кандидатов, прежде чем решить, что убрать, а что оставить.</string>
+    <string name="premium">ПРЕМИУМ</string>
+    <string name="settings">Настройки</string>
+    <string name="grant_access">Предоставить доступ</string>
+    <string name="storage_permission_title">Предоставить доступ к файлу</string>
+    <string name="storage_permission_detail">CleanSuper AI нужен доступ к файлам для поиска дубликатов, размытых фото и больших файлов. Всё обрабатывается локально.</string>
+    <string name="storage_permission_scan_point">Доступ нужен для поиска файлов, которые можно очистить</string>
+    <string name="storage_permission_privacy_point">Ваши файлы обрабатываются только на устройстве</string>
+    <string name="storage_permission_message">Только для локального сканирования; никакие данные не загружаются и не передаются третьим лицам.</string>
+    <string name="storage_permission_continue">Продолжить</string>
+    <string name="storage_permission_close">Закрыть</string>
+    <string name="storage_permission_example_file">Файлы на этом устройстве</string>
+    <string name="storage_permission_example_size">Готов к сканированию</string>
+    <string name="storage_permission_guide_title">Разрешить доступ ко всем файлам</string>
+    <string name="storage_permission_guide_message">Включите переключатель в настройках, чтобы сканировать и очищать файлы на этом устройстве.</string>
+    <string name="go_to_settings">Перейти в настройки</string>
+    <string name="permission_home_title">Ваши фотографии заблокированы</string>
+    <string name="permission_home_body">Разрешите доступ к фотографиям, видео и уведомлениям, чтобы безопасно сканировать вашу библиотеку на этом устройстве и отправлять напоминания об очистке.</string>
+    <string name="scan_summary_format">Отсканированные элементы %1$d · %2$s можно просмотреть</string>
+    <string name="scan_running_english">Сканирование вашей библиотеки…</string>
+    <string name="scan_ready_english">Ваша библиотека готова</string>
+    <string name="coming_soon">Скоро</string>
+    <string name="compression_failed">Не удалось сжать это изображение.</string>
+    <string name="compression_saved">Сжатая фотография сохранена в папке Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Безопасный анализ на устройстве</string>
+    <string name="home_cleanup_library">Просмотрите свою библиотеку</string>
+    <string name="home_cleanup_badge">На устройстве</string>
+    <string name="home_quick_clean_action">Открыть Центр очистки</string>
+    <string name="home_quick_clean_compact_action">Центр очистки</string>
+    <string name="home_reclaim_ready_format">%1$s подлежит возврату</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Память занята</string>
+    <string name="home_storage_detail_format">%1$s для проверки · Элементы %2$d</string>
+    <string name="home_quick_tools">Быстрые инструменты</string>
+    <string name="home_quick_tools_subtitle">Наиболее часто используемые действия по очистке изложены заранее.</string>
+    <string name="feature_swipe_title">Пролистните фотографии</string>
+    <string name="feature_swipe_desc">Просматривайте фотографии одну за другой и отправляйте бракованные фотографии в корзину.</string>
+    <string name="home_contacts_short_desc">Объединить дубликаты</string>
+    <string name="feature_ready_short">Готово</string>
+    <string name="feature_review_short">Обзор</string>
+    <string name="tools_section_storage">Хранение и медиа</string>
+    <string name="tools_section_device">Инструменты устройства</string>
+    <string name="tools_hero_badge">7 полезных инструментов</string>
+    <string name="tools_hero_title">Полезные инструменты в одном месте</string>
+    <string name="tools_hero_body">Управляйте хранилищем и носителями с помощью простых и целенаправленных действий.</string>
+    <string name="tool_file_manager_desc">Просматривайте и очищайте снимки экрана, видео и многое другое</string>
+    <string name="tool_media_compressor_desc">Уменьшите размер фото и видео без потери качества</string>
+    <string name="tool_secret_space_desc">Заблокируйте личные фотографии безопасным PIN-кодом</string>
+    <string name="tool_app_manager_desc">Просмотр установленных приложений и использования памяти</string>
+    <string name="tool_clean_calendar_desc">Удалите старые события календаря, загромождающие ваше расписание.</string>
+    <string name="tool_ai_enhancer_desc">Улучшайте размытые фотографии или фотографии при слабом освещении с помощью искусственного интеллекта</string>
+    <string name="tool_speed_test_desc">Проверьте скорость загрузки и выгрузки вашей сети</string>
+    <string name="tools_page_subtitle">Все, что нужно для более чистого телефона</string>
+    <string name="compress_page_subtitle">Экономьте место, не теряя моментов</string>
+    <string name="video_compressor">Видео Компрессор</string>
+    <string name="video_compress_subtitle">Уменьшите размер видео с помощью перекодирования H.264 на устройстве.</string>
+    <string name="video_compress_card_hint">720p · Сбалансированное качество</string>
+    <string name="choose_video">Выбрать видео</string>
+    <string name="choose_video_hint">Выберите видео для сжатия</string>
+    <string name="compress_photo_guide_title">Выберите фотографию для сжатия</string>
+    <string name="compress_photo_guide_body">Обрабатывается на устройстве · уменьшается за секунды</string>
+    <string name="compress_video_guide_title">Выберите видео для сжатия</string>
+    <string name="compress_video_guide_body">H.264 на устройстве · сбалансированное 720p</string>
+    <string name="compress_guide_tap">Нажмите, чтобы выбрать</string>
+    <string name="enhance_photo_guide_title">Выберите фотографию для улучшения</string>
+    <string name="enhance_photo_guide_body">Яркость · контрастность · резкость</string>
+    <string name="preview_original_photo_label">До · Оригинальное фото</string>
+    <string name="preview_compressed_photo_label">После · Сжатый предварительный просмотр</string>
+    <string name="preview_original_video_label">До · Оригинальное видео</string>
+    <string name="preview_compressed_video_label">После · Сжатый предварительный просмотр</string>
+    <string name="preview_enhanced_photo_label">После · Расширенный предварительный просмотр</string>
+    <string name="selected_video_preview">Предварительный просмотр выбранного видео</string>
+    <string name="play_video_preview">Воспроизвести предпросмотр видео</string>
+    <string name="video_preview_title">Предварительный просмотр видео</string>
+    <string name="video_preview_failed">Это видео не удалось воспроизвести.</string>
+    <string name="video_compression_saved">Сжатое видео сохранено в Movies/CleanSuperAI.</string>
+    <string name="video_compression_failed">Не удалось сжать это видео.</string>
+    <string name="video_compression_preparing">Подготовка сжатия видео…</string>
+    <string name="video_compression_progress_format">Сжатие видео… %1$d%%</string>
+    <string name="video_compression_finishing">Завершение сжатого видео…</string>
+    <string name="video_compression_timeout">Сжатие этого видео заняло слишком много времени. Пожалуйста, попробуйте более короткий клип.</string>
+    <string name="app_manager_subtitle">Просмотрите установленные приложения и открытые настройки системы, чтобы удалить или очистить кеш.</string>
+    <string name="app_manager_summary_format">Обнаружены пользовательские приложения %1$d · нажмите, чтобы управлять</string>
+    <string name="clean_calendar_subtitle">Найдите прошлые события календаря и удалите те, которые вам больше не нужны.</string>
+    <string name="clean_calendar_delete">Удалить выбранное</string>
+    <string name="clean_calendar_empty">Прошлые события не найдены</string>
+    <string name="clean_calendar_summary_format">%1$d прошедшие мероприятия · %2$d выбрано</string>
+    <string name="clean_calendar_delete_confirm">Удалить %1$d выбранные прошлые события?</string>
+    <string name="clean_calendar_delete_done">Удалены события %1$d.</string>
+    <string name="calendar_permission_hint">Разрешить доступ к календарю для сканирования прошлых событий</string>
+    <string name="calendar_permission_denied">Требуется разрешение Календаря.</string>
+    <string name="calendar_untitled">(Без названия)</string>
+    <string name="image_enhancer_subtitle">Улучшите яркость, контрастность и резкость локально на этом устройстве.</string>
+    <string name="image_enhancer_hint">Выберите фотографию для улучшения</string>
+    <string name="image_enhancer_ready">Готов улучшить</string>
+    <string name="image_enhancer_action">Улучшить фото</string>
+    <string name="image_enhancer_working">Улучшение…</string>
+    <string name="image_enhancer_done">Расширенный предварительный просмотр готов · сохраните, когда вам понравится</string>
+    <string name="image_enhancer_save">Сохранить улучшенное фото</string>
+    <string name="image_enhancer_saved">Улучшенная фотография сохранена в Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Не удалось улучшить это фото.</string>
+    <string name="speed_test_subtitle">Измеряйте загрузку, выгрузку и задержку с помощью серверов Cloudflare.</string>
+    <string name="speed_test_hint">Нажмите «Старт», чтобы запустить короткую проверку скорости сети.</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Загрузка Мбит/с</string>
+    <string name="speed_test_start">Начать тест скорости</string>
+    <string name="speed_test_running">Проверка подключения…</string>
+    <string name="speed_test_done">Тест завершен</string>
+    <string name="speed_test_failed">Проверка скорости не удалась. Проверьте свою сеть и повторите попытку.</string>
+    <string name="speed_test_download_idle">Скачать · ждём</string>
+    <string name="speed_test_upload_idle">Загрузить · ждём</string>
+    <string name="speed_test_latency_idle">Задержка · ожидание</string>
+    <string name="speed_test_download_result">Скачать · %1$.1f Мбит/с</string>
+    <string name="speed_test_upload_result">Загрузка · %1$.1f Мбит/с</string>
+    <string name="speed_test_latency_result">Задержка · %1$d мс</string>
+    <string name="photo_compressor">Фотокомпрессор</string>
+    <string name="compress_quality_hint">Сбалансированный JPEG · 70% quality</string>
+    <string name="choose_photo_hint">Выберите фотографию для сжатия</string>
+    <string name="choose_photo">Выбрать фото</string>
+    <string name="compress_preview">Сжать предварительный просмотр</string>
+    <string name="compress_and_save">Сжать и сохранить</string>
+    <string name="save_compressed_photo">Сохранить сжатую фотографию</string>
+    <string name="save_compressed_video">Сохранить сжатое видео</string>
+    <string name="share">Поделиться</string>
+    <string name="keep">Держите</string>
+    <string name="move_to_review_bin">Отправить в корзину</string>
+    <string name="clear_review_bin">Очистить корзину отзывов</string>
+    <string name="swipe_page_subtitle">Обзор по месяцам · проведите пальцем вправо, чтобы сохранить, или влево, чтобы удалить</string>
+    <string name="swipe_trash_open">Открыть</string>
+    <string name="swipe_trash_label_singular">Фотография в мусорном баке</string>
+    <string name="swipe_trash_label_plural">Фотографии в мусорном баке</string>
+    <string name="swipe_empty_title">Все фотографии проверены</string>
+    <string name="swipe_empty_body">Вернитесь, чтобы выбрать другой месяц, или откройте корзину, чтобы восстановить фотографии.</string>
+    <string name="category_person_format">Человек · %1$d</string>
+    <string name="category_animal_format">Животное · %1$d</string>
+    <string name="category_vehicle_format">Транспортное средство · %1$d</string>
+    <string name="no_photos_available">Нет доступных фотографий</string>
+    <string name="splash_tagline">Умная уборка. Частный по дизайну.</string>
+    <string name="selected_photos_deleted">Выбранные фотографии удалены.</string>
+    <string name="added_to_review_bin">Добавлено в корзину отзывов</string>
+    <string name="photos_deleted_format">Фотографии %1$d удалены.</string>
+    <string name="delete_photos_failed">Не удалось удалить выбранные фотографии.</string>
+    <string name="share_photo">Поделиться фотографией</string>
+    <string name="trash_bin_title_format">Мусорное ведро (%1$s)</string>
+    <string name="trash_bin_title_empty">мусорное ведро</string>
+    <string name="trash_restore_hint">Нажмите, чтобы восстановить фотографии</string>
+    <string name="trash_empty_action">Удалить все в корзину</string>
+    <string name="trash_restored">Фотография восстановлена</string>
+    <string name="trash_bin_empty">Мусорное ведро пусто</string>
+    <string name="feature_smart_groups">Смарт-группы</string>
+    <string name="feature_duplicate_photos">Повторяющиеся фотографии</string>
+    <string name="feature_duplicate_videos">Дублирующиеся видео</string>
+    <string name="feature_all_videos">Все видео</string>
+    <string name="feature_screenshots_short">Скриншоты</string>
+    <string name="scan_unavailable">Сканирование недоступно</string>
+    <string name="please_try_again">Пожалуйста, попробуйте еще раз</string>
+    <string name="tool_file_manager">Файловый менеджер</string>
+    <string name="tool_media_compressor">Медиа-компрессор</string>
+    <string name="tool_app_manager">Менеджер приложений</string>
+    <string name="tool_clean_calendar">Чистый календарь</string>
+    <string name="tool_ai_enhancer">Усилитель изображения AI</string>
+    <string name="tool_secret_space">Секретное пространство</string>
+    <string name="tool_speed_test">Тест скорости</string>
+    <string name="compressing">Сжатие…</string>
+    <string name="original_size_format">Оригинал · %1$s</string>
+    <string name="compressed_result_format">Сжатый · %1$s\nСохраненный · %2$s</string>
+    <string name="swipe_grant_access_hint">Предоставьте доступ к мультимедиа из дома для просмотра фотографий</string>
+    <string name="media_item_placeholder">СМИ</string>
+    <string name="selected_image_preview">Предварительный просмотр выбранного изображения</string>
+    <string name="current_photo">Текущее фото</string>
+    <string name="month_cover">Обложка месяца</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Человек · 0</string>
+    <string name="category_animal_zero">Животное · 0</string>
+    <string name="category_vehicle_zero">Транспортное средство · 0</string>
+    <string name="duplicate_photos_page_title">Повторяющиеся фотографии</string>
+    <string name="duplicate_photos_page_subtitle">Найдите точные дубликаты по размеру и размерам файлов, а затем сохраните одну копию.</string>
+    <string name="duplicate_photos_page_badge">Точное совпадение</string>
+    <string name="duplicate_photos_summary_format">Найдены группы %1$d с повторяющимися фотографиями %2$d.</string>
+    <string name="duplicate_photos_empty_title">Повторяющихся фотографий не найдено</string>
+    <string name="duplicate_photos_empty_body">Фотографии с таким же размером и размерами не найдены.</string>
+    <string name="duplicate_videos_page_title">Дублирующиеся видео</string>
+    <string name="duplicate_videos_page_subtitle">Найдите точные дубликаты видео по размеру и продолжительности, а затем сохраните одну копию.</string>
+    <string name="duplicate_videos_page_badge">Точное совпадение</string>
+    <string name="duplicate_videos_summary_format">Найдены группы %1$d с дубликатами видео %2$d.</string>
+    <string name="duplicate_videos_empty_title">Повторяющихся видео не найдено</string>
+    <string name="duplicate_videos_empty_body">Видео такого же размера и продолжительности не найдено.</string>
+    <string name="settings_page_title">Настройки</string>
+    <string name="settings_page_subtitle">Язык, информация о приложении, конфиденциальность и кеш.</string>
+    <string name="settings_language_title">Язык</string>
+    <string name="settings_language_subtitle">Выберите предпочитаемый язык приложения</string>
+    <string name="settings_about_title">О</string>
+    <string name="settings_about_subtitle">Название и версия приложения</string>
+    <string name="settings_about_message_format">Чистый Super AI\nВерсия %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Политика конфиденциальности</string>
+    <string name="settings_privacy_policy_subtitle">Как мы обрабатываем ваши данные</string>
+    <string name="settings_privacy_policy_body">Все сканирование и очистка мультимедиа выполняются локально на вашем устройстве. Мы не загружаем ваши фотографии, видео или контакты на наши серверы. Дополнительная аналитика (если она будет включена позже) будет соответствовать политике магазина. Вы можете в любое время отозвать доступ к мультимедиа в настройках системы.</string>
+    <string name="settings_clear_cache_title">Очистить кэш</string>
+    <string name="settings_clear_cache_subtitle">Бесплатное временное хранилище приложений</string>
+    <string name="settings_clear_cache_confirm">Очистить временные файлы кэша? Ваши фотографии и настройки не будут удалены.</string>
+    <string name="settings_clear_cache_done_format">Очистил кэш %1$s.</string>
+    <string name="language_page_title">Язык приложения</string>
+    <string name="language_page_subtitle">По умолчанию CleanSuper AI использует язык вашего устройства.</string>
+    <string name="language_follow_system_title">Следуйте системному языку</string>
+    <string name="language_follow_system_subtitle_format">Текущий язык устройства: %1$s</string>
+    <string name="month_photo_count_format">%1$d фотографии</string>
+    <string name="review_bin_pending_format">Фотографии %1$d ждут в корзине для отзывов</string>
+    <string name="media_bucket_video">Видео</string>
+    <string name="settings_terms_title">Условия использования</string>
+    <string name="settings_terms_subtitle">Прочтите условия</string>
+    <string name="settings_widget_title">Виджет главного экрана</string>
+    <string name="settings_widget_subtitle">Добавить ярлык очистки</string>
+    <string name="tool_network_traffic">Сетевой трафик</string>
+    <string name="tool_network_traffic_desc">Использование по приложению</string>
+    <string name="tool_battery_info">Информация о батарее</string>
+    <string name="tool_battery_info_desc">Заряд и здоровье</string>
+    <string name="tool_device_info">Информация об устройстве</string>
+    <string name="tool_device_info_desc">Система и Wi-Fi</string>
+    <string name="tool_private_vault">Частное хранилище</string>
+    <string name="tool_private_vault_desc">Скрыть фото и видео</string>
+    <string name="home_more_tools">Дополнительные инструменты</string>
+    <string name="home_battery_info">Батарея</string>
+    <string name="home_device_info">Устройство</string>
+    <string name="home_large_files">Большие файлы</string>
+    <string name="home_cache_cleanup">Очистка кэша</string>
+    <string name="home_network_traffic">Использование данных</string>
+    <string name="home_private_vault">Частное хранилище</string>
+    <string name="home_picture_cleanup">Картинки</string>
+    <string name="home_video_cleanup">Видео</string>
+    <string name="home_audio_cleanup">Аудио</string>
+    <string name="media_loading">Загрузка медиа…</string>
+    <string name="media_loading_hint">Организация ваших файлов. Пожалуйста, подождите.</string>
+    <string name="media_count_summary">Элементы %1$d · %2$s · %3$d выбрано</string>
+    <string name="media_empty_title">Носители не найдены</string>
+    <string name="media_empty_body">В этой категории нет товаров.</string>
+    <string name="media_error_title">Не удалось загрузить носитель</string>
+    <string name="media_access_title">Требуется доступ к хранилищу</string>
+    <string name="media_access_body">Разрешите доступ ко всем файлам в настройках для просмотра этого носителя.</string>
+    <string name="media_delete_title">Удалить выбранные элементы?</string>
+    <string name="media_delete_message">Удалить выбранные элементы %1$d? Android может попросить вас подтвердить.</string>
+    <string name="media_recent_group">В течение 1 месяца</string>
+    <string name="media_older_group">Старше 1 месяца</string>
+    <string name="media_group_summary">%1$d предметы · %2$s</string>
+    <string name="audio_player_unavailable">На этом устройстве аудиоплеер недоступен.</string>
+    <string name="vault_items_summary">%1$d личные вещи</string>
+    <string name="vault_empty_gallery">Ваше личное хранилище пусто. Импортируйте фотографии или видео, чтобы увидеть их здесь.</string>
+    <string name="cache_group_app">Кэш приложения</string>
+    <string name="cache_group_apk">Старые APK-файлы</string>
+    <string name="cache_group_residual">Остаточные файлы</string>
+    <string name="cache_summary">Файлы %1$d · %2$s</string>
+    <string name="cleanup_report_title">Очистка завершена</string>
+    <string name="cleanup_report_freed">Пространство освобождено</string>
+    <string name="cleanup_report_count">%1$d из элементов %2$d удалены.</string>
+    <string name="cleanup_report_other">Очистить другие файлы</string>
+    <string name="cleanup_report_done">Готово</string>
+    <string name="exit_retain_title">Выйти из CleanSuper AI?</string>
+    <string name="exit_retain_message">Добавьте домашний виджет для более быстрой уборки.</string>
+    <string name="exit_retain_confirm_exit">Выход</string>
+    <string name="exit_retain_add">Добавить</string>
+    <string name="exit_retain_feature_cache">Кэш</string>
+    <string name="exit_retain_feature_large">Большие файлы</string>
+    <string name="widget_status_storage">Свободное место</string>
+    <string name="notif_screenshot">Скриншоты</string>
+    <string name="exit_retain_message_existing">Ваш домашний виджет готов к быстрой очистке</string>
+    <string name="notif_cache">Кэш</string>
+    <string name="notif_channel_name">Панель инструментов быстрой очистки</string>
+    <string name="notif_channel_desc">Постоянная панель инструментов для быстрой очистки.</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Очистить напоминания</string>
+    <string name="notif_event_channel_desc">Локальные напоминания после снимков экрана, установки и удаления</string>
+    <string name="notif_event_summary_channel_name">Очистить сводку напоминания</string>
+    <string name="notif_event_screenshot_title">Еще один скриншот? 1 Пришло время очистить скриншоты</string>
+    <string name="notif_event_install_title">Новое приложение переехало, как и кэш. убирать</string>
+    <string name="notif_event_uninstall_title">Удалено успешно! для очистки остатков файлов</string>
+    <string name="notif_clean_reminder_title">Накоплено много мусора. Очистите все сразу.</string>
+    <string name="notif_event_battery_below_50_title">Аккумулятор заряжен более чем наполовину. Позаботьтесь об этом сейчас, оно продлится до тех пор, пока вы не вернетесь домой.</string>
+    <string name="notif_event_battery_below_20_title">Низкий заряд батареи. Хотите знать, кто крадет ваше электричество? Нажмите, чтобы увидеть рейтинг.</string>
+    <string name="notif_event_charging_title">Подключен. Задача на вечер: заправить, затем почистить.</string>
+    <string name="notif_event_charging_full_title">Полностью заряжен и готов к работе. Последняя проверка: убран ли мусор?</string>
+    <string name="notif_event_charging_to_80_title">Финальный спринт составляет 80%. Выгрузите мусор и слегка упакуйте его, чтобы получить полную мощность.</string>
+    <string name="notif_event_charging_disconnect_title">Отключите и отправляйтесь в путь. Не забывайте выбрасывать мусор и оставаться в отличной форме.</string>
+    <string name="notif_event_app_update_title">Пришла новая версия. Всё, что осталось от старой версии, полностью подчищено.</string>
+    <string name="notif_event_network_change_title">Сеть меняется! Просмотр текущего состояния сети 1</string>
+    <string name="notif_event_screen_lock_title">Отложите свой телефон и оставьте его нам. Время отдыха перед экраном = время кормления грудью.</string>
+    <string name="notif_event_screen_on_after_lock_title">Мы встретимся снова, ты застрял? Большая часть этого мусора, попробуйте его вычистить.</string>
+    <string name="notif_event_storage_free_drop_title">Место для хранения изменилось. Давайте посмотрим, что занимает место?</string>
+    <string name="notif_event_scheduled_push_1_title">Мусор, который так долго накапливался, вывозится сразу.</string>
+    <string name="notif_event_scheduled_push_2_title">Батарея уже не такая долговечная, как раньше? Проверьте это.</string>
+    <string name="notif_event_app_inactive_title">Давно не виделись, ждал. Вернитесь и вынесите мусор.</string>
+    <string name="notif_event_scheduled_push_3_title">Доступ к вашим плейлистам одним нажатием — настройте виджет</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Доступ к вашим плейлистам одним нажатием — настройте виджет</item>
+        <item>Упростите задачу с помощью виджета — добавьте ярлык музыки</item>
+        <item>Играйте быстро, не разблокируя — включите виджет на главном экране</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Ты что-то забыл</string>
+    <string name="notif_event_app_background_content">Приходите закончить уборку, чтобы все работало гладко.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Ты что-то забыл</item>
+        <item>Остался один шаг</item>
+        <item>Хорошие новости</item>
+        <item>Ты ушел слишком быстро</item>
+        <item>Не оставляйте мусор на ночь</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Приходите закончить уборку, чтобы все работало гладко.</item>
+        <item>Еще одно касание, чтобы завершить уборку и освободить больше места.</item>
+        <item>Обнаружено свободное пространство — требуйте очистки одним касанием.</item>
+        <item>Ваш телефон может стать еще быстрее — приходите посмотреть оптимизацию.</item>
+        <item>Приходите закончить уборку, чтобы все работало гладко.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Результаты сканирования готовы — мусор занимает место. Очистить сейчас</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Результаты сканирования готовы — мусор занимает место. Очистить сейчас</item>
+        <item>Остался один шаг: вернитесь и мгновенно освободите место.</item>
+        <item>Забыли почистить после сканирования? 10 секунд, чтобы сделать ваш телефон легче.</item>
+        <item>Нежелательная почта все еще находится на вашем телефоне — результаты сохранены. Вернитесь для очистки одним нажатием.</item>
+        <item>Последнее сканирование обнаружило несколько объектов, требующих очистки. Давай закончи это.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Уборка еще не закончена — заканчивайте последний шаг.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Уборка еще не закончена — заканчивайте последний шаг.</item>
+        <item>Уборка прервана: половина пути пройдена. Готово для более легкого телефона.</item>
+        <item>Уборка почти завершена — не оставляйте мусор.</item>
+        <item>Вы ушли с середины уборки — закончите и почувствуйте разницу.</item>
+        <item>Прерванную очистку можно продолжить в любое время. Давай закончи это.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Фотография удалена — благополучно отправлена ​​в корзину.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Фотография удалена — благополучно отправлена ​​в корзину.</item>
+        <item>Только что удалил 1 фото — посмотрите, сколько места вы освободили?</item>
+        <item>Фотография удалена — удалите ее навсегда, чтобы освободить место.</item>
+        <item>Фотография успешно удалена — статус хранилища обновлен.</item>
+        <item>Фото удалено — похожие скриншоты тоже можно удалить.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Видео удалено — освобождается большое пространство.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Видео удалено — освобождается большое пространство.</item>
+        <item>Большое видео удалено — нагрузка на хранилище сразу уменьшилась.</item>
+        <item>Видео удалено — проверьте текущий статус хранилища.</item>
+        <item>Удалить выполнено — очистить корзину, чтобы полностью освободить место.</item>
+        <item>Видео удалено — возможно, есть еще забытые большие видео, которые нужно почистить.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Аудио удалено — накапливаются небольшие файлы. Продолжать идти.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Аудио удалено — накапливаются небольшие файлы. Продолжать идти.</item>
+        <item>Этот звук пропал — можно очистить и другие похожие неиспользуемые файлы.</item>
+        <item>Аудио удалено — сведения о хранилище обновлены. Приходите посмотреть.</item>
+        <item>1 аудиофайл удален — список хранилищ обновлен.</item>
+        <item>Аудио удалено: очистите корзину, чтобы освободить место.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Файл удален — освободилось еще немного места.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Файл удален — освободилось еще немного места.</item>
+        <item>Файл удален — беспорядок больше не будет беспокоить ваш телефон.</item>
+        <item>Файл удален — посмотрите, что еще можно почистить.</item>
+        <item>Файл удален — изменения синхронизированы, статус хранилища обновлен.</item>
+        <item>Этот файл очищен — теперь освобождается место.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Изображение скачано — откройте его и посмотрите.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Изображение скачано — откройте его и посмотрите.</item>
+        <item>Изображение загружено. Удалите дубликаты фотографий из своего альбома, пока вы это делаете.</item>
+        <item>Загрузка завершена — изображение сохранено. Приходите посмотреть похожие фотографии</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Видео скачано — оно не маленькое. Посмотрите, сколько места могут освободить старые видео</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Видео скачано — оно не маленькое. Посмотрите, сколько места могут освободить старые видео</item>
+        <item>Новое видео сохранено — найдите большие видео для удаления и освободите место. Коснись меня</item>
+        <item>Видео занимают много места — мы нашли предметы, которые можно очистить, чтобы облегчить ваш телефон. Нажмите здесь</item>
+        <item>Загрузка завершена! Почистите несколько старых видео и место вернется. Коснись меня</item>
+        <item>Новое видео отсортировано — его легко найти или очистить. Нажмите, чтобы увидеть</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Аудио загружено — наведите порядок в своей музыкальной библиотеке одним касанием. Коснись меня</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Аудио загружено — наведите порядок в своей музыкальной библиотеке одним касанием. Коснись меня</item>
+        <item>Новый звук отсортирован — очистите старый звук, пока вы здесь. Коснись меня</item>
+        <item>Музыкальная библиотека переполнена? Проверьте очищаемый звук. Нажмите здесь</item>
+        <item>Аудио скачано — дедупликация в один тап. Коснитесь меня, чтобы навести порядок</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Новый файл сохранен — очистите старые файлы и освободите место. Нажмите здесь</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Новый файл сохранен — очистите старые файлы и освободите место. Нажмите здесь</item>
+        <item>Загрузка завершена — посмотрите, какие старые файлы можно очистить. Коснись меня</item>
+        <item>Новый файл готов — смарт-архив + очистка. Нажмите на меня, чтобы начать</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Корзина очищена — хранилище обновлено. Проверьте свое последнее место.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Корзина очищена — хранилище обновлено. Проверьте свое последнее пространство.</item>
+        <item>Мусорная корзина опустошена — приходите тщательно очищать остатки.</item>
+        <item>Опорожнено успешно — осталось убрать мусор. Приходите посмотреть.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Очистить сейчас</string>
+    <string name="notif_event_action_open_home">Открыть</string>
+    <string name="notif_event_action_manage">Управление приложениями</string>
+    <string name="notif_event_action_check_battery">Проверьте батарею</string>
+    <string name="notif_event_action_check_network">Проверить сеть</string>
+    <string name="notif_days_unit">день</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Место для хранения изменилось. Давайте посмотрим, что занимает место?</item>
+        <item>Обнаружены пространственные изменения. Может есть какой-то новый хлам, посмотрите?</item>
+        <item>Свободное место переехало. Знаешь, кто это съел? Нажмите, чтобы посмотреть.</item>
+        <item>Пространство тесное? Только что обнаружили изменение, давайте посмотрим на детали.</item>
+        <item>Напоминание о смене места: у вас может накопиться много мусора. Проверить это?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Низкий заряд батареи. Хотите знать, кто крадет ваше электричество? Нажмите, чтобы увидеть рейтинг.</item>
+        <item>Скоро дно. Если вы удалите приложения, которые крадут электроэнергию, вы все равно сможете выжить какое-то время.</item>
+        <item>Батарея разряжена. Удалить несколько фонов лучше, чем ничего не делать.</item>
+        <item>Батарея красная. Вы все еще можете сохранить его, нажать, чтобы открыть и посмотреть.</item>
+        <item>Менее 20% remains. Давайте окажем некоторую энергосберегающую первую помощь и наведем порядок.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Аккумулятор заряжен более чем наполовину. Позаботьтесь об этом сейчас, оно продлится до тех пор, пока вы не вернетесь домой.</item>
+        <item>Аккумулятор заряжен более чем наполовину. Ухаживать за аккумулятором теперь гораздо проще, чем ждать до 20%.</item>
+        <item>Батарея наполовину села. Как долго это может продолжаться? Нажмите, чтобы посмотреть.</item>
+        <item>Аккумулятор заряжен более чем наполовину. Пришло время позаботиться о бэкенде, не ждите, пока он занервничает.</item>
+        <item>Половина аккумулятора осталась. Устраните крупных, жаждущих власти игроков и сделайте второй тайм более стабильным.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Финальный спринт составляет 80%. Выгрузите мусор и слегка упакуйте его, чтобы получить полную мощность.</item>
+        <item>Еще 20% s не хватает полной зарядки. Перестаньте пялиться на экран и позвольте нам позаботиться о мусоре.</item>
+        <item>80%: В шаге от совершенства. Нажмите один раз, и оно полностью исчезнет, ​​когда аккумулятор будет полностью заряжен.</item>
+        <item>80%, a хороший аккумулятор для хорошего мобильника. Убираете раунд, пока он горячий?</item>
+        <item>Нам переданы последние 20% i. Вы смотрите на батарею, а мы убираем мусор.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Полностью заряжен и готов к работе. Последняя проверка: убран ли мусор?</item>
+        <item>После зарядки ощущение ритуала полное. Как насчет того, чтобы вынести мусор в память об этом?</item>
+        <item>100%, sтаблица сегодня. Еще один раунд, и все будет безупречно.</item>
+        <item>100%. Последний шаг перед отключением: вынести мусор, тридцать секунд.</item>
+        <item>Закончил на полную мощность. Последняя уборка, идеально.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Сеть меняется! Просмотр текущего состояния сети 1</item>
+        <item>Дезертирство сети. Не смотрите на сигнал во время очистки, просто нажмите на него и сканируйте.</item>
+        <item>Не можете открыть страницу? Уборка всегда онлайн.</item>
+        <item>Вы можете работать в автономном режиме, и ваш мусор можно очистить прямо сейчас.</item>
+        <item>Если сигнала нет, данные для очистки не требуются, просто нажмите.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Подключен. Сегодняшняя задача: заправить, затем почистить.</item>
+        <item>Вы отдыхаете, он заряжается. Пусть и мусор убирает.</item>
+        <item>За время зарядки достаточно вынести накопившийся за долгое время мусор.</item>
+        <item>Только когда электричество будет подключено, персонал за кулисами сможет свободно работать.</item>
+        <item>Немного нагревается во время зарядки? Очистка фона может снизить температуру.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Отключите и отправляйтесь в путь. Не забывайте выбрасывать мусор и оставаться в отличной форме.</item>
+        <item>После окончания зарядки собирайтесь и отправляйтесь в путь. Просто почистите его и будет идеально.</item>
+        <item>Полностью заряжен и готов к использованию. Убираем мусор плавно, недостатков сегодня нет.</item>
+        <item>Зарядка заканчивается. Следующее пространство нужно очищать и улучшать по одному уровню за раз.</item>
+        <item>Не останавливайтесь на отключениях электроэнергии. Осталось одно: уборка.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Мы встретимся снова, ты застрял? Большая часть этого мусора, попробуйте его вычистить.</item>
+        <item>Разблокировано? Не открывайте сначала другие приложения и очистите корзину в течение тридцати секунд.</item>
+        <item>Первое, что нужно разблокировать, — это мы. Уберите мусор, и он полюбит вас еще больше.</item>
+        <item>Тридцать секунд после разблокировки. Самое ценное использование: уборка мусора.</item>
+        <item>Ваш мобильный телефон сказал: Серверная часть немного заблокирована, не могли бы вы мне помочь?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Отложите свой телефон и оставьте его нам. Время отдыха перед экраном = время кормления грудью.</item>
+        <item>Прекращение работы не означает прекращение работы. Я преподнесу тебе сюрприз, когда в следующий раз включу экран.</item>
+        <item>Тихо поправляется, отдыхая на экране. Нажмите, и мы сделаем все остальное.</item>
+        <item>И последнее, прежде чем блокировать экран: нажмите «Очистить». Завтра утром новый образ.</item>
+        <item>Экран темнеет. Принимайте меры сейчас и увидите результаты завтра.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Новое приложение переехало, как и кэш. убирать</item>
+        <item>Мы понимаем радость установки нового приложения. Просто тайник будет потихоньку накапливаться.</item>
+        <item>Новое приложение? Кэш тоже здесь, очистите его одним кликом.</item>
+        <item>Приходит новое и уходит старое. Часто очищайте его и устанавливайте по своему усмотрению.</item>
+        <item>Еще один? Пространство незаметно уменьшается, придите и приберитесь.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Удалено успешно! для очистки остатков файлов</item>
+        <item>Удалил, но не почистил. Нажмите, чтобы закончить.</item>
+        <item>Приложение удалено, но хвост остался. Наведите порядок одним щелчком мыши и попрощайтесь раз и навсегда.</item>
+        <item>Не пропустите второй шаг: удалите приложение + очистите остатки. Один щелчок и готово.</item>
+        <item>Остаток съест половину освободившегося места. Глубокое сканирование и очистка всего.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>Пришла новая версия. Всё, что осталось от старой версии, полностью подчищено.</item>
+        <item>+1 за версию, +1 за кэш, за глубокое сканирование.</item>
+        <item>Обновление завершено, и оставшиеся установочные пакеты можно очистить одним щелчком мыши.</item>
+        <item>Обновление завершено, давайте подведем итоги. Убери это, и я возьму на себя дело.</item>
+        <item>Каждое обновление оставляет старые файлы и быстро с ними справляется.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Еще один скриншот? 1 Пришло время убрать скриншоты</item>
+        <item>Нашел новый скриншот, нажмите, чтобы просмотреть и очистить его~</item>
+        <item>Скриншотов становится все больше и больше, очистка одним щелчком мыши поможет вам освободить место.</item>
+        <item>Скриншот сделан удачно, дубликаты и размытия можно отфильтровать одним кликом.</item>
+        <item>В базу данных добавляются новые скриншоты, а дубликаты изображений ставятся в очередь на удаление одним кликом.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Накоплено много мусора. Очистите все сразу.</item>
+        <item>Последняя очистка %1$d дней назад. Нажмите, чтобы обработать сейчас.</item>
+        <item>Меня не было здесь несколько дней, так что я приберусь и налегке вернусь на поле боя.</item>
+        <item>Клиринговая квота сегодня не использована. Я уточню это, когда вернусь.</item>
+        <item>Кэш заполняется, ждем, пока вы его проверите</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Давно не виделись, ждал. Вернитесь и вынесите мусор.</item>
+        <item>Не виделись несколько дней. Мусору нет покоя. Вернитесь и подметите это.</item>
+        <item>Кэш поставлен в очередь. Нажмите, и они исчезнут.</item>
+        <item>Мусор занят, пока вас нет. Опорожните одним щелчком мыши и почувствуйте себя свежим, как никогда.</item>
+        <item>Назад? Сначала очистите мусор. Через тридцать секунд телефон становится легким, как новый.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Мусор, который так долго накапливался, вывозится сразу.</item>
+        <item>Время навести порядок. Сегодняшний мусор ждет, пока вы нажмете на него.</item>
+        <item>Сегодня прибыл выпуск Space Daily. Уберите и держите свет.</item>
+        <item>Некоторые файлы намного больше, чем вы думаете, взгляните</item>
+        <item>Найдите парня, который взял на себя несколько G, и очистите его.</item>
+        <item>Большой список документов готов, приходите и посмотрите.</item>
+        <item>Кто занимает больше всего места? Раскрывается за одну секунду.</item>
+        <item>Серийная съемка — это здорово, завершение — болезненно. Оставьте это нам.</item>
+        <item>Похожие фотографии выстроены в ряд, вам решать, какую оставить</item>
+        <item>Слишком много похожих картинок? Мы поможем вам сравнить и удалить дубликаты одним щелчком мыши.</item>
+        <item>Кэшированные офлайн-видео следует очистить.</item>
+        <item>Оставшийся звук также будет очищен.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Батарея уже не такая долговечная, как раньше? Проверьте это.</item>
+        <item>Кто ворует ваше электричество? Вы узнаете, как только посмотрите.</item>
+        <item>Их отключение продлит срок службы батареи.</item>
+        <item>Некоторые приложения установлены, но никогда не используются. Посмотрите, какие они?</item>
+        <item>Хранить приложения, которыми вы не пользуетесь, тоже бремя, список составлен.</item>
+        <item>Что касается конфиденциальности, то чем раньше с этим разберутся, тем лучше.</item>
+        <item>Спрячьте важное и избавьтесь от ненужного. позволь мне помочь тебе</item>
+        <item>Куда идет трафик? Узнайте, кто этим пользуется.</item>
+        <item>Детали дорожного движения готовы и понятны с первого взгляда.</item>
+        <item>В фоновом режиме работает приложение, тайно подключающееся к Интернету.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} мусора — очистите его одним нажатием</string>
+    <string name="notif_scheduled_large_files">{total} больших файлов — очистите их с легкостью</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} группы повторяющихся фотографий — сохранить {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} похожих фотографий – выберите, что удалить</string>
+    <string name="notif_scheduled_videos">{total} видео — удалите {n}, чтобы освободить место.</string>
+    <string name="notif_scheduled_audio">{total} аудиофайлов — пора навести порядок</string>
+    <string name="notif_scheduled_apps">{size} используется простаивающими приложениями: {idle}</string>
+    <string name="notif_scheduled_data">{back} данных, используемых в фоновом режиме</string>
+    <string name="app_manager_uninstall_selected">Удалить выбранные</string>
+    <string name="app_manager_uninstall_selected_count">Удалить выбранные (%1$d)</string>
+    <string name="cache_removable">Съемный</string>
+    <string name="cache_clean_selected">Удалить кеш</string>
+    <string name="cache_clean_selected_summary">Очистите %1$s (%2$d)</string>
+</resources>

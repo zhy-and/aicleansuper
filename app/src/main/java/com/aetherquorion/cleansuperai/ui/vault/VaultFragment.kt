@@ -58,12 +58,12 @@ class VaultFragment : Fragment() {
         val uris = picked.distinct()
         if (uris.isEmpty()) return@registerForActivityResult
         viewLifecycleOwner.lifecycleScope.launch {
-            status.text = "Importing…"
+            status.text = getString(R.string.vlt_importing)
             val results = withContext(Dispatchers.IO) { uris.map { VaultFileRepository.importUri(requireContext(), it) } }
             val imported = results.count { it.imported }
             val kept = results.count { it.imported && !it.originalRemoved }
             render()
-            status.text = "Imported $imported files" + if (kept > 0) "; $kept originals remain on device" else ""
+            status.text = getString(R.string.vlt_imported, imported) + if (kept > 0) getString(R.string.vlt_originals_remain, kept) else ""
         }
     }
 
@@ -74,14 +74,14 @@ class VaultFragment : Fragment() {
             setPadding(dp(20), dp(12), dp(20), dp(16))
             setBackgroundColor(ContextCompat.getColor(ctx, R.color.bg_primary))
         }
-        root.addView(TopFilterUi.toolbar(ctx, "Private vault") { VaultSession.lock(); parentFragmentManager.popBackStack() })
+        root.addView(TopFilterUi.toolbar(ctx, getString(R.string.tool_private_vault)) { VaultSession.lock(); parentFragmentManager.popBackStack() })
         val summary = LinearLayout(ctx).apply {
             gravity = Gravity.CENTER_VERTICAL
             layoutParams = LinearLayout.LayoutParams(-1, dp(48)).apply { topMargin = dp(10) }
         }
         status = ParityUi.status(ctx).apply { layoutParams = LinearLayout.LayoutParams(0, -2, 1f) }
         summary.addView(status)
-        selectAll = TopFilterUi.label(ctx, "Select all").apply {
+        selectAll = TopFilterUi.label(ctx, getString(R.string.vlt_select_all)).apply {
             setPadding(dp(12), 0, dp(12), 0)
             background = TopFilterUi.surface(ctx)
             visibility = View.GONE
@@ -92,7 +92,7 @@ class VaultFragment : Fragment() {
         }
         summary.addView(selectAll, LinearLayout.LayoutParams(-2, dp(36)))
         root.addView(summary)
-        importButton = ParityUi.button(ctx, ParityUi.ButtonKind.PRIMARY).apply { text = "Import photos or videos"; setOnClickListener { openPicker() } }
+        importButton = ParityUi.button(ctx, ParityUi.ButtonKind.PRIMARY).apply { text = getString(R.string.vlt_import_media); setOnClickListener { openPicker() } }
         list = RecyclerView(ctx).apply {
             layoutManager = GridLayoutManager(ctx, if (resources.configuration.screenWidthDp >= 430) 4 else 3)
             adapter = mediaAdapter
@@ -111,8 +111,8 @@ class VaultFragment : Fragment() {
             addView(list, FrameLayout.LayoutParams(-1, -1))
             addView(emptyView, FrameLayout.LayoutParams(-1, -1))
         })
-        restoreButton = ParityUi.button(ctx).apply { text = "Restore"; setOnClickListener { restore() } }
-        deleteButton = ParityUi.button(ctx, ParityUi.ButtonKind.DANGER).apply { text = "Delete"; setOnClickListener { delete() } }
+        restoreButton = ParityUi.button(ctx).apply { text = getString(R.string.vlt_restore); setOnClickListener { restore() } }
+        deleteButton = ParityUi.button(ctx, ParityUi.ButtonKind.DANGER).apply { text = getString(R.string.vlt_delete); setOnClickListener { delete() } }
         val actions = LinearLayout(ctx).apply {
             gravity = Gravity.CENTER
             layoutParams = LinearLayout.LayoutParams(-1, dp(64)).apply { bottomMargin = dp(12) }
@@ -153,8 +153,8 @@ class VaultFragment : Fragment() {
         firstPin = null
         galleryRoot.visibility = View.GONE
         pinScreen.visibility = View.VISIBLE
-        pinScreen.showStep(if (setup) "Set vault PIN" else "Enter PIN",
-            "Uninstalling the app will delete vault files.")
+        pinScreen.showStep(if (setup) getString(R.string.vlt_set_pin) else getString(R.string.vlt_enter_pin),
+            getString(R.string.vlt_warning))
         pinScreen.setBackClick { parentFragmentManager.popBackStack() }
         pinScreen.setBiometricClick(if (!setup && canUseBiometrics()) ({ offerBiometric() }) else null)
     }
@@ -167,17 +167,17 @@ class VaultFragment : Fragment() {
             val first = firstPin
             if (first == null) {
                 firstPin = pin
-                pinScreen.showStep("Confirm PIN", "Uninstalling the app will delete vault files.")
+                pinScreen.showStep(getString(R.string.vlt_confirm_pin), getString(R.string.vlt_warning))
             } else if (first == pin && VaultAuth.setPin(pin)) {
                 unlockGallery()
             } else {
                 firstPin = null
-                pinScreen.showStep("Set vault PIN", "Uninstalling the app will delete vault files.", "PINs did not match")
+                pinScreen.showStep(getString(R.string.vlt_set_pin), getString(R.string.vlt_warning), getString(R.string.vlt_pin_mismatch))
             }
         } else if (VaultAuth.verifyPin(pin)) {
             unlockGallery()
         } else {
-            pinScreen.showStep("Enter PIN", "Uninstalling the app will delete vault files.", "Incorrect PIN")
+            pinScreen.showStep(getString(R.string.vlt_enter_pin), getString(R.string.vlt_warning), getString(R.string.vlt_pin_wrong))
         }
     }
 
@@ -198,8 +198,8 @@ class VaultFragment : Fragment() {
                 }
             })
         prompt.authenticate(BiometricPrompt.PromptInfo.Builder()
-            .setTitle("Unlock private vault")
-            .setNegativeButtonText("Use PIN")
+            .setTitle(getString(R.string.vlt_unlock))
+            .setNegativeButtonText(getString(R.string.vlt_use_pin))
             .build())
     }
 
@@ -207,12 +207,12 @@ class VaultFragment : Fragment() {
         if (!VaultSession.isUnlocked()) return
         importButton.isEnabled = true
         items = VaultFileRepository.listExisting(requireContext())
-        status.text = "${items.size} items · ${Formatter.formatShortFileSize(requireContext(), items.sumOf { it.sizeBytes })}"
+        status.text = getString(R.string.vault_items_summary, items.size) + " · " + Formatter.formatShortFileSize(requireContext(), items.sumOf { it.sizeBytes })
         emptyView.visibility = if (items.isEmpty()) View.VISIBLE else View.GONE
         list.visibility = if (items.isEmpty()) View.GONE else View.VISIBLE
         selected.retainAll(items.map { it.id }.toSet())
         selectAll.visibility = if (items.isEmpty()) View.GONE else View.VISIBLE
-        selectAll.text = if (selected.size == items.size) "Deselect all" else "Select all"
+        selectAll.text = if (selected.size == items.size) getString(R.string.vlt_deselect_all) else getString(R.string.vlt_select_all)
         mediaAdapter.submitList(items.map { item ->
             DisplayMediaItem(
                 stableId = stableIdFor(item),
@@ -257,12 +257,12 @@ class VaultFragment : Fragment() {
     private fun restore() {
         if (!VaultSession.isUnlocked()) return
         val targets = selectedItems()
-        AlertDialog.Builder(requireContext()).setMessage("Restore ${targets.size} files to Pictures/PurGuClean?")
+        AlertDialog.Builder(requireContext()).setMessage(getString(R.string.vlt_restore_confirm, targets.size))
             .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton("Restore") { _, _ ->
+            .setPositiveButton(getString(R.string.vlt_restore)) { _, _ ->
                 viewLifecycleOwner.lifecycleScope.launch {
                     val count = withContext(Dispatchers.IO) { VaultFileRepository.restoreItems(requireContext(), targets) }
-                    selected.clear(); render(); status.text = "Restored $count of ${targets.size} files"
+                    selected.clear(); render(); status.text = getString(R.string.vlt_restored_count, count, targets.size)
                 }
             }.show()
     }
@@ -270,12 +270,21 @@ class VaultFragment : Fragment() {
     private fun delete() {
         if (!VaultSession.isUnlocked()) return
         val targets = selectedItems()
-        AlertDialog.Builder(requireContext()).setMessage("Permanently delete ${targets.size} private files?")
+        AlertDialog.Builder(requireContext()).setMessage(getString(R.string.vlt_delete_confirm, targets.size))
             .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton("Delete") { _, _ ->
+            .setPositiveButton(getString(R.string.vlt_delete)) { _, _ ->
                 viewLifecycleOwner.lifecycleScope.launch {
-                    withContext(Dispatchers.IO) { VaultFileRepository.deleteItems(requireContext(), targets) }
+                    val result = withContext(Dispatchers.IO) {
+                        VaultFileRepository.deleteItems(requireContext(), targets)
+                    }
                     selected.clear(); render()
+                    if (result.deleted > 0) {
+                        (activity as? com.aetherquorion.cleansuperai.MainActivity)?.openDetail(
+                            com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                                getString(R.string.tool_private_vault),
+                                com.aetherquorion.cleansuperai.ui.flow.CleanupResult(
+                                    targets.size, result.deleted, result.freedBytes)), "cleanup_report")
+                    }
                 }
             }.show()
     }

@@ -27,6 +27,6 @@
     <string name="notif_junk">Rifiuti</string>
     <string name="notif_apps">App</string>
     <string name="notif_clean_now">Pulisci adesso</string>
-    <string name="notif_speed_unit">KB/s</string>
     <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Fatto</string>
 </resources>

@@ -354,6 +354,7 @@ class CategoryMediaFragment : Fragment() {
     }
 
     private fun showReport(attempted: List<MediaItem>, deleted: List<MediaItem>) {
+        if (deleted.isEmpty()) return
         (activity as? MainActivity)?.openDetail(CleanupReportFragment.newInstance(
             getString(titleRes()), CleanupResult(attempted.size, deleted.size, deleted.sumOf { it.size })
         ), "cleanup_report")

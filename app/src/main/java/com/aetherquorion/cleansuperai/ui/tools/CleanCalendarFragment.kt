@@ -215,6 +215,13 @@ class CleanCalendarFragment : Fragment() {
                 Toast.LENGTH_SHORT,
             ).show()
             loadEvents()
+            if (deleted > 0) {
+                (activity as? com.aetherquorion.cleansuperai.MainActivity)?.openDetail(
+                    com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                        getString(R.string.tool_clean_calendar),
+                        com.aetherquorion.cleansuperai.ui.flow.CleanupResult(ids.size, deleted, -1L)),
+                    "cleanup_report")
+            }
         }
     }
 }

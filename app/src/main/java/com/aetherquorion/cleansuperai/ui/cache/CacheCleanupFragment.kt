@@ -43,7 +43,9 @@ class CacheCleanupFragment : Fragment() {
         }
         super.onDestroyView()
     }
-    private data class Candidate(val file: File, val kind: CacheKind, val size: Long)
+    private data class Candidate(val file: File, val kind: CacheKind, val size: Long,
+        val name: String = file.name, val packageName: String? = null,
+        val files: List<File> = listOf(file))
     private var candidates = emptyList<Candidate>()
     private val selected = mutableSetOf<String>()
     private var scanned = false
@@ -56,7 +58,7 @@ class CacheCleanupFragment : Fragment() {
     private val listAdapter = CacheListAdapter(::toggleGroup, ::toggleGroupSelection, ::toggleEntry)
     private lateinit var delete: Button
     private val access = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        if (hasAccess()) scan() else status.text = "All files access is required"
+        if (hasAccess()) scan() else status.setText(R.string.cache_access_required)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, state: Bundle?): View {
@@ -66,7 +68,7 @@ class CacheCleanupFragment : Fragment() {
             setPadding(dp(20), dp(12), dp(20), dp(16))
             setBackgroundColor(ContextCompat.getColor(context, R.color.bg_primary))
         }
-        root.addView(TopFilterUi.toolbar(context, "Cache cleanup") { parentFragmentManager.popBackStack() })
+        root.addView(TopFilterUi.toolbar(context, getString(R.string.home_cache_cleanup)) { parentFragmentManager.popBackStack() })
         root.addView(ImageView(context).apply {
             setImageResource(R.drawable.purgu_cache_bg)
             layoutParams = LinearLayout.LayoutParams(dp(112), dp(112)).apply {
@@ -83,7 +85,7 @@ class CacheCleanupFragment : Fragment() {
         }
         root.addView(removable)
         root.addView(TextView(context).apply {
-            text = "Removable cache"
+            setText(R.string.cache_removable)
             textSize = 16f
             gravity = Gravity.CENTER
             setTextColor(ContextCompat.getColor(context, R.color.text_primary))
@@ -101,7 +103,7 @@ class CacheCleanupFragment : Fragment() {
         }
         root.addView(list)
         delete = ParityUi.button(context, ParityUi.ButtonKind.PRIMARY).apply {
-            text = "Clean selected"
+            setText(R.string.cache_clean_selected)
             layoutParams = LinearLayout.LayoutParams(-1, dp(64)).apply {
                 leftMargin = dp(28); rightMargin = dp(28); bottomMargin = dp(12)
             }
@@ -127,25 +129,38 @@ class CacheCleanupFragment : Fragment() {
     private fun scan() {
         if (scanned) return
         scanned = true
-        status.text = "Scanning…"
+        status.setText(R.string.scan_button_running)
         progress.visibility = View.VISIBLE
+        val context = requireContext().applicationContext
         viewLifecycleOwner.lifecycleScope.launch {
             candidates = withContext(Dispatchers.IO) {
-                val ownCache = sequenceOf(requireContext().cacheDir, requireContext().externalCacheDir)
-                    .filterNotNull().filter { it.exists() }
-                    .flatMap { it.walkTopDown().filter(File::isFile) }
-                    .map { Candidate(it, CacheKind.APP_CACHE, it.length()) }
+                val ownFiles = sequenceOf(context.cacheDir, context.externalCacheDir)
+                    .filterNotNull().filter(File::isDirectory)
+                    .flatMap { it.walkTopDown().filter(File::isFile) }.distinctBy(File::getAbsolutePath).toList()
+                val ownCache = if (ownFiles.isEmpty()) emptyList() else listOf(Candidate(
+                    context.cacheDir, CacheKind.APP_CACHE, ownFiles.sumOf(File::length),
+                    context.applicationInfo.loadLabel(context.packageManager).toString(),
+                    context.packageName, ownFiles))
                 val otherCaches = File(Environment.getExternalStorageDirectory(), "Android/data")
                     .listFiles().orEmpty().asSequence()
-                    .map { File(it, "cache") }
-                    .filter { it.isDirectory && it.canRead() }
-                    .flatMap { it.walkTopDown().filter(File::isFile) }
-                    .map { Candidate(it, CacheKind.APP_CACHE, it.length()) }
+                    .filter(File::isDirectory)
+                    .mapNotNull { appDir ->
+                        val cacheDir = File(appDir, "cache")
+                        if (!cacheDir.isDirectory || !cacheDir.canRead()) return@mapNotNull null
+                        val appInfo = runCatching { context.packageManager.getApplicationInfo(appDir.name, 0) }.getOrNull()
+                            ?: return@mapNotNull null
+                        val files = cacheDir.walkTopDown().filter(File::isFile).toList()
+                        if (files.isEmpty() || appDir.name == context.packageName) return@mapNotNull null
+                        Candidate(cacheDir, CacheKind.APP_CACHE, files.sumOf(File::length),
+                            appInfo.loadLabel(context.packageManager).toString(), appDir.name, files)
+                    }
                 val shared = Environment.getExternalStorageDirectory().walkTopDown()
-                    .onEnter { it.canRead() && !it.name.startsWith('.') }
+                    .onEnter { it.canRead() && !it.name.startsWith('.') &&
+                        it.absolutePath != File(Environment.getExternalStorageDirectory(), "Android/data").absolutePath }
                     .filter(File::isFile)
                     .mapNotNull { file -> classifyCacheCandidate(file.name)?.let { Candidate(file, it, file.length()) } }
-                (ownCache + otherCaches + shared).distinctBy { it.file.absolutePath }.toList()
+                (ownCache.asSequence() + otherCaches + shared).distinctBy { it.file.absolutePath }
+                    .sortedWith(compareBy<Candidate> { it.kind }.thenByDescending { it.size }).toList()
             }
             progress.visibility = View.GONE
             selected.addAll(candidates.filter { it.kind == CacheKind.APP_CACHE }.map { it.file.absolutePath })
@@ -157,14 +172,16 @@ class CacheCleanupFragment : Fragment() {
 
     private fun render() {
         listAdapter.submit(candidates.map {
-            CacheUiEntry(it.file.absolutePath, it.file.name, it.size, it.kind,
-                it.file.absolutePath in selected)
+            CacheUiEntry(it.file.absolutePath, it.name, it.size, it.kind,
+                it.file.absolutePath in selected, it.packageName)
         }, expanded)
         status.text = getString(R.string.cache_summary, candidates.size,
             Formatter.formatShortFileSize(requireContext(), candidates.sumOf { it.size }))
-        removable.text = Formatter.formatShortFileSize(requireContext(), candidates.sumOf { it.file.length() })
+        removable.text = Formatter.formatShortFileSize(requireContext(), candidates.sumOf { it.size })
         delete.isEnabled = selected.isNotEmpty()
-        delete.text = if (selected.isEmpty()) "Clean selected" else "Clean ${Formatter.formatShortFileSize(requireContext(), candidates.filter { it.file.absolutePath in selected }.sumOf { it.file.length() })} (${selected.size})"
+        delete.text = if (selected.isEmpty()) getString(R.string.cache_clean_selected) else
+            getString(R.string.cache_clean_selected_summary,
+                Formatter.formatShortFileSize(requireContext(), candidates.filter { it.file.absolutePath in selected }.sumOf { it.size }), selected.size)
     }
 
     private fun toggleGroup(kind: CacheKind) {
@@ -182,34 +199,43 @@ class CacheCleanupFragment : Fragment() {
         if (!selected.add(path)) selected.remove(path)
         listAdapter.selectionChanged(path, path in selected)
         delete.isEnabled = selected.isNotEmpty()
+        render()
     }
 
     private fun confirmDelete() {
         com.aetherquorion.cleansuperai.analytics.PathAnalytics.track(requireContext(),
             com.aetherquorion.cleansuperai.analytics.PathEvent.CACHE_CLEAN_CLICK)
         val targets = candidates.filter { it.file.absolutePath in selected }
-        val originalSizes = targets.associate { it.file.absolutePath to it.size }
         AlertDialog.Builder(requireContext())
-            .setMessage("Clean ${targets.size} selected files?")
+            .setMessage(getString(R.string.cache_confirm_clean, targets.size))
             .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton("Clean") { _, _ ->
+            .setPositiveButton(R.string.cache_clean_action) { _, _ ->
                 ScanPendingPushState.clearScanDoneUncleaned(requireContext(), "cache_clean_clicked")
                 viewLifecycleOwner.lifecycleScope.launch {
                     val deleted = withContext(Dispatchers.IO) {
                         LocalPushSelfChangeGuard.suppress(15_000L)
-                        targets.filter { it.file.delete() }
+                        targets.map { target ->
+                            target.files.forEach(File::delete)
+                            target.file.absolutePath to target.files.filter(File::exists)
+                        }
                     }
-                    val paths = deleted.map { it.file.absolutePath }.toSet()
-                    candidates = candidates.filterNot { it.file.absolutePath in paths }
-                    selected.removeAll(paths)
+                    val remainingByPath = deleted.toMap()
+                    val removed = targets.count { remainingByPath[it.file.absolutePath].isNullOrEmpty() }
+                    val freedBytes = targets.sumOf { target ->
+                        target.size - remainingByPath[target.file.absolutePath].orEmpty().sumOf(File::length)
+                    }
+                    candidates = candidates.mapNotNull { candidate ->
+                        val remaining = remainingByPath[candidate.file.absolutePath] ?: return@mapNotNull candidate
+                        if (remaining.isEmpty()) null else candidate.copy(files = remaining, size = remaining.sumOf(File::length))
+                    }
+                    selected.removeAll(targets.map { it.file.absolutePath }.toSet())
                     render()
-                    status.text = "Cleaned ${deleted.size} of ${targets.size} files"
-                    if (deleted.isNotEmpty()) CleanReminderState.markCleaned(requireContext())
+                    status.text = getString(R.string.cache_clean_result, removed, targets.size)
+                    if (freedBytes > 0L) CleanReminderState.markCleaned(requireContext())
                     com.aetherquorion.cleansuperai.analytics.PathAnalytics.track(requireContext(),
                         com.aetherquorion.cleansuperai.analytics.PathEvent.CACHE_RESULT_PAGE)
-                    (activity as? MainActivity)?.openDetail(CleanupReportFragment.newInstance(
-                        "Cache cleanup", CleanupResult(targets.size, deleted.size,
-                            deleted.sumOf { originalSizes[it.file.absolutePath] ?: 0L })
+                    if (freedBytes > 0L) (activity as? MainActivity)?.openDetail(CleanupReportFragment.newInstance(
+                        getString(R.string.home_cache_cleanup), CleanupResult(targets.size, removed, freedBytes)
                     ), "cleanup_report")
                 }
             }.show()

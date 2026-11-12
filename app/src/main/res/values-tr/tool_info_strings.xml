@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Sıcaklık</string>
+    <string name="sys_voltage">Gerilim</string>
+    <string name="sys_current">Elektrik Akımı</string>
+    <string name="sys_health">Sağlık</string>
+    <string name="sys_type">Pil türü</string>
+    <string name="sys_capacity">Pil kapasitesi</string>
+    <string name="sys_charging">şarj oluyor</string>
+    <string name="sys_full">tam dolu</string>
+    <string name="sys_good">İyi</string>
+    <string name="sys_overheat">Aşırı ısınma</string>
+    <string name="sys_dead">Ölü</string>
+    <string name="sys_over_voltage">Aşırı voltaj</string>
+    <string name="sys_cold">Soğuk</string>
+    <string name="sys_unknown">bilinmiyor</string>
+    <string name="sys_model">Modeli:</string>
+    <string name="sys_brand">Marka:</string>
+    <string name="sys_manufacturer">Üretici:</string>
+    <string name="sys_wifi_name">İsim:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Hız:</string>
+    <string name="traffic_month">Bu Ay</string>
+    <string name="traffic_30_days">30 Gün</string>
+    <string name="traffic_24_hours">24 Saat</string>
+    <string name="traffic_mobile">Mobil</string>
+    <string name="traffic_wifi">WİFİ</string>
+    <string name="traffic_apps">Uygulamalar</string>
+</resources>

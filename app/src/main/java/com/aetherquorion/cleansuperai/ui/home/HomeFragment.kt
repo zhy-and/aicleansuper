@@ -1,20 +1,21 @@
 package com.aetherquorion.cleansuperai.ui.home
 
 import android.Manifest
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.animation.ValueAnimator
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Environment
+import android.os.StatFs
 import android.provider.Settings
 import android.text.format.Formatter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.OvershootInterpolator
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
@@ -32,6 +33,7 @@ import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.ads.employment.manager.studio.InformationRecord.referAdaraTranslateLoads
 import com.aetherquorion.cleansuperai.data.model.MediaScanSummary
 import com.aetherquorion.cleansuperai.data.model.SimilarMediaMode
+import com.aetherquorion.cleansuperai.data.model.StorageOverview
 import com.aetherquorion.cleansuperai.databinding.FragmentHomeBinding
 import com.aetherquorion.cleansuperai.databinding.ViewHomeFeatureCardBinding
 import com.aetherquorion.cleansuperai.ui.clean.CleanCenterFragment
@@ -51,17 +53,17 @@ import com.aetherquorion.cleansuperai.ui.tools.NetworkTrafficFragment
 import com.aetherquorion.cleansuperai.ui.vault.VaultFragment
 import com.aetherquorion.cleansuperai.ui.media.CategoryMediaFragment
 import kotlinx.coroutines.launch
-import kotlin.math.roundToInt
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.awaitCancellation
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private var summaryAnimator: ValueAnimator? = null
     private val viewModel: HomeViewModel by viewModels()
     private var permissionDenied = false
     private var notificationPermissionDenied = false
     private var heroAnimated = false
-    private var lastScanStatus: HomeUiState.ScanStatus? = null
+    private var cleanButtonBreath: ValueAnimator? = null
     private var pendingDetailTag: String? = null
     private var pendingDetailFragment: Fragment? = null
     private var permissionDialog: android.app.AlertDialog? = null
@@ -147,6 +149,14 @@ class HomeFragment : Fragment() {
         binding.homeAllFilesTipButton.setOnClickListener(requestAllFiles)
         refreshHomeTips()
         setupCards()
+        styleHomeToolCards()
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                delay(700)
+                startCleanButtonBreath()
+                try { awaitCancellation() } finally { stopCleanButtonBreath() }
+            }
+        }
         val openCleanCenter = View.OnClickListener { openDetail(CleanCenterFragment(), "clean_center") }
         binding.cardAiDriven.setOnClickListener(openCleanCenter)
         binding.btnQuickClean.setOnClickListener(openCleanCenter)
@@ -177,8 +187,7 @@ class HomeFragment : Fragment() {
     }
 
     override fun onDestroyView() {
-        summaryAnimator?.cancel()
-        summaryAnimator = null
+        stopCleanButtonBreath()
         permissionDialog?.dismiss()
         permissionDialog = null
         super.onDestroyView()
@@ -206,24 +215,24 @@ class HomeFragment : Fragment() {
             getString(R.string.feature_similar_title),
             "0",
             getString(R.string.feature_smart_groups),
-            R.drawable.ic_copy,
-            R.drawable.bg_home_tool_icon_orange,
+            R.drawable.ic_home_similar,
+            R.drawable.bg_home_feature_icon_orange,
         )
         configureCard(
             binding.cardDuplicatePhotos,
             getString(R.string.feature_duplicate_photos),
             "0",
             getString(R.string.feature_smart_groups),
-            R.drawable.ic_image,
-            R.drawable.bg_home_tool_icon_blue,
+            R.drawable.ic_home_duplicate,
+            R.drawable.bg_home_feature_icon_blue,
         )
         configureCard(
             binding.cardDuplicateVideos,
             getString(R.string.feature_duplicate_videos),
             "0",
             getString(R.string.count_video_format, 0),
-            R.drawable.ic_video_library,
-            R.drawable.bg_home_tool_icon_green,
+            R.drawable.ic_home_duplicate_videos,
+            R.drawable.bg_home_feature_icon_green,
         )
         configureCard(
             binding.cardAllVideos,
@@ -231,15 +240,15 @@ class HomeFragment : Fragment() {
             "0",
             getString(R.string.em_dash),
             R.drawable.ic_video_library,
-            R.drawable.bg_home_tool_icon_blue,
+            R.drawable.bg_home_feature_icon_blue,
         )
         configureCard(
             binding.cardScreenshots,
             getString(R.string.feature_screenshots_short),
             "0",
             getString(R.string.em_dash),
-            R.drawable.ic_screenshot,
-            R.drawable.bg_home_tool_icon_teal,
+            R.drawable.ic_home_screenshot,
+            R.drawable.bg_home_feature_icon_teal,
         )
         configureCard(
             binding.cardSwipePhotos,
@@ -247,7 +256,7 @@ class HomeFragment : Fragment() {
             null,
             getString(R.string.home_contacts_short_desc),
             R.drawable.ic_contacts,
-            R.drawable.bg_home_tool_icon_pink,
+            R.drawable.bg_home_feature_icon_pink,
         )
 
         binding.cardSimilarPhotos.root.setOnClickListener {
@@ -264,33 +273,33 @@ class HomeFragment : Fragment() {
         binding.cardSwipePhotos.root.setOnClickListener {
             openDetail(ContactsCleanupFragment(), "contacts_cleanup")
         }
-        configureCard(binding.cardBatteryInfo, getString(R.string.home_battery_info), null, "", R.drawable.ic_bolt, R.drawable.bg_home_tool_icon_orange)
-        configureCard(binding.cardDeviceInfo, getString(R.string.home_device_info), null, "", R.drawable.ic_phone, R.drawable.bg_home_tool_icon_blue)
+        configureCard(binding.cardBatteryInfo, getString(R.string.home_battery_info), null, "", R.drawable.ic_home_battery, R.drawable.bg_home_more_icon_battery)
+        configureCard(binding.cardDeviceInfo, getString(R.string.home_device_info), null, "", R.drawable.ic_phone, R.drawable.bg_home_more_icon_device)
         binding.cardBatteryInfo.root.setOnClickListener {
             openDetail(SystemInfoFragment.battery(), "battery_info")
         }
         binding.cardDeviceInfo.root.setOnClickListener {
             openDetail(SystemInfoFragment.device(), "device_info")
         }
-        configureCard(binding.cardLargeFiles, getString(R.string.home_large_files), null, "", R.drawable.ic_list, R.drawable.bg_home_tool_icon_green)
+        configureCard(binding.cardLargeFiles, getString(R.string.home_large_files), null, "", R.drawable.ic_home_large_file, R.drawable.bg_home_more_icon_large_files)
         binding.cardLargeFiles.root.setOnClickListener {
             openDetail(LargeFilesFragment(), "large_files")
         }
-        configureCard(binding.cardCacheCleanup, getString(R.string.home_cache_cleanup), null, "", R.drawable.ic_delete, R.drawable.bg_home_tool_icon_teal)
+        configureCard(binding.cardCacheCleanup, getString(R.string.home_cache_cleanup), null, "", R.drawable.ic_delete, R.drawable.bg_home_more_icon_cache)
         binding.cardCacheCleanup.root.setOnClickListener {
             openDetail(CacheCleanupFragment(), "cache_cleanup")
         }
-        configureCard(binding.cardNetworkTraffic, getString(R.string.home_network_traffic), null, "", R.drawable.ic_chart, R.drawable.bg_home_tool_icon_blue)
+        configureCard(binding.cardNetworkTraffic, getString(R.string.home_network_traffic), null, "", R.drawable.ic_chart, R.drawable.bg_home_more_icon_network)
         binding.cardNetworkTraffic.root.setOnClickListener {
             openDetail(NetworkTrafficFragment(), "network_traffic")
         }
-        configureCard(binding.cardVault, getString(R.string.home_private_vault), null, "", R.drawable.ic_lock, R.drawable.bg_home_tool_icon_pink)
+        configureCard(binding.cardVault, getString(R.string.home_private_vault), null, "", R.drawable.ic_lock, R.drawable.bg_home_more_icon_vault)
         binding.cardVault.root.setOnClickListener {
             openDetail(VaultFragment(), "vault")
         }
-        configureCard(binding.cardPictureCleanup, getString(R.string.home_picture_cleanup), null, "", R.drawable.ic_image, R.drawable.bg_home_tool_icon_pink)
-        configureCard(binding.cardVideoCleanup, getString(R.string.home_video_cleanup), null, "", R.drawable.ic_video_library, R.drawable.bg_home_tool_icon_blue)
-        configureCard(binding.cardAudioCleanup, getString(R.string.home_audio_cleanup), null, "", R.drawable.ic_volume, R.drawable.bg_home_tool_icon_orange)
+        configureCard(binding.cardPictureCleanup, getString(R.string.home_picture_cleanup), null, "", R.drawable.ic_image, R.drawable.bg_home_more_icon_picture)
+        configureCard(binding.cardVideoCleanup, getString(R.string.home_video_cleanup), null, "", R.drawable.ic_video_library, R.drawable.bg_home_more_icon_video)
+        configureCard(binding.cardAudioCleanup, getString(R.string.home_audio_cleanup), null, "", R.drawable.ic_home_audio, R.drawable.bg_home_more_icon_audio)
         binding.cardPictureCleanup.root.setOnClickListener {
             openDetail(CategoryMediaFragment.picture(), "picture_cleanup")
         }
@@ -318,6 +327,54 @@ class HomeFragment : Fragment() {
         card.iconContainer.setBackgroundResource(iconBackgroundRes)
     }
 
+    private fun styleHomeToolCards() {
+        val density = resources.displayMetrics.density
+        fun dp(value: Int) = (value * density).toInt()
+        val quickCards = listOf(binding.cardSimilarPhotos, binding.cardDuplicatePhotos,
+            binding.cardScreenshots, binding.cardDuplicateVideos, binding.cardAllVideos, binding.cardSwipePhotos)
+        quickCards.forEach { card ->
+            (card.root.getChildAt(0) as ViewGroup).setPadding(dp(18), dp(12), dp(12), dp(12))
+            card.iconContainer.layoutParams = card.iconContainer.layoutParams.apply {
+                width = dp(48); height = dp(48)
+            }
+            card.ivFeatureIcon.layoutParams = card.ivFeatureIcon.layoutParams.apply {
+                width = dp(28); height = dp(28)
+            }
+            card.tvFeatureTitle.textSize = 15f
+            card.iconContainer.translationY = dp(2).toFloat()
+            card.tvFeatureTitle.translationY = -dp(6).toFloat()
+        }
+        val moreCards = listOf(binding.cardBatteryInfo, binding.cardDeviceInfo, binding.cardLargeFiles,
+            binding.cardCacheCleanup, binding.cardNetworkTraffic, binding.cardVault,
+            binding.cardPictureCleanup, binding.cardVideoCleanup, binding.cardAudioCleanup)
+        moreCards.forEach { card ->
+            card.iconContainer.translationY = dp(6).toFloat()
+            card.tvFeatureTitle.translationY = -dp(3).toFloat()
+        }
+    }
+
+    private fun startCleanButtonBreath() {
+        if (_binding == null || cleanButtonBreath != null ||
+            (Build.VERSION.SDK_INT >= 26 && !ValueAnimator.areAnimatorsEnabled())) return
+        binding.btnQuickClean.pivotX = 0f
+        cleanButtonBreath = ValueAnimator.ofFloat(1f, 1.09f, 1f).apply {
+            duration = 1600L
+            repeatCount = ValueAnimator.INFINITE
+            interpolator = AccelerateDecelerateInterpolator()
+            addUpdateListener { animator ->
+                val scale = animator.animatedValue as Float
+                _binding?.btnQuickClean?.apply { scaleX = scale; scaleY = scale }
+            }
+            start()
+        }
+    }
+
+    private fun stopCleanButtonBreath() {
+        cleanButtonBreath?.cancel()
+        cleanButtonBreath = null
+        _binding?.btnQuickClean?.apply { scaleX = 1f; scaleY = 1f }
+    }
+
     private fun collectUiState() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -339,31 +396,35 @@ class HomeFragment : Fragment() {
             binding.tvScanSummary.setText(R.string.storage_permission_title)
             binding.tvReclaimValue.text = getString(R.string.em_dash)
             binding.progressScan.isVisible = false
-            binding.scanRing.setIndeterminate(false)
-            binding.scanRing.setProgress(0f)
-            binding.tvScanPercent.isVisible = false
+            val statFs = StatFs(Environment.getDataDirectory().absolutePath)
+            val totalBytes = statFs.totalBytes
+            val availableBytes = statFs.availableBytes
+            val storageOverview = StorageOverview(totalBytes, totalBytes - availableBytes, availableBytes)
+            binding.scanRing.setProgress(storageOverview.availableFraction)
+            binding.tvScanPercent.text = "${storageOverview.availablePercent}%"
+            binding.tvScanPercent.isVisible = true
+            binding.tvStorageLabel.isVisible = true
             return
         }
         when (state.scanStatus) {
             HomeUiState.ScanStatus.IDLE,
             HomeUiState.ScanStatus.SCANNING,
             -> {
-                binding.tvScanSummary.setText(R.string.scan_running_english)
+                binding.tvScanSummary.text =
+                    "${getString(R.string.scan_running_english)} ${state.scanProgress}%"
                 binding.tvReclaimValue.text = getString(R.string.em_dash)
-                binding.progressScan.isVisible = false
-                binding.progressScan.isIndeterminate = true
+                binding.progressScan.isVisible = true
+                binding.progressScan.isIndeterminate = false
+                binding.progressScan.progress = state.scanProgress
                 binding.scanRing.setIndeterminate(true)
                 binding.tvScanPercent.isVisible = false
+                binding.tvStorageLabel.isVisible = false
             }
 
             HomeUiState.ScanStatus.DONE -> {
                 binding.progressScan.isVisible = false
                 binding.progressScan.isIndeterminate = false
-                if (lastScanStatus != HomeUiState.ScanStatus.DONE) {
-                    state.summary?.let(::animateSummary)
-                } else {
-                    state.summary?.let(::renderSummary)
-                }
+                state.summary?.let(::renderSummary)
             }
 
             HomeUiState.ScanStatus.ERROR -> {
@@ -375,16 +436,20 @@ class HomeFragment : Fragment() {
                 binding.scanRing.setIndeterminate(false)
                 binding.scanRing.setProgress(0f)
                 binding.tvScanPercent.isVisible = false
+                binding.tvStorageLabel.isVisible = false
             }
         }
-        lastScanStatus = state.scanStatus
     }
 
     private fun renderSummary(summary: MediaScanSummary) {
+        binding.scanRing.setIndeterminate(false)
+        binding.scanRing.setProgress(summary.storageOverview.availableFraction)
+        binding.tvScanPercent.text = "${summary.storageOverview.availablePercent}%"
+        binding.tvScanPercent.isVisible = true
+        binding.tvStorageLabel.isVisible = true
         val reclaim = Formatter.formatFileSize(requireContext(), summary.estimatedReclaimBytes)
         binding.tvReclaimValue.text = getString(R.string.home_reclaim_compact_format, reclaim)
-        binding.tvScanSummary.text =
-            getString(R.string.home_storage_detail_format, reclaim, summary.mediaItemCount)
+        binding.tvScanSummary.text = getString(R.string.home_pending_items_format, summary.mediaItemCount)
         binding.cardSimilarPhotos.tvFeatureValue.text = summary.similarGroupCount.toString()
         binding.cardSimilarPhotos.tvFeatureCount.text =
             getString(R.string.count_group_format, summary.similarGroupCount)
@@ -400,42 +465,6 @@ class HomeFragment : Fragment() {
         binding.cardScreenshots.tvFeatureValue.text = summary.screenshotCount.toString()
         binding.cardScreenshots.tvFeatureCount.text =
             getString(R.string.count_image_format, summary.screenshotCount)
-    }
-
-    private fun animateSummary(summary: MediaScanSummary) {
-        val currentBinding = _binding ?: return
-        renderSummary(summary)
-        currentBinding.scanRing.setIndeterminate(false)
-        currentBinding.scanRing.setProgress(0f)
-        currentBinding.tvScanPercent.isVisible = true
-        summaryAnimator?.cancel()
-        summaryAnimator =
-            ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 900
-            interpolator = OvershootInterpolator(0.8f)
-            addUpdateListener { animator ->
-                val activeBinding = _binding ?: return@addUpdateListener
-                val progress = animator.animatedValue as Float
-                activeBinding.scanRing.setProgress(progress.coerceIn(0f, 1f))
-                activeBinding.tvScanPercent.text = "${(progress * 100).roundToInt()}%"
-            }
-            addListener(
-                object : AnimatorListenerAdapter() {
-                    override fun onAnimationEnd(animation: Animator) {
-                        if (summaryAnimator === this@apply) {
-                            summaryAnimator = null
-                        }
-                    }
-
-                    override fun onAnimationCancel(animation: Animator) {
-                        if (summaryAnimator === this@apply) {
-                            summaryAnimator = null
-                        }
-                    }
-                },
-            )
-            start()
-        }
     }
 
     private fun animateHeroEntry() {

@@ -27,6 +27,6 @@
     <string name="notif_junk">Sampah</string>
     <string name="notif_apps">Aplikasi</string>
     <string name="notif_clean_now">Bersihkan Sekarang</string>
-    <string name="notif_speed_unit">KB/dtk</string>
     <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Mengerti</string>
 </resources>

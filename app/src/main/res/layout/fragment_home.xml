@@ -78,8 +78,11 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
+                android:background="@drawable/bg_home_tip_icon"
                 android:contentDescription="@null"
-                android:src="@mipmap/iconone" />
+                android:padding="8dp"
+                android:src="@drawable/ic_notifications"
+                app:tint="@color/accent_primary" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -89,16 +92,29 @@
                 android:text="@string/home_tip_notification"
                 android:textColor="#302929"
                 android:textSize="12sp" />
-            <TextView
-                android:id="@+id/homeNotificationTipButton"
+            <FrameLayout
                 android:layout_width="58dp"
                 android:layout_height="27dp"
                 android:layout_marginStart="30dp"
-                android:background="@drawable/bg_home_permission_tip_action"
-                android:gravity="center"
-                android:text="@string/home_tip_notification_action"
-                android:textColor="@android:color/white"
-                android:textSize="12sp" />
+                android:background="@drawable/bg_notif_cta_clip"
+                android:clipToOutline="true"
+                android:outlineProvider="background">
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/anim_notif_cta_scale_green"
+                    android:indeterminateOnly="true" />
+                <TextView
+                    android:id="@+id/homeNotificationTipButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/home_tip_notification_action"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </FrameLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -116,8 +132,11 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
+                android:background="@drawable/bg_home_tip_icon"
                 android:contentDescription="@null"
-                android:src="@mipmap/icontw" />
+                android:padding="8dp"
+                android:src="@drawable/ic_grid"
+                app:tint="@color/accent_primary" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -127,16 +146,29 @@
                 android:text="@string/home_tip_widget"
                 android:textColor="#302929"
                 android:textSize="12sp" />
-            <TextView
-                android:id="@+id/homeWidgetTipButton"
+            <FrameLayout
                 android:layout_width="58dp"
                 android:layout_height="27dp"
                 android:layout_marginStart="30dp"
-                android:background="@drawable/bg_home_permission_tip_action"
-                android:gravity="center"
-                android:text="@string/home_tip_widget_action"
-                android:textColor="@android:color/white"
-                android:textSize="12sp" />
+                android:background="@drawable/bg_notif_cta_clip"
+                android:clipToOutline="true"
+                android:outlineProvider="background">
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/anim_notif_cta_scale_green"
+                    android:indeterminateOnly="true" />
+                <TextView
+                    android:id="@+id/homeWidgetTipButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/home_tip_widget_action"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </FrameLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -154,8 +186,11 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
+                android:background="@drawable/bg_home_tip_icon"
                 android:contentDescription="@null"
-                android:src="@mipmap/iconth" />
+                android:padding="8dp"
+                android:src="@drawable/ic_storage_permission_check"
+                app:tint="@color/accent_primary" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -165,16 +200,29 @@
                 android:text="@string/home_tip_all_files"
                 android:textColor="#302929"
                 android:textSize="12sp" />
-            <TextView
-                android:id="@+id/homeAllFilesTipButton"
+            <FrameLayout
                 android:layout_width="58dp"
                 android:layout_height="27dp"
                 android:layout_marginStart="30dp"
-                android:background="@drawable/bg_home_permission_tip_action"
-                android:gravity="center"
-                android:text="@string/home_tip_all_files_action"
-                android:textColor="@android:color/white"
-                android:textSize="12sp" />
+                android:background="@drawable/bg_notif_cta_clip"
+                android:clipToOutline="true"
+                android:outlineProvider="background">
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/anim_notif_cta_scale_green"
+                    android:indeterminateOnly="true" />
+                <TextView
+                    android:id="@+id/homeAllFilesTipButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/home_tip_all_files_action"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </FrameLayout>
         </LinearLayout>
 
         <FrameLayout
@@ -184,111 +232,27 @@
             android:layout_marginTop="10dp"
             android:visibility="gone" />
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardAiDriven"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?attr/selectableItemBackground"
-            app:cardBackgroundColor="@android:color/transparent"
-            app:cardCornerRadius="28dp"
-            app:cardElevation="0dp"
-            app:strokeWidth="0dp">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_home_hero"
-                android:paddingHorizontal="20dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bg_pill"
-                            android:paddingHorizontal="9dp"
-                            android:paddingVertical="4dp"
-                            android:text="@string/home_cleanup_badge"
-                            android:textColor="@color/accent_primary"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="@string/home_cleanup_library"
-                            android:textColor="@color/text_primary"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="@string/home_quick_summary_body"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <FrameLayout
-                        android:layout_width="92dp"
-                        android:layout_height="88dp"
-                        android:layout_marginStart="12dp">
-
-                        <View
-                            android:layout_width="58dp"
-                            android:layout_height="58dp"
-                            android:layout_gravity="top|end"
-                            android:background="@drawable/bg_home_art_orange" />
-
-                        <View
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:layout_gravity="bottom|start"
-                            android:background="@drawable/bg_home_art_blue" />
-
-                        <View
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/bg_home_art_pink" />
-                    </FrameLayout>
-                </LinearLayout>
-            </FrameLayout>
-        </com.google.android.material.card.MaterialCardView>
 
         <LinearLayout
             android:id="@+id/contentContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:visibility="visible">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAiDriven"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/surface_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/home_scan_green"
                 app:cardCornerRadius="28dp"
                 app:cardElevation="0dp"
                 app:strokeColor="@color/stroke_light"
-                app:strokeWidth="1dp">
+                app:strokeWidth="0dp">
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -300,7 +264,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="136dp"
-                        android:background="@drawable/bg_glow_center" />
+                        android:visibility="gone" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -310,11 +274,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_pill"
+                            android:background="@drawable/bg_home_scan_badge"
                             android:paddingHorizontal="9dp"
                             android:paddingVertical="4dp"
                             android:text="@string/home_cleanup_badge"
-                            android:textColor="@color/accent_primary"
+                            android:textColor="@color/white"
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
@@ -337,7 +301,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:orientation="vertical"
-                                android:paddingEnd="10dp">
+                                android:paddingEnd="2dp">
 
                                 <TextView
                                     android:id="@+id/tvReclaimValue"
@@ -345,7 +309,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
                                     android:text="@string/em_dash"
-                                    android:textColor="@color/accent_primary"
+                                    android:textColor="@color/white"
                                     android:textSize="34sp"
                                     android:textStyle="bold" />
 
@@ -356,7 +320,7 @@
                                     android:layout_marginTop="6dp"
                                     android:maxLines="2"
                                     android:text="@string/home_secure_analysis"
-                                    android:textColor="@color/text_secondary"
+                                    android:textColor="@color/white"
                                     android:textSize="13sp" />
 
                                 <ProgressBar
@@ -365,27 +329,37 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="6dp"
                                     android:layout_marginTop="12dp"
-                                    android:indeterminateTint="@color/accent_secondary"
-                                    android:progressBackgroundTint="@color/surface_dark_secondary"
-                                    android:progressTint="@color/accent_primary"
+                                    android:indeterminateTint="@color/white"
+                                    android:progressBackgroundTint="@color/home_scan_track"
+                                    android:progressTint="@color/white"
                                     android:visibility="gone" />
 
                                 <Button
                                     android:id="@+id/btnQuickClean"
                                     style="@style/Widget.Cleansuperai.Button.Primary"
-                                    android:layout_width="wrap_content"
+                                    app:backgroundTint="@color/white"
+                                    android:textColor="@color/accent_primary"
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="14dp"
+                                    android:layout_marginEnd="28dp"
                                     android:minWidth="0dp"
                                     android:minHeight="42dp"
-                                    android:paddingHorizontal="16dp"
+                                    android:paddingHorizontal="8dp"
+                                    app:icon="@drawable/ic_home_clean_arrow"
+                                    app:iconGravity="textEnd"
+                                    app:iconPadding="4dp"
+                                    app:iconSize="14dp"
+                                    app:iconTint="@color/accent_primary"
+                                    android:singleLine="true"
+                                    android:ellipsize="end"
                                     android:text="@string/home_quick_clean_compact_action"
                                     android:textSize="13sp" />
                             </LinearLayout>
 
                             <FrameLayout
-                                android:layout_width="118dp"
-                                android:layout_height="118dp"
+                                android:layout_width="108dp"
+                                android:layout_height="108dp"
                                 android:layout_marginStart="2dp">
 
                                 <View
@@ -393,29 +367,46 @@
                                     android:layout_height="82dp"
                                     android:layout_gravity="center"
                                     android:alpha="0.9"
-                                    android:background="@drawable/bg_glow_center" />
+                                    android:visibility="gone" />
 
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/bg_scan_ring_backplate" />
+                                    android:visibility="gone" />
 
                                 <com.aetherquorion.cleansuperai.widget.CircularScanView
                                     android:id="@+id/scanRing"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     app:csvIndeterminate="true"
+                                    app:csvStartColor="@color/white"
+                                    app:csvEndColor="@color/home_scan_secondary"
+                                    app:csvTrackColor="@color/home_scan_track"
                                     app:csvStrokeWidth="9dp" />
 
-                                <TextView
-                                    android:id="@+id/tvScanPercent"
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
-                                    android:textColor="@color/accent_primary"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    android:visibility="gone" />
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/tvScanPercent"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:textSize="25sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+                                    <TextView
+                                        android:id="@+id/tvStorageLabel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/widget_status_storage"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:visibility="gone" />
+                                </LinearLayout>
                             </FrameLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -451,14 +442,6 @@
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
                     android:layout_height="112dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_weight="1" />
-
-                <include
-                    android:id="@+id/cardScreenshots"
-                    layout="@layout/view_home_feature_card"
-                    android:layout_width="0dp"
-                    android:layout_height="112dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -471,7 +454,7 @@
                 android:orientation="horizontal">
 
                 <include
-                    android:id="@+id/cardDuplicateVideos"
+                    android:id="@+id/cardScreenshots"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
                     android:layout_height="112dp"
@@ -479,13 +462,26 @@
                     android:layout_weight="1" />
 
                 <include
+                    android:id="@+id/cardDuplicateVideos"
+                    layout="@layout/view_home_feature_card"
+                    android:layout_width="0dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+                <include
                     android:id="@+id/cardAllVideos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
                     android:layout_height="112dp"
-                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
-
                 <include
                     android:id="@+id/cardSwipePhotos"
                     layout="@layout/view_home_feature_card"
@@ -511,21 +507,21 @@
                     android:id="@+id/cardBatteryInfo"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardDeviceInfo"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardLargeFiles"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -538,21 +534,21 @@
                     android:id="@+id/cardCacheCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardNetworkTraffic"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardVault"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -565,20 +561,20 @@
                     android:id="@+id/cardPictureCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardVideoCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardAudioCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>

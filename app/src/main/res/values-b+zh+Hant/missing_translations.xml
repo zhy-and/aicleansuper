@@ -1,0 +1,775 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">首頁</string>
+    <string name="nav_swipe">滑動</string>
+    <string name="nav_compress">壓縮</string>
+    <string name="nav_tools">工具</string>
+    <string name="nav_clean">乾淨</string>
+    <string name="nav_privacy">隱私</string>
+    <string name="nav_profile">公司簡介</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">在本地整理您的照片、影片和聯絡人</string>
+    <string name="home_badge_text">人工智慧清理</string>
+    <string name="home_quick_summary_title">今天的清理技巧</string>
+    <string name="home_quick_summary_body">從螢幕截圖和大影片開始，以最快的速度釋放空間。</string>
+    <string name="home_scan_insight_title">智慧掃描狀態</string>
+    <string name="home_ready_title">4 個強大的清理工具</string>
+    <string name="home_ready_body">在一處管理照片、螢幕截圖、影片和聯絡人。</string>
+    <string name="storage_overview_title">儲存概述</string>
+    <string name="storage_overview_summary">最多可釋放 0.0 GB</string>
+    <string name="storage_overview_detail">已使用 128 GB 中的 85.4 GB</string>
+    <string name="storage_overview_summary_format">最多可釋放%1$s</string>
+    <string name="storage_overview_detail_format">使用%2$s的%1$s</string>
+    <string name="storage_overview_summary_done">最多可釋放 1.8 GB</string>
+    <string name="storage_overview_detail_done">已使用 128 GB 中的 85.4 GB。從您的媒體庫開始。</string>
+    <string name="scan_button_idle">開始掃描</string>
+    <string name="scan_button_running">正在掃描...</string>
+    <string name="scan_status_title">掃描狀態</string>
+    <string name="scan_status_idle">準備掃描</string>
+    <string name="scan_status_running">分析媒體檔案</string>
+    <string name="scan_status_done">掃描完成。清理建議已準備就緒。</string>
+    <string name="scan_status_error">掃描失敗。稍後再試。</string>
+    <string name="scan_status_detail_idle">首先會檢查螢幕截圖、大影片和類似照片。</string>
+    <string name="scan_status_detail_running">本地掃描。您的照片和影片將不會被上傳。</string>
+    <string name="scan_status_detail_midway">分析了螢幕截圖和大視頻。整理類似的照片。</string>
+    <string name="scan_status_detail_done">發現 1.8 GB 需要清理。從螢幕截圖和大影片開始。</string>
+    <string name="scan_status_detail_done_format">找到%1$s來清理。從螢幕截圖和大影片開始。</string>
+    <string name="feature_section_title">基本的清理工具</string>
+    <string name="feature_section_subtitle">第一個版本則聚焦在 4 個最常見的清理任務</string>
+    <string name="feature_similar_title">類似照片</string>
+    <string name="feature_similar_desc">清理類似照片</string>
+    <string name="feature_screenshots_title">螢幕截圖清理</string>
+    <string name="feature_screenshots_desc">清理未使用的螢幕截圖</string>
+    <string name="feature_videos_title">大影片</string>
+    <string name="feature_videos_desc">清理大影片</string>
+    <string name="feature_contacts_title">聯繫清理</string>
+    <string name="feature_contacts_desc">清理重複的聯絡人</string>
+    <string name="feature_similar_space_format">%1$d組</string>
+    <string name="count_placeholder">未掃描</string>
+    <string name="count_similar_done">128 張照片</string>
+    <string name="count_screenshots_done">364 張照片</string>
+    <string name="count_videos_done">12 個視頻</string>
+    <string name="count_contacts_done">9組</string>
+    <string name="recent_section_title">發行說明</string>
+    <string name="recent_section_body">此版本包括 XML 主螢幕結構、媒體權限請求、佔位符掃描流程和結果摘要。接下來可以新增 MediaStore、聯絡人和真實清理功能。</string>
+    <string name="permission_denied_message">需要存取媒體才能開始掃描。</string>
+    <string name="mock_feature_message">接下來將把真實的掃描結果加入此功能。</string>
+    <string name="scan_complete_message">初始掃描流程已準備就緒。接下來可以新增真實數據。</string>
+    <string name="scan_failed_message">掃描失敗：%1$s</string>
+    <string name="unknown_error">未知錯誤</string>
+    <string name="storage_progress_label">儲存使用進度</string>
+    <string name="phase_two_label">第二階段</string>
+    <string name="phase_three_label">第三階段</string>
+    <string name="images_total_title">總圖像數</string>
+    <string name="videos_total_title">影片總數</string>
+    <string name="clean_page_title">清理中心</string>
+    <string name="clean_page_subtitle">從釋放最多空間的內容開始。</string>
+    <string name="clean_page_badge">智慧清理</string>
+    <string name="clean_overview_title">掃描結果</string>
+    <string name="clean_overview_body">首先清理最大的節省空間的空間，然後清理類似的照片和聯絡人。</string>
+    <string name="privacy_page_title">私人金庫</string>
+    <string name="privacy_page_subtitle">本地 PIN 可保護您的私人媒體和未來的匯入。</string>
+    <string name="profile_page_title">公司簡介</string>
+    <string name="profile_page_subtitle">在這裡管理您的會員資格、設定和購買。</string>
+    <string name="profile_page_badge">高級版</string>
+    <string name="profile_hero_title">升級到專業版以獲得完整的清理體驗</string>
+    <string name="profile_hero_body">專業版包括無限批量操作、私人保管庫和更好的相似照片檢測。</string>
+    <string name="profile_plan_status_free">目前計劃：免費</string>
+    <string name="profile_plan_status_pro">專業版試用正在進行中</string>
+    <string name="profile_most_popular">最受歡迎</string>
+    <string name="profile_cta_title">為什麼要升級？</string>
+    <string name="profile_cta_body">如果您經常清理照片、影片和聯絡人，Pro 大大減少了重複步驟。</string>
+    <string name="placeholder_card_title">當前階段</string>
+    <string name="placeholder_clean_body">第一階段涵蓋掃描基礎、權限和主要框架。真正的清理結果將在下一階段出現在這裡。</string>
+    <string name="placeholder_privacy_body">私人保管庫尚不可用。此階段僅包括其導航和佈局。</string>
+    <string name="placeholder_profile_body">設定檔功能尚未連線。會員資格、設定和購買將在稍後添加。</string>
+    <string name="overview_reclaim_title">預計節省空間</string>
+    <string name="overview_media_count_title">全部媒體</string>
+    <string name="home_note_title">第一階段完成</string>
+    <string name="home_note_body">1.底部導航及多頁面框架\n2. Android 13+ 媒體權限請求\n3。基於 MediaStore 的螢幕截圖和大視訊掃描基礎\n4。主畫面結果綁定與狀態管理</string>
+    <string name="feature_coming_soon_format">對應階段將會新增%1$s詳情頁面。</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d 項目</string>
+    <string name="count_contact_format">%1$d 聯絡人</string>
+    <string name="feature_ready_label">可用</string>
+    <string name="permission_action_label">允許並掃描</string>
+    <string name="refresh_action_label">刷新結果</string>
+    <string name="clean_reclaim_summary_format">%1$s 準備清理</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d組</string>
+    <string name="count_contact_group_format">%1$d組</string>
+    <string name="clean_permission_title">需要媒體訪問</string>
+    <string name="clean_permission_body">允許存取讀取您的螢幕截圖和影片。所有數據均在本地進行分析。</string>
+    <string name="clean_loaded_hint">點擊類別卡可查看詳細資訊。</string>
+    <string name="clean_loading_hint">載入螢幕截圖和影片。請稍等。</string>
+    <string name="clean_empty_hint">還沒有掃描結果。首先允許存取並運行掃描。</string>
+    <string name="detail_back">返回</string>
+    <string name="screenshot_detail_title">螢幕截圖清理</string>
+    <string name="screenshot_detail_subtitle">使用真實縮圖瀏覽螢幕截圖。點擊照片進行預覽，或選擇要刪除的項目。</string>
+    <string name="large_video_detail_title">大影片</string>
+    <string name="large_video_detail_subtitle">瀏覽帶封面的大影片。點擊封面即可播放，或選擇要刪除的項目。點擊過濾線即可切換100MB/500MB。</string>
+    <string name="empty_screenshot_title">沒有找到截圖</string>
+    <string name="empty_screenshot_body">在您的媒體庫中找不到螢幕截圖，或尚未授予存取權限。</string>
+    <string name="empty_large_video_title">未找到大視頻</string>
+    <string name="empty_large_video_body">影片大小不得超過 100 MB。您可以稍後調整閾值。</string>
+    <string name="media_item_bucket_format">專輯：%1$s</string>
+    <string name="media_item_date_format">日期：%1$s</string>
+    <string name="media_item_duration_format">持續時間：%1$s</string>
+    <string name="video_threshold_note">目前大視頻閾值：100MB</string>
+    <string name="select_all_action">選擇全部</string>
+    <string name="clear_selected_action">取消全選</string>
+    <string name="delete_selected_action">刪除所選內容</string>
+    <string name="selected_count_format">%1$d 已選擇</string>
+    <string name="delete_dialog_title">刪除螢幕截圖？</string>
+    <string name="delete_dialog_message_format">所選的 %1$d 螢幕截圖將會被刪除。系統會要求您再次確認。</string>
+    <string name="delete_dialog_confirm">繼續</string>
+    <string name="delete_dialog_cancel">取消</string>
+    <string name="delete_complete_message_format">已處理 %1$d 螢幕截圖。清單已刷新。</string>
+    <string name="delete_items_complete_format">已處理 %1$d 項目。清單已刷新。</string>
+    <string name="delete_failed_message">無法刪除。再試一次。</string>
+    <string name="delete_video_dialog_title">刪除影片？</string>
+    <string name="delete_video_dialog_message_format">所選的 %1$d 影片將會被刪除。系統會要求您再次確認。</string>
+    <string name="delete_similar_dialog_title">刪除類似照片？</string>
+    <string name="delete_similar_dialog_message_format">所選的 %1$d 照片將會被刪除。不包括推薦保留的物品。</string>
+    <string name="video_selection_filter_format">選擇%1$d·過濾器：%2$s（點擊切換）</string>
+    <string name="video_player_unavailable">此裝置上沒有可用的影片播放器。</string>
+    <string name="media_preview_title">預覽</string>
+    <string name="similar_select_candidates_action">選擇候選人</string>
+    <string name="similar_deselect_candidates_action">取消全選</string>
+    <string name="similar_select_all_candidates">選擇所有候選人</string>
+    <string name="similar_delete_count_action">刪除所選內容 (%1$d)</string>
+    <string name="similar_group_number_format">%1$d組</string>
+    <string name="app_manager_uninstall_unavailable">無法開啟系統卸載程式</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">所有結果</string>
+    <string name="similar_page_title">類似照片</string>
+    <string name="similar_page_subtitle">使用縮圖查看相似的群組、選擇候選者並刪除重複項。</string>
+    <string name="similar_page_note">第一個版本使用輕量級分組規則。感知散列和清晰度評分可以稍後添加。</string>
+    <string name="similar_page_badge">智能相似</string>
+    <string name="similar_page_hero_hint">保留具有更高解析度、更大文件和更新時間戳記的照片。</string>
+    <string name="similar_group_summary_format">在您的相簿中找到包含 %2$d 候選照片的 %1$d 群組。</string>
+    <string name="similar_group_empty_title">未找到類似的照片組</string>
+    <string name="similar_group_empty_body">同一相簿中沒有照片符合相似的時間和尺寸標準。</string>
+    <string name="similar_group_card_subtitle_format">%1$d 候選者 · 最多可釋放 %2$s</string>
+    <string name="similar_keep_recommend_label">建議保留</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">其他候選人</string>
+    <string name="similar_other_items_more_format">+%1$d 更多照片</string>
+    <string name="contacts_page_title">聯繫清理</string>
+    <string name="contacts_page_subtitle">尋找重複和空的聯絡人。</string>
+    <string name="contacts_page_badge">聯繫修復</string>
+    <string name="contacts_page_hero_hint">合併相同號碼的聯絡人，然後刪除空的聯絡人。</string>
+    <string name="contacts_permission_title">需要訪問聯絡人</string>
+    <string name="contacts_permission_body">允許存取本地掃描聯絡人。</string>
+    <string name="contacts_scan_title">掃描聯絡人</string>
+    <string name="contacts_scan_body">刷新以查找重複項和空聯絡人。</string>
+    <string name="contacts_duplicate_title">重複的聯絡人</string>
+    <string name="contacts_empty_title">空聯絡人</string>
+    <string name="contacts_duplicate_count_format">%1$d 重複組</string>
+    <string name="contacts_empty_count_format">%1$d 空觸點清理</string>
+    <string name="contacts_load_action">允許並加載聯絡人</string>
+    <string name="contacts_refresh_action">刷新聯絡人</string>
+    <string name="contacts_empty_group_title">未找到重複的聯絡人</string>
+    <string name="contacts_empty_group_body">未找到電話號碼重複的聯絡人。</string>
+    <string name="contacts_delete_empty_action">刪除空聯絡人</string>
+    <string name="contacts_merge_action">合併組</string>
+    <string name="contacts_view_action">在通訊錄中查看</string>
+    <string name="contacts_group_title_format">%1$s · %2$d 接點</string>
+    <string name="contacts_group_number_format">主編號：%1$s</string>
+    <string name="contacts_group_members_format">會員：%1$s</string>
+    <string name="contacts_delete_empty_confirm_title">刪除空聯絡人？</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d 空聯絡人或沒有號碼的聯絡人將被刪除。</string>
+    <string name="contacts_merge_complete_message">系統被要求合併此聯絡人群組。</string>
+    <string name="contacts_cleanup_complete_message_format">刪除了 %1$d 空觸點。</string>
+    <string name="contacts_action_failed">聯繫動作失敗。再試一次。</string>
+    <string name="privacy_status_title">當地保護狀況</string>
+    <string name="privacy_page_badge">私人金庫</string>
+    <string name="privacy_hero_title">將私人內容與清理分開</string>
+    <string name="privacy_hero_body">首先設定本地 PIN 保護，然後新增私人媒體匯入、解鎖和恢復。</string>
+    <string name="privacy_status_enabled">4 位數 PIN 碼設定</string>
+    <string name="privacy_status_disabled">未設定 PIN 碼</string>
+    <string name="privacy_status_body_enabled">稍後匯入的私人媒體將受到您的本地 PIN 碼的保護。</string>
+    <string name="privacy_status_body_disabled">在新增私人媒體匯入和解鎖功能之前，請設定 4 位元 PIN。</string>
+    <string name="privacy_set_pin_action">設定密碼</string>
+    <string name="privacy_reset_pin_action">重設密碼</string>
+    <string name="privacy_pin_dialog_title">設定 4 位元 PIN 碼</string>
+    <string name="privacy_pin_dialog_hint">輸入4位數字</string>
+    <string name="privacy_pin_invalid">輸入 4 位元 PIN 碼。</string>
+    <string name="privacy_pin_saved">本地 PIN 碼已儲存。</string>
+    <string name="privacy_pin_reset_confirm">清除目前 PIN 碼？</string>
+    <string name="privacy_pin_reset_done">PIN 碼重設。</string>
+    <string name="privacy_feature_lock_title">本地解鎖</string>
+    <string name="privacy_feature_lock_body">第一個版本使用 PIN 進行本地保護。生物識別技術可以稍後添加。</string>
+    <string name="privacy_feature_vault_title">私人媒體</string>
+    <string name="privacy_feature_vault_body">稍後匯入的私人照片和影片將單獨存儲，並排除在主相簿清理流程之外。</string>
+    <string name="privacy_feature_scope_title">當前階段</string>
+    <string name="privacy_feature_scope_body">此版本新增了 PIN 狀態和頁面結構。接下來將是私人媒體導入和本地加密。</string>
+    <string name="profile_plan_title">目前計劃</string>
+    <string name="profile_plan_free">免費</string>
+    <string name="profile_plan_pro">專業版</string>
+    <string name="profile_plan_body_free">掃描、查看結果並使用基本清理。</string>
+    <string name="profile_plan_body_pro">解鎖高級清理、私人保管庫、無限操作和無廣告體驗。</string>
+    <string name="profile_upgrade_action">切換到專業試用版</string>
+    <string name="profile_restore_action">返回免費</string>
+    <string name="profile_upgrade_done">切換到專業版試用版。</string>
+    <string name="profile_restore_done">回到自由狀態。</string>
+    <string name="profile_benefits_title">專業優勢</string>
+    <string name="profile_benefits_body">1.先進的相似照片檢測\n2。無限批量清理\n3。高級大型視訊濾鏡\n4。增強型接觸清理\n5。私人金庫\n6。無廣告介面</string>
+    <string name="detail_page_badge">詳細視圖</string>
+    <string name="detail_page_hint">在決定清理或保留哪些內容之前先對候選人進行審查。</string>
+    <string name="premium">高級版</string>
+    <string name="settings">設定</string>
+    <string name="grant_access">授予存取權限</string>
+    <string name="storage_permission_title">授予檔案存取權限</string>
+    <string name="storage_permission_detail">開啟檔案存取權限，找出重複照片、大型檔案等可清理內容。</string>
+    <string name="storage_permission_scan_point">掃描本機檔案，找出可清理內容。</string>
+    <string name="storage_permission_privacy_point">檔案僅在本機處理，不會上傳。</string>
+    <string name="storage_permission_message">僅適用於本機掃描；不會上傳或與第三方分享任何資料。</string>
+    <string name="storage_permission_continue">繼續</string>
+    <string name="storage_permission_close">關閉</string>
+    <string name="storage_permission_example_file">該設備上的文件</string>
+    <string name="storage_permission_example_size">準備掃描</string>
+    <string name="storage_permission_guide_title">允許存取所有文件</string>
+    <string name="storage_permission_guide_message">打開「設定」中的開關以掃描和清理該裝置上的檔案。</string>
+    <string name="go_to_settings">前往設定</string>
+    <string name="permission_home_title">你的照片已被鎖定</string>
+    <string name="permission_home_body">允許照片、影片和通知訪問，以便在此裝置上安全地掃描您的圖書館並發送清理提醒。</string>
+    <string name="scan_summary_format">掃描 %1$d 商品 · %2$s 可以審核</string>
+    <string name="scan_running_english">正在掃描您的圖書館...</string>
+    <string name="scan_ready_english">您的圖書館已準備就緒</string>
+    <string name="coming_soon">即將推出</string>
+    <string name="compression_failed">無法壓縮該影像。</string>
+    <string name="compression_saved">壓縮照片儲存到 Pictures/CleanSuperAI。</string>
+    <string name="home_secure_analysis">安全的設備上分析</string>
+    <string name="home_cleanup_library">檢查您的圖書館</string>
+    <string name="home_cleanup_badge">設備上</string>
+    <string name="home_quick_clean_action">開放清理中心</string>
+    <string name="home_quick_clean_compact_action">清理中心</string>
+    <string name="home_reclaim_ready_format">%1$s 可回收</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">儲存佔用</string>
+    <string name="home_storage_detail_format">%1$s 回顧 · %2$d 項目</string>
+    <string name="home_quick_tools">快速工具</string>
+    <string name="home_quick_tools_subtitle">前面列出了您最常用的清理操作</string>
+    <string name="feature_swipe_title">滑動照片</string>
+    <string name="feature_swipe_desc">一张一张地查看照片并将拒绝的照片发送到垃圾箱</string>
+    <string name="home_contacts_short_desc">合併重複項</string>
+    <string name="feature_ready_short">準備好了</string>
+    <string name="feature_review_short">評論</string>
+    <string name="tools_section_storage">儲存與媒體</string>
+    <string name="tools_section_device">設備工具</string>
+    <string name="tools_hero_badge">7 個有用的工具</string>
+    <string name="tools_hero_title">有用的工具，集中在一處</string>
+    <string name="tools_hero_body">通过简单、集中的操作来管理存储和媒体。</string>
+    <string name="tool_file_manager_desc">瀏覽和清理螢幕截圖、影片等</string>
+    <string name="tool_media_compressor_desc">減小照片和影片大小而不損失質量</string>
+    <string name="tool_secret_space_desc">使用安全 PIN 碼鎖定私人照片</string>
+    <string name="tool_app_manager_desc">查看已安装的应用程序和存储使用情况</string>
+    <string name="tool_clean_calendar_desc">删除使您的日程安排变得混乱的旧日历事件</string>
+    <string name="tool_ai_enhancer_desc">利用 AI 增強模糊或低光照片</string>
+    <string name="tool_speed_test_desc">檢查您的網路下載和上傳速度</string>
+    <string name="tools_page_subtitle">清理手機所需的一切</string>
+    <string name="compress_page_subtitle">節省空間又不失精彩瞬間</string>
+    <string name="video_compressor">視訊壓縮器</string>
+    <string name="video_compress_subtitle">通过设备上的 H.264 重新编码减小视频大小</string>
+    <string name="video_compress_card_hint">720p·品質均衡</string>
+    <string name="choose_video">選擇影片</string>
+    <string name="choose_video_hint">選擇要壓縮的視頻</string>
+    <string name="compress_photo_guide_title">選擇要壓縮的照片</string>
+    <string name="compress_photo_guide_body">在設備上處理·在幾秒鐘內更小</string>
+    <string name="compress_video_guide_title">選擇要壓縮的視頻</string>
+    <string name="compress_video_guide_body">設備上 H.264·平衡 720p</string>
+    <string name="compress_guide_tap">點選選擇</string>
+    <string name="enhance_photo_guide_title">選擇要增強的照片</string>
+    <string name="enhance_photo_guide_body">亮度·對比度·清晰度</string>
+    <string name="preview_original_photo_label">之前·原圖</string>
+    <string name="preview_compressed_photo_label">· 壓縮預覽後</string>
+    <string name="preview_original_video_label">之前原視頻</string>
+    <string name="preview_compressed_video_label">· 壓縮預覽後</string>
+    <string name="preview_enhanced_photo_label">之後 · 增強預覽</string>
+    <string name="selected_video_preview">選定的影片預覽</string>
+    <string name="play_video_preview">播放影片預覽</string>
+    <string name="video_preview_title">影片預覽</string>
+    <string name="video_preview_failed">該影片無法播放。</string>
+    <string name="video_compression_saved">壓縮影片儲存到 Movies/CleanSuperAI。</string>
+    <string name="video_compression_failed">無法壓縮該視頻。</string>
+    <string name="video_compression_preparing">正在準備視訊壓縮...</string>
+    <string name="video_compression_progress_format">正在壓縮影片…%1$d%%</string>
+    <string name="video_compression_finishing">正在完成壓縮影片...</string>
+    <string name="video_compression_timeout">該影片壓縮時間太長。請嘗試較短的剪輯。</string>
+    <string name="app_manager_subtitle">查看已安装的应用程序并打开系统设置以卸载或清除缓存。</string>
+    <string name="app_manager_summary_format">找到 %1$d 用戶應用程式·點擊即可管理</string>
+    <string name="clean_calendar_subtitle">尋找過去的日曆事件並刪除不再需要的事件。</string>
+    <string name="clean_calendar_delete">刪除所選內容</string>
+    <string name="clean_calendar_empty">沒有找到過去的事件</string>
+    <string name="clean_calendar_summary_format">%1$d 過往活動 · %2$d 入選</string>
+    <string name="clean_calendar_delete_confirm">刪除 %1$d 選定的過去事件？</string>
+    <string name="clean_calendar_delete_done">已刪除 %1$d 事件</string>
+    <string name="calendar_permission_hint">允許日曆存取以掃描過去的事件</string>
+    <string name="calendar_permission_denied">需要行事曆權限</string>
+    <string name="calendar_untitled">（無標題）</string>
+    <string name="image_enhancer_subtitle">提高該設備上的局部亮度、對比和清晰度。</string>
+    <string name="image_enhancer_hint">選擇要增強的照片</string>
+    <string name="image_enhancer_ready">準備增強</string>
+    <string name="image_enhancer_action">增強照片</string>
+    <string name="image_enhancer_working">增強…</string>
+    <string name="image_enhancer_done">增強預覽就緒·喜歡時儲存</string>
+    <string name="image_enhancer_save">保存增強照片</string>
+    <string name="image_enhancer_saved">增強的照片儲存到 Pictures/CleanSuperAI。</string>
+    <string name="image_enhancer_failed">無法增強這張照片。</string>
+    <string name="speed_test_subtitle">使用 Cloudflare 伺服器測量下載、上傳和延遲。</string>
+    <string name="speed_test_hint">點擊開始運行簡短的網路速度檢查</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mbps下載</string>
+    <string name="speed_test_start">啟動速度測試</string>
+    <string name="speed_test_running">測試您的連線...</string>
+    <string name="speed_test_done">測試完成</string>
+    <string name="speed_test_failed">速度測試失敗。檢查您的網路並重試。</string>
+    <string name="speed_test_download_idle">下載·等待</string>
+    <string name="speed_test_upload_idle">上傳·等待</string>
+    <string name="speed_test_latency_idle">延遲·等待</string>
+    <string name="speed_test_download_result">下載·%1$.1f Mbps</string>
+    <string name="speed_test_upload_result">上傳·%1$.1f Mbps</string>
+    <string name="speed_test_latency_result">延遲·%1$d 毫秒</string>
+    <string name="photo_compressor">照片壓縮器</string>
+    <string name="compress_quality_hint">平衡 JPEG · 70% quality</string>
+    <string name="choose_photo_hint">選擇要壓縮的照片</string>
+    <string name="choose_photo">選擇照片</string>
+    <string name="compress_preview">壓縮預覽</string>
+    <string name="compress_and_save">壓縮並保存</string>
+    <string name="save_compressed_photo">保存壓縮照片</string>
+    <string name="save_compressed_video">保存壓縮視頻</string>
+    <string name="share">分享</string>
+    <string name="keep">保留</string>
+    <string name="move_to_review_bin">移至垃圾箱</string>
+    <string name="clear_review_bin">清除評論箱</string>
+    <string name="swipe_page_subtitle">按月查看·向右滑動保留，向左滑動回收</string>
+    <string name="swipe_trash_open">打開</string>
+    <string name="swipe_trash_label_singular">垃圾桶裡的照片</string>
+    <string name="swipe_trash_label_plural">垃圾桶裡的照片</string>
+    <string name="swipe_empty_title">所有照片均已審核</string>
+    <string name="swipe_empty_body">返回選擇另一個月份，或打開垃圾箱恢復照片。</string>
+    <string name="category_person_format">人·%1$d</string>
+    <string name="category_animal_format">動物·%1$d</string>
+    <string name="category_vehicle_format">車輛·%1$d</string>
+    <string name="no_photos_available">沒有可用的照片</string>
+    <string name="splash_tagline">智能清理。設計上的隱私。</string>
+    <string name="selected_photos_deleted">選定的照片已刪除</string>
+    <string name="added_to_review_bin">新增到評論箱</string>
+    <string name="photos_deleted_format">%1$d 照片已刪除</string>
+    <string name="delete_photos_failed">无法删除选定的照片</string>
+    <string name="share_photo">分享照片</string>
+    <string name="trash_bin_title_format">垃圾桶 (%1$s)</string>
+    <string name="trash_bin_title_empty">垃圾桶</string>
+    <string name="trash_restore_hint">點擊即可恢復照片</string>
+    <string name="trash_empty_action">删除垃圾箱中的所有内容</string>
+    <string name="trash_restored">照片已恢復</string>
+    <string name="trash_bin_empty">垃圾桶已空</string>
+    <string name="feature_smart_groups">智慧群組</string>
+    <string name="feature_duplicate_photos">重複的照片</string>
+    <string name="feature_duplicate_videos">重複的視頻</string>
+    <string name="feature_all_videos">所有影片</string>
+    <string name="feature_screenshots_short">截圖</string>
+    <string name="scan_unavailable">掃描不可用</string>
+    <string name="please_try_again">請重試</string>
+    <string name="tool_file_manager">文件管理器</string>
+    <string name="tool_media_compressor">媒體壓縮器</string>
+    <string name="tool_app_manager">應用程式管理器</string>
+    <string name="tool_clean_calendar">乾淨的日曆</string>
+    <string name="tool_ai_enhancer">AI影像增強器</string>
+    <string name="tool_secret_space">秘密空間</string>
+    <string name="tool_speed_test">速度測試</string>
+    <string name="compressing">壓縮…</string>
+    <string name="original_size_format">原廠·%1$s</string>
+    <string name="compressed_result_format">已压缩·%1$s\n已保存·%2$s</string>
+    <string name="swipe_grant_access_hint">授予家庭媒体访问权限以浏览照片</string>
+    <string name="media_item_placeholder">媒體</string>
+    <string name="selected_image_preview">選定的影像預覽</string>
+    <string name="current_photo">目前照片</string>
+    <string name="month_cover">月封面</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">人 · 0</string>
+    <string name="category_animal_zero">動物 · 0</string>
+    <string name="category_vehicle_zero">車輛 · 0</string>
+    <string name="duplicate_photos_page_title">重複的照片</string>
+    <string name="duplicate_photos_page_subtitle">依檔案大小和尺寸找到精確的重複項，然後保留一份副本。</string>
+    <string name="duplicate_photos_page_badge">精確匹配</string>
+    <string name="duplicate_photos_summary_format">找到 %1$d 群組，其中包含 %2$d 重複照片。</string>
+    <string name="duplicate_photos_empty_title">未找到重複的照片</string>
+    <string name="duplicate_photos_empty_body">未找到相同尺寸和尺寸的照片。</string>
+    <string name="duplicate_videos_page_title">重複的視頻</string>
+    <string name="duplicate_videos_page_subtitle">按大小和時長找到完全相同的重複視頻，然後保留一份副本。</string>
+    <string name="duplicate_videos_page_badge">精確匹配</string>
+    <string name="duplicate_videos_summary_format">尋找包含 %2$d 重複影片的 %1$d 群組。</string>
+    <string name="duplicate_videos_empty_title">未找到重複視頻</string>
+    <string name="duplicate_videos_empty_body">未找到相同大小和時長的影片。</string>
+    <string name="settings_page_title">設定</string>
+    <string name="settings_page_subtitle">語言、應用程式資訊、隱私和快取。</string>
+    <string name="settings_language_title">語言</string>
+    <string name="settings_language_subtitle">選擇您喜歡的應用程式語言</string>
+    <string name="settings_about_title">關於</string>
+    <string name="settings_about_subtitle">应用程序名称和版本</string>
+    <string name="settings_about_message_format">CleanSuper AI\n版本%1$s（%2$d）</string>
+    <string name="settings_privacy_policy_title">隱私權政策</string>
+    <string name="settings_privacy_policy_subtitle">我們如何處理您的數據</string>
+    <string name="settings_privacy_policy_body">所有媒體掃描和清理都在您的裝置上本地運行。我們不會將您的照片、影片或聯絡人上傳到我們的伺服器。可選分析（如果稍後啟用）將遵循商店政策。您可以隨時在系統設定中撤銷媒體存取權限。</string>
+    <string name="settings_clear_cache_title">清除快取</string>
+    <string name="settings_clear_cache_subtitle">免費臨時應用程式存儲</string>
+    <string name="settings_clear_cache_confirm">清除臨時快取檔案？您的照片和設定不會被刪除。</string>
+    <string name="settings_clear_cache_done_format">清除了 %1$s 的缓存。</string>
+    <string name="language_page_title">應用程式語言</string>
+    <string name="language_page_subtitle">預設情況下，CleanSuper AI 會遵循您的裝置語言。</string>
+    <string name="language_follow_system_title">遵循系統語言</string>
+    <string name="language_follow_system_subtitle_format">目前設備語言：%1$s</string>
+    <string name="month_photo_count_format">%1$d 照片</string>
+    <string name="review_bin_pending_format">%1$d 照片在評論箱中等待</string>
+    <string name="media_bucket_video">影片</string>
+    <string name="settings_terms_title">使用條款</string>
+    <string name="settings_terms_subtitle">閱讀條款</string>
+    <string name="settings_widget_title">主螢幕小工具</string>
+    <string name="settings_widget_subtitle">新增清理快捷方式</string>
+    <string name="tool_network_traffic">網路流量</string>
+    <string name="tool_network_traffic_desc">按應用程式使用</string>
+    <string name="tool_battery_info">電池資訊</string>
+    <string name="tool_battery_info_desc">充電與健康</string>
+    <string name="tool_device_info">設備資訊</string>
+    <string name="tool_device_info_desc">系統和Wi-Fi</string>
+    <string name="tool_private_vault">私人金庫</string>
+    <string name="tool_private_vault_desc">隱藏照片和視頻</string>
+    <string name="home_more_tools">更多工具</string>
+    <string name="home_battery_info">電池</string>
+    <string name="home_device_info">裝置</string>
+    <string name="home_large_files">大文件</string>
+    <string name="home_cache_cleanup">快取清理</string>
+    <string name="home_network_traffic">數據使用情況</string>
+    <string name="home_private_vault">私人金庫</string>
+    <string name="home_picture_cleanup">圖片</string>
+    <string name="home_video_cleanup">影片</string>
+    <string name="home_audio_cleanup">音訊</string>
+    <string name="media_loading">正在加載媒體...</string>
+    <string name="media_loading_hint">整理您的文件。請稍等。</string>
+    <string name="media_count_summary">%1$d 專案 · %2$s · %3$d 已選擇</string>
+    <string name="media_empty_title">未找到媒體</string>
+    <string name="media_empty_body">此類別中沒有項目。</string>
+    <string name="media_error_title">無法載入媒體</string>
+    <string name="media_access_title">需要儲存存取</string>
+    <string name="media_access_body">允許「設定」中的所有檔案存取來瀏覽此媒體。</string>
+    <string name="media_delete_title">刪除選定的項目？</string>
+    <string name="media_delete_message">刪除 %1$d 所選項目？ Android 可能會要求您確認。</string>
+    <string name="media_recent_group">1個月內</string>
+    <string name="media_older_group">1個月以上</string>
+    <string name="media_group_summary">%1$d 專案 · %2$s</string>
+    <string name="audio_player_unavailable">此裝置上沒有可用的音訊播放器。</string>
+    <string name="vault_items_summary">%1$d 私人物品</string>
+    <string name="vault_empty_gallery">您的私人保險庫是空的。匯入照片或影片以在此處查看。</string>
+    <string name="cache_group_app">應用程式緩存</string>
+    <string name="cache_group_apk">舊的 APK 文件</string>
+    <string name="cache_group_residual">殘留文件</string>
+    <string name="cache_summary">%1$d 檔案 · %2$s</string>
+    <string name="cleanup_report_title">清理完成</string>
+    <string name="cleanup_report_freed">釋放空間</string>
+    <string name="cleanup_report_count">%2$d 項目中的 %1$d 已刪除</string>
+    <string name="cleanup_report_other">清理其他文件</string>
+    <string name="cleanup_report_done">完成</string>
+    <string name="exit_retain_title">退出 CleanSuper AI？</string>
+    <string name="exit_retain_message">添加家庭小部件以加快清理速度</string>
+    <string name="exit_retain_confirm_exit">退出</string>
+    <string name="exit_retain_add">添加</string>
+    <string name="exit_retain_feature_cache">快取</string>
+    <string name="exit_retain_feature_large">大文件</string>
+    <string name="widget_status_storage">可用空間</string>
+    <string name="notif_screenshot">截圖</string>
+    <string name="exit_retain_message_existing">您的家庭小部件已準備好進行快速清理</string>
+    <string name="notif_cache">快取</string>
+    <string name="notif_channel_name">快速清理工具列</string>
+    <string name="notif_channel_desc">用於快速清理操作的持久性工具列</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">清理提醒</string>
+    <string name="notif_event_channel_desc">截圖、安裝、卸載後本地提醒</string>
+    <string name="notif_event_summary_channel_name">清理提醒總結</string>
+    <string name="notif_event_screenshot_title">另一張截圖？ 1 是時候清理截圖了</string>
+    <string name="notif_event_install_title">新應用程式已移入，快取也已移入。清理</string>
+    <string name="notif_event_uninstall_title">卸載成功！清理文件殘留</string>
+    <string name="notif_clean_reminder_title">有很多垃圾堆積起來。一次全部清理乾淨。</string>
+    <string name="notif_event_battery_below_50_title">電池電量已超過一半。現在就照顧好它，它會持續到你回家為止。</string>
+    <string name="notif_event_battery_below_20_title">電池電量低。想知道誰在偷你的電嗎？點擊查看排名。</string>
+    <string name="notif_event_charging_title">接通電源。今晚的任務：重新填充，然後清理。</string>
+    <string name="notif_event_charging_full_title">已充滿電並準備就緒。最後一項檢查：垃圾是否已清除？</string>
+    <string name="notif_event_charging_to_80_title">最終衝刺是80%。卸下垃圾，輕裝上陣，迎接滿電。</string>
+    <string name="notif_event_charging_disconnect_title">拔掉插頭並出發。請記住花時間清理垃圾並保持最佳狀態。</string>
+    <string name="notif_event_app_update_title">新版本已經到來。舊版留下的所有內容都被徹底清理。</string>
+    <string name="notif_event_network_change_title">網路改變了！查看目前網路狀態1</string>
+    <string name="notif_event_screen_lock_title">放下您的手機，交給我們。休息螢幕時間=哺乳時間。</string>
+    <string name="notif_event_screen_on_after_lock_title">我們又見面了，你還困嗎？大部分都是垃圾，請試著清理掉。</string>
+    <string name="notif_event_storage_free_drop_title">儲存空間發生了變化。我們看看什麼佔了空間？</string>
+    <string name="notif_event_scheduled_push_1_title">堆積了這麼久的垃圾一下子就被清理掉了。</string>
+    <string name="notif_event_scheduled_push_2_title">電池沒有以前那麼耐用了嗎？一探究竟。</string>
+    <string name="notif_event_app_inactive_title">好久不見，一直在等待。回來清理垃圾。</string>
+    <string name="notif_event_scheduled_push_3_title">一鍵存取您的播放清單 — 設定小工具</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>一鍵存取您的播放清單 — 設定小工具</item>
+        <item>使用小部件讓一切變得更輕鬆 - 添加音樂快捷方式</item>
+        <item>無需解鎖即可快速暢玩 — 啟用主螢幕小工具</item>
+    </string-array>
+    <string name="notif_event_app_background_title">你忘了什麼</string>
+    <string name="notif_event_app_background_content">快來完成清理工作，使其運作更順暢。</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>你忘了什麼</item>
+        <item>還剩一步</item>
+        <item>好消息</item>
+        <item>你離開得太快</item>
+        <item>不要讓垃圾過夜</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>快來完成清理工作，使其運作更順暢。</item>
+        <item>再輕按一下即可完成清理並釋放更多空間。</item>
+        <item>偵測到可用空間 - 來要求一鍵清理。</item>
+        <item>您的手機可以更快 - 快來看看優化情況。</item>
+        <item>快來完成清理工作，使其運作更順暢。</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">掃描結果已準備就緒 - 垃圾正在佔用空間。立即清理</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>掃描結果已準備就緒 - 垃圾正在佔用空間。立即清理</item>
+        <item>還剩一步：返回並立即釋放空間。</item>
+        <item>掃描後忘記清理？ 10秒讓你的手機變得更輕。</item>
+        <item>垃圾仍然在您的手機上 - 結果已保存。返回一鍵清理。</item>
+        <item>上次掃描發現多個需要清理的物品。快來完成。</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">清理工作還沒完成──來完成最後一步。</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>清理工作還沒完成──來完成最後一步。</item>
+        <item>清理中斷：中途。完成更輕的手機。</item>
+        <item>清理即將完成 - 不要留下垃圾。</item>
+        <item>你中途乾淨地離開了——完成它並感受不同。</item>
+        <item>中斷的清理可以隨時繼續。快來完成。</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">照片已刪除 — 安全移至回收站。</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>照片已刪除 — 安全移至回收站。</item>
+        <item>剛剛刪除了 1 張照片 — 看看您釋放了多少空間？</item>
+        <item>照片已刪除 — 立即永久刪除以釋放空間。</item>
+        <item>照片已安全刪除 — 儲存狀態已更新。</item>
+        <item>照片已刪除 - 您也可以清理類似的螢幕截圖。</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">影片已刪除——釋放了大空間。</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>影片已刪除——釋放了大空間。</item>
+        <item>刪除了大影片－儲存壓力立即得到緩解。</item>
+        <item>影片已刪除 — 檢查您目前的儲存狀態。</item>
+        <item>刪除完成 — 清空回收站以完全釋放空間。</item>
+        <item>影片已刪除——可能還有更多被遺忘的大影片需要清理。</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">音訊被刪除——小檔案加起來。繼續前進。</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>音訊被刪除——小檔案加起來。繼續前進。</item>
+        <item>該音訊消失了 - 也可以清理更多類似的未使用檔案。</item>
+        <item>音訊已刪除 - 儲存詳細資訊已更新。快來看看。</item>
+        <item>已刪除 1 個音訊檔案 — 刷新儲存清單。</item>
+        <item>音訊已刪除 — 清空回收站以釋放空間。</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">檔案已刪除 - 釋放了更多儲存空間。</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>檔案已刪除 - 釋放了更多儲存空間。</item>
+        <item>文件已刪除 - 雜亂不會再打擾您的手機。</item>
+        <item>文件已刪除 - 看看還有什麼可以清理。</item>
+        <item>檔案已刪除 - 變更已同步，儲存狀態已更新。</item>
+        <item>該文件已被清除——現在正在回收空間。</item>
+    </string-array>
+    <string name="notif_event_image_download_title">圖片已下載 - 開啟並查看。</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>圖片已下載 - 開啟並查看。</item>
+        <item>圖片已下載 — 清理相簿中的重複照片</item>
+        <item>下載完成 — 影像安全保存。快來看看類似的照片</item>
+    </string-array>
+    <string name="notif_event_video_download_title">下載的影片——它並不小。查看舊影片可以釋放多少空間</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>下載的影片——它並不小。查看舊影片可以釋放多少空間</item>
+        <item>已儲存新影片 - 尋找要刪除的大影片並釋放空間。點我</item>
+        <item>影片佔用空間 - 我們找到了可清理的物品來減輕您的手機重量。點擊此處</item>
+        <item>下載完成！清理一些舊視頻，空間就會回來。點我</item>
+        <item>新影片已排序 - 易於找到或清理。點按即可查看</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">下載音訊 — 一鍵整理您的音樂庫。點我</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>下載音訊 — 一鍵整理您的音樂庫。點我</item>
+        <item>新音訊已排序 - 當您在這裡時清理舊音訊。點我</item>
+        <item>音樂庫已滿？檢查可清理的音訊。點擊此處</item>
+        <item>下載的音訊 — 一鍵刪除重複資料。點我來整理</item>
+    </string-array>
+    <string name="notif_event_file_download_title">已儲存新檔案 - 清除舊檔案和可用空間。點擊此處</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>已儲存新檔案 - 清除舊檔案和可用空間。點擊此處</item>
+        <item>下載完成 - 查看可以清理哪些舊檔案。點我</item>
+        <item>新文件準備就緒－智慧存檔+清理。點我開始</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">回收站已清空 — 儲存已刷新。檢查您的最新空間。</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>回收站已清空 — 儲存已刷新。檢查您的最新空間。</item>
+        <item>回收站清空－來深度清理殘留檔案。</item>
+        <item>已成功清空－還有更多垃圾需要清理。快來看看。</item>
+    </string-array>
+    <string name="notif_event_action_clean">立即清理</string>
+    <string name="notif_event_action_open_home">打開</string>
+    <string name="notif_event_action_manage">管理應用程式</string>
+    <string name="notif_event_action_check_battery">檢查電池</string>
+    <string name="notif_event_action_check_network">檢查網路</string>
+    <string name="notif_days_unit">日</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>儲存空間發生了變化。讓我們看看什麼佔據了空間？</item>
+        <item>檢測到空間變化。可能有新的垃圾，你看？</item>
+        <item>可用空間已移動。你知道是誰吃的嗎？點擊查看。</item>
+        <item>空間緊張嗎？剛剛檢測到變化，讓我們看一下詳細資訊。</item>
+        <item>空間更換提醒：您可能會累積很多垃圾。一探究竟？</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>電池電量低。想知道誰在偷你的電嗎？點擊查看排名。</item>
+        <item>很快就見底了。如果你清理掉那些偷電的應用程序，你還能生存一段時間。</item>
+        <item>電池電量低。清除一些背景比什麼都不做要好。</item>
+        <item>電池是紅色的。您仍然可以保存它，單擊打開它並查看。</item>
+        <item>少於 20% remains。讓我們做一些省電急救和清理工作。</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>電池電量已超過一半。現在就照顧好它，它會持續到你回家為止。</item>
+        <item>電池電量已超過一半。現在保養電池比等到 20% 電量要容易得多。</item>
+        <item>電池沒電了一半。能持續多久？點擊查看。</item>
+        <item>電池電量已超過一半。是時候照顧後端了，別等它緊張了。</item>
+        <item>電池還剩一半。清理掉那些耗力大的球員，讓下半場更穩定。</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>最終衝刺是80%。卸下垃圾，輕裝上陣，迎接滿電。</item>
+        <item>距離充滿還差 20%。趁現在清理一下垃圾吧。</item>
+        <item>80%：距離完美只有一步之遙。單擊一次，當電池充滿電時，它會完全清除。</item>
+        <item>電量達到 80%，趁充電時清理一輪吧。</item>
+        <item>最後 20% 的充電時間，也能用來清理垃圾。</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>已充滿電並準備就緒。最後一項檢查：垃圾是否已清除？</item>
+        <item>充電後，儀式感十足。清理垃圾來紀念一下怎麼樣？</item>
+        <item>今天電量已達 100%。再清理一次，手機更清爽。</item>
+        <item>100%。拔掉電源之前的最後一步：清理垃圾，三十秒。</item>
+        <item>全力完成。最後一次清理，完美。</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>網路改變了！查看目前網路狀態1</item>
+        <item>網路遺棄。清理時不要看訊號，只需點擊它並掃描即可。</item>
+        <item>打不開頁面？清理工作始終在線。</item>
+        <item>您可以離線工作，並且您的垃圾現在可以清除。</item>
+        <item>如果沒有訊號，則清理時不需要數據，只需點擊即可。</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>接通電源。今晚的任務：重新填充，然後清理。</item>
+        <item>你在休息，它在充電。讓它也清理垃圾。</item>
+        <item>充電的時候，就足以清理掉長期累積的垃圾。</item>
+        <item>只有插上電，後台工作人員才敢自由工作。</item>
+        <item>充電時有點熱？清除背景可以降低溫度。</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>拔掉插頭並出發。請記住花時間清理垃圾並保持最佳狀態。</item>
+        <item>充電完畢，收拾行李出發。只要把它清理乾淨就完美了。</item>
+        <item>已充滿電並可使用。清理垃圾順利，今天沒有任何缺點。</item>
+        <item>充電結束。下一個空間將被清理並一次升級一級。</item>
+        <item>不要在停電時停下來。剩下一件事：清理。</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>我們又見面了，你還困嗎？大部分都是垃圾，請試著清理掉。</item>
+        <item>解鎖了？先不要打開其他應用程序，並在三十秒內清除垃圾。</item>
+        <item>第一個解鎖的是我們自己。清除垃圾，它會更愛你。</item>
+        <item>解鎖後三十秒。最有價值的用途：清理垃圾。</item>
+        <item>你的手機說：後端有點阻塞，你能幫我嗎？</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>放下您的手機，交給我們。休息螢幕時間=哺乳時間。</item>
+        <item>停止工作並不意味著停止工作。下次打開螢幕的時候我會給你一個驚喜。</item>
+        <item>在休息螢幕的同時，安靜地變得更好。單擊，我們將完成剩下的工作。</item>
+        <item>鎖定螢幕之前的最後一件事：點擊「清理」。明天早上會有新的面貌。</item>
+        <item>螢幕變暗。現在就安排，明天再看看結果。</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>新應用程式已移入，快取也已移入。清理</item>
+        <item>我們了解安裝新應用程式的樂趣。只是儲藏室會悄悄堆積起來。</item>
+        <item>新應用程式？快取也在這裡，一鍵清空。</item>
+        <item>新的進來，舊的出去。經常清理並根據需要安裝。</item>
+        <item>另一個？空間悄悄變小，快來清理一下吧。</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>卸載成功！清理文件殘留</item>
+        <item>已卸載但未清理。單擊完成。</item>
+        <item>應用程式已卸載，但尾巴仍然存在。一鍵清理，一勞永逸地告別。</item>
+        <item>不要錯過第二步：刪除App+清除殘留量。一鍵點擊完成。</item>
+        <item>殘留物會吃掉一半的空出空間。深度掃描並清除一切。</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>新版本已經到來。舊版留下的所有內容都被徹底清理。</item>
+        <item>+1 表示版本，+1 表示緩存，用於深度掃描。</item>
+        <item>更新完成，可一鍵清理剩餘安裝包。</item>
+        <item>更新完畢，總結一下。清理乾淨，我會接管。</item>
+        <item>每次更新都會留下舊文件並快速處理。</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>另一張截圖？ 1 是時候清理截圖了</item>
+        <item>發現新截圖，點擊看清理~</item>
+        <item>截圖越來越多，一鍵清理可以幫你騰出空間</item>
+        <item>截圖成功，重複、模糊的可以一鍵過濾掉。</item>
+        <item>新的螢幕截圖已新增至資料庫中，重複的圖像已排隊等待一鍵清除。</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>有很多垃圾堆積起來。一次全部清理乾淨。</item>
+        <item>上次清理 %1$d 幾天前，點選立即處理</item>
+        <item>幾天沒來了，收拾一下就輕裝上陣了。</item>
+        <item>今日清算額度尚未使用。當我回來時我會清除它。</item>
+        <item>快取已滿，等待您查看</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>好久不見，一直在等待。回來清理垃圾。</item>
+        <item>有幾天沒見到你了。垃圾沒有休息的時間。回來掃一掃。</item>
+        <item>緩存已排隊。單擊，它們就會消失。</item>
+        <item>當您不在時，垃圾箱正忙著。一鍵清空，感覺煥然一新。</item>
+        <item>後退？先清理垃圾。三十秒後，手機就輕如新了。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>堆積了這麼久的垃圾一下子就被清理掉了。</item>
+        <item>是時候清理了。今天的垃圾正在等你點擊。</item>
+        <item>今天的《太空日報》到了。清除並保持光線充足。</item>
+        <item>有些文件比你想像的要大得多，看一下</item>
+        <item>找到那個佔用了幾個G的傢伙並清理掉它</item>
+        <item>大文件清單已備好，快來看看。</item>
+        <item>誰佔用的空間最多？一秒鐘就顯露出來。</item>
+        <item>連續射擊很棒，完成射擊很痛苦。交給我們吧。</item>
+        <item>相似的照片已排成一排，由您選擇保留哪一張</item>
+        <item>類似的圖片太多？我們將幫助您一鍵比較並刪除重複項。</item>
+        <item>應清除快取的離線影片。</item>
+        <item>剩餘的音訊也將被清理。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>電池沒有以前那麼耐用了嗎？一探究竟。</item>
+        <item>誰在偷你的電？你查一下就知道了。</item>
+        <item>關閉這些將延長電池壽命。</item>
+        <item>有些應用程式已安裝但從未使用過。看看他們是哪幾個？</item>
+        <item>保留不使用的應用程式也是一種負擔，清單已列出</item>
+        <item>關於隱私，越早處理越好。</item>
+        <item>隱藏重要的並刪除不必要的。讓我幫你</item>
+        <item>交通流向哪裡？找出誰在使用它。</item>
+        <item>交通詳情一目了然，一目了然。</item>
+        <item>有一個應用程式在後台秘密連接互聯網。</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} 的垃圾 — 一鍵清除</string>
+    <string name="notif_scheduled_large_files">{total} 個大檔案 — 輕鬆清理</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} 群組重複照片 - 儲存 {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} 張相似照片 - 選擇要清理的內容</string>
+    <string name="notif_scheduled_videos">{total} 個影片 - 刪除 {n} 個以釋放空間</string>
+    <string name="notif_scheduled_audio">{total} 個音訊檔案 - 需要整理一下</string>
+    <string name="notif_scheduled_apps">{size} 由 {idle} 個空閒應用程式使用</string>
+    <string name="notif_scheduled_data">後台所使用的資料的{back}</string>
+    <string name="app_manager_uninstall_selected">卸載所選應用</string>
+    <string name="app_manager_uninstall_selected_count">卸載所選應用 (%1$d)</string>
+    <string name="cache_removable">可清理</string>
+    <string name="cache_clean_selected">刪除缓存</string>
+    <string name="cache_clean_selected_summary">清理 %1$s (%2$d)</string>
+    <string name="cache_access_required">需要授權存取所有檔案才能掃描快取</string>
+    <string name="cache_confirm_clean">清理選取的 %1$d 項？</string>
+    <string name="cache_clean_action">清理</string>
+    <string name="cache_clean_result">已清理 %1$d / %2$d 項</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">온도</string>
+    <string name="sys_voltage">전압</string>
+    <string name="sys_current">전류</string>
+    <string name="sys_health">건강</string>
+    <string name="sys_type">배터리 유형</string>
+    <string name="sys_capacity">배터리 용량</string>
+    <string name="sys_charging">충전중</string>
+    <string name="sys_full">가득한</string>
+    <string name="sys_good">좋은</string>
+    <string name="sys_overheat">과열</string>
+    <string name="sys_dead">죽은</string>
+    <string name="sys_over_voltage">과전압</string>
+    <string name="sys_cold">추운</string>
+    <string name="sys_unknown">알려지지 않은</string>
+    <string name="sys_model">모델:</string>
+    <string name="sys_brand">상표:</string>
+    <string name="sys_manufacturer">제조사:</string>
+    <string name="sys_wifi_name">이름:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">속도:</string>
+    <string name="traffic_month">이번 달</string>
+    <string name="traffic_30_days">30일</string>
+    <string name="traffic_24_hours">24시간</string>
+    <string name="traffic_mobile">이동하는</string>
+    <string name="traffic_wifi">와이파이</string>
+    <string name="traffic_apps">앱</string>
+</resources>

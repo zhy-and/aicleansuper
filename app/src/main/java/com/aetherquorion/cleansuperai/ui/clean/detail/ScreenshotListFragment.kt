@@ -34,6 +34,7 @@ class ScreenshotListFragment : Fragment() {
         onSelectionClick = ::toggleSelection,
     )
     private val selectedIds = linkedSetOf<Long>()
+    private var pendingCleanupResult: com.aetherquorion.cleansuperai.ui.flow.CleanupResult? = null
     private var currentItems: List<ScreenshotItem> = emptyList()
 
     private val deleteRequestLauncher =
@@ -43,7 +44,9 @@ class ScreenshotListFragment : Fragment() {
                 selectedIds.clear()
                 viewModel.load(force = true)
                 showToast(getString(R.string.delete_items_complete_format, count))
+                pendingCleanupResult?.let(::showCleanupReport)
             }
+            pendingCleanupResult = null
         }
 
     override fun onCreateView(
@@ -151,27 +154,38 @@ class ScreenshotListFragment : Fragment() {
     }
 
     private fun deleteSelectedItems() {
-        val uris = currentItems
+        val targets = currentItems
             .filter { selectedIds.contains(it.id) }
-            .map { it.contentUri }
+        val uris = targets.map { it.contentUri }
 
         if (uris.isEmpty()) return
+        val cleanupResult = com.aetherquorion.cleansuperai.ui.flow.CleanupResult(
+            targets.size, targets.size, targets.sumOf { it.sizeBytes })
 
         runCatching {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 val intentSender = MediaActions.createDeleteIntentSender(requireContext(), uris)
                     ?: return@runCatching
+                pendingCleanupResult = cleanupResult
                 deleteRequestLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
             } else {
-                MediaActions.deleteLegacy(requireContext(), uris)
+                val deleted = MediaActions.deleteLegacy(requireContext(), uris)
                 val count = selectedIds.size
                 selectedIds.clear()
                 viewModel.load(force = true)
                 showToast(getString(R.string.delete_items_complete_format, count))
+                if (deleted > 0) showCleanupReport(cleanupResult.copy(
+                    deleted = deleted, freedBytes = if (deleted == targets.size) cleanupResult.freedBytes else 0L))
             }
         }.onFailure {
             showToast(getString(R.string.delete_failed_message))
         }
+    }
+
+    private fun showCleanupReport(result: com.aetherquorion.cleansuperai.ui.flow.CleanupResult) {
+        (activity as? com.aetherquorion.cleansuperai.MainActivity)?.openDetail(
+            com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                getString(R.string.home_picture_cleanup), result), "cleanup_report")
     }
 
     private fun showToast(message: String) {

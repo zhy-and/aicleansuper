@@ -23,13 +23,29 @@ class AndroidMediaScanner(
     private val context: Context,
 ) : MediaScanner {
 
-    override suspend fun scan(): MediaScanSummary = withContext(Dispatchers.IO) {
+    override suspend fun scan(): MediaScanSummary = scanWithProgress { }
+
+    suspend fun scanWithProgress(onProgress: (Int) -> Unit): MediaScanSummary = withContext(Dispatchers.IO) {
+        var completedStages = 0
+        fun stageDone() {
+            completedStages++
+            // Reserve 100% for the successfully assembled scan result.
+            onProgress(completedStages * 99 / SCAN_STAGE_COUNT)
+        }
+
+        onProgress(0)
         val storageOverview = loadStorageOverview()
+        stageDone()
         val imageScan = loadImageStats()
+        stageDone()
         val videoScan = loadVideoStats()
+        stageDone()
         val similarGroups = loadSimilarPhotoGroupsInternal()
+        stageDone()
         val duplicatePhotoGroups = loadDuplicatePhotoGroupsInternal()
+        stageDone()
         val duplicateVideoGroups = loadDuplicateVideoGroupsInternal()
+        stageDone()
 
         MediaScanSummary(
             storageOverview = storageOverview,
@@ -585,6 +601,7 @@ class AndroidMediaScanner(
     )
 
     companion object {
+        private const val SCAN_STAGE_COUNT = 6
         private const val LARGE_VIDEO_THRESHOLD_BYTES = 100L * 1024L * 1024L
         private const val BURST_WINDOW_MS = 45_000L
         private const val MAX_ASPECT_RATIO_DELTA = 0.08f

@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">בית</string>
+    <string name="nav_swipe">החלק</string>
+    <string name="nav_compress">דחוס</string>
+    <string name="nav_tools">כלים</string>
+    <string name="nav_clean">נקי</string>
+    <string name="nav_privacy">פרטיות</string>
+    <string name="nav_profile">פרופיל</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">ארגן את התמונות, הסרטונים ואנשי הקשר שלך באופן מקומי</string>
+    <string name="home_badge_text">ניקוי בינה מלאכותית</string>
+    <string name="home_quick_summary_title">טיפים לניקוי היום</string>
+    <string name="home_quick_summary_body">התחל עם צילומי מסך וסרטונים גדולים כדי לפנות מקום הכי מהר.</string>
+    <string name="home_scan_insight_title">מצב סריקה חכמה</string>
+    <string name="home_ready_title">4 כלי ניקוי רבי עוצמה</string>
+    <string name="home_ready_body">נהל תמונות, צילומי מסך, סרטונים ואנשי קשר במקום אחד.</string>
+    <string name="storage_overview_title">סקירת אחסון</string>
+    <string name="storage_overview_summary">ניתן לשחרר עד 0.0 GB</string>
+    <string name="storage_overview_detail">85.4 GB מתוך 128 GB בשימוש</string>
+    <string name="storage_overview_summary_format">ניתן לשחרר עד %1$s</string>
+    <string name="storage_overview_detail_format">%1$s של %2$s בשימוש</string>
+    <string name="storage_overview_summary_done">ניתן לשחרר עד 1.8 GB</string>
+    <string name="storage_overview_detail_done">85.4 GB מתוך 128 GB בשימוש. התחל עם ספריית המדיה שלך.</string>
+    <string name="scan_button_idle">התחל סריקה</string>
+    <string name="scan_button_running">סורק...</string>
+    <string name="scan_status_title">סטטוס סריקה</string>
+    <string name="scan_status_idle">מוכן לסריקה</string>
+    <string name="scan_status_running">ניתוח קבצי מדיה</string>
+    <string name="scan_status_done">הסריקה הושלמה. הצעות ניקוי מוכנות.</string>
+    <string name="scan_status_error">הסריקה נכשלה. נסה שוב מאוחר יותר.</string>
+    <string name="scan_status_detail_idle">צילומי מסך, סרטונים גדולים ותמונות דומות ייבדקו תחילה.</string>
+    <string name="scan_status_detail_running">סריקה מקומית. התמונות והסרטונים שלך לא יועלו.</string>
+    <string name="scan_status_detail_midway">צילומי מסך וסרטונים גדולים נותחו. ארגון תמונות דומות.</string>
+    <string name="scan_status_detail_done">נמצא 1.8 GB לניקוי. התחל עם צילומי מסך וסרטונים גדולים.</string>
+    <string name="scan_status_detail_done_format">נמצא %1$s לנקות. התחל עם צילומי מסך וסרטונים גדולים.</string>
+    <string name="feature_section_title">כלי ניקוי חיוניים</string>
+    <string name="feature_section_subtitle">המהדורה הראשונה מתמקדת ב-4 משימות הניקוי הנפוצות ביותר</string>
+    <string name="feature_similar_title">תמונות דומות</string>
+    <string name="feature_similar_desc">נקה תמונות דומות</string>
+    <string name="feature_screenshots_title">ניקוי צילום מסך</string>
+    <string name="feature_screenshots_desc">נקה צילומי מסך שאינם בשימוש</string>
+    <string name="feature_videos_title">סרטונים גדולים</string>
+    <string name="feature_videos_desc">נקה סרטונים גדולים</string>
+    <string name="feature_contacts_title">צור קשר עם Cleanup</string>
+    <string name="feature_contacts_desc">נקה אנשי קשר כפולים</string>
+    <string name="feature_similar_space_format">קבוצות %1$d</string>
+    <string name="count_placeholder">לא נסרק</string>
+    <string name="count_similar_done">128 תמונות</string>
+    <string name="count_screenshots_done">364 תמונות</string>
+    <string name="count_videos_done">12 סרטונים</string>
+    <string name="count_contacts_done">9 קבוצות</string>
+    <string name="recent_section_title">הערות פרסום</string>
+    <string name="recent_section_body">גרסה זו כוללת את מבנה מסך הבית של XML, בקשות להרשאת מדיה, זרימת סריקה של מציין מיקום וסיכום תוצאות. בשלב הבא ניתן להוסיף MediaStore, אנשי קשר ותכונות ניקוי אמיתיות.</string>
+    <string name="permission_denied_message">נדרשת גישת מדיה כדי להתחיל בסריקה.</string>
+    <string name="mock_feature_message">תוצאות סריקה אמיתיות יתווספו לתכונה זו בשלב הבא.</string>
+    <string name="scan_complete_message">זרימת הסריקה הראשונית מוכנה. לאחר מכן ניתן להוסיף נתונים אמיתיים.</string>
+    <string name="scan_failed_message">הסריקה נכשלה: %1$s</string>
+    <string name="unknown_error">שגיאה לא ידועה</string>
+    <string name="storage_progress_label">התקדמות השימוש באחסון</string>
+    <string name="phase_two_label">שלב 2</string>
+    <string name="phase_three_label">שלב 3</string>
+    <string name="images_total_title">סך הכל תמונות</string>
+    <string name="videos_total_title">סך הכל סרטונים</string>
+    <string name="clean_page_title">מרכז ניקיון</string>
+    <string name="clean_page_subtitle">התחל עם תוכן שמפנה את מירב המקום.</string>
+    <string name="clean_page_badge">מנקה חכם</string>
+    <string name="clean_overview_title">תוצאות סריקה</string>
+    <string name="clean_overview_body">נקה תחילה את חוסכי המקום הגדולים ביותר, ולאחר מכן תצלומים ואנשי קשר דומים.</string>
+    <string name="privacy_page_title">כספת פרטית</string>
+    <string name="privacy_page_subtitle">PIN מקומי מגן על המדיה הפרטית שלך ועל ייבוא עתידי.</string>
+    <string name="profile_page_title">פרופיל</string>
+    <string name="profile_page_subtitle">נהל את החברות, ההגדרות והרכישות שלך כאן.</string>
+    <string name="profile_page_badge">פרימיום</string>
+    <string name="profile_hero_title">שדרג ל-Pro לחוויית הניקוי המלאה</string>
+    <string name="profile_hero_body">Pro כולל פעולות אצווה בלתי מוגבלות, כספת פרטית וזיהוי תמונות דומות טוב יותר.</string>
+    <string name="profile_plan_status_free">תוכנית נוכחית: חינם</string>
+    <string name="profile_plan_status_pro">ניסיון פרו פעיל</string>
+    <string name="profile_most_popular">הכי פופולרי</string>
+    <string name="profile_cta_title">למה לשדרג?</string>
+    <string name="profile_cta_body">אם אתה מנקה לעתים קרובות תמונות, סרטונים ואנשי קשר, Pro מפחית מאוד צעדים שחוזרים על עצמם.</string>
+    <string name="placeholder_card_title">שלב נוכחי</string>
+    <string name="placeholder_clean_body">שלב 1 מכסה את בסיס הסריקה, ההרשאות והמסגרת הראשית. תוצאות ניקוי אמיתיות יופיעו כאן בשלב הבא.</string>
+    <string name="placeholder_privacy_body">הכספת הפרטית אינה זמינה עדיין. שלב זה כולל רק את הניווט והפריסה שלו.</string>
+    <string name="placeholder_profile_body">תכונות הפרופיל אינן מחוברות עדיין. חברות, הגדרות ורכישות יתווספו מאוחר יותר.</string>
+    <string name="overview_reclaim_title">חיסכון משוער בחלל</string>
+    <string name="overview_media_count_title">מדיה טוטאלית</string>
+    <string name="home_note_title">שלב 1 הושלם</string>
+    <string name="home_note_body">1. ניווט תחתון ומסגרת מרובה עמודים\n2. Android 13+ בקשות הרשאת מדיה\n3. בסיס סריקה מבוסס MediaStore עבור צילומי מסך וסרטונים גדולים\n4. מחייב תוצאות של מסך הבית וניהול מצב</string>
+    <string name="feature_coming_soon_format">דף הפרטים %1$s יתווסף בשלב המתאים.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d פריטים</string>
+    <string name="count_contact_format">אנשי קשר %1$d</string>
+    <string name="feature_ready_label">זמין</string>
+    <string name="permission_action_label">אפשר וסרוק</string>
+    <string name="refresh_action_label">רענן תוצאות</string>
+    <string name="clean_reclaim_summary_format">%1$s מוכן לניקוי</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">קבוצות %1$d</string>
+    <string name="count_contact_group_format">קבוצות %1$d</string>
+    <string name="clean_permission_title">דרושה גישה למדיה</string>
+    <string name="clean_permission_body">אפשר גישה כדי לקרוא את צילומי המסך והסרטונים שלך. כל הנתונים מנותחים באופן מקומי.</string>
+    <string name="clean_loaded_hint">הקש על כרטיס קטגוריה כדי להציג פרטים.</string>
+    <string name="clean_loading_hint">טוען צילומי מסך וסרטונים. אנא המתן.</string>
+    <string name="clean_empty_hint">אין עדיין תוצאות סריקה. אפשר גישה והפעל תחילה סריקה.</string>
+    <string name="detail_back">חזרה</string>
+    <string name="screenshot_detail_title">ניקוי צילום מסך</string>
+    <string name="screenshot_detail_subtitle">עיין בצילומי מסך עם תמונות ממוזערות אמיתיות. הקש על תמונה לתצוגה מקדימה, או בחר פריטים למחיקה.</string>
+    <string name="large_video_detail_title">סרטונים גדולים</string>
+    <string name="large_video_detail_subtitle">עיין בסרטונים גדולים עם עטיפות. הקש על כריכה כדי לשחק, או בחר פריטים למחיקה. הקש על שורת הסינון כדי לעבור בין 100MB / 500MB.</string>
+    <string name="empty_screenshot_title">לא נמצאו צילומי מסך</string>
+    <string name="empty_screenshot_body">לא נמצאו צילומי מסך בספריית המדיה שלך, או שהגישה לא ניתנה.</string>
+    <string name="empty_large_video_title">לא נמצאו סרטונים גדולים</string>
+    <string name="empty_large_video_body">אין סרטונים שעולים על 100 מגה-בייט. אתה יכול להתאים את הסף מאוחר יותר.</string>
+    <string name="media_item_bucket_format">אלבום: %1$s</string>
+    <string name="media_item_date_format">תאריך: %1$s</string>
+    <string name="media_item_duration_format">משך זמן: %1$s</string>
+    <string name="video_threshold_note">סף וידאו גדול נוכחי: 100 מגה-בייט</string>
+    <string name="select_all_action">בחר הכל</string>
+    <string name="clear_selected_action">בטל את הבחירה בהכל</string>
+    <string name="delete_selected_action">מחק את נבחרות</string>
+    <string name="selected_count_format">%1$d נבחר</string>
+    <string name="delete_dialog_title">למחוק צילומי מסך?</string>
+    <string name="delete_dialog_message_format">צילומי המסך שנבחרו של %1$d יימחקו. המערכת תבקש ממך לאשר שוב.</string>
+    <string name="delete_dialog_confirm">המשך</string>
+    <string name="delete_dialog_cancel">בטל</string>
+    <string name="delete_complete_message_format">מעובד צילומי מסך של %1$d. הרשימה עברה רענון.</string>
+    <string name="delete_items_complete_format">פריטי %1$d מעובדים. הרשימה עברה רענון.</string>
+    <string name="delete_failed_message">לא ניתן למחוק. נסה שוב.</string>
+    <string name="delete_video_dialog_title">למחוק סרטונים?</string>
+    <string name="delete_video_dialog_message_format">סרטוני ה-%1$d שנבחרו יימחקו. המערכת תבקש ממך לאשר שוב.</string>
+    <string name="delete_similar_dialog_title">למחוק תמונות דומות?</string>
+    <string name="delete_similar_dialog_message_format">התמונות שנבחרו %1$d יימחקו. פריטי שמירה מומלצים אינם כלולים.</string>
+    <string name="video_selection_filter_format">%1$d נבחר · מסנן: %2$s (הקש כדי לעבור)</string>
+    <string name="video_player_unavailable">אין נגן וידאו זמין במכשיר זה.</string>
+    <string name="media_preview_title">תצוגה מקדימה</string>
+    <string name="similar_select_candidates_action">בחר מועמדים</string>
+    <string name="similar_deselect_candidates_action">בטל את הבחירה בהכל</string>
+    <string name="similar_select_all_candidates">בחר את כל המועמדים</string>
+    <string name="similar_delete_count_action">מחק את נבחרות (%1$d)</string>
+    <string name="similar_group_number_format">קבוצה %1$d</string>
+    <string name="app_manager_uninstall_unavailable">לא ניתן לפתוח את תוכנית הסרת ההתקנה של המערכת</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">כל התוצאות</string>
+    <string name="similar_page_title">תמונות דומות</string>
+    <string name="similar_page_subtitle">סקור קבוצות דומות עם תמונות ממוזערות, בחר מועמדים ומחק כפילויות.</string>
+    <string name="similar_page_note">הגרסה הראשונה משתמשת בכללי קיבוץ קלים. ניתן להוסיף ניקוד גיבוב תפיסתי וחדות מאוחר יותר.</string>
+    <string name="similar_page_badge">חכם דומה</string>
+    <string name="similar_page_hero_hint">שמור תמונות ברזולוציה גבוהה יותר, קבצים גדולים יותר וחותמות זמן עדכניות יותר.</string>
+    <string name="similar_group_summary_format">נמצאו קבוצות %1$d עם תמונות מועמדות של %2$d באלבומים שלך.</string>
+    <string name="similar_group_empty_title">לא נמצאו קבוצות תמונות דומות</string>
+    <string name="similar_group_empty_body">אף תמונות באותו אלבום לא עמדו בקריטריונים דומים לזמן ולממד.</string>
+    <string name="similar_group_card_subtitle_format">מועמדי %1$d · ניתן לשחרר עד %2$s</string>
+    <string name="similar_keep_recommend_label">מומלץ לשמור</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">מועמדים אחרים</string>
+    <string name="similar_other_items_more_format">+%1$d תמונות נוספות</string>
+    <string name="contacts_page_title">צור קשר עם Cleanup</string>
+    <string name="contacts_page_subtitle">מצא אנשי קשר כפולים וריקים.</string>
+    <string name="contacts_page_badge">צור קשר עם תיקון</string>
+    <string name="contacts_page_hero_hint">מיזוג אנשי קשר מאותו מספר ולאחר מכן הסר אלה ריקים.</string>
+    <string name="contacts_permission_title">דרושה גישה לאנשי קשר</string>
+    <string name="contacts_permission_body">אפשר גישה לסריקת אנשי קשר באופן מקומי.</string>
+    <string name="contacts_scan_title">סרוק אנשי קשר</string>
+    <string name="contacts_scan_body">רענן כדי למצוא כפילויות ואנשי קשר ריקים.</string>
+    <string name="contacts_duplicate_title">שכפול אנשי קשר</string>
+    <string name="contacts_empty_title">אנשי קשר ריקים</string>
+    <string name="contacts_duplicate_count_format">%1$d קבוצות כפולות</string>
+    <string name="contacts_empty_count_format">%1$d מגעים ריקים לניקוי</string>
+    <string name="contacts_load_action">אפשר וטען אנשי קשר</string>
+    <string name="contacts_refresh_action">רענן אנשי קשר</string>
+    <string name="contacts_empty_group_title">לא נמצאו אנשי קשר כפולים</string>
+    <string name="contacts_empty_group_body">לא נמצאו אנשי קשר עם מספרי טלפון כפולים.</string>
+    <string name="contacts_delete_empty_action">הסר אנשי קשר ריקים</string>
+    <string name="contacts_merge_action">מיזוג קבוצה</string>
+    <string name="contacts_view_action">הצג באנשי קשר</string>
+    <string name="contacts_group_title_format">%1$s · אנשי קשר %2$d</string>
+    <string name="contacts_group_number_format">מספר ראשי: %1$s</string>
+    <string name="contacts_group_members_format">חברים: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">להסיר אנשי קשר ריקים?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d אנשי קשר ריקים או אנשי קשר ללא מספרים יימחקו.</string>
+    <string name="contacts_merge_complete_message">המערכת התבקשה למזג קבוצת אנשי קשר זו.</string>
+    <string name="contacts_cleanup_complete_message_format">הוסרו אנשי קשר ריקים של %1$d.</string>
+    <string name="contacts_action_failed">פעולת הקשר נכשלה. נסה שוב.</string>
+    <string name="privacy_status_title">מצב הגנה מקומי</string>
+    <string name="privacy_page_badge">כספת פרטית</string>
+    <string name="privacy_hero_title">שמור על תוכן פרטי נפרד מניקוי</string>
+    <string name="privacy_hero_body">הגדר תחילה הגנת PIN מקומי, ולאחר מכן הוסף ייבוא מדיה פרטית, ביטול נעילה ושחזור.</string>
+    <string name="privacy_status_enabled">קוד PIN בן 4 ספרות</string>
+    <string name="privacy_status_disabled">לא הוגדר PIN</string>
+    <string name="privacy_status_body_enabled">מדיה פרטית המיובאת מאוחר יותר תהיה מוגנת באמצעות ה-PIN המקומי שלך.</string>
+    <string name="privacy_status_body_disabled">הגדר PIN בן 4 ספרות לפני הוספת תכונות ייבוא ​​וביטול נעילה של מדיה פרטית.</string>
+    <string name="privacy_set_pin_action">הגדר PIN</string>
+    <string name="privacy_reset_pin_action">אפס את ה-PIN</string>
+    <string name="privacy_pin_dialog_title">הגדר PIN בן 4 ספרות</string>
+    <string name="privacy_pin_dialog_hint">הזן 4 ספרות</string>
+    <string name="privacy_pin_invalid">הזן PIN בן 4 ספרות.</string>
+    <string name="privacy_pin_saved">PIN מקומי נשמר.</string>
+    <string name="privacy_pin_reset_confirm">לנקות את ה-PIN הנוכחי?</string>
+    <string name="privacy_pin_reset_done">איפוס PIN.</string>
+    <string name="privacy_feature_lock_title">ביטול נעילה מקומי</string>
+    <string name="privacy_feature_lock_body">הגרסה הראשונה משתמשת ב-PIN להגנה מקומית. ניתן להוסיף ביומטריה מאוחר יותר.</string>
+    <string name="privacy_feature_vault_title">מדיה פרטית</string>
+    <string name="privacy_feature_vault_body">תמונות וסרטונים פרטיים שיובאו מאוחר יותר יאוחסנו בנפרד ולא ייכללו מתזרים הניקוי הראשי של האלבום.</string>
+    <string name="privacy_feature_scope_title">שלב נוכחי</string>
+    <string name="privacy_feature_scope_body">גרסה זו מוסיפה סטטוס PIN ומבנה העמוד. ייבוא ​​מדיה פרטית והצפנה מקומית יגיעו בשלב הבא.</string>
+    <string name="profile_plan_title">תוכנית נוכחית</string>
+    <string name="profile_plan_free">חינם</string>
+    <string name="profile_plan_pro">פרו</string>
+    <string name="profile_plan_body_free">סרוק, הצג תוצאות והשתמש בניקוי בסיסי.</string>
+    <string name="profile_plan_body_pro">פתח את הנעילה של ניקוי מתקדם, כספת פרטית, פעולות בלתי מוגבלות וחוויה ללא פרסומות.</string>
+    <string name="profile_upgrade_action">עבור ל-Pro Trial</string>
+    <string name="profile_restore_action">חזור אל חינם</string>
+    <string name="profile_upgrade_done">עבר לגרסת ניסיון Pro.</string>
+    <string name="profile_restore_done">חזר לחופשי.</string>
+    <string name="profile_benefits_title">הטבות פרו</string>
+    <string name="profile_benefits_body">1. זיהוי תמונות דומות מתקדם \n2. ניקוי אצווה ללא הגבלה\n3. מסנני וידאו גדולים מתקדמים\n4. ניקוי אנשי קשר משופר\n5. כספת פרטית \n6. ממשק ללא פרסומות</string>
+    <string name="detail_page_badge">תצוגת פרטים</string>
+    <string name="detail_page_hint">בדוק את המועמדים לפני שתחליט מה לנקות או לשמור.</string>
+    <string name="premium">פרימיום</string>
+    <string name="settings">הגדרות</string>
+    <string name="grant_access">הענק גישה</string>
+    <string name="storage_permission_title">הענק גישה לקובץ</string>
+    <string name="storage_permission_detail">CleanSuper AI זקוק לגישה לקבצים שלך כדי למצוא כפילויות, תמונות מטושטשות וקבצים גדולים. הכל מעובד מקומית.</string>
+    <string name="storage_permission_scan_point">מצא שכפולים, תמונות מטושטשות וקבצים גדולים ברחבי האחסון.</string>
+    <string name="storage_permission_privacy_point">הקבצים שלכם נשארים במכשיר הזה ולעולם לא מועלים.</string>
+    <string name="storage_permission_message">לסריקה מקומית בלבד; שום נתונים לא מועלים או משותפים עם צדדים שלישיים.</string>
+    <string name="storage_permission_continue">המשך</string>
+    <string name="storage_permission_close">סגור</string>
+    <string name="storage_permission_example_file">קבצים במכשיר זה</string>
+    <string name="storage_permission_example_size">מוכן לסריקה</string>
+    <string name="storage_permission_guide_title">אפשר גישה לכל הקבצים</string>
+    <string name="storage_permission_guide_message">הפעל את המתג בהגדרות כדי לסרוק ולנקות קבצים במכשיר זה.</string>
+    <string name="go_to_settings">עבור אל הגדרות</string>
+    <string name="permission_home_title">התמונות שלך נעולות</string>
+    <string name="permission_home_body">אפשר גישה לתמונות, לסרטון ולהתראות כדי לסרוק את הספרייה שלך בצורה מאובטחת במכשיר הזה ולשלוח תזכורות לניקוי.</string>
+    <string name="scan_summary_format">פריטי %1$d סרוקים · ניתן לעיין ב-%2$s</string>
+    <string name="scan_running_english">סורק את הספרייה שלך...</string>
+    <string name="scan_ready_english">הספרייה שלך מוכנה</string>
+    <string name="coming_soon">בקרוב</string>
+    <string name="compression_failed">לא ניתן היה לדחוס את התמונה הזו.</string>
+    <string name="compression_saved">תמונה דחוסה נשמרה בתמונות/CleanSuperAI.</string>
+    <string name="home_secure_analysis">ניתוח מאובטח במכשיר</string>
+    <string name="home_cleanup_library">בדוק את הספרייה שלך</string>
+    <string name="home_cleanup_badge">במכשיר</string>
+    <string name="home_quick_clean_action">פתח את מרכז הניקוי</string>
+    <string name="home_quick_clean_compact_action">מרכז ניקיון</string>
+    <string name="home_reclaim_ready_format">%1$s ניתן להחזר</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">מחסן תפוס</string>
+    <string name="home_storage_detail_format">%1$s לסקירה · פריטים %2$d</string>
+    <string name="home_quick_tools">כלים מהירים</string>
+    <string name="home_quick_tools_subtitle">פעולות הניקוי הנפוצות ביותר שלך, מפורטות מלפנים</string>
+    <string name="feature_swipe_title">החלק תמונות</string>
+    <string name="feature_swipe_desc">בדוק את התמונות אחת אחת ושלח את הדחיות לפח</string>
+    <string name="home_contacts_short_desc">מיזוג כפילויות</string>
+    <string name="feature_ready_short">מוכן</string>
+    <string name="feature_review_short">סקירה</string>
+    <string name="tools_section_storage">אחסון ומדיה</string>
+    <string name="tools_section_device">כלי מכשיר</string>
+    <string name="tools_hero_badge">7 כלים שימושיים</string>
+    <string name="tools_hero_title">כלים שימושיים, במקום אחד</string>
+    <string name="tools_hero_body">נהל אחסון ומדיה בפעולות פשוטות וממוקדות.</string>
+    <string name="tool_file_manager_desc">עיין ונקה צילומי מסך, סרטונים ועוד</string>
+    <string name="tool_media_compressor_desc">צמצם את גודל התמונות והווידאו מבלי לאבד איכות</string>
+    <string name="tool_secret_space_desc">נעל תמונות פרטיות מאחורי PIN מאובטח</string>
+    <string name="tool_app_manager_desc">הצג אפליקציות מותקנות ושימוש באחסון</string>
+    <string name="tool_clean_calendar_desc">הסר אירועי לוח שנה ישנים שמבלבלים את לוח הזמנים שלך</string>
+    <string name="tool_ai_enhancer_desc">שפר תמונות מטושטשות או בתאורה נמוכה עם AI</string>
+    <string name="tool_speed_test_desc">בדוק את מהירות ההורדה וההעלאה של הרשת שלך</string>
+    <string name="tools_page_subtitle">כל מה שאתה צריך לטלפון נקי יותר</string>
+    <string name="compress_page_subtitle">חסוך מקום מבלי לאבד את הרגעים</string>
+    <string name="video_compressor">מדחס וידאו</string>
+    <string name="video_compress_subtitle">הקטנת גודל הווידאו בעזרת קידוד H.264 מחדש במכשיר</string>
+    <string name="video_compress_card_hint">720p · איכות מאוזנת</string>
+    <string name="choose_video">בחר וידאו</string>
+    <string name="choose_video_hint">בחר סרטון לדחיסה</string>
+    <string name="compress_photo_guide_title">בחר תמונה לדחיסה</string>
+    <string name="compress_photo_guide_body">מעובד במכשיר · קטן בשניות</string>
+    <string name="compress_video_guide_title">בחר סרטון לדחיסה</string>
+    <string name="compress_video_guide_body">H.264 במכשיר · מאוזן 720p</string>
+    <string name="compress_guide_tap">הקש כדי לבחור</string>
+    <string name="enhance_photo_guide_title">בחר תמונה לשיפור</string>
+    <string name="enhance_photo_guide_body">בהירות · ניגודיות · חדות</string>
+    <string name="preview_original_photo_label">לפני · תמונה מקורית</string>
+    <string name="preview_compressed_photo_label">לאחר · תצוגה מקדימה דחוסה</string>
+    <string name="preview_original_video_label">לפני · סרטון מקורי</string>
+    <string name="preview_compressed_video_label">לאחר · תצוגה מקדימה דחוסה</string>
+    <string name="preview_enhanced_photo_label">לאחר · תצוגה מקדימה משופרת</string>
+    <string name="selected_video_preview">תצוגה מקדימה של סרטון נבחר</string>
+    <string name="play_video_preview">הפעל תצוגה מקדימה של וידאו</string>
+    <string name="video_preview_title">תצוגה מקדימה של וידאו</string>
+    <string name="video_preview_failed">לא ניתן היה להפעיל את הסרטון הזה.</string>
+    <string name="video_compression_saved">וידאו דחוס נשמר ב-Movies/CleanSuperAI.</string>
+    <string name="video_compression_failed">לא ניתן היה לדחוס את הסרטון הזה.</string>
+    <string name="video_compression_preparing">מכין דחיסת וידאו...</string>
+    <string name="video_compression_progress_format">דוחס וידאו... %1$d%%</string>
+    <string name="video_compression_finishing">מסיים סרטון דחוס...</string>
+    <string name="video_compression_timeout">לקח יותר מדי זמן לדחוס את הסרטון הזה. נא לנסות קליפ קצר יותר.</string>
+    <string name="app_manager_subtitle">סקור אפליקציות מותקנות ופתח את הגדרות המערכת כדי להסיר או לנקות את המטמון.</string>
+    <string name="app_manager_summary_format">נמצאו אפליקציות משתמש %1$d · הקש כדי לנהל</string>
+    <string name="clean_calendar_subtitle">מצא אירועי יומן קודמים והסר את אלו שאינך צריך עוד.</string>
+    <string name="clean_calendar_delete">מחק את נבחרות</string>
+    <string name="clean_calendar_empty">לא נמצאו אירועים קודמים</string>
+    <string name="clean_calendar_summary_format">%1$d אירועי עבר · %2$d נבחר</string>
+    <string name="clean_calendar_delete_confirm">למחוק את אירועי העבר שנבחרו ב-%1$d?</string>
+    <string name="clean_calendar_delete_done">אירועי %1$d נמחקו</string>
+    <string name="calendar_permission_hint">אפשר גישה ליומן כדי לסרוק אירועים קודמים</string>
+    <string name="calendar_permission_denied">נדרשת הרשאת יומן</string>
+    <string name="calendar_untitled">(ללא כותרת)</string>
+    <string name="image_enhancer_subtitle">שפר את הבהירות, הניגודיות והחדות באופן מקומי במכשיר זה.</string>
+    <string name="image_enhancer_hint">בחר תמונה לשיפור</string>
+    <string name="image_enhancer_ready">מוכן לשיפור</string>
+    <string name="image_enhancer_action">שפר תמונה</string>
+    <string name="image_enhancer_working">משפרים…</string>
+    <string name="image_enhancer_done">תצוגה מקדימה משופרת מוכנה · שמור כשתרצה</string>
+    <string name="image_enhancer_save">שמור תמונה משופרת</string>
+    <string name="image_enhancer_saved">תמונה משופרת נשמרה בתמונות/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">לא ניתן היה לשפר את התמונה הזו.</string>
+    <string name="speed_test_subtitle">מדידת הורדה, העלאה והשהייה באמצעות שרתי Cloudflare.</string>
+    <string name="speed_test_hint">הקש על התחל כדי להפעיל בדיקת מהירות רשת קצרה</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">הורדה של Mbps</string>
+    <string name="speed_test_start">התחל בדיקת מהירות</string>
+    <string name="speed_test_running">בודק את החיבור שלך...</string>
+    <string name="speed_test_done">המבחן הושלם</string>
+    <string name="speed_test_failed">מבחן המהירות נכשל. בדוק את הרשת שלך ונסה שוב.</string>
+    <string name="speed_test_download_idle">הורדה · ממתין</string>
+    <string name="speed_test_upload_idle">העלה · ממתין</string>
+    <string name="speed_test_latency_idle">חביון · המתנה</string>
+    <string name="speed_test_download_result">הורדה · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">העלה · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">חביון · %1$d ms</string>
+    <string name="photo_compressor">מדחס צילום</string>
+    <string name="compress_quality_hint">JPEG מאוזן · 70% quality</string>
+    <string name="choose_photo_hint">בחר תמונה לדחיסה</string>
+    <string name="choose_photo">בחר תמונה</string>
+    <string name="compress_preview">דחוס תצוגה מקדימה</string>
+    <string name="compress_and_save">דחיסה ושמירה</string>
+    <string name="save_compressed_photo">שמור תמונה דחוסה</string>
+    <string name="save_compressed_video">שמור וידאו דחוס</string>
+    <string name="share">שתף</string>
+    <string name="keep">שמור</string>
+    <string name="move_to_review_bin">העבר לאשפה</string>
+    <string name="clear_review_bin">נקה את סל הביקורות</string>
+    <string name="swipe_page_subtitle">סקור לפי חודש · החלק ימינה כדי לשמור, שמאלה לאשפה</string>
+    <string name="swipe_trash_open">פתוח</string>
+    <string name="swipe_trash_label_singular">תמונה בפח האשפה</string>
+    <string name="swipe_trash_label_plural">תמונות בפח האשפה</string>
+    <string name="swipe_empty_title">כל התמונות נבדקו</string>
+    <string name="swipe_empty_body">חזור כדי לבחור חודש אחר, או פתח את פח האשפה כדי לשחזר תמונות.</string>
+    <string name="category_person_format">אדם · %1$d</string>
+    <string name="category_animal_format">חיה · %1$d</string>
+    <string name="category_vehicle_format">רכב · %1$d</string>
+    <string name="no_photos_available">אין תמונות זמינות</string>
+    <string name="splash_tagline">ניקוי חכם. פרטי בעיצוב.</string>
+    <string name="selected_photos_deleted">התמונות שנבחרו נמחקו</string>
+    <string name="added_to_review_bin">נוסף לסל הביקורות</string>
+    <string name="photos_deleted_format">תמונות %1$d נמחקו</string>
+    <string name="delete_photos_failed">לא ניתן למחוק את התמונות שנבחרו</string>
+    <string name="share_photo">שתף תמונה</string>
+    <string name="trash_bin_title_format">פח אשפה (%1$s)</string>
+    <string name="trash_bin_title_empty">פח אשפה</string>
+    <string name="trash_restore_hint">הקש כדי לשחזר תמונות</string>
+    <string name="trash_empty_action">מחק הכל באשפה</string>
+    <string name="trash_restored">התמונה שוחזרה</string>
+    <string name="trash_bin_empty">פח האשפה ריק</string>
+    <string name="feature_smart_groups">קבוצות חכמות</string>
+    <string name="feature_duplicate_photos">שכפול תמונות</string>
+    <string name="feature_duplicate_videos">סרטונים כפולים</string>
+    <string name="feature_all_videos">כל הסרטונים</string>
+    <string name="feature_screenshots_short">צילומי מסך</string>
+    <string name="scan_unavailable">הסריקה לא זמינה</string>
+    <string name="please_try_again">אנא נסה שוב</string>
+    <string name="tool_file_manager">מנהל הקבצים</string>
+    <string name="tool_media_compressor">מדחס מדיה</string>
+    <string name="tool_app_manager">מנהל אפליקציות</string>
+    <string name="tool_clean_calendar">נקי לוח שנה</string>
+    <string name="tool_ai_enhancer">AI Image Enhancer</string>
+    <string name="tool_secret_space">מרחב סודי</string>
+    <string name="tool_speed_test">מבחן מהירות</string>
+    <string name="compressing">דוחס...</string>
+    <string name="original_size_format">מקורי · %1$s</string>
+    <string name="compressed_result_format">דחוס · %1$s\nשמור · %2$s</string>
+    <string name="swipe_grant_access_hint">הענק גישת מדיה מהבית כדי לעיין בתמונות</string>
+    <string name="media_item_placeholder">מדיה</string>
+    <string name="selected_image_preview">תצוגה מקדימה של תמונה שנבחרה</string>
+    <string name="current_photo">תמונה נוכחית</string>
+    <string name="month_cover">כיסוי חודש</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">אדם · 0</string>
+    <string name="category_animal_zero">חיה · 0</string>
+    <string name="category_vehicle_zero">רכב · 0</string>
+    <string name="duplicate_photos_page_title">שכפול תמונות</string>
+    <string name="duplicate_photos_page_subtitle">מצא כפילויות מדויקות לפי גודל קובץ ומידות, ולאחר מכן שמור עותק אחד.</string>
+    <string name="duplicate_photos_page_badge">התאמה מדויקת</string>
+    <string name="duplicate_photos_summary_format">נמצאו קבוצות %1$d עם תמונות כפולות של %2$d.</string>
+    <string name="duplicate_photos_empty_title">לא נמצאו תמונות כפולות</string>
+    <string name="duplicate_photos_empty_body">לא נמצאו תמונות בגודל ובאותם מידות.</string>
+    <string name="duplicate_videos_page_title">סרטונים כפולים</string>
+    <string name="duplicate_videos_page_subtitle">מצא סרטונים משוכפלים מדויקים לפי גודל ומשך, ולאחר מכן שמור עותק אחד.</string>
+    <string name="duplicate_videos_page_badge">התאמה מדויקת</string>
+    <string name="duplicate_videos_summary_format">נמצאו קבוצות %1$d עם סרטונים כפולים של %2$d.</string>
+    <string name="duplicate_videos_empty_title">לא נמצאו סרטונים כפולים</string>
+    <string name="duplicate_videos_empty_body">לא נמצאו סרטונים באותו גודל ומשך זמן.</string>
+    <string name="settings_page_title">הגדרות</string>
+    <string name="settings_page_subtitle">שפה, מידע על אפליקציה, פרטיות ומטמון.</string>
+    <string name="settings_language_title">שפה</string>
+    <string name="settings_language_subtitle">בחר את שפת האפליקציה המועדפת עליך</string>
+    <string name="settings_about_title">בערך</string>
+    <string name="settings_about_subtitle">שם האפליקציה והגרסה</string>
+    <string name="settings_about_message_format">Clean Super AI\nVersion %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">מדיניות פרטיות</string>
+    <string name="settings_privacy_policy_subtitle">כיצד אנו מטפלים בנתונים שלך</string>
+    <string name="settings_privacy_policy_body">כל סריקת המדיה והניקוי פועלים באופן מקומי במכשיר שלך. אנחנו לא מעלים את התמונות, הסרטונים או אנשי הקשר שלך לשרתים שלנו. ניתוח אופציונלי (אם יופעל מאוחר יותר) יפעל בהתאם למדיניות החנות. אתה יכול לבטל גישת מדיה בכל עת בהגדרות המערכת.</string>
+    <string name="settings_clear_cache_title">נקה את המטמון</string>
+    <string name="settings_clear_cache_subtitle">אחסון אפליקציות זמני בחינם</string>
+    <string name="settings_clear_cache_confirm">לנקות קבצי מטמון זמניים? התמונות וההגדרות שלך לא יימחקו.</string>
+    <string name="settings_clear_cache_done_format">ניקה את %1$s מהמטמון.</string>
+    <string name="language_page_title">שפת האפליקציה</string>
+    <string name="language_page_subtitle">כברירת מחדל, CleanSuper AI עוקב אחר שפת המכשיר שלך.</string>
+    <string name="language_follow_system_title">עקוב אחר שפת המערכת</string>
+    <string name="language_follow_system_subtitle_format">שפת המכשיר הנוכחית: %1$s</string>
+    <string name="month_photo_count_format">תמונות %1$d</string>
+    <string name="review_bin_pending_format">תמונות %1$d ממתינות בסל סקירה</string>
+    <string name="media_bucket_video">וידאו</string>
+    <string name="settings_terms_title">תנאי שימוש</string>
+    <string name="settings_terms_subtitle">קרא את התנאים</string>
+    <string name="settings_widget_title">ווידג\'ט מסך הבית</string>
+    <string name="settings_widget_subtitle">הוסף קיצור דרך לניקוי</string>
+    <string name="tool_network_traffic">תעבורת רשת</string>
+    <string name="tool_network_traffic_desc">שימוש לפי אפליקציה</string>
+    <string name="tool_battery_info">מידע על הסוללה</string>
+    <string name="tool_battery_info_desc">מטען ובריאות</string>
+    <string name="tool_device_info">מידע על המכשיר</string>
+    <string name="tool_device_info_desc">מערכת ו-Wi-Fi</string>
+    <string name="tool_private_vault">כספת פרטית</string>
+    <string name="tool_private_vault_desc">הסתר תמונות וסרטונים</string>
+    <string name="home_more_tools">עוד כלים</string>
+    <string name="home_battery_info">סוללה</string>
+    <string name="home_device_info">מכשיר</string>
+    <string name="home_large_files">קבצים גדולים</string>
+    <string name="home_cache_cleanup">מטמון נקי</string>
+    <string name="home_network_traffic">שימוש בנתונים</string>
+    <string name="home_private_vault">כספת פרטית</string>
+    <string name="home_picture_cleanup">תמונות</string>
+    <string name="home_video_cleanup">סרטונים</string>
+    <string name="home_audio_cleanup">אודיו</string>
+    <string name="media_loading">טוען מדיה...</string>
+    <string name="media_loading_hint">ארגון הקבצים שלך. אנא המתן.</string>
+    <string name="media_count_summary">פריטים %1$d · %2$s · %3$d נבחרו</string>
+    <string name="media_empty_title">לא נמצאה מדיה</string>
+    <string name="media_empty_body">אין פריטים בקטגוריה זו.</string>
+    <string name="media_error_title">לא ניתן היה לטעון מדיה</string>
+    <string name="media_access_title">דרושה גישה לאחסון</string>
+    <string name="media_access_body">אפשר לכל הקבצים לגשת בהגדרות כדי לגלוש במדיה זו.</string>
+    <string name="media_delete_title">למחוק את הפריטים שנבחרו?</string>
+    <string name="media_delete_message">למחוק את הפריטים הנבחרים של %1$d? אנדרואיד עשויה לבקש ממך לאשר.</string>
+    <string name="media_recent_group">תוך חודש אחד</string>
+    <string name="media_older_group">מעל לחודש</string>
+    <string name="media_group_summary">פריטים %1$d · %2$s</string>
+    <string name="audio_player_unavailable">אין נגן שמע זמין במכשיר זה.</string>
+    <string name="vault_items_summary">%1$d פריטים פרטיים</string>
+    <string name="vault_empty_gallery">הכספת הפרטית שלך ריקה. ייבא תמונות או סרטונים כדי לראות אותם כאן.</string>
+    <string name="cache_group_app">מטמון האפליקציה</string>
+    <string name="cache_group_apk">קבצי APK ישנים</string>
+    <string name="cache_group_residual">קבצים שאריות</string>
+    <string name="cache_summary">קבצי %1$d · %2$s</string>
+    <string name="cleanup_report_title">הניקוי הושלם</string>
+    <string name="cleanup_report_freed">מקום פנוי</string>
+    <string name="cleanup_report_count">%1$d של פריטי %2$d הוסרו</string>
+    <string name="cleanup_report_other">נקה קבצים אחרים</string>
+    <string name="cleanup_report_done">בוצע</string>
+    <string name="exit_retain_title">לצאת מ-CleanSuper AI?</string>
+    <string name="exit_retain_message">הוסף ווידג\'ט ביתי לניקוי מהיר יותר</string>
+    <string name="exit_retain_confirm_exit">יציאה</string>
+    <string name="exit_retain_add">הוסף</string>
+    <string name="exit_retain_feature_cache">מטמון</string>
+    <string name="exit_retain_feature_large">קבצים גדולים</string>
+    <string name="widget_status_storage">מקום פנוי</string>
+    <string name="notif_screenshot">צילומי מסך</string>
+    <string name="exit_retain_message_existing">הווידג\'ט הביתי שלך מוכן לניקוי מהיר</string>
+    <string name="notif_cache">מטמון</string>
+    <string name="notif_channel_name">סרגל הכלים של ניקוי מהיר</string>
+    <string name="notif_channel_desc">סרגל כלים מתמיד לפעולות ניקוי מהירות</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">תזכורות נקיות</string>
+    <string name="notif_event_channel_desc">תזכורות מקומיות לאחר צילומי מסך, התקנות והסרות</string>
+    <string name="notif_event_summary_channel_name">סיכום תזכורת נקי</string>
+    <string name="notif_event_screenshot_title">עוד צילום מסך? 1 הגיע הזמן לנקות את צילומי המסך</string>
+    <string name="notif_event_install_title">האפליקציה החדשה נכנסה, וכך גם המטמון. לנקות</string>
+    <string name="notif_event_uninstall_title">הוסר בהצלחה! כדי לנקות שאריות קבצים</string>
+    <string name="notif_clean_reminder_title">יש הרבה זבל שנערם. נקה הכל בבת אחת.</string>
+    <string name="notif_event_battery_below_50_title">הסוללה מלאה יותר מחצי. תטפל בזה עכשיו, זה יימשך עד שתחזור הביתה.</string>
+    <string name="notif_event_battery_below_20_title">סוללה חלשה. רוצים לדעת מי גונב לכם את החשמל? לחץ כדי לראות את הדירוג.</string>
+    <string name="notif_event_charging_title">מחובר לחשמל. המשימה של הערב: למלא מחדש, ואז לנקות.</string>
+    <string name="notif_event_charging_full_title">טעון במלואו ומוכן לשימוש. בדיקה אחרונה: האם האשפה פונתה?</string>
+    <string name="notif_event_charging_to_80_title">ספרינט הגמר הוא 80%. פרק את האשפה וארוז קלות כדי לקבל את מלוא העוצמה.</string>
+    <string name="notif_event_charging_disconnect_title">נתק וצא לדרך. זכור לקחת את הזמן לנקות את האשפה ולהישאר בכושר טיפ-טופ.</string>
+    <string name="notif_event_app_update_title">גרסה חדשה הגיעה. כל מה שנשאר מהגרסה הישנה מנוקה לחלוטין.</string>
+    <string name="notif_event_network_change_title">הרשת משתנה! הצג את מצב הרשת הנוכחי 1</string>
+    <string name="notif_event_screen_lock_title">הניח את הטלפון שלך והשאיר לנו אותו. זמן מסך מנוחה = זמן הנקה.</string>
+    <string name="notif_event_screen_on_after_lock_title">אנחנו נפגשים שוב, אתה תקוע? רובו הוא זבל, נסה לנקות אותו.</string>
+    <string name="notif_event_storage_free_drop_title">שטח האחסון השתנה. בוא נראה מה תופס מקום?</string>
+    <string name="notif_event_scheduled_push_1_title">האשפה שהצטברה כל כך הרבה זמן מתפנה בבת אחת.</string>
+    <string name="notif_event_scheduled_push_2_title">האם הסוללה לא עמידה כמו קודם? בדוק את זה.</string>
+    <string name="notif_event_app_inactive_title">הרבה זמן לא ראיתי, זה חיכה. תחזור ותפנה את האשפה.</string>
+    <string name="notif_event_scheduled_push_3_title">הקשה אחת לרשימות ההשמעה שלך - הגדר את הווידג\'ט</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>הקשה אחת לרשימות ההשמעה שלך - הגדר את הווידג\'ט</item>
+        <item>הפוך הכל לקל יותר עם ווידג\'ט - הוסף קיצור דרך למוזיקה</item>
+        <item>שחק מהר מבלי לפתוח - הפעל את הווידג\'ט של מסך הבית</item>
+    </string-array>
+    <string name="notif_event_app_background_title">שכחת משהו</string>
+    <string name="notif_event_app_background_content">בוא לסיים לנקות כך שהוא יפעל חלק יותר.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>שכחת משהו</item>
+        <item>נותר צעד אחד</item>
+        <item>חדשות טובות</item>
+        <item>עזבת מהר מדי</item>
+        <item>אל תשאיר זבל בן לילה</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>בוא לסיים לנקות כך שהוא יפעל חלק יותר.</item>
+        <item>עוד הקשה אחת כדי לסיים את הניקוי ולפנות עוד מקום.</item>
+        <item>זוהה מקום פנוי - בוא תבע ניקוי בלחיצה אחת.</item>
+        <item>הטלפון שלך יכול להיות אפילו מהיר יותר - בוא לראות את האופטימיזציה.</item>
+        <item>בוא לסיים לנקות כך שהוא יפעל חלק יותר.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">תוצאות הסריקה מוכנות - זבל לוקח מקום. נקה עכשיו</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>תוצאות הסריקה מוכנות - זבל לוקח מקום. נקה עכשיו</item>
+        <item>צעד אחד נותר: חזור ופנה מקום באופן מיידי.</item>
+        <item>שכחת לנקות אחרי הסריקה? 10 שניות כדי להפוך את הטלפון שלך לקל יותר.</item>
+        <item>זבל עדיין בטלפון שלך - התוצאות נשמרו. חזור לניקוי בלחיצה אחת.</item>
+        <item>בסריקה האחרונה נמצאו פריטים מרובים לניקוי. בוא תסיים את זה.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">הניקוי עדיין לא נעשה - בוא לסיים את השלב האחרון.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>הניקוי עדיין לא נעשה - בוא לסיים את השלב האחרון.</item>
+        <item>ניקיון מופרע: באמצע הדרך. סיים לטלפון קל יותר.</item>
+        <item>הניקוי כמעט הסתיים - אל תשאיר את הזבל מאחור.</item>
+        <item>יצאת באמצע נקי - סיים את זה ותרגיש את ההבדל.</item>
+        <item>ניקוי מופרע יכול להמשיך בכל עת. בוא תסיים את זה.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">התמונה נמחקה - הועברה בבטחה לפח המיחזור.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>התמונה נמחקה - הועברה בבטחה לפח המיחזור.</item>
+        <item>זה עתה מחקת תמונה אחת - ראה כמה מקום פינוי?</item>
+        <item>התמונה נמחקה - מחק לצמיתות כדי לפנות מקום כעת.</item>
+        <item>התמונה נמחקה בבטחה - סטטוס האחסון עודכן.</item>
+        <item>תמונה נמחקה - אתה יכול לנקות גם צילומי מסך דומים.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">הסרטון נמחק — מקום גדול מתפנה.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>הסרטון נמחק — מקום גדול מתפנה.</item>
+        <item>סרטון גדול הוסר - לחץ האחסון הוקל מיד.</item>
+        <item>הסרטון נמחק — בדוק את מצב האחסון הנוכחי שלך.</item>
+        <item>מחק בוצע - רוקן את סל המיחזור כדי לפנות מקום מלא.</item>
+        <item>הסרטון נמחק - ייתכן שיש עוד סרטונים גדולים שנשכחו לניקוי.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">אודיו נמחק - קבצים קטנים מתווספים. לְהַמשִׁיך לָלֶכֶת.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>אודיו נמחק - קבצים קטנים מתווספים. לְהַמשִׁיך לָלֶכֶת.</item>
+        <item>האודיו הזה נעלם - ניתן לנקות גם קבצים דומים שאינם בשימוש.</item>
+        <item>האודיו נמחק - פרטי האחסון עודכנו. בוא להסתכל.</item>
+        <item>קובץ שמע אחד נמחק - רשימת האחסון רענון.</item>
+        <item>האודיו נמחק - רוקן את סל המיחזור כדי לסיים לפנות מקום.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">הקובץ נמחק - קצת יותר שטח אחסון פנוי.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>הקובץ נמחק - קצת יותר שטח אחסון פנוי.</item>
+        <item>הקובץ נמחק - העומס לא יפריע לטלפון שלך יותר.</item>
+        <item>הקובץ נמחק - ראה מה עוד אתה יכול לנקות.</item>
+        <item>הקובץ נמחק - השינויים מסונכרנים, סטטוס האחסון עודכן.</item>
+        <item>הקובץ הזה נוקה - תופס מקום כעת.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">תמונה שהורדה - פתח אותה והסתכל.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>תמונה שהורדה - פתח אותה והסתכל.</item>
+        <item>תמונה שהורדה - נקה תמונות כפולות באלבום שלך תוך כדי</item>
+        <item>ההורדה בוצעה - התמונה נשמרה בבטחה. בואו לבדוק תמונות דומות</item>
+    </string-array>
+    <string name="notif_event_video_download_title">הורד סרטון - הוא לא קטן. ראה כמה מקום סרטונים ישנים יכולים לפנות</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>הורד סרטון - הוא לא קטן. ראה כמה מקום סרטונים ישנים יכולים לפנות</item>
+        <item>סרטון חדש נשמר - מצא סרטונים גדולים למחיקה ופנוי מקום. הקש עליי</item>
+        <item>סרטונים לוקחים מקום - מצאנו פריטים שניתנים לניקוי כדי להקל על הטלפון שלך. הקש כאן</item>
+        <item>ההורדה בוצעה! נקה כמה סרטונים ישנים והמקום חוזר. הקש עליי</item>
+        <item>סרטון חדש ממוין - קל למצוא או לנקות. הקש כדי לראות</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">הורדת אודיו - סדר את ספריית המוזיקה שלך בהקשה אחת. הקש עליי</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>הורדת אודיו - סדר את ספריית המוזיקה שלך בהקשה אחת. הקש עליי</item>
+        <item>אודיו חדש ממוין - נקה אודיו ישן בזמן שאתה כאן. הקש עליי</item>
+        <item>ספריית המוזיקה מתמלאת? בדוק אודיו שניתן לניקוי. הקש כאן</item>
+        <item>הורד אודיו - הסר טמבל בהקשה אחת. הקש עליי כדי לסדר</item>
+    </string-array>
+    <string name="notif_event_file_download_title">קובץ חדש נשמר - נקה קבצים ישנים ושטח פנוי. הקש כאן</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>קובץ חדש נשמר - נקה קבצים ישנים ושטח פנוי. הקש כאן</item>
+        <item>ההורדה בוצעה - ראה אילו קבצים ישנים אתה יכול לנקות. הקש עליי</item>
+        <item>קובץ חדש מוכן - ארכיון חכם + נקי. הקש עליי כדי להתחיל</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">סל המיחזור רוקן - האחסון רענן. בדוק את השטח האחרון שלך.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>סל המיחזור רוקן - האחסון רענן. בדוק את השטח האחרון שלך.</item>
+        <item>סל המיחזור מרוקן - בוא נקה שאריות עמוק.</item>
+        <item>התרוקן בהצלחה - עוד זבל לניקוי. בוא להסתכל.</item>
+    </string-array>
+    <string name="notif_event_action_clean">נקה עכשיו</string>
+    <string name="notif_event_action_open_home">פתוח</string>
+    <string name="notif_event_action_manage">נהל אפליקציות</string>
+    <string name="notif_event_action_check_battery">בדוק את הסוללה</string>
+    <string name="notif_event_action_check_network">בדוק את הרשת</string>
+    <string name="notif_days_unit">יום</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>שטח האחסון השתנה. בוא נראה מה תופס מקום?</item>
+        <item>זוהו שינויים מרחביים. אולי יש אשפה חדשה, תסתכל?</item>
+        <item>השטח הפנוי זז. אתה יודע מי אכל את זה? לחץ כדי להסתכל.</item>
+        <item>האם המקום מצומצם? זה עתה זיהיתי את השינוי, בואו נסתכל על הפרטים.</item>
+        <item>תזכורת לשינוי חלל: אתה עלול לצבור הרבה אשפה. לבדוק את זה?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>סוללה חלשה. רוצים לדעת מי גונב לכם את החשמל? לחץ כדי לראות את הדירוג.</item>
+        <item>סופם בקרוב. אם תנקה את האפליקציות שגונבות חשמל, אתה עדיין יכול לשרוד לזמן מה.</item>
+        <item>הסוללה מתרוקנת. לנקות כמה רקעים עדיף מאשר לא לעשות כלום.</item>
+        <item>הסוללה אדומה. אתה עדיין יכול לשמור אותו, לחץ כדי לפתוח אותו ולהסתכל.</item>
+        <item>פחות מ-20% rmains. בואו נעשה עזרה ראשונה לחסכון בחשמל וננקה.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>הסוללה מלאה יותר מחצי. תטפל בזה עכשיו, זה יימשך עד שתחזור הביתה.</item>
+        <item>הסוללה מלאה יותר מחצי. טיפול בסוללה עכשיו הוא הרבה יותר קל מאשר לחכות עד 20%.</item>
+        <item>הסוללה חצי נגמרה. כמה זמן זה יכול להימשך? לחץ כדי להסתכל.</item>
+        <item>הסוללה מלאה יותר מחצי. זה הזמן לטפל ב-backend, אל תחכו שהוא יתעצבן.</item>
+        <item>נותרה חצי מהסוללה. נקה את השחקנים הגדולים תאבי הכוח והפכו את המחצית השנייה ליציבה יותר.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>ספרינט הגמר הוא 80%. פרק את האשפה וארוז קלות כדי לקבל את מלוא העוצמה.</item>
+        <item>עדיין 20% short של טעינה מלאה. תפסיק לבהות במסך שלך ותנו לנו לטפל בפח.</item>
+        <item>80%: צעד אחד רחוק מהשלמות. לחץ פעם אחת והוא ימוקה לחלוטין כשהסוללה טעונה במלואה.</item>
+        <item>80%, a סוללה טובה לטלפון נייד טוב. מנקים סיבוב בזמן שחם?</item>
+        <item>20% i האחרונים שניתנו לנו. אתה מסתכל על הסוללה, ואנחנו מנקים את האשפה.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>טעון במלואו ומוכן לשימוש. בדיקה אחרונה: האם האשפה פונתה?</item>
+        <item>לאחר הטעינה, תחושת הטקס מלאה. מה דעתך לפנות את האשפה כדי להנציח אותו?</item>
+        <item>100%, stable היום. עוד סיבוב אחד וזה ללא רבב.</item>
+        <item>100%. השלב האחרון לפני הניתוק: נקה את האשפה, שלושים שניות.</item>
+        <item>סיים במלוא העוצמה. ניקוי אחרון, מושלם.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>הרשת משתנה! הצג את מצב הרשת הנוכחי 1</item>
+        <item>עריקת רשת. אל תסתכל על האות בעת ניקוי, פשוט לחץ עליו וסרוק.</item>
+        <item>לא מצליחים לפתוח את הדף? הניקוי תמיד מקוון.</item>
+        <item>אתה יכול לעבוד במצב לא מקוון, וניתן לנקות את האשפה שלך עכשיו.</item>
+        <item>אם אין אות, אין צורך בנתונים לניקוי, פשוט לחץ.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>מחובר לחשמל. המשימה של הערב: מילוי מחדש, ואז נקה.</item>
+        <item>אתה נח, זה נטען מחדש. תן לזה לנקות גם את האשפה.</item>
+        <item>בזמן הטעינה מספיק לפנות את האשפה שהצטברה במשך זמן רב.</item>
+        <item>רק כשהחשמל מחובר לחשמל, הצוות מאחורי הקלעים יכול להעז לעבוד בחופשיות.</item>
+        <item>מתחמם קצת בזמן הטעינה? ניקוי הרקע יכול להוריד את הטמפרטורה.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>נתק וצא לדרך. זכור לקחת את הזמן לנקות את האשפה ולהישאר בכושר טיפ-טופ.</item>
+        <item>לאחר סיום הטעינה, ארזו וצאו לדרך. פשוט נקה את זה וזה יהיה מושלם.</item>
+        <item>טעון במלואו ומוכן לשימוש. מנקים את האשפה בצורה חלקה, אין חסרון היום.</item>
+        <item>הטעינה מסתיימת. את החלל הבא יש לנקות ולשדרג רמה אחת בכל פעם.</item>
+        <item>אל תעצור בהפסקות. נשאר דבר אחד: ניקיון.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>אנחנו נפגשים שוב, אתה תקוע? רובו הוא זבל, נסה לנקות אותו.</item>
+        <item>לא נעול? אל תפתח קודם אפליקציות אחרות ותנקה את האשפה למשך שלושים שניות.</item>
+        <item>הדבר הראשון שצריך לפתוח זה אנחנו. נקה את האשפה וזה יאהב אותך יותר.</item>
+        <item>שלושים שניות לאחר פתיחת הנעילה. השימוש היקר ביותר: ניקוי אשפה.</item>
+        <item>הטלפון הנייד שלך אמר: הקצה האחורי קצת חסום, תוכל לעזור לי?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>הניח את הטלפון שלך והשאיר לנו אותו. זמן מסך מנוחה = זמן הנקה.</item>
+        <item>הפסקת עבודה אין פירושה הפסקת עבודה. אני אתן לך הפתעה בפעם הבאה שאדליק את המסך.</item>
+        <item>משתפר בשקט בזמן מנוחה של המסך. לחץ ואנחנו נעשה את השאר.</item>
+        <item>דבר אחרון לפני נעילת המסך: לחץ על נקי. מראה חדש מחר בבוקר.</item>
+        <item>המסך מחשיך. עשו סידורים עכשיו ותראו את התוצאות מחר.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>האפליקציה החדשה נכנסה, וכך גם המטמון. לנקות</item>
+        <item>אנו מבינים את השמחה בהתקנת אפליקציה חדשה. רק שהמטמון ייערם בשקט.</item>
+        <item>אפליקציה חדשה? המטמון גם כאן, נקה אותו בלחיצה אחת.</item>
+        <item>החדש נכנס והישן יוצא. נקה אותו לעתים קרובות והתקן אותו כרצונך.</item>
+        <item>עוד אחד? החלל הולך וקטן בשקט, בואו לנקות אותו.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>הוסר בהצלחה! כדי לנקות שאריות קבצים</item>
+        <item>הוסר אך לא נוקה. לחץ כדי לסיים.</item>
+        <item>האפליקציה הוסרה, אבל הזנב עדיין שם. נקה בלחיצה אחת ונפרד אחת ולתמיד.</item>
+        <item>אל תחמיצו את השלב השני: מחק את האפליקציה + נקה את השאריות. קליק אחד וסיימתי.</item>
+        <item>השאריות יאכלו חצי מהשטח שהתפנה. סרוק עמוק ונקה הכל.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>גרסה חדשה הגיעה. כל מה שנשאר מהגרסה הישנה מנוקה לחלוטין.</item>
+        <item>+1 עבור גרסה, +1 עבור מטמון, עבור סריקה עמוקה.</item>
+        <item>העדכון הושלם וניתן לנקות את שאר חבילות ההתקנה בלחיצה אחת.</item>
+        <item>העדכון הסתיים, בואו נסיים. נקה את זה ואני אשתלט.</item>
+        <item>כל עדכון ישאיר קבצים ישנים ויטפל בהם במהירות.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>עוד צילום מסך? 1 הגיע הזמן לנקות את צילומי המסך</item>
+        <item>נמצא צילום מסך חדש, לחץ כדי להציג ולנקות אותו~</item>
+        <item>יש יותר ויותר צילומי מסך, ניקוי בלחיצה אחת יכול לעזור לך לפנות מקום</item>
+        <item>צילום המסך צולם בהצלחה, ניתן לסנן כפולים ומטושטשים בלחיצה אחת.</item>
+        <item>צילומי מסך חדשים מתווספים למסד הנתונים, ותמונות כפולות הועמדו בתור לניקוי בלחיצה אחת.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>יש הרבה זבל שנערם. נקה הכל בבת אחת.</item>
+        <item>ניקה לאחרונה %1$d לפני ימים, לחץ כדי לעבד אותו כעת</item>
+        <item>לא הייתי כאן כמה ימים, אז אני אנקה את זה ואחזור לשדה הקרב בקלילות.</item>
+        <item>מכסת הסליקה לא נוצלה היום. אני אנקה את זה כשאחזור.</item>
+        <item>המטמון מתמלא, מחכה שתבדוק אותו</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>הרבה זמן לא ראיתי, זה חיכה. תחזור ותפנה את האשפה.</item>
+        <item>לא ראיתי אותך כמה ימים. אין מנוחה לזבל. תחזור ותטאטא את זה.</item>
+        <item>המטמון נמצא בתור. לחץ והם נעלמים.</item>
+        <item>האשפה תפוס בזמן שאתה לא. התרוקן בלחיצה אחת והרגיש רענן כתמיד.</item>
+        <item>בְּחֲזָרָה? תחילה נקה את האשפה. תוך שלושים שניות, הטלפון קל כמו חדש.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>האשפה שהצטברה כל כך הרבה זמן מתפנה בבת אחת.</item>
+        <item>הגיע הזמן לנקות. האשפה של היום מחכה שתלחץ עליו.</item>
+        <item>ה- Space Daily של היום הגיע. נקה ושמור אותו קל.</item>
+        <item>חלק מהקבצים הם הרבה יותר גדולים ממה שאתה חושב, תסתכל</item>
+        <item>מצא את הבחור שלקח כמה G\'s ונקה אותו</item>
+        <item>רשימת המסמכים הגדולה מוכנה, בואו להציץ.</item>
+        <item>מי תופס הכי הרבה מקום? נחשף בשנייה אחת.</item>
+        <item>צילום רציף נהדר, גימור כואב. תשאיר את זה לנו.</item>
+        <item>תמונות דומות מסודרות בשורה, זה תלוי בך לבחור איזה מהם לשמור</item>
+        <item>יותר מדי תמונות דומות? אנו נעזור לך להשוות ולהסיר כפילויות בלחיצה אחת בלבד.</item>
+        <item>יש לנקות את הסרטונים הלא מקוונים המאוחסנים במטמון.</item>
+        <item>גם שאר האודיו ינוקה.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>האם הסוללה לא עמידה כמו קודם? בדוק את זה.</item>
+        <item>מי גונב לך את החשמל? אתה תדע ברגע שתחפש את זה.</item>
+        <item>כיבוי אלה יאריך את חיי הסוללה.</item>
+        <item>חלק מהאפליקציות מותקנות אך מעולם לא נעשה בהן שימוש. רואים אילו הם?</item>
+        <item>גם שמירה על אפליקציות שאינך משתמש בהן מהווה נטל, הרשימה הוכנה</item>
+        <item>לגבי פרטיות, ככל שהטיפול יטופל מוקדם יותר, כך ייטב.</item>
+        <item>הסתירו את החשובים והיפטרו מהמיותרים. תן לי לעזור לך</item>
+        <item>לאן התנועה הולכת? גלה מי משתמש בו.</item>
+        <item>פרטי התנועה מוכנים וברורים במבט אחד.</item>
+        <item>ברקע יש אפליקציה שמתחברת לאינטרנט בסתר.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} של זבל - נקה אותו בהקשה אחת</string>
+    <string name="notif_scheduled_large_files">{סה"כ} של קבצים גדולים - נקה בקלות</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} קבוצות של תמונות כפולות - שמור {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} של תמונות דומות - בחר מה לנקות</string>
+    <string name="notif_scheduled_videos">{total} של סרטונים - מחק {n} כדי לפנות מקום</string>
+    <string name="notif_scheduled_audio">{סה"כ} של קבצי אודיו - הגיע הזמן לסדר</string>
+    <string name="notif_scheduled_apps">{size} בשימוש על ידי {idle} אפליקציות סרק</string>
+    <string name="notif_scheduled_data">{back} של נתונים בשימוש ברקע</string>
+    <string name="app_manager_uninstall_selected">הסרת האפליקציות שנבחרו</string>
+    <string name="app_manager_uninstall_selected_count">הסרת האפליקציות שנבחרו (%1$d)</string>
+    <string name="cache_removable">ניתן להסרה</string>
+    <string name="cache_clean_selected">הסר מטמון</string>
+    <string name="cache_clean_selected_summary">נקי את %1$s (%2$d)</string>
+</resources>

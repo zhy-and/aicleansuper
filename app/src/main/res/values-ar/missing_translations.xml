@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">الصفحة الرئيسية</string>
+    <string name="nav_swipe">انتقد</string>
+    <string name="nav_compress">ضغط</string>
+    <string name="nav_tools">أدوات</string>
+    <string name="nav_clean">نظيفة</string>
+    <string name="nav_privacy">الخصوصية</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">قم بتنظيم الصور ومقاطع الفيديو وجهات الاتصال الخاصة بك محليًا</string>
+    <string name="home_badge_text">تنظيف الذكاء الاصطناعي</string>
+    <string name="home_quick_summary_title">نصائح التنظيف اليوم</string>
+    <string name="home_quick_summary_body">ابدأ بلقطات الشاشة ومقاطع الفيديو الكبيرة لإخلاء المساحة بشكل أسرع.</string>
+    <string name="home_scan_insight_title">حالة المسح الذكي</string>
+    <string name="home_ready_title">4 أدوات تنظيف قوية</string>
+    <string name="home_ready_body">إدارة الصور ولقطات الشاشة ومقاطع الفيديو وجهات الاتصال في مكان واحد.</string>
+    <string name="storage_overview_title">نظرة عامة على التخزين</string>
+    <string name="storage_overview_summary">يمكن تحرير ما يصل إلى 0.0 جيجابايت</string>
+    <string name="storage_overview_detail">85.4 جيجا بايت من 128 جيجا بايت مستخدمة</string>
+    <string name="storage_overview_summary_format">يمكن تحرير ما يصل إلى %1$s</string>
+    <string name="storage_overview_detail_format">تم استخدام %1$s من %2$s</string>
+    <string name="storage_overview_summary_done">يمكن تحرير ما يصل إلى 1.8 جيجابايت</string>
+    <string name="storage_overview_detail_done">85.4 جيجا بايت من 128 جيجا بايت مستخدمة. ابدأ بمكتبة الوسائط الخاصة بك.</string>
+    <string name="scan_button_idle">ابدأ المسح</string>
+    <string name="scan_button_running">جارٍ المسح...</string>
+    <string name="scan_status_title">حالة المسح</string>
+    <string name="scan_status_idle">جاهز للمسح</string>
+    <string name="scan_status_running">تحليل ملفات الوسائط</string>
+    <string name="scan_status_done">اكتمل المسح. اقتراحات التنظيف جاهزة.</string>
+    <string name="scan_status_error">فشل المسح. حاول مرة أخرى لاحقًا.</string>
+    <string name="scan_status_detail_idle">سيتم فحص لقطات الشاشة ومقاطع الفيديو الكبيرة والصور المشابهة أولاً.</string>
+    <string name="scan_status_detail_running">المسح محليا. لن يتم تحميل الصور ومقاطع الفيديو الخاصة بك.</string>
+    <string name="scan_status_detail_midway">تحليل لقطات الشاشة ومقاطع الفيديو الكبيرة. تنظيم الصور المتشابهة.</string>
+    <string name="scan_status_detail_done">تم العثور على 1.8 جيجابايت للتنظيف. ابدأ بلقطات الشاشة ومقاطع الفيديو الكبيرة.</string>
+    <string name="scan_status_detail_done_format">تم العثور على %1$s للتنظيف. ابدأ بلقطات الشاشة ومقاطع الفيديو الكبيرة.</string>
+    <string name="feature_section_title">أدوات التنظيف الأساسية</string>
+    <string name="feature_section_subtitle">يركز الإصدار الأول على مهام التنظيف الأربع الأكثر شيوعًا</string>
+    <string name="feature_similar_title">صور مماثلة</string>
+    <string name="feature_similar_desc">تنظيف الصور المماثلة</string>
+    <string name="feature_screenshots_title">تنظيف لقطة الشاشة</string>
+    <string name="feature_screenshots_desc">تنظيف لقطات الشاشة غير المستخدمة</string>
+    <string name="feature_videos_title">فيديوهات كبيرة</string>
+    <string name="feature_videos_desc">تنظيف مقاطع الفيديو الكبيرة</string>
+    <string name="feature_contacts_title">تنظيف الاتصال</string>
+    <string name="feature_contacts_desc">تنظيف جهات الاتصال المكررة</string>
+    <string name="feature_similar_space_format">مجموعات %1$d</string>
+    <string name="count_placeholder">لم يتم مسحها ضوئيا</string>
+    <string name="count_similar_done">128 صورة</string>
+    <string name="count_screenshots_done">364 صورة</string>
+    <string name="count_videos_done">12 فيديو</string>
+    <string name="count_contacts_done">9 مجموعات</string>
+    <string name="recent_section_title">ملاحظات الإصدار</string>
+    <string name="recent_section_body">يتضمن هذا الإصدار بنية شاشة XML الرئيسية وطلبات أذونات الوسائط وتدفق فحص العنصر النائب وملخص النتائج. يمكن إضافة ميزات MediaStore وجهات الاتصال والتنظيف الحقيقي بعد ذلك.</string>
+    <string name="permission_denied_message">مطلوب الوصول إلى الوسائط لبدء المسح.</string>
+    <string name="mock_feature_message">ستتم إضافة نتائج المسح الحقيقية إلى هذه الميزة بعد ذلك.</string>
+    <string name="scan_complete_message">تدفق المسح الأولي جاهز. يمكن إضافة البيانات الحقيقية بعد ذلك.</string>
+    <string name="scan_failed_message">فشل الفحص: %1$s</string>
+    <string name="unknown_error">خطأ غير معروف</string>
+    <string name="storage_progress_label">تقدم استخدام التخزين</string>
+    <string name="phase_two_label">المرحلة 2</string>
+    <string name="phase_three_label">المرحلة 3</string>
+    <string name="images_total_title">إجمالي الصور</string>
+    <string name="videos_total_title">إجمالي مقاطع الفيديو</string>
+    <string name="clean_page_title">مركز التنظيف</string>
+    <string name="clean_page_subtitle">ابدأ بالمحتوى الذي يحرر أكبر قدر من المساحة.</string>
+    <string name="clean_page_badge">منظف ذكي</string>
+    <string name="clean_overview_title">نتائج المسح</string>
+    <string name="clean_overview_body">قم بتنظيف أكبر حافظات المساحة أولاً، ثم الصور وجهات الاتصال المشابهة.</string>
+    <string name="privacy_page_title">قبو خاص</string>
+    <string name="privacy_page_subtitle">يحمي رقم التعريف الشخصي المحلي الوسائط الخاصة بك والواردات المستقبلية.</string>
+    <string name="profile_page_title">الملف الشخصي</string>
+    <string name="profile_page_subtitle">يمكنك إدارة عضويتك وإعداداتك ومشترياتك هنا.</string>
+    <string name="profile_page_badge">قسط</string>
+    <string name="profile_hero_title">قم بالترقية إلى Pro للحصول على تجربة التنظيف الكاملة</string>
+    <string name="profile_hero_body">يتضمن Pro إجراءات مجمعة غير محدودة، وPrivate Vault، واكتشاف أفضل للصور المشابهة.</string>
+    <string name="profile_plan_status_free">الخطة الحالية: مجانية</string>
+    <string name="profile_plan_status_pro">النسخة التجريبية الاحترافية نشطة</string>
+    <string name="profile_most_popular">الأكثر شعبية</string>
+    <string name="profile_cta_title">لماذا الترقية؟</string>
+    <string name="profile_cta_body">إذا كنت تقوم في كثير من الأحيان بتنظيف الصور ومقاطع الفيديو وجهات الاتصال، فإن Pro يقلل بشكل كبير من الخطوات المتكررة.</string>
+    <string name="placeholder_card_title">المرحلة الحالية</string>
+    <string name="placeholder_clean_body">تغطي المرحلة الأولى أساس الفحص والأذونات وإطار العمل الرئيسي. ستظهر نتائج التنظيف الحقيقية هنا في المرحلة التالية.</string>
+    <string name="placeholder_privacy_body">القبو الخاص غير متوفر بعد. تتضمن هذه المرحلة التنقل والتخطيط فقط.</string>
+    <string name="placeholder_profile_body">ميزات الملف الشخصي ليست متصلة بعد. ستتم إضافة العضوية والإعدادات والمشتريات لاحقًا.</string>
+    <string name="overview_reclaim_title">توفير المساحة المقدرة</string>
+    <string name="overview_media_count_title">إجمالي وسائل الإعلام</string>
+    <string name="home_note_title">اكتملت المرحلة الأولى</string>
+    <string name="home_note_body">1. التنقل السفلي والإطار متعدد الصفحات \n2. طلبات أذونات الوسائط لنظام Android 13+\n3. أساس المسح المستند إلى MediaStore للحصول على لقطات الشاشة ومقاطع الفيديو الكبيرة\n4. ربط نتيجة الشاشة الرئيسية وإدارة الحالة</string>
+    <string name="feature_coming_soon_format">ستتم إضافة صفحة تفاصيل %1$s في المرحلة المقابلة.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">عناصر %1$d</string>
+    <string name="count_contact_format">اتصالات %1$d</string>
+    <string name="feature_ready_label">متاح</string>
+    <string name="permission_action_label">السماح والمسح الضوئي</string>
+    <string name="refresh_action_label">تحديث النتائج</string>
+    <string name="clean_reclaim_summary_format">%1$s جاهز للتنظيف</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">مجموعات %1$d</string>
+    <string name="count_contact_group_format">مجموعات %1$d</string>
+    <string name="clean_permission_title">الوصول إلى الوسائط مطلوب</string>
+    <string name="clean_permission_body">السماح بالوصول لقراءة لقطات الشاشة ومقاطع الفيديو الخاصة بك. يتم تحليل كافة البيانات محليا.</string>
+    <string name="clean_loaded_hint">اضغط على بطاقة الفئة لعرض التفاصيل.</string>
+    <string name="clean_loading_hint">تحميل لقطات الشاشة ومقاطع الفيديو. انتظر من فضلك.</string>
+    <string name="clean_empty_hint">لا توجد نتائج المسح حتى الآن. السماح بالوصول وتشغيل الفحص أولاً.</string>
+    <string name="detail_back">العودة</string>
+    <string name="screenshot_detail_title">تنظيف لقطة الشاشة</string>
+    <string name="screenshot_detail_subtitle">تصفح لقطات الشاشة باستخدام الصور المصغرة الحقيقية. اضغط على الصورة لمعاينتها، أو حدد العناصر لحذفها.</string>
+    <string name="large_video_detail_title">فيديوهات كبيرة</string>
+    <string name="large_video_detail_subtitle">تصفح مقاطع الفيديو الكبيرة ذات الأغلفة. اضغط على غلاف لتشغيله، أو حدد عناصر لحذفها. اضغط على خط التصفية للتبديل 100 ميجابايت / 500 ميجابايت.</string>
+    <string name="empty_screenshot_title">لم يتم العثور على لقطات الشاشة</string>
+    <string name="empty_screenshot_body">لم يتم العثور على لقطات شاشة في مكتبة الوسائط الخاصة بك، أو لم يتم منح الوصول إليها.</string>
+    <string name="empty_large_video_title">لم يتم العثور على مقاطع فيديو كبيرة</string>
+    <string name="empty_large_video_body">لا يتجاوز حجم مقاطع الفيديو 100 ميغابايت. يمكنك ضبط العتبة في وقت لاحق.</string>
+    <string name="media_item_bucket_format">الألبوم: %1$s</string>
+    <string name="media_item_date_format">التاريخ: %1$s</string>
+    <string name="media_item_duration_format">المدة: %1$s</string>
+    <string name="video_threshold_note">عتبة الفيديو الكبيرة الحالية: 100 ميجابايت</string>
+    <string name="select_all_action">حدد الكل</string>
+    <string name="clear_selected_action">قم بإلغاء تحديد الكل</string>
+    <string name="delete_selected_action">حذف المحدد</string>
+    <string name="selected_count_format">تم تحديد %1$d</string>
+    <string name="delete_dialog_title">هل تريد حذف لقطات الشاشة؟</string>
+    <string name="delete_dialog_message_format">سيتم حذف لقطات شاشة %1$d المحددة. سيطلب منك النظام التأكيد مرة أخرى.</string>
+    <string name="delete_dialog_confirm">متابعة</string>
+    <string name="delete_dialog_cancel">إلغاء</string>
+    <string name="delete_complete_message_format">تمت معالجة لقطات شاشة %1$d. تم تحديث القائمة.</string>
+    <string name="delete_items_complete_format">تمت معالجة عناصر %1$d. تم تحديث القائمة.</string>
+    <string name="delete_failed_message">لا يمكن الحذف. حاول ثانية.</string>
+    <string name="delete_video_dialog_title">هل تريد حذف مقاطع الفيديو؟</string>
+    <string name="delete_video_dialog_message_format">سيتم حذف مقاطع الفيديو %1$d المحددة. سيطلب منك النظام التأكيد مرة أخرى.</string>
+    <string name="delete_similar_dialog_title">هل تريد حذف الصور المشابهة؟</string>
+    <string name="delete_similar_dialog_message_format">سيتم حذف صور %1$d المحددة. لا يتم تضمين العناصر الموصى بها.</string>
+    <string name="video_selection_filter_format">تم تحديد %1$d · التصفية: %2$s (انقر للتبديل)</string>
+    <string name="video_player_unavailable">لا يتوفر مشغل فيديو على هذا الجهاز.</string>
+    <string name="media_preview_title">معاينة</string>
+    <string name="similar_select_candidates_action">حدد المرشحين</string>
+    <string name="similar_deselect_candidates_action">قم بإلغاء تحديد الكل</string>
+    <string name="similar_select_all_candidates">حدد جميع المرشحين</string>
+    <string name="similar_delete_count_action">حذف المحدد (%1$d)</string>
+    <string name="similar_group_number_format">المجموعة %1$d</string>
+    <string name="app_manager_uninstall_unavailable">غير قادر على فتح برنامج إلغاء تثبيت النظام</string>
+    <string name="filter_100mb">100 ميجابايت+</string>
+    <string name="filter_500mb">500 ميجابايت+</string>
+    <string name="filter_all_videos">جميع النتائج</string>
+    <string name="similar_page_title">صور مماثلة</string>
+    <string name="similar_page_subtitle">قم بمراجعة المجموعات المتشابهة باستخدام الصور المصغرة، وحدد المرشحين، واحذف التكرارات.</string>
+    <string name="similar_page_note">يستخدم الإصدار الأول قواعد التجميع خفيفة الوزن. يمكن إضافة التجزئة الإدراكية وتسجيل الحدة لاحقًا.</string>
+    <string name="similar_page_badge">ذكية مماثلة</string>
+    <string name="similar_page_hero_hint">احتفظ بالصور بدقة أعلى وملفات أكبر وطوابع زمنية أحدث.</string>
+    <string name="similar_group_summary_format">تم العثور على مجموعات %1$d تحتوي على صور مرشح %2$d في ألبوماتك.</string>
+    <string name="similar_group_empty_title">لم يتم العثور على مجموعات صور مماثلة</string>
+    <string name="similar_group_empty_body">لا توجد صور في نفس الألبوم تستوفي معايير الوقت والأبعاد المماثلة.</string>
+    <string name="similar_group_card_subtitle_format">مرشحو %1$d · يمكن تحرير ما يصل إلى %2$s</string>
+    <string name="similar_keep_recommend_label">يوصى بالاحتفاظ به</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">المرشحين الآخرين</string>
+    <string name="similar_other_items_more_format">+%1$d المزيد من الصور</string>
+    <string name="contacts_page_title">تنظيف الاتصال</string>
+    <string name="contacts_page_subtitle">البحث عن جهات الاتصال المكررة والفارغة.</string>
+    <string name="contacts_page_badge">اتصل بـ Fix</string>
+    <string name="contacts_page_hero_hint">دمج جهات الاتصال ذات الرقم نفسه، ثم إزالة جهات الاتصال الفارغة.</string>
+    <string name="contacts_permission_title">الوصول إلى جهات الاتصال مطلوب</string>
+    <string name="contacts_permission_body">السماح بالوصول لمسح جهات الاتصال محليًا.</string>
+    <string name="contacts_scan_title">مسح جهات الاتصال</string>
+    <string name="contacts_scan_body">قم بالتحديث للعثور على التكرارات وجهات الاتصال الفارغة.</string>
+    <string name="contacts_duplicate_title">جهات الاتصال المكررة</string>
+    <string name="contacts_empty_title">جهات الاتصال الفارغة</string>
+    <string name="contacts_duplicate_count_format">%1$d مجموعات مكررة</string>
+    <string name="contacts_empty_count_format">%1$d جهات الاتصال الفارغة للتنظيف</string>
+    <string name="contacts_load_action">السماح وتحميل جهات الاتصال</string>
+    <string name="contacts_refresh_action">تحديث جهات الاتصال</string>
+    <string name="contacts_empty_group_title">لم يتم العثور على جهات اتصال مكررة</string>
+    <string name="contacts_empty_group_body">لم يتم العثور على جهات اتصال ذات أرقام هواتف مكررة.</string>
+    <string name="contacts_delete_empty_action">إزالة جهات الاتصال الفارغة</string>
+    <string name="contacts_merge_action">دمج المجموعة</string>
+    <string name="contacts_view_action">عرض في جهات الاتصال</string>
+    <string name="contacts_group_title_format">%1$s · اتصالات %2$d</string>
+    <string name="contacts_group_number_format">الرقم الأساسي: %1$s</string>
+    <string name="contacts_group_members_format">الأعضاء: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">هل ترغب في إزالة جهات الاتصال الفارغة؟</string>
+    <string name="contacts_delete_empty_confirm_message_format">سيتم حذف جهات الاتصال الفارغة أو جهات الاتصال التي لا تحتوي على أرقام %1$d.</string>
+    <string name="contacts_merge_complete_message">تمت مطالبة النظام بدمج مجموعة الاتصال هذه.</string>
+    <string name="contacts_cleanup_complete_message_format">تمت إزالة جهات الاتصال الفارغة %1$d.</string>
+    <string name="contacts_action_failed">فشل إجراء الاتصال. حاول ثانية.</string>
+    <string name="privacy_status_title">حالة الحماية المحلية</string>
+    <string name="privacy_page_badge">قبو خاص</string>
+    <string name="privacy_hero_title">احتفظ بالمحتوى الخاص منفصلاً عن عملية التنظيف</string>
+    <string name="privacy_hero_body">قم بإعداد حماية PIN المحلي أولاً، ثم قم بإضافة استيراد الوسائط الخاصة وفتحها واستردادها.</string>
+    <string name="privacy_status_enabled">مجموعة رقم التعريف الشخصي المكون من 4 أرقام</string>
+    <string name="privacy_status_disabled">لم يتم تعيين رقم تعريف شخصي</string>
+    <string name="privacy_status_body_enabled">ستتم حماية الوسائط الخاصة التي يتم استيرادها لاحقًا بواسطة رقم التعريف الشخصي المحلي.</string>
+    <string name="privacy_status_body_disabled">قم بتعيين رقم تعريف شخصي مكون من 4 أرقام قبل إضافة ميزات استيراد الوسائط الخاصة وفتحها.</string>
+    <string name="privacy_set_pin_action">تعيين رقم التعريف الشخصي</string>
+    <string name="privacy_reset_pin_action">إعادة تعيين رقم التعريف الشخصي</string>
+    <string name="privacy_pin_dialog_title">قم بتعيين رقم التعريف الشخصي (PIN) المكون من 4 أرقام</string>
+    <string name="privacy_pin_dialog_hint">أدخل 4 أرقام</string>
+    <string name="privacy_pin_invalid">أدخل رقم التعريف الشخصي المكون من 4 أرقام.</string>
+    <string name="privacy_pin_saved">تم حفظ رقم التعريف الشخصي المحلي.</string>
+    <string name="privacy_pin_reset_confirm">هل تريد مسح رقم التعريف الشخصي الحالي؟</string>
+    <string name="privacy_pin_reset_done">إعادة تعيين رقم التعريف الشخصي.</string>
+    <string name="privacy_feature_lock_title">فتح المحلية</string>
+    <string name="privacy_feature_lock_body">يستخدم الإصدار الأول رقم التعريف الشخصي للحماية المحلية. ويمكن إضافة القياسات الحيوية في وقت لاحق.</string>
+    <string name="privacy_feature_vault_title">وسائل الإعلام الخاصة</string>
+    <string name="privacy_feature_vault_body">سيتم تخزين الصور ومقاطع الفيديو الخاصة التي يتم استيرادها لاحقًا بشكل منفصل واستبعادها من عملية تنظيف الألبوم الرئيسية.</string>
+    <string name="privacy_feature_scope_title">المرحلة الحالية</string>
+    <string name="privacy_feature_scope_body">يضيف هذا الإصدار حالة PIN وبنية الصفحة. سيأتي بعد ذلك استيراد الوسائط الخاصة والتشفير المحلي.</string>
+    <string name="profile_plan_title">الخطة الحالية</string>
+    <string name="profile_plan_free">مجاني</string>
+    <string name="profile_plan_pro">برو</string>
+    <string name="profile_plan_body_free">قم بالمسح الضوئي وعرض النتائج واستخدام التنظيف الأساسي.</string>
+    <string name="profile_plan_body_pro">أطلق العنان للتنظيف المتقدم والمخزن الخاص وإجراءات غير محدودة وتجربة خالية من الإعلانات.</string>
+    <string name="profile_upgrade_action">قم بالتبديل إلى الإصدار التجريبي الاحترافي</string>
+    <string name="profile_restore_action">العودة إلى الحرة</string>
+    <string name="profile_upgrade_done">تم التبديل إلى الإصدار التجريبي الاحترافي.</string>
+    <string name="profile_restore_done">عادت إلى الحرة.</string>
+    <string name="profile_benefits_title">فوائد للمحترفين</string>
+    <string name="profile_benefits_body">1. الكشف المتقدم عن الصور المماثلة \n2. تنظيف دفعة غير محدودة\n3. مرشحات الفيديو الكبيرة المتقدمة \n4. تنظيف جهات الاتصال المحسنة\n5. المدفن الخاص\n6. واجهة خالية من الإعلانات</string>
+    <string name="detail_page_badge">عرض التفاصيل</string>
+    <string name="detail_page_hint">قم بمراجعة المرشحين قبل تحديد ما يجب تنظيفه أو الاحتفاظ به.</string>
+    <string name="premium">قسط</string>
+    <string name="settings">الإعدادات</string>
+    <string name="grant_access">منح الوصول</string>
+    <string name="storage_permission_title">منح الوصول إلى الملفات</string>
+    <string name="storage_permission_detail">يحتاج CleanSuper AI للوصول إلى ملفاتك للعثور على المكررات والصور الضبابية والملفات الكبيرة. تتم جميع المعالجة محلياً.</string>
+    <string name="storage_permission_scan_point">اعثر على التكرارات والصور الضبابية والملفات الكبيرة عبر التخزين.</string>
+    <string name="storage_permission_privacy_point">تظل ملفاتك على هذا الجهاز ولا يتم تحميلها أبدًا.</string>
+    <string name="storage_permission_message">للمسح المحلي فقط؛ لا يتم تحميل أي بيانات أو مشاركتها مع أطراف ثالثة.</string>
+    <string name="storage_permission_continue">متابعة</string>
+    <string name="storage_permission_close">إغلاق</string>
+    <string name="storage_permission_example_file">الملفات الموجودة على هذا الجهاز</string>
+    <string name="storage_permission_example_size">جاهز للمسح</string>
+    <string name="storage_permission_guide_title">السماح بالوصول إلى كافة الملفات</string>
+    <string name="storage_permission_guide_message">قم بتشغيل المفتاح في الإعدادات لمسح الملفات وتنظيفها على هذا الجهاز.</string>
+    <string name="go_to_settings">انتقل إلى الإعدادات</string>
+    <string name="permission_home_title">صورك مقفلة</string>
+    <string name="permission_home_body">اسمح للصور والفيديو والإشعارات بالوصول إلى مكتبتك بشكل آمن على هذا الجهاز وإرسال تذكيرات التنظيف.</string>
+    <string name="scan_summary_format">عناصر %1$d الممسوحة ضوئيًا · يمكن مراجعة %2$s</string>
+    <string name="scan_running_english">جارٍ فحص مكتبتك…</string>
+    <string name="scan_ready_english">مكتبتك جاهزة</string>
+    <string name="coming_soon">قريبا</string>
+    <string name="compression_failed">لا يمكن ضغط هذه الصورة.</string>
+    <string name="compression_saved">تم حفظ الصورة المضغوطة في Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">تحليل آمن على الجهاز</string>
+    <string name="home_cleanup_library">قم بمراجعة مكتبتك</string>
+    <string name="home_cleanup_badge">على الجهاز</string>
+    <string name="home_quick_clean_action">فتح مركز التنظيف</string>
+    <string name="home_quick_clean_compact_action">مركز التنظيف</string>
+    <string name="home_reclaim_ready_format">%1$s قابلة للاسترداد</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">مساحة التخزين مشغولة</string>
+    <string name="home_storage_detail_format">%1$s للمراجعة · عناصر %2$d</string>
+    <string name="home_quick_tools">أدوات سريعة</string>
+    <string name="home_quick_tools_subtitle">تم وضع إجراءات التنظيف الأكثر استخدامًا في المقدمة</string>
+    <string name="feature_swipe_title">انتقد الصور</string>
+    <string name="feature_swipe_desc">قم بمراجعة الصور واحدة تلو الأخرى وأرسل الصور المرفوضة إلى سلة المهملات</string>
+    <string name="home_contacts_short_desc">دمج التكرارات</string>
+    <string name="feature_ready_short">جاهز</string>
+    <string name="feature_review_short">مراجعة</string>
+    <string name="tools_section_storage">التخزين والوسائط</string>
+    <string name="tools_section_device">أدوات الجهاز</string>
+    <string name="tools_hero_badge">7 أدوات مفيدة</string>
+    <string name="tools_hero_title">أدوات مفيدة، في مكان واحد</string>
+    <string name="tools_hero_body">قم بإدارة التخزين والوسائط من خلال إجراءات بسيطة ومركزة.</string>
+    <string name="tool_file_manager_desc">تصفح وتنظيف لقطات الشاشة ومقاطع الفيديو والمزيد</string>
+    <string name="tool_media_compressor_desc">تقليل حجم الصور والفيديو دون فقدان الجودة</string>
+    <string name="tool_secret_space_desc">قفل الصور الخاصة خلف رقم PIN آمن</string>
+    <string name="tool_app_manager_desc">عرض التطبيقات المثبتة واستخدام التخزين</string>
+    <string name="tool_clean_calendar_desc">قم بإزالة أحداث التقويم القديمة التي تشوش جدولك</string>
+    <string name="tool_ai_enhancer_desc">قم بتحسين الصور الباهتة أو ذات الإضاءة المنخفضة باستخدام الذكاء الاصطناعي</string>
+    <string name="tool_speed_test_desc">تحقق من سرعة التنزيل والتحميل على الشبكة</string>
+    <string name="tools_page_subtitle">كل ما تحتاجه لهاتف أنظف</string>
+    <string name="compress_page_subtitle">توفير المساحة دون فقدان اللحظات</string>
+    <string name="video_compressor">ضاغط الفيديو</string>
+    <string name="video_compress_subtitle">قم بتقليل حجم الفيديو من خلال إعادة ترميز H.264 على الجهاز</string>
+    <string name="video_compress_card_hint">720p · جودة متوازنة</string>
+    <string name="choose_video">اختر فيديو</string>
+    <string name="choose_video_hint">اختر مقطع فيديو لضغطه</string>
+    <string name="compress_photo_guide_title">اختر صورة لضغطها</string>
+    <string name="compress_photo_guide_body">تتم معالجتها على الجهاز · أصغر في ثواني</string>
+    <string name="compress_video_guide_title">اختر مقطع فيديو لضغطه</string>
+    <string name="compress_video_guide_body">على الجهاز H.264 · متوازن 720p</string>
+    <string name="compress_guide_tap">انقر للاختيار</string>
+    <string name="enhance_photo_guide_title">اختر صورة لتحسينها</string>
+    <string name="enhance_photo_guide_body">السطوع · التباين · الحدة</string>
+    <string name="preview_original_photo_label">قبل · الصورة الأصلية</string>
+    <string name="preview_compressed_photo_label">بعد · معاينة مضغوطة</string>
+    <string name="preview_original_video_label">قبل · الفيديو الأصلي</string>
+    <string name="preview_compressed_video_label">بعد · معاينة مضغوطة</string>
+    <string name="preview_enhanced_photo_label">بعد · تعزيز المعاينة</string>
+    <string name="selected_video_preview">معاينة الفيديو المحدد</string>
+    <string name="play_video_preview">تشغيل معاينة الفيديو</string>
+    <string name="video_preview_title">معاينة الفيديو</string>
+    <string name="video_preview_failed">لا يمكن تشغيل هذا الفيديو.</string>
+    <string name="video_compression_saved">تم حفظ الفيديو المضغوط في Movies/CleanSuperAI.</string>
+    <string name="video_compression_failed">لا يمكن ضغط هذا الفيديو.</string>
+    <string name="video_compression_preparing">جارٍ التحضير لضغط الفيديو…</string>
+    <string name="video_compression_progress_format">ضغط الفيديو… %1$d%%</string>
+    <string name="video_compression_finishing">جارٍ إنهاء الفيديو المضغوط…</string>
+    <string name="video_compression_timeout">استغرق ضغط هذا الفيديو وقتًا طويلاً جدًا. يرجى تجربة مقطع أقصر.</string>
+    <string name="app_manager_subtitle">راجع التطبيقات المثبتة وافتح إعدادات النظام لإلغاء التثبيت أو مسح ذاكرة التخزين المؤقت.</string>
+    <string name="app_manager_summary_format">تم العثور على تطبيقات المستخدم %1$d · انقر للإدارة</string>
+    <string name="clean_calendar_subtitle">ابحث عن أحداث التقويم السابقة وقم بإزالة الأحداث التي لم تعد بحاجة إليها.</string>
+    <string name="clean_calendar_delete">حذف المحدد</string>
+    <string name="clean_calendar_empty">لم يتم العثور على الأحداث الماضية</string>
+    <string name="clean_calendar_summary_format">أحداث %1$d الماضية · تم تحديد %2$d</string>
+    <string name="clean_calendar_delete_confirm">هل تريد حذف أحداث %1$d الماضية المحددة؟</string>
+    <string name="clean_calendar_delete_done">أحداث %1$d المحذوفة</string>
+    <string name="calendar_permission_hint">السماح بالوصول إلى التقويم لفحص الأحداث الماضية</string>
+    <string name="calendar_permission_denied">مطلوب إذن التقويم</string>
+    <string name="calendar_untitled">(بدون عنوان)</string>
+    <string name="image_enhancer_subtitle">قم بتحسين السطوع والتباين والحدة محليًا على هذا الجهاز.</string>
+    <string name="image_enhancer_hint">اختر صورة لتحسينها</string>
+    <string name="image_enhancer_ready">على استعداد لتعزيز</string>
+    <string name="image_enhancer_action">تعزيز الصورة</string>
+    <string name="image_enhancer_working">تعزيز…</string>
+    <string name="image_enhancer_done">معاينة محسنة جاهزة · احفظها عندما ترغب في ذلك</string>
+    <string name="image_enhancer_save">حفظ الصورة المحسنة</string>
+    <string name="image_enhancer_saved">تم حفظ الصورة المحسنة في الصور/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">تعذر تحسين هذه الصورة.</string>
+    <string name="speed_test_subtitle">قم بقياس التنزيل والتحميل ووقت الاستجابة باستخدام خوادم Cloudflare.</string>
+    <string name="speed_test_hint">انقر فوق ابدأ لإجراء فحص قصير لسرعة الشبكة</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">تنزيل ميغابت في الثانية</string>
+    <string name="speed_test_start">بدء اختبار السرعة</string>
+    <string name="speed_test_running">جارٍ اختبار الاتصال…</string>
+    <string name="speed_test_done">اكتمل الاختبار</string>
+    <string name="speed_test_failed">فشل اختبار السرعة. تحقق من شبكتك وحاول مرة أخرى.</string>
+    <string name="speed_test_download_idle">تحميل · الانتظار</string>
+    <string name="speed_test_upload_idle">تحميل · في انتظار</string>
+    <string name="speed_test_latency_idle">الكمون · الانتظار</string>
+    <string name="speed_test_download_result">تحميل · %1$.1f ميغابت في الثانية</string>
+    <string name="speed_test_upload_result">تحميل · %1$.1f ميغابت في الثانية</string>
+    <string name="speed_test_latency_result">الكمون · %1$d مللي ثانية</string>
+    <string name="photo_compressor">ضاغط الصور</string>
+    <string name="compress_quality_hint">JPEG المتوازن · 70% quality</string>
+    <string name="choose_photo_hint">اختر صورة لضغطها</string>
+    <string name="choose_photo">اختر صورة</string>
+    <string name="compress_preview">ضغط المعاينة</string>
+    <string name="compress_and_save">ضغط وحفظ</string>
+    <string name="save_compressed_photo">حفظ الصورة المضغوطة</string>
+    <string name="save_compressed_video">حفظ الفيديو المضغوط</string>
+    <string name="share">شارك</string>
+    <string name="keep">احتفظ</string>
+    <string name="move_to_review_bin">الانتقال إلى سلة المهملات</string>
+    <string name="clear_review_bin">مسح سلة المراجعة</string>
+    <string name="swipe_page_subtitle">المراجعة حسب الشهر · اسحب لليمين للاحتفاظ، ولليسار في سلة المهملات</string>
+    <string name="swipe_trash_open">مفتوح</string>
+    <string name="swipe_trash_label_singular">الصورة في سلة المهملات</string>
+    <string name="swipe_trash_label_plural">الصور في سلة المهملات</string>
+    <string name="swipe_empty_title">تمت مراجعة جميع الصور</string>
+    <string name="swipe_empty_body">ارجع لاختيار شهر آخر، أو افتح سلة المهملات لاستعادة الصور.</string>
+    <string name="category_person_format">شخص · %1$d</string>
+    <string name="category_animal_format">الحيوان · %1$d</string>
+    <string name="category_vehicle_format">المركبة · %1$d</string>
+    <string name="no_photos_available">لا توجد صور متاحة</string>
+    <string name="splash_tagline">التنظيف الذكي. خاص بالتصميم.</string>
+    <string name="selected_photos_deleted">تم حذف الصور المحددة</string>
+    <string name="added_to_review_bin">تمت الإضافة إلى سلة المراجعة</string>
+    <string name="photos_deleted_format">تم حذف صور %1$d</string>
+    <string name="delete_photos_failed">لا يمكن حذف الصور المحددة</string>
+    <string name="share_photo">مشاركة الصورة</string>
+    <string name="trash_bin_title_format">سلة المهملات (%1$s)</string>
+    <string name="trash_bin_title_empty">سلة المهملات</string>
+    <string name="trash_restore_hint">انقر لاستعادة الصور</string>
+    <string name="trash_empty_action">حذف الكل في سلة المهملات</string>
+    <string name="trash_restored">تمت استعادة الصورة</string>
+    <string name="trash_bin_empty">سلة المهملات فارغة</string>
+    <string name="feature_smart_groups">المجموعات الذكية</string>
+    <string name="feature_duplicate_photos">صور مكررة</string>
+    <string name="feature_duplicate_videos">مقاطع فيديو مكررة</string>
+    <string name="feature_all_videos">جميع الفيديوهات</string>
+    <string name="feature_screenshots_short">لقطات الشاشة</string>
+    <string name="scan_unavailable">المسح غير متاح</string>
+    <string name="please_try_again">يرجى المحاولة مرة أخرى</string>
+    <string name="tool_file_manager">مدير الملفات</string>
+    <string name="tool_media_compressor">ضاغط الوسائط</string>
+    <string name="tool_app_manager">مدير التطبيقات</string>
+    <string name="tool_clean_calendar">التقويم النظيف</string>
+    <string name="tool_ai_enhancer">محسن الصور بالذكاء الاصطناعي</string>
+    <string name="tool_secret_space">الفضاء السري</string>
+    <string name="tool_speed_test">اختبار السرعة</string>
+    <string name="compressing">ضغط…</string>
+    <string name="original_size_format">الأصل · %1$s</string>
+    <string name="compressed_result_format">مضغوط · %1$s\nتم الحفظ · %2$s</string>
+    <string name="swipe_grant_access_hint">منح إمكانية الوصول إلى الوسائط من الصفحة الرئيسية لتصفح الصور</string>
+    <string name="media_item_placeholder">وسائل الإعلام</string>
+    <string name="selected_image_preview">معاينة الصورة المحددة</string>
+    <string name="current_photo">الصورة الحالية</string>
+    <string name="month_cover">غلاف الشهر</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">شخص · 0</string>
+    <string name="category_animal_zero">الحيوان · 0</string>
+    <string name="category_vehicle_zero">مركبة · 0</string>
+    <string name="duplicate_photos_page_title">صور مكررة</string>
+    <string name="duplicate_photos_page_subtitle">ابحث عن التكرارات الدقيقة حسب حجم الملف وأبعاده، ثم احتفظ بنسخة واحدة.</string>
+    <string name="duplicate_photos_page_badge">المطابقة التامة</string>
+    <string name="duplicate_photos_summary_format">تم العثور على مجموعات %1$d تحتوي على صور مكررة لـ %2$d.</string>
+    <string name="duplicate_photos_empty_title">لم يتم العثور على صور مكررة</string>
+    <string name="duplicate_photos_empty_body">لم يتم العثور على صور بنفس الحجم والأبعاد.</string>
+    <string name="duplicate_videos_page_title">مقاطع فيديو مكررة</string>
+    <string name="duplicate_videos_page_subtitle">ابحث عن مقاطع الفيديو المكررة حسب الحجم والمدة، ثم احتفظ بنسخة واحدة.</string>
+    <string name="duplicate_videos_page_badge">المطابقة التامة</string>
+    <string name="duplicate_videos_summary_format">تم العثور على مجموعات %1$d تحتوي على مقاطع فيديو مكررة %2$d.</string>
+    <string name="duplicate_videos_empty_title">لم يتم العثور على مقاطع فيديو مكررة</string>
+    <string name="duplicate_videos_empty_body">لم يتم العثور على مقاطع فيديو بنفس الحجم والمدة.</string>
+    <string name="settings_page_title">الإعدادات</string>
+    <string name="settings_page_subtitle">اللغة ومعلومات التطبيق والخصوصية وذاكرة التخزين المؤقت.</string>
+    <string name="settings_language_title">اللغة</string>
+    <string name="settings_language_subtitle">اختر لغة التطبيق المفضلة لديك</string>
+    <string name="settings_about_title">حول</string>
+    <string name="settings_about_subtitle">اسم التطبيق وإصداره</string>
+    <string name="settings_about_message_format">كلين سوبر AI\nالإصدار %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">سياسة الخصوصية</string>
+    <string name="settings_privacy_policy_subtitle">كيف نتعامل مع بياناتك</string>
+    <string name="settings_privacy_policy_body">يتم تشغيل جميع عمليات فحص الوسائط وتنظيفها محليًا على جهازك. نحن لا نقوم بتحميل الصور أو مقاطع الفيديو أو جهات الاتصال الخاصة بك إلى خوادمنا. ستتبع التحليلات الاختيارية (إذا تم تمكينها لاحقًا) سياسات المتجر. يمكنك إلغاء الوصول إلى الوسائط في أي وقت في إعدادات النظام.</string>
+    <string name="settings_clear_cache_title">مسح ذاكرة التخزين المؤقت</string>
+    <string name="settings_clear_cache_subtitle">تخزين مؤقت مجاني للتطبيقات</string>
+    <string name="settings_clear_cache_confirm">هل تريد مسح ملفات ذاكرة التخزين المؤقت المؤقتة؟ لن يتم حذف الصور والإعدادات الخاصة بك.</string>
+    <string name="settings_clear_cache_done_format">تم مسح %1$s من ذاكرة التخزين المؤقت.</string>
+    <string name="language_page_title">لغة التطبيق</string>
+    <string name="language_page_subtitle">افتراضيًا، يتبع CleanSuper AI لغة جهازك.</string>
+    <string name="language_follow_system_title">اتبع لغة النظام</string>
+    <string name="language_follow_system_subtitle_format">لغة الجهاز الحالية: %1$s</string>
+    <string name="month_photo_count_format">صور %1$d</string>
+    <string name="review_bin_pending_format">صور %1$d تنتظر في سلة المراجعة</string>
+    <string name="media_bucket_video">فيديو</string>
+    <string name="settings_terms_title">شروط الاستخدام</string>
+    <string name="settings_terms_subtitle">اقرأ الشروط</string>
+    <string name="settings_widget_title">القطعة الشاشة الرئيسية</string>
+    <string name="settings_widget_subtitle">إضافة اختصار التنظيف</string>
+    <string name="tool_network_traffic">حركة مرور الشبكة</string>
+    <string name="tool_network_traffic_desc">الاستخدام عن طريق التطبيق</string>
+    <string name="tool_battery_info">معلومات البطارية</string>
+    <string name="tool_battery_info_desc">تهمة والصحة</string>
+    <string name="tool_device_info">معلومات الجهاز</string>
+    <string name="tool_device_info_desc">النظام والواي فاي</string>
+    <string name="tool_private_vault">قبو خاص</string>
+    <string name="tool_private_vault_desc">إخفاء الصور ومقاطع الفيديو</string>
+    <string name="home_more_tools">المزيد من الأدوات</string>
+    <string name="home_battery_info">البطارية</string>
+    <string name="home_device_info">الجهاز</string>
+    <string name="home_large_files">ملفات كبيرة</string>
+    <string name="home_cache_cleanup">ذاكرة التخزين المؤقت نظيفة</string>
+    <string name="home_network_traffic">استخدام البيانات</string>
+    <string name="home_private_vault">قبو خاص</string>
+    <string name="home_picture_cleanup">الصور</string>
+    <string name="home_video_cleanup">فيديوهات</string>
+    <string name="home_audio_cleanup">الصوت</string>
+    <string name="media_loading">جارٍ تحميل الوسائط…</string>
+    <string name="media_loading_hint">تنظيم ملفاتك. انتظر من فضلك.</string>
+    <string name="media_count_summary">عناصر %1$d · %2$s · %3$d مختارة</string>
+    <string name="media_empty_title">لم يتم العثور على أي وسائط</string>
+    <string name="media_empty_body">لا توجد عناصر في هذه الفئة.</string>
+    <string name="media_error_title">تعذر تحميل الوسائط</string>
+    <string name="media_access_title">الوصول إلى التخزين مطلوب</string>
+    <string name="media_access_body">السماح لجميع الملفات بالوصول في الإعدادات لتصفح هذه الوسائط.</string>
+    <string name="media_delete_title">هل تريد حذف العناصر المحددة؟</string>
+    <string name="media_delete_message">هل تريد حذف العناصر المحددة %1$d؟ قد يطلب منك Android التأكيد.</string>
+    <string name="media_recent_group">في غضون شهر واحد</string>
+    <string name="media_older_group">أقدم من شهر واحد</string>
+    <string name="media_group_summary">عناصر %1$d · %2$s</string>
+    <string name="audio_player_unavailable">لا يتوفر مشغل صوت على هذا الجهاز.</string>
+    <string name="vault_items_summary">%1$d العناصر الخاصة</string>
+    <string name="vault_empty_gallery">قبو الخاص بك فارغ. قم باستيراد الصور أو مقاطع الفيديو لمشاهدتها هنا.</string>
+    <string name="cache_group_app">ذاكرة التخزين المؤقت للتطبيق</string>
+    <string name="cache_group_apk">ملفات APK القديمة</string>
+    <string name="cache_group_residual">الملفات المتبقية</string>
+    <string name="cache_summary">ملفات %1$d · %2$s</string>
+    <string name="cleanup_report_title">اكتمل التنظيف</string>
+    <string name="cleanup_report_freed">تم تحرير الفضاء</string>
+    <string name="cleanup_report_count">تمت إزالة %1$d من عناصر %2$d</string>
+    <string name="cleanup_report_other">تنظيف الملفات الأخرى</string>
+    <string name="cleanup_report_done">تم</string>
+    <string name="exit_retain_title">هل تريد الخروج من CleanSuper AI؟</string>
+    <string name="exit_retain_message">أضف أداة منزلية لتنظيف أسرع</string>
+    <string name="exit_retain_confirm_exit">خروج</string>
+    <string name="exit_retain_add">أضف</string>
+    <string name="exit_retain_feature_cache">ذاكرة التخزين المؤقت</string>
+    <string name="exit_retain_feature_large">ملفات كبيرة</string>
+    <string name="widget_status_storage">مساحة حرة</string>
+    <string name="notif_screenshot">لقطات الشاشة</string>
+    <string name="exit_retain_message_existing">القطعة المنزلية الخاصة بك جاهزة للتنظيف السريع</string>
+    <string name="notif_cache">ذاكرة التخزين المؤقت</string>
+    <string name="notif_channel_name">شريط أدوات التنظيف السريع</string>
+    <string name="notif_channel_desc">شريط أدوات ثابت لإجراءات التنظيف السريعة</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">تذكيرات نظيفة</string>
+    <string name="notif_event_channel_desc">تذكيرات محلية بعد لقطات الشاشة والتثبيتات وإلغاء التثبيت</string>
+    <string name="notif_event_summary_channel_name">ملخص التذكير النظيف</string>
+    <string name="notif_event_screenshot_title">لقطة شاشة أخرى؟ 1 حان الوقت لمسح لقطات الشاشة</string>
+    <string name="notif_event_install_title">لقد انتقل التطبيق الجديد، وكذلك ذاكرة التخزين المؤقت. تنظيف</string>
+    <string name="notif_event_uninstall_title">تم إلغاء التثبيت بنجاح! لتنظيف بقايا الملف</string>
+    <string name="notif_clean_reminder_title">هناك الكثير من القمامة مكدسة. تنظيفه كله في وقت واحد.</string>
+    <string name="notif_event_battery_below_50_title">البطارية ممتلئة أكثر من النصف. اعتني بها الآن، وسوف تستمر حتى تصل إلى المنزل.</string>
+    <string name="notif_event_battery_below_20_title">بطارية منخفضة. هل تريد أن تعرف من يسرق الكهرباء لديك؟ انقر لرؤية التصنيف العالمي.</string>
+    <string name="notif_event_charging_title">موصول بالكهرباء. مهمة الليلة: إعادة التعبئة، ثم التنظيف.</string>
+    <string name="notif_event_charging_full_title">مشحونة بالكامل وجاهزة للانطلاق. فحص أخير: هل تم مسح سلة المهملات؟</string>
+    <string name="notif_event_charging_to_80_title">السباق النهائي هو 80٪. قم بتفريغ سلة المهملات وحزمها بخفة للترحيب بالطاقة الكاملة.</string>
+    <string name="notif_event_charging_disconnect_title">افصل وانطلق. تذكر أن تأخذ الوقت الكافي لتنظيف سلة المهملات والبقاء في حالة جيدة.</string>
+    <string name="notif_event_app_update_title">وصلت نسخة جديدة. تم تنظيف كل ما تبقى من الإصدار القديم بالكامل.</string>
+    <string name="notif_event_network_change_title">الويب يتغير! عرض حالة الشبكة الحالية 1</string>
+    <string name="notif_event_screen_lock_title">اترك هاتفك واتركه لنا. وقت الراحة أمام الشاشة = وقت الرضاعة.</string>
+    <string name="notif_event_screen_on_after_lock_title">نلتقي مرة أخرى، هل أنت عالق؟ معظمها قمامة، حاول تنظيفها.</string>
+    <string name="notif_event_storage_free_drop_title">لقد تغيرت مساحة التخزين. دعونا نرى ما الذي يشغل المساحة؟</string>
+    <string name="notif_event_scheduled_push_1_title">تتم إزالة القمامة التي تراكمت لفترة طويلة مرة واحدة.</string>
+    <string name="notif_event_scheduled_push_2_title">هل البطارية ليست متينة كما كانت من قبل؟ تحقق من ذلك.</string>
+    <string name="notif_event_app_inactive_title">لم أراك منذ وقت طويل، لقد كان ينتظر. أعود وامسح سلة المهملات.</string>
+    <string name="notif_event_scheduled_push_3_title">بنقرة واحدة على قوائم التشغيل الخاصة بك - قم بإعداد الأداة</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>بنقرة واحدة على قوائم التشغيل الخاصة بك - قم بإعداد الأداة</item>
+        <item>اجعل كل شيء أسهل باستخدام الأداة — أضف اختصارًا للموسيقى</item>
+        <item>العب بسرعة دون إلغاء القفل — قم بتمكين أداة الشاشة الرئيسية</item>
+    </string-array>
+    <string name="notif_event_app_background_title">لقد نسيت شيئا</string>
+    <string name="notif_event_app_background_content">تعال وانتهي من التنظيف حتى يعمل بشكل أكثر سلاسة.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>لقد نسيت شيئا</item>
+        <item>تبقى خطوة واحدة</item>
+        <item>أخبار جيدة</item>
+        <item>لقد غادرت بسرعة كبيرة</item>
+        <item>لا تترك غير المرغوب فيه بين عشية وضحاها</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>تعال وانتهي من التنظيف حتى يعمل بشكل أكثر سلاسة.</item>
+        <item>نقرة واحدة إضافية لإنهاء التنظيف وتحرير مساحة أكبر.</item>
+        <item>تم اكتشاف مساحة قابلة للتحرير - تعال واطلب التنظيف بنقرة واحدة.</item>
+        <item>يمكن أن يكون هاتفك أسرع - تعال وشاهد التحسين.</item>
+        <item>تعال وانتهي من التنظيف حتى يعمل بشكل أكثر سلاسة.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">نتائج المسح جاهزة - فالملفات غير المرغوب فيها تشغل مساحة. تنظيف الآن</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>نتائج المسح جاهزة - فالملفات غير المرغوب فيها تشغل مساحة. تنظيف الآن</item>
+        <item>تبقى خطوة واحدة: عد وأحصل على مساحة حرة على الفور.</item>
+        <item>هل نسيت التنظيف بعد الفحص؟ 10 ثواني لجعل هاتفك أخف وزنا.</item>
+        <item>لا تزال الرسائل غير المرغوب فيها موجودة على هاتفك، وقد تم حفظ النتائج. أعود للتنظيف بنقرة واحدة.</item>
+        <item>عثر الفحص الأخير على عناصر متعددة لتنظيفها. تعال أنهي الأمر.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">لم يتم التنظيف بعد — تعال لإكمال الخطوة الأخيرة.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>لم يتم التنظيف بعد — تعال لإكمال الخطوة الأخيرة.</item>
+        <item>توقف التنظيف: في منتصف الطريق. الانتهاء من أجل هاتف أخف وزنا.</item>
+        <item>لقد أوشكت عملية التنظيف على الانتهاء، فلا تترك الأشياء غير المرغوب فيها خلفك.</item>
+        <item>لقد تركتها في منتصف فترة التنظيف - أكملها واشعر بالفرق.</item>
+        <item>يمكن أن يستمر التنظيف المتقطع في أي وقت. تعال أنهي الأمر.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">تم حذف الصورة — تم نقلها بأمان إلى سلة المحذوفات.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>تم حذف الصورة — تم نقلها بأمان إلى سلة المحذوفات.</item>
+        <item>لقد قمت بحذف صورة واحدة للتو - هل ترى مقدار المساحة التي قمت بتحريرها؟</item>
+        <item>تم حذف الصورة - احذفها نهائيًا لإخلاء مساحة الآن.</item>
+        <item>تم حذف الصورة بأمان - تم تحديث حالة التخزين.</item>
+        <item>تم حذف الصورة - يمكنك تنظيف لقطات الشاشة المشابهة أيضًا.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">تم حذف الفيديو - يتم تحرير مساحة كبيرة.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>تم حذف الفيديو - يتم تحرير مساحة كبيرة.</item>
+        <item>تمت إزالة مقطع فيديو كبير - تم تخفيف ضغط التخزين على الفور.</item>
+        <item>تم حذف الفيديو - تحقق من حالة التخزين الحالية لديك.</item>
+        <item>تم الحذف - قم بإفراغ سلة المحذوفات لإخلاء مساحة كاملة.</item>
+        <item>تم حذف الفيديو - قد يكون هناك المزيد من مقاطع الفيديو الكبيرة المنسية التي يجب تنظيفها.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">تم حذف الصوت - تضاف الملفات الصغيرة. يستمر في التقدم.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>تم حذف الصوت - تضاف الملفات الصغيرة. يستمر في التقدم.</item>
+        <item>لقد اختفى هذا الصوت، ويمكن أيضًا تنظيف المزيد من الملفات المماثلة غير المستخدمة.</item>
+        <item>تم حذف الصوت - تم تحديث تفاصيل التخزين. تعال نلقي نظرة.</item>
+        <item>تم حذف ملف صوتي واحد - تم تحديث قائمة التخزين.</item>
+        <item>تم حذف الصوت - قم بإفراغ سلة المحذوفات لإنهاء تحرير المساحة.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">تم حذف الملف - تم تحرير مساحة تخزين أكبر قليلاً.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>تم حذف الملف - تم تحرير مساحة تخزين أكبر قليلاً.</item>
+        <item>تم حذف الملف - لن تزعج الفوضى هاتفك بعد الآن.</item>
+        <item>تم حذف الملف - تعرف على الأشياء الأخرى التي يمكنك تنظيفها.</item>
+        <item>تم حذف الملف - تمت مزامنة التغييرات، وتم تحديث حالة التخزين.</item>
+        <item>تم مسح هذا الملف — استعادة المساحة الآن.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">تم تنزيل الصورة - افتحها وألق نظرة.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>تم تنزيل الصورة - افتحها وألق نظرة.</item>
+        <item>تم تنزيل الصور - قم بتنظيف الصور المكررة في ألبومك أثناء تواجدك فيها</item>
+        <item>تم التنزيل - تم حفظ الصورة بأمان. تعال وتحقق من صور مماثلة</item>
+    </string-array>
+    <string name="notif_event_video_download_title">تم تنزيل الفيديو — إنه ليس صغيرًا. تعرف على مقدار المساحة التي يمكن أن تحررها مقاطع الفيديو القديمة</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>تم تنزيل الفيديو — إنه ليس صغيرًا. تعرف على مقدار المساحة التي يمكن أن تحررها مقاطع الفيديو القديمة</item>
+        <item>تم حفظ مقطع فيديو جديد - ابحث عن مقاطع فيديو كبيرة الحجم لحذفها وتحرير مساحة. اضغط علي</item>
+        <item>تشغل مقاطع الفيديو مساحة - لقد وجدنا عناصر قابلة للتنظيف لتفتيح هاتفك. انقر هنا</item>
+        <item>تم التنزيل! قم بتنظيف بعض مقاطع الفيديو القديمة وستعود المساحة. اضغط علي</item>
+        <item>تم فرز الفيديو الجديد — من السهل العثور عليه أو تنظيفه. انقر لرؤية</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">تم تنزيل الصوت - قم بترتيب مكتبة الموسيقى الخاصة بك بنقرة واحدة. اضغط علي</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>تم تنزيل الصوت - قم بترتيب مكتبة الموسيقى الخاصة بك بنقرة واحدة. اضغط علي</item>
+        <item>تم فرز الصوت الجديد — قم بتنظيف الصوت القديم أثناء تواجدك هنا. اضغط علي</item>
+        <item>مكتبة الموسيقى تمتلئ؟ تحقق من الصوت القابل للتنظيف. انقر هنا</item>
+        <item>تم تنزيل الصوت - قم بحذف البيانات المكررة بنقرة واحدة. اضغط لي لترتيب</item>
+    </string-array>
+    <string name="notif_event_file_download_title">تم حفظ ملف جديد - مسح الملفات القديمة ومساحة خالية. انقر هنا</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>تم حفظ ملف جديد - مسح الملفات القديمة ومساحة خالية. انقر هنا</item>
+        <item>تم التنزيل - تعرف على الملفات القديمة التي يمكنك تنظيفها. اضغط علي</item>
+        <item>ملف جديد جاهز - أرشيف ذكي + نظيف. اضغط علي للبدء</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">تم إفراغ سلة المحذوفات - تم تحديث مساحة التخزين. تحقق من أحدث مساحة لديك.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>تم إفراغ سلة المحذوفات - تم تحديث مساحة التخزين. تحقق من أحدث مساحة لديك.</item>
+        <item>تم إفراغ سلة المحذوفات - قم بتنظيف بقايا الطعام بعمق.</item>
+        <item>تم إفراغه بنجاح — المزيد من النفايات التي يجب تنظيفها. تعال نلقي نظرة.</item>
+    </string-array>
+    <string name="notif_event_action_clean">تنظيف الآن</string>
+    <string name="notif_event_action_open_home">مفتوح</string>
+    <string name="notif_event_action_manage">إدارة التطبيقات</string>
+    <string name="notif_event_action_check_battery">تحقق من البطارية</string>
+    <string name="notif_event_action_check_network">تحقق من الشبكة</string>
+    <string name="notif_days_unit">يوم</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>لقد تغيرت مساحة التخزين. دعونا نرى ما الذي يشغل المساحة؟</item>
+        <item>تم الكشف عن التغييرات المكانية. ربما يكون هناك بعض القمامة الجديدة، ألقِ نظرة؟</item>
+        <item>لقد تم نقل المساحة المتوفرة. هل تعرف من أكلها؟ انقر لإلقاء نظرة.</item>
+        <item>هل المساحة ضيقة؟ لقد اكتشفنا التغيير للتو، فلنلقي نظرة على التفاصيل.</item>
+        <item>تذكير بتغيير المساحة: قد تتراكم الكثير من النفايات. تحقق من ذلك؟</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>بطارية منخفضة. هل تريد أن تعرف من يسرق الكهرباء لديك؟ انقر لرؤية التصنيف العالمي.</item>
+        <item>قاع قريبا. إذا قمت بمسح التطبيقات التي تسرق الكهرباء، فلا يزال بإمكانك البقاء على قيد الحياة لفترة من الوقت.</item>
+        <item>البطارية على وشك النفاد. إن مسح بعض الخلفيات أفضل من عدم القيام بأي شيء.</item>
+        <item>البطارية حمراء. لا يزال بإمكانك حفظه، انقر لفتحه وإلقاء نظرة.</item>
+        <item>أقل من 20% rMains. دعونا نقوم ببعض الإسعافات الأولية الموفرة للطاقة والتنظيف.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>البطارية ممتلئة أكثر من النصف. اعتني بها الآن، وسوف تستمر حتى تصل إلى المنزل.</item>
+        <item>البطارية ممتلئة أكثر من النصف. أصبح الاهتمام بالبطارية الآن أسهل بكثير من الانتظار حتى 20%.</item>
+        <item>البطارية نصف نفدت. كم من الوقت يمكن أن تستمر؟ انقر لإلقاء نظرة.</item>
+        <item>البطارية ممتلئة أكثر من النصف. لقد حان الوقت للعناية بالواجهة الخلفية، لا تنتظر حتى تتوتر.</item>
+        <item>بقي نصف البطارية. قم بإزالة اللاعبين الكبار المتعطشين للقوة واجعل الشوط الثاني أكثر استقرارًا.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>السباق النهائي هو 80٪. قم بتفريغ سلة المهملات وحزمها بخفة للترحيب بالطاقة الكاملة.</item>
+        <item>لا يزال 20% short من الشحن الكامل. توقف عن التحديق في شاشتك ودعنا نعتني بالقمامة.</item>
+        <item>80%: خطوة واحدة بعيداً عن الكمال. انقر مرة واحدة وسيتم مسحها بالكامل عندما تكون البطارية مشحونة بالكامل.</item>
+        <item>80%, a بطارية جيدة لهاتف محمول جيد. تنظيف الجولة بينما يكون الجو حارا؟</item>
+        <item>آخر 20% i أعطيت لنا. تنظر إلى البطارية، ونحن نقوم بتنظيف القمامة.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>مشحونة بالكامل وجاهزة للانطلاق. فحص أخير: هل تم مسح سلة المهملات؟</item>
+        <item>بعد الشحن، يكون الشعور بالطقوس ممتلئًا. ماذا عن إزالة القمامة لإحياء ذكرى ذلك؟</item>
+        <item>100%, stable اليوم. جولة أخرى ولا تشوبها شائبة.</item>
+        <item>100%. الخطوة الأخيرة قبل فصل الكهرباء: قم بإزالة سلة المهملات، ثلاثين ثانية.</item>
+        <item>انتهى بكامل طاقته. تنظيف أخير، مثالي.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>الويب يتغير! عرض حالة الشبكة الحالية 1</item>
+        <item>هجر الشبكة. لا تنظر إلى الإشارة عند التنظيف، فقط اضغط عليها وقم بالمسح الضوئي.</item>
+        <item>لا يمكن فتح الصفحة؟ التنظيف دائمًا عبر الإنترنت.</item>
+        <item>يمكنك العمل دون الاتصال بالإنترنت، ويمكن مسح سلة المهملات الآن.</item>
+        <item>إذا لم تكن هناك إشارة، فلا توجد بيانات مطلوبة للتنظيف، فقط انقر.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>موصول بالكهرباء. مهمة الليلة: إعادة التعبئة، ثم التنظيف.</item>
+        <item>أنت تستريح، إنه يشحن طاقتك. دعها تنظف سلة المهملات أيضًا.</item>
+        <item>خلال وقت الشحن، يكفي إزالة النفايات المتراكمة لفترة طويلة.</item>
+        <item>فقط عندما يتم توصيل الكهرباء يمكن للموظفين وراء الكواليس أن يجرؤوا على العمل بحرية.</item>
+        <item>هل تشعر بالسخونة قليلاً أثناء الشحن؟ يمكن أن يؤدي مسح الخلفية إلى خفض درجة الحرارة.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>افصل وانطلق. تذكر أن تأخذ الوقت الكافي لتنظيف سلة المهملات والبقاء في حالة جيدة.</item>
+        <item>بعد انتهاء الشحن، احزم أمتعتك وانطلق. فقط قم بتنظيفه وسيكون مثاليًا.</item>
+        <item>مشحونة بالكامل وجاهزة للاستخدام. تنظيف القمامة بسلاسة، لا يوجد عيب اليوم.</item>
+        <item>ينتهي الشحن. يجب تنظيف المساحة التالية وترقيتها بمستوى واحد في كل مرة.</item>
+        <item>لا تتوقف عند انقطاع التيار الكهربائي. بقي شيء واحد: التنظيف.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>نلتقي مرة أخرى، هل أنت عالق؟ معظمها قمامة، حاول تنظيفها.</item>
+        <item>مقفلة؟ لا تفتح تطبيقات أخرى أولاً، ثم قم بمسح سلة المهملات لمدة ثلاثين ثانية.</item>
+        <item>أول شيء يجب فتحه هو نحن. قم بإزالة سلة المهملات وسوف يحبك أكثر.</item>
+        <item>ثلاثين ثانية بعد فتح القفل. الاستخدام الأكثر قيمة: تنظيف القمامة.</item>
+        <item>قال هاتفك الخلوي: الواجهة الخلفية مغلقة بعض الشيء، هل يمكنك مساعدتي؟</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>اترك هاتفك واتركه لنا. وقت الراحة أمام الشاشة = وقت الرضاعة.</item>
+        <item>التوقف عن العمل لا يعني التوقف عن العمل. سأعطيك مفاجأة في المرة القادمة التي أقوم فيها بتشغيل الشاشة.</item>
+        <item>يتحسن بهدوء أثناء إراحة الشاشة. انقر وسنقوم بالباقي.</item>
+        <item>شيء أخير قبل قفل الشاشة: انقر فوق "تنظيف". نظرة جديدة صباح الغد.</item>
+        <item>الشاشة تصبح مظلمة. قم بالترتيبات الآن وشاهد النتائج غدًا.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>لقد انتقل التطبيق الجديد، وكذلك ذاكرة التخزين المؤقت. تنظيف</item>
+        <item>نحن نتفهم متعة تثبيت تطبيق جديد. إنها مجرد أن ذاكرة التخزين المؤقت سوف تتراكم بهدوء.</item>
+        <item>تطبيق جديد؟ ذاكرة التخزين المؤقت موجودة أيضًا هنا، قم بمسحها بنقرة واحدة.</item>
+        <item>الجديد يأتي والقديم يخرج. قم بتنظيفه كثيرًا وتثبيته كما تريد.</item>
+        <item>واحد آخر؟ المساحة تصبح أصغر بهدوء، تعالوا ونظفوها.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>تم إلغاء التثبيت بنجاح! لتنظيف بقايا الملف</item>
+        <item>تم إلغاء تثبيته ولكن لم يتم تنظيفه. انقر للانتهاء.</item>
+        <item>تم إلغاء تثبيت التطبيق، ولكن الذيل لا يزال موجودًا. قم بالتنظيف بنقرة واحدة وقل وداعًا مرة واحدة وإلى الأبد.</item>
+        <item>لا تفوت الخطوة الثانية: احذف التطبيق + امسح البقايا. نقرة واحدة وفعلت.</item>
+        <item>سوف تلتهم البقايا نصف المساحة التي تم إخلاؤها. مسح عميق ومسح كل شيء.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>وصلت نسخة جديدة. تم تنظيف كل ما تبقى من الإصدار القديم بالكامل.</item>
+        <item>+1 للإصدار، +1 لذاكرة التخزين المؤقت، للمسح العميق.</item>
+        <item>اكتمل التحديث ويمكن تنظيف حزم التثبيت المتبقية بنقرة واحدة.</item>
+        <item>تم الانتهاء من التحديث، دعونا ننتهي. نظفه وسأتولى الأمر.</item>
+        <item>سيترك كل تحديث ملفات قديمة ويتعامل معها بسرعة.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>لقطة شاشة أخرى؟ 1 حان الوقت لمسح لقطات الشاشة</item>
+        <item>تم العثور على لقطة شاشة جديدة، انقر لعرضها وتنظيفها~</item>
+        <item>هناك المزيد والمزيد من لقطات الشاشة، ويمكن أن يساعدك التنظيف بنقرة واحدة في توفير المساحة</item>
+        <item>تم التقاط لقطة الشاشة بنجاح، ويمكن تصفية الصور المكررة وغير الواضحة بنقرة واحدة.</item>
+        <item>تتم إضافة لقطات شاشة جديدة إلى قاعدة البيانات، ويتم وضع الصور المكررة في قائمة الانتظار لمسحها بنقرة واحدة.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>هناك الكثير من القمامة مكدسة. تنظيفه كله في وقت واحد.</item>
+        <item>تم آخر تنظيف لـ %1$d منذ أيام، انقر لمعالجته الآن</item>
+        <item>لم أكن هنا منذ بضعة أيام، لذا سأقوم بتنظيفه وأعود إلى ساحة المعركة بخفة.</item>
+        <item>لم يتم استخدام حصة المقاصة اليوم. سوف أقوم بمسحها عندما أعود.</item>
+        <item>ذاكرة التخزين المؤقت تمتلئ، في انتظار التحقق منها</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>لم أراك منذ وقت طويل، لقد كان ينتظر. أعود وامسح سلة المهملات.</item>
+        <item>لم أراك منذ عدة أيام. ليس هناك راحة للقمامة. ارجع واكتسحها.</item>
+        <item>تم وضع ذاكرة التخزين المؤقت في قائمة الانتظار. انقر وسوف تختفي.</item>
+        <item>سلة المهملات مشغولة أثناء غيابك. فارغة بنقرة واحدة وتشعر بالانتعاش من أي وقت مضى.</item>
+        <item>خلف؟ قم بمسح سلة المهملات أولاً. وفي ثلاثين ثانية، يصبح الهاتف خفيفًا كالجديد.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>تتم إزالة القمامة التي تراكمت لفترة طويلة مرة واحدة.</item>
+        <item>الوقت لتنظيف. سلة المهملات اليوم في انتظار أن تنقر عليها.</item>
+        <item>وصلت مجلة Space Daily اليوم. قم بمسحها وإبقائها خفيفة.</item>
+        <item>بعض الملفات أكبر بكثير مما تعتقد، ألقِ نظرة</item>
+        <item>ابحث عن الرجل الذي تناول القليل من G وقم بتنظيفه</item>
+        <item>قائمة المستندات الكبيرة جاهزة، تعال وألقِ نظرة.</item>
+        <item>من يشغل المساحة الأكبر؟ تم الكشف عنها في ثانية واحدة.</item>
+        <item>التصوير المستمر رائع، والإنهاء مؤلم. اترك الأمر لنا.</item>
+        <item>يتم ترتيب الصور المشابهة، والأمر متروك لك لاختيار الصورة التي تريد الاحتفاظ بها</item>
+        <item>الكثير من الصور المشابهة؟ سنساعدك على مقارنة التكرارات وإزالتها بنقرة واحدة فقط.</item>
+        <item>يجب مسح مقاطع الفيديو المخزنة مؤقتًا دون اتصال بالإنترنت.</item>
+        <item>سيتم أيضًا تنظيف الصوت المتبقي.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>هل البطارية ليست متينة كما كانت من قبل؟ تحقق من ذلك.</item>
+        <item>من يسرق كهرباء منزلك؟ ستعرف بمجرد البحث عنه.</item>
+        <item>سيؤدي إيقاف تشغيلها إلى إطالة عمر البطارية.</item>
+        <item>تم تثبيت بعض التطبيقات ولكن لم يتم استخدامها مطلقًا. ترى من هم؟</item>
+        <item>يعد الاحتفاظ بالتطبيقات التي لا تستخدمها عبئًا أيضًا، وقد تم إعداد القائمة</item>
+        <item>فيما يتعلق بالخصوصية، كلما تم التعامل معها بشكل أسرع، كلما كان ذلك أفضل.</item>
+        <item>إخفاء الأشياء المهمة والتخلص من الأشياء غير الضرورية. اسمحوا لي أن أساعدك</item>
+        <item>أين تذهب حركة المرور؟ اكتشف من يستخدمه.</item>
+        <item>تفاصيل حركة المرور جاهزة وواضحة في لمحة.</item>
+        <item>يوجد تطبيق يتصل بالإنترنت سرًا في الخلفية.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} من الملفات غير المرغوب فيها - قم بإزالتها بنقرة واحدة</string>
+    <string name="notif_scheduled_large_files">{total} من الملفات الكبيرة — يمكنك تنظيفها بسهولة</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} مجموعات من الصور المكررة - احفظ {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} من الصور المشابهة — اختر ما تريد تنظيفه</string>
+    <string name="notif_scheduled_videos">{total} من مقاطع الفيديو—احذف {n} لإخلاء مساحة</string>
+    <string name="notif_scheduled_audio">{total} من الملفات الصوتية — حان وقت الترتيب</string>
+    <string name="notif_scheduled_apps">{size} تستخدمه التطبيقات الخاملة {idle}.</string>
+    <string name="notif_scheduled_data">{back} من البيانات المستخدمة في الخلفية</string>
+    <string name="app_manager_uninstall_selected">إلغاء تثبيت المحدد</string>
+    <string name="app_manager_uninstall_selected_count">إلغاء تثبيت المحدد (%1$d)</string>
+    <string name="cache_removable">قابل للإزالة</string>
+    <string name="cache_clean_selected">إزالة ذاكرة التخزين المؤقت</string>
+    <string name="cache_clean_selected_summary">نظيف %1$s (%2$d)</string>
+</resources>
