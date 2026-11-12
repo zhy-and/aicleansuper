@@ -87,6 +87,9 @@
 -keep class com.aetherquorion.cleansuperai.ads.banner.** { *; }
 -keep class com.aetherquorion.cleansuperai.ads.consent.** { *; }
 
+# Local push remote/default JSON is parsed by Gson without field annotations on every member.
+-keep class com.aetherquorion.cleansuperai.notification.LocalPushConfig$* { *; }
+
 # Gson.
 -keepattributes Signature
 -keepattributes *Annotation*
