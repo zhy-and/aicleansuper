@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/current_photo"
-                android:scaleType="fitCenter" />
+                android:scaleType="centerCrop" />
         </com.google.android.material.card.MaterialCardView>
 
         <LinearLayout
@@ -261,8 +261,9 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/trashSheet"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/bg_trash_sheet"
                 android:orientation="vertical"
                 android:paddingTop="18dp"
@@ -302,11 +303,15 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/btnRestoreAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="14dp"
                     android:background="@drawable/bg_trash_hint"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:minHeight="48dp"
                     android:paddingHorizontal="18dp"
                     android:paddingVertical="16dp"
                     android:text="@string/trash_restore_hint"
@@ -316,7 +321,8 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerTrashBin"
                     android:layout_width="match_parent"
-                    android:layout_height="320dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:layout_marginTop="18dp"
                     android:clipToPadding="false"
                     android:paddingHorizontal="14dp" />

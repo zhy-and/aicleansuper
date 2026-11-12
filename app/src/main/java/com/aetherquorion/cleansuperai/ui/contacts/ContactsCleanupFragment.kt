@@ -137,6 +137,11 @@ class ContactsCleanupFragment : Fragment() {
                 viewModel.deleteEmptyContacts(ids) { success ->
                     if (success) {
                         showToast(getString(R.string.contacts_cleanup_complete_message_format, ids.size))
+                        (activity as? com.aetherquorion.cleansuperai.MainActivity)?.openDetail(
+                            com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                                getString(R.string.contacts_page_title),
+                                com.aetherquorion.cleansuperai.ui.flow.CleanupResult(ids.size, ids.size, -1L)),
+                            "cleanup_report")
                     } else {
                         showToast(getString(R.string.contacts_action_failed))
                     }

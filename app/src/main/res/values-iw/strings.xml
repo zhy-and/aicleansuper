@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">הסרת התקנה</string>
+    <string name="uninstall_guide_back">חזרה</string>
+    <string name="uninstall_guide_wait">רגע אחד…</string>
+    <string name="uninstall_guide_more_space">תנו ל־%1$s לפנות עוד מקום</string>
+    <string name="uninstall_guide_smart_clean">הפעלת ניקוי חכם</string>
+    <string name="uninstall_guide_scan_files">סריקת קבצים שאולי תרצו למחוק</string>
+    <string name="uninstall_guide_scan_now">סריקה עכשיו</string>
+    <string name="uninstall_guide_unused_apps">הצגת אפליקציות שאינן בשימוש</string>
+    <string name="uninstall_guide_find_apps">איתור אפליקציות שכבר אינכם צריכים</string>
+    <string name="uninstall_guide_view_apps">הצגת אפליקציות</string>
+    <string name="uninstall_guide_keep">שמירת %1$s</string>
+    <string name="uninstall_guide_continue">המשך הסרת ההתקנה</string>
+    <string name="uninstall_guide_why">למה להסיר את %1$s?</string>
+    <string name="uninstall_reason_no_need">כבר אין לי צורך בה</string>
+    <string name="uninstall_reason_ads">יותר מדי פרסומות</string>
+    <string name="uninstall_reason_space">לא התפנה מספיק מקום</string>
+    <string name="uninstall_reason_missing_files">לא מצאתי את הקבצים שרציתי לנקות</string>
+    <string name="uninstall_reason_hard">קשה להשתמש בה</string>
+    <string name="uninstall_reason_slow">האפליקציה איטית או לא יציבה</string>
+    <string name="uninstall_reason_other">סיבה אחרת</string>
+    <string name="uninstall_guide_private">המשוב שלכם לא כולל את הקבצים שלכם.</string>
+    <string name="action_cancel">לְבַטֵל</string>
+    <string name="action_uninstall">הסר את ההתקנה</string>
+    <string name="photo_photos_label">תמונות</string>
+    <string name="notif_large_file">קובץ גדול</string>
+    <string name="notif_junk">זבל</string>
+    <string name="notif_apps">אפליקציות</string>
+    <string name="notif_clean_now">נקה עכשיו</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">הבנתי</string>
+</resources>

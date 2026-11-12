@@ -3,6 +3,8 @@ package com.aetherquorion.cleansuperai.ui.compress
 import android.content.ContentValues
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Matrix
+import android.media.ExifInterface
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -17,6 +19,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import coil.load
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentCompressBinding
@@ -91,7 +94,7 @@ class CompressFragment : Fragment() {
         binding.previewContainer.isVisible = true
         binding.tvBeforeLabel.isVisible = true
         binding.cardBeforePreview.isVisible = true
-        binding.imagePreviewBefore.setImageURI(uri)
+        binding.imagePreviewBefore.load(uri)
         binding.tvAfterLabel.isVisible = false
         binding.cardAfterPreview.isVisible = false
         binding.tvCompressionResult.isVisible = true
@@ -148,6 +151,7 @@ class CompressFragment : Fragment() {
                 binding.tvCompressionResult.text =
                     getString(R.string.compressed_result_format, compressed, saved)
                 binding.btnSaveCompressed.isEnabled = true
+                binding.btnSaveCompressed.isVisible = true
             }.onFailure {
                 binding.tvCompressionResult.text =
                     getString(
@@ -187,7 +191,25 @@ class CompressFragment : Fragment() {
             sample *= 2
         }
         val options = BitmapFactory.Options().apply { inSampleSize = sample }
-        return resolver.openInputStream(uri)?.use { BitmapFactory.decodeStream(it, null, options) }
+        val decoded = resolver.openInputStream(uri)?.use { BitmapFactory.decodeStream(it, null, options) }
+            ?: return null
+        val orientation = resolver.openInputStream(uri)?.use {
+            ExifInterface(it).getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL)
+        } ?: ExifInterface.ORIENTATION_NORMAL
+        val transform = Matrix().apply {
+            when (orientation) {
+                ExifInterface.ORIENTATION_FLIP_HORIZONTAL -> setScale(-1f, 1f)
+                ExifInterface.ORIENTATION_ROTATE_180 -> setRotate(180f)
+                ExifInterface.ORIENTATION_FLIP_VERTICAL -> setScale(1f, -1f)
+                ExifInterface.ORIENTATION_TRANSPOSE -> { setRotate(90f); postScale(-1f, 1f) }
+                ExifInterface.ORIENTATION_ROTATE_90 -> setRotate(90f)
+                ExifInterface.ORIENTATION_TRANSVERSE -> { setRotate(270f); postScale(-1f, 1f) }
+                ExifInterface.ORIENTATION_ROTATE_270 -> setRotate(270f)
+            }
+        }
+        if (transform.isIdentity) return decoded
+        return Bitmap.createBitmap(decoded, 0, 0, decoded.width, decoded.height, transform, true)
+            .also { if (it !== decoded) decoded.recycle() }
     }
 
     private fun saveToMediaStore(bytes: ByteArray) {
@@ -238,6 +260,7 @@ class CompressFragment : Fragment() {
         _binding?.cardAfterPreview?.isVisible = false
         _binding?.imagePreviewAfter?.setImageDrawable(null)
         _binding?.btnSaveCompressed?.isEnabled = false
+        _binding?.btnSaveCompressed?.isVisible = false
         _binding?.progressCompress?.isVisible = false
     }
 

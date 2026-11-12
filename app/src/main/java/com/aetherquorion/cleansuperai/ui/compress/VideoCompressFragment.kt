@@ -16,6 +16,8 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import coil.load
+import coil.decode.VideoFrameDecoder
+import coil.request.videoFrameMillis
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentVideoCompressBinding
 import com.aetherquorion.cleansuperai.ui.cleaner.CompressionResult
@@ -165,6 +167,7 @@ class VideoCompressFragment : Fragment() {
                 binding.tvCompressionResult.text =
                     getString(R.string.compressed_result_format, compressed, saved)
                 binding.btnSaveCompressed.isEnabled = true
+                binding.btnSaveCompressed.isVisible = true
             }.onFailure {
                 clearCompressedPreview()
                 binding.tvCompressionResult.text =
@@ -255,6 +258,8 @@ class VideoCompressFragment : Fragment() {
 
     private fun bindVideoThumb(imageView: android.widget.ImageView, uri: Uri) {
         imageView.load(uri) {
+            decoderFactory(VideoFrameDecoder.Factory())
+            videoFrameMillis(1000)
             crossfade(true)
             placeholder(R.drawable.ic_media_placeholder)
             error(R.drawable.ic_media_placeholder)
@@ -268,6 +273,7 @@ class VideoCompressFragment : Fragment() {
         _binding?.tvAfterLabel?.isVisible = false
         _binding?.cardAfterPreview?.isVisible = false
         _binding?.btnSaveCompressed?.isEnabled = false
+        _binding?.btnSaveCompressed?.isVisible = false
     }
 
     companion object {

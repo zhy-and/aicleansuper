@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Fixarea widgeturilor nu este acceptată pe acest dispozitiv</string>
+    <string name="widget_already_added">Widget adăugat deja</string>
+    <string name="home_tip_notification">Rămâneți informat cu privire la acumularea de fișiere nedorite.</string>
+    <string name="home_tip_notification_action">Permite</string>
+    <string name="home_tip_widget">Activați widget-urile desktop cu un singur clic</string>
+    <string name="home_tip_widget_action">Permite</string>
+    <string name="home_tip_all_files">Scanare autorizată pentru a detecta urme reziduale.</string>
+    <string name="home_tip_all_files_action">Permite</string>
+</resources>

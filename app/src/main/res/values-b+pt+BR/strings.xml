@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Desinstalar</string>
+    <string name="uninstall_guide_back">Voltar</string>
+    <string name="uninstall_guide_wait">Espere um momento…</string>
+    <string name="uninstall_guide_more_space">Deixe o %1$s liberar mais espaço</string>
+    <string name="uninstall_guide_smart_clean">Iniciar a limpeza inteligente</string>
+    <string name="uninstall_guide_scan_files">Verificar arquivos que você talvez queira excluir</string>
+    <string name="uninstall_guide_scan_now">Verificar agora</string>
+    <string name="uninstall_guide_unused_apps">Ver apps não usados</string>
+    <string name="uninstall_guide_find_apps">Encontre apps de que você não precisa mais</string>
+    <string name="uninstall_guide_view_apps">Ver apps</string>
+    <string name="uninstall_guide_keep">Manter o %1$s</string>
+    <string name="uninstall_guide_continue">Continuar a desinstalação</string>
+    <string name="uninstall_guide_why">Por que desinstalar o %1$s?</string>
+    <string name="uninstall_reason_no_need">Não preciso mais dele</string>
+    <string name="uninstall_reason_ads">Anúncios demais</string>
+    <string name="uninstall_reason_space">Não liberou espaço suficiente</string>
+    <string name="uninstall_reason_missing_files">Não encontro os arquivos que quero limpar</string>
+    <string name="uninstall_reason_hard">É difícil de usar</string>
+    <string name="uninstall_reason_slow">O app é lento ou instável</string>
+    <string name="uninstall_reason_other">Outro motivo</string>
+    <string name="uninstall_guide_private">Seu feedback não inclui seus arquivos.</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_uninstall">Desinstalar</string>
+    <string name="photo_photos_label">Fotos</string>
+    <string name="notif_large_file">Arquivo grande</string>
+    <string name="notif_junk">Lixo</string>
+    <string name="notif_apps">Aplicativos</string>
+    <string name="notif_clean_now">Limpe agora</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Entendi</string>
+</resources>

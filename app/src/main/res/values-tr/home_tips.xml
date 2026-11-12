@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Widget\'ların sabitlenmesi bu cihazda desteklenmiyor</string>
+    <string name="widget_already_added">Widget zaten eklendi</string>
+    <string name="home_tip_notification">Önemsiz dosyaların birikmesi hakkında bilgi sahibi olun.</string>
+    <string name="home_tip_notification_action">Olanak vermek</string>
+    <string name="home_tip_widget">Tek tıklamayla masaüstü widget\'larını etkinleştirin</string>
+    <string name="home_tip_widget_action">İzin vermek</string>
+    <string name="home_tip_all_files">Artık izleri tespit etmek için yetkili tarama.</string>
+    <string name="home_tip_all_files_action">İzin vermek</string>
+</resources>

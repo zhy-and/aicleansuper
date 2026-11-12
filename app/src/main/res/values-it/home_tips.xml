@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Il blocco dei widget non è supportato su questo dispositivo</string>
+    <string name="widget_already_added">Widget già aggiunto</string>
+    <string name="home_tip_notification">Tieniti informato sull\'accumulo di file spazzatura.</string>
+    <string name="home_tip_notification_action">Abilitare</string>
+    <string name="home_tip_widget">Abilita i widget sul desktop con un clic</string>
+    <string name="home_tip_widget_action">Permettere</string>
+    <string name="home_tip_all_files">Scansione autorizzata per rilevare tracce residue.</string>
+    <string name="home_tip_all_files_action">Permettere</string>
+</resources>

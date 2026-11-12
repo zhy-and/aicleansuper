@@ -1,6 +1,10 @@
 package com.aetherquorion.cleansuperai.ui.tools
 
 import android.content.Intent
+import android.content.ActivityNotFoundException
+import android.app.Activity
+import android.app.AlertDialog
+import android.app.usage.UsageStatsManager
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.graphics.drawable.Drawable
@@ -9,16 +13,22 @@ import android.os.Bundle
 import android.provider.Settings
 import android.text.format.Formatter
 import android.view.LayoutInflater
+import android.widget.PopupMenu
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.isVisible
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.databinding.FragmentAppManagerBinding
 import com.aetherquorion.cleansuperai.databinding.ItemAppManagerBinding
+import com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment
+import com.aetherquorion.cleansuperai.ui.flow.CleanupResult
 import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -29,12 +39,27 @@ data class InstalledAppItem(
     val packageName: String,
     val icon: Drawable?,
     val sizeBytes: Long,
+    val installedAt: Long = 0L,
+    val lastUsedAt: Long = 0L,
 )
 
 class AppManagerFragment : Fragment() {
     private var _binding: FragmentAppManagerBinding? = null
     private val binding get() = _binding!!
-    private val adapter = AppManagerAdapter { openAppSettings(it.packageName) }
+    private val adapter = AppManagerAdapter(
+        onInfo = { openAppSettings(it.packageName) },
+        onSelectionChanged = { updateUninstallButton() },
+    )
+    private var apps = emptyList<InstalledAppItem>()
+    private var sort = AppSort.SIZE
+    private val uninstallQueue = ArrayDeque<String>()
+    private var uninstallAttempted = 0
+    private var uninstallSucceeded = 0
+    private val uninstallLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == Activity.RESULT_OK) uninstallSucceeded++
+        if (result.resultCode != Activity.RESULT_OK) uninstallQueue.clear()
+        if (uninstallQueue.isNotEmpty()) launchNextUninstall() else finishUninstall()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -50,6 +75,19 @@ class AppManagerFragment : Fragment() {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.recyclerApps.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerApps.adapter = adapter
+        binding.btnUninstall.setOnClickListener { confirmUninstall() }
+        updateUninstallButton()
+        binding.tvSubtitle.setOnClickListener { anchor ->
+            PopupMenu(requireContext(), anchor).apply {
+                AppSort.entries.forEach { menu.add(it.ordinal, it.ordinal, it.ordinal, it.name.replace('_', ' ')) }
+                setOnMenuItemClickListener { item ->
+                    sort = AppSort.entries[item.itemId]
+                    adapter.submit(sortApps(apps, sort))
+                    true
+                }
+                show()
+            }
+        }
         loadApps()
     }
 
@@ -63,16 +101,26 @@ class AppManagerFragment : Fragment() {
         binding.recyclerApps.isVisible = false
         viewLifecycleOwner.lifecycleScope.launch {
             val apps = withContext(Dispatchers.IO) { queryUserApps() }
-            binding.progressLoading.isVisible = false
-            binding.recyclerApps.isVisible = true
-            adapter.submit(apps)
-            binding.tvSummary.text = getString(R.string.app_manager_summary_format, apps.size)
+            val currentBinding = _binding ?: return@launch
+            currentBinding.progressLoading.isVisible = false
+            currentBinding.recyclerApps.isVisible = true
+            this@AppManagerFragment.apps = apps
+            adapter.submit(sortApps(apps, sort))
+            currentBinding.tvSummary.text = getString(R.string.app_manager_summary_format, apps.size)
         }
     }
 
     private fun queryUserApps(): List<InstalledAppItem> {
         val pm = requireContext().packageManager
         val intent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER)
+        val now = System.currentTimeMillis()
+        val usage = runCatching {
+            (requireContext().getSystemService(android.content.Context.USAGE_STATS_SERVICE) as? UsageStatsManager)
+                ?.queryUsageStats(UsageStatsManager.INTERVAL_YEARLY, now - 365L * 24 * 60 * 60 * 1000, now)
+                ?.groupBy { it.packageName }
+                ?.mapValues { (_, entries) -> entries.maxOfOrNull { it.lastTimeUsed } ?: 0L }
+                .orEmpty()
+        }.getOrDefault(emptyMap())
         return pm.queryIntentActivities(intent, PackageManager.MATCH_ALL)
             .mapNotNull { resolve ->
                 val packageName = resolve.activityInfo.packageName
@@ -89,7 +137,8 @@ class AppManagerFragment : Fragment() {
                 val sizeBytes = runCatching {
                     File(appInfo.sourceDir).length()
                 }.getOrDefault(0L)
-                InstalledAppItem(label, packageName, icon, sizeBytes)
+                val installedAt = runCatching { pm.getPackageInfo(packageName, 0).firstInstallTime }.getOrDefault(0L)
+                InstalledAppItem(label, packageName, icon, sizeBytes, installedAt, usage[packageName] ?: 0L)
             }
             .distinctBy { it.packageName }
             .sortedByDescending { it.sizeBytes }
@@ -101,17 +150,79 @@ class AppManagerFragment : Fragment() {
         }
         startActivity(intent)
     }
+
+    private fun updateUninstallButton() {
+        if (_binding != null) {
+            binding.btnUninstall.isEnabled = adapter.selectedPackages().isNotEmpty()
+            binding.btnUninstall.text = getString(R.string.app_manager_uninstall_selected_count, adapter.selectedPackages().size)
+        }
+    }
+
+    private fun confirmUninstall() {
+        val packages = adapter.selectedPackages()
+        if (packages.isEmpty()) return
+        AlertDialog.Builder(requireContext())
+            .setMessage(getString(R.string.app_manager_uninstall_confirm, packages.size))
+            .setNegativeButton(android.R.string.cancel, null)
+            .setPositiveButton(R.string.delete_dialog_confirm) { _, _ ->
+                uninstallQueue.clear()
+                uninstallQueue.addAll(packages)
+                uninstallAttempted = packages.size
+                uninstallSucceeded = 0
+                launchNextUninstall()
+            }.show()
+    }
+
+    private fun launchNextUninstall() {
+        val packageName = uninstallQueue.removeFirstOrNull()
+        if (packageName == null) {
+            finishUninstall()
+            return
+        }
+        val intent = Intent(Intent.ACTION_UNINSTALL_PACKAGE, Uri.fromParts("package", packageName, null))
+            .putExtra(Intent.EXTRA_RETURN_RESULT, true)
+        try {
+            uninstallLauncher.launch(intent)
+        } catch (error: ActivityNotFoundException) {
+            uninstallQueue.clear()
+            Toast.makeText(requireContext(), R.string.app_manager_uninstall_unavailable, Toast.LENGTH_SHORT).show()
+        } catch (error: SecurityException) {
+            uninstallQueue.clear()
+            Toast.makeText(requireContext(), R.string.app_manager_uninstall_unavailable, Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun finishUninstall() {
+        loadApps()
+        if (uninstallSucceeded > 0) {
+            (activity as? MainActivity)?.openDetail(
+                CleanupReportFragment.newInstance(
+                    getString(R.string.tool_app_manager),
+                    CleanupResult(uninstallAttempted, uninstallSucceeded, -1L),
+                ),
+                "cleanup_report",
+            )
+        }
+        uninstallAttempted = 0
+        uninstallSucceeded = 0
+    }
 }
 
 private class AppManagerAdapter(
-    private val onClick: (InstalledAppItem) -> Unit,
+    private val onInfo: (InstalledAppItem) -> Unit,
+    private val onSelectionChanged: () -> Unit,
 ) : RecyclerView.Adapter<AppManagerAdapter.Holder>() {
     private val items = mutableListOf<InstalledAppItem>()
+    private val selected = mutableSetOf<String>()
+
+    fun selectedPackages(): List<String> = selected.toList()
 
     fun submit(apps: List<InstalledAppItem>) {
         items.clear()
         items.addAll(apps)
+        selected.retainAll(apps.map { it.packageName }.toSet())
         notifyDataSetChanged()
+        onSelectionChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -137,7 +248,14 @@ private class AppManagerAdapter(
             binding.tvPackageName.text = item.packageName
             binding.imageIcon.setImageDrawable(item.icon)
             binding.tvAppSize.text = Formatter.formatFileSize(binding.root.context, item.sizeBytes)
-            binding.root.setOnClickListener { onClick(item) }
+            binding.checkSelected.setOnCheckedChangeListener(null)
+            binding.checkSelected.isChecked = item.packageName in selected
+            binding.checkSelected.setOnCheckedChangeListener { _, checked ->
+                if (checked) selected += item.packageName else selected -= item.packageName
+                onSelectionChanged()
+            }
+            binding.root.setOnClickListener { binding.checkSelected.isChecked = !binding.checkSelected.isChecked }
+            binding.root.setOnLongClickListener { onInfo(item); true }
         }
     }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Nhiệt độ</string>
+    <string name="sys_voltage">Điện áp</string>
+    <string name="sys_current">Dòng điện</string>
+    <string name="sys_health">Sức khỏe</string>
+    <string name="sys_type">Loại pin</string>
+    <string name="sys_capacity">Dung lượng pin</string>
+    <string name="sys_charging">sạc</string>
+    <string name="sys_full">đầy</string>
+    <string name="sys_good">Tốt</string>
+    <string name="sys_overheat">Quá nóng</string>
+    <string name="sys_dead">Chết</string>
+    <string name="sys_over_voltage">Quá điện áp</string>
+    <string name="sys_cold">Lạnh lẽo</string>
+    <string name="sys_unknown">không rõ</string>
+    <string name="sys_model">Người mẫu:</string>
+    <string name="sys_brand">Thương hiệu:</string>
+    <string name="sys_manufacturer">Nhà sản xuất:</string>
+    <string name="sys_wifi_name">Tên:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Tốc độ:</string>
+    <string name="traffic_month">Tháng này</string>
+    <string name="traffic_30_days">30 ngày</string>
+    <string name="traffic_24_hours">24 giờ</string>
+    <string name="traffic_mobile">Điện thoại di động</string>
+    <string name="traffic_wifi">Wi-Fi</string>
+    <string name="traffic_apps">Ứng dụng</string>
+</resources>

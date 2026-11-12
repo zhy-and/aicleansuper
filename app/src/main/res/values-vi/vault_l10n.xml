@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Tạo mã PIN gồm 6 chữ số</string>
+    <string name="vlt_enter_pin">Nhập mã PIN của bạn</string>
+    <string name="vlt_confirm_pin">Xác nhận mã PIN của bạn</string>
+    <string name="vlt_warning">Việc gỡ cài đặt ứng dụng này sẽ xóa vĩnh viễn các tệp trong Không gian riêng tư.</string>
+    <string name="vlt_pin_mismatch">Mã PIN không khớp. Hãy thử lại.</string>
+    <string name="vlt_pin_wrong">Mã PIN không chính xác</string>
+    <string name="vlt_biometric">Sử dụng vân tay/khuôn mặt</string>
+    <string name="vlt_unlock">Mở khóa không gian riêng tư</string>
+    <string name="vlt_use_pin">Nhập mã PIN của bạn</string>
+    <string name="vlt_importing">Đang nhập khẩu...</string>
+    <string name="vlt_imported">Đã nhập %1$d mục</string>
+    <string name="vlt_restore">Khôi phục</string>
+    <string name="vlt_delete">Xóa bỏ</string>
+</resources>

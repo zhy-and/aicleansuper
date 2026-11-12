@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">温度</string>
+    <string name="sys_voltage">电压</string>
+    <string name="sys_current">电流</string>
+    <string name="sys_health">健康</string>
+    <string name="sys_type">电池类型</string>
+    <string name="sys_capacity">电池容量</string>
+    <string name="sys_charging">充电中</string>
+    <string name="sys_full">已充满</string>
+    <string name="sys_good">良好</string>
+    <string name="sys_overheat">过热</string>
+    <string name="sys_dead">损坏</string>
+    <string name="sys_over_voltage">过电压</string>
+    <string name="sys_cold">寒冷的</string>
+    <string name="sys_unknown">未知</string>
+    <string name="sys_model">型号：</string>
+    <string name="sys_brand">品牌：</string>
+    <string name="sys_manufacturer">制造商：</string>
+    <string name="sys_wifi_name">名称：</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">速度：</string>
+    <string name="traffic_month">本月</string>
+    <string name="traffic_30_days">30天</string>
+    <string name="traffic_24_hours">24小时</string>
+    <string name="traffic_mobile">移动的</string>
+    <string name="traffic_wifi">无线上网</string>
+    <string name="traffic_apps">应用程序</string>
+    <string name="sys_level">电量</string>
+    <string name="sys_status">状态</string>
+    <string name="sys_discharging">放电中</string>
+    <string name="sys_android_version">Android 版本</string>
+    <string name="traffic_usage_required">需要使用情况访问权限，点击授权</string>
+    <string name="traffic_loading">加载中…</string>
+    <string name="traffic_empty">未找到应用流量</string>
+    <string name="traffic_guide_message">请在设置中开启此应用的使用情况访问权限，以查看各应用的流量。</string>
+</resources>

@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">บ้าน</string>
+    <string name="nav_swipe">ปัด</string>
+    <string name="nav_compress">บีบอัด</string>
+    <string name="nav_tools">เครื่องมือ</string>
+    <string name="nav_clean">สะอาด</string>
+    <string name="nav_privacy">ความเป็นส่วนตัว</string>
+    <string name="nav_profile">โปรไฟล์</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">จัดระเบียบรูปภาพ วิดีโอ และรายชื่อติดต่อของคุณภายในเครื่อง</string>
+    <string name="home_badge_text">การล้างข้อมูลด้วย AI</string>
+    <string name="home_quick_summary_title">เคล็ดลับการทำความสะอาดประจำวันนี้</string>
+    <string name="home_quick_summary_body">เริ่มต้นด้วยภาพหน้าจอและวิดีโอขนาดใหญ่เพื่อเพิ่มพื้นที่ว่างให้เร็วที่สุด</string>
+    <string name="home_scan_insight_title">สถานะการสแกนอัจฉริยะ</string>
+    <string name="home_ready_title">4 เครื่องมือล้างข้อมูลอันทรงพลัง</string>
+    <string name="home_ready_body">จัดการรูปภาพ ภาพหน้าจอ วิดีโอ และรายชื่อติดต่อได้ในที่เดียว</string>
+    <string name="storage_overview_title">ภาพรวมพื้นที่เก็บข้อมูล</string>
+    <string name="storage_overview_summary">สามารถปล่อยพื้นที่ว่างได้สูงสุด 0.0 GB</string>
+    <string name="storage_overview_detail">ใช้ไปแล้ว 85.4 GB จาก 128 GB</string>
+    <string name="storage_overview_summary_format">สามารถปล่อยได้สูงสุด %1$s</string>
+    <string name="storage_overview_detail_format">ใช้ %1$s ของ %2$s แล้ว</string>
+    <string name="storage_overview_summary_done">สามารถปล่อยพื้นที่ว่างได้สูงสุด 1.8 GB</string>
+    <string name="storage_overview_detail_done">ใช้ไปแล้ว 85.4 GB จาก 128 GB เริ่มต้นด้วยไลบรารีสื่อของคุณ</string>
+    <string name="scan_button_idle">เริ่มการสแกน</string>
+    <string name="scan_button_running">กำลังสแกน...</string>
+    <string name="scan_status_title">สถานะการสแกน</string>
+    <string name="scan_status_idle">พร้อมสแกน</string>
+    <string name="scan_status_running">กำลังวิเคราะห์ไฟล์มีเดีย</string>
+    <string name="scan_status_done">การสแกนเสร็จสมบูรณ์ คำแนะนำในการล้างข้อมูลพร้อมแล้ว</string>
+    <string name="scan_status_error">การสแกนล้มเหลว ลองอีกครั้งในภายหลัง</string>
+    <string name="scan_status_detail_idle">ภาพหน้าจอ วิดีโอขนาดใหญ่ และรูปภาพที่คล้ายกันจะถูกตรวจสอบก่อน</string>
+    <string name="scan_status_detail_running">กำลังสแกนในเครื่อง รูปภาพและวิดีโอของคุณจะไม่ถูกอัปโหลด</string>
+    <string name="scan_status_detail_midway">วิเคราะห์ภาพหน้าจอและวิดีโอขนาดใหญ่ การจัดระเบียบภาพถ่ายที่คล้ายกัน</string>
+    <string name="scan_status_detail_done">พบ 1.8 GB เพื่อล้างข้อมูล เริ่มต้นด้วยภาพหน้าจอและวิดีโอขนาดใหญ่</string>
+    <string name="scan_status_detail_done_format">พบ %1$s เพื่อทำความสะอาด เริ่มต้นด้วยภาพหน้าจอและวิดีโอขนาดใหญ่</string>
+    <string name="feature_section_title">เครื่องมือทำความสะอาดที่จำเป็น</string>
+    <string name="feature_section_subtitle">รุ่นแรกมุ่งเน้นไปที่งานล้างข้อมูลทั่วไป 4 ประการ</string>
+    <string name="feature_similar_title">ภาพถ่ายที่คล้ายกัน</string>
+    <string name="feature_similar_desc">ทำความสะอาดรูปภาพที่คล้ายกัน</string>
+    <string name="feature_screenshots_title">การล้างข้อมูลภาพหน้าจอ</string>
+    <string name="feature_screenshots_desc">ทำความสะอาดภาพหน้าจอที่ไม่ได้ใช้</string>
+    <string name="feature_videos_title">วิดีโอขนาดใหญ่</string>
+    <string name="feature_videos_desc">ทำความสะอาดวิดีโอขนาดใหญ่</string>
+    <string name="feature_contacts_title">ติดต่อล้างข้อมูล</string>
+    <string name="feature_contacts_desc">ทำความสะอาดผู้ติดต่อที่ซ้ำกัน</string>
+    <string name="feature_similar_space_format">กลุ่ม %1$d</string>
+    <string name="count_placeholder">ไม่ได้สแกน</string>
+    <string name="count_similar_done">128 รูป</string>
+    <string name="count_screenshots_done">364 รูป</string>
+    <string name="count_videos_done">12 วิดีโอ</string>
+    <string name="count_contacts_done">9 กลุ่ม</string>
+    <string name="recent_section_title">บันทึกประจำรุ่น</string>
+    <string name="recent_section_body">เวอร์ชันนี้ประกอบด้วยโครงสร้างหน้าจอหลักของ XML, คำร้องขอสิทธิ์สื่อ, ขั้นตอนการสแกนตัวยึดตำแหน่ง และสรุปผลลัพธ์ คุณสามารถเพิ่ม MediaStore รายชื่อผู้ติดต่อ และการล้างข้อมูลจริงได้ต่อไป</string>
+    <string name="permission_denied_message">จำเป็นต้องเข้าถึงสื่อเพื่อเริ่มการสแกน</string>
+    <string name="mock_feature_message">ผลลัพธ์การสแกนจริงจะถูกเพิ่มในฟีเจอร์นี้ต่อไป</string>
+    <string name="scan_complete_message">ขั้นตอนการสแกนเบื้องต้นพร้อมแล้ว สามารถเพิ่มข้อมูลจริงต่อไปได้</string>
+    <string name="scan_failed_message">การสแกนล้มเหลว: %1$s</string>
+    <string name="unknown_error">ข้อผิดพลาดที่ไม่รู้จัก</string>
+    <string name="storage_progress_label">ความคืบหน้าการใช้พื้นที่เก็บข้อมูล</string>
+    <string name="phase_two_label">ระยะที่ 2</string>
+    <string name="phase_three_label">ระยะที่ 3</string>
+    <string name="images_total_title">รูปภาพทั้งหมด</string>
+    <string name="videos_total_title">วิดีโอทั้งหมด</string>
+    <string name="clean_page_title">ศูนย์ทำความสะอาด</string>
+    <string name="clean_page_subtitle">เริ่มต้นด้วยเนื้อหาที่ทำให้มีพื้นที่ว่างมากที่สุด</string>
+    <string name="clean_page_badge">เครื่องทำความสะอาดอัจฉริยะ</string>
+    <string name="clean_overview_title">ผลลัพธ์การสแกน</string>
+    <string name="clean_overview_body">ทำความสะอาดพื้นที่ประหยัดพื้นที่ที่ใหญ่ที่สุดก่อน จากนั้นจึงทำความสะอาดรูปภาพและที่อยู่ติดต่อที่คล้ายกัน</string>
+    <string name="privacy_page_title">ห้องนิรภัยส่วนตัว</string>
+    <string name="privacy_page_subtitle">PIN ในเครื่องจะปกป้องสื่อส่วนตัวของคุณและการนำเข้าในอนาคต</string>
+    <string name="profile_page_title">โปรไฟล์</string>
+    <string name="profile_page_subtitle">จัดการการเป็นสมาชิก การตั้งค่า และการซื้อของคุณที่นี่</string>
+    <string name="profile_page_badge">พรีเมี่ยม</string>
+    <string name="profile_hero_title">อัปเกรดเป็น Pro เพื่อประสบการณ์การล้างข้อมูลที่สมบูรณ์</string>
+    <string name="profile_hero_body">Pro มีการดำเนินการแบบกลุ่มไม่จำกัด, Private Vault และการตรวจจับภาพถ่ายที่คล้ายกันที่ดีกว่า</string>
+    <string name="profile_plan_status_free">แผนปัจจุบัน: ฟรี</string>
+    <string name="profile_plan_status_pro">ทดลองใช้ Pro อยู่</string>
+    <string name="profile_most_popular">ยอดนิยมที่สุด</string>
+    <string name="profile_cta_title">ทำไมต้องอัพเกรด?</string>
+    <string name="profile_cta_body">หากคุณมักจะล้างรูปภาพ วิดีโอ และรายชื่อติดต่อ Pro จะช่วยลดขั้นตอนที่ซ้ำซากลงอย่างมาก</string>
+    <string name="placeholder_card_title">เวทีปัจจุบัน</string>
+    <string name="placeholder_clean_body">ระยะที่ 1 ครอบคลุมพื้นฐานการสแกน สิทธิ์ และเฟรมเวิร์กหลัก ผลการล้างข้อมูลจริงจะปรากฏที่นี่ในระยะต่อไป</string>
+    <string name="placeholder_privacy_body">ห้องนิรภัยส่วนตัวยังไม่พร้อมใช้งาน ระยะนี้รวมเฉพาะการนำทางและเค้าโครงเท่านั้น</string>
+    <string name="placeholder_profile_body">คุณสมบัติโปรไฟล์ยังไม่ได้เชื่อมต่อ การเป็นสมาชิก การตั้งค่า และการซื้อจะถูกเพิ่มในภายหลัง</string>
+    <string name="overview_reclaim_title">ประหยัดพื้นที่โดยประมาณ</string>
+    <string name="overview_media_count_title">สื่อรวม</string>
+    <string name="home_note_title">เฟส 1 เสร็จสมบูรณ์</string>
+    <string name="home_note_body">1. การนำทางด้านล่างและเฟรมเวิร์กหลายหน้า\n2 คำขอสิทธิ์สื่อ Android 13+\n3 พื้นฐานการสแกนบน MediaStore สำหรับภาพหน้าจอและวิดีโอขนาดใหญ่\n4 การเชื่อมโยงผลลัพธ์บนหน้าจอหลักและการจัดการสถานะ</string>
+    <string name="feature_coming_soon_format">หน้ารายละเอียด %1$s จะถูกเพิ่มในเฟสที่เกี่ยวข้อง</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">รายการ %1$d</string>
+    <string name="count_contact_format">หน้าสัมผัส %1$d</string>
+    <string name="feature_ready_label">มีจำหน่าย</string>
+    <string name="permission_action_label">อนุญาตและสแกน</string>
+    <string name="refresh_action_label">รีเฟรชผลลัพธ์</string>
+    <string name="clean_reclaim_summary_format">%1$s พร้อมทำความสะอาด</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">กลุ่ม %1$d</string>
+    <string name="count_contact_group_format">กลุ่ม %1$d</string>
+    <string name="clean_permission_title">จำเป็นต้องเข้าถึงสื่อ</string>
+    <string name="clean_permission_body">อนุญาตให้เข้าถึงเพื่ออ่านภาพหน้าจอและวิดีโอของคุณ ข้อมูลทั้งหมดได้รับการวิเคราะห์ภายในเครื่อง</string>
+    <string name="clean_loaded_hint">แตะการ์ดหมวดหมู่เพื่อดูรายละเอียด</string>
+    <string name="clean_loading_hint">กำลังโหลดภาพหน้าจอและวิดีโอ โปรดรอ.</string>
+    <string name="clean_empty_hint">ยังไม่มีผลการสแกน อนุญาตการเข้าถึงและทำการสแกนก่อน</string>
+    <string name="detail_back">กลับ</string>
+    <string name="screenshot_detail_title">การล้างข้อมูลภาพหน้าจอ</string>
+    <string name="screenshot_detail_subtitle">เรียกดูภาพหน้าจอด้วยภาพขนาดย่อจริง แตะรูปภาพเพื่อดูตัวอย่าง หรือเลือกรายการที่จะลบ</string>
+    <string name="large_video_detail_title">วิดีโอขนาดใหญ่</string>
+    <string name="large_video_detail_subtitle">เรียกดูวิดีโอขนาดใหญ่พร้อมหน้าปก แตะหน้าปกเพื่อเล่น หรือเลือกรายการที่จะลบ แตะบรรทัดตัวกรองเพื่อสลับ 100MB / 500MB</string>
+    <string name="empty_screenshot_title">ไม่พบภาพหน้าจอ</string>
+    <string name="empty_screenshot_body">ไม่พบภาพหน้าจอในไลบรารีสื่อของคุณ หรือไม่ได้รับอนุญาตให้เข้าถึง</string>
+    <string name="empty_large_video_title">ไม่พบวิดีโอขนาดใหญ่</string>
+    <string name="empty_large_video_body">ไม่มีวิดีโอขนาดเกิน 100 MB คุณสามารถปรับเกณฑ์ได้ในภายหลัง</string>
+    <string name="media_item_bucket_format">อัลบั้ม : %1$s</string>
+    <string name="media_item_date_format">วันที่: %1$s</string>
+    <string name="media_item_duration_format">ระยะเวลา: %1$s</string>
+    <string name="video_threshold_note">เกณฑ์วิดีโอขนาดใหญ่ปัจจุบัน: 100 MB</string>
+    <string name="select_all_action">เลือกทั้งหมด</string>
+    <string name="clear_selected_action">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="delete_selected_action">ลบที่เลือก</string>
+    <string name="selected_count_format">เลือก %1$d แล้ว</string>
+    <string name="delete_dialog_title">ลบภาพหน้าจอใช่ไหม</string>
+    <string name="delete_dialog_message_format">ภาพหน้าจอ %1$d ที่เลือกจะถูกลบ ระบบจะขอให้คุณยืนยันอีกครั้ง</string>
+    <string name="delete_dialog_confirm">ดำเนินการต่อ</string>
+    <string name="delete_dialog_cancel">ยกเลิก</string>
+    <string name="delete_complete_message_format">ภาพหน้าจอ %1$d ที่ประมวลผลแล้ว รายการได้รับการรีเฟรชแล้ว</string>
+    <string name="delete_items_complete_format">ประมวลผลรายการ %1$d แล้ว รายการได้รับการรีเฟรชแล้ว</string>
+    <string name="delete_failed_message">ไม่สามารถลบได้ ลองอีกครั้ง</string>
+    <string name="delete_video_dialog_title">ลบวิดีโอใช่ไหม</string>
+    <string name="delete_video_dialog_message_format">วิดีโอ %1$d ที่เลือกจะถูกลบ ระบบจะขอให้คุณยืนยันอีกครั้ง</string>
+    <string name="delete_similar_dialog_title">ลบรูปภาพที่คล้ายกันใช่ไหม</string>
+    <string name="delete_similar_dialog_message_format">รูปภาพ %1$d ที่เลือกจะถูกลบ ไม่รวมของฝากที่แนะนำ</string>
+    <string name="video_selection_filter_format">เลือก %1$d แล้ว · ตัวกรอง: %2$s (แตะเพื่อสลับ)</string>
+    <string name="video_player_unavailable">ไม่มีเครื่องเล่นวิดีโอในอุปกรณ์นี้</string>
+    <string name="media_preview_title">ดูตัวอย่าง</string>
+    <string name="similar_select_candidates_action">เลือกผู้สมัคร</string>
+    <string name="similar_deselect_candidates_action">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="similar_select_all_candidates">เลือกผู้สมัครทั้งหมด</string>
+    <string name="similar_delete_count_action">ลบที่เลือก (%1$d)</string>
+    <string name="similar_group_number_format">กรุ๊ป %1$d</string>
+    <string name="app_manager_uninstall_unavailable">ไม่สามารถเปิดตัวถอนการติดตั้งระบบได้</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">ผลลัพธ์ทั้งหมด</string>
+    <string name="similar_page_title">ภาพถ่ายที่คล้ายกัน</string>
+    <string name="similar_page_subtitle">ตรวจสอบกลุ่มที่คล้ายกันด้วยภาพขนาดย่อ เลือกผู้สมัคร และลบรายการที่ซ้ำกัน</string>
+    <string name="similar_page_note">เวอร์ชันแรกใช้กฎการจัดกลุ่มแบบไลท์เวท คุณสามารถเพิ่มการให้คะแนนการรับรู้และการให้คะแนนความคมชัดได้ในภายหลัง</string>
+    <string name="similar_page_badge">สมาร์ทที่คล้ายกัน</string>
+    <string name="similar_page_hero_hint">เก็บรูปภาพที่มีความละเอียดสูงขึ้น ไฟล์ขนาดใหญ่ขึ้น และประทับเวลาล่าสุด</string>
+    <string name="similar_group_summary_format">พบกลุ่ม %1$d พร้อมรูปถ่ายผู้สมัคร %2$d ในอัลบั้มของคุณ</string>
+    <string name="similar_group_empty_title">ไม่พบกลุ่มรูปภาพที่คล้ายกัน</string>
+    <string name="similar_group_empty_body">ไม่มีรูปภาพในอัลบั้มเดียวกันที่ตรงตามเงื่อนไขเวลาและขนาดที่ใกล้เคียงกัน</string>
+    <string name="similar_group_card_subtitle_format">ผู้สมัคร %1$d · สามารถปล่อยได้สูงสุด %2$s</string>
+    <string name="similar_keep_recommend_label">แนะนำให้เก็บ</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">ผู้สมัครคนอื่นๆ</string>
+    <string name="similar_other_items_more_format">+%1$d รูปเพิ่มเติม</string>
+    <string name="contacts_page_title">ติดต่อล้างข้อมูล</string>
+    <string name="contacts_page_subtitle">ค้นหาผู้ติดต่อที่ซ้ำกันและว่างเปล่า</string>
+    <string name="contacts_page_badge">ติดต่อแก้ไข</string>
+    <string name="contacts_page_hero_hint">รวมรายชื่อที่มีหมายเลขเดียวกัน จากนั้นลบรายชื่อว่างออก</string>
+    <string name="contacts_permission_title">จำเป็นต้องเข้าถึงผู้ติดต่อ</string>
+    <string name="contacts_permission_body">อนุญาตให้เข้าถึงเพื่อสแกนผู้ติดต่อในเครื่อง</string>
+    <string name="contacts_scan_title">สแกนรายชื่อติดต่อ</string>
+    <string name="contacts_scan_body">รีเฟรชเพื่อค้นหารายการที่ซ้ำกันและผู้ติดต่อที่ว่างเปล่า</string>
+    <string name="contacts_duplicate_title">ผู้ติดต่อที่ซ้ำกัน</string>
+    <string name="contacts_empty_title">ผู้ติดต่อที่ว่างเปล่า</string>
+    <string name="contacts_duplicate_count_format">กลุ่ม %1$d ซ้ำกัน</string>
+    <string name="contacts_empty_count_format">%1$d ไม่มีรายชื่อผู้ติดต่อเพื่อล้างข้อมูล</string>
+    <string name="contacts_load_action">อนุญาตและโหลดผู้ติดต่อ</string>
+    <string name="contacts_refresh_action">รีเฟรชผู้ติดต่อ</string>
+    <string name="contacts_empty_group_title">ไม่พบผู้ติดต่อที่ซ้ำกัน</string>
+    <string name="contacts_empty_group_body">ไม่พบผู้ติดต่อที่มีหมายเลขโทรศัพท์ซ้ำกัน</string>
+    <string name="contacts_delete_empty_action">ลบผู้ติดต่อที่ว่างเปล่า</string>
+    <string name="contacts_merge_action">รวมกลุ่ม</string>
+    <string name="contacts_view_action">ดูในรายชื่อติดต่อ</string>
+    <string name="contacts_group_title_format">%1$s · หน้าสัมผัส %2$d</string>
+    <string name="contacts_group_number_format">หมายเลขหลัก: %1$s</string>
+    <string name="contacts_group_members_format">สมาชิก: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">ลบผู้ติดต่อที่ว่างเปล่าใช่ไหม</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d ผู้ติดต่อที่ว่างเปล่าหรือผู้ติดต่อที่ไม่มีหมายเลขจะถูกลบ</string>
+    <string name="contacts_merge_complete_message">ระบบถูกขอให้รวมกลุ่มผู้ติดต่อนี้</string>
+    <string name="contacts_cleanup_complete_message_format">ลบผู้ติดต่อที่ว่างเปล่าของ %1$d แล้ว</string>
+    <string name="contacts_action_failed">การดำเนินการติดต่อล้มเหลว ลองอีกครั้ง</string>
+    <string name="privacy_status_title">สถานะการคุ้มครองท้องถิ่น</string>
+    <string name="privacy_page_badge">ห้องนิรภัยส่วนตัว</string>
+    <string name="privacy_hero_title">แยกเนื้อหาส่วนตัวออกจากการล้างข้อมูล</string>
+    <string name="privacy_hero_body">ตั้งค่าการป้องกัน PIN ในเครื่องก่อน จากนั้นเพิ่มการนำเข้าสื่อส่วนตัว ปลดล็อค และการกู้คืน</string>
+    <string name="privacy_status_enabled">ตั้งรหัส PIN 4 หลัก</string>
+    <string name="privacy_status_disabled">ไม่มีการตั้งค่า PIN</string>
+    <string name="privacy_status_body_enabled">สื่อส่วนตัวที่นำเข้าในภายหลังจะได้รับการคุ้มครองโดย PIN ในเครื่องของคุณ</string>
+    <string name="privacy_status_body_disabled">ตั้งค่า PIN 4 หลักก่อนเพิ่มคุณสมบัติการนำเข้าและปลดล็อคสื่อส่วนตัว</string>
+    <string name="privacy_set_pin_action">ตั้งค่า PIN</string>
+    <string name="privacy_reset_pin_action">รีเซ็ต PIN</string>
+    <string name="privacy_pin_dialog_title">ตั้งค่า PIN 4 หลัก</string>
+    <string name="privacy_pin_dialog_hint">กรอกตัวเลข 4 หลัก</string>
+    <string name="privacy_pin_invalid">ป้อน PIN 4 หลัก</string>
+    <string name="privacy_pin_saved">บันทึก PIN ท้องถิ่นแล้ว</string>
+    <string name="privacy_pin_reset_confirm">ล้าง PIN ปัจจุบันใช่ไหม</string>
+    <string name="privacy_pin_reset_done">รีเซ็ตรหัส PIN</string>
+    <string name="privacy_feature_lock_title">ปลดล็อคท้องถิ่น</string>
+    <string name="privacy_feature_lock_body">เวอร์ชันแรกใช้ PIN สำหรับการป้องกันในเครื่อง สามารถเพิ่มไบโอเมตริกซ์ได้ในภายหลัง</string>
+    <string name="privacy_feature_vault_title">สื่อส่วนตัว</string>
+    <string name="privacy_feature_vault_body">รูปภาพและวิดีโอส่วนตัวที่นำเข้าในภายหลังจะถูกจัดเก็บแยกต่างหากและแยกออกจากขั้นตอนการล้างข้อมูลอัลบั้มหลัก</string>
+    <string name="privacy_feature_scope_title">เวทีปัจจุบัน</string>
+    <string name="privacy_feature_scope_body">เวอร์ชันนี้เพิ่มสถานะ PIN และโครงสร้างหน้า การนำเข้าสื่อส่วนตัวและการเข้ารหัสในเครื่องจะมาในลำดับถัดไป</string>
+    <string name="profile_plan_title">แผนปัจจุบัน</string>
+    <string name="profile_plan_free">ฟรี</string>
+    <string name="profile_plan_pro">โปร</string>
+    <string name="profile_plan_body_free">สแกน ดูผลลัพธ์ และใช้การล้างข้อมูลขั้นพื้นฐาน</string>
+    <string name="profile_plan_body_pro">ปลดล็อกการล้างข้อมูลขั้นสูง ห้องนิรภัยส่วนตัว การดำเนินการไม่จำกัด และประสบการณ์แบบไม่มีโฆษณา</string>
+    <string name="profile_upgrade_action">เปลี่ยนไปใช้รุ่นทดลองใช้ Pro</string>
+    <string name="profile_restore_action">กลับไปสู่อิสระ</string>
+    <string name="profile_upgrade_done">เปลี่ยนเป็นรุ่นทดลองใช้ Pro แล้ว</string>
+    <string name="profile_restore_done">กลับมาเป็นฟรีแลนซ์แล้ว</string>
+    <string name="profile_benefits_title">สิทธิประโยชน์ระดับโปร</string>
+    <string name="profile_benefits_body">1. การตรวจจับภาพถ่ายขั้นสูงที่คล้ายกัน\n2 การล้างข้อมูลเป็นกลุ่มไม่จำกัด\n3 ฟิลเตอร์วิดีโอขนาดใหญ่ขั้นสูง\n4 การล้างข้อมูลผู้ติดต่อที่ได้รับการปรับปรุง\n5 ห้องนิรภัยส่วนตัว\n6. อินเตอร์เฟซที่ไม่มีโฆษณา</string>
+    <string name="detail_page_badge">ดูรายละเอียด</string>
+    <string name="detail_page_hint">ตรวจสอบผู้สมัครก่อนที่จะตัดสินใจว่าจะทำความสะอาดหรือเก็บอะไรไว้</string>
+    <string name="premium">พรีเมี่ยม</string>
+    <string name="settings">การตั้งค่า</string>
+    <string name="grant_access">ให้สิทธิ์การเข้าถึง</string>
+    <string name="storage_permission_title">ให้สิทธิ์การเข้าถึงไฟล์</string>
+    <string name="storage_permission_detail">CleanSuper AI ต้องเข้าถึงไฟล์เพื่อค้นหาไฟล์ซ้ำ รูปภาพไม่ชัด และไฟล์ใหญ่ ทุกอย่างประมวลผลในเครื่อง</string>
+    <string name="storage_permission_scan_point">ค้นหาไฟล์ซ้ำ รูปภาพไม่ชัด และไฟล์ขนาดใหญ่ในพื้นที่จัดเก็บ</string>
+    <string name="storage_permission_privacy_point">ไฟล์ของคุณอยู่บนอุปกรณ์นี้และจะไม่ถูกอัปโหลด</string>
+    <string name="storage_permission_message">สำหรับการสแกนเฉพาะที่เท่านั้น ไม่มีการอัพโหลดหรือแชร์ข้อมูลกับบุคคลที่สาม</string>
+    <string name="storage_permission_continue">ดำเนินการต่อ</string>
+    <string name="storage_permission_close">ปิด</string>
+    <string name="storage_permission_example_file">ไฟล์ในอุปกรณ์นี้</string>
+    <string name="storage_permission_example_size">พร้อมสแกน</string>
+    <string name="storage_permission_guide_title">อนุญาตให้เข้าถึงไฟล์ทั้งหมด</string>
+    <string name="storage_permission_guide_message">เปิดสวิตช์ในการตั้งค่าเพื่อสแกนและล้างไฟล์ในอุปกรณ์นี้</string>
+    <string name="go_to_settings">ไปที่การตั้งค่า</string>
+    <string name="permission_home_title">รูปภาพของคุณถูกล็อค</string>
+    <string name="permission_home_body">อนุญาตให้เข้าถึงรูปภาพ วิดีโอ และการแจ้งเตือนเพื่อสแกนคลังภาพของคุณอย่างปลอดภัยบนอุปกรณ์นี้ และส่งการแจ้งเตือนการล้างข้อมูล</string>
+    <string name="scan_summary_format">รายการ %1$d ที่สแกน · สามารถตรวจสอบ %2$s ได้</string>
+    <string name="scan_running_english">กำลังสแกนห้องสมุดของคุณ...</string>
+    <string name="scan_ready_english">ห้องสมุดของคุณพร้อมแล้ว</string>
+    <string name="coming_soon">เร็ว ๆ นี้</string>
+    <string name="compression_failed">ไม่สามารถบีบอัดรูปภาพนี้ได้</string>
+    <string name="compression_saved">ภาพที่บีบอัดถูกบันทึกลงใน Pictures/CleanSuperAI</string>
+    <string name="home_secure_analysis">การวิเคราะห์บนอุปกรณ์ที่ปลอดภัย</string>
+    <string name="home_cleanup_library">ตรวจสอบห้องสมุดของคุณ</string>
+    <string name="home_cleanup_badge">บนอุปกรณ์</string>
+    <string name="home_quick_clean_action">เปิดศูนย์ล้างข้อมูล</string>
+    <string name="home_quick_clean_compact_action">ศูนย์ทำความสะอาด</string>
+    <string name="home_reclaim_ready_format">%1$s เรียกคืนได้</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">พื้นที่เก็บข้อมูลถูกครอบครอง</string>
+    <string name="home_storage_detail_format">%1$s เพื่อตรวจทาน · รายการ %2$d</string>
+    <string name="home_quick_tools">เครื่องมือด่วน</string>
+    <string name="home_quick_tools_subtitle">การดำเนินการล้างข้อมูลที่คุณใช้บ่อยที่สุดของคุณจะแสดงไว้ข้างหน้า</string>
+    <string name="feature_swipe_title">ปัดรูปถ่าย</string>
+    <string name="feature_swipe_desc">ตรวจสอบภาพถ่ายทีละภาพและส่งการปฏิเสธไปที่ถังขยะ</string>
+    <string name="home_contacts_short_desc">รวมรายการที่ซ้ำกัน</string>
+    <string name="feature_ready_short">พร้อม</string>
+    <string name="feature_review_short">รีวิว</string>
+    <string name="tools_section_storage">พื้นที่เก็บข้อมูลและสื่อ</string>
+    <string name="tools_section_device">เครื่องมืออุปกรณ์</string>
+    <string name="tools_hero_badge">7 เครื่องมือที่มีประโยชน์</string>
+    <string name="tools_hero_title">เครื่องมือที่มีประโยชน์ในที่เดียว</string>
+    <string name="tools_hero_body">จัดการพื้นที่เก็บข้อมูลและสื่อด้วยการดำเนินการที่เรียบง่ายและมุ่งเน้น</string>
+    <string name="tool_file_manager_desc">เรียกดูและล้างภาพหน้าจอ วิดีโอ และอื่นๆ</string>
+    <string name="tool_media_compressor_desc">ลดขนาดรูปภาพและวิดีโอโดยไม่เสียคุณภาพ</string>
+    <string name="tool_secret_space_desc">ล็อครูปภาพส่วนตัวด้วย PIN ที่ปลอดภัย</string>
+    <string name="tool_app_manager_desc">ดูแอพที่ติดตั้งและการใช้พื้นที่เก็บข้อมูล</string>
+    <string name="tool_clean_calendar_desc">ลบกิจกรรมในปฏิทินเก่าที่ทำให้กำหนดการของคุณยุ่งเหยิง</string>
+    <string name="tool_ai_enhancer_desc">ปรับปรุงภาพถ่ายที่เบลอหรือแสงน้อยด้วย AI</string>
+    <string name="tool_speed_test_desc">ตรวจสอบความเร็วในการดาวน์โหลดและอัพโหลดเครือข่ายของคุณ</string>
+    <string name="tools_page_subtitle">ทุกสิ่งที่คุณต้องการสำหรับโทรศัพท์ที่สะอาดยิ่งขึ้น</string>
+    <string name="compress_page_subtitle">ประหยัดพื้นที่โดยไม่สูญเสียช่วงเวลาสำคัญ</string>
+    <string name="video_compressor">คอมเพรสเซอร์วิดีโอ</string>
+    <string name="video_compress_subtitle">ลดขนาดวิดีโอด้วยการเข้ารหัส H.264 บนอุปกรณ์อีกครั้ง</string>
+    <string name="video_compress_card_hint">720p · คุณภาพที่สมดุล</string>
+    <string name="choose_video">เลือกวิดีโอ</string>
+    <string name="choose_video_hint">เลือกวิดีโอที่จะบีบอัด</string>
+    <string name="compress_photo_guide_title">เลือกรูปภาพที่จะบีบอัด</string>
+    <string name="compress_photo_guide_body">ประมวลผลบนอุปกรณ์ · น้อยกว่าในไม่กี่วินาที</string>
+    <string name="compress_video_guide_title">เลือกวิดีโอที่จะบีบอัด</string>
+    <string name="compress_video_guide_body">H.264 บนอุปกรณ์ · สมดุล 720p</string>
+    <string name="compress_guide_tap">แตะเพื่อเลือก</string>
+    <string name="enhance_photo_guide_title">เลือกรูปภาพที่จะปรับปรุง</string>
+    <string name="enhance_photo_guide_body">ความสว่าง · คอนทราสต์ · ความคมชัด</string>
+    <string name="preview_original_photo_label">ก่อน · รูปภาพต้นฉบับ</string>
+    <string name="preview_compressed_photo_label">หลังจาก · แสดงตัวอย่างแบบบีบอัด</string>
+    <string name="preview_original_video_label">ก่อน · วิดีโอต้นฉบับ</string>
+    <string name="preview_compressed_video_label">หลังจาก · แสดงตัวอย่างแบบบีบอัด</string>
+    <string name="preview_enhanced_photo_label">หลังจาก · การแสดงตัวอย่างที่ได้รับการปรับปรุง</string>
+    <string name="selected_video_preview">ตัวอย่างวิดีโอที่เลือก</string>
+    <string name="play_video_preview">เล่นตัวอย่างวิดีโอ</string>
+    <string name="video_preview_title">ตัวอย่างวิดีโอ</string>
+    <string name="video_preview_failed">ไม่สามารถเล่นวิดีโอนี้ได้</string>
+    <string name="video_compression_saved">วิดีโอบีบอัดที่บันทึกลงในภาพยนตร์/CleanSuperAI</string>
+    <string name="video_compression_failed">ไม่สามารถบีบอัดวิดีโอนี้ได้</string>
+    <string name="video_compression_preparing">กำลังเตรียมการบีบอัดวิดีโอ...</string>
+    <string name="video_compression_progress_format">กำลังบีบอัดวิดีโอ… %1$d%%</string>
+    <string name="video_compression_finishing">กำลังสรุปวิดีโอที่บีบอัด...</string>
+    <string name="video_compression_timeout">วิดีโอนี้ใช้เวลาในการบีบอัดนานเกินไป โปรดลองคลิปสั้นกว่านี้</string>
+    <string name="app_manager_subtitle">ตรวจสอบแอพที่ติดตั้งและการตั้งค่าระบบเปิดเพื่อถอนการติดตั้งหรือล้างแคช</string>
+    <string name="app_manager_summary_format">พบแอปของผู้ใช้ %1$d · แตะเพื่อจัดการ</string>
+    <string name="clean_calendar_subtitle">ค้นหากิจกรรมในปฏิทินที่ผ่านมาและลบกิจกรรมที่คุณไม่ต้องการอีกต่อไป</string>
+    <string name="clean_calendar_delete">ลบที่เลือก</string>
+    <string name="clean_calendar_empty">ไม่พบกิจกรรมที่ผ่านมา</string>
+    <string name="clean_calendar_summary_format">กิจกรรมที่ผ่านมาของ %1$d · เลือก %2$d แล้ว</string>
+    <string name="clean_calendar_delete_confirm">ลบ %1$d กิจกรรมที่ผ่านมาที่เลือกไว้หรือไม่</string>
+    <string name="clean_calendar_delete_done">ลบเหตุการณ์ %1$d แล้ว</string>
+    <string name="calendar_permission_hint">อนุญาตให้เข้าถึงปฏิทินเพื่อสแกนกิจกรรมที่ผ่านมา</string>
+    <string name="calendar_permission_denied">ต้องได้รับอนุญาตจากปฏิทิน</string>
+    <string name="calendar_untitled">(ไม่มีชื่อเรื่อง)</string>
+    <string name="image_enhancer_subtitle">ปรับปรุงความสว่าง คอนทราสต์ และความคมชัดภายในอุปกรณ์นี้</string>
+    <string name="image_enhancer_hint">เลือกรูปภาพที่จะปรับปรุง</string>
+    <string name="image_enhancer_ready">พร้อมเสริมดวง</string>
+    <string name="image_enhancer_action">ปรับปรุงภาพถ่าย</string>
+    <string name="image_enhancer_working">กำลังเพิ่มประสิทธิภาพ…</string>
+    <string name="image_enhancer_done">การแสดงตัวอย่างที่ได้รับการปรับปรุงพร้อมแล้ว · บันทึกเมื่อคุณต้องการ</string>
+    <string name="image_enhancer_save">บันทึกภาพถ่ายที่ได้รับการปรับปรุง</string>
+    <string name="image_enhancer_saved">รูปภาพที่ได้รับการปรับปรุงบันทึกลงใน Pictures/CleanSuperAI</string>
+    <string name="image_enhancer_failed">ไม่สามารถปรับปรุงรูปภาพนี้ได้</string>
+    <string name="speed_test_subtitle">วัดการดาวน์โหลด อัปโหลด และเวลาในการตอบสนองโดยใช้เซิร์ฟเวอร์ Cloudflare</string>
+    <string name="speed_test_hint">แตะเริ่มเพื่อเรียกใช้การตรวจสอบความเร็วเครือข่ายสั้นๆ</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">ดาวน์โหลดเมกะบิตต่อวินาที</string>
+    <string name="speed_test_start">เริ่มการทดสอบความเร็ว</string>
+    <string name="speed_test_running">กำลังทดสอบการเชื่อมต่อของคุณ...</string>
+    <string name="speed_test_done">การทดสอบเสร็จสมบูรณ์</string>
+    <string name="speed_test_failed">การทดสอบความเร็วล้มเหลว ตรวจสอบเครือข่ายของคุณแล้วลองอีกครั้ง</string>
+    <string name="speed_test_download_idle">ดาวน์โหลด · รออยู่</string>
+    <string name="speed_test_upload_idle">อัพโหลด · กำลังรอ</string>
+    <string name="speed_test_latency_idle">ความหน่วงแฝง · การรอคอย</string>
+    <string name="speed_test_download_result">ดาวน์โหลด · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">อัปโหลด · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">เวลาแฝง · %1$d มิลลิวินาที</string>
+    <string name="photo_compressor">คอมเพรสเซอร์ภาพ</string>
+    <string name="compress_quality_hint">JPEG ที่สมดุล · 70% quality</string>
+    <string name="choose_photo_hint">เลือกรูปภาพที่จะบีบอัด</string>
+    <string name="choose_photo">เลือกภาพถ่าย</string>
+    <string name="compress_preview">บีบอัดดูตัวอย่าง</string>
+    <string name="compress_and_save">บีบอัดและบันทึก</string>
+    <string name="save_compressed_photo">บันทึกภาพที่บีบอัด</string>
+    <string name="save_compressed_video">บันทึกวิดีโอที่บีบอัด</string>
+    <string name="share">แบ่งปัน</string>
+    <string name="keep">เก็บ</string>
+    <string name="move_to_review_bin">ย้ายไปที่ถังขยะ</string>
+    <string name="clear_review_bin">ล้างถังตรวจสอบ</string>
+    <string name="swipe_page_subtitle">ตรวจสอบตามเดือน · ปัดไปทางขวาเพื่อเก็บ ปัดไปทางซ้ายลงถังขยะ</string>
+    <string name="swipe_trash_open">เปิด</string>
+    <string name="swipe_trash_label_singular">ภาพถ่ายในถังขยะ</string>
+    <string name="swipe_trash_label_plural">ภาพถ่ายในถังขยะ</string>
+    <string name="swipe_empty_title">ภาพถ่ายทั้งหมดได้รับการตรวจสอบแล้ว</string>
+    <string name="swipe_empty_body">กลับไปเลือกเดือนอื่นหรือเปิดถังขยะเพื่อกู้คืนรูปภาพ</string>
+    <string name="category_person_format">คน · %1$d</string>
+    <string name="category_animal_format">สัตว์ · %1$d</string>
+    <string name="category_vehicle_format">พาหนะ · %1$d</string>
+    <string name="no_photos_available">ไม่มีรูปถ่าย</string>
+    <string name="splash_tagline">การล้างข้อมูลอัจฉริยะ ส่วนตัวด้วยการออกแบบ</string>
+    <string name="selected_photos_deleted">ลบรูปภาพที่เลือกแล้ว</string>
+    <string name="added_to_review_bin">เพิ่มไปยังถังตรวจสอบแล้ว</string>
+    <string name="photos_deleted_format">ลบรูปภาพ %1$d แล้ว</string>
+    <string name="delete_photos_failed">ไม่สามารถลบรูปภาพที่เลือกได้</string>
+    <string name="share_photo">แบ่งปันรูปภาพ</string>
+    <string name="trash_bin_title_format">ถังขยะ (%1$s)</string>
+    <string name="trash_bin_title_empty">ถังขยะ</string>
+    <string name="trash_restore_hint">แตะเพื่อกู้คืนรูปภาพ</string>
+    <string name="trash_empty_action">ลบทั้งหมดลงถังขยะ</string>
+    <string name="trash_restored">กู้คืนรูปภาพแล้ว</string>
+    <string name="trash_bin_empty">ถังขยะว่างเปล่า</string>
+    <string name="feature_smart_groups">กลุ่มอัจฉริยะ</string>
+    <string name="feature_duplicate_photos">รูปภาพที่ซ้ำกัน</string>
+    <string name="feature_duplicate_videos">วิดีโอที่ซ้ำกัน</string>
+    <string name="feature_all_videos">วิดีโอทั้งหมด</string>
+    <string name="feature_screenshots_short">ภาพหน้าจอ</string>
+    <string name="scan_unavailable">สแกนไม่พร้อมใช้งาน</string>
+    <string name="please_try_again">โปรดลองอีกครั้ง</string>
+    <string name="tool_file_manager">ตัวจัดการไฟล์</string>
+    <string name="tool_media_compressor">มีเดียคอมเพรสเซอร์</string>
+    <string name="tool_app_manager">ผู้จัดการแอป</string>
+    <string name="tool_clean_calendar">ทำความสะอาดปฏิทิน</string>
+    <string name="tool_ai_enhancer">โปรแกรมปรับปรุงภาพ AI</string>
+    <string name="tool_secret_space">พื้นที่ลับ</string>
+    <string name="tool_speed_test">ทดสอบความเร็ว</string>
+    <string name="compressing">กำลังบีบอัด...</string>
+    <string name="original_size_format">ต้นฉบับ · %1$s</string>
+    <string name="compressed_result_format">บีบอัด · %1$s\nบันทึกไว้แล้ว · %2$s</string>
+    <string name="swipe_grant_access_hint">ให้สิทธิ์การเข้าถึงสื่อจากหน้าแรกเพื่อเรียกดูรูปภาพ</string>
+    <string name="media_item_placeholder">สื่อ</string>
+    <string name="selected_image_preview">ดูตัวอย่างรูปภาพที่เลือก</string>
+    <string name="current_photo">ภาพถ่ายปัจจุบัน</string>
+    <string name="month_cover">ปกเดือน</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">คน · 0</string>
+    <string name="category_animal_zero">สัตว์ · 0</string>
+    <string name="category_vehicle_zero">พาหนะ · 0</string>
+    <string name="duplicate_photos_page_title">รูปภาพที่ซ้ำกัน</string>
+    <string name="duplicate_photos_page_subtitle">ค้นหารายการที่ซ้ำกันทุกประการตามขนาดและขนาดไฟล์ จากนั้นเก็บสำเนาไว้หนึ่งชุด</string>
+    <string name="duplicate_photos_page_badge">ตรงทั้งหมด</string>
+    <string name="duplicate_photos_summary_format">พบกลุ่ม %1$d ที่มีรูปถ่ายซ้ำของ %2$d</string>
+    <string name="duplicate_photos_empty_title">ไม่พบภาพถ่ายที่ซ้ำกัน</string>
+    <string name="duplicate_photos_empty_body">ไม่พบภาพถ่ายที่มีขนาดและมิติเท่ากัน</string>
+    <string name="duplicate_videos_page_title">วิดีโอที่ซ้ำกัน</string>
+    <string name="duplicate_videos_page_subtitle">ค้นหาวิดีโอที่ซ้ำกันทุกประการตามขนาดและระยะเวลา จากนั้นเก็บสำเนาไว้หนึ่งชุด</string>
+    <string name="duplicate_videos_page_badge">ตรงทั้งหมด</string>
+    <string name="duplicate_videos_summary_format">พบกลุ่ม %1$d ที่มีวิดีโอซ้ำของ %2$d</string>
+    <string name="duplicate_videos_empty_title">ไม่พบวิดีโอที่ซ้ำกัน</string>
+    <string name="duplicate_videos_empty_body">ไม่พบวิดีโอที่มีขนาดและระยะเวลาเท่ากัน</string>
+    <string name="settings_page_title">การตั้งค่า</string>
+    <string name="settings_page_subtitle">ภาษา ข้อมูลแอป ความเป็นส่วนตัว และแคช</string>
+    <string name="settings_language_title">ภาษา</string>
+    <string name="settings_language_subtitle">เลือกภาษาของแอปที่คุณต้องการ</string>
+    <string name="settings_about_title">เกี่ยวกับ</string>
+    <string name="settings_about_subtitle">ชื่อและเวอร์ชันของแอป</string>
+    <string name="settings_about_message_format">ทำความสะอาด Super AI\nVersion %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">นโยบายความเป็นส่วนตัว</string>
+    <string name="settings_privacy_policy_subtitle">เราจัดการข้อมูลของคุณอย่างไร</string>
+    <string name="settings_privacy_policy_body">การสแกนและการล้างข้อมูลสื่อทั้งหมดทำงานภายในอุปกรณ์ของคุณ เราไม่อัปโหลดรูปภาพ วิดีโอ หรือข้อมูลติดต่อของคุณไปยังเซิร์ฟเวอร์ของเรา การวิเคราะห์เพิ่มเติม (หากเปิดใช้งานในภายหลัง) จะเป็นไปตามนโยบายของร้านค้า คุณสามารถเพิกถอนการเข้าถึงสื่อได้ตลอดเวลาในการตั้งค่าระบบ</string>
+    <string name="settings_clear_cache_title">ล้างแคช</string>
+    <string name="settings_clear_cache_subtitle">พื้นที่เก็บข้อมูลแอปชั่วคราวฟรี</string>
+    <string name="settings_clear_cache_confirm">ล้างไฟล์แคชชั่วคราวหรือไม่ รูปภาพและการตั้งค่าของคุณจะไม่ถูกลบ</string>
+    <string name="settings_clear_cache_done_format">ล้างแคช %1$s แล้ว</string>
+    <string name="language_page_title">ภาษาของแอป</string>
+    <string name="language_page_subtitle">ตามค่าเริ่มต้น CleanSuper AI จะเป็นไปตามภาษาอุปกรณ์ของคุณ</string>
+    <string name="language_follow_system_title">ทำตามภาษาของระบบ</string>
+    <string name="language_follow_system_subtitle_format">ภาษาของอุปกรณ์ปัจจุบัน: %1$s</string>
+    <string name="month_photo_count_format">รูปถ่าย %1$d</string>
+    <string name="review_bin_pending_format">รูป %1$d รออยู่ใน Review Bin</string>
+    <string name="media_bucket_video">วีดีโอ</string>
+    <string name="settings_terms_title">เงื่อนไขการใช้งาน</string>
+    <string name="settings_terms_subtitle">อ่านเงื่อนไข</string>
+    <string name="settings_widget_title">วิดเจ็ตบนหน้าจอหลัก</string>
+    <string name="settings_widget_subtitle">เพิ่มทางลัดในการทำความสะอาด</string>
+    <string name="tool_network_traffic">การรับส่งข้อมูลเครือข่าย</string>
+    <string name="tool_network_traffic_desc">การใช้งานตามแอป</string>
+    <string name="tool_battery_info">ข้อมูลแบตเตอรี่</string>
+    <string name="tool_battery_info_desc">ชาร์จและสุขภาพ</string>
+    <string name="tool_device_info">ข้อมูลอุปกรณ์</string>
+    <string name="tool_device_info_desc">ระบบและ Wi-Fi</string>
+    <string name="tool_private_vault">ห้องนิรภัยส่วนตัว</string>
+    <string name="tool_private_vault_desc">ซ่อนรูปภาพและวิดีโอ</string>
+    <string name="home_more_tools">เครื่องมือเพิ่มเติม</string>
+    <string name="home_battery_info">แบตเตอรี่</string>
+    <string name="home_device_info">อุปกรณ์</string>
+    <string name="home_large_files">ไฟล์ขนาดใหญ่</string>
+    <string name="home_cache_cleanup">ทำความสะอาดแคช</string>
+    <string name="home_network_traffic">การใช้ข้อมูล</string>
+    <string name="home_private_vault">ห้องนิรภัยส่วนตัว</string>
+    <string name="home_picture_cleanup">รูปภาพ</string>
+    <string name="home_video_cleanup">วิดีโอ</string>
+    <string name="home_audio_cleanup">เสียง</string>
+    <string name="media_loading">กำลังโหลดสื่อ...</string>
+    <string name="media_loading_hint">การจัดระเบียบไฟล์ของคุณ โปรดรอ.</string>
+    <string name="media_count_summary">รายการ %1$d · %2$s · เลือก %3$d แล้ว</string>
+    <string name="media_empty_title">ไม่พบสื่อ</string>
+    <string name="media_empty_body">ไม่มีรายการในหมวดหมู่นี้</string>
+    <string name="media_error_title">ไม่สามารถโหลดสื่อได้</string>
+    <string name="media_access_title">จำเป็นต้องเข้าถึงพื้นที่เก็บข้อมูล</string>
+    <string name="media_access_body">อนุญาตให้เข้าถึงไฟล์ทั้งหมดในการตั้งค่าเพื่อเรียกดูสื่อนี้</string>
+    <string name="media_delete_title">ลบรายการที่เลือกใช่ไหม</string>
+    <string name="media_delete_message">ลบรายการที่เลือก %1$d หรือไม่ Android อาจขอให้คุณยืนยัน</string>
+    <string name="media_recent_group">ภายใน 1 เดือน</string>
+    <string name="media_older_group">มีอายุมากกว่า 1 เดือน</string>
+    <string name="media_group_summary">รายการ %1$d · %2$s</string>
+    <string name="audio_player_unavailable">ไม่มีเครื่องเล่นเสียงในอุปกรณ์นี้</string>
+    <string name="vault_items_summary">ของส่วนตัว %1$d</string>
+    <string name="vault_empty_gallery">ห้องนิรภัยส่วนตัวของคุณว่างเปล่า นำเข้ารูปภาพหรือวิดีโอเพื่อดูที่นี่</string>
+    <string name="cache_group_app">แคชของแอป</string>
+    <string name="cache_group_apk">ไฟล์ APK เก่า</string>
+    <string name="cache_group_residual">ไฟล์ที่เหลือ</string>
+    <string name="cache_summary">ไฟล์ %1$d · %2$s</string>
+    <string name="cleanup_report_title">การทำความสะอาดเสร็จสมบูรณ์</string>
+    <string name="cleanup_report_freed">พื้นที่ว่างแล้ว</string>
+    <string name="cleanup_report_count">นำรายการ %1$d ของ %2$d ออกแล้ว</string>
+    <string name="cleanup_report_other">ทำความสะอาดไฟล์อื่นๆ</string>
+    <string name="cleanup_report_done">เสร็จแล้ว</string>
+    <string name="exit_retain_title">ออกจาก CleanSuper AI หรือไม่</string>
+    <string name="exit_retain_message">เพิ่มวิดเจ็ตภายในบ้านเพื่อการทำความสะอาดที่รวดเร็วยิ่งขึ้น</string>
+    <string name="exit_retain_confirm_exit">ออก</string>
+    <string name="exit_retain_add">เพิ่ม</string>
+    <string name="exit_retain_feature_cache">แคช</string>
+    <string name="exit_retain_feature_large">ไฟล์ขนาดใหญ่</string>
+    <string name="widget_status_storage">พื้นที่ว่าง</string>
+    <string name="notif_screenshot">ภาพหน้าจอ</string>
+    <string name="exit_retain_message_existing">วิดเจ็ตหลักของคุณพร้อมสำหรับการทำความสะอาดอย่างรวดเร็วแล้ว</string>
+    <string name="notif_cache">แคช</string>
+    <string name="notif_channel_name">แถบเครื่องมือทำความสะอาดด่วน</string>
+    <string name="notif_channel_desc">แถบเครื่องมือถาวรเพื่อการทำความสะอาดที่รวดเร็ว</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">เตือนความจำที่สะอาด</string>
+    <string name="notif_event_channel_desc">การแจ้งเตือนในเครื่องหลังการจับภาพหน้าจอ การติดตั้ง และการถอนการติดตั้ง</string>
+    <string name="notif_event_summary_channel_name">สรุปการแจ้งเตือนที่สะอาด</string>
+    <string name="notif_event_screenshot_title">ภาพหน้าจออื่น? 1 ถึงเวลาล้างภาพหน้าจอ</string>
+    <string name="notif_event_install_title">แอปใหม่ได้ย้ายเข้ามาแล้ว และแคชก็เข้ามาเช่นกัน ทำความสะอาด</string>
+    <string name="notif_event_uninstall_title">ถอนการติดตั้งสำเร็จ! เพื่อทำความสะอาดไฟล์ที่ตกค้าง</string>
+    <string name="notif_clean_reminder_title">มีขยะกองอยู่มากมาย ทำความสะอาดทั้งหมดในครั้งเดียว</string>
+    <string name="notif_event_battery_below_50_title">แบตเตอรี่มีมากกว่าครึ่ง ดูแลมันตอนนี้มันจะคงอยู่จนกว่าคุณจะถึงบ้าน</string>
+    <string name="notif_event_battery_below_20_title">แบตเตอรี่เหลือน้อย อยากรู้ว่าใครขโมยไฟฟ้าของคุณ? คลิกเพื่อดูอันดับ</string>
+    <string name="notif_event_charging_title">เสียบปลั๊กแล้ว งานคืนนี้: เติมน้ำมันแล้วทำความสะอาด</string>
+    <string name="notif_event_charging_full_title">ชาร์จเต็มแล้วพร้อมใช้งาน การตรวจสอบครั้งสุดท้าย: ถังขยะถูกล้างแล้วหรือยัง?</string>
+    <string name="notif_event_charging_to_80_title">การวิ่งครั้งสุดท้ายคือ 80% ทิ้งขยะและแพ็คเบา ๆ เพื่อต้อนรับพลังเต็มที่</string>
+    <string name="notif_event_charging_disconnect_title">ถอดปลั๊กแล้วออกเดินทาง อย่าลืมใช้เวลาในการทำความสะอาดถังขยะและรักษารูปร่างให้เรียบร้อย</string>
+    <string name="notif_event_app_update_title">รุ่นใหม่มาแล้ว ทุกสิ่งที่เหลือจากเวอร์ชันเก่าจะถูกล้างทั้งหมด</string>
+    <string name="notif_event_network_change_title">เว็บเปลี่ยน! ดูสถานะเครือข่ายปัจจุบัน 1</string>
+    <string name="notif_event_screen_lock_title">วางโทรศัพท์ลงแล้วปล่อยให้เป็นหน้าที่ของเรา เวลาพักหน้าจอ = เวลาให้นมบุตร</string>
+    <string name="notif_event_screen_on_after_lock_title">เจอกันอีกแล้ว สบายดีมั้ย? ส่วนใหญ่เป็นขยะ ลองทำความสะอาดดู</string>
+    <string name="notif_event_storage_free_drop_title">พื้นที่เก็บข้อมูลมีการเปลี่ยนแปลง มาดูกันว่าอะไรกินพื้นที่?</string>
+    <string name="notif_event_scheduled_push_1_title">ขยะที่สะสมมานานก็ถูกกำจัดออกไปในคราวเดียว</string>
+    <string name="notif_event_scheduled_push_2_title">แบตไม่ทนเหมือนเมื่อก่อนเหรอ? ตรวจสอบออก</string>
+    <string name="notif_event_app_inactive_title">ไม่เจอกันนาน มันรออยู่นะ กลับมากำจัดขยะกันเถอะ</string>
+    <string name="notif_event_scheduled_push_3_title">แตะครั้งเดียวเพื่อเล่นเพลย์ลิสต์ของคุณ - ตั้งค่าวิดเจ็ต</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>แตะครั้งเดียวเพื่อเล่นเพลย์ลิสต์ของคุณ - ตั้งค่าวิดเจ็ต</item>
+        <item>ทำให้ทุกอย่างง่ายขึ้นด้วยวิดเจ็ต — เพิ่มทางลัดเพลง</item>
+        <item>เล่นได้อย่างรวดเร็วโดยไม่ต้องปลดล็อค — เปิดใช้งานวิดเจ็ตบนหน้าจอหลัก</item>
+    </string-array>
+    <string name="notif_event_app_background_title">คุณลืมบางสิ่งบางอย่าง</string>
+    <string name="notif_event_app_background_content">มาทำความสะอาดให้เสร็จจะได้วิ่งได้ราบรื่นยิ่งขึ้น</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>คุณลืมบางสิ่งบางอย่าง</item>
+        <item>เหลืออีกหนึ่งก้าว</item>
+        <item>ข่าวดี</item>
+        <item>คุณจากไปเร็วเกินไป</item>
+        <item>อย่าทิ้งขยะข้ามคืน</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>มาทำความสะอาดให้เสร็จจะได้วิ่งได้ราบรื่นยิ่งขึ้น</item>
+        <item>แตะอีกครั้งเพื่อเสร็จสิ้นการทำความสะอาดและเพิ่มพื้นที่ว่าง</item>
+        <item>ตรวจพบพื้นที่ว่าง - มาเรียกร้องการทำความสะอาดด้วยการแตะเพียงครั้งเดียว</item>
+        <item>โทรศัพท์ของคุณเร็วขึ้นอีก — มาดูการเพิ่มประสิทธิภาพกัน</item>
+        <item>มาทำความสะอาดให้เสร็จจะได้วิ่งได้ราบรื่นยิ่งขึ้น</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">ผลลัพธ์การสแกนพร้อมแล้ว — ขยะกำลังกินพื้นที่ ทำความสะอาดเลย</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>ผลลัพธ์การสแกนพร้อมแล้ว — ขยะกำลังกินพื้นที่ ทำความสะอาดเลย</item>
+        <item>เหลือขั้นตอนเดียว: กลับมาและเพิ่มพื้นที่ว่างทันที</item>
+        <item>ลืมทำความสะอาดหลังการสแกน? 10 วินาทีเพื่อทำให้โทรศัพท์ของคุณเบาลง</item>
+        <item>ขยะยังคงอยู่ในโทรศัพท์ของคุณ - บันทึกผลลัพธ์แล้ว กลับมาเพื่อทำความสะอาดด้วยการแตะเพียงครั้งเดียว</item>
+        <item>การสแกนครั้งล่าสุดพบว่ามีรายการที่ต้องทำความสะอาดหลายรายการ มาทำให้มันจบกันเถอะ</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">การทำความสะอาดยังไม่เสร็จสิ้น มาทำขั้นตอนสุดท้ายให้เสร็จก่อน</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>การทำความสะอาดยังไม่เสร็จสิ้น มาทำขั้นตอนสุดท้ายให้เสร็จก่อน</item>
+        <item>การทำความสะอาดหยุดชะงัก: ไปได้ครึ่งทางแล้ว ปิดท้ายด้วยโทรศัพท์ที่เบากว่า</item>
+        <item>การทำความสะอาดใกล้เสร็จแล้ว อย่าทิ้งขยะไว้ข้างหลัง</item>
+        <item>คุณออกจากการทำความสะอาดกลางคัน — เสร็จสิ้นและรู้สึกถึงความแตกต่าง</item>
+        <item>การหยุดชะงักของการทำความสะอาดสามารถดำเนินต่อไปได้ตลอดเวลา มาทำให้มันจบกันเถอะ</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">ลบรูปภาพแล้ว — ย้ายไปยังถังขยะอย่างปลอดภัย</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>ลบรูปภาพแล้ว — ย้ายไปยังถังขยะอย่างปลอดภัย</item>
+        <item>เพิ่งลบรูปภาพ 1 รูป — ดูว่าคุณเพิ่มพื้นที่ว่างไปเท่าใด</item>
+        <item>ลบรูปภาพแล้ว — ลบอย่างถาวรเพื่อเพิ่มพื้นที่ว่างทันที</item>
+        <item>ลบรูปภาพอย่างปลอดภัย — อัปเดตสถานะพื้นที่เก็บข้อมูลแล้ว</item>
+        <item>รูปภาพที่ถูกลบ — คุณสามารถล้างภาพหน้าจอที่คล้ายกันได้เช่นกัน</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">วิดีโอถูกลบ — พื้นที่ว่างขนาดใหญ่ถูกทำให้ว่าง</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>วิดีโอถูกลบ — พื้นที่ว่างขนาดใหญ่ถูกทำให้ว่าง</item>
+        <item>วิดีโอขนาดใหญ่ถูกลบออก — ความกดดันในการจัดเก็บข้อมูลลดลงทันที</item>
+        <item>วิดีโอถูกลบ — ตรวจสอบสถานะการจัดเก็บข้อมูลปัจจุบันของคุณ</item>
+        <item>ลบเสร็จแล้ว — ล้างถังรีไซเคิลเพื่อเพิ่มพื้นที่ว่างให้เต็ม</item>
+        <item>วิดีโอถูกลบ - อาจมีวิดีโอขนาดใหญ่ที่ต้องล้างอีกมาก</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">เสียงถูกลบ — ไฟล์ขนาดเล็กรวมกัน ทำต่อไป.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>เสียงถูกลบ — ไฟล์ขนาดเล็กรวมกัน ทำต่อไป.</item>
+        <item>เสียงนั้นหายไป — ไฟล์ที่ไม่ได้ใช้ที่คล้ายกันก็สามารถล้างได้เช่นกัน</item>
+        <item>ลบเสียง — อัปเดตรายละเอียดพื้นที่เก็บข้อมูลแล้ว มาดูกัน.</item>
+        <item>ลบไฟล์เสียง 1 ไฟล์ — รีเฟรชรายการพื้นที่เก็บข้อมูล</item>
+        <item>ลบเสียง — ล้างถังรีไซเคิลเพื่อเพิ่มพื้นที่ว่างให้เสร็จสิ้น</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">ไฟล์ถูกลบ — เพิ่มพื้นที่เก็บข้อมูลอีกเล็กน้อย</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>ไฟล์ถูกลบ — เพิ่มพื้นที่เก็บข้อมูลอีกเล็กน้อย</item>
+        <item>ลบไฟล์แล้ว ความยุ่งเหยิงจะไม่รบกวนโทรศัพท์ของคุณอีกต่อไป</item>
+        <item>ไฟล์ถูกลบ — ดูว่าคุณสามารถล้างอะไรได้อีกบ้าง</item>
+        <item>ไฟล์ถูกลบ — ซิงค์การเปลี่ยนแปลง อัปเดตสถานะพื้นที่เก็บข้อมูลแล้ว</item>
+        <item>ไฟล์นั้นถูกล้างแล้ว — เรียกคืนพื้นที่ทันที</item>
+    </string-array>
+    <string name="notif_event_image_download_title">ดาวน์โหลดรูปภาพแล้ว — เปิดแล้วลองดู</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>ดาวน์โหลดรูปภาพแล้ว — เปิดแล้วลองดู</item>
+        <item>ดาวน์โหลดรูปภาพแล้ว — ล้างรูปภาพที่ซ้ำกันในอัลบั้มของคุณขณะที่คุณอยู่ที่นั้น</item>
+        <item>ดาวน์โหลดเสร็จแล้ว — บันทึกรูปภาพอย่างปลอดภัย มาตรวจสอบภาพถ่ายที่คล้ายกัน</item>
+    </string-array>
+    <string name="notif_event_video_download_title">ดาวน์โหลดวิดีโอแล้ว — มันไม่เล็กเลย ดูว่าวิดีโอเก่าๆ สามารถเพิ่มพื้นที่ว่างได้มากเพียงใด</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>ดาวน์โหลดวิดีโอแล้ว — มันไม่เล็กเลย ดูว่าวิดีโอเก่าๆ สามารถเพิ่มพื้นที่ว่างได้มากเพียงใด</item>
+        <item>บันทึกวิดีโอใหม่แล้ว ค้นหาวิดีโอขนาดใหญ่เพื่อลบและเพิ่มพื้นที่ว่าง แตะฉัน</item>
+        <item>วิดีโอต้องใช้พื้นที่ — เราพบสิ่งของที่ทำความสะอาดได้เพื่อทำให้โทรศัพท์ของคุณเบาขึ้น แตะที่นี่</item>
+        <item>ดาวน์โหลดเสร็จแล้ว! ทำความสะอาดวิดีโอเก่าๆ และพื้นที่ว่างก็กลับมา แตะฉัน</item>
+        <item>จัดเรียงวิดีโอใหม่ — ค้นหาหรือทำความสะอาดได้ง่าย แตะเพื่อดู</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">ดาวน์โหลดเสียง — จัดระเบียบคลังเพลงของคุณด้วยการแตะเพียงครั้งเดียว แตะฉัน</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>ดาวน์โหลดเสียง — จัดระเบียบคลังเพลงของคุณด้วยการแตะเพียงครั้งเดียว แตะฉัน</item>
+        <item>จัดเรียงเสียงใหม่ — ล้างเสียงเก่าในขณะที่คุณอยู่ที่นี่ แตะฉัน</item>
+        <item>คลังเพลงเต็มแล้วเหรอ? ตรวจสอบเสียงที่ทำความสะอาดได้ แตะที่นี่</item>
+        <item>ดาวน์โหลดเสียง — ลบข้อมูลซ้ำซ้อนด้วยการแตะเพียงครั้งเดียว แตะฉันเพื่อจัดระเบียบ</item>
+    </string-array>
+    <string name="notif_event_file_download_title">บันทึกไฟล์ใหม่แล้ว — ล้างไฟล์เก่าและพื้นที่ว่าง แตะที่นี่</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>บันทึกไฟล์ใหม่แล้ว — ล้างไฟล์เก่าและพื้นที่ว่าง แตะที่นี่</item>
+        <item>ดาวน์โหลดเสร็จแล้ว — ดูว่าไฟล์เก่าใดบ้างที่คุณสามารถล้างได้ แตะฉัน</item>
+        <item>ไฟล์ใหม่พร้อมแล้ว — การเก็บถาวรอัจฉริยะ + ล้างข้อมูล แตะฉันเพื่อเริ่มต้น</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">ถังรีไซเคิลว่างเปล่า — พื้นที่เก็บข้อมูลรีเฟรชแล้ว ตรวจสอบพื้นที่ล่าสุดของคุณ</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>ถังรีไซเคิลว่างเปล่า — พื้นที่เก็บข้อมูลรีเฟรชแล้ว ตรวจสอบพื้นที่ล่าสุดของคุณ</item>
+        <item>ถังรีไซเคิลว่างเปล่า - นำของเหลือมาทำความสะอาดอย่างล้ำลึก</item>
+        <item>ล้างข้อมูลเรียบร้อยแล้ว — มีขยะให้ทำความสะอาดมากขึ้น มาดูกัน.</item>
+    </string-array>
+    <string name="notif_event_action_clean">ทำความสะอาดเลย</string>
+    <string name="notif_event_action_open_home">เปิด</string>
+    <string name="notif_event_action_manage">จัดการแอป</string>
+    <string name="notif_event_action_check_battery">ตรวจสอบแบตเตอรี่</string>
+    <string name="notif_event_action_check_network">ตรวจสอบเครือข่าย</string>
+    <string name="notif_days_unit">วัน</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>พื้นที่เก็บข้อมูลมีการเปลี่ยนแปลง มาดูกันว่าอะไรกินพื้นที่?</item>
+        <item>ตรวจพบการเปลี่ยนแปลงเชิงพื้นที่ อาจมีขยะใหม่ๆ เข้ามาดูบ้าง?</item>
+        <item>พื้นที่ว่างได้ถูกย้ายแล้ว รู้ไหมใครกิน? คลิกเพื่อดู</item>
+        <item>พื้นที่แคบหรือเปล่า? เพิ่งตรวจพบการเปลี่ยนแปลง เรามาดูรายละเอียดกันดีกว่า</item>
+        <item>การแจ้งเตือนการเปลี่ยนพื้นที่: คุณอาจสะสมขยะจำนวนมาก ตรวจสอบออก?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>แบตเตอรี่เหลือน้อย อยากรู้ว่าใครขโมยไฟฟ้าของคุณ? คลิกเพื่อดูอันดับ</item>
+        <item>กำลังจะหมดลงในเร็วๆ นี้ หากคุณล้างแอปที่ขโมยไฟฟ้าออกไปคุณก็ยังสามารถอยู่รอดได้ระยะหนึ่ง</item>
+        <item>แบตเตอรี่เหลือน้อย การล้างพื้นหลังบางส่วนยังดีกว่าไม่ทำอะไรเลย</item>
+        <item>แบตเตอรี่เป็นสีแดง คุณยังสามารถบันทึกได้ คลิกเพื่อเปิดและดู</item>
+        <item>น้อยกว่า 20% remains มาปฐมพยาบาลและทำความสะอาดแบบประหยัดพลังงานกันเถอะ</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>แบตเตอรี่มีมากกว่าครึ่ง ดูแลมันตอนนี้มันจะคงอยู่จนกว่าคุณจะถึงบ้าน</item>
+        <item>แบตเตอรี่มีมากกว่าครึ่ง การดูแลแบตเตอรี่ตอนนี้ง่ายกว่าการรอถึง 20% มาก</item>
+        <item>แบตหมดไปครึ่งแล้ว มันสามารถอยู่ได้นานแค่ไหน? คลิกเพื่อดู</item>
+        <item>แบตเตอรี่มีมากกว่าครึ่ง ถึงเวลาดูแลแบ็คเอนด์แล้ว อย่ารอให้มันวิตกกังวล</item>
+        <item>แบตเหลือครึ่งนึง กำจัดผู้เล่นที่หิวโหยรายใหญ่และทำให้ครึ่งหลังมีเสถียรภาพมากขึ้น</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>การวิ่งครั้งสุดท้ายคือ 80% ทิ้งขยะและแพ็คเบา ๆ เพื่อต้อนรับพลังเต็มที่</item>
+        <item>ยังคงชาร์จเต็มอีก 20% short หยุดจ้องมองที่หน้าจอของคุณและให้เราจัดการขยะ</item>
+        <item>80%: ห่างจากความสมบูรณ์แบบเพียงก้าวเดียว คลิกหนึ่งครั้งและจะถูกล้างโดยสมบูรณ์เมื่อแบตเตอรี่ชาร์จเต็มแล้ว</item>
+        <item>80%, a แบตเตอรี่ดีๆ สำหรับมือถือดีๆ ทำความสะอาดสักรอบในขณะที่มันร้อนเหรอ?</item>
+        <item>20% i สุดท้ายที่มอบให้เรา คุณมองไปที่แบตเตอรี่ แล้วเราจะทำความสะอาดถังขยะ</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>ชาร์จเต็มแล้วพร้อมใช้งาน การตรวจสอบครั้งสุดท้าย: ถังขยะถูกล้างแล้วหรือยัง?</item>
+        <item>หลังจากชาร์จ ความรู้สึกของพิธีกรรมก็เต็ม ลองกำจัดขยะเพื่อรำลึกถึงมันดูไหม?</item>
+        <item>100%, sตารางวันนี้ อีกรอบก็ไร้ที่ติ..</item>
+        <item>100%. ขั้นตอนสุดท้ายก่อนถอดปลั๊ก: ล้างถังขยะสามสิบวินาที</item>
+        <item>จบแบบเต็มกำลัง.. การทำความสะอาดครั้งสุดท้ายที่สมบูรณ์แบบ</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>เว็บเปลี่ยน! ดูสถานะเครือข่ายปัจจุบัน 1</item>
+        <item>การละทิ้งเครือข่าย อย่าดูสัญญาณเมื่อทำความสะอาด เพียงคลิกแล้วสแกน</item>
+        <item>เปิดเพจไม่ได้? การล้างข้อมูลจะออนไลน์อยู่เสมอ</item>
+        <item>คุณสามารถทำงานแบบออฟไลน์ได้ และสามารถล้างถังขยะของคุณได้ทันที</item>
+        <item>หากไม่มีสัญญาณก็ไม่จำเป็นต้องมีข้อมูลในการทำความสะอาด เพียงคลิก</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>เสียบปลั๊กแล้ว ภารกิจของคืนนี้: เติมน้ำมันแล้วทำความสะอาด</item>
+        <item>คุณกำลังพักผ่อน กำลังชาร์จพลัง ปล่อยให้มันทำความสะอาดถังขยะด้วย</item>
+        <item>ระหว่างชาร์จก็เพียงพอที่จะกำจัดขยะที่สะสมมาเป็นเวลานานได้</item>
+        <item>เมื่อเสียบปลั๊กไฟแล้วเท่านั้น พนักงานหลังเวทีจึงกล้าทำงานได้อย่างอิสระ</item>
+        <item>รู้สึกร้อนเล็กน้อยขณะชาร์จ? การล้างพื้นหลังสามารถลดอุณหภูมิได้</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>ถอดปลั๊กแล้วออกเดินทาง อย่าลืมใช้เวลาในการทำความสะอาดถังขยะและรักษารูปร่างให้เรียบร้อย</item>
+        <item>หลังจากชาร์จเสร็จแล้ว ให้เก็บของและออกเดินทาง เพียงแค่ทำความสะอาดมันก็จะสมบูรณ์แบบ</item>
+        <item>ชาร์จเต็มแล้วพร้อมใช้งาน ทำความสะอาดถังขยะได้อย่างราบรื่นไม่มีข้อบกพร่องในวันนี้</item>
+        <item>การชาร์จสิ้นสุดลง พื้นที่ต่อไปคือการทำความสะอาดและอัปเกรดทีละระดับ</item>
+        <item>อย่าหยุดที่ไฟดับ สิ่งหนึ่งที่เหลืออยู่: การทำความสะอาด</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>เจอกันอีกแล้ว สบายดีมั้ย? ส่วนใหญ่เป็นขยะ ลองทำความสะอาดดู</item>
+        <item>ปลดล็อคแล้วเหรอ? อย่าเปิดแอปอื่นก่อนและล้างถังขยะเป็นเวลาสามสิบวินาที</item>
+        <item>สิ่งแรกที่ต้องปลดล็อคคือเรา ทิ้งขยะแล้วมันจะรักคุณมากขึ้น</item>
+        <item>สามสิบวินาทีหลังจากการปลดล็อค การใช้งานที่คุ้มค่าที่สุด: ทำความสะอาดขยะ</item>
+        <item>โทรศัพท์มือถือของคุณพูดว่า: แบ็กเอนด์ถูกบล็อกเล็กน้อย คุณช่วยฉันได้ไหม</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>วางโทรศัพท์ลงแล้วปล่อยให้เป็นหน้าที่ของเรา เวลาพักหน้าจอ = เวลาให้นมบุตร</item>
+        <item>การหยุดงานไม่ได้หมายความว่าการหยุดงาน ฉันจะทำให้คุณประหลาดใจเมื่อฉันเปิดหน้าจอครั้งต่อไป</item>
+        <item>ดีขึ้นอย่างเงียบๆ ในขณะที่พักหน้าจอ คลิกแล้วเราจะจัดการส่วนที่เหลือเอง</item>
+        <item>สิ่งสุดท้ายก่อนที่จะล็อคหน้าจอ: คลิก Clean พรุ่งนี้เช้าพบกับโฉมใหม่</item>
+        <item>หน้าจอมืดลง จัดการตอนนี้แล้วรอดูผลพรุ่งนี้</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>แอปใหม่ได้ย้ายเข้ามาแล้ว และแคชก็เข้ามาเช่นกัน ทำความสะอาด</item>
+        <item>เราเข้าใจถึงความสุขของการติดตั้งแอปใหม่ เพียงแต่ว่าแคชจะกองพะเนินเทินทึกอย่างเงียบ ๆ</item>
+        <item>แอพใหม่เหรอ? แคชก็อยู่ที่นี่เช่นกัน ล้างมันได้ด้วยคลิกเดียว</item>
+        <item>คนใหม่เข้ามาและคนเก่าก็ออกไป ทำความสะอาดบ่อยๆ และติดตั้งตามที่คุณต้องการ</item>
+        <item>อีกอันหนึ่ง? พื้นที่เริ่มเล็กลงอย่างเงียบๆ มาทำความสะอาดกันเถอะ</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>ถอนการติดตั้งสำเร็จ! เพื่อทำความสะอาดไฟล์ที่ตกค้าง</item>
+        <item>ถอนการติดตั้งแต่ไม่ได้ทำความสะอาด คลิกเพื่อเสร็จสิ้น</item>
+        <item>ถอนการติดตั้งแอปแล้ว แต่ส่วนท้ายยังคงอยู่ ทำความสะอาดได้ด้วยคลิกเดียวและบอกลาทันทีและตลอดไป</item>
+        <item>อย่าพลาดขั้นตอนที่สอง: ลบ App + ล้างสิ่งตกค้าง คลิกเพียงครั้งเดียวและเสร็จสิ้น</item>
+        <item>สารตกค้างจะกินพื้นที่ว่างครึ่งหนึ่ง สแกนอย่างละเอียดและเคลียร์ทุกอย่าง</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>รุ่นใหม่มาแล้ว ทุกสิ่งที่เหลือจากเวอร์ชันเก่าจะถูกล้างทั้งหมด</item>
+        <item>+1 สำหรับเวอร์ชัน +1 สำหรับแคช สำหรับการสแกนเชิงลึก</item>
+        <item>การอัพเดตเสร็จสมบูรณ์และสามารถล้างแพ็คเกจการติดตั้งที่เหลือได้ด้วยคลิกเดียว</item>
+        <item>การอัปเดตเสร็จสิ้นแล้ว มาสรุปกันดีกว่า ทำความสะอาดมันซะ แล้วฉันจะรับช่วงต่อ</item>
+        <item>การอัปเดตทุกครั้งจะทิ้งไฟล์เก่าไว้และจัดการกับมันอย่างรวดเร็ว</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>ภาพหน้าจออื่น? 1 ถึงเวลาล้างภาพหน้าจอแล้ว</item>
+        <item>พบภาพหน้าจอใหม่ คลิกเพื่อดูและทำความสะอาด~</item>
+        <item>มีภาพหน้าจอเพิ่มมากขึ้นเรื่อยๆ การทำความสะอาดด้วยคลิกเดียวสามารถช่วยคุณเพิ่มพื้นที่ได้</item>
+        <item>ถ่ายภาพหน้าจอสำเร็จ สามารถกรองภาพซ้ำและเบลอออกได้ด้วยคลิกเดียว</item>
+        <item>ภาพหน้าจอใหม่จะถูกเพิ่มลงในฐานข้อมูล และภาพที่ซ้ำกันจะถูกจัดคิวไว้เพื่อการล้างด้วยคลิกเดียว</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>มีขยะกองอยู่มากมาย ทำความสะอาดทั้งหมดในครั้งเดียว</item>
+        <item>ทำความสะอาด %1$d ครั้งล่าสุดเมื่อวันก่อน คลิกเพื่อดำเนินการทันที</item>
+        <item>ฉันไม่ได้มาที่นี่สองสามวันแล้ว ดังนั้นฉันจะทำความสะอาดและกลับไปที่สนามรบเบาๆ</item>
+        <item>วันนี้โควต้าการหักบัญชีไม่ได้ใช้ ฉันจะเคลียร์มันเมื่อฉันกลับมา</item>
+        <item>แคชกำลังเต็ม กำลังรอให้คุณตรวจสอบ</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>ไม่เจอกันนาน มันรออยู่นะ กลับมากำจัดขยะกันเถอะ</item>
+        <item>ไม่ได้เจอคุณมาหลายวันแล้ว ไม่มีส่วนที่เหลือสำหรับขยะ กลับมากวาดมันซะ</item>
+        <item>แคชอยู่ในคิว คลิกแล้วก็หายไป</item>
+        <item>ถังขยะยุ่งในขณะที่คุณไม่อยู่ ว่างเปล่าเพียงคลิกเดียวและรู้สึกสดชื่นเหมือนเช่นเคย</item>
+        <item>กลับ? ล้างถังขยะก่อน ภายในสามสิบวินาที โทรศัพท์จะเบาเหมือนใหม่</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>ขยะที่สะสมมานานก็ถูกกำจัดออกไปในคราวเดียว</item>
+        <item>ถึงเวลาทำความสะอาด ถังขยะของวันนี้กำลังรอให้คุณคลิกอยู่</item>
+        <item>วันนี้ Space Daily มาแล้ว ล้างออกและทำให้มันสว่าง</item>
+        <item>ไฟล์บางไฟล์มีขนาดใหญ่กว่าที่คุณคิดมาก ลองดูสิ</item>
+        <item>หาคนที่หยิบ G\'s ขึ้นมาสองสามตัวแล้วทำความสะอาดมัน</item>
+        <item>รายการเอกสารชุดใหญ่พร้อมแล้ว มาดูกัน</item>
+        <item>ใครใช้พื้นที่มากที่สุด? เปิดเผยในหนึ่งวินาที</item>
+        <item>การยิงต่อเนื่องนั้นยอดเยี่ยม การจบสกอร์นั้นเจ็บปวด ปล่อยให้มันเป็นหน้าที่ของเรา</item>
+        <item>รูปภาพที่คล้ายกันจะเรียงกันเป็นแถว ขึ้นอยู่กับคุณว่าจะเก็บรูปไหนไว้</item>
+        <item>มีภาพที่คล้ายกันมากเกินไป? เราจะช่วยคุณเปรียบเทียบและลบรายการที่ซ้ำกันด้วยการคลิกเพียงครั้งเดียว</item>
+        <item>ควรล้างวิดีโอออฟไลน์ที่แคชไว้</item>
+        <item>เสียงที่เหลือจะถูกล้างด้วย</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>แบตไม่ทนเหมือนเมื่อก่อนเหรอ? ตรวจสอบออก</item>
+        <item>ใครขโมยไฟฟ้าของคุณ? คุณจะรู้เมื่อคุณมองมันขึ้นมา</item>
+        <item>การปิดสิ่งเหล่านี้จะช่วยยืดอายุการใช้งานแบตเตอรี่</item>
+        <item>มีการติดตั้งแอปบางตัวแล้วแต่ไม่เคยใช้งาน ดูว่าพวกเขาเป็นใคร?</item>
+        <item>การเก็บแอปที่คุณไม่ได้ใช้ก็เป็นภาระเช่นกัน รายการได้ถูกสร้างขึ้นแล้ว</item>
+        <item>ส่วนเรื่องความเป็นส่วนตัว ยิ่งจัดการได้เร็วก็ยิ่งดี</item>
+        <item>ซ่อนสิ่งสำคัญและกำจัดสิ่งที่ไม่จำเป็นออกไป ให้ฉันช่วยคุณ</item>
+        <item>การจราจรไปไหน? ค้นหาว่าใครใช้มัน</item>
+        <item>รายละเอียดการจราจรพร้อมและชัดเจนในทันที</item>
+        <item>มีแอปแอบเชื่อมต่ออินเทอร์เน็ตอยู่เบื้องหลัง</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">ขยะ {size}—ล้างมันด้วยการแตะเพียงครั้งเดียว</string>
+    <string name="notif_scheduled_large_files">ไฟล์ขนาดใหญ่ {total} ทำความสะอาดได้อย่างง่ายดาย</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} กลุ่มของรูปภาพที่ซ้ำกัน—บันทึก {size}</string>
+    <string name="notif_scheduled_similar_photos">รูปภาพที่คล้ายกัน {size} - เลือกสิ่งที่จะทำความสะอาด</string>
+    <string name="notif_scheduled_videos">วิดีโอ {total} ลบ {n} รายการเพื่อเพิ่มพื้นที่ว่าง</string>
+    <string name="notif_scheduled_audio">ไฟล์เสียง {total}—ถึงเวลาจัดระเบียบแล้ว</string>
+    <string name="notif_scheduled_apps">{size} ใช้โดย {idle} แอปที่ไม่ได้ใช้งาน</string>
+    <string name="notif_scheduled_data">{back} ของข้อมูลที่ใช้ในเบื้องหลัง</string>
+    <string name="app_manager_uninstall_selected">ถอนการติดตั้งที่เลือก</string>
+    <string name="app_manager_uninstall_selected_count">ถอนการติดตั้งที่เลือก (%1$d)</string>
+    <string name="cache_removable">ถอดออกได้</string>
+    <string name="cache_clean_selected">ลบแคช</string>
+    <string name="cache_clean_selected_summary">ทำความสะอาด %1$s (%2$d)</string>
+</resources>

@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">வீடு</string>
+    <string name="nav_swipe">ஸ்வைப் செய்யவும்</string>
+    <string name="nav_compress">சுருக்கவும்</string>
+    <string name="nav_tools">கருவிகள்</string>
+    <string name="nav_clean">சுத்தமான</string>
+    <string name="nav_privacy">தனியுரிமை</string>
+    <string name="nav_profile">சுயவிவரம்</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">உங்கள் புகைப்படங்கள், வீடியோக்கள் மற்றும் தொடர்புகளை உள்ளூரில் ஒழுங்கமைக்கவும்</string>
+    <string name="home_badge_text">AI சுத்தம்</string>
+    <string name="home_quick_summary_title">இன்றைய துப்புரவு குறிப்புகள்</string>
+    <string name="home_quick_summary_body">ஸ்கிரீன் ஷாட்கள் மற்றும் பெரிய வீடியோக்கள் மூலம் இடத்தை விரைவாகக் காலியாக்கவும்.</string>
+    <string name="home_scan_insight_title">ஸ்மார்ட் ஸ்கேன் நிலை</string>
+    <string name="home_ready_title">4 சக்திவாய்ந்த துப்புரவு கருவிகள்</string>
+    <string name="home_ready_body">புகைப்படங்கள், ஸ்கிரீன்ஷாட்கள், வீடியோக்கள் மற்றும் தொடர்புகளை ஒரே இடத்தில் நிர்வகிக்கவும்.</string>
+    <string name="storage_overview_title">சேமிப்பக மேலோட்டம்</string>
+    <string name="storage_overview_summary">0.0 ஜிபி வரை விடுவிக்க முடியும்</string>
+    <string name="storage_overview_detail">128 ஜிபியில் 85.4 ஜிபி பயன்படுத்தப்பட்டது</string>
+    <string name="storage_overview_summary_format">%1$s வரை விடுவிக்கப்படலாம்</string>
+    <string name="storage_overview_detail_format">%2$s இன் %1$s பயன்படுத்தப்பட்டது</string>
+    <string name="storage_overview_summary_done">1.8 ஜிபி வரை இலவசம்</string>
+    <string name="storage_overview_detail_done">128 ஜிபியில் 85.4 ஜிபி பயன்படுத்தப்பட்டது. உங்கள் ஊடக நூலகத்துடன் தொடங்கவும்.</string>
+    <string name="scan_button_idle">ஸ்கேன் தொடங்கவும்</string>
+    <string name="scan_button_running">ஸ்கேன் செய்கிறது...</string>
+    <string name="scan_status_title">ஸ்கேன் நிலை</string>
+    <string name="scan_status_idle">ஸ்கேன் செய்ய தயார்</string>
+    <string name="scan_status_running">மீடியா கோப்புகளை பகுப்பாய்வு செய்தல்</string>
+    <string name="scan_status_done">ஸ்கேன் முடிந்தது. துப்புரவு பரிந்துரைகள் தயாராக உள்ளன.</string>
+    <string name="scan_status_error">ஸ்கேன் தோல்வியடைந்தது. பிறகு முயற்சிக்கவும்.</string>
+    <string name="scan_status_detail_idle">ஸ்கிரீன்ஷாட்கள், பெரிய வீடியோக்கள் மற்றும் அதுபோன்ற புகைப்படங்கள் முதலில் சரிபார்க்கப்படும்.</string>
+    <string name="scan_status_detail_running">உள்நாட்டில் ஸ்கேன் செய்கிறது. உங்கள் புகைப்படங்கள் மற்றும் வீடியோக்கள் பதிவேற்றப்படாது.</string>
+    <string name="scan_status_detail_midway">ஸ்கிரீன்ஷாட்கள் மற்றும் பெரிய வீடியோக்கள் பகுப்பாய்வு செய்யப்பட்டன. ஒத்த புகைப்படங்களை ஒழுங்கமைத்தல்.</string>
+    <string name="scan_status_detail_done">சுத்தம் செய்ய 1.8 ஜிபி உள்ளது. ஸ்கிரீன்ஷாட்கள் மற்றும் பெரிய வீடியோக்களுடன் தொடங்கவும்.</string>
+    <string name="scan_status_detail_done_format">சுத்தம் செய்ய %1$s கண்டறியப்பட்டது. ஸ்கிரீன்ஷாட்கள் மற்றும் பெரிய வீடியோக்களுடன் தொடங்கவும்.</string>
+    <string name="feature_section_title">அத்தியாவசிய துப்புரவு கருவிகள்</string>
+    <string name="feature_section_subtitle">முதல் வெளியீடு 4 பொதுவான தூய்மைப்படுத்தும் பணிகளில் கவனம் செலுத்துகிறது</string>
+    <string name="feature_similar_title">இதே போன்ற புகைப்படங்கள்</string>
+    <string name="feature_similar_desc">ஒத்த படங்களை சுத்தம் செய்யவும்</string>
+    <string name="feature_screenshots_title">ஸ்கிரீன்ஷாட் சுத்தம்</string>
+    <string name="feature_screenshots_desc">பயன்படுத்தப்படாத திரைக்காட்சிகளை சுத்தம் செய்யவும்</string>
+    <string name="feature_videos_title">பெரிய வீடியோக்கள்</string>
+    <string name="feature_videos_desc">பெரிய வீடியோக்களை சுத்தம் செய்யவும்</string>
+    <string name="feature_contacts_title">சுத்தம் செய்ய தொடர்பு கொள்ளவும்</string>
+    <string name="feature_contacts_desc">நகல் தொடர்புகளை சுத்தம் செய்யவும்</string>
+    <string name="feature_similar_space_format">%1$d குழுக்கள்</string>
+    <string name="count_placeholder">ஸ்கேன் செய்யப்படவில்லை</string>
+    <string name="count_similar_done">128 புகைப்படங்கள்</string>
+    <string name="count_screenshots_done">364 புகைப்படங்கள்</string>
+    <string name="count_videos_done">12 வீடியோக்கள்</string>
+    <string name="count_contacts_done">9 குழுக்கள்</string>
+    <string name="recent_section_title">வெளியீட்டு குறிப்புகள்</string>
+    <string name="recent_section_body">இந்தப் பதிப்பில் XML முகப்புத் திரை அமைப்பு, மீடியா அனுமதி கோரிக்கைகள், ஒதுக்கிட ஸ்கேன் ஓட்டம் மற்றும் முடிவுகளின் சுருக்கம் ஆகியவை அடங்கும். MediaStore, Contacts மற்றும் உண்மையான தூய்மைப்படுத்தும் அம்சங்களை அடுத்து சேர்க்கலாம்.</string>
+    <string name="permission_denied_message">ஸ்கேன் செய்ய மீடியா அணுகல் தேவை.</string>
+    <string name="mock_feature_message">உண்மையான ஸ்கேன் முடிவுகள் அடுத்ததாக இந்த அம்சத்தில் சேர்க்கப்படும்.</string>
+    <string name="scan_complete_message">ஆரம்ப ஸ்கேன் ஓட்டம் தயாராக உள்ளது. உண்மையான தரவை அடுத்து சேர்க்கலாம்.</string>
+    <string name="scan_failed_message">ஸ்கேன் தோல்வி: %1$s</string>
+    <string name="unknown_error">அறியப்படாத பிழை</string>
+    <string name="storage_progress_label">சேமிப்பக பயன்பாட்டு முன்னேற்றம்</string>
+    <string name="phase_two_label">கட்டம் 2</string>
+    <string name="phase_three_label">கட்டம் 3</string>
+    <string name="images_total_title">மொத்த படங்கள்</string>
+    <string name="videos_total_title">மொத்த வீடியோக்கள்</string>
+    <string name="clean_page_title">துப்புரவு மையம்</string>
+    <string name="clean_page_subtitle">அதிக இடத்தை விடுவிக்கும் உள்ளடக்கத்துடன் தொடங்கவும்.</string>
+    <string name="clean_page_badge">ஸ்மார்ட் கிளீனர்</string>
+    <string name="clean_overview_title">ஸ்கேன் முடிவுகள்</string>
+    <string name="clean_overview_body">முதலில் மிகப் பெரிய இடத்தைச் சேமித்து வைத்து, பிறகு ஒரே மாதிரியான படங்களையும் தொடர்புகளையும் சுத்தம் செய்யவும்.</string>
+    <string name="privacy_page_title">தனியார் பெட்டகம்</string>
+    <string name="privacy_page_subtitle">உள்ளூர் பின் உங்கள் தனிப்பட்ட மீடியாவையும் எதிர்கால இறக்குமதிகளையும் பாதுகாக்கிறது.</string>
+    <string name="profile_page_title">சுயவிவரம்</string>
+    <string name="profile_page_subtitle">உங்கள் உறுப்பினர், அமைப்புகள் மற்றும் வாங்குதல்களை இங்கே நிர்வகிக்கவும்.</string>
+    <string name="profile_page_badge">பிரீமியம்</string>
+    <string name="profile_hero_title">முழுமையான துப்புரவு அனுபவத்திற்கு Pro க்கு மேம்படுத்தவும்</string>
+    <string name="profile_hero_body">ப்ரோவில் வரம்பற்ற பேட்ச் செயல்கள், பிரைவேட் வால்ட் மற்றும் சிறந்த ஒத்த புகைப்படக் கண்டறிதல் ஆகியவை அடங்கும்.</string>
+    <string name="profile_plan_status_free">தற்போதைய திட்டம்: இலவசம்</string>
+    <string name="profile_plan_status_pro">சார்பு சோதனை செயலில் உள்ளது</string>
+    <string name="profile_most_popular">மிகவும் பிரபலமானது</string>
+    <string name="profile_cta_title">ஏன் மேம்படுத்த வேண்டும்?</string>
+    <string name="profile_cta_body">நீங்கள் அடிக்கடி புகைப்படங்கள், வீடியோக்கள் மற்றும் தொடர்புகளை சுத்தம் செய்தால், ப்ரோ மீண்டும் மீண்டும் வரும் படிகளை வெகுவாகக் குறைக்கிறது.</string>
+    <string name="placeholder_card_title">தற்போதைய நிலை</string>
+    <string name="placeholder_clean_body">கட்டம் 1 ஸ்கேன் அடித்தளம், அனுமதிகள் மற்றும் முக்கிய கட்டமைப்பை உள்ளடக்கியது. உண்மையான தூய்மைப்படுத்தல் முடிவுகள் அடுத்த கட்டத்தில் இங்கே தோன்றும்.</string>
+    <string name="placeholder_privacy_body">தனியார் பெட்டகம் இன்னும் கிடைக்கவில்லை. இந்த கட்டத்தில் அதன் வழிசெலுத்தல் மற்றும் தளவமைப்பு மட்டுமே அடங்கும்.</string>
+    <string name="placeholder_profile_body">சுயவிவர அம்சங்கள் இன்னும் இணைக்கப்படவில்லை. உறுப்பினர், அமைப்புகள் மற்றும் வாங்குதல்கள் பின்னர் சேர்க்கப்படும்.</string>
+    <string name="overview_reclaim_title">மதிப்பிடப்பட்ட இட சேமிப்பு</string>
+    <string name="overview_media_count_title">மொத்த மீடியா</string>
+    <string name="home_note_title">கட்டம் 1 முடிந்தது</string>
+    <string name="home_note_body">1. கீழ் வழிசெலுத்தல் மற்றும் பல பக்க கட்டமைப்பு\n2. Android 13+ மீடியா அனுமதி கோரிக்கைகள்\n3. ஸ்கிரீன்ஷாட்கள் மற்றும் பெரிய வீடியோக்களுக்கான மீடியாஸ்டோர் அடிப்படையிலான ஸ்கேனிங் அடித்தளம்\n4. முகப்புத் திரை முடிவு பிணைப்பு மற்றும் மாநில மேலாண்மை</string>
+    <string name="feature_coming_soon_format">%1$s விவரங்கள் பக்கம் தொடர்புடைய கட்டத்தில் சேர்க்கப்படும்.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d உருப்படிகள்</string>
+    <string name="count_contact_format">%1$d தொடர்புகள்</string>
+    <string name="feature_ready_label">கிடைக்கும்</string>
+    <string name="permission_action_label">அனுமதி மற்றும் ஸ்கேன்</string>
+    <string name="refresh_action_label">முடிவுகளைப் புதுப்பிக்கவும்</string>
+    <string name="clean_reclaim_summary_format">%1$s சுத்தம் செய்ய தயாராக உள்ளது</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d குழுக்கள்</string>
+    <string name="count_contact_group_format">%1$d குழுக்கள்</string>
+    <string name="clean_permission_title">ஊடக அணுகல் தேவை</string>
+    <string name="clean_permission_body">உங்கள் ஸ்கிரீன்ஷாட்களையும் வீடியோக்களையும் படிக்க அணுகலை அனுமதிக்கவும். எல்லா தரவும் உள்ளூரில் பகுப்பாய்வு செய்யப்படுகிறது.</string>
+    <string name="clean_loaded_hint">விவரங்களைப் பார்க்க, வகை அட்டையைத் தட்டவும்.</string>
+    <string name="clean_loading_hint">ஸ்கிரீன்ஷாட்கள் மற்றும் வீடியோக்களை ஏற்றுகிறது. தயவுசெய்து காத்திருக்கவும்.</string>
+    <string name="clean_empty_hint">ஸ்கேன் முடிவுகள் இன்னும் இல்லை. அணுகலை அனுமதித்து முதலில் ஸ்கேன் செய்து இயக்கவும்.</string>
+    <string name="detail_back">மீண்டும்</string>
+    <string name="screenshot_detail_title">ஸ்கிரீன்ஷாட் சுத்தம்</string>
+    <string name="screenshot_detail_subtitle">உண்மையான சிறுபடங்களுடன் ஸ்கிரீன்ஷாட்களை உலாவவும். மாதிரிக்காட்சிக்கு ஒரு புகைப்படத்தைத் தட்டவும் அல்லது நீக்குவதற்கு உருப்படிகளைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="large_video_detail_title">பெரிய வீடியோக்கள்</string>
+    <string name="large_video_detail_subtitle">பெரிய வீடியோக்களை அட்டைகளுடன் உலாவவும். விளையாட ஒரு அட்டையைத் தட்டவும் அல்லது நீக்க உருப்படிகளைத் தேர்ந்தெடுக்கவும். 100MB / 500MB மாற வடிகட்டி வரியைத் தட்டவும்.</string>
+    <string name="empty_screenshot_title">ஸ்கிரீன்ஷாட்கள் எதுவும் இல்லை</string>
+    <string name="empty_screenshot_body">உங்கள் மீடியா லைப்ரரியில் ஸ்கிரீன்ஷாட்கள் எதுவும் காணப்படவில்லை அல்லது அணுகல் வழங்கப்படவில்லை.</string>
+    <string name="empty_large_video_title">பெரிய வீடியோக்கள் எதுவும் இல்லை</string>
+    <string name="empty_large_video_body">100 எம்பிக்கு மேல் வீடியோக்கள் இல்லை. நீங்கள் வாசலை பின்னர் சரிசெய்யலாம்.</string>
+    <string name="media_item_bucket_format">ஆல்பம்: %1$s</string>
+    <string name="media_item_date_format">தேதி: %1$s</string>
+    <string name="media_item_duration_format">காலம்: %1$s</string>
+    <string name="video_threshold_note">தற்போதைய பெரிய வீடியோ வரம்பு: 100 எம்பி</string>
+    <string name="select_all_action">அனைத்தையும் தேர்ந்தெடுக்கவும்</string>
+    <string name="clear_selected_action">அனைத்தையும் தேர்வுநீக்கவும்</string>
+    <string name="delete_selected_action">தேர்ந்தெடுக்கப்பட்டதை நீக்கு</string>
+    <string name="selected_count_format">%1$d தேர்ந்தெடுக்கப்பட்டது</string>
+    <string name="delete_dialog_title">ஸ்கிரீன்ஷாட்களை நீக்கவா?</string>
+    <string name="delete_dialog_message_format">தேர்ந்தெடுக்கப்பட்ட %1$d ஸ்கிரீன்ஷாட்கள் நீக்கப்படும். கணினி உங்களை மீண்டும் உறுதிப்படுத்தும்படி கேட்கும்.</string>
+    <string name="delete_dialog_confirm">தொடரவும்</string>
+    <string name="delete_dialog_cancel">ரத்து செய்</string>
+    <string name="delete_complete_message_format">செயலாக்கப்பட்ட %1$d திரைக்காட்சிகள். பட்டியல் புதுப்பிக்கப்பட்டது.</string>
+    <string name="delete_items_complete_format">செயலாக்கப்பட்ட %1$d உருப்படிகள். பட்டியல் புதுப்பிக்கப்பட்டது.</string>
+    <string name="delete_failed_message">நீக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="delete_video_dialog_title">வீடியோக்களை நீக்கவா?</string>
+    <string name="delete_video_dialog_message_format">தேர்ந்தெடுக்கப்பட்ட %1$d வீடியோக்கள் நீக்கப்படும். கணினி உங்களை மீண்டும் உறுதிப்படுத்தும்படி கேட்கும்.</string>
+    <string name="delete_similar_dialog_title">இதே போன்ற படங்களை நீக்கவா?</string>
+    <string name="delete_similar_dialog_message_format">தேர்ந்தெடுக்கப்பட்ட %1$d புகைப்படங்கள் நீக்கப்படும். பரிந்துரைக்கப்படும் பொருட்கள் சேர்க்கப்படவில்லை.</string>
+    <string name="video_selection_filter_format">%1$d தேர்ந்தெடுக்கப்பட்டது · வடிகட்டி: %2$s (மாற்ற தட்டவும்)</string>
+    <string name="video_player_unavailable">இந்தச் சாதனத்தில் வீடியோ பிளேயர் எதுவும் இல்லை.</string>
+    <string name="media_preview_title">முன்னோட்டம்</string>
+    <string name="similar_select_candidates_action">வேட்பாளர்களைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="similar_deselect_candidates_action">அனைத்தையும் தேர்வுநீக்கவும்</string>
+    <string name="similar_select_all_candidates">அனைத்து வேட்பாளர்களையும் தேர்ந்தெடுக்கவும்</string>
+    <string name="similar_delete_count_action">தேர்ந்தெடுத்ததை நீக்கு (%1$d)</string>
+    <string name="similar_group_number_format">குழு %1$d</string>
+    <string name="app_manager_uninstall_unavailable">கணினி நிறுவல் நீக்கியைத் திறக்க முடியவில்லை</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">அனைத்து முடிவுகள்</string>
+    <string name="similar_page_title">இதே போன்ற புகைப்படங்கள்</string>
+    <string name="similar_page_subtitle">சிறுபடங்களுடன் ஒத்த குழுக்களை மதிப்பாய்வு செய்யவும், வேட்பாளர்களைத் தேர்ந்தெடுக்கவும் மற்றும் நகல்களை நீக்கவும்.</string>
+    <string name="similar_page_note">முதல் பதிப்பு இலகுரக குழு விதிகளைப் பயன்படுத்துகிறது. புலனுணர்வு சார்ந்த ஹாஷிங் மற்றும் கூர்மை ஸ்கோரிங் பின்னர் சேர்க்கப்படும்.</string>
+    <string name="similar_page_badge">ஸ்மார்ட் ஒத்த</string>
+    <string name="similar_page_hero_hint">அதிக தெளிவுத்திறன், பெரிய கோப்புகள் மற்றும் சமீபத்திய நேர முத்திரைகளுடன் புகைப்படங்களை வைத்திருங்கள்.</string>
+    <string name="similar_group_summary_format">உங்கள் ஆல்பங்களில் %2$d வேட்பாளர் புகைப்படங்களுடன் %1$d குழுக்கள் உள்ளன.</string>
+    <string name="similar_group_empty_title">ஒத்த புகைப்படக் குழுக்கள் எதுவும் இல்லை</string>
+    <string name="similar_group_empty_body">ஒரே ஆல்பத்தில் உள்ள எந்தப் படங்களும் ஒரே மாதிரியான நேரம் மற்றும் பரிமாண அளவுகோல்களைப் பூர்த்தி செய்யவில்லை.</string>
+    <string name="similar_group_card_subtitle_format">%1$d வேட்பாளர்கள் · %2$s வரை விடுவிக்கப்படலாம்</string>
+    <string name="similar_keep_recommend_label">வைக்க பரிந்துரைக்கப்படுகிறது</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">மற்ற வேட்பாளர்கள்</string>
+    <string name="similar_other_items_more_format">+%1$d மேலும் புகைப்படங்கள்</string>
+    <string name="contacts_page_title">சுத்தம் செய்ய தொடர்பு கொள்ளவும்</string>
+    <string name="contacts_page_subtitle">நகல் மற்றும் வெற்று தொடர்புகளைக் கண்டறியவும்.</string>
+    <string name="contacts_page_badge">தொடர்பு திருத்தம்</string>
+    <string name="contacts_page_hero_hint">ஒரே எண் தொடர்புகளை ஒன்றிணைத்து, பின்னர் காலியானவற்றை அகற்றவும்.</string>
+    <string name="contacts_permission_title">தொடர்புகளுக்கான அணுகல் தேவை</string>
+    <string name="contacts_permission_body">உள்நாட்டில் தொடர்புகளை ஸ்கேன் செய்வதற்கான அணுகலை அனுமதிக்கவும்.</string>
+    <string name="contacts_scan_title">தொடர்புகளை ஸ்கேன் செய்யவும்</string>
+    <string name="contacts_scan_body">நகல்கள் மற்றும் வெற்று தொடர்புகளைக் கண்டறிய புதுப்பிக்கவும்.</string>
+    <string name="contacts_duplicate_title">நகல் தொடர்புகள்</string>
+    <string name="contacts_empty_title">வெற்று தொடர்புகள்</string>
+    <string name="contacts_duplicate_count_format">%1$d நகல் குழுக்கள்</string>
+    <string name="contacts_empty_count_format">சுத்தம் செய்ய %1$d காலியான தொடர்புகள்</string>
+    <string name="contacts_load_action">தொடர்புகளை அனுமதி மற்றும் ஏற்றவும்</string>
+    <string name="contacts_refresh_action">தொடர்புகளைப் புதுப்பிக்கவும்</string>
+    <string name="contacts_empty_group_title">நகல் தொடர்புகள் எதுவும் இல்லை</string>
+    <string name="contacts_empty_group_body">நகல் தொலைபேசி எண்களுடன் தொடர்புகள் எதுவும் இல்லை.</string>
+    <string name="contacts_delete_empty_action">காலியான தொடர்புகளை அகற்று</string>
+    <string name="contacts_merge_action">குழுவை இணைக்கவும்</string>
+    <string name="contacts_view_action">தொடர்புகளில் காண்க</string>
+    <string name="contacts_group_title_format">%1$s · %2$d தொடர்புகள்</string>
+    <string name="contacts_group_number_format">முதன்மை எண்: %1$s</string>
+    <string name="contacts_group_members_format">உறுப்பினர்கள்: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">காலியான தொடர்புகளை அகற்றவா?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d வெற்று தொடர்புகள் அல்லது எண்கள் இல்லாத தொடர்புகள் நீக்கப்படும்.</string>
+    <string name="contacts_merge_complete_message">இந்தத் தொடர்புக் குழுவை ஒன்றிணைக்கும்படி அமைப்பு கேட்கப்பட்டது.</string>
+    <string name="contacts_cleanup_complete_message_format">%1$d வெற்று தொடர்புகள் அகற்றப்பட்டன.</string>
+    <string name="contacts_action_failed">தொடர்பு நடவடிக்கை தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="privacy_status_title">உள்ளூர் பாதுகாப்பு நிலை</string>
+    <string name="privacy_page_badge">தனியார் பெட்டகம்</string>
+    <string name="privacy_hero_title">தனிப்பட்ட உள்ளடக்கத்தை சுத்தம் செய்வதிலிருந்து தனித்தனியாக வைத்திருங்கள்</string>
+    <string name="privacy_hero_body">முதலில் உள்ளூர் PIN பாதுகாப்பை அமைக்கவும், பின்னர் தனிப்பட்ட மீடியா இறக்குமதி, திறத்தல் மற்றும் மீட்பு ஆகியவற்றைச் சேர்க்கவும்.</string>
+    <string name="privacy_status_enabled">4 இலக்க PIN தொகுப்பு</string>
+    <string name="privacy_status_disabled">பின் அமைக்கப்படவில்லை</string>
+    <string name="privacy_status_body_enabled">பின்னர் இறக்குமதி செய்யப்படும் தனியார் மீடியா உங்கள் உள்ளூர் பின்னால் பாதுகாக்கப்படும்.</string>
+    <string name="privacy_status_body_disabled">தனிப்பட்ட மீடியா இறக்குமதி மற்றும் அன்லாக் அம்சங்களைச் சேர்ப்பதற்கு முன் 4 இலக்க பின்னை அமைக்கவும்.</string>
+    <string name="privacy_set_pin_action">பின்னை அமைக்கவும்</string>
+    <string name="privacy_reset_pin_action">பின்னை மீட்டமைக்கவும்</string>
+    <string name="privacy_pin_dialog_title">4 இலக்க பின்னை அமைக்கவும்</string>
+    <string name="privacy_pin_dialog_hint">4 இலக்கங்களை உள்ளிடவும்</string>
+    <string name="privacy_pin_invalid">4 இலக்க பின்னை உள்ளிடவும்.</string>
+    <string name="privacy_pin_saved">உள்ளூர் பின் சேமிக்கப்பட்டது.</string>
+    <string name="privacy_pin_reset_confirm">தற்போதைய பின்னை அழிக்கவா?</string>
+    <string name="privacy_pin_reset_done">பின் மீட்டமைப்பு.</string>
+    <string name="privacy_feature_lock_title">உள்ளூர் திறத்தல்</string>
+    <string name="privacy_feature_lock_body">முதல் பதிப்பு உள்ளூர் பாதுகாப்பிற்காக PIN ஐப் பயன்படுத்துகிறது. பயோமெட்ரிக்ஸ் பின்னர் சேர்க்கலாம்.</string>
+    <string name="privacy_feature_vault_title">தனியார் ஊடகம்</string>
+    <string name="privacy_feature_vault_body">பின்னர் இறக்குமதி செய்யப்படும் தனிப்பட்ட புகைப்படங்கள் மற்றும் வீடியோக்கள் தனித்தனியாகச் சேமிக்கப்பட்டு, முக்கிய ஆல்பம் சுத்தப்படுத்துதலில் இருந்து விலக்கப்படும்.</string>
+    <string name="privacy_feature_scope_title">தற்போதைய நிலை</string>
+    <string name="privacy_feature_scope_body">இந்தப் பதிப்பு பின் நிலையையும் பக்க அமைப்பையும் சேர்க்கிறது. தனியார் மீடியா இறக்குமதி மற்றும் உள்ளூர் குறியாக்கம் அடுத்ததாக வரும்.</string>
+    <string name="profile_plan_title">தற்போதைய திட்டம்</string>
+    <string name="profile_plan_free">இலவசம்</string>
+    <string name="profile_plan_pro">ப்ரோ</string>
+    <string name="profile_plan_body_free">ஸ்கேன் செய்யவும், முடிவுகளைப் பார்க்கவும் மற்றும் அடிப்படை சுத்தம் செய்யவும்.</string>
+    <string name="profile_plan_body_pro">மேம்பட்ட சுத்தம், தனிப்பட்ட வால்ட், வரம்பற்ற செயல்கள் மற்றும் விளம்பரமில்லா அனுபவத்தைத் திறக்கவும்.</string>
+    <string name="profile_upgrade_action">ப்ரோ சோதனைக்கு மாறவும்</string>
+    <string name="profile_restore_action">இலவசத்திற்குத் திரும்பு</string>
+    <string name="profile_upgrade_done">ப்ரோ சோதனைக்கு மாற்றப்பட்டது.</string>
+    <string name="profile_restore_done">இலவசத்திற்குத் திரும்பியது.</string>
+    <string name="profile_benefits_title">சார்பு நன்மைகள்</string>
+    <string name="profile_benefits_body">1. மேம்பட்ட ஒத்த புகைப்படக் கண்டறிதல்\n2. வரம்பற்ற தொகுதி சுத்தம்\n3. மேம்பட்ட பெரிய வீடியோ வடிகட்டிகள்\n4. மேம்படுத்தப்பட்ட தொடர்பு சுத்தம்\n5. தனியார் வால்ட்\n6. விளம்பரம் இல்லாத இடைமுகம்</string>
+    <string name="detail_page_badge">விரிவான பார்வை</string>
+    <string name="detail_page_hint">எதை சுத்தம் செய்வது அல்லது வைத்திருப்பது என்பதை தீர்மானிப்பதற்கு முன் வேட்பாளர்களை மதிப்பாய்வு செய்யவும்.</string>
+    <string name="premium">பிரீமியம்</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="grant_access">அணுகலை வழங்கவும்</string>
+    <string name="storage_permission_title">கோப்பு அணுகலை வழங்கவும்</string>
+    <string name="storage_permission_detail">அனுமதி வழங்கி, நகல் படங்கள், பெரிய கோப்புகள் மற்றும் சுத்தம் செய்யக்கூடிய பிறவற்றைக் கண்டறியவும்.</string>
+    <string name="storage_permission_scan_point">சுத்தம் செய்யக்கூடியவற்றைக் கண்டறிய இந்தச் சாதனத்தில் உள்ள கோப்புகளை ஸ்கேன் செய்யவும்.</string>
+    <string name="storage_permission_privacy_point">உங்கள் கோப்புகள் இந்தச் சாதனத்திலேயே இருக்கும்; அவை ஒருபோதும் பதிவேற்றப்படாது.</string>
+    <string name="storage_permission_message">உள்ளூர் ஸ்கேனிங்கிற்கு மட்டும்; எந்த தரவும் பதிவேற்றம் செய்யப்படவில்லை அல்லது மூன்றாம் தரப்பினருடன் பகிரப்படவில்லை.</string>
+    <string name="storage_permission_continue">தொடரவும்</string>
+    <string name="storage_permission_close">மூடு</string>
+    <string name="storage_permission_example_file">இந்தச் சாதனத்தில் உள்ள கோப்புகள்</string>
+    <string name="storage_permission_example_size">ஸ்கேன் செய்ய தயார்</string>
+    <string name="storage_permission_guide_title">எல்லா கோப்புகளுக்கும் அணுகலை அனுமதிக்கவும்</string>
+    <string name="storage_permission_guide_message">இந்தச் சாதனத்தில் உள்ள கோப்புகளை ஸ்கேன் செய்து சுத்தம் செய்ய, அமைப்புகளில் உள்ள சுவிட்சை இயக்கவும்.</string>
+    <string name="go_to_settings">அமைப்புகளுக்குச் செல்லவும்</string>
+    <string name="permission_home_title">உங்கள் படங்கள் பூட்டப்பட்டுள்ளன</string>
+    <string name="permission_home_body">இந்தச் சாதனத்தில் உங்கள் லைப்ரரியைப் பாதுகாப்பாக ஸ்கேன் செய்து, சுத்தம் செய்வதற்கான நினைவூட்டல்களை அனுப்ப, புகைப்படம், வீடியோ மற்றும் அறிவிப்பு அணுகலை அனுமதிக்கவும்.</string>
+    <string name="scan_summary_format">ஸ்கேன் செய்யப்பட்ட %1$d உருப்படிகள் · %2$s மதிப்பாய்வு செய்யப்படலாம்</string>
+    <string name="scan_running_english">உங்கள் நூலகத்தை ஸ்கேன் செய்கிறது…</string>
+    <string name="scan_ready_english">உங்கள் நூலகம் தயாராக உள்ளது</string>
+    <string name="coming_soon">விரைவில்</string>
+    <string name="compression_failed">இந்தப் படத்தைச் சுருக்க முடியவில்லை.</string>
+    <string name="compression_saved">சுருக்கப்பட்ட புகைப்படம் Pictures/CleanSuperAI இல் சேமிக்கப்பட்டது.</string>
+    <string name="home_secure_analysis">சாதனத்தில் பாதுகாப்பான பகுப்பாய்வு</string>
+    <string name="home_cleanup_library">உங்கள் நூலகத்தை மதிப்பாய்வு செய்யவும்</string>
+    <string name="home_cleanup_badge">சாதனத்தில்</string>
+    <string name="home_quick_clean_action">துப்புரவு மையத்தைத் திறக்கவும்</string>
+    <string name="home_quick_clean_compact_action">துப்புரவு மையம்</string>
+    <string name="home_reclaim_ready_format">%1$s மீட்டெடுக்கக்கூடியது</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">சேமிப்பகம் ஆக்கிரமிக்கப்பட்டது</string>
+    <string name="home_storage_detail_format">%1$s மதிப்பாய்வு செய்ய · %2$d உருப்படிகள்</string>
+    <string name="home_quick_tools">விரைவான கருவிகள்</string>
+    <string name="home_quick_tools_subtitle">நீங்கள் அதிகம் பயன்படுத்திய தூய்மைப்படுத்தும் செயல்கள், முன் வைக்கப்பட்டுள்ளன</string>
+    <string name="feature_swipe_title">புகைப்படங்களை ஸ்வைப் செய்யவும்</string>
+    <string name="feature_swipe_desc">புகைப்படங்களை ஒவ்வொன்றாக மதிப்பாய்வு செய்து, நிராகரிப்புகளை தொட்டிக்கு அனுப்பவும்</string>
+    <string name="home_contacts_short_desc">நகல்களை ஒன்றிணைக்கவும்</string>
+    <string name="feature_ready_short">தயார்</string>
+    <string name="feature_review_short">மதிப்பாய்வு</string>
+    <string name="tools_section_storage">சேமிப்பு &amp; மீடியா</string>
+    <string name="tools_section_device">சாதன கருவிகள்</string>
+    <string name="tools_hero_badge">7 பயனுள்ள கருவிகள்</string>
+    <string name="tools_hero_title">பயனுள்ள கருவிகள், ஒரே இடத்தில்</string>
+    <string name="tools_hero_body">எளிமையான, கவனம் செலுத்தும் செயல்கள் மூலம் சேமிப்பகம் மற்றும் மீடியாவை நிர்வகிக்கவும்.</string>
+    <string name="tool_file_manager_desc">ஸ்கிரீன்ஷாட்கள், வீடியோக்கள் மற்றும் பலவற்றை உலாவவும் சுத்தம் செய்யவும்</string>
+    <string name="tool_media_compressor_desc">தரத்தை இழக்காமல் புகைப்படம் மற்றும் வீடியோ அளவைக் குறைக்கவும்</string>
+    <string name="tool_secret_space_desc">பாதுகாப்பான பின்னுக்குப் பின்னால் தனிப்பட்ட புகைப்படங்களைப் பூட்டவும்</string>
+    <string name="tool_app_manager_desc">நிறுவப்பட்ட பயன்பாடுகள் மற்றும் சேமிப்பக பயன்பாட்டைக் காண்க</string>
+    <string name="tool_clean_calendar_desc">உங்கள் அட்டவணையை ஒழுங்கீனப்படுத்தும் பழைய காலண்டர் நிகழ்வுகளை அகற்றவும்</string>
+    <string name="tool_ai_enhancer_desc">AI மூலம் மங்கலான அல்லது குறைந்த ஒளி புகைப்படங்களை மேம்படுத்தவும்</string>
+    <string name="tool_speed_test_desc">உங்கள் நெட்வொர்க் பதிவிறக்கம் மற்றும் பதிவேற்ற வேகத்தை சரிபார்க்கவும்</string>
+    <string name="tools_page_subtitle">சுத்தமான தொலைபேசிக்கு தேவையான அனைத்தும்</string>
+    <string name="compress_page_subtitle">தருணங்களை இழக்காமல் இடத்தை சேமிக்கவும்</string>
+    <string name="video_compressor">வீடியோ அமுக்கி</string>
+    <string name="video_compress_subtitle">சாதனத்தில் H.264 மறு-குறியீடு மூலம் வீடியோ அளவைக் குறைக்கவும்</string>
+    <string name="video_compress_card_hint">720p · சமநிலையான தரம்</string>
+    <string name="choose_video">வீடியோவைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="choose_video_hint">சுருக்க வீடியோவைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="compress_photo_guide_title">சுருக்க ஒரு படத்தை தேர்வு செய்யவும்</string>
+    <string name="compress_photo_guide_body">சாதனத்தில் செயலாக்கப்பட்டது · நொடிகளில் சிறியது</string>
+    <string name="compress_video_guide_title">சுருக்க வீடியோவைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="compress_video_guide_body">சாதனத்தில் H.264 · சமநிலை 720p</string>
+    <string name="compress_guide_tap">தேர்வு செய்ய தட்டவும்</string>
+    <string name="enhance_photo_guide_title">மேம்படுத்த ஒரு படத்தை தேர்வு செய்யவும்</string>
+    <string name="enhance_photo_guide_body">பிரகாசம் · மாறுபாடு · கூர்மை</string>
+    <string name="preview_original_photo_label">முன் · அசல் புகைப்படம்</string>
+    <string name="preview_compressed_photo_label">பிறகு · சுருக்கப்பட்ட முன்னோட்டம்</string>
+    <string name="preview_original_video_label">முன் · அசல் வீடியோ</string>
+    <string name="preview_compressed_video_label">பிறகு · சுருக்கப்பட்ட முன்னோட்டம்</string>
+    <string name="preview_enhanced_photo_label">பிறகு · மேம்படுத்தப்பட்ட முன்னோட்டம்</string>
+    <string name="selected_video_preview">தேர்ந்தெடுக்கப்பட்ட வீடியோ முன்னோட்டம்</string>
+    <string name="play_video_preview">வீடியோ முன்னோட்டத்தை இயக்கவும்</string>
+    <string name="video_preview_title">வீடியோ முன்னோட்டம்</string>
+    <string name="video_preview_failed">இந்த வீடியோவை இயக்க முடியவில்லை.</string>
+    <string name="video_compression_saved">சுருக்கப்பட்ட வீடியோ Movies/CleanSuperAI இல் சேமிக்கப்பட்டது.</string>
+    <string name="video_compression_failed">இந்த வீடியோவை சுருக்க முடியவில்லை.</string>
+    <string name="video_compression_preparing">வீடியோ சுருக்கத்தை தயார் செய்கிறது…</string>
+    <string name="video_compression_progress_format">வீடியோவை சுருக்குகிறது… %1$d%%</string>
+    <string name="video_compression_finishing">சுருக்கப்பட்ட வீடியோவை முடிக்கிறது…</string>
+    <string name="video_compression_timeout">இந்த வீடியோவை சுருக்க அதிக நேரம் எடுத்தது. சிறிய கிளிப்பை முயற்சிக்கவும்.</string>
+    <string name="app_manager_subtitle">நிறுவப்பட்ட பயன்பாடுகளை மதிப்பாய்வு செய்யவும் மற்றும் தற்காலிக சேமிப்பை நீக்க அல்லது அழிக்க கணினி அமைப்புகளைத் திறக்கவும்.</string>
+    <string name="app_manager_summary_format">%1$d பயனர் பயன்பாடுகள் கண்டறியப்பட்டன · நிர்வகிக்க தட்டவும்</string>
+    <string name="clean_calendar_subtitle">கடந்த காலண்டர் நிகழ்வுகளைக் கண்டறிந்து, உங்களுக்குத் தேவையில்லாதவற்றை அகற்றவும்.</string>
+    <string name="clean_calendar_delete">தேர்ந்தெடுக்கப்பட்டதை நீக்கு</string>
+    <string name="clean_calendar_empty">கடந்த கால நிகழ்வுகள் எதுவும் இல்லை</string>
+    <string name="clean_calendar_summary_format">%1$d கடந்த கால நிகழ்வுகள் · %2$d தேர்ந்தெடுக்கப்பட்டது</string>
+    <string name="clean_calendar_delete_confirm">%1$d தேர்ந்தெடுத்த கடந்த நிகழ்வுகளை நீக்கவா?</string>
+    <string name="clean_calendar_delete_done">%1$d நிகழ்வுகள் நீக்கப்பட்டன</string>
+    <string name="calendar_permission_hint">கடந்த நிகழ்வுகளை ஸ்கேன் செய்ய காலெண்டர் அணுகலை அனுமதிக்கவும்</string>
+    <string name="calendar_permission_denied">காலெண்டர் அனுமதி தேவை</string>
+    <string name="calendar_untitled">(தலைப்பு இல்லை)</string>
+    <string name="image_enhancer_subtitle">இந்தச் சாதனத்தில் உள்ளூரில் பிரகாசம், மாறுபாடு மற்றும் கூர்மை ஆகியவற்றை மேம்படுத்தவும்.</string>
+    <string name="image_enhancer_hint">மேம்படுத்த ஒரு படத்தை தேர்வு செய்யவும்</string>
+    <string name="image_enhancer_ready">மேம்படுத்த தயாராக உள்ளது</string>
+    <string name="image_enhancer_action">புகைப்படத்தை மேம்படுத்தவும்</string>
+    <string name="image_enhancer_working">மேம்படுத்துகிறது…</string>
+    <string name="image_enhancer_done">மேம்படுத்தப்பட்ட மாதிரிக்காட்சி தயார் · நீங்கள் விரும்பும் போது சேமிக்கவும்</string>
+    <string name="image_enhancer_save">மேம்படுத்தப்பட்ட புகைப்படத்தை சேமிக்கவும்</string>
+    <string name="image_enhancer_saved">மேம்படுத்தப்பட்ட புகைப்படம் Pictures/CleanSuperAI இல் சேமிக்கப்பட்டது.</string>
+    <string name="image_enhancer_failed">இந்தப் படத்தை மேம்படுத்த முடியவில்லை.</string>
+    <string name="speed_test_subtitle">Cloudflare சேவையகங்களைப் பயன்படுத்தி பதிவிறக்கம், பதிவேற்றம் மற்றும் தாமதத்தை அளவிடவும்.</string>
+    <string name="speed_test_hint">குறுகிய நெட்வொர்க் வேக சரிபார்ப்பை இயக்க ஸ்டார்ட் என்பதைத் தட்டவும்</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mbps பதிவிறக்கம்</string>
+    <string name="speed_test_start">வேக சோதனையைத் தொடங்கவும்</string>
+    <string name="speed_test_running">உங்கள் இணைப்பைச் சோதிக்கிறது…</string>
+    <string name="speed_test_done">சோதனை முடிந்தது</string>
+    <string name="speed_test_failed">வேக சோதனை தோல்வியடைந்தது. உங்கள் நெட்வொர்க்கைச் சரிபார்த்து, மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="speed_test_download_idle">பதிவிறக்கம் · காத்திருக்கிறது</string>
+    <string name="speed_test_upload_idle">பதிவேற்றம் · காத்திருக்கிறது</string>
+    <string name="speed_test_latency_idle">தாமதம் · காத்திருப்பு</string>
+    <string name="speed_test_download_result">பதிவிறக்கம் · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">பதிவேற்றம் · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">தாமதம் · %1$d ms</string>
+    <string name="photo_compressor">புகைப்பட அமுக்கி</string>
+    <string name="compress_quality_hint">சமப்படுத்தப்பட்ட JPEG · 70% quality</string>
+    <string name="choose_photo_hint">சுருக்க ஒரு புகைப்படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="choose_photo">புகைப்படத்தைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="compress_preview">சுருக்க முன்னோட்டம்</string>
+    <string name="compress_and_save">சுருக்கி சேமி</string>
+    <string name="save_compressed_photo">சுருக்கப்பட்ட புகைப்படத்தை சேமிக்கவும்</string>
+    <string name="save_compressed_video">சுருக்கப்பட்ட வீடியோவைச் சேமிக்கவும்</string>
+    <string name="share">பகிரவும்</string>
+    <string name="keep">வைத்துக்கொள்</string>
+    <string name="move_to_review_bin">குப்பைக்கு நகர்த்தவும்</string>
+    <string name="clear_review_bin">மறுஆய்வு தொட்டியை அழிக்கவும்</string>
+    <string name="swipe_page_subtitle">மாதவாரியாக மதிப்பாய்வு செய்யவும் · வைத்திருக்க வலதுபுறம், குப்பைக்கு இடப்புறம் ஸ்வைப் செய்யவும்</string>
+    <string name="swipe_trash_open">திற</string>
+    <string name="swipe_trash_label_singular">குப்பைத் தொட்டியில் போட்டோ</string>
+    <string name="swipe_trash_label_plural">குப்பைத் தொட்டியில் புகைப்படங்கள்</string>
+    <string name="swipe_empty_title">அனைத்து புகைப்படங்களும் மதிப்பாய்வு செய்யப்பட்டன</string>
+    <string name="swipe_empty_body">மற்றொரு மாதத்தைத் தேர்வுசெய்ய திரும்பிச் செல்லவும் அல்லது புகைப்படங்களை மீட்டமைக்க குப்பைத் தொட்டியைத் திறக்கவும்.</string>
+    <string name="category_person_format">நபர் · %1$d</string>
+    <string name="category_animal_format">விலங்கு · %1$d</string>
+    <string name="category_vehicle_format">வாகனம் · %1$d</string>
+    <string name="no_photos_available">புகைப்படங்கள் எதுவும் கிடைக்கவில்லை</string>
+    <string name="splash_tagline">ஸ்மார்ட் சுத்தம். வடிவமைப்பால் தனிப்பட்டது.</string>
+    <string name="selected_photos_deleted">தேர்ந்தெடுக்கப்பட்ட படங்கள் நீக்கப்பட்டன</string>
+    <string name="added_to_review_bin">மதிப்பாய்வு தொட்டியில் சேர்க்கப்பட்டது</string>
+    <string name="photos_deleted_format">%1$d படங்கள் நீக்கப்பட்டன</string>
+    <string name="delete_photos_failed">தேர்ந்தெடுத்த படங்களை நீக்க முடியவில்லை</string>
+    <string name="share_photo">புகைப்படத்தைப் பகிரவும்</string>
+    <string name="trash_bin_title_format">குப்பைத் தொட்டி (%1$s)</string>
+    <string name="trash_bin_title_empty">குப்பைத் தொட்டி</string>
+    <string name="trash_restore_hint">படங்களை மீட்டெடுக்க தட்டவும்</string>
+    <string name="trash_empty_action">குப்பையில் உள்ள அனைத்தையும் நீக்கு</string>
+    <string name="trash_restored">புகைப்படம் மீட்டெடுக்கப்பட்டது</string>
+    <string name="trash_bin_empty">குப்பைத் தொட்டி காலியாக உள்ளது</string>
+    <string name="feature_smart_groups">ஸ்மார்ட் குழுக்கள்</string>
+    <string name="feature_duplicate_photos">நகல் புகைப்படங்கள்</string>
+    <string name="feature_duplicate_videos">நகல் வீடியோக்கள்</string>
+    <string name="feature_all_videos">அனைத்து வீடியோக்கள்</string>
+    <string name="feature_screenshots_short">ஸ்கிரீன்ஷாட்கள்</string>
+    <string name="scan_unavailable">ஸ்கேன் கிடைக்கவில்லை</string>
+    <string name="please_try_again">மீண்டும் முயற்சிக்கவும்</string>
+    <string name="tool_file_manager">கோப்பு மேலாளர்</string>
+    <string name="tool_media_compressor">ஊடக அமுக்கி</string>
+    <string name="tool_app_manager">பயன்பாட்டு மேலாளர்</string>
+    <string name="tool_clean_calendar">சுத்தமான நாட்காட்டி</string>
+    <string name="tool_ai_enhancer">AI பட மேம்படுத்தி</string>
+    <string name="tool_secret_space">இரகசிய இடம்</string>
+    <string name="tool_speed_test">வேக சோதனை</string>
+    <string name="compressing">சுருக்குகிறது…</string>
+    <string name="original_size_format">அசல் · %1$s</string>
+    <string name="compressed_result_format">சுருக்கப்பட்டது · %1$s\n சேமிக்கப்பட்டது · %2$s</string>
+    <string name="swipe_grant_access_hint">புகைப்படங்களை உலாவ முகப்பிலிருந்து மீடியா அணுகலை வழங்கவும்</string>
+    <string name="media_item_placeholder">ஊடகம்</string>
+    <string name="selected_image_preview">தேர்ந்தெடுக்கப்பட்ட பட முன்னோட்டம்</string>
+    <string name="current_photo">தற்போதைய புகைப்படம்</string>
+    <string name="month_cover">மாத அட்டை</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">நபர் · 0</string>
+    <string name="category_animal_zero">விலங்கு · 0</string>
+    <string name="category_vehicle_zero">வாகனம் · 0</string>
+    <string name="duplicate_photos_page_title">நகல் புகைப்படங்கள்</string>
+    <string name="duplicate_photos_page_subtitle">கோப்பு அளவு மற்றும் பரிமாணங்களின்படி சரியான நகல்களைக் கண்டறிந்து, ஒரு நகலை வைத்திருக்கவும்.</string>
+    <string name="duplicate_photos_page_badge">சரியான போட்டி</string>
+    <string name="duplicate_photos_summary_format">%2$d நகல் புகைப்படங்களுடன் %1$d குழுக்கள் கண்டறியப்பட்டன.</string>
+    <string name="duplicate_photos_empty_title">நகல் படங்கள் எதுவும் இல்லை</string>
+    <string name="duplicate_photos_empty_body">ஒரே அளவு மற்றும் பரிமாணங்களைக் கொண்ட படங்கள் எதுவும் காணப்படவில்லை.</string>
+    <string name="duplicate_videos_page_title">நகல் வீடியோக்கள்</string>
+    <string name="duplicate_videos_page_subtitle">அளவு மற்றும் கால அளவு அடிப்படையில் சரியான நகல் வீடியோக்களைக் கண்டறிந்து, ஒரு நகலை வைத்திருக்கவும்.</string>
+    <string name="duplicate_videos_page_badge">சரியான போட்டி</string>
+    <string name="duplicate_videos_summary_format">%2$d நகல் வீடியோக்களுடன் %1$d குழுக்கள் கண்டறியப்பட்டன.</string>
+    <string name="duplicate_videos_empty_title">நகல் வீடியோக்கள் எதுவும் இல்லை</string>
+    <string name="duplicate_videos_empty_body">ஒரே அளவு மற்றும் கால அளவு கொண்ட வீடியோக்கள் எதுவும் இல்லை.</string>
+    <string name="settings_page_title">அமைப்புகள்</string>
+    <string name="settings_page_subtitle">மொழி, பயன்பாட்டுத் தகவல், தனியுரிமை மற்றும் தற்காலிக சேமிப்பு.</string>
+    <string name="settings_language_title">மொழி</string>
+    <string name="settings_language_subtitle">உங்களுக்கு விருப்பமான பயன்பாட்டு மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="settings_about_title">பற்றி</string>
+    <string name="settings_about_subtitle">பயன்பாட்டின் பெயர் மற்றும் பதிப்பு</string>
+    <string name="settings_about_message_format">சுத்தமான சூப்பர் AI\n பதிப்பு %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">தனியுரிமைக் கொள்கை</string>
+    <string name="settings_privacy_policy_subtitle">உங்கள் தரவை நாங்கள் எவ்வாறு கையாளுகிறோம்</string>
+    <string name="settings_privacy_policy_body">அனைத்து மீடியா ஸ்கேனிங் மற்றும் சுத்தம் செய்வது உங்கள் சாதனத்தில் இயங்கும். உங்கள் புகைப்படங்கள், வீடியோக்கள் அல்லது தொடர்புகளை நாங்கள் எங்கள் சேவையகங்களில் பதிவேற்ற மாட்டோம். விருப்பப் பகுப்பாய்வு (பின்னர் இயக்கப்பட்டால்) ஸ்டோர் கொள்கைகளைப் பின்பற்றும். கணினி அமைப்புகளில் எப்போது வேண்டுமானாலும் மீடியா அணுகலைத் திரும்பப் பெறலாம்.</string>
+    <string name="settings_clear_cache_title">தற்காலிக சேமிப்பை அழிக்கவும்</string>
+    <string name="settings_clear_cache_subtitle">இலவச தற்காலிக பயன்பாட்டு சேமிப்பு</string>
+    <string name="settings_clear_cache_confirm">தற்காலிக கேச் கோப்புகளை அழிக்கவா? உங்கள் படங்களும் அமைப்புகளும் நீக்கப்படாது.</string>
+    <string name="settings_clear_cache_done_format">%1$s கேச் அழிக்கப்பட்டது.</string>
+    <string name="language_page_title">பயன்பாட்டு மொழி</string>
+    <string name="language_page_subtitle">இயல்பாக, CleanSuper AI உங்கள் சாதன மொழியைப் பின்பற்றுகிறது.</string>
+    <string name="language_follow_system_title">கணினி மொழியைப் பின்பற்றவும்</string>
+    <string name="language_follow_system_subtitle_format">தற்போதைய சாதன மொழி: %1$s</string>
+    <string name="month_photo_count_format">%1$d புகைப்படங்கள்</string>
+    <string name="review_bin_pending_format">%1$d படங்கள் மதிப்பாய்வு தொட்டியில் காத்திருக்கின்றன</string>
+    <string name="media_bucket_video">வீடியோ</string>
+    <string name="settings_terms_title">பயன்பாட்டு விதிமுறைகள்</string>
+    <string name="settings_terms_subtitle">விதிமுறைகளைப் படிக்கவும்</string>
+    <string name="settings_widget_title">முகப்புத் திரை விட்ஜெட்</string>
+    <string name="settings_widget_subtitle">சுத்தம் செய்வதற்கான குறுக்குவழியைச் சேர்க்கவும்</string>
+    <string name="tool_network_traffic">நெட்வொர்க் போக்குவரத்து</string>
+    <string name="tool_network_traffic_desc">பயன்பாட்டின் மூலம் பயன்பாடு</string>
+    <string name="tool_battery_info">பேட்டரி தகவல்</string>
+    <string name="tool_battery_info_desc">கட்டணம் மற்றும் ஆரோக்கியம்</string>
+    <string name="tool_device_info">சாதனத் தகவல்</string>
+    <string name="tool_device_info_desc">கணினி மற்றும் Wi-Fi</string>
+    <string name="tool_private_vault">தனியார் பெட்டகம்</string>
+    <string name="tool_private_vault_desc">புகைப்படங்கள் மற்றும் வீடியோக்களை மறை</string>
+    <string name="home_more_tools">மேலும் கருவிகள்</string>
+    <string name="home_battery_info">பேட்டரி</string>
+    <string name="home_device_info">சாதனம்</string>
+    <string name="home_large_files">பெரிய கோப்புகள்</string>
+    <string name="home_cache_cleanup">கேச் சுத்தமானது</string>
+    <string name="home_network_traffic">தரவு பயன்பாடு</string>
+    <string name="home_private_vault">தனியார் பெட்டகம்</string>
+    <string name="home_picture_cleanup">படங்கள்</string>
+    <string name="home_video_cleanup">வீடியோக்கள்</string>
+    <string name="home_audio_cleanup">ஆடியோ</string>
+    <string name="media_loading">மீடியாவை ஏற்றுகிறது…</string>
+    <string name="media_loading_hint">உங்கள் கோப்புகளை ஒழுங்கமைத்தல். தயவுசெய்து காத்திருக்கவும்.</string>
+    <string name="media_count_summary">%1$d உருப்படிகள் · %2$s · %3$d தேர்ந்தெடுக்கப்பட்டது</string>
+    <string name="media_empty_title">மீடியா எதுவும் இல்லை</string>
+    <string name="media_empty_body">இந்த வகையில் உருப்படிகள் எதுவும் இல்லை.</string>
+    <string name="media_error_title">மீடியாவை ஏற்ற முடியவில்லை</string>
+    <string name="media_access_title">சேமிப்பக அணுகல் தேவை</string>
+    <string name="media_access_body">இந்த மீடியாவை உலாவ, அனைத்து கோப்புகளையும் அமைப்புகளில் அணுக அனுமதிக்கவும்.</string>
+    <string name="media_delete_title">தேர்ந்தெடுத்த பொருட்களை நீக்கவா?</string>
+    <string name="media_delete_message">%1$d தேர்ந்தெடுத்த உருப்படிகளை நீக்கவா? உறுதிப்படுத்தும்படி Android கேட்கலாம்.</string>
+    <string name="media_recent_group">1 மாதத்திற்குள்</string>
+    <string name="media_older_group">1 மாதத்திற்கும் மேலானது</string>
+    <string name="media_group_summary">%1$d உருப்படிகள் · %2$s</string>
+    <string name="audio_player_unavailable">இந்தச் சாதனத்தில் ஆடியோ பிளேயர் எதுவும் இல்லை.</string>
+    <string name="vault_items_summary">%1$d தனிப்பட்ட பொருட்கள்</string>
+    <string name="vault_empty_gallery">உங்கள் தனிப்பட்ட பெட்டகம் காலியாக உள்ளது. இங்கே பார்க்க புகைப்படங்கள் அல்லது வீடியோக்களை இறக்குமதி செய்யவும்.</string>
+    <string name="cache_group_app">பயன்பாட்டு தற்காலிக சேமிப்பு</string>
+    <string name="cache_group_apk">பழைய APK கோப்புகள்</string>
+    <string name="cache_group_residual">மீதமுள்ள கோப்புகள்</string>
+    <string name="cache_summary">%1$d கோப்புகள் · %2$s</string>
+    <string name="cleanup_report_title">சுத்தம் முடிந்தது</string>
+    <string name="cleanup_report_freed">இடம் விடுவிக்கப்பட்டது</string>
+    <string name="cleanup_report_count">%2$d இல் %1$d உருப்படிகள் அகற்றப்பட்டன</string>
+    <string name="cleanup_report_other">மற்ற கோப்புகளை சுத்தம் செய்யவும்</string>
+    <string name="cleanup_report_done">முடிந்தது</string>
+    <string name="exit_retain_title">CleanSuper AI இலிருந்து வெளியேறவா?</string>
+    <string name="exit_retain_message">வேகமாக சுத்தம் செய்ய வீட்டு விட்ஜெட்டைச் சேர்க்கவும்</string>
+    <string name="exit_retain_confirm_exit">வெளியேறு</string>
+    <string name="exit_retain_add">சேர்</string>
+    <string name="exit_retain_feature_cache">தற்காலிக சேமிப்பு</string>
+    <string name="exit_retain_feature_large">பெரிய கோப்புகள்</string>
+    <string name="widget_status_storage">இலவச இடம்</string>
+    <string name="notif_screenshot">ஸ்கிரீன்ஷாட்கள்</string>
+    <string name="exit_retain_message_existing">உங்கள் வீட்டு விட்ஜெட் விரைவாக சுத்தம் செய்ய தயாராக உள்ளது</string>
+    <string name="notif_cache">தற்காலிக சேமிப்பு</string>
+    <string name="notif_channel_name">விரைவான சுத்தமான கருவிப்பட்டி</string>
+    <string name="notif_channel_desc">விரைவான துப்புரவு நடவடிக்கைகளுக்கான நிலையான கருவிப்பட்டி</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">சுத்தமான நினைவூட்டல்கள்</string>
+    <string name="notif_event_channel_desc">ஸ்கிரீன்ஷாட்கள், நிறுவல்கள் மற்றும் நிறுவல் நீக்கங்களுக்குப் பிறகு உள்ளூர் நினைவூட்டல்கள்</string>
+    <string name="notif_event_summary_channel_name">சுத்தமான நினைவூட்டல் சுருக்கம்</string>
+    <string name="notif_event_screenshot_title">மற்றொரு ஸ்கிரீன்ஷாட்? 1 ஸ்கிரீன்ஷாட்களை அழிக்க வேண்டிய நேரம் இது</string>
+    <string name="notif_event_install_title">புதிய பயன்பாடு நகர்த்தப்பட்டது, மேலும் தற்காலிக சேமிப்பையும் கொண்டுள்ளது. சுத்தம்</string>
+    <string name="notif_event_uninstall_title">வெற்றிகரமாக நிறுவல் நீக்கப்பட்டது! கோப்பு எச்சங்களை சுத்தம் செய்ய</string>
+    <string name="notif_clean_reminder_title">அங்கு ஏராளமான குப்பைகள் குவிந்து கிடக்கின்றன. அனைத்தையும் ஒரே நேரத்தில் சுத்தம் செய்யுங்கள்.</string>
+    <string name="notif_event_battery_below_50_title">பேட்டரி பாதிக்கு மேல் நிரம்பியுள்ளது. இப்போதே பார்த்துக் கொள்ளுங்கள், நீங்கள் வீட்டிற்கு வரும் வரை அது நீடிக்கும்.</string>
+    <string name="notif_event_battery_below_20_title">குறைந்த பேட்டரி. உங்கள் மின்சாரத்தை யார் திருடுகிறார்கள் என்பதை அறிய வேண்டுமா? தரவரிசைகளைக் காண கிளிக் செய்யவும்.</string>
+    <string name="notif_event_charging_title">செருகப்பட்டது. இன்றிரவு பணி: மீண்டும் நிரப்பவும், பின்னர் சுத்தம் செய்யவும்.</string>
+    <string name="notif_event_charging_full_title">முழுமையாக சார்ஜ் செய்யப்பட்டு, செல்ல தயாராக உள்ளது. ஒரு இறுதிச் சரிபார்ப்பு: குப்பை அகற்றப்பட்டதா?</string>
+    <string name="notif_event_charging_to_80_title">இறுதி ஸ்பிரிண்ட் 80% ஆகும். முழு ஆற்றலை வரவேற்க குப்பைகளை இறக்கி லேசாக பேக் செய்யவும்.</string>
+    <string name="notif_event_charging_disconnect_title">அவிழ்த்துவிட்டு புறப்படுங்கள். குப்பைகளை சுத்தம் செய்து, டிப்-டாப் வடிவத்தில் இருக்க நேரத்தை எடுத்துக்கொள்ள மறக்காதீர்கள்.</string>
+    <string name="notif_event_app_update_title">புதிய பதிப்பு வந்துள்ளது. பழைய பதிப்பில் எஞ்சியிருக்கும் அனைத்தும் முழுமையாக சுத்தம் செய்யப்பட்டுள்ளன.</string>
+    <string name="notif_event_network_change_title">இணையம் மாறுகிறது! தற்போதைய பிணைய நிலையைப் பார்க்கவும் 1</string>
+    <string name="notif_event_screen_lock_title">உங்கள் தொலைபேசியை கீழே வைத்து எங்களிடம் விட்டு விடுங்கள். ஓய்வு திரை நேரம் = நர்சிங் நேரம்.</string>
+    <string name="notif_event_screen_on_after_lock_title">நாங்கள் மீண்டும் சந்திப்போம், நீங்கள் மாட்டிக்கொண்டீர்களா? அதில் பெரும்பாலானவை குப்பைகள், அதை சுத்தம் செய்ய முயற்சிக்கவும்.</string>
+    <string name="notif_event_storage_free_drop_title">சேமிப்பு இடம் மாறிவிட்டது. என்ன இடத்தை ஆக்கிரமிக்கிறது என்று பார்ப்போம்?</string>
+    <string name="notif_event_scheduled_push_1_title">நீண்ட நாட்களாக குவிந்து கிடக்கும் குப்பைகள் ஒரே நேரத்தில் அகற்றப்படுகிறது.</string>
+    <string name="notif_event_scheduled_push_2_title">பேட்டரி முன்பு போல் நீடித்து இருக்கவில்லையா? அதைப் பாருங்கள்.</string>
+    <string name="notif_event_app_inactive_title">ரொம்ப நாளாக காத்திருக்கிறது. திரும்பி வந்து குப்பையை அகற்றவும்.</string>
+    <string name="notif_event_scheduled_push_3_title">உங்கள் பிளேலிஸ்ட்களில் ஒரு தட்டவும் - விட்ஜெட்டை அமைக்கவும்</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>உங்கள் பிளேலிஸ்ட்களில் ஒரு தட்டவும் - விட்ஜெட்டை அமைக்கவும்</item>
+        <item>விட்ஜெட் மூலம் எல்லாவற்றையும் எளிதாக்குங்கள் — இசை குறுக்குவழியைச் சேர்க்கவும்</item>
+        <item>திறக்காமல் வேகமாக விளையாடுங்கள் — முகப்புத் திரை விட்ஜெட்டை இயக்கவும்</item>
+    </string-array>
+    <string name="notif_event_app_background_title">நீங்கள் எதையோ மறந்துவிட்டீர்கள்</string>
+    <string name="notif_event_app_background_content">சுத்தம் செய்து முடிக்க வாருங்கள், அது சீராக இயங்கும்.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>நீங்கள் எதையோ மறந்துவிட்டீர்கள்</item>
+        <item>ஒரு படி விட்டு</item>
+        <item>நல்ல செய்தி</item>
+        <item>நீங்கள் மிக வேகமாக சென்றுவிட்டீர்கள்</item>
+        <item>ஒரே இரவில் குப்பைகளை விட்டுவிடாதீர்கள்</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>சுத்தம் செய்து முடிக்க வாருங்கள், அது சீராக இயங்கும்.</item>
+        <item>சுத்தம் செய்து, அதிக இடத்தை விடுவிக்க இன்னும் ஒரு முறை தட்டவும்.</item>
+        <item>இலவச இடம் கண்டறியப்பட்டது - ஒரு தட்டினால் சுத்தம் செய்யுங்கள்.</item>
+        <item>உங்கள் ஃபோன் இன்னும் வேகமாக இருக்கும் — தேர்வுமுறையைப் பார்க்கவும்.</item>
+        <item>சுத்தம் செய்து முடிக்க வாருங்கள், அது சீராக இயங்கும்.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">ஸ்கேன் முடிவுகள் தயாராக உள்ளன - குப்பை இடம் பெறுகிறது. இப்போது சுத்தம் செய்யுங்கள்</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>ஸ்கேன் முடிவுகள் தயாராக உள்ளன - குப்பை இடம் பெறுகிறது. இப்போது சுத்தம் செய்யுங்கள்</item>
+        <item>இன்னும் ஒரு படி உள்ளது: திரும்பி வந்து உடனடியாக இடத்தை விடுவிக்கவும்.</item>
+        <item>ஸ்கேன் செய்த பிறகு சுத்தம் செய்ய மறந்து விட்டீர்களா? உங்கள் மொபைலை இலகுவாக்க 10 வினாடிகள்.</item>
+        <item>குப்பை இன்னும் உங்கள் மொபைலில் உள்ளது — முடிவுகள் சேமிக்கப்பட்டன. ஒரே தட்டல் சுத்தம் செய்ய திரும்பி வாருங்கள்.</item>
+        <item>கடைசியாக ஸ்கேன் செய்ததில் சுத்தம் செய்ய பல பொருட்கள் கண்டறியப்பட்டன. முடித்து வாருங்கள்.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">இன்னும் சுத்தம் செய்யவில்லை - கடைசி படியை முடிக்கவும்.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>இன்னும் சுத்தம் செய்யவில்லை — கடைசி படியை முடிக்க வாருங்கள்.</item>
+        <item>சுத்தம் செய்வது தடைபட்டது: பாதியிலேயே உள்ளது. இலகுவான தொலைபேசியை முடிக்கவும்.</item>
+        <item>சுத்தம் செய்வது கிட்டத்தட்ட முடிந்துவிட்டது - குப்பைகளை விட்டுவிடாதீர்கள்.</item>
+        <item>நீங்கள் நடுப்பகுதியில் சுத்தமாக விட்டுவிட்டீர்கள் - அதை முடித்துவிட்டு வித்தியாசத்தை உணருங்கள்.</item>
+        <item>குறுக்கிடப்பட்ட சுத்தம் எந்த நேரத்திலும் தொடரலாம். முடித்து வாருங்கள்.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">புகைப்படம் நீக்கப்பட்டது - பாதுகாப்பாக மறுசுழற்சி தொட்டிக்கு நகர்த்தப்பட்டது.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>புகைப்படம் நீக்கப்பட்டது - பாதுகாப்பாக மறுசுழற்சி தொட்டிக்கு நகர்த்தப்பட்டது.</item>
+        <item>1 புகைப்படம் நீக்கப்பட்டது — எவ்வளவு இடத்தை விடுவித்தீர்கள் என்று பார்க்கவா?</item>
+        <item>புகைப்படம் நீக்கப்பட்டது — நிரந்தரமாக நீக்கி இப்போது இடத்தைக் காலியாக்கும்.</item>
+        <item>புகைப்படம் பாதுகாப்பாக நீக்கப்பட்டது - சேமிப்பக நிலை புதுப்பிக்கப்பட்டது.</item>
+        <item>புகைப்படம் நீக்கப்பட்டது - இதே போன்ற ஸ்கிரீன்ஷாட்களையும் நீங்கள் சுத்தம் செய்யலாம்.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">வீடியோ நீக்கப்பட்டது — பெரிய இடம் விடுவிக்கப்படுகிறது.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>வீடியோ நீக்கப்பட்டது — பெரிய இடம் விடுவிக்கப்படுகிறது.</item>
+        <item>பெரிய வீடியோ அகற்றப்பட்டது - சேமிப்பக அழுத்தம் உடனடியாகத் தணிந்தது.</item>
+        <item>வீடியோ நீக்கப்பட்டது - உங்கள் தற்போதைய சேமிப்பக நிலையைச் சரிபார்க்கவும்.</item>
+        <item>நீக்கப்பட்டது முடிந்தது - முழு இடத்தையும் காலி செய்ய மறுசுழற்சி தொட்டியை காலி செய்யவும்.</item>
+        <item>வீடியோ நீக்கப்பட்டது - சுத்தம் செய்ய மறக்கப்பட்ட பெரிய வீடியோக்கள் அதிகமாக இருக்கலாம்.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">ஆடியோ நீக்கப்பட்டது - சிறிய கோப்புகள் சேர்க்கப்படுகின்றன. தொடருங்கள்.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>ஆடியோ நீக்கப்பட்டது - சிறிய கோப்புகள் சேர்க்கப்படுகின்றன. தொடருங்கள்.</item>
+        <item>அந்த ஆடியோ போய்விட்டது - இதே போன்ற பயன்படுத்தப்படாத கோப்புகளையும் சுத்தம் செய்யலாம்.</item>
+        <item>ஆடியோ நீக்கப்பட்டது - சேமிப்பக விவரங்கள் புதுப்பிக்கப்பட்டன. வந்து பாருங்கள்.</item>
+        <item>1 ஆடியோ கோப்பு நீக்கப்பட்டது - சேமிப்பகப் பட்டியல் புதுப்பிக்கப்பட்டது.</item>
+        <item>ஆடியோ நீக்கப்பட்டது - இடத்தை காலி செய்ய மறுசுழற்சி தொட்டியை காலி செய்யவும்.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">கோப்பு நீக்கப்பட்டது - இன்னும் கொஞ்சம் சேமிப்பகம் விடுவிக்கப்பட்டது.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>கோப்பு நீக்கப்பட்டது - இன்னும் கொஞ்சம் சேமிப்பகம் விடுவிக்கப்பட்டது.</item>
+        <item>கோப்பு நீக்கப்பட்டது - ஒழுங்கீனம் இனி உங்கள் மொபைலைத் தொந்தரவு செய்யாது.</item>
+        <item>கோப்பு நீக்கப்பட்டது - நீங்கள் வேறு என்ன சுத்தம் செய்யலாம் என்பதைப் பார்க்கவும்.</item>
+        <item>கோப்பு நீக்கப்பட்டது - மாற்றங்கள் ஒத்திசைக்கப்பட்டன, சேமிப்பக நிலை புதுப்பிக்கப்பட்டது.</item>
+        <item>அந்தக் கோப்பு அழிக்கப்பட்டது - இப்போது இடத்தை மீட்டெடுக்கிறது.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">படம் பதிவிறக்கப்பட்டது - அதைத் திறந்து பாருங்கள்.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>படம் பதிவிறக்கப்பட்டது - அதைத் திறந்து பாருங்கள்.</item>
+        <item>படம் பதிவிறக்கப்பட்டது - நீங்கள் ஆல்பத்தில் இருக்கும் போது, அதில் உள்ள நகல் படங்களை சுத்தம் செய்யுங்கள்</item>
+        <item>பதிவிறக்கம் முடிந்தது - படம் பாதுகாப்பாக சேமிக்கப்பட்டது. இதே போன்ற படங்களை பார்க்க வாருங்கள்</item>
+    </string-array>
+    <string name="notif_event_video_download_title">வீடியோ பதிவிறக்கம் செய்யப்பட்டது - இது சிறியதல்ல. பழைய வீடியோக்கள் எவ்வளவு இடத்தை விடுவிக்க முடியும் என்பதைப் பார்க்கவும்</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>வீடியோ பதிவிறக்கம் செய்யப்பட்டது - இது சிறியதல்ல. பழைய வீடியோக்கள் எவ்வளவு இடத்தை விடுவிக்க முடியும் என்பதைப் பார்க்கவும்</item>
+        <item>புதிய வீடியோ சேமிக்கப்பட்டது - நீக்க பெரிய வீடியோக்களைக் கண்டறியவும் மற்றும் இடத்தை காலி செய்யவும். என்னைத் தட்டவும்</item>
+        <item>வீடியோக்கள் இடம் பிடிக்கின்றன - உங்கள் மொபைலை ஒளிரச் செய்ய, சுத்தம் செய்யக்கூடிய பொருட்களைக் கண்டறிந்துள்ளோம். இங்கே தட்டவும்</item>
+        <item>பதிவிறக்கம் முடிந்தது! சில பழைய வீடியோக்களை சுத்தம் செய்து, இடம் திரும்பும். என்னைத் தட்டவும்</item>
+        <item>புதிய வீடியோ வரிசைப்படுத்தப்பட்டது - கண்டுபிடிக்க அல்லது சுத்தம் செய்ய எளிதானது. பார்க்க தட்டவும்</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">ஆடியோ பதிவிறக்கப்பட்டது - ஒரே தட்டலில் உங்கள் இசை நூலகத்தை ஒழுங்கமைக்கவும். என்னைத் தட்டவும்</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>ஆடியோ பதிவிறக்கப்பட்டது - ஒரே தட்டலில் உங்கள் இசை நூலகத்தை ஒழுங்கமைக்கவும். என்னைத் தட்டவும்</item>
+        <item>புதிய ஆடியோ வரிசைப்படுத்தப்பட்டது - நீங்கள் இங்கே இருக்கும்போது பழைய ஆடியோவை சுத்தம் செய்யுங்கள். என்னைத் தட்டவும்</item>
+        <item>இசை நூலகம் நிரம்புகிறதா? சுத்தம் செய்யக்கூடிய ஆடியோவைச் சரிபார்க்கவும். இங்கே தட்டவும்</item>
+        <item>ஆடியோ பதிவிறக்கப்பட்டது - ஒரே தட்டலில் கழிக்கவும். ஒழுங்கமைக்க என்னைத் தட்டவும்</item>
+    </string-array>
+    <string name="notif_event_file_download_title">புதிய கோப்பு சேமிக்கப்பட்டது - பழைய கோப்புகள் மற்றும் இலவச இடத்தை அழிக்கவும். இங்கே தட்டவும்</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>புதிய கோப்பு சேமிக்கப்பட்டது - பழைய கோப்புகள் மற்றும் இலவச இடத்தை அழிக்கவும். இங்கே தட்டவும்</item>
+        <item>பதிவிறக்கம் முடிந்தது - நீங்கள் எந்த பழைய கோப்புகளை சுத்தம் செய்யலாம் என்பதைப் பார்க்கவும். என்னைத் தட்டவும்</item>
+        <item>புதிய கோப்பு தயார் — ஸ்மார்ட் காப்பகம் + சுத்தமானது. தொடங்க என்னைத் தட்டவும்</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">மறுசுழற்சி தொட்டி காலியானது - சேமிப்பு புதுப்பிக்கப்பட்டது. உங்கள் சமீபத்திய இடத்தைச் சரிபார்க்கவும்.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>மறுசுழற்சி தொட்டி காலியானது - சேமிப்பு புதுப்பிக்கப்பட்டது. உங்கள் சமீபத்திய இடத்தைச் சரிபார்க்கவும்.</item>
+        <item>மறுசுழற்சி தொட்டி காலியானது - ஆழமான சுத்தமான எஞ்சியவற்றை வாருங்கள்.</item>
+        <item>வெற்றிகரமாக காலி செய்யப்பட்டது - சுத்தம் செய்ய அதிக குப்பை. வந்து பாருங்கள்.</item>
+    </string-array>
+    <string name="notif_event_action_clean">இப்போது சுத்தம் செய்யுங்கள்</string>
+    <string name="notif_event_action_open_home">திற</string>
+    <string name="notif_event_action_manage">பயன்பாடுகளை நிர்வகிக்கவும்</string>
+    <string name="notif_event_action_check_battery">பேட்டரியை சரிபார்க்கவும்</string>
+    <string name="notif_event_action_check_network">நெட்வொர்க்கை சரிபார்க்கவும்</string>
+    <string name="notif_days_unit">நாள்</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>சேமிப்பு இடம் மாறிவிட்டது. எது இடத்தை எடுத்துக் கொள்கிறது என்று பார்ப்போம்?</item>
+        <item>இடமாற்றம் கண்டறியப்பட்டது. சில புதிய குப்பைகள் இருக்கலாம், பார்க்கவா?</item>
+        <item>கிடைத்த இடம் நகர்ந்துவிட்டது. சாப்பிட்டது யார் தெரியுமா? பார்க்க கிளிக் செய்யவும்.</item>
+        <item>இடம் இறுக்கமாக உள்ளதா? மாற்றம் கண்டறியப்பட்டது, விவரங்களைப் பார்ப்போம்.</item>
+        <item>விண்வெளி மாற்றம் நினைவூட்டல்: நீங்கள் நிறைய குப்பைகளை குவிக்கலாம். அதைப் பார்க்கவா?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>குறைந்த பேட்டரி. உங்கள் மின்சாரத்தை யார் திருடுகிறார்கள் என்பதை அறிய வேண்டுமா? தரவரிசைகளைக் காண கிளிக் செய்யவும்.</item>
+        <item>விரைவில் பாட்டம் அவுட். மின்சாரத்தை திருடும் செயலிகளை அழித்துவிட்டால், சிறிது காலம் உயிர்வாழலாம்.</item>
+        <item>பேட்டரி குறைகிறது. ஒன்றும் செய்யாமல் இருப்பதை விட சில பின்னணிகளை அழிப்பது நல்லது.</item>
+        <item>பேட்டரி சிவப்பு. நீங்கள் இன்னும் அதைச் சேமிக்கலாம், அதைத் திறக்க கிளிக் செய்து பாருங்கள்.</item>
+        <item>20% remains க்கும் குறைவானது. சக்தியைச் சேமிக்கும் முதலுதவியைச் செய்து சுத்தம் செய்வோம்.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>பேட்டரி பாதிக்கு மேல் நிரம்பியுள்ளது. இப்போதே பார்த்துக் கொள்ளுங்கள், நீங்கள் வீட்டிற்கு வரும் வரை அது நீடிக்கும்.</item>
+        <item>பேட்டரி பாதிக்கு மேல் நிரம்பியுள்ளது. 20% வரை காத்திருப்பதை விட இப்போது பேட்டரியை கவனித்துக்கொள்வது மிகவும் எளிதானது.</item>
+        <item>பேட்டரி பாதி போய்விட்டது. எவ்வளவு காலம் நீடிக்க முடியும்? பார்க்க கிளிக் செய்யவும்.</item>
+        <item>பேட்டரி பாதிக்கு மேல் நிரம்பியுள்ளது. பின்தளத்தை கவனித்துக் கொள்ள வேண்டிய நேரம் இது, அது பதற்றமடையும் வரை காத்திருக்க வேண்டாம்.</item>
+        <item>பாதி பேட்டரி மிச்சம். பெரிய பவர்-ஹங்கிரி பிளேயர்களை அழித்து, இரண்டாவது பாதியை இன்னும் நிலையானதாக ஆக்குங்கள்.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>இறுதி ஸ்பிரிண்ட் 80% ஆகும். முழு ஆற்றலை வரவேற்க குப்பைகளை இறக்கி லேசாக பேக் செய்யவும்.</item>
+        <item>இன்னும் 20% short முழு சார்ஜ். உங்கள் திரையைப் பார்த்துக் கொண்டிருப்பதை நிறுத்துங்கள், குப்பையை நாங்கள் பார்த்துக்கொள்வோம்.</item>
+        <item>80%: முழுமையிலிருந்து ஒரு படி தூரம். ஒருமுறை கிளிக் செய்யவும், பேட்டரி முழுவதுமாக சார்ஜ் ஆனதும் முற்றிலும் அழிக்கப்படும்.</item>
+        <item>ஒரு நல்ல மொபைல் போனுக்கு 80%, a நல்ல பேட்டரி. சூடாக இருக்கும் போது ஒரு சுற்று சுத்தம் செய்யவா?</item>
+        <item>எங்களுக்கு வழங்கப்பட்ட கடைசி 20% iகள். நீங்கள் பேட்டரியைப் பாருங்கள், நாங்கள் குப்பைகளை சுத்தம் செய்கிறோம்.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>முழுமையாக சார்ஜ் செய்யப்பட்டு, செல்ல தயாராக உள்ளது. ஒரு இறுதிச் சரிபார்ப்பு: குப்பை அகற்றப்பட்டதா?</item>
+        <item>சார்ஜ் செய்த பிறகு, சடங்கு உணர்வு நிரம்பியுள்ளது. அதை நினைவுகூரும் வகையில் குப்பைகளை அகற்றுவது எப்படி?</item>
+        <item>இன்று 100%, s அட்டவணை. இன்னும் ஒரு சுற்று மற்றும் அது குறைபாடற்றது.</item>
+        <item>100% அவிழ்ப்பதற்கு முன் கடைசி படி: முப்பது வினாடிகளில் குப்பையை அகற்றவும்.</item>
+        <item>முழு சக்தியுடன் முடிந்தது. ஒரு இறுதி சுத்தம், சரியானது.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>இணையம் மாறுகிறது! தற்போதைய பிணைய நிலையைப் பார்க்கவும் 1</item>
+        <item>நெட்வொர்க்கை விட்டு வெளியேறுதல். சுத்தம் செய்யும் போது சிக்னலைப் பார்க்க வேண்டாம், அதைக் கிளிக் செய்து ஸ்கேன் செய்யவும்.</item>
+        <item>பக்கத்தைத் திறக்க முடியவில்லையா? சுத்தம் செய்வது எப்போதும் ஆன்லைனில் இருக்கும்.</item>
+        <item>நீங்கள் ஆஃப்லைனில் வேலை செய்யலாம், உங்கள் குப்பைகளை இப்போது அழிக்கலாம்.</item>
+        <item>சமிக்ஞை இல்லை என்றால், சுத்தம் செய்ய தரவு தேவையில்லை, கிளிக் செய்யவும்.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>செருகப்பட்டது. இன்றிரவு பணி: மீண்டும் நிரப்பவும், பின்னர் சுத்தம் செய்யவும்.</item>
+        <item>நீங்கள் ஓய்வெடுக்கிறீர்கள், அது ரீசார்ஜ் செய்யப்படுகிறது. குப்பைகளையும் சுத்தம் செய்யட்டும்.</item>
+        <item>சார்ஜிங் நேரத்தில், நீண்ட நாட்களாக தேங்கியுள்ள குப்பைகளை அகற்றினால் போதும்.</item>
+        <item>மின்சாரம் துண்டிக்கப்பட்டால்தான், மேடைக்குப் பின்னால் இருக்கும் ஊழியர்கள் சுதந்திரமாக வேலை செய்யத் துணிவார்கள்.</item>
+        <item>சார்ஜ் செய்யும்போது கொஞ்சம் சூடாகுமா? பின்னணியை அழிப்பது வெப்பநிலையைக் குறைக்கும்.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>அவிழ்த்துவிட்டு புறப்படுங்கள். குப்பைகளை சுத்தம் செய்து, டிப்-டாப் வடிவத்தில் இருக்க நேரத்தை எடுத்துக்கொள்ள மறக்காதீர்கள்.</item>
+        <item>சார்ஜ் முடிந்ததும், பேக் அப் செய்து புறப்படவும். சுத்தப்படுத்தினால் போதும்.</item>
+        <item>முழுமையாக சார்ஜ் செய்யப்பட்டு பயன்படுத்த தயாராக உள்ளது. குப்பைகளை சீராக சுத்தம் செய்வதில் இன்று எந்த குறையும் இல்லை.</item>
+        <item>சார்ஜிங் முடிவடைகிறது. அடுத்த இடத்தை ஒரு நேரத்தில் ஒரு நிலை சுத்தம் செய்து மேம்படுத்த வேண்டும்.</item>
+        <item>இருட்டடிப்புகளில் நிறுத்த வேண்டாம். ஒரு விஷயம் மீதமுள்ளது: சுத்தம் செய்தல்.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>நாங்கள் மீண்டும் சந்திப்போம், நீங்கள் மாட்டிக்கொண்டீர்களா? அதில் பெரும்பாலானவை குப்பைகள், அதை சுத்தம் செய்ய முயற்சிக்கவும்.</item>
+        <item>திறக்கப்பட்டதா? முதலில் மற்ற ஆப்ஸைத் திறந்து முப்பது வினாடிகளுக்கு குப்பையை அழிக்க வேண்டாம்.</item>
+        <item>முதலில் திறக்க வேண்டியது நாம்தான். குப்பையை அகற்றவும், அது உங்களை அதிகமாக நேசிக்கும்.</item>
+        <item>திறந்த பிறகு முப்பது வினாடிகள். மிகவும் மதிப்புமிக்க பயன்பாடு: குப்பைகளை சுத்தம் செய்தல்.</item>
+        <item>உங்கள் செல்போன் கூறியது: பின்தளம் சற்று தடைபட்டுள்ளது, நீங்கள் எனக்கு உதவ முடியுமா?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>உங்கள் தொலைபேசியை கீழே வைத்து எங்களிடம் விட்டு விடுங்கள். ஓய்வு திரை நேரம் = நர்சிங் நேரம்.</item>
+        <item>வேலையை நிறுத்துவது வேலையை நிறுத்துவதை அர்த்தப்படுத்துவதில்லை. அடுத்த முறை திரையை ஆன் செய்யும் போது உங்களுக்கு ஒரு சர்ப்ரைஸ் தருகிறேன்.</item>
+        <item>திரையில் ஓய்வெடுக்கும் போது அமைதியாகச் சரியாகிவிடும். கிளிக் செய்யவும், மீதமுள்ளதை நாங்கள் செய்வோம்.</item>
+        <item>திரையைப் பூட்டுவதற்கு முன் கடைசியாக ஒன்று: சுத்தம் என்பதைக் கிளிக் செய்யவும். நாளை காலை ஒரு புதிய தோற்றம்.</item>
+        <item>திரை இருண்டு போகிறது. இப்போதே ஏற்பாடு செய்து நாளை முடிவுகளைப் பாருங்கள்.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>புதிய பயன்பாடு நகர்த்தப்பட்டது, மேலும் தற்காலிக சேமிப்பையும் கொண்டுள்ளது. சுத்தம்</item>
+        <item>புதிய பயன்பாட்டை நிறுவுவதில் உள்ள மகிழ்ச்சியை நாங்கள் புரிந்துகொள்கிறோம். தற்காலிக சேமிப்பு அமைதியாக குவிந்துவிடும்.</item>
+        <item>புதிய ஆப்? கேச் இங்கே உள்ளது, ஒரே கிளிக்கில் அதை அழிக்கவும்.</item>
+        <item>புதியது வருகிறது, பழையது வெளியேறுகிறது. அடிக்கடி சுத்தம் செய்து, நீங்கள் விரும்பியபடி நிறுவவும்.</item>
+        <item>இன்னொன்று? இடம் சத்தமில்லாமல் சிறியதாகி வருகிறது, வந்து சுத்தம் செய்யுங்கள்.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>வெற்றிகரமாக நிறுவல் நீக்கப்பட்டது! கோப்பு எச்சங்களை சுத்தம் செய்ய</item>
+        <item>நிறுவல் நீக்கப்பட்டது ஆனால் சுத்தம் செய்யப்படவில்லை. முடிக்க கிளிக் செய்யவும்.</item>
+        <item>பயன்பாடு நிறுவல் நீக்கப்பட்டது, ஆனால் வால் இன்னும் உள்ளது. ஒரே கிளிக்கில் சுத்தம் செய்துவிட்டு, ஒருமுறை விடைபெறுங்கள்.</item>
+        <item>இரண்டாவது படியைத் தவறவிடாதீர்கள்: பயன்பாட்டை நீக்கவும் + எச்சத்தை அழிக்கவும். ஒரு கிளிக் செய்து முடிந்தது.</item>
+        <item>எச்சம் காலியான இடத்தில் பாதியை தின்றுவிடும். ஆழமாக ஸ்கேன் செய்து அனைத்தையும் அழிக்கவும்.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>புதிய பதிப்பு வந்துள்ளது. பழைய பதிப்பில் எஞ்சியிருக்கும் அனைத்தும் முழுமையாக சுத்தம் செய்யப்பட்டுள்ளன.</item>
+        <item>பதிப்பிற்கு +1, தற்காலிக சேமிப்பிற்கு +1, ஆழமான ஸ்கேனிங்கிற்கு.</item>
+        <item>புதுப்பிப்பு முடிந்தது மற்றும் மீதமுள்ள நிறுவல் தொகுப்புகளை ஒரே கிளிக்கில் சுத்தம் செய்யலாம்.</item>
+        <item>புதுப்பிப்பு முடிந்தது, முடிக்கலாம். அதை சுத்தம் செய்யுங்கள், நான் பொறுப்பேற்கிறேன்.</item>
+        <item>ஒவ்வொரு புதுப்பிப்பும் பழைய கோப்புகளை விட்டுவிட்டு விரைவாக அவற்றைச் சமாளிக்கும்.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>மற்றொரு ஸ்கிரீன்ஷாட்? 1 ஸ்கிரீன் ஷாட்களை அழிக்க வேண்டிய நேரம் இது</item>
+        <item>புதிய ஸ்கிரீன்ஷாட் கிடைத்தது, அதைப் பார்க்கவும் சுத்தம் செய்யவும் கிளிக் செய்யவும்</item>
+        <item>மேலும் மேலும் ஸ்கிரீன்ஷாட்கள் உள்ளன, ஒரே கிளிக்கில் சுத்தம் செய்வது உங்களுக்கு இடத்தை உருவாக்க உதவும்</item>
+        <item>ஸ்கிரீன்ஷாட் வெற்றிகரமாக எடுக்கப்பட்டது, நகல் மற்றும் மங்கலானவற்றை ஒரே கிளிக்கில் வடிகட்டலாம்.</item>
+        <item>தரவுத்தளத்தில் புதிய ஸ்கிரீன் ஷாட்கள் சேர்க்கப்பட்டுள்ளன, மேலும் ஒரே கிளிக்கில் அழிக்க நகல் படங்கள் வரிசைப்படுத்தப்பட்டுள்ளன.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>அங்கு ஏராளமான குப்பைகள் குவிந்து கிடக்கின்றன. அனைத்தையும் ஒரே நேரத்தில் சுத்தம் செய்யுங்கள்.</item>
+        <item>கடைசியாக %1$d நாட்களுக்கு முன்பு சுத்தம் செய்யப்பட்டது, இப்போது அதைச் செயல்படுத்த கிளிக் செய்யவும்</item>
+        <item>நான் சில நாட்களாக இங்கு வரவில்லை, அதனால் நான் அதை சுத்தம் செய்துவிட்டு லேசாக போர்க்களத்திற்குச் செல்வேன்.</item>
+        <item>தீர்வு ஒதுக்கீடு இன்று பயன்படுத்தப்படவில்லை. நான் திரும்பி வந்ததும் அதை அழிக்கிறேன்.</item>
+        <item>தற்காலிக சேமிப்பு நிரம்பியுள்ளது, நீங்கள் அதைச் சரிபார்க்க காத்திருக்கிறது</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>ரொம்ப நாளாக காத்திருக்கிறது. திரும்பி வந்து குப்பையை அகற்றவும்.</item>
+        <item>சில நாட்களாக உன்னை பார்க்கவில்லை. குப்பைகளுக்கு ஓய்வு இல்லை. திரும்பி வந்து அதை துடைக்கவும்.</item>
+        <item>தற்காலிக சேமிப்பு வரிசையில் உள்ளது. கிளிக் செய்யவும், அவை மறைந்துவிடும்.</item>
+        <item>நீங்கள் இல்லாதபோது குப்பைகள் பிஸியாக இருக்கும். ஒரே கிளிக்கில் காலி செய்து, எப்போதும் போல் புதியதாக உணருங்கள்.</item>
+        <item>மீண்டும்? முதலில் குப்பையை அழிக்கவும். முப்பது வினாடிகளில், தொலைபேசி புதியது போல் ஒளிரும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>நீண்ட நாட்களாக குவிந்து கிடக்கும் குப்பைகள் ஒரே நேரத்தில் அகற்றப்படுகிறது.</item>
+        <item>சுத்தம் செய்ய வேண்டிய நேரம். இன்றைய குப்பை நீங்கள் கிளிக் செய்யும் வரை காத்திருக்கிறது.</item>
+        <item>இன்றைய ஸ்பேஸ் டெய்லி வந்தது. துடைத்து, லேசாக வைக்கவும்.</item>
+        <item>சில கோப்புகள் நீங்கள் நினைப்பதை விட பெரியதாக உள்ளன, பாருங்கள்</item>
+        <item>சில G\'களை எடுத்த பையனைக் கண்டுபிடித்து அதை சுத்தம் செய்யுங்கள்</item>
+        <item>பெரிய ஆவணப் பட்டியல் தயார், வந்து பாருங்கள்.</item>
+        <item>யார் அதிக இடத்தை எடுத்துக்கொள்கிறார்கள்? ஒரு நொடியில் வெளிப்பட்டது.</item>
+        <item>தொடர்ச்சியான படப்பிடிப்பு நன்றாக இருக்கிறது, முடிப்பது வேதனையானது. எங்களிடம் விட்டுவிடு.</item>
+        <item>இதே போன்ற புகைப்படங்கள் வரிசையாக உள்ளன, எதை வைத்திருக்க வேண்டும் என்பதை நீங்கள் தேர்வு செய்ய வேண்டும்</item>
+        <item>பல ஒத்த படங்கள் உள்ளதா? ஒரே கிளிக்கில் நகல்களை ஒப்பிட்டு அகற்ற உதவுவோம்.</item>
+        <item>தற்காலிகமாக சேமிக்கப்பட்ட ஆஃப்லைன் வீடியோக்கள் அழிக்கப்பட வேண்டும்.</item>
+        <item>மீதமுள்ள ஆடியோவும் சுத்தம் செய்யப்படும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>பேட்டரி முன்பு போல் நீடித்து இருக்கவில்லையா? அதைப் பாருங்கள்.</item>
+        <item>உங்கள் மின்சாரத்தை திருடுவது யார்? நீங்கள் அதை ஒருமுறை பார்த்தால் தெரியும்.</item>
+        <item>இவற்றை அணைப்பது பேட்டரி ஆயுளை நீட்டிக்கும்.</item>
+        <item>சில பயன்பாடுகள் நிறுவப்பட்டுள்ளன ஆனால் பயன்படுத்தப்படவில்லை. அவை எவை என்று பார்?</item>
+        <item>நீங்கள் பயன்படுத்தாத பயன்பாடுகளை வைத்திருப்பதும் ஒரு சுமை, பட்டியல் உருவாக்கப்பட்டுள்ளது</item>
+        <item>தனியுரிமையைப் பொறுத்தவரை, அது எவ்வளவு விரைவில் தீர்க்கப்படுகிறதோ, அவ்வளவு சிறந்தது.</item>
+        <item>முக்கியமானவற்றை மறைத்துவிட்டு, தேவையில்லாதவற்றை அகற்றவும். நான் உங்களுக்கு உதவுகிறேன்</item>
+        <item>போக்குவரத்து எங்கே போகிறது? அதை யார் பயன்படுத்துகிறார்கள் என்பதைக் கண்டறியவும்.</item>
+        <item>போக்குவரத்து விவரங்கள் ஒரே பார்வையில் தயாராக உள்ளன.</item>
+        <item>பின்னணியில் ரகசியமாக இணையத்துடன் இணைக்கும் ஆப் உள்ளது.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">குப்பையின் {size}-ஒரே தட்டலில் அதை அழிக்கவும்</string>
+    <string name="notif_scheduled_large_files">பெரிய கோப்புகளின் {total}-எளிதாக சுத்தம் செய்யவும்</string>
+    <string name="notif_scheduled_duplicate_photos">நகல் புகைப்படங்களின் {groups} குழுக்கள்—சேமி {size}</string>
+    <string name="notif_scheduled_similar_photos">ஒரே மாதிரியான புகைப்படங்களின் {size}-எதை சுத்தம் செய்ய வேண்டும் என்பதைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="notif_scheduled_videos">{total} வீடியோக்கள்—இடத்தைக் காலியாக்க {n}ஐ நீக்கவும்</string>
+    <string name="notif_scheduled_audio">ஆடியோ கோப்புகளின் {மொத்தம்}- ஒழுங்கமைக்க வேண்டிய நேரம்</string>
+    <string name="notif_scheduled_apps">{idle} செயலற்ற பயன்பாடுகளால் {size} பயன்படுத்தப்படுகிறது</string>
+    <string name="notif_scheduled_data">பின்னணியில் பயன்படுத்தப்படும் தரவுகளின் {back}</string>
+    <string name="app_manager_uninstall_selected">தேர்ந்தவற்றை நிறுவல் நீக்கு</string>
+    <string name="app_manager_uninstall_selected_count">தேர்ந்தவற்றை நிறுவல் நீக்கு (%1$d)</string>
+    <string name="cache_removable">நீக்கக்கூடியது</string>
+    <string name="cache_clean_selected">தற்காலிக சேமிப்பை அகற்று</string>
+    <string name="cache_clean_selected_summary">சுத்தம் %1$s (%2$d)</string>
+</resources>

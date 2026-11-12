@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <path
+        android:fillColor="@color/tab_selected"
+        android:pathData="M16,11h12a4,4 0,0 1,4 4v12a4,4 0,0 1,-4 4H16a4,4 0,0 1,-4 -4V15a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="@color/accent_teal"
+        android:pathData="M38,11h10a4,4 0,0 1,4 4v10a4,4 0,0 1,-4 4H38a4,4 0,0 1,-4 -4V15a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="@color/accent_teal"
+        android:pathData="M16,33h10a4,4 0,0 1,4 4v10a4,4 0,0 1,-4 4H16a4,4 0,0 1,-4 -4V37a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="@color/soft_gray"
+        android:pathData="M43,33a10,10 0,1 0,0 20a10,10 0,1 0,0 -20z" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tab_selected"
+        android:strokeWidth="4"
+        android:pathData="M43,34a9,9 0,1 0,0 18a9,9 0,1 0,0 -18z" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="@color/tab_selected"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M50,50l6,6" />
+</vector>

@@ -1,0 +1,12 @@
+<resources>
+    <color name="notification_accent">#11935B</color>
+    <color name="local_push_icon_chip">#E8F8EF</color>
+    <color name="local_push_icon_chip_stroke">#CBEBD8</color>
+    <color name="local_push_icon_blue">#0D7548</color>
+    <color name="local_push_icon_cyan">#20B875</color>
+    <color name="local_push_icon_green">#11935B</color>
+    <color name="local_push_icon_amber">#E49A35</color>
+    <color name="local_push_icon_red">#C65B55</color>
+    <color name="local_push_icon_purple">#42866A</color>
+    <color name="local_push_icon_pink">#74B996</color>
+</resources>

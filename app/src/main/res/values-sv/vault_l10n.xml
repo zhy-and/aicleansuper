@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Skapa en 6-siffrig PIN-kod</string>
+    <string name="vlt_enter_pin">Ange din PIN-kod</string>
+    <string name="vlt_confirm_pin">Bekräfta din PIN-kod</string>
+    <string name="vlt_warning">Om du avinstallerar den här appen raderas filer permanent i Privacy Space.</string>
+    <string name="vlt_pin_mismatch">PIN-koderna stämmer inte överens. Försök igen.</string>
+    <string name="vlt_pin_wrong">Felaktig PIN-kod</string>
+    <string name="vlt_biometric">Använd fingeravtryck/ansikte</string>
+    <string name="vlt_unlock">Lås upp Privacy Space</string>
+    <string name="vlt_use_pin">Ange din PIN-kod</string>
+    <string name="vlt_importing">Importerar...</string>
+    <string name="vlt_imported">Importerade %1$d artiklar</string>
+    <string name="vlt_restore">Återställa</string>
+    <string name="vlt_delete">Radera</string>
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Dezinstalează</string>
+    <string name="uninstall_guide_back">Înapoi</string>
+    <string name="uninstall_guide_wait">Așteaptă puțin…</string>
+    <string name="uninstall_guide_more_space">Lasă %1$s să elibereze mai mult spațiu</string>
+    <string name="uninstall_guide_smart_clean">Pornește curățarea inteligentă</string>
+    <string name="uninstall_guide_scan_files">Scanează fișierele pe care ai putea dori să le ștergi</string>
+    <string name="uninstall_guide_scan_now">Scanează acum</string>
+    <string name="uninstall_guide_unused_apps">Vezi aplicațiile nefolosite</string>
+    <string name="uninstall_guide_find_apps">Găsește aplicațiile de care nu mai ai nevoie</string>
+    <string name="uninstall_guide_view_apps">Vezi aplicațiile</string>
+    <string name="uninstall_guide_keep">Păstrează %1$s</string>
+    <string name="uninstall_guide_continue">Continuă dezinstalarea</string>
+    <string name="uninstall_guide_why">De ce dezinstalezi %1$s?</string>
+    <string name="uninstall_reason_no_need">Nu mai am nevoie de ea</string>
+    <string name="uninstall_reason_ads">Prea multe reclame</string>
+    <string name="uninstall_reason_space">Nu a eliberat suficient spațiu</string>
+    <string name="uninstall_reason_missing_files">Nu găsesc fișierele pe care vreau să le curăț</string>
+    <string name="uninstall_reason_hard">Este greu de folosit</string>
+    <string name="uninstall_reason_slow">Aplicația este lentă sau instabilă</string>
+    <string name="uninstall_reason_other">Alt motiv</string>
+    <string name="uninstall_guide_private">Feedbackul tău nu include fișierele tale.</string>
+    <string name="action_cancel">Anula</string>
+    <string name="action_uninstall">Dezinstalează</string>
+    <string name="photo_photos_label">Fotografii</string>
+    <string name="notif_large_file">Fișier mare</string>
+    <string name="notif_junk">Gunoi</string>
+    <string name="notif_apps">Aplicații</string>
+    <string name="notif_clean_now">Curățați acum</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Am înţeles</string>
+</resources>

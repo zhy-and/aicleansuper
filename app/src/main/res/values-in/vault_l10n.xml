@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Buat PIN 6 digit</string>
+    <string name="vlt_enter_pin">Masukkan PIN Anda</string>
+    <string name="vlt_confirm_pin">Konfirmasikan PIN Anda</string>
+    <string name="vlt_warning">Mencopot pemasangan aplikasi ini akan menghapus file di Ruang Privasi secara permanen.</string>
+    <string name="vlt_pin_mismatch">PIN tidak cocok. Coba lagi.</string>
+    <string name="vlt_pin_wrong">PIN salah</string>
+    <string name="vlt_biometric">Gunakan sidik jari/wajah</string>
+    <string name="vlt_unlock">Buka Kunci Ruang Privasi</string>
+    <string name="vlt_use_pin">Masukkan PIN Anda</string>
+    <string name="vlt_importing">Pengimporan...</string>
+    <string name="vlt_imported">Item %1$d yang diimpor</string>
+    <string name="vlt_restore">Memulihkan</string>
+    <string name="vlt_delete">Menghapus</string>
+</resources>

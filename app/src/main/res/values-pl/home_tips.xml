@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">To urządzenie nie obsługuje przypinania widżetów</string>
+    <string name="widget_already_added">Widżet już dodany</string>
+    <string name="home_tip_notification">Bądź na bieżąco z nagromadzeniem niepotrzebnych plików.</string>
+    <string name="home_tip_notification_action">Włączać</string>
+    <string name="home_tip_widget">Włącz widżety na pulpicie jednym kliknięciem</string>
+    <string name="home_tip_widget_action">Umożliwić</string>
+    <string name="home_tip_all_files">Autoryzowane skanowanie w celu wykrycia pozostałości śladów.</string>
+    <string name="home_tip_all_files_action">Umożliwić</string>
+</resources>

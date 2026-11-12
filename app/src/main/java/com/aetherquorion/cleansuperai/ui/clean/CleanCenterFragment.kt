@@ -22,6 +22,8 @@ import com.aetherquorion.cleansuperai.ui.contacts.ContactsCleanupFragment
 import com.aetherquorion.cleansuperai.ui.clean.detail.LargeVideoListFragment
 import com.aetherquorion.cleansuperai.ui.clean.detail.ScreenshotListFragment
 import com.aetherquorion.cleansuperai.ui.common.MediaPermissionHelper
+import com.aetherquorion.cleansuperai.ui.common.FeatureAccess
+import com.aetherquorion.cleansuperai.ui.common.FeaturePermissionCoordinator
 import com.aetherquorion.cleansuperai.data.model.SimilarMediaMode
 import com.aetherquorion.cleansuperai.ui.similar.SimilarPhotosFragment
 import kotlinx.coroutines.launch
@@ -49,6 +51,23 @@ class CleanCenterFragment : Fragment() {
             }
             pendingNavigation = PendingNavigation.NONE
         }
+
+    private val allFilesLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            val granted = MediaPermissionHelper.hasPermissions(requireContext())
+            viewModel.updatePermission(granted)
+            if (granted) openWithPermission() else pendingNavigation = PendingNavigation.NONE
+        }
+
+    private fun requestStoragePermission() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {
+            allFilesLauncher.launch(
+                FeaturePermissionCoordinator.settingsIntent(requireContext(), FeatureAccess.ALL_FILES)
+            )
+        } else {
+            permissionLauncher.launch(MediaPermissionHelper.requiredPermissions())
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -80,7 +99,7 @@ class CleanCenterFragment : Fragment() {
             if (MediaPermissionHelper.hasPermissions(requireContext())) {
                 viewModel.loadSummary()
             } else {
-                permissionLauncher.launch(MediaPermissionHelper.requiredPermissions())
+                requestStoragePermission()
             }
         }
 
@@ -173,7 +192,7 @@ class CleanCenterFragment : Fragment() {
             }
             pendingNavigation = PendingNavigation.NONE
         } else {
-            permissionLauncher.launch(MediaPermissionHelper.requiredPermissions())
+            requestStoragePermission()
         }
     }
 

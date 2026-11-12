@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Ana sayfa</string>
+    <string name="nav_swipe">Kaydır</string>
+    <string name="nav_compress">Sıkıştır</string>
+    <string name="nav_tools">Araçlar</string>
+    <string name="nav_clean">Temiz</string>
+    <string name="nav_privacy">Gizlilik</string>
+    <string name="nav_profile">Profil</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Fotoğraflarınızı, videolarınızı ve kişilerinizi yerel olarak düzenleyin</string>
+    <string name="home_badge_text">Yapay Zeka Temizleme</string>
+    <string name="home_quick_summary_title">Bugünün Temizleme İpuçları</string>
+    <string name="home_quick_summary_body">En hızlı şekilde yer açmak için ekran görüntüleri ve büyük videolarla başlayın.</string>
+    <string name="home_scan_insight_title">Akıllı Tarama Durumu</string>
+    <string name="home_ready_title">4 Güçlü Temizleme Aracı</string>
+    <string name="home_ready_body">Fotoğrafları, ekran görüntülerini, videoları ve kişileri tek bir yerden yönetin.</string>
+    <string name="storage_overview_title">Depolamaya Genel Bakış</string>
+    <string name="storage_overview_summary">0,0 GB\'a kadar serbest bırakılabilir</string>
+    <string name="storage_overview_detail">128 GB\'ın 85,4 GB\'ı kullanıldı</string>
+    <string name="storage_overview_summary_format">%1$s\'ye kadar serbest bırakılabilir</string>
+    <string name="storage_overview_detail_format">%2$s\'nin %1$s\'si kullanıldı</string>
+    <string name="storage_overview_summary_done">1,8 GB\'a kadar serbest bırakılabilir</string>
+    <string name="storage_overview_detail_done">128 GB\'ın 85,4 GB\'ı kullanıldı. Medya kitaplığınızla başlayın.</string>
+    <string name="scan_button_idle">Taramayı Başlat</string>
+    <string name="scan_button_running">Taranıyor...</string>
+    <string name="scan_status_title">Tarama Durumu</string>
+    <string name="scan_status_idle">Taramaya hazır</string>
+    <string name="scan_status_running">Medya dosyalarını analiz etme</string>
+    <string name="scan_status_done">Tarama tamamlandı. Temizleme önerileri hazır.</string>
+    <string name="scan_status_error">Tarama başarısız oldu. Daha sonra tekrar deneyin.</string>
+    <string name="scan_status_detail_idle">Önce ekran görüntüleri, büyük videolar ve benzer fotoğraflar kontrol edilecektir.</string>
+    <string name="scan_status_detail_running">Yerel olarak tarama. Fotoğraflarınız ve videolarınız yüklenmeyecektir.</string>
+    <string name="scan_status_detail_midway">Ekran görüntüleri ve büyük videolar analiz edildi. Benzer fotoğrafların düzenlenmesi.</string>
+    <string name="scan_status_detail_done">Temizlenecek 1,8 GB bulundu. Ekran görüntüleri ve büyük videolarla başlayın.</string>
+    <string name="scan_status_detail_done_format">Temizlemek için %1$s bulundu. Ekran görüntüleri ve büyük videolarla başlayın.</string>
+    <string name="feature_section_title">Temel Temizleme Araçları</string>
+    <string name="feature_section_subtitle">İlk sürüm en yaygın 4 temizleme görevine odaklanıyor</string>
+    <string name="feature_similar_title">Benzer Fotoğraflar</string>
+    <string name="feature_similar_desc">Benzer fotoğrafları temizle</string>
+    <string name="feature_screenshots_title">Ekran Görüntüsü Temizleme</string>
+    <string name="feature_screenshots_desc">Kullanılmayan ekran görüntülerini temizleyin</string>
+    <string name="feature_videos_title">Büyük Videolar</string>
+    <string name="feature_videos_desc">Büyük videoları temizleyin</string>
+    <string name="feature_contacts_title">İletişim Temizleme</string>
+    <string name="feature_contacts_desc">Yinelenen kişileri temizle</string>
+    <string name="feature_similar_space_format">%1$d grupları</string>
+    <string name="count_placeholder">Taranmadı</string>
+    <string name="count_similar_done">128 fotoğraf</string>
+    <string name="count_screenshots_done">364 fotoğraf</string>
+    <string name="count_videos_done">12 video</string>
+    <string name="count_contacts_done">9 grup</string>
+    <string name="recent_section_title">Sürüm Notları</string>
+    <string name="recent_section_body">Bu sürüm, XML ana ekran yapısını, medya izin isteklerini, yer tutucu tarama akışını ve sonuç özetini içerir. Daha sonra MediaStore, Kişiler ve gerçek temizleme özellikleri eklenebilir.</string>
+    <string name="permission_denied_message">Taramayı başlatmak için medya erişimi gereklidir.</string>
+    <string name="mock_feature_message">Bundan sonra bu özelliğe gerçek tarama sonuçları eklenecektir.</string>
+    <string name="scan_complete_message">İlk tarama akışı hazır. Daha sonra gerçek veriler eklenebilir.</string>
+    <string name="scan_failed_message">Tarama başarısız oldu: %1$s</string>
+    <string name="unknown_error">Bilinmeyen hata</string>
+    <string name="storage_progress_label">Depolama kullanımı ilerlemesi</string>
+    <string name="phase_two_label">Aşama 2</string>
+    <string name="phase_three_label">Aşama 3</string>
+    <string name="images_total_title">Toplam Görseller</string>
+    <string name="videos_total_title">Toplam Videolar</string>
+    <string name="clean_page_title">Temizleme Merkezi</string>
+    <string name="clean_page_subtitle">En fazla alanı boşaltan içerikle başlayın.</string>
+    <string name="clean_page_badge">Akıllı Temizleyici</string>
+    <string name="clean_overview_title">Tarama Sonuçları</string>
+    <string name="clean_overview_body">Önce en büyük yer tasarrufu sağlayanları, ardından benzer fotoğrafları ve kişileri temizleyin.</string>
+    <string name="privacy_page_title">Özel Kasa</string>
+    <string name="privacy_page_subtitle">Yerel PIN, özel medyanızı ve gelecekteki içe aktarmalarınızı korur.</string>
+    <string name="profile_page_title">Profil</string>
+    <string name="profile_page_subtitle">Üyeliğinizi, ayarlarınızı ve satın alma işlemlerinizi buradan yönetin.</string>
+    <string name="profile_page_badge">prim</string>
+    <string name="profile_hero_title">Eksiksiz temizleme deneyimi için Pro\'ya yükseltin</string>
+    <string name="profile_hero_body">Pro sınırsız toplu işlem, Özel Kasa ve daha iyi benzer fotoğraf algılama içerir.</string>
+    <string name="profile_plan_status_free">Mevcut plan: Ücretsiz</string>
+    <string name="profile_plan_status_pro">Pro denemesi etkin</string>
+    <string name="profile_most_popular">En Popüler</string>
+    <string name="profile_cta_title">Neden Yükseltme?</string>
+    <string name="profile_cta_body">Fotoğrafları, videoları ve kişileri sık sık temizliyorsanız Pro, tekrarlanan adımları büyük ölçüde azaltır.</string>
+    <string name="placeholder_card_title">Mevcut Aşama</string>
+    <string name="placeholder_clean_body">Aşama 1, taramanın temelini, izinleri ve ana çerçeveyi kapsar. Gerçek temizleme sonuçları bir sonraki aşamada burada görünecektir.</string>
+    <string name="placeholder_privacy_body">Özel Kasa henüz kullanılamıyor. Bu aşama yalnızca gezinmeyi ve düzenini içerir.</string>
+    <string name="placeholder_profile_body">Profil özellikleri henüz bağlanmadı. Üyelik, ayarlar ve satın alma işlemleri daha sonra eklenecektir.</string>
+    <string name="overview_reclaim_title">Tahmini Yer Tasarrufu</string>
+    <string name="overview_media_count_title">Toplam Medya</string>
+    <string name="home_note_title">Aşama 1 Tamamlandı</string>
+    <string name="home_note_body">1. Altta gezinme ve çok sayfalı çerçeve\n2. Android 13+ medya izin istekleri\n3. Ekran görüntüleri ve büyük videolar için MediaStore tabanlı tarama temeli\n4. Ana ekran sonuç bağlama ve durum yönetimi</string>
+    <string name="feature_coming_soon_format">%1$s ayrıntılar sayfası ilgili Aşamaya eklenecektir.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d öğeler</string>
+    <string name="count_contact_format">%1$d kişiler</string>
+    <string name="feature_ready_label">Mevcut</string>
+    <string name="permission_action_label">İzin Ver ve Tara</string>
+    <string name="refresh_action_label">Sonuçları Yenile</string>
+    <string name="clean_reclaim_summary_format">%1$s temizlemeye hazır</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d grupları</string>
+    <string name="count_contact_group_format">%1$d grupları</string>
+    <string name="clean_permission_title">Medya Erişimi Gerekiyor</string>
+    <string name="clean_permission_body">Ekran görüntülerinizi ve videolarınızı okumak için erişime izin verin. Tüm veriler yerel olarak analiz edilir.</string>
+    <string name="clean_loaded_hint">Ayrıntıları görüntülemek için bir kategori kartına dokunun.</string>
+    <string name="clean_loading_hint">Ekran görüntüleri ve videolar yükleniyor. Lütfen bekleyin.</string>
+    <string name="clean_empty_hint">Henüz tarama sonucu yok. Erişime izin verin ve önce bir tarama çalıştırın.</string>
+    <string name="detail_back">Geri</string>
+    <string name="screenshot_detail_title">Ekran Görüntüsü Temizleme</string>
+    <string name="screenshot_detail_subtitle">Gerçek küçük resimlerle ekran görüntülerine göz atın. Önizlemek için bir fotoğrafa dokunun veya silinecek öğeleri seçin.</string>
+    <string name="large_video_detail_title">Büyük Videolar</string>
+    <string name="large_video_detail_subtitle">Kapaklı büyük videolara göz atın. Oynatmak için bir kapağa dokunun veya silinecek öğeleri seçin. 100MB / 500MB arasında geçiş yapmak için filtre satırına dokunun.</string>
+    <string name="empty_screenshot_title">Ekran Görüntüsü Bulunamadı</string>
+    <string name="empty_screenshot_body">Medya kitaplığınızda ekran görüntüsü bulunamadı veya erişim izni verilmedi.</string>
+    <string name="empty_large_video_title">Büyük Video Bulunamadı</string>
+    <string name="empty_large_video_body">Hiçbir video 100 MB\'ı aşamaz. Eşiği daha sonra ayarlayabilirsiniz.</string>
+    <string name="media_item_bucket_format">Albüm: %1$s</string>
+    <string name="media_item_date_format">Tarih: %1$s</string>
+    <string name="media_item_duration_format">Süre: %1$s</string>
+    <string name="video_threshold_note">Mevcut büyük video eşiği: 100 MB</string>
+    <string name="select_all_action">Tümünü Seç</string>
+    <string name="clear_selected_action">Tümünün Seçimini Kaldır</string>
+    <string name="delete_selected_action">Seçileni Sil</string>
+    <string name="selected_count_format">%1$d seçildi</string>
+    <string name="delete_dialog_title">Ekran Görüntüleri Silinsin mi?</string>
+    <string name="delete_dialog_message_format">Seçilen %1$d ekran görüntüleri silinecek. Sistem sizden tekrar onaylamanızı isteyecektir.</string>
+    <string name="delete_dialog_confirm">Devam et</string>
+    <string name="delete_dialog_cancel">İptal</string>
+    <string name="delete_complete_message_format">%1$d ekran görüntüleri işlendi. Liste yenilendi.</string>
+    <string name="delete_items_complete_format">İşlenen %1$d öğeleri. Liste yenilendi.</string>
+    <string name="delete_failed_message">Silinemedi. Tekrar deneyin.</string>
+    <string name="delete_video_dialog_title">Videolar Silinsin mi?</string>
+    <string name="delete_video_dialog_message_format">Seçilen %1$d videolar silinecek. Sistem sizden tekrar onaylamanızı isteyecektir.</string>
+    <string name="delete_similar_dialog_title">Benzer Fotoğraflar Silinsin mi?</string>
+    <string name="delete_similar_dialog_message_format">Seçilen %1$d fotoğrafları silinecek. Önerilen saklama öğeleri dahil değildir.</string>
+    <string name="video_selection_filter_format">%1$d seçildi · Filtre: %2$s (değiştirmek için dokunun)</string>
+    <string name="video_player_unavailable">Bu cihazda video oynatıcı yok.</string>
+    <string name="media_preview_title">Önizleme</string>
+    <string name="similar_select_candidates_action">Adayları Seçin</string>
+    <string name="similar_deselect_candidates_action">Tümünün Seçimini Kaldır</string>
+    <string name="similar_select_all_candidates">Tüm adayları seç</string>
+    <string name="similar_delete_count_action">Seçileni Sil (%1$d)</string>
+    <string name="similar_group_number_format">Grup %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Sistem kaldırıcı açılamıyor</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Tüm Sonuçlar</string>
+    <string name="similar_page_title">Benzer Fotoğraflar</string>
+    <string name="similar_page_subtitle">Küçük resimlerle benzer grupları inceleyin, adayları seçin ve kopyaları silin.</string>
+    <string name="similar_page_note">İlk sürüm hafif gruplama kurallarını kullanır. Algısal karma ve keskinlik puanlaması daha sonra eklenebilir.</string>
+    <string name="similar_page_badge">Akıllı Benzer</string>
+    <string name="similar_page_hero_hint">Fotoğrafları daha yüksek çözünürlükte, daha büyük dosyalarda ve daha yeni zaman damgalarında saklayın.</string>
+    <string name="similar_group_summary_format">Albümlerinizde %2$d aday fotoğrafları bulunan %1$d grupları bulundu.</string>
+    <string name="similar_group_empty_title">Benzer Fotoğraf Grubu Bulunamadı</string>
+    <string name="similar_group_empty_body">Aynı albümdeki hiçbir fotoğraf benzer zaman ve boyut kriterlerini karşılamadı.</string>
+    <string name="similar_group_card_subtitle_format">%1$d adayları · En fazla %2$s serbest bırakılabilir</string>
+    <string name="similar_keep_recommend_label">Saklanması Tavsiye Edilir</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Diğer Adaylar</string>
+    <string name="similar_other_items_more_format">+%1$d daha fazla fotoğraf</string>
+    <string name="contacts_page_title">İletişim Temizleme</string>
+    <string name="contacts_page_subtitle">Yinelenen ve boş kişileri bulun.</string>
+    <string name="contacts_page_badge">İletişim Düzeltme</string>
+    <string name="contacts_page_hero_hint">Aynı numaralı kişileri birleştirin, ardından boş olanları kaldırın.</string>
+    <string name="contacts_permission_title">Kişilere Erişim Gerekli</string>
+    <string name="contacts_permission_body">Kişileri yerel olarak taramak için erişime izin verin.</string>
+    <string name="contacts_scan_title">Kişileri Tara</string>
+    <string name="contacts_scan_body">Yinelenenleri ve boş kişileri bulmak için yenileyin.</string>
+    <string name="contacts_duplicate_title">Yinelenen Kişiler</string>
+    <string name="contacts_empty_title">Kişileri Boşalt</string>
+    <string name="contacts_duplicate_count_format">%1$d yinelenen gruplar</string>
+    <string name="contacts_empty_count_format">%1$d temizlenecek boş kontaklar</string>
+    <string name="contacts_load_action">Kişilere İzin Ver ve Yükle</string>
+    <string name="contacts_refresh_action">Kişileri Yenile</string>
+    <string name="contacts_empty_group_title">Yinelenen Kişi Bulunamadı</string>
+    <string name="contacts_empty_group_body">Yinelenen telefon numarasına sahip hiçbir kişi bulunamadı.</string>
+    <string name="contacts_delete_empty_action">Boş Kişileri Kaldır</string>
+    <string name="contacts_merge_action">Grubu Birleştir</string>
+    <string name="contacts_view_action">Kişiler\'de görüntüle</string>
+    <string name="contacts_group_title_format">%1$s · %2$d kişileri</string>
+    <string name="contacts_group_number_format">Birincil numara: %1$s</string>
+    <string name="contacts_group_members_format">Üyeler: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Boş Kişiler Kaldırılsın mı?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d boş kişiler veya numarası olmayan kişiler silinecektir.</string>
+    <string name="contacts_merge_complete_message">Sistemden bu kişi grubunu birleştirmesi istendi.</string>
+    <string name="contacts_cleanup_complete_message_format">%1$d boş kontaklar kaldırıldı.</string>
+    <string name="contacts_action_failed">İletişim eylemi başarısız oldu. Tekrar deneyin.</string>
+    <string name="privacy_status_title">Yerel Koruma Durumu</string>
+    <string name="privacy_page_badge">Özel Kasa</string>
+    <string name="privacy_hero_title">Özel içeriği temizlemeden ayrı tutun</string>
+    <string name="privacy_hero_body">Önce yerel PIN korumasını ayarlayın, ardından özel medya içe aktarma, kilit açma ve kurtarma işlemlerini ekleyin.</string>
+    <string name="privacy_status_enabled">4 haneli PIN seti</string>
+    <string name="privacy_status_disabled">PIN ayarlanmadı</string>
+    <string name="privacy_status_body_enabled">Daha sonra içe aktarılan özel medya, yerel PIN\'iniz tarafından korunacaktır.</string>
+    <string name="privacy_status_body_disabled">Özel medya içe aktarma ve kilit açma özelliklerini eklemeden önce 4 haneli bir PIN ayarlayın.</string>
+    <string name="privacy_set_pin_action">PIN\'i ayarla</string>
+    <string name="privacy_reset_pin_action">PIN\'i sıfırla</string>
+    <string name="privacy_pin_dialog_title">4 Haneli bir PIN belirleyin</string>
+    <string name="privacy_pin_dialog_hint">4 rakam girin</string>
+    <string name="privacy_pin_invalid">4 haneli bir PIN girin.</string>
+    <string name="privacy_pin_saved">Yerel PIN kaydedildi.</string>
+    <string name="privacy_pin_reset_confirm">Mevcut PIN silinsin mi?</string>
+    <string name="privacy_pin_reset_done">PIN sıfırlama.</string>
+    <string name="privacy_feature_lock_title">Yerel Kilit Açma</string>
+    <string name="privacy_feature_lock_body">İlk sürüm, yerel koruma için bir PIN kullanır. Biyometri sonradan eklenebilir.</string>
+    <string name="privacy_feature_vault_title">Özel Medya</string>
+    <string name="privacy_feature_vault_body">Daha sonra içe aktarılan özel fotoğraflar ve videolar ayrı olarak depolanacak ve ana albüm temizleme akışından hariç tutulacaktır.</string>
+    <string name="privacy_feature_scope_title">Mevcut Aşama</string>
+    <string name="privacy_feature_scope_body">Bu sürüm PIN durumunu ve sayfa yapısını ekler. Daha sonra özel medya içe aktarımı ve yerel şifreleme gelecek.</string>
+    <string name="profile_plan_title">Mevcut Plan</string>
+    <string name="profile_plan_free">Ücretsiz</string>
+    <string name="profile_plan_pro">Profesyonel</string>
+    <string name="profile_plan_body_free">Tarayın, sonuçları görüntüleyin ve temel temizlemeyi kullanın.</string>
+    <string name="profile_plan_body_pro">Gelişmiş temizlemenin, Özel Kasanın, sınırsız eylemlerin ve reklamsız bir deneyimin kilidini açın.</string>
+    <string name="profile_upgrade_action">Pro Deneme Sürümüne Geçin</string>
+    <string name="profile_restore_action">Ücretsiz\'e dön</string>
+    <string name="profile_upgrade_done">Pro deneme sürümüne geçildi.</string>
+    <string name="profile_restore_done">Özgür\'e döndü.</string>
+    <string name="profile_benefits_title">Profesyonel Avantajlar</string>
+    <string name="profile_benefits_body">1. Gelişmiş benzer fotoğraf algılama\n2. Sınırsız toplu temizleme\n3. Gelişmiş büyük video filtreleri\n4. Gelişmiş temas temizleme\n5. Özel Kasa\n6. Reklamsız arayüz</string>
+    <string name="detail_page_badge">Detay Görünümü</string>
+    <string name="detail_page_hint">Neyi temizleyeceğinize veya saklayacağınıza karar vermeden önce adayları inceleyin.</string>
+    <string name="premium">PREMIUM</string>
+    <string name="settings">Ayarlar</string>
+    <string name="grant_access">Erişim Ver</string>
+    <string name="storage_permission_title">Dosya Erişimi Ver</string>
+    <string name="storage_permission_detail">CleanSuper AI, yinelenenleri, bulanık fotoğrafları ve büyük dosyaları bulmak için dosyalarınıza erişim gerektirir. Her şey yerel olarak işlenir.</string>
+    <string name="storage_permission_scan_point">Depolamadaki yinelenenleri, bulanık fotoğrafları ve büyük dosyaları bulun.</string>
+    <string name="storage_permission_privacy_point">Dosyalarınız bu cihazda kalır ve asla yüklenmez.</string>
+    <string name="storage_permission_message">Yalnızca yerel tarama için; hiçbir veri yüklenmez veya üçüncü taraflarla paylaşılmaz.</string>
+    <string name="storage_permission_continue">Devam et</string>
+    <string name="storage_permission_close">Kapat</string>
+    <string name="storage_permission_example_file">Bu cihazdaki dosyalar</string>
+    <string name="storage_permission_example_size">Taramaya hazır</string>
+    <string name="storage_permission_guide_title">Tüm dosyalara erişime izin ver</string>
+    <string name="storage_permission_guide_message">Bu cihazdaki dosyaları taramak ve temizlemek için Ayarlar\'daki anahtarı açın.</string>
+    <string name="go_to_settings">Ayarlara Git</string>
+    <string name="permission_home_title">Fotoğraflarınız kilitlendi</string>
+    <string name="permission_home_body">Bu cihazda kitaplığınızı güvenli bir şekilde taramak ve temizleme hatırlatıcıları göndermek için fotoğraf, video ve bildirim erişimine izin verin.</string>
+    <string name="scan_summary_format">Taranan %1$d öğeleri · %2$s incelenebilir</string>
+    <string name="scan_running_english">Kitaplığınız taranıyor…</string>
+    <string name="scan_ready_english">Kitaplığınız hazır</string>
+    <string name="coming_soon">Yakında</string>
+    <string name="compression_failed">Bu resim sıkıştırılamadı.</string>
+    <string name="compression_saved">Sıkıştırılmış fotoğraf Pictures/CleanSuperAI\'ye kaydedildi.</string>
+    <string name="home_secure_analysis">Güvenli cihaz içi analiz</string>
+    <string name="home_cleanup_library">Kitaplığınızı inceleyin</string>
+    <string name="home_cleanup_badge">Cihazda</string>
+    <string name="home_quick_clean_action">Temizleme Merkezini Aç</string>
+    <string name="home_quick_clean_compact_action">Temizleme Merkezi</string>
+    <string name="home_reclaim_ready_format">%1$s geri kazanılabilir</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Depolama alanı işgal edildi</string>
+    <string name="home_storage_detail_format">İncelenecek %1$s · %2$d öğeleri</string>
+    <string name="home_quick_tools">Hızlı araçlar</string>
+    <string name="home_quick_tools_subtitle">En çok kullandığınız temizleme eylemleriniz ön planda gösteriliyor</string>
+    <string name="feature_swipe_title">Fotoğrafları Kaydırın</string>
+    <string name="feature_swipe_desc">Fotoğrafları tek tek inceleyin ve reddedilenleri çöp kutusuna gönderin</string>
+    <string name="home_contacts_short_desc">Kopyaları birleştir</string>
+    <string name="feature_ready_short">Hazır</string>
+    <string name="feature_review_short">İncele</string>
+    <string name="tools_section_storage">Depolama ve Medya</string>
+    <string name="tools_section_device">Cihaz Araçları</string>
+    <string name="tools_hero_badge">7 faydalı araç</string>
+    <string name="tools_hero_title">Yararlı araçlar tek bir yerde</string>
+    <string name="tools_hero_body">Basit, odaklanmış eylemlerle depolamayı ve medyayı yönetin.</string>
+    <string name="tool_file_manager_desc">Ekran görüntülerine, videolara ve daha fazlasına göz atın ve temizleyin</string>
+    <string name="tool_media_compressor_desc">Kaliteyi kaybetmeden fotoğraf ve video boyutunu küçültün</string>
+    <string name="tool_secret_space_desc">Özel fotoğrafları güvenli bir PIN\'in arkasına kilitleyin</string>
+    <string name="tool_app_manager_desc">Yüklü uygulamaları ve depolama kullanımını görüntüleyin</string>
+    <string name="tool_clean_calendar_desc">Programınızı karmaşıklaştıran eski takvim etkinliklerini kaldırın</string>
+    <string name="tool_ai_enhancer_desc">Yapay zeka ile bulanık veya düşük ışıklı fotoğrafları iyileştirin</string>
+    <string name="tool_speed_test_desc">Ağ indirme ve yükleme hızınızı kontrol edin</string>
+    <string name="tools_page_subtitle">Daha temiz bir telefon için ihtiyacınız olan her şey</string>
+    <string name="compress_page_subtitle">Anları kaybetmeden yerden tasarruf edin</string>
+    <string name="video_compressor">Video Kompresörü</string>
+    <string name="video_compress_subtitle">Cihazdaki H.264 yeniden kodlamayla video boyutunu azaltın</string>
+    <string name="video_compress_card_hint">720p · Dengeli kalite</string>
+    <string name="choose_video">Videoyu Seçin</string>
+    <string name="choose_video_hint">Sıkıştırılacak bir video seçin</string>
+    <string name="compress_photo_guide_title">Sıkıştırılacak bir fotoğraf seçin</string>
+    <string name="compress_photo_guide_body">Cihazda işlendi · saniyeler içinde küçüldü</string>
+    <string name="compress_video_guide_title">Sıkıştırılacak bir video seçin</string>
+    <string name="compress_video_guide_body">Cihazda H.264 · dengeli 720p</string>
+    <string name="compress_guide_tap">Seçmek için dokunun</string>
+    <string name="enhance_photo_guide_title">Geliştirilecek bir fotoğraf seçin</string>
+    <string name="enhance_photo_guide_body">Parlaklık · kontrast · keskinlik</string>
+    <string name="preview_original_photo_label">Önce · Orijinal fotoğraf</string>
+    <string name="preview_compressed_photo_label">Sonra · Sıkıştırılmış önizleme</string>
+    <string name="preview_original_video_label">Önce · Orijinal video</string>
+    <string name="preview_compressed_video_label">Sonra · Sıkıştırılmış önizleme</string>
+    <string name="preview_enhanced_photo_label">Sonra · Gelişmiş önizleme</string>
+    <string name="selected_video_preview">Seçilen video önizlemesi</string>
+    <string name="play_video_preview">Video önizlemesini oynat</string>
+    <string name="video_preview_title">Video önizlemesi</string>
+    <string name="video_preview_failed">Bu video oynatılamadı.</string>
+    <string name="video_compression_saved">Sıkıştırılmış video Movies/CleanSuperAI\'ye kaydedildi.</string>
+    <string name="video_compression_failed">Bu video sıkıştırılamadı.</string>
+    <string name="video_compression_preparing">Video sıkıştırması hazırlanıyor…</string>
+    <string name="video_compression_progress_format">Video sıkıştırılıyor… %1$d%%</string>
+    <string name="video_compression_finishing">Sıkıştırılmış video sonlandırılıyor…</string>
+    <string name="video_compression_timeout">Bu videonun sıkıştırılması çok uzun sürdü. Lütfen daha kısa bir klip deneyin.</string>
+    <string name="app_manager_subtitle">Önbelleği kaldırmak veya temizlemek için yüklü uygulamaları inceleyin ve sistem ayarlarını açın.</string>
+    <string name="app_manager_summary_format">%1$d kullanıcı uygulamaları bulundu · yönetmek için dokunun</string>
+    <string name="clean_calendar_subtitle">Geçmiş takvim etkinliklerini bulun ve artık ihtiyacınız olmayanları kaldırın.</string>
+    <string name="clean_calendar_delete">Seçileni Sil</string>
+    <string name="clean_calendar_empty">Geçmiş etkinlik bulunamadı</string>
+    <string name="clean_calendar_summary_format">%1$d geçmiş olaylar · %2$d seçildi</string>
+    <string name="clean_calendar_delete_confirm">%1$d seçili geçmiş etkinlikler silinsin mi?</string>
+    <string name="clean_calendar_delete_done">%1$d etkinlikleri silindi</string>
+    <string name="calendar_permission_hint">Geçmiş etkinlikleri taramak için takvim erişimine izin ver</string>
+    <string name="calendar_permission_denied">Takvim izni gerekli</string>
+    <string name="calendar_untitled">(Başlık yok)</string>
+    <string name="image_enhancer_subtitle">Bu cihazda parlaklığı, kontrastı ve keskinliği yerel olarak iyileştirin.</string>
+    <string name="image_enhancer_hint">Geliştirilecek bir fotoğraf seçin</string>
+    <string name="image_enhancer_ready">Geliştirmeye hazır</string>
+    <string name="image_enhancer_action">Fotoğrafı Geliştir</string>
+    <string name="image_enhancer_working">Geliştiriliyor…</string>
+    <string name="image_enhancer_done">Gelişmiş önizlemeye hazır · beğendiğiniz zaman kaydedin</string>
+    <string name="image_enhancer_save">Geliştirilmiş Fotoğrafı Kaydet</string>
+    <string name="image_enhancer_saved">Geliştirilmiş fotoğraf Pictures/CleanSuperAI\'ye kaydedildi.</string>
+    <string name="image_enhancer_failed">Bu fotoğraf geliştirilemedi.</string>
+    <string name="speed_test_subtitle">Cloudflare sunucularını kullanarak indirme, yükleme ve gecikmeyi ölçün.</string>
+    <string name="speed_test_hint">Kısa bir ağ hızı kontrolü çalıştırmak için başlat\'a dokunun</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mb/sn indirme</string>
+    <string name="speed_test_start">Hız Testini Başlat</string>
+    <string name="speed_test_running">Bağlantınız test ediliyor…</string>
+    <string name="speed_test_done">Test tamamlandı</string>
+    <string name="speed_test_failed">Hız testi başarısız oldu. Ağınızı kontrol edip tekrar deneyin.</string>
+    <string name="speed_test_download_idle">İndir · bekleniyor</string>
+    <string name="speed_test_upload_idle">Yükleme · bekleniyor</string>
+    <string name="speed_test_latency_idle">Gecikme · bekleme</string>
+    <string name="speed_test_download_result">İndir · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Yükleme · %1$.1f Mb/sn</string>
+    <string name="speed_test_latency_result">Gecikme · %1$d ms</string>
+    <string name="photo_compressor">Fotoğraf Kompresörü</string>
+    <string name="compress_quality_hint">Dengeli JPEG · 70% quality</string>
+    <string name="choose_photo_hint">Sıkıştırılacak bir fotoğraf seçin</string>
+    <string name="choose_photo">Fotoğraf Seç</string>
+    <string name="compress_preview">Sıkıştırılmış Önizleme</string>
+    <string name="compress_and_save">Sıkıştır ve Kaydet</string>
+    <string name="save_compressed_photo">Sıkıştırılmış Fotoğrafı Kaydet</string>
+    <string name="save_compressed_video">Sıkıştırılmış Videoyu Kaydet</string>
+    <string name="share">Paylaş</string>
+    <string name="keep">Tut</string>
+    <string name="move_to_review_bin">Çöp Kutusuna Taşı</string>
+    <string name="clear_review_bin">İnceleme Kutusunu Temizle</string>
+    <string name="swipe_page_subtitle">Aya göre inceleyin · saklamak için sağa, çöp kutusuna gitmek için sola kaydırın</string>
+    <string name="swipe_trash_open">Açık</string>
+    <string name="swipe_trash_label_singular">Çöp kutusundaki fotoğraf</string>
+    <string name="swipe_trash_label_plural">Çöp kutusundaki fotoğraflar</string>
+    <string name="swipe_empty_title">Tüm fotoğraflar incelendi</string>
+    <string name="swipe_empty_body">Başka bir ay seçmek için geri dönün veya fotoğrafları geri yüklemek için çöp kutusunu açın.</string>
+    <string name="category_person_format">Kişi · %1$d</string>
+    <string name="category_animal_format">Hayvan · %1$d</string>
+    <string name="category_vehicle_format">Araç · %1$d</string>
+    <string name="no_photos_available">Fotoğraf yok</string>
+    <string name="splash_tagline">Akıllı temizleme. Tasarım gereği özel.</string>
+    <string name="selected_photos_deleted">Seçilen fotoğraflar silindi</string>
+    <string name="added_to_review_bin">İnceleme Kutusuna eklendi</string>
+    <string name="photos_deleted_format">%1$d fotoğrafları silindi</string>
+    <string name="delete_photos_failed">Seçilen fotoğraflar silinemedi</string>
+    <string name="share_photo">Fotoğrafı paylaş</string>
+    <string name="trash_bin_title_format">Çöp Kutusu (%1$s)</string>
+    <string name="trash_bin_title_empty">Çöp Kutusu</string>
+    <string name="trash_restore_hint">Fotoğrafları geri yüklemek için dokunun</string>
+    <string name="trash_empty_action">Çöp kutusundakilerin hepsini sil</string>
+    <string name="trash_restored">Fotoğraf geri yüklendi</string>
+    <string name="trash_bin_empty">Çöp kutusu boş</string>
+    <string name="feature_smart_groups">Akıllı gruplar</string>
+    <string name="feature_duplicate_photos">Yinelenen Fotoğraflar</string>
+    <string name="feature_duplicate_videos">Yinelenen Videolar</string>
+    <string name="feature_all_videos">Tüm Videolar</string>
+    <string name="feature_screenshots_short">Ekran görüntüleri</string>
+    <string name="scan_unavailable">Tarama kullanılamıyor</string>
+    <string name="please_try_again">Lütfen tekrar deneyin</string>
+    <string name="tool_file_manager">Dosya Yöneticisi</string>
+    <string name="tool_media_compressor">Medya Kompresörü</string>
+    <string name="tool_app_manager">Uygulama Yöneticisi</string>
+    <string name="tool_clean_calendar">Takvimi Temizle</string>
+    <string name="tool_ai_enhancer">Yapay Zeka Görüntü İyileştirici</string>
+    <string name="tool_secret_space">Gizli Uzay</string>
+    <string name="tool_speed_test">Hız Testi</string>
+    <string name="compressing">Sıkıştırılıyor…</string>
+    <string name="original_size_format">Orijinal · %1$s</string>
+    <string name="compressed_result_format">Sıkıştırılmış · %1$s\nKaydedildi · %2$s</string>
+    <string name="swipe_grant_access_hint">Fotoğraflara göz atmak için Ana Sayfa\'dan medya erişimine izin verin</string>
+    <string name="media_item_placeholder">Medya</string>
+    <string name="selected_image_preview">Seçilen görselin önizlemesi</string>
+    <string name="current_photo">Mevcut fotoğraf</string>
+    <string name="month_cover">Ay kapağı</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Kişi · 0</string>
+    <string name="category_animal_zero">Hayvan · 0</string>
+    <string name="category_vehicle_zero">Araç · 0</string>
+    <string name="duplicate_photos_page_title">Yinelenen Fotoğraflar</string>
+    <string name="duplicate_photos_page_subtitle">Dosya boyutuna ve boyutlarına göre tam kopyaları bulun ve bir kopyasını saklayın.</string>
+    <string name="duplicate_photos_page_badge">Tam Eşleşme</string>
+    <string name="duplicate_photos_summary_format">%2$d yinelenen fotoğraflara sahip %1$d grupları bulundu.</string>
+    <string name="duplicate_photos_empty_title">Yinelenen Fotoğraf Bulunamadı</string>
+    <string name="duplicate_photos_empty_body">Aynı boyut ve boyutlarda fotoğraf bulunamadı.</string>
+    <string name="duplicate_videos_page_title">Yinelenen Videolar</string>
+    <string name="duplicate_videos_page_subtitle">Boyutuna ve süresine göre tam olarak yinelenen videoları bulun ve bir kopyasını saklayın.</string>
+    <string name="duplicate_videos_page_badge">Tam Eşleşme</string>
+    <string name="duplicate_videos_summary_format">%2$d yinelenen videolara sahip %1$d grupları bulundu.</string>
+    <string name="duplicate_videos_empty_title">Yinelenen Video Bulunamadı</string>
+    <string name="duplicate_videos_empty_body">Aynı boyut ve süreye sahip video bulunamadı.</string>
+    <string name="settings_page_title">Ayarlar</string>
+    <string name="settings_page_subtitle">Dil, uygulama bilgileri, gizlilik ve önbellek.</string>
+    <string name="settings_language_title">Dil</string>
+    <string name="settings_language_subtitle">Tercih ettiğiniz uygulama dilini seçin</string>
+    <string name="settings_about_title">Hakkında</string>
+    <string name="settings_about_subtitle">Uygulama adı ve sürümü</string>
+    <string name="settings_about_message_format">Temiz Süper AI\nVersiyon %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Gizlilik Politikası</string>
+    <string name="settings_privacy_policy_subtitle">Verilerinizi nasıl ele alıyoruz?</string>
+    <string name="settings_privacy_policy_body">Tüm medya tarama ve temizleme işlemleri cihazınızda yerel olarak gerçekleştirilir. Fotoğraflarınızı, videolarınızı veya kişilerinizi sunucularımıza yüklemiyoruz. İsteğe bağlı analizler (daha sonra etkinleştirilirse) mağaza politikalarına uygun olacaktır. Medya erişimini istediğiniz zaman sistem ayarlarından iptal edebilirsiniz.</string>
+    <string name="settings_clear_cache_title">Önbelleği Temizle</string>
+    <string name="settings_clear_cache_subtitle">Ücretsiz geçici uygulama depolama alanı</string>
+    <string name="settings_clear_cache_confirm">Geçici önbellek dosyaları temizlensin mi? Fotoğraflarınız ve ayarlarınız silinmeyecek.</string>
+    <string name="settings_clear_cache_done_format">%1$s önbelleği temizlendi.</string>
+    <string name="language_page_title">Uygulama Dili</string>
+    <string name="language_page_subtitle">CleanSuper AI varsayılan olarak cihazınızın dilini takip eder.</string>
+    <string name="language_follow_system_title">Sistem dilini takip edin</string>
+    <string name="language_follow_system_subtitle_format">Geçerli cihaz dili: %1$s</string>
+    <string name="month_photo_count_format">%1$d fotoğraflar</string>
+    <string name="review_bin_pending_format">İnceleme Kutusu\'nda bekleyen %1$d fotoğrafları</string>
+    <string name="media_bucket_video">video</string>
+    <string name="settings_terms_title">Kullanım şartları</string>
+    <string name="settings_terms_subtitle">Şartları okuyun</string>
+    <string name="settings_widget_title">Ana ekran widget\'ı</string>
+    <string name="settings_widget_subtitle">Temizleme kısayolu ekleme</string>
+    <string name="tool_network_traffic">Ağ trafiği</string>
+    <string name="tool_network_traffic_desc">Uygulamaya göre kullanım</string>
+    <string name="tool_battery_info">Pil bilgisi</string>
+    <string name="tool_battery_info_desc">Şarj ve sağlık</string>
+    <string name="tool_device_info">Cihaz bilgisi</string>
+    <string name="tool_device_info_desc">Sistem ve Wi-Fi</string>
+    <string name="tool_private_vault">Özel kasa</string>
+    <string name="tool_private_vault_desc">Fotoğrafları ve videoları gizle</string>
+    <string name="home_more_tools">Daha fazla araç</string>
+    <string name="home_battery_info">Pil</string>
+    <string name="home_device_info">Cihaz</string>
+    <string name="home_large_files">Büyük dosyalar</string>
+    <string name="home_cache_cleanup">Önbellek temizleme</string>
+    <string name="home_network_traffic">Veri kullanımı</string>
+    <string name="home_private_vault">Özel kasa</string>
+    <string name="home_picture_cleanup">Resimler</string>
+    <string name="home_video_cleanup">Videolar</string>
+    <string name="home_audio_cleanup">Ses</string>
+    <string name="media_loading">Medya yükleniyor…</string>
+    <string name="media_loading_hint">Dosyalarınızı organize etmek. Lütfen bekleyin.</string>
+    <string name="media_count_summary">%1$d öğeleri · %2$s · %3$d seçildi</string>
+    <string name="media_empty_title">Medya bulunamadı</string>
+    <string name="media_empty_body">Bu kategoride ürün yok.</string>
+    <string name="media_error_title">Medya yüklenemedi</string>
+    <string name="media_access_title">Depolama erişimi gerekiyor</string>
+    <string name="media_access_body">Bu ortama göz atmak için Ayarlar\'da tüm dosyalara erişime izin verin.</string>
+    <string name="media_delete_title">Seçilen öğeler silinsin mi?</string>
+    <string name="media_delete_message">%1$d seçilen öğeler silinsin mi? Android sizden onaylamanızı isteyebilir.</string>
+    <string name="media_recent_group">1 ay içinde</string>
+    <string name="media_older_group">1 aydan eski</string>
+    <string name="media_group_summary">%1$d öğeleri · %2$s</string>
+    <string name="audio_player_unavailable">Bu cihazda ses oynatıcı yok.</string>
+    <string name="vault_items_summary">%1$d özel öğeler</string>
+    <string name="vault_empty_gallery">Özel kasanız boş. Fotoğrafları veya videoları burada görmek için içe aktarın.</string>
+    <string name="cache_group_app">Uygulama önbelleği</string>
+    <string name="cache_group_apk">Eski APK dosyaları</string>
+    <string name="cache_group_residual">Artık dosyalar</string>
+    <string name="cache_summary">%1$d dosyaları · %2$s</string>
+    <string name="cleanup_report_title">Temizleme tamamlandı</string>
+    <string name="cleanup_report_freed">Alan boşaltıldı</string>
+    <string name="cleanup_report_count">%2$d öğesinden %1$d kaldırıldı</string>
+    <string name="cleanup_report_other">Diğer dosyaları temizle</string>
+    <string name="cleanup_report_done">Bitti</string>
+    <string name="exit_retain_title">CleanSuper AI\'dan çıkılsın mı?</string>
+    <string name="exit_retain_message">Daha hızlı temizlik için bir ev widget\'ı ekleyin</string>
+    <string name="exit_retain_confirm_exit">Çıkış</string>
+    <string name="exit_retain_add">Ekle</string>
+    <string name="exit_retain_feature_cache">Önbellek</string>
+    <string name="exit_retain_feature_large">Büyük Dosyalar</string>
+    <string name="widget_status_storage">Boş alan</string>
+    <string name="notif_screenshot">Ekran görüntüleri</string>
+    <string name="exit_retain_message_existing">Ana sayfa widget\'ınız hızlı temizliğe hazır</string>
+    <string name="notif_cache">Önbellek</string>
+    <string name="notif_channel_name">Hızlı Temizleme Araç Çubuğu</string>
+    <string name="notif_channel_desc">Hızlı temizleme eylemleri için kalıcı araç çubuğu</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Hatırlatıcıları temizle</string>
+    <string name="notif_event_channel_desc">Ekran görüntüleri, yüklemeler ve kaldırma işlemlerinin ardından yerel hatırlatıcılar</string>
+    <string name="notif_event_summary_channel_name">Temiz hatırlatma özeti</string>
+    <string name="notif_event_screenshot_title">Başka bir ekran görüntüsü? 1 Ekran görüntülerini temizlemenin zamanı geldi</string>
+    <string name="notif_event_install_title">Yeni uygulama ve önbellek de taşındı. temizlemek</string>
+    <string name="notif_event_uninstall_title">Başarıyla kaldırıldı! dosya kalıntılarını temizlemek için</string>
+    <string name="notif_clean_reminder_title">Birikmiş çok fazla çöp var. Hepsini bir kerede temizleyin.</string>
+    <string name="notif_event_battery_below_50_title">Pil yarıdan fazlası dolu. Şimdilik kendine iyi bak, sen eve dönene kadar sürecek.</string>
+    <string name="notif_event_battery_below_20_title">Düşük pil. Elektriğinizi kimin çaldığını bilmek ister misiniz? Sıralamaları görmek için tıklayın.</string>
+    <string name="notif_event_charging_title">Fişe takıldı. Bu gecenin görevi: yeniden doldurmak, sonra temizlemek.</string>
+    <string name="notif_event_charging_full_title">Tamamen şarj edilmiş ve kullanıma hazır. Son bir kontrol: Çöp temizlendi mi?</string>
+    <string name="notif_event_charging_to_80_title">Son sprint %80\'dir. Tam gücü karşılamak için çöpü boşaltın ve hafifçe toplayın.</string>
+    <string name="notif_event_charging_disconnect_title">Fişi çekin ve yola çıkın. Çöpleri temizlemek ve en iyi durumda kalmak için zaman ayırmayı unutmayın.</string>
+    <string name="notif_event_app_update_title">Yeni bir sürüm geldi. Eski versiyondan kalan her şey tamamen temizlendi.</string>
+    <string name="notif_event_network_change_title">İnternet değişiyor! Mevcut ağ durumunu görüntüle 1</string>
+    <string name="notif_event_screen_lock_title">Telefonunuzu bırakın ve bize bırakın. Dinlenme ekranı süresi = emzirme süresi.</string>
+    <string name="notif_event_screen_on_after_lock_title">Tekrar buluştuk, sıkıştın mı? Çoğu çöp, temizlemeyi deneyin.</string>
+    <string name="notif_event_storage_free_drop_title">Depolama alanı değişti. Bakalım neler yer kaplıyor?</string>
+    <string name="notif_event_scheduled_push_1_title">Uzun süredir biriken çöpler bir anda temizleniyor.</string>
+    <string name="notif_event_scheduled_push_2_title">Pil eskisi kadar dayanıklı değil mi? Buna bir bak.</string>
+    <string name="notif_event_app_inactive_title">Uzun zamandır görüşemiyoruz, bekliyorduk. Geri gelin ve çöpleri temizleyin.</string>
+    <string name="notif_event_scheduled_push_3_title">Çalma listelerinize tek dokunuşla widget\'ı kurun</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Çalma listelerinize tek dokunuşla widget\'ı kurun</item>
+        <item>Bir widget ile her şeyi kolaylaştırın; müzik kısayolu ekleyin</item>
+        <item>Kilidi açmadan hızlı oynayın; ana ekran widget\'ını etkinleştirin</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Bir şeyi unuttun</string>
+    <string name="notif_event_app_background_content">Gelin temizliği bitirin, böylece daha düzgün çalışır.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Bir şeyi unuttun</item>
+        <item>Bir adım kaldı</item>
+        <item>İyi haber</item>
+        <item>Çok hızlı gittin</item>
+        <item>Gece boyunca çöp bırakmayın</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Gelin temizliği bitirin, böylece daha düzgün çalışır.</item>
+        <item>Temizliği bitirmek ve daha fazla yer açmak için bir kez daha dokunun.</item>
+        <item>Boşaltılabilir alan algılandı; gelin tek dokunuşla temizleme talebinde bulunun.</item>
+        <item>Telefonunuz daha da hızlı olabilir; gelin optimizasyonu görün.</item>
+        <item>Gelin temizliği bitirin, böylece daha düzgün çalışır.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Tarama sonuçları hazır; çöpler yer kaplıyor. Şimdi temizle</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Tarama sonuçları hazır; çöpler yer kaplıyor. Şimdi temizle</item>
+        <item>Bir adım kaldı: geri gelin ve anında yer açın.</item>
+        <item>Taramadan sonra temizlemeyi mi unuttunuz? Telefonunuzu hafifletmek için 10 saniye.</item>
+        <item>Önemsiz dosyalar hâlâ telefonunuzda; sonuçlar kaydedildi. Tek dokunuşla temizlik için geri gelin.</item>
+        <item>Son taramada temizlenmesi gereken birden fazla öğe bulundu. Gelin bitirin.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Temizlik henüz tamamlanmadı; gelin son adımı tamamlayın.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Temizlik henüz tamamlanmadı; gelin son adımı tamamlayın.</item>
+        <item>Temizlik kesintiye uğradı: yarı yolda. Daha hafif bir telefon için bitirin.</item>
+        <item>Temizlik neredeyse bitti; çöpleri arkanızda bırakmayın.</item>
+        <item>Temizliğin ortasında kaldınız; bitirin ve farkı hissedin.</item>
+        <item>Kesintiye uğrayan temizlik her zaman devam edebilir. Gelin bitirin.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Fotoğraf silindi — güvenli bir şekilde geri dönüşüm kutusuna taşındı.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Fotoğraf silindi — güvenli bir şekilde geri dönüşüm kutusuna taşındı.</item>
+        <item>Az önce 1 fotoğrafı sildim — ne kadar yer açtığınızı gördünüz mü?</item>
+        <item>Fotoğraf silindi — şimdi yer açmak için kalıcı olarak silin.</item>
+        <item>Fotoğraf güvenle silindi — depolama durumu güncellendi.</item>
+        <item>Fotoğraf silindi — benzer ekran görüntülerini de temizleyebilirsiniz.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Video silindi — geniş alan boşaltılıyor.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Video silindi — geniş alan boşaltılıyor.</item>
+        <item>Büyük video kaldırıldı; depolama baskısı hemen azaldı.</item>
+        <item>Video silindi — mevcut depolama durumunuzu kontrol edin.</item>
+        <item>Silme işlemi tamamlandı — alanı tamamen boşaltmak için geri dönüşüm kutusunu boşaltın.</item>
+        <item>Video silindi — Temizlenecek daha fazla unutulmuş büyük video olabilir.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Ses silindi — küçük dosyalar birikiyor. Devam etmek.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Ses silindi — küçük dosyalar birikiyor. Devam etmek.</item>
+        <item>Bu ses gitti; daha fazla benzer kullanılmayan dosyalar da temizlenebilir.</item>
+        <item>Ses silindi — depolama ayrıntıları güncellendi. Gelin bir göz atın.</item>
+        <item>1 ses dosyası silindi — depolama listesi yenilendi.</item>
+        <item>Ses silindi — yer açmayı tamamlamak için geri dönüşüm kutusunu boşaltın.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Dosya silindi; depolama alanında biraz daha yer açıldı.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Dosya silindi; depolama alanında biraz daha yer açıldı.</item>
+        <item>Dosya silindi — Dağınıklık artık telefonunuzu rahatsız etmeyecek.</item>
+        <item>Dosya silindi — başka neleri temizleyebileceğinizi görün.</item>
+        <item>Dosya silindi — değişiklikler senkronize edildi, depolama durumu güncellendi.</item>
+        <item>Bu dosya temizlendi; şimdi yer kazanılıyor.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">İndirilen resim — açın ve bir göz atın.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>İndirilen resim — açın ve bir göz atın.</item>
+        <item>Resim indirildi — albümünüzdeki yinelenen fotoğrafları bu sırada temizleyin</item>
+        <item>İndirme tamamlandı — resim güvenli bir şekilde kaydedildi. Gelin benzer fotoğrafları kontrol edin</item>
+    </string-array>
+    <string name="notif_event_video_download_title">İndirilen video — küçük değil. Eski videoların ne kadar yer açabileceğini görün</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>İndirilen video — küçük değil. Eski videoların ne kadar yer açabileceğini görün</item>
+        <item>Yeni video kaydedildi — silinecek ve yer açacak büyük videolar bulun. Bana dokun</item>
+        <item>Videolar yer kaplar; telefonunuzu hafifletecek temizlenebilir öğeler bulduk. Buraya dokunun</item>
+        <item>İndirme işlemi tamamlandı! Birkaç eski videoyu temizlediğinizde alan geri gelir. Bana dokun</item>
+        <item>Yeni video sıralandı; bulunması veya temizlenmesi kolay. Görmek için dokunun</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">İndirilen ses — tek dokunuşla müzik kitaplığınızı düzenleyin. Bana dokun</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>İndirilen ses — tek dokunuşla müzik kitaplığınızı düzenleyin. Bana dokun</item>
+        <item>Yeni ses sıralandı — buradayken eski sesi temizleyin. Bana dokun</item>
+        <item>Müzik kütüphanesi doluyor mu? Temizlenebilir sesi kontrol edin. Buraya dokunun</item>
+        <item>İndirilen ses — tek dokunuşla tekilleştirme. Düzenlemek için bana dokunun</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Yeni dosya kaydedildi — eski dosyaları temizleyin ve boş alan açın. Buraya dokunun</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Yeni dosya kaydedildi — eski dosyaları temizleyin ve boş alan açın. Buraya dokunun</item>
+        <item>İndirme işlemi tamamlandı — hangi eski dosyaları temizleyebileceğinizi görün. Bana dokun</item>
+        <item>Yeni dosya hazır — akıllı arşiv + temizleme. Başlamak için bana dokunun</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Geri dönüşüm kutusu boşaltıldı — depolama alanı yenilendi. En son alanınızı kontrol edin.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Geri dönüşüm kutusu boşaltıldı — depolama alanı yenilendi. En son alanınızı kontrol edin.</item>
+        <item>Geri dönüşüm kutusu boşaltıldı; artıklar derinlemesine temizlendi.</item>
+        <item>Başarıyla boşaltıldı; temizlenmesi gereken daha fazla çöp var. Gelin bir göz atın.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Şimdi temizle</string>
+    <string name="notif_event_action_open_home">Açık</string>
+    <string name="notif_event_action_manage">Uygulamaları yönet</string>
+    <string name="notif_event_action_check_battery">Pili kontrol edin</string>
+    <string name="notif_event_action_check_network">Ağı kontrol et</string>
+    <string name="notif_days_unit">gün</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Depolama alanı değişti. Bakalım neler yer kaplıyor?</item>
+        <item>Uzamsal değişiklikler algılandı. Yeni çöpler olabilir, bir bakar mısınız?</item>
+        <item>Kullanılabilir alan taşındı. Kimin yediğini biliyor musun? Göz atmak için tıklayın.</item>
+        <item>Alan dar mı? Değişikliği yeni farkettik, detaylara bakalım.</item>
+        <item>Alan değişikliği hatırlatıcısı: Çok fazla çöp biriktirebilirsiniz. Buna bir bak?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Düşük pil. Elektriğinizi kimin çaldığını bilmek ister misiniz? Sıralamaları görmek için tıklayın.</item>
+        <item>Yakında dibe vururuz. Elektrik çalan uygulamaları temizlerseniz bir süre daha hayatta kalabilirsiniz.</item>
+        <item>Pil azalıyor. Birkaç arka planı temizlemek hiçbir şey yapmamaktan daha iyidir.</item>
+        <item>Pil kırmızıdır. Hala kaydedebilirsiniz, açmak için tıklayın ve bir göz atın.</item>
+        <item>20% remains\'den az. Biraz güç tasarrufu sağlayan ilk yardım yapalım ve ortalığı temizleyelim.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Pil yarıdan fazlası dolu. Şimdilik kendine iyi bak, sen eve dönene kadar sürecek.</item>
+        <item>Pil yarıdan fazlası dolu. Artık pilin bakımını yapmak %20\'ye kadar beklemekten çok daha kolay.</item>
+        <item>Pilin yarısı bitti. Ne kadar süre dayanabilir? Göz atmak için tıklayın.</item>
+        <item>Pil yarıdan fazlası dolu. Arka uçla ilgilenmenin zamanı geldi, gerginleşmesini beklemeyin.</item>
+        <item>Pilin yarısı kaldı. Güce aç olan büyük oyuncuları temizleyin ve ikinci yarıyı daha istikrarlı hale getirin.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Son sprint %80\'dir. Tam gücü karşılamak için çöpü boşaltın ve hafifçe toplayın.</item>
+        <item>Hala 20% short tam şarj var. Ekranınıza bakmayı bırakın ve bırakın çöpleri biz halledelim.</item>
+        <item>%80: Mükemmelliğe bir adım uzakta. Bir kez tıklayın ve pil tamamen şarj olduğunda tamamen silinecektir.</item>
+        <item>80%, a İyi bir cep telefonu için iyi bir batarya. Sıcakken bir raundu mu temizliyorsunuz?</item>
+        <item>Bize verilen son 20% i. Siz aküye bakıyorsunuz, biz de çöpü temizliyoruz.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Tamamen şarj edilmiş ve kullanıma hazır. Son bir kontrol: Çöp temizlendi mi?</item>
+        <item>Şarj ettikten sonra ritüel duygusu doluyor. Bunu anmak için çöpleri temizlemeye ne dersiniz?</item>
+        <item>100%, sbugünkü tablo. Bir tur daha ve kusursuz.</item>
+        <item>%100. Fişi çıkarmadan önceki son adım: otuz saniye içinde çöpü temizleyin.</item>
+        <item>Tam güçle tamamlandı. Son bir temizlik, mükemmel.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>İnternet değişiyor! Mevcut ağ durumunu görüntüle 1</item>
+        <item>Ağ terki. Temizlerken sinyale bakmayın, sadece üzerine tıklayın ve tarayın.</item>
+        <item>Sayfayı açamıyor musunuz? Temizleme her zaman çevrimiçidir.</item>
+        <item>Çevrimdışı çalışabilirsiniz ve çöp kutunuz artık temizlenebilir.</item>
+        <item>Sinyal yoksa temizlik için veriye gerek yoktur, tıklamanız yeterlidir.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Fişe takıldı. Bu gecenin görevi: yeniden doldurmak ve temizlemek.</item>
+        <item>Sen dinleniyorsun, o yeniden şarj oluyor. Çöpleri de temizlesin.</item>
+        <item>Şarj süresi boyunca uzun süre biriken çöplerin temizlenmesi yeterlidir.</item>
+        <item>Ancak elektrikler prize takıldığında sahne arkası çalışanları özgürce çalışmaya cesaret edebiliyor.</item>
+        <item>Şarj ederken biraz ısınıyor musunuz? Arka planı temizlemek sıcaklığı düşürebilir.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Fişi çekin ve yola çıkın. Çöpleri temizlemek ve en iyi durumda kalmak için zaman ayırmayı unutmayın.</item>
+        <item>Şarj işlemi bittikten sonra toplanıp yola çıkın. Sadece temizleyin ve mükemmel olacak.</item>
+        <item>Tamamen şarj edilmiş ve kullanıma hazır. Çöpleri sorunsuz bir şekilde temizliyoruz, bugün hiçbir eksiklik yok.</item>
+        <item>Şarj işlemi biter. Bir sonraki alan temizlenecek ve her seferinde bir seviye yükseltilecektir.</item>
+        <item>Elektrik kesintilerinde durmayın. Geriye bir şey kaldı: temizlik.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Tekrar buluştuk, sıkıştın mı? Çoğu çöp, temizlemeyi deneyin.</item>
+        <item>Kilitli mi? Önce diğer uygulamaları açmayın ve otuz saniye boyunca çöp kutusunu temizlemeyin.</item>
+        <item>Kilidini açacak ilk şey biziz. Çöpü temizle ve seni daha çok sevecek.</item>
+        <item>Kilit açıldıktan otuz saniye sonra. En değerli kullanım alanı: çöplerin temizlenmesi.</item>
+        <item>Cep telefonunuz şöyle dedi: Arka uç biraz tıkalı, bana yardım edebilir misiniz?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Telefonunuzu bırakın ve bize bırakın. Dinlenme ekranı süresi = emzirme süresi.</item>
+        <item>İşin durdurulması işin durdurulması anlamına gelmez. Bir dahaki sefere ekranı açtığımda sana bir sürpriz yapacağım.</item>
+        <item>Ekranı dinlendirirken sessizce iyileşiyor. Tıklayın, gerisini biz hallederiz.</item>
+        <item>Ekranı kilitlemeden önce son bir şey: Temizle\'ye tıklayın. Yarın sabah yeni bir görünüm.</item>
+        <item>Ekran kararıyor. Şimdi düzenlemeleri yapın ve sonuçları yarın görün.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Yeni uygulama ve önbellek de taşındı. temizlemek</item>
+        <item>Yeni bir uygulama yüklemenin keyfini anlıyoruz. Sadece önbellek sessizce birikecek.</item>
+        <item>Yeni Uygulama mı? Önbellek de burada, tek tıklamayla temizleyin.</item>
+        <item>Yeni gelir, eski gider. Sık sık temizleyin ve istediğiniz gibi kurun.</item>
+        <item>Başka bir tane mi? Alan giderek daralıyor, gelin temizleyin.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Başarıyla kaldırıldı! dosya kalıntılarını temizlemek için</item>
+        <item>Kaldırıldı ancak temizlenmedi. Bitirmek için tıklayın.</item>
+        <item>Uygulama kaldırıldı ancak kuyruk hala orada. Tek tıklamayla temizleyin ve sonsuza kadar veda edin.</item>
+        <item>İkinci adımı kaçırmayın: Uygulamayı silin ve kalıntıları temizleyin. Tek tıkla ve bitti.</item>
+        <item>Kalıntı, boşalan alanın yarısını tüketecektir. Derin tarama yapın ve her şeyi temizleyin.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>Yeni bir sürüm geldi. Eski versiyondan kalan her şey tamamen temizlendi.</item>
+        <item>Sürüm için +1, önbellek için +1, derin tarama için.</item>
+        <item>Güncelleme tamamlanır ve kalan kurulum paketleri tek tıklamayla temizlenebilir.</item>
+        <item>Güncelleme bitti, toparlayalım. Burayı temizle, ben devralacağım.</item>
+        <item>Her güncelleme eski dosyaları bırakacak ve onlarla hızlı bir şekilde ilgilenecektir.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Başka bir ekran görüntüsü? 1 Ekran görüntülerini temizlemenin zamanı geldi</item>
+        <item>Yeni bir ekran görüntüsü buldum, görüntülemek ve temizlemek için tıklayın~</item>
+        <item>Giderek daha fazla ekran görüntüsü var; tek tıklamayla temizleme, yer açmanıza yardımcı olabilir</item>
+        <item>Ekran görüntüsü başarıyla alındı, kopya ve bulanık olanlar tek tıklamayla filtrelenebilir.</item>
+        <item>Veritabanına yeni ekran görüntüleri eklendi ve yinelenen görüntüler tek tıklamayla silinmek üzere sıraya konuldu.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Birikmiş çok fazla çöp var. Hepsini bir kerede temizleyin.</item>
+        <item>En son %1$d gün önce temizlendi, şimdi işlemek için tıklayın</item>
+        <item>Birkaç gündür burada değilim, bu yüzden etrafı temizleyeceğim ve savaş alanına hafifçe geri döneceğim.</item>
+        <item>Takas kotası bugün kullanılmamıştır. Geri döndüğümde temizleyeceğim.</item>
+        <item>Önbellek doluyor, kontrol etmenizi bekliyoruz</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Uzun zamandır görüşemiyoruz, bekliyorduk. Geri gelin ve çöpleri temizleyin.</item>
+        <item>Birkaç gündür seni görmüyorum. Çöpe dinlenme yok. Geri gelip süpürün.</item>
+        <item>Önbellek sıraya alındı. Tıkladığınızda kaybolurlar.</item>
+        <item>Siz uzaktayken çöp kutusu meşgul. Tek tıklamayla boşaltın ve her zamanki gibi taze hissedin.</item>
+        <item>Geri? Önce çöpü temizle. Otuz saniye içinde telefon yeni kadar hafif oluyor.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Uzun süredir biriken çöpler bir anda temizleniyor.</item>
+        <item>Temizleme zamanı. Bugünün çöp kutusu tıklamanızı bekliyor.</item>
+        <item>Bugünün Space Daily\'si geldi. Ortalığı boşaltın ve hafif tutun.</item>
+        <item>Bazı dosyalar sandığınızdan çok daha büyük, bir göz atın</item>
+        <item>Birkaç G\'yi alan adamı bulun ve ortalığı temizleyin</item>
+        <item>Büyük evrak listesi hazır gelin bir göz atın.</item>
+        <item>En çok alanı kim kaplıyor? Bir saniyede ortaya çıktı.</item>
+        <item>Sürekli çekim harika, bitirmek acı verici. Bize bırakın.</item>
+        <item>Benzer fotoğraflar sıralanmıştır; hangisini saklayacağınızı seçmek size kalmıştır</item>
+        <item>Çok fazla benzer resim mi var? Tek tıklamayla kopyaları karşılaştırmanıza ve kaldırmanıza yardımcı olacağız.</item>
+        <item>Önbelleğe alınan çevrimdışı videolar temizlenmelidir.</item>
+        <item>Kalan ses de temizlenecektir.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Pil eskisi kadar dayanıklı değil mi? Buna bir bak.</item>
+        <item>Elektriğinizi kim çalıyor? Bir kez baktığınızda anlayacaksınız.</item>
+        <item>Bunları kapatmak pil ömrünü uzatacaktır.</item>
+        <item>Bazı uygulamalar yüklenir ancak hiç kullanılmaz. Hangileri olduklarını gördün mü?</item>
+        <item>Kullanmadığınız uygulamaları saklamak da bir yüktür, liste hazırlandı</item>
+        <item>Gizlilikle ilgili olarak, ne kadar erken halledilirse o kadar iyi olur.</item>
+        <item>Önemli olanları gizleyin ve gereksiz olanlardan kurtulun. sana yardım etmeme izin ver</item>
+        <item>Trafik nereye gidiyor? Kimin kullandığını öğrenin.</item>
+        <item>Trafik ayrıntıları bir bakışta hazır ve nettir.</item>
+        <item>Arka planda gizlice internete bağlanan bir uygulama var.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} kadar çöp; tek dokunuşla temizleyin</string>
+    <string name="notif_scheduled_large_files">{total} büyük dosya; kolaylıkla temizleyin</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} grup yinelenen fotoğraf; {size} tasarruf edin</string>
+    <string name="notif_scheduled_similar_photos">{size} adet benzer fotoğraf; nelerin temizleneceğini seçin</string>
+    <string name="notif_scheduled_videos">{total} video; yer açmak için {n} tanesini silin</string>
+    <string name="notif_scheduled_audio">{total} ses dosyası; düzenleme zamanı</string>
+    <string name="notif_scheduled_apps">{idle} boştaki uygulamalar tarafından kullanılan {size}</string>
+    <string name="notif_scheduled_data">Arka planda kullanılan verilerin {gerisi}</string>
+    <string name="app_manager_uninstall_selected">Seçilenleri kaldır</string>
+    <string name="app_manager_uninstall_selected_count">Seçilenleri kaldır (%1$d)</string>
+    <string name="cache_removable">Çıkarılabilir</string>
+    <string name="cache_clean_selected">Önbelleği Kaldır</string>
+    <string name="cache_clean_selected_summary">%1$s (%2$d) öğesini temizleyin</string>
+</resources>

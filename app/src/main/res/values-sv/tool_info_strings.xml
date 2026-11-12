@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Temperatur</string>
+    <string name="sys_voltage">Spänning</string>
+    <string name="sys_current">Elström</string>
+    <string name="sys_health">Hälsa</string>
+    <string name="sys_type">Batterityp</string>
+    <string name="sys_capacity">Batterikapacitet</string>
+    <string name="sys_charging">laddning</string>
+    <string name="sys_full">full</string>
+    <string name="sys_good">Bra</string>
+    <string name="sys_overheat">Överhettad</string>
+    <string name="sys_dead">Död</string>
+    <string name="sys_over_voltage">Överspänning</string>
+    <string name="sys_cold">Kall</string>
+    <string name="sys_unknown">okänd</string>
+    <string name="sys_model">Modell:</string>
+    <string name="sys_brand">Stämpla:</string>
+    <string name="sys_manufacturer">Tillverkare:</string>
+    <string name="sys_wifi_name">Namn:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Hastighet:</string>
+    <string name="traffic_month">Denna månad</string>
+    <string name="traffic_30_days">30 dagar</string>
+    <string name="traffic_24_hours">24 timmar</string>
+    <string name="traffic_mobile">Mobil</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">Appar</string>
+</resources>

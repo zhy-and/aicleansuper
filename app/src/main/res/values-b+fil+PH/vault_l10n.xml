@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Gumawa ng 6 na digit na PIN</string>
+    <string name="vlt_enter_pin">Ilagay ang iyong PIN</string>
+    <string name="vlt_confirm_pin">Kumpirmahin ang iyong PIN</string>
+    <string name="vlt_warning">Ang pag-uninstall sa app na ito ay permanenteng magde-delete ng mga file sa Privacy Space.</string>
+    <string name="vlt_pin_mismatch">Hindi tugma ang mga PIN. Subukan muli.</string>
+    <string name="vlt_pin_wrong">Maling PIN</string>
+    <string name="vlt_biometric">Gumamit ng fingerprint / mukha</string>
+    <string name="vlt_unlock">I-unlock ang Privacy Space</string>
+    <string name="vlt_use_pin">Ilagay ang iyong PIN</string>
+    <string name="vlt_importing">Ini-import...</string>
+    <string name="vlt_imported">Nag-import ng %1$d na mga item</string>
+    <string name="vlt_restore">Ibalik</string>
+    <string name="vlt_delete">Tanggalin</string>
+</resources>

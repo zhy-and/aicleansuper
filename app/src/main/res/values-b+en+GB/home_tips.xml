@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Pinning widgets is not supported on this device</string>
+    <string name="widget_already_added">Widget already added</string>
+    <string name="home_tip_notification">Stay informed about the accumulation of junk files.</string>
+    <string name="home_tip_notification_action">Enable</string>
+    <string name="home_tip_widget">Enable desktop widgets with one click</string>
+    <string name="home_tip_widget_action">Allow</string>
+    <string name="home_tip_all_files">Authorized scanning to detect residual traces.</string>
+    <string name="home_tip_all_files_action">Allow</string>
+</resources>

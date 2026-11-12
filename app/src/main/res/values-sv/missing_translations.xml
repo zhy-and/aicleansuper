@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Hem</string>
+    <string name="nav_swipe">Svep</string>
+    <string name="nav_compress">Komprimera</string>
+    <string name="nav_tools">Verktyg</string>
+    <string name="nav_clean">Rent</string>
+    <string name="nav_privacy">Sekretess</string>
+    <string name="nav_profile">Profil</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Organisera dina foton, videor och kontakter lokalt</string>
+    <string name="home_badge_text">AI Cleanup</string>
+    <string name="home_quick_summary_title">Dagens städtips</string>
+    <string name="home_quick_summary_body">Börja med skärmdumpar och stora videor för att frigöra utrymme snabbast.</string>
+    <string name="home_scan_insight_title">Smart Scan Status</string>
+    <string name="home_ready_title">4 kraftfulla rengöringsverktyg</string>
+    <string name="home_ready_body">Hantera foton, skärmdumpar, videor och kontakter på ett ställe.</string>
+    <string name="storage_overview_title">Lagringsöversikt</string>
+    <string name="storage_overview_summary">Upp till 0,0 GB kan frigöras</string>
+    <string name="storage_overview_detail">85,4 GB av 128 GB används</string>
+    <string name="storage_overview_summary_format">Upp till %1$s kan frigöras</string>
+    <string name="storage_overview_detail_format">%1$s av %2$s används</string>
+    <string name="storage_overview_summary_done">Upp till 1,8 GB kan frigöras</string>
+    <string name="storage_overview_detail_done">85,4 GB av 128 GB används. Börja med ditt mediebibliotek.</string>
+    <string name="scan_button_idle">Starta skanning</string>
+    <string name="scan_button_running">Skannar...</string>
+    <string name="scan_status_title">Skanningsstatus</string>
+    <string name="scan_status_idle">Klar att skanna</string>
+    <string name="scan_status_running">Analysera mediafiler</string>
+    <string name="scan_status_done">Skanningen är klar. Rengöringsförslag är klara.</string>
+    <string name="scan_status_error">Skanningen misslyckades. Försök igen senare.</string>
+    <string name="scan_status_detail_idle">Skärmdumpar, stora videor och liknande bilder kommer att kontrolleras först.</string>
+    <string name="scan_status_detail_running">Skannar lokalt. Dina foton och videor kommer inte att laddas upp.</string>
+    <string name="scan_status_detail_midway">Skärmdumpar och stora videor analyseras. Organisera liknande bilder.</string>
+    <string name="scan_status_detail_done">Hittade 1,8 GB att städa upp. Börja med skärmdumpar och stora videor.</string>
+    <string name="scan_status_detail_done_format">Hittade %1$s att rensa upp. Börja med skärmdumpar och stora videor.</string>
+    <string name="feature_section_title">Viktiga rengöringsverktyg</string>
+    <string name="feature_section_subtitle">Den första versionen fokuserar på de fyra vanligaste rensningsuppgifterna</string>
+    <string name="feature_similar_title">Liknande foton</string>
+    <string name="feature_similar_desc">Rengör liknande bilder</string>
+    <string name="feature_screenshots_title">Screenshot Cleanup</string>
+    <string name="feature_screenshots_desc">Rengör oanvända skärmdumpar</string>
+    <string name="feature_videos_title">Stora videor</string>
+    <string name="feature_videos_desc">Rengör stora videor</string>
+    <string name="feature_contacts_title">Kontakta Cleanup</string>
+    <string name="feature_contacts_desc">Rengör dubbletter av kontakter</string>
+    <string name="feature_similar_space_format">%1$d grupper</string>
+    <string name="count_placeholder">Inte skannat</string>
+    <string name="count_similar_done">128 bilder</string>
+    <string name="count_screenshots_done">364 bilder</string>
+    <string name="count_videos_done">12 videor</string>
+    <string name="count_contacts_done">9 grupper</string>
+    <string name="recent_section_title">Release Notes</string>
+    <string name="recent_section_body">Den här versionen inkluderar XML-startskärmens struktur, förfrågningar om mediatillstånd, ett platshållarskanningsflöde och en resultatsammanfattning. MediaStore, kontakter och riktiga rensningsfunktioner kan läggas till härnäst.</string>
+    <string name="permission_denied_message">Mediaåtkomst krävs för att börja skanna.</string>
+    <string name="mock_feature_message">Verkliga skanningsresultat kommer att läggas till den här funktionen härnäst.</string>
+    <string name="scan_complete_message">Det första skanningsflödet är klart. Verkliga data kan läggas till härnäst.</string>
+    <string name="scan_failed_message">Skanningen misslyckades: %1$s</string>
+    <string name="unknown_error">Okänt fel</string>
+    <string name="storage_progress_label">Förlopp för lagringsanvändning</string>
+    <string name="phase_two_label">Fas 2</string>
+    <string name="phase_three_label">Fas 3</string>
+    <string name="images_total_title">Totalt antal bilder</string>
+    <string name="videos_total_title">Totalt antal videor</string>
+    <string name="clean_page_title">Rengöringscenter</string>
+    <string name="clean_page_subtitle">Börja med innehåll som frigör mest utrymme.</string>
+    <string name="clean_page_badge">Smart Cleaner</string>
+    <string name="clean_overview_title">Skanningsresultat</string>
+    <string name="clean_overview_body">Rensa upp de största utrymmesbespararna först, sedan liknande foton och kontakter.</string>
+    <string name="privacy_page_title">Privat valv</string>
+    <string name="privacy_page_subtitle">En lokal PIN-kod skyddar dina privata media och framtida importer.</string>
+    <string name="profile_page_title">Profil</string>
+    <string name="profile_page_subtitle">Hantera ditt medlemskap, inställningar och köp här.</string>
+    <string name="profile_page_badge">Premium</string>
+    <string name="profile_hero_title">Uppgradera till Pro för en komplett städupplevelse</string>
+    <string name="profile_hero_body">Pro inkluderar obegränsade batchåtgärder, Private Vault och bättre liknande fotodetektion.</string>
+    <string name="profile_plan_status_free">Nuvarande plan: Gratis</string>
+    <string name="profile_plan_status_pro">Pro testversionen är aktiv</string>
+    <string name="profile_most_popular">Mest populära</string>
+    <string name="profile_cta_title">Varför uppgradera?</string>
+    <string name="profile_cta_body">Om du ofta rensar foton, videor och kontakter minskar Pro repetitiva steg avsevärt.</string>
+    <string name="placeholder_card_title">Nuvarande skede</string>
+    <string name="placeholder_clean_body">Fas 1 täcker skanningsgrunden, behörigheter och huvudramverket. Verkliga rensningsresultat kommer att visas här i nästa fas.</string>
+    <string name="placeholder_privacy_body">Private Vault är inte tillgängligt ännu. Denna fas inkluderar endast dess navigering och layout.</string>
+    <string name="placeholder_profile_body">Profilfunktioner är inte anslutna ännu. Medlemskap, inställningar och köp läggs till senare.</string>
+    <string name="overview_reclaim_title">Beräknad utrymmesbesparing</string>
+    <string name="overview_media_count_title">Totalt media</string>
+    <string name="home_note_title">Fas 1 klar</string>
+    <string name="home_note_body">1. Bottennavigering och flersidig ram\n2. Android 13+ mediebehörighet begär \n3. MediaStore-baserad skanningsgrund för skärmdumpar och stora videor\n4. Hemskärmens resultat bindande och tillståndshantering</string>
+    <string name="feature_coming_soon_format">%1$s-informationssidan kommer att läggas till i motsvarande fas.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d föremål</string>
+    <string name="count_contact_format">%1$d kontakter</string>
+    <string name="feature_ready_label">Tillgänglig</string>
+    <string name="permission_action_label">Tillåt och skanna</string>
+    <string name="refresh_action_label">Uppdatera resultat</string>
+    <string name="clean_reclaim_summary_format">%1$s redo att städa upp</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d grupper</string>
+    <string name="count_contact_group_format">%1$d grupper</string>
+    <string name="clean_permission_title">Mediaåtkomst behövs</string>
+    <string name="clean_permission_body">Tillåt åtkomst för att läsa dina skärmdumpar och videor. All data analyseras lokalt.</string>
+    <string name="clean_loaded_hint">Tryck på ett kategorikort för att se detaljer.</string>
+    <string name="clean_loading_hint">Laddar skärmdumpar och videor. Vänta.</string>
+    <string name="clean_empty_hint">Inga skanningsresultat ännu. Tillåt åtkomst och kör en skanning först.</string>
+    <string name="detail_back">Tillbaka</string>
+    <string name="screenshot_detail_title">Screenshot Cleanup</string>
+    <string name="screenshot_detail_subtitle">Bläddra bland skärmdumpar med riktiga miniatyrer. Tryck på ett foto för att förhandsgranska eller välj objekt att radera.</string>
+    <string name="large_video_detail_title">Stora videor</string>
+    <string name="large_video_detail_subtitle">Bläddra i stora videor med omslag. Tryck på ett omslag för att spela upp eller välj objekt att radera. Tryck på filterraden för att byta 100MB / 500MB.</string>
+    <string name="empty_screenshot_title">Inga skärmdumpar hittades</string>
+    <string name="empty_screenshot_body">Inga skärmdumpar hittades i ditt mediebibliotek, eller åtkomst har inte beviljats.</string>
+    <string name="empty_large_video_title">Inga stora videor hittades</string>
+    <string name="empty_large_video_body">Inga videor överstiger 100 MB. Du kan justera tröskeln senare.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Datum: %1$s</string>
+    <string name="media_item_duration_format">Varaktighet: %1$s</string>
+    <string name="video_threshold_note">Aktuell stor videotröskel: 100 MB</string>
+    <string name="select_all_action">Välj Alla</string>
+    <string name="clear_selected_action">Avmarkera alla</string>
+    <string name="delete_selected_action">Ta bort markerade</string>
+    <string name="selected_count_format">%1$d valt</string>
+    <string name="delete_dialog_title">Ta bort skärmdumpar?</string>
+    <string name="delete_dialog_message_format">De valda %1$d-skärmbilderna kommer att raderas. Systemet kommer att be dig bekräfta igen.</string>
+    <string name="delete_dialog_confirm">Fortsätt</string>
+    <string name="delete_dialog_cancel">Avbryt</string>
+    <string name="delete_complete_message_format">Bearbetade %1$d-skärmdumpar. Listan har uppdaterats.</string>
+    <string name="delete_items_complete_format">Bearbetade %1$d-artiklar. Listan har uppdaterats.</string>
+    <string name="delete_failed_message">Kunde inte radera. Försök igen.</string>
+    <string name="delete_video_dialog_title">Ta bort videor?</string>
+    <string name="delete_video_dialog_message_format">De valda %1$d-videorna kommer att raderas. Systemet kommer att be dig bekräfta igen.</string>
+    <string name="delete_similar_dialog_title">Ta bort liknande foton?</string>
+    <string name="delete_similar_dialog_message_format">De valda %1$d-foton kommer att raderas. Rekommenderade förvaringsartiklar ingår inte.</string>
+    <string name="video_selection_filter_format">%1$d valt · Filter: %2$s (tryck för att växla)</string>
+    <string name="video_player_unavailable">Ingen videospelare är tillgänglig på den här enheten.</string>
+    <string name="media_preview_title">Förhandsgranska</string>
+    <string name="similar_select_candidates_action">Välj kandidater</string>
+    <string name="similar_deselect_candidates_action">Avmarkera alla</string>
+    <string name="similar_select_all_candidates">Välj alla kandidater</string>
+    <string name="similar_delete_count_action">Ta bort markerade (%1$d)</string>
+    <string name="similar_group_number_format">Grupp %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Det går inte att öppna systemavinstallationsprogrammet</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Alla resultat</string>
+    <string name="similar_page_title">Liknande foton</string>
+    <string name="similar_page_subtitle">Granska liknande grupper med miniatyrer, välj kandidater och ta bort dubbletter.</string>
+    <string name="similar_page_note">Den första versionen använder lätta grupperingsregler. Perceptuell hashning och skärpa kan läggas till senare.</string>
+    <string name="similar_page_badge">Smart Liknande</string>
+    <string name="similar_page_hero_hint">Behåll foton med högre upplösning, större filer och nyare tidsstämplar.</string>
+    <string name="similar_group_summary_format">Hittade %1$d-grupper med %2$d-kandidatfoton i dina album.</string>
+    <string name="similar_group_empty_title">Inga liknande fotogrupper hittades</string>
+    <string name="similar_group_empty_body">Inga foton i samma album uppfyllde samma tids- och dimensionskriterier.</string>
+    <string name="similar_group_card_subtitle_format">%1$d-kandidater · Upp till %2$s kan frigöras</string>
+    <string name="similar_keep_recommend_label">Rekommenderas att behålla</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Andra kandidater</string>
+    <string name="similar_other_items_more_format">+%1$d fler foton</string>
+    <string name="contacts_page_title">Kontakta Cleanup</string>
+    <string name="contacts_page_subtitle">Hitta dubbletter och tomma kontakter.</string>
+    <string name="contacts_page_badge">Kontakta Fix</string>
+    <string name="contacts_page_hero_hint">Slå samman kontakter med samma nummer och ta sedan bort tomma.</string>
+    <string name="contacts_permission_title">Kontaktåtkomst behövs</string>
+    <string name="contacts_permission_body">Tillåt åtkomst för att skanna kontakter lokalt.</string>
+    <string name="contacts_scan_title">Skanna kontakter</string>
+    <string name="contacts_scan_body">Uppdatera för att hitta dubbletter och tomma kontakter.</string>
+    <string name="contacts_duplicate_title">Dubbletter av kontakter</string>
+    <string name="contacts_empty_title">Tomma kontakter</string>
+    <string name="contacts_duplicate_count_format">%1$d dubbletter av grupper</string>
+    <string name="contacts_empty_count_format">%1$d tomma kontakter för att rensa upp</string>
+    <string name="contacts_load_action">Tillåt och ladda kontakter</string>
+    <string name="contacts_refresh_action">Uppdatera kontakter</string>
+    <string name="contacts_empty_group_title">Inga dubbletter av kontakter hittades</string>
+    <string name="contacts_empty_group_body">Inga kontakter med dubbletter av telefonnummer hittades.</string>
+    <string name="contacts_delete_empty_action">Ta bort tomma kontakter</string>
+    <string name="contacts_merge_action">Slå samman grupp</string>
+    <string name="contacts_view_action">Visa i Kontakter</string>
+    <string name="contacts_group_title_format">%1$s · %2$d kontakter</string>
+    <string name="contacts_group_number_format">Primärt nummer: %1$s</string>
+    <string name="contacts_group_members_format">Medlemmar: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Ta bort tomma kontakter?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d tomma kontakter eller kontakter utan nummer kommer att raderas.</string>
+    <string name="contacts_merge_complete_message">Systemet ombads att slå samman denna kontaktgrupp.</string>
+    <string name="contacts_cleanup_complete_message_format">Tog bort %1$d tomma kontakter.</string>
+    <string name="contacts_action_failed">Kontaktåtgärden misslyckades. Försök igen.</string>
+    <string name="privacy_status_title">Lokal skyddsstatus</string>
+    <string name="privacy_page_badge">Privat valv</string>
+    <string name="privacy_hero_title">Håll privat innehåll åtskilt från rensning</string>
+    <string name="privacy_hero_body">Ställ in lokalt PIN-skydd först, lägg sedan till privat mediaimport, upplåsning och återställning.</string>
+    <string name="privacy_status_enabled">4-siffrig PIN-kod inställd</string>
+    <string name="privacy_status_disabled">Ingen PIN-kod inställd</string>
+    <string name="privacy_status_body_enabled">Privata media som importeras senare kommer att skyddas av din lokala PIN-kod.</string>
+    <string name="privacy_status_body_disabled">Ställ in en 4-siffrig PIN-kod innan du lägger till privat mediaimport och upplåsningsfunktioner.</string>
+    <string name="privacy_set_pin_action">Ställ in PIN-kod</string>
+    <string name="privacy_reset_pin_action">Återställ PIN-koden</string>
+    <string name="privacy_pin_dialog_title">Ställ in en 4-siffrig PIN-kod</string>
+    <string name="privacy_pin_dialog_hint">Ange 4 siffror</string>
+    <string name="privacy_pin_invalid">Ange en 4-siffrig PIN-kod.</string>
+    <string name="privacy_pin_saved">Lokal PIN-kod har sparats.</string>
+    <string name="privacy_pin_reset_confirm">Rensa den aktuella PIN-koden?</string>
+    <string name="privacy_pin_reset_done">PIN-återställning.</string>
+    <string name="privacy_feature_lock_title">Lokal upplåsning</string>
+    <string name="privacy_feature_lock_body">Den första versionen använder en PIN-kod för lokalt skydd. Biometri kan läggas till senare.</string>
+    <string name="privacy_feature_vault_title">Privat media</string>
+    <string name="privacy_feature_vault_body">Privata foton och videor som importeras senare kommer att lagras separat och exkluderas från huvudalbumrensningsflödet.</string>
+    <string name="privacy_feature_scope_title">Nuvarande skede</string>
+    <string name="privacy_feature_scope_body">Denna version lägger till PIN-status och sidstruktur. Privat mediaimport och lokal kryptering kommer härnäst.</string>
+    <string name="profile_plan_title">Nuvarande plan</string>
+    <string name="profile_plan_free">Gratis</string>
+    <string name="profile_plan_pro">Pro</string>
+    <string name="profile_plan_body_free">Skanna, visa resultat och använd grundläggande rensning.</string>
+    <string name="profile_plan_body_pro">Lås upp avancerad rensning, privat valv, obegränsade åtgärder och en annonsfri upplevelse.</string>
+    <string name="profile_upgrade_action">Byt till Pro Trial</string>
+    <string name="profile_restore_action">Återgå till Gratis</string>
+    <string name="profile_upgrade_done">Bytte till Pro testversion.</string>
+    <string name="profile_restore_done">Återvände till Gratis.</string>
+    <string name="profile_benefits_title">Pro-fördelar</string>
+    <string name="profile_benefits_body">1. Avancerad liknande fotodetektion\n2. Obegränsad batchrensning\n3. Avancerade stora videofilter\n4. Förbättrad kontaktrensning\n5. Privat Vault\n6. Annonsfritt gränssnitt</string>
+    <string name="detail_page_badge">Detaljvy</string>
+    <string name="detail_page_hint">Granska kandidater innan du bestämmer vad du ska städa eller behålla.</string>
+    <string name="premium">PREMIUM</string>
+    <string name="settings">Inställningar</string>
+    <string name="grant_access">Bevilja åtkomst</string>
+    <string name="storage_permission_title">Bevilja filåtkomst</string>
+    <string name="storage_permission_detail">CleanSuper AI behöver åtkomst till dina filer för att hitta dubbletter, suddiga foton och stora filer. Allt bearbetas lokalt.</string>
+    <string name="storage_permission_scan_point">Hitta dubbletter, suddiga foton och stora filer i lagringen.</string>
+    <string name="storage_permission_privacy_point">Dina filer stannar på enheten och laddas aldrig upp.</string>
+    <string name="storage_permission_message">Endast för lokal skanning; ingen data laddas upp eller delas med tredje part.</string>
+    <string name="storage_permission_continue">Fortsätt</string>
+    <string name="storage_permission_close">Stäng</string>
+    <string name="storage_permission_example_file">Filer på den här enheten</string>
+    <string name="storage_permission_example_size">Klar att skanna</string>
+    <string name="storage_permission_guide_title">Tillåt åtkomst till alla filer</string>
+    <string name="storage_permission_guide_message">Slå på reglaget i Inställningar för att skanna och rensa filer på den här enheten.</string>
+    <string name="go_to_settings">Gå till Inställningar</string>
+    <string name="permission_home_title">Dina foton är låsta</string>
+    <string name="permission_home_body">Tillåt foto-, video- och aviseringsåtkomst för att skanna ditt bibliotek säkert på den här enheten och skicka rensningspåminnelser.</string>
+    <string name="scan_summary_format">Skannade %1$d-objekt · %2$s kan granskas</string>
+    <string name="scan_running_english">Skannar ditt bibliotek...</string>
+    <string name="scan_ready_english">Ditt bibliotek är klart</string>
+    <string name="coming_soon">Kommer snart</string>
+    <string name="compression_failed">Det gick inte att komprimera den här bilden.</string>
+    <string name="compression_saved">Komprimerat foto sparat i Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Säker analys på enheten</string>
+    <string name="home_cleanup_library">Granska ditt bibliotek</string>
+    <string name="home_cleanup_badge">På enheten</string>
+    <string name="home_quick_clean_action">Öppna Cleanup Center</string>
+    <string name="home_quick_clean_compact_action">Rengöringscenter</string>
+    <string name="home_reclaim_ready_format">%1$s återvinningsbar</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Lagring upptaget</string>
+    <string name="home_storage_detail_format">%1$s att granska · %2$d föremål</string>
+    <string name="home_quick_tools">Snabba verktyg</string>
+    <string name="home_quick_tools_subtitle">Dina mest använda saneringsåtgärder, utskrivna på förhand</string>
+    <string name="feature_swipe_title">Svep foton</string>
+    <string name="feature_swipe_desc">Granska bilderna en efter en och skicka avslag till papperskorgen</string>
+    <string name="home_contacts_short_desc">Slå samman dubbletter</string>
+    <string name="feature_ready_short">Klar</string>
+    <string name="feature_review_short">Granska</string>
+    <string name="tools_section_storage">Lagring &amp; Media</string>
+    <string name="tools_section_device">Enhetsverktyg</string>
+    <string name="tools_hero_badge">7 användbara verktyg</string>
+    <string name="tools_hero_title">Användbara verktyg, på ett ställe</string>
+    <string name="tools_hero_body">Hantera lagring och media med enkla, fokuserade åtgärder.</string>
+    <string name="tool_file_manager_desc">Bläddra och rensa skärmdumpar, videor och mer</string>
+    <string name="tool_media_compressor_desc">Minska foto- och videostorlek utan att förlora kvalitet</string>
+    <string name="tool_secret_space_desc">Lås privata foton bakom en säker PIN-kod</string>
+    <string name="tool_app_manager_desc">Visa installerade appar och lagringsanvändning</string>
+    <string name="tool_clean_calendar_desc">Ta bort gamla kalenderhändelser som stör ditt schema</string>
+    <string name="tool_ai_enhancer_desc">Förbättra suddiga eller svaga bilder med AI</string>
+    <string name="tool_speed_test_desc">Kontrollera nätverkets nedladdnings- och uppladdningshastighet</string>
+    <string name="tools_page_subtitle">Allt du behöver för en renare telefon</string>
+    <string name="compress_page_subtitle">Spara utrymme utan att förlora ögonblicken</string>
+    <string name="video_compressor">Videokompressor</string>
+    <string name="video_compress_subtitle">Minska videostorleken med H.264-omkodning på enheten</string>
+    <string name="video_compress_card_hint">720p · Balanserad kvalitet</string>
+    <string name="choose_video">Välj Video</string>
+    <string name="choose_video_hint">Välj en video att komprimera</string>
+    <string name="compress_photo_guide_title">Välj ett foto att komprimera</string>
+    <string name="compress_photo_guide_body">Bearbetas på enheten · mindre på sekunder</string>
+    <string name="compress_video_guide_title">Välj en video att komprimera</string>
+    <string name="compress_video_guide_body">På enheten H.264 · balanserad 720p</string>
+    <string name="compress_guide_tap">Tryck för att välja</string>
+    <string name="enhance_photo_guide_title">Välj ett foto att förbättra</string>
+    <string name="enhance_photo_guide_body">Ljusstyrka · kontrast · skärpa</string>
+    <string name="preview_original_photo_label">Före · Originalfoto</string>
+    <string name="preview_compressed_photo_label">Efter · Komprimerad förhandsvisning</string>
+    <string name="preview_original_video_label">Före · Originalvideo</string>
+    <string name="preview_compressed_video_label">Efter · Komprimerad förhandsvisning</string>
+    <string name="preview_enhanced_photo_label">Efter · Förbättrad förhandsvisning</string>
+    <string name="selected_video_preview">Vald videoförhandsvisning</string>
+    <string name="play_video_preview">Spela upp video förhandsgranskning</string>
+    <string name="video_preview_title">Förhandsvisning av video</string>
+    <string name="video_preview_failed">Den här videon kunde inte spelas upp.</string>
+    <string name="video_compression_saved">Komprimerad video sparad till Movies/CleanSuperAI.</string>
+    <string name="video_compression_failed">Det gick inte att komprimera den här videon.</string>
+    <string name="video_compression_preparing">Förbereder videokomprimering...</string>
+    <string name="video_compression_progress_format">Komprimerar video... %1$d%%</string>
+    <string name="video_compression_finishing">Slutför komprimerad video...</string>
+    <string name="video_compression_timeout">Den här videon tog för lång tid att komprimera. Försök med ett kortare klipp.</string>
+    <string name="app_manager_subtitle">Granska installerade appar och öppna systeminställningarna för att avinstallera eller rensa cacheminnet.</string>
+    <string name="app_manager_summary_format">%1$d användarappar hittades · tryck för att hantera</string>
+    <string name="clean_calendar_subtitle">Hitta tidigare kalenderhändelser och ta bort de du inte längre behöver.</string>
+    <string name="clean_calendar_delete">Ta bort markerade</string>
+    <string name="clean_calendar_empty">Inga tidigare händelser hittades</string>
+    <string name="clean_calendar_summary_format">%1$d tidigare händelser · %2$d valt</string>
+    <string name="clean_calendar_delete_confirm">Ta bort %1$d valda tidigare händelser?</string>
+    <string name="clean_calendar_delete_done">Raderade %1$d-händelser</string>
+    <string name="calendar_permission_hint">Tillåt kalenderåtkomst för att skanna tidigare händelser</string>
+    <string name="calendar_permission_denied">Kalenderbehörighet krävs</string>
+    <string name="calendar_untitled">(Ingen titel)</string>
+    <string name="image_enhancer_subtitle">Förbättra ljusstyrka, kontrast och skärpa lokalt på den här enheten.</string>
+    <string name="image_enhancer_hint">Välj ett foto att förbättra</string>
+    <string name="image_enhancer_ready">Redo att förbättra</string>
+    <string name="image_enhancer_action">Förbättra foto</string>
+    <string name="image_enhancer_working">Förbättrar...</string>
+    <string name="image_enhancer_done">Förbättrad förhandsvisning klar · spara när du gillar det</string>
+    <string name="image_enhancer_save">Spara förbättrat foto</string>
+    <string name="image_enhancer_saved">Förbättrat foto sparat i Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Det gick inte att förbättra det här fotot.</string>
+    <string name="speed_test_subtitle">Mät nedladdning, uppladdning och latens med Cloudflare-servrar.</string>
+    <string name="speed_test_hint">Tryck på start för att köra en kort nätverkshastighetskontroll</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mbps nedladdning</string>
+    <string name="speed_test_start">Starta hastighetstest</string>
+    <string name="speed_test_running">Testar din anslutning...</string>
+    <string name="speed_test_done">Testet är klart</string>
+    <string name="speed_test_failed">Hastighetstestet misslyckades. Kontrollera ditt nätverk och försök igen.</string>
+    <string name="speed_test_download_idle">Ladda ner · väntar</string>
+    <string name="speed_test_upload_idle">Ladda upp · väntar</string>
+    <string name="speed_test_latency_idle">Latens · väntar</string>
+    <string name="speed_test_download_result">Ladda ner · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Ladda upp · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Latens · %1$d ms</string>
+    <string name="photo_compressor">Fotokompressor</string>
+    <string name="compress_quality_hint">Balanserad JPEG · 70% quality</string>
+    <string name="choose_photo_hint">Välj ett foto att komprimera</string>
+    <string name="choose_photo">Välj Foto</string>
+    <string name="compress_preview">Komprimera förhandsgranskning</string>
+    <string name="compress_and_save">Komprimera och spara</string>
+    <string name="save_compressed_photo">Spara komprimerat foto</string>
+    <string name="save_compressed_video">Spara komprimerad video</string>
+    <string name="share">Dela</string>
+    <string name="keep">Behåll</string>
+    <string name="move_to_review_bin">Flytta till papperskorgen</string>
+    <string name="clear_review_bin">Rensa granskningsfack</string>
+    <string name="swipe_page_subtitle">Granska efter månad · svep åt höger för att behålla, vänster till papperskorgen</string>
+    <string name="swipe_trash_open">Öppna</string>
+    <string name="swipe_trash_label_singular">Foto i papperskorgen</string>
+    <string name="swipe_trash_label_plural">Bilder i papperskorgen</string>
+    <string name="swipe_empty_title">Alla bilder granskade</string>
+    <string name="swipe_empty_body">Gå tillbaka för att välja en annan månad, eller öppna papperskorgen för att återställa foton.</string>
+    <string name="category_person_format">Person · %1$d</string>
+    <string name="category_animal_format">Djur · %1$d</string>
+    <string name="category_vehicle_format">Fordon · %1$d</string>
+    <string name="no_photos_available">Inga foton tillgängliga</string>
+    <string name="splash_tagline">Smart städning. Privat genom design.</string>
+    <string name="selected_photos_deleted">Valda foton raderade</string>
+    <string name="added_to_review_bin">Lades till i recensionsboxen</string>
+    <string name="photos_deleted_format">%1$d foton raderade</string>
+    <string name="delete_photos_failed">Det gick inte att ta bort markerade foton</string>
+    <string name="share_photo">Dela foto</string>
+    <string name="trash_bin_title_format">Papperskorgen (%1$s)</string>
+    <string name="trash_bin_title_empty">Papperskorgen</string>
+    <string name="trash_restore_hint">Tryck för att återställa foton</string>
+    <string name="trash_empty_action">Ta bort allt i papperskorgen</string>
+    <string name="trash_restored">Fotot återställt</string>
+    <string name="trash_bin_empty">Papperskorgen är tom</string>
+    <string name="feature_smart_groups">Smarta grupper</string>
+    <string name="feature_duplicate_photos">Duplicera foton</string>
+    <string name="feature_duplicate_videos">Duplicera videor</string>
+    <string name="feature_all_videos">Alla videor</string>
+    <string name="feature_screenshots_short">Skärmdumpar</string>
+    <string name="scan_unavailable">Skanningen är inte tillgänglig</string>
+    <string name="please_try_again">Försök igen</string>
+    <string name="tool_file_manager">Filhanteraren</string>
+    <string name="tool_media_compressor">Mediakompressor</string>
+    <string name="tool_app_manager">App Manager</string>
+    <string name="tool_clean_calendar">Rengör kalender</string>
+    <string name="tool_ai_enhancer">AI Image Enhancer</string>
+    <string name="tool_secret_space">Hemligt utrymme</string>
+    <string name="tool_speed_test">Hastighetstest</string>
+    <string name="compressing">Komprimerar...</string>
+    <string name="original_size_format">Original · %1$s</string>
+    <string name="compressed_result_format">Komprimerad · %1$s\nSparad · %2$s</string>
+    <string name="swipe_grant_access_hint">Ge mediaåtkomst från hemmet för att bläddra bland foton</string>
+    <string name="media_item_placeholder">Media</string>
+    <string name="selected_image_preview">Förhandsgranskning av vald bild</string>
+    <string name="current_photo">Aktuellt foto</string>
+    <string name="month_cover">Månadsomslag</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Person · 0</string>
+    <string name="category_animal_zero">Djur · 0</string>
+    <string name="category_vehicle_zero">Fordon · 0</string>
+    <string name="duplicate_photos_page_title">Duplicera foton</string>
+    <string name="duplicate_photos_page_subtitle">Hitta exakta dubbletter efter filstorlek och mått och behåll sedan en kopia.</string>
+    <string name="duplicate_photos_page_badge">Exakt matchning</string>
+    <string name="duplicate_photos_summary_format">Hittade %1$d-grupper med %2$d dubbletter av foton.</string>
+    <string name="duplicate_photos_empty_title">Inga dubbletter av foton hittades</string>
+    <string name="duplicate_photos_empty_body">Inga foton med samma storlek och mått hittades.</string>
+    <string name="duplicate_videos_page_title">Duplicera videor</string>
+    <string name="duplicate_videos_page_subtitle">Hitta exakta dubbletter av videoklipp efter storlek och varaktighet och behåll sedan en kopia.</string>
+    <string name="duplicate_videos_page_badge">Exakt matchning</string>
+    <string name="duplicate_videos_summary_format">Hittade %1$d-grupper med %2$d dubbletter av videor.</string>
+    <string name="duplicate_videos_empty_title">Inga dubbletter av videor hittades</string>
+    <string name="duplicate_videos_empty_body">Inga videor med samma storlek och varaktighet hittades.</string>
+    <string name="settings_page_title">Inställningar</string>
+    <string name="settings_page_subtitle">Språk, appinformation, sekretess och cache.</string>
+    <string name="settings_language_title">Språk</string>
+    <string name="settings_language_subtitle">Välj önskat appspråk</string>
+    <string name="settings_about_title">Om</string>
+    <string name="settings_about_subtitle">Appens namn och version</string>
+    <string name="settings_about_message_format">Clean Super AI\nVersion %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Sekretesspolicy</string>
+    <string name="settings_privacy_policy_subtitle">Hur vi hanterar dina uppgifter</string>
+    <string name="settings_privacy_policy_body">All medieskanning och rensning körs lokalt på din enhet. Vi laddar inte upp dina foton, videor eller kontakter till våra servrar. Valfri analys (om den aktiveras senare) följer butikspolicyer. Du kan återkalla mediaåtkomst när som helst i systeminställningarna.</string>
+    <string name="settings_clear_cache_title">Rensa cache</string>
+    <string name="settings_clear_cache_subtitle">Gratis tillfällig applagring</string>
+    <string name="settings_clear_cache_confirm">Rensa tillfälliga cachefiler? Dina foton och inställningar kommer inte att raderas.</string>
+    <string name="settings_clear_cache_done_format">Rensade %1$s från cache.</string>
+    <string name="language_page_title">Appens språk</string>
+    <string name="language_page_subtitle">Som standard följer CleanSuper AI ditt enhetsspråk.</string>
+    <string name="language_follow_system_title">Följ systemspråket</string>
+    <string name="language_follow_system_subtitle_format">Aktuellt enhetsspråk: %1$s</string>
+    <string name="month_photo_count_format">%1$d bilder</string>
+    <string name="review_bin_pending_format">%1$d-foton väntar i granskningskorgen</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Användarvillkor</string>
+    <string name="settings_terms_subtitle">Läs villkoren</string>
+    <string name="settings_widget_title">Hemskärmswidget</string>
+    <string name="settings_widget_subtitle">Lägg till en städgenväg</string>
+    <string name="tool_network_traffic">Nätverkstrafik</string>
+    <string name="tool_network_traffic_desc">Användning per app</string>
+    <string name="tool_battery_info">Batteriinformation</string>
+    <string name="tool_battery_info_desc">Laddning och hälsa</string>
+    <string name="tool_device_info">Enhetsinformation</string>
+    <string name="tool_device_info_desc">System och Wi-Fi</string>
+    <string name="tool_private_vault">Privat valv</string>
+    <string name="tool_private_vault_desc">Dölj foton och videor</string>
+    <string name="home_more_tools">Fler verktyg</string>
+    <string name="home_battery_info">Batteri</string>
+    <string name="home_device_info">Enhet</string>
+    <string name="home_large_files">Stora filer</string>
+    <string name="home_cache_cleanup">Cache ren</string>
+    <string name="home_network_traffic">Dataanvändning</string>
+    <string name="home_private_vault">Privat valv</string>
+    <string name="home_picture_cleanup">Bilder</string>
+    <string name="home_video_cleanup">Videor</string>
+    <string name="home_audio_cleanup">Ljud</string>
+    <string name="media_loading">Laddar media...</string>
+    <string name="media_loading_hint">Organisera dina filer. Vänta.</string>
+    <string name="media_count_summary">%1$d objekt · %2$s · %3$d valt</string>
+    <string name="media_empty_title">Ingen media hittades</string>
+    <string name="media_empty_body">Det finns inga föremål i denna kategori.</string>
+    <string name="media_error_title">Det gick inte att ladda media</string>
+    <string name="media_access_title">Tillgång till lagring behövs</string>
+    <string name="media_access_body">Tillåt alla filer åtkomst i Inställningar för att bläddra i det här mediet.</string>
+    <string name="media_delete_title">Ta bort markerade objekt?</string>
+    <string name="media_delete_message">Ta bort %1$d markerade objekt? Android kan be dig att bekräfta.</string>
+    <string name="media_recent_group">Inom 1 månad</string>
+    <string name="media_older_group">Äldre än 1 månad</string>
+    <string name="media_group_summary">%1$d föremål · %2$s</string>
+    <string name="audio_player_unavailable">Ingen ljudspelare är tillgänglig på den här enheten.</string>
+    <string name="vault_items_summary">%1$d privata föremål</string>
+    <string name="vault_empty_gallery">Ditt privata valv är tomt. Importera foton eller videor för att se dem här.</string>
+    <string name="cache_group_app">Appens cache</string>
+    <string name="cache_group_apk">Gamla APK-filer</string>
+    <string name="cache_group_residual">Resterande filer</string>
+    <string name="cache_summary">%1$d filer · %2$s</string>
+    <string name="cleanup_report_title">Rengöring klar</string>
+    <string name="cleanup_report_freed">Utrymme frigjort</string>
+    <string name="cleanup_report_count">%1$d av %2$d objekt har tagits bort</string>
+    <string name="cleanup_report_other">Rensa andra filer</string>
+    <string name="cleanup_report_done">Klart</string>
+    <string name="exit_retain_title">Avsluta CleanSuper AI?</string>
+    <string name="exit_retain_message">Lägg till en hemwidget för snabbare rengöring</string>
+    <string name="exit_retain_confirm_exit">Avsluta</string>
+    <string name="exit_retain_add">Lägg till</string>
+    <string name="exit_retain_feature_cache">Cache</string>
+    <string name="exit_retain_feature_large">Stora filer</string>
+    <string name="widget_status_storage">Fritt utrymme</string>
+    <string name="notif_screenshot">Skärmdumpar</string>
+    <string name="exit_retain_message_existing">Din hemwidget är redo för snabb rengöring</string>
+    <string name="notif_cache">Cache</string>
+    <string name="notif_channel_name">Verktygsfältet Quick Clean</string>
+    <string name="notif_channel_desc">Beständigt verktygsfält för snabba rengöringsåtgärder</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Rena påminnelser</string>
+    <string name="notif_event_channel_desc">Lokala påminnelser efter skärmdumpar, installationer och avinstallationer</string>
+    <string name="notif_event_summary_channel_name">Ren påminnelsesammanfattning</string>
+    <string name="notif_event_screenshot_title">Ännu en skärmdump? 1 Det är dags att rensa skärmdumparna</string>
+    <string name="notif_event_install_title">Den nya appen har flyttat in, och cachen likaså. städa upp</string>
+    <string name="notif_event_uninstall_title">Avinstallerades framgångsrikt! för att rensa upp filrester</string>
+    <string name="notif_clean_reminder_title">Det ligger mycket skräp på hög. Rengör allt på en gång.</string>
+    <string name="notif_event_battery_below_50_title">Batteriet är mer än halvfullt. Ta hand om det nu, det håller i sig tills du kommer hem.</string>
+    <string name="notif_event_battery_below_20_title">Lågt batteri. Vill du veta vem som stjäl din el? Klicka för att se rankingen.</string>
+    <string name="notif_event_charging_title">Inkopplad. Kvällens uppgift: fylla på och sedan rengöra.</string>
+    <string name="notif_event_charging_full_title">Fulladdad och redo att gå. En sista kontroll: Har soporna rensats?</string>
+    <string name="notif_event_charging_to_80_title">Slutspurten är 80 %. Töm soporna och packa lätt för att välkomna full kraft.</string>
+    <string name="notif_event_charging_disconnect_title">Koppla ur och kör iväg. Kom ihåg att ta dig tid att rensa ur soporna och hålla dig i toppform.</string>
+    <string name="notif_event_app_update_title">En ny version har kommit. Allt som blir över från den gamla versionen är helt sanerat.</string>
+    <string name="notif_event_network_change_title">Webben förändras! Visa aktuell nätverksstatus 1</string>
+    <string name="notif_event_screen_lock_title">Lägg ifrån dig telefonen och lämna den till oss. Viloskärmstid = vårdtid.</string>
+    <string name="notif_event_screen_on_after_lock_title">Vi träffas igen, har du fastnat? Det mesta är skräp, försök rensa bort det.</string>
+    <string name="notif_event_storage_free_drop_title">Lagringsutrymmet har ändrats. Låt oss se vad som tar plats?</string>
+    <string name="notif_event_scheduled_push_1_title">Det skräp som har samlats så länge rensas ut på en gång.</string>
+    <string name="notif_event_scheduled_push_2_title">Är batteriet inte lika hållbart som tidigare? Kolla in det.</string>
+    <string name="notif_event_app_inactive_title">Länge utan att se, det har väntat. Kom tillbaka och rensa ut soporna.</string>
+    <string name="notif_event_scheduled_push_3_title">Ett tryck till dina spellistor – ställ in widgeten</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Ett tryck till dina spellistor – ställ in widgeten</item>
+        <item>Gör allt enklare med en widget – lägg till en musikgenväg</item>
+        <item>Spela snabbt utan att låsa upp – aktivera startskärmswidgeten</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Du glömde något</string>
+    <string name="notif_event_app_background_content">Kom och avsluta rengöringen så går det smidigare.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Du glömde något</item>
+        <item>Ett steg kvar</item>
+        <item>Goda nyheter</item>
+        <item>Du gick för snabbt</item>
+        <item>Lämna inte skräp över natten</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Kom och avsluta rengöringen så går det smidigare.</item>
+        <item>Ett tryck till för att avsluta rengöringen och frigöra mer utrymme.</item>
+        <item>Ledigt utrymme har upptäckts – kom och gör anspråk på en entrycksrengöring.</item>
+        <item>Din telefon kan vara ännu snabbare — kom och se optimeringen.</item>
+        <item>Kom och avsluta rengöringen så går det smidigare.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Skanningsresultaten är klara – skräp tar plats. Rengör nu</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Skanningsresultaten är klara – skräp tar plats. Rengör nu</item>
+        <item>Ett steg kvar: kom tillbaka och frigör utrymme direkt.</item>
+        <item>Har du glömt att rengöra efter skanningen? 10 sekunder för att göra din telefon lättare.</item>
+        <item>Skräp finns kvar på din telefon – resultaten sparade. Kom tillbaka för att rengöra med ett tryck.</item>
+        <item>Senaste genomsökningen hittade flera föremål att rengöra. Kom och avsluta det.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Städningen är inte klar än – kom och avsluta det sista steget.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Städningen är inte klar än – kom och avsluta det sista steget.</item>
+        <item>Städning avbruten: halvvägs. Avsluta för en lättare telefon.</item>
+        <item>Städningen är nästan klar — lämna inte skräpet bakom dig.</item>
+        <item>Du lämnade mitten rent — avsluta det och känn skillnaden.</item>
+        <item>Avbruten rengöring kan fortsätta när som helst. Kom och avsluta det.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Fotot raderat — säkert flyttat till papperskorgen.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Fotot raderat — säkert flyttat till papperskorgen.</item>
+        <item>Har precis tagit bort ett foto — se hur mycket utrymme du frigjorde?</item>
+        <item>Foto raderad — radera permanent för att frigöra utrymme nu.</item>
+        <item>Foto säkert raderat — lagringsstatus uppdaterad.</item>
+        <item>Foto raderade - du kan rensa liknande skärmdumpar också.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Video raderad — stort utrymme frigörs.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Video raderad — stort utrymme frigörs.</item>
+        <item>Stor video togs bort — lagringstrycket lättade direkt.</item>
+        <item>Video raderad — kontrollera din nuvarande lagringsstatus.</item>
+        <item>Radera klar — töm papperskorgen för att frigöra utrymme helt.</item>
+        <item>Video raderad — det kan finnas fler bortglömda stora videor att rensa.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Ljud raderat – små filer läggs till. Fortsätta.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Ljud raderat – små filer läggs till. Fortsätta.</item>
+        <item>Det ljudet är borta - fler liknande oanvända filer kan också rengöras.</item>
+        <item>Ljud raderat — lagringsinformation uppdaterad. Kom och titta.</item>
+        <item>1 ljudfil raderad — lagringslistan uppdaterad.</item>
+        <item>Ljud raderat — töm papperskorgen för att slutföra frigörandet av utrymme.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Filen raderad – lite mer lagringsutrymme frigjort.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Filen raderad – lite mer lagringsutrymme frigjort.</item>
+        <item>Filen raderad – röran kommer inte att störa din telefon längre.</item>
+        <item>Fil raderad - se vad mer du kan rensa.</item>
+        <item>Fil raderad — ändringar synkroniserade, lagringsstatus uppdaterad.</item>
+        <item>Den filen är rensad – tar tillbaka utrymme nu.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Bild nedladdad — öppna den och ta en titt.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Bild nedladdad — öppna den och ta en titt.</item>
+        <item>Bild nedladdad — rensa dubbletter av foton i ditt album medan du håller på</item>
+        <item>Hämtning klar — bilden sparas säkert. Kom och kolla liknande bilder</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Video nedladdad — den är inte liten. Se hur mycket utrymme gamla videor kan frigöra</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Video nedladdad — den är inte liten. Se hur mycket utrymme gamla videor kan frigöra</item>
+        <item>Ny video sparad – hitta stora videor att radera och frigöra utrymme. Knacka på mig</item>
+        <item>Videor tar plats – vi hittade städbara föremål för att göra din telefon lättare. Tryck här</item>
+        <item>Nedladdningen klar! Rengör några gamla videor och utrymme kommer tillbaka. Knacka på mig</item>
+        <item>Ny video sorterad — lätt att hitta eller rengöra. Tryck för att se</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Ljud nedladdat — gör i ordning ditt musikbibliotek med ett tryck. Knacka på mig</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Ljud nedladdat — gör i ordning ditt musikbibliotek med ett tryck. Knacka på mig</item>
+        <item>Nytt ljud sorterat — rengör gammalt ljud medan du är här. Knacka på mig</item>
+        <item>Blir musikbiblioteket fullt? Kontrollera rengörbart ljud. Tryck här</item>
+        <item>Ljud nedladdat — dedupe med ett tryck. Knacka på mig för att städa</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Ny fil sparad — rensa gamla filer och ledigt utrymme. Tryck här</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Ny fil sparad — rensa gamla filer och ledigt utrymme. Tryck här</item>
+        <item>Ladda ner klar – se vilka gamla filer du kan rensa. Knacka på mig</item>
+        <item>Ny fil klar — smart arkiv + ren. Tryck på mig för att börja</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Papperskorgen tömd — lagringen uppdaterad. Kontrollera ditt senaste utrymme.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Papperskorgen tömd — lagringen uppdaterad. Kontrollera ditt senaste utrymme.</item>
+        <item>Papperskorgen tömd — kom djuprengör resterna.</item>
+        <item>Tömdes framgångsrikt — mer skräp att rengöra. Kom och titta.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Rengör nu</string>
+    <string name="notif_event_action_open_home">Öppna</string>
+    <string name="notif_event_action_manage">Hantera appar</string>
+    <string name="notif_event_action_check_battery">Kontrollera batteriet</string>
+    <string name="notif_event_action_check_network">Kontrollera nätverket</string>
+    <string name="notif_days_unit">dag</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Lagringsutrymmet har ändrats. Låt oss se vad som tar plats?</item>
+        <item>Rumsliga förändringar har upptäckts. Det kan finnas lite nytt skräp, ta en titt?</item>
+        <item>Det tillgängliga utrymmet har flyttats. Vet du vem som åt det? Klicka för att ta en titt.</item>
+        <item>Är utrymmet knappt? Har precis upptäckt ändringen, låt oss ta en titt på detaljerna.</item>
+        <item>Påminnelse om utrymmesbyte: Du kan samla på dig mycket sopor. Kolla upp det?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Lågt batteri. Vill du veta vem som stjäl din el? Klicka för att se rankingen.</item>
+        <item>Bottnar snart. Om du rensar bort apparna som stjäl elektricitet kan du fortfarande överleva ett tag.</item>
+        <item>Batteriet börjar ta slut. Att rensa bort några bakgrunder är bättre än att inte göra någonting.</item>
+        <item>Batteriet är rött. Du kan fortfarande spara den, klicka för att öppna den och ta en titt.</item>
+        <item>Mindre än 20% rmains. Låt oss göra lite energibesparande första hjälpen och städa upp.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Batteriet är mer än halvfullt. Ta hand om det nu, det håller i sig tills du kommer hem.</item>
+        <item>Batteriet är mer än halvfullt. Att ta hand om batteriet nu är mycket lättare än att vänta till 20 %.</item>
+        <item>Batteriet är halvt slut. Hur länge kan det pågå? Klicka för att ta en titt.</item>
+        <item>Batteriet är mer än halvfullt. Det är dags att ta hand om backend, vänta inte på att det ska bli nervöst.</item>
+        <item>Halva batteriet är kvar. Rensa bort de stora kraftsugna spelarna och gör andra halvlek mer stabil.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Slutspurten är 80 %. Töm soporna och packa lätt för att välkomna full kraft.</item>
+        <item>Fortfarande 20% short full laddning. Sluta stirra på din skärm och låt oss ta hand om soporna.</item>
+        <item>80 %: Ett steg bort från perfektion. Klicka en gång så rensas den helt när batteriet är fulladdat.</item>
+        <item>80%, a bra batteri för en bra mobiltelefon. Städar du en runda medan det är varmt?</item>
+        <item>De senaste 20% i som vi fick. Du tittar på batteriet och vi städar soporna.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Fulladdad och redo att gå. En sista kontroll: Har soporna rensats?</item>
+        <item>Efter laddning är känslan av ritual full. Vad sägs om att rensa ut skräpet för att fira det?</item>
+        <item>100%, sbord idag. En omgång till och det är felfritt.</item>
+        <item>100 %. Det sista steget innan du drar ut kontakten: rensa ur papperskorgen, trettio sekunder.</item>
+        <item>Avslutad med full kraft. En sista städning, perfekt.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Webben förändras! Visa aktuell nätverksstatus 1</item>
+        <item>Nätverksdesertering. Titta inte på signalen när du städar, klicka bara på den och skanna.</item>
+        <item>Kan du inte öppna sidan? Rengöring är alltid online.</item>
+        <item>Du kan arbeta offline och papperskorgen kan rensas nu.</item>
+        <item>Om det inte finns någon signal krävs ingen data för rengöring, klicka bara.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Inkopplad. Kvällens uppgift: fylla på och sedan rengöra.</item>
+        <item>Du vilar, den laddas. Låt den också städa upp soporna.</item>
+        <item>Under laddningstiden räcker det med att rensa bort skräpet som har samlats under lång tid.</item>
+        <item>Först när elen är inkopplad kan backstagepersonalen våga jobba fritt.</item>
+        <item>Blir du lite varm när du laddar? Att rensa bakgrunden kan sänka temperaturen.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Koppla ur och kör iväg. Kom ihåg att ta dig tid att rensa ur soporna och hålla dig i toppform.</item>
+        <item>När laddningen är över, packa ihop och ge dig av. Rensa bara upp det så blir det perfekt.</item>
+        <item>Fulladdad och redo att användas. Att städa soporna smidigt, det är ingen brist idag.</item>
+        <item>Laddningen slutar. Nästa utrymme ska städas upp och uppgraderas en nivå i taget.</item>
+        <item>Stanna inte vid strömavbrott. En sak kvar: städning.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Vi träffas igen, har du fastnat? Det mesta är skräp, försök rensa bort det.</item>
+        <item>Olåst? Öppna inte andra appar först och rensa papperskorgen i trettio sekunder.</item>
+        <item>Det första att låsa upp är vi. Rensa ut soporna så kommer den att älska dig mer.</item>
+        <item>Trettio sekunder efter upplåsning. Den mest värdefulla användningen: rengöring av sopor.</item>
+        <item>Din mobiltelefon sa: Backend är lite blockerad, kan du hjälpa mig?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Lägg ifrån dig telefonen och lämna den till oss. Viloskärmstid = vårdtid.</item>
+        <item>Att sluta arbeta betyder inte att sluta arbeta. Jag ska ge dig en överraskning nästa gång jag sätter på skärmen.</item>
+        <item>Blir lugnt bättre medan du vilar skärmen. Klicka så gör vi resten.</item>
+        <item>En sista sak innan du låser skärmen: Klicka på Rensa. Nytt utseende i morgon bitti.</item>
+        <item>Skärmen blir mörk. Gör arrangemang nu och se resultatet imorgon.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Den nya appen har flyttat in, och cachen likaså. städa upp</item>
+        <item>Vi förstår glädjen med att installera en ny app. Det är bara det att cachen lugnt hopar sig.</item>
+        <item>Ny app? Cachen finns också här, rensa den med ett klick.</item>
+        <item>Det nya kommer in och det gamla går ut. Rengör den ofta och installera den som du vill.</item>
+        <item>En till? Utrymmet blir tyst och tyst, kom och städa upp det.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Avinstallerad framgångsrikt! för att rensa upp filrester</item>
+        <item>Avinstallerad men inte rensad. Klicka för att avsluta.</item>
+        <item>Appen är avinstallerad, men svansen finns kvar. Städa upp med ett klick och säg hejdå en gång för alla.</item>
+        <item>Missa inte det andra steget: ta bort appen + ta bort resterna. Ett klick och klart.</item>
+        <item>Återstoden kommer att äta upp hälften av det lediga utrymmet. Skanna djupt och rensa allt.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>En ny version har kommit. Allt som blir över från den gamla versionen är helt sanerat.</item>
+        <item>+1 för version, +1 för cache, för djupskanning.</item>
+        <item>Uppdateringen är klar och de återstående installationspaketen kan rensas upp med ett klick.</item>
+        <item>Uppdateringen är klar, låt oss avsluta. Rensa upp det så tar jag över.</item>
+        <item>Varje uppdatering kommer att lämna gamla filer och hantera dem snabbt.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Ännu en skärmdump? 1 Det är dags att rensa skärmdumparna</item>
+        <item>Hittade en ny skärmdump, klicka för att visa och rensa upp den~</item>
+        <item>Det finns fler och fler skärmdumpar, rengöring med ett klick kan hjälpa dig att göra utrymme</item>
+        <item>Skärmdumpen togs framgångsrikt, dubbletter och suddiga kan filtreras bort med ett klick.</item>
+        <item>Nya skärmdumpar läggs till i databasen och dubbletter av bilder har ställts i kö för att rensas med ett klick.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Det ligger en hel del skräp på hög. Rengör allt på en gång.</item>
+        <item>Senast rengöras för %1$d för dagar sedan, klicka för att bearbeta det nu</item>
+        <item>Jag har inte varit här på några dagar, så jag ska städa upp det och gå tillbaka till slagfältet lätt.</item>
+        <item>Clearingkvoten är inte utnyttjad idag. Jag kommer att rensa det när jag kommer tillbaka.</item>
+        <item>Cachen börjar bli full och väntar på att du ska kolla in den</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Länge utan att se, det har väntat. Kom tillbaka och rensa ut soporna.</item>
+        <item>Har inte sett dig på flera dagar. Det finns ingen vila för soporna. Kom tillbaka och sopa upp det.</item>
+        <item>Cachen står i kö. Klicka och de försvinner.</item>
+        <item>Papperskorgen är upptagen när du är borta. Töm med ett klick och känn dig lika fräsch som alltid.</item>
+        <item>Tillbaka? Rensa soporna först. På trettio sekunder är telefonen lika lätt som ny.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Det skräp som har samlats så länge rensas ut på en gång.</item>
+        <item>Dags att städa. Dagens skräp väntar på att du ska klicka på det.</item>
+        <item>Dagens Space Daily anlände. Rensa ut och håll det lätt.</item>
+        <item>Vissa filer är mycket större än du tror, ta en titt</item>
+        <item>Hitta killen som tog upp några G\'s och rensa upp det</item>
+        <item>Den stora dokumentlistan är klar, kom och ta en titt.</item>
+        <item>Vem tar mest plats? Avslöjas på en sekund.</item>
+        <item>Serietagning är bra, efterbehandling är smärtsamt. Lämna det till oss.</item>
+        <item>Liknande foton står i rad, det är upp till dig att välja vilken du vill behålla</item>
+        <item>För många liknande bilder? Vi hjälper dig att jämföra och ta bort dubbletter med bara ett klick.</item>
+        <item>De cachade offlinevideorna bör rensas.</item>
+        <item>Det återstående ljudet kommer också att rengöras.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Är batteriet inte lika hållbart som tidigare? Kolla in det.</item>
+        <item>Vem stjäl din el? Du kommer att veta när du slår upp det.</item>
+        <item>Att stänga av dessa förlänger batteriets livslängd.</item>
+        <item>Vissa appar är installerade men används aldrig. Se vilka de är?</item>
+        <item>Att behålla appar som du inte använder är också en börda, listan har gjorts</item>
+        <item>När det gäller integritet, ju tidigare det tas om hand, desto bättre.</item>
+        <item>Göm de viktiga och bli av med de onödiga. låt mig hjälpa dig</item>
+        <item>Vart tar trafiken vägen? Ta reda på vem som använder den.</item>
+        <item>Trafikdetaljerna är klara och tydliga med ett ögonkast.</item>
+        <item>Det finns en app som i hemlighet ansluter till Internet i bakgrunden.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} av skräp – rensa det med ett tryck</string>
+    <string name="notif_scheduled_large_files">{total} stora filer – rensa upp med lätthet</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} grupper av dubbletter av foton – spara {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} av liknande foton – välj vad som ska rengöras</string>
+    <string name="notif_scheduled_videos">{total} av videoklipp – ta bort {n} för att frigöra utrymme</string>
+    <string name="notif_scheduled_audio">{total} ljudfiler – dags att städa</string>
+    <string name="notif_scheduled_apps">{size} används av {idle} lediga appar</string>
+    <string name="notif_scheduled_data">{back} av data som används i bakgrunden</string>
+    <string name="app_manager_uninstall_selected">Avinstallera valda</string>
+    <string name="app_manager_uninstall_selected_count">Avinstallera valda (%1$d)</string>
+    <string name="cache_removable">Avtagbar</string>
+    <string name="cache_clean_selected">Ta bort cache</string>
+    <string name="cache_clean_selected_summary">Rengör %1$s (%2$d)</string>
+</resources>

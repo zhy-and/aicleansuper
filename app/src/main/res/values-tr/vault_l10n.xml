@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">6 haneli bir PIN oluşturun</string>
+    <string name="vlt_enter_pin">PIN\'inizi girin</string>
+    <string name="vlt_confirm_pin">PIN\'inizi onaylayın</string>
+    <string name="vlt_warning">Bu uygulamanın kaldırılması, Gizlilik Alanındaki dosyaların kalıcı olarak silinmesine neden olacaktır.</string>
+    <string name="vlt_pin_mismatch">PIN\'ler eşleşmiyor. Tekrar deneyin.</string>
+    <string name="vlt_pin_wrong">Yanlış PIN</string>
+    <string name="vlt_biometric">Parmak izini/yüzünü kullan</string>
+    <string name="vlt_unlock">Gizlilik Alanının Kilidini Açın</string>
+    <string name="vlt_use_pin">PIN\'inizi girin</string>
+    <string name="vlt_importing">İçe aktarılıyor...</string>
+    <string name="vlt_imported">%1$d öğe içe aktarıldı</string>
+    <string name="vlt_restore">Eski haline getirmek</string>
+    <string name="vlt_delete">Silmek</string>
+</resources>

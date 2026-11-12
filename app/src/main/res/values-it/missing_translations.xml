@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Casa</string>
+    <string name="nav_swipe">Scorri</string>
+    <string name="nav_compress">Comprimi</string>
+    <string name="nav_tools">Strumenti</string>
+    <string name="nav_clean">Pulito</string>
+    <string name="nav_privacy">Privacy</string>
+    <string name="nav_profile">Profilo</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Organizza foto, video e contatti localmente</string>
+    <string name="home_badge_text">Pulizia dell\'IA</string>
+    <string name="home_quick_summary_title">Suggerimenti per la pulizia di oggi</string>
+    <string name="home_quick_summary_body">Inizia con screenshot e video di grandi dimensioni per liberare spazio più velocemente.</string>
+    <string name="home_scan_insight_title">Stato scansione intelligente</string>
+    <string name="home_ready_title">4 potenti strumenti di pulizia</string>
+    <string name="home_ready_body">Gestisci foto, screenshot, video e contatti in un unico posto.</string>
+    <string name="storage_overview_title">Panoramica sull\'archiviazione</string>
+    <string name="storage_overview_summary">È possibile liberare fino a 0,0 GB</string>
+    <string name="storage_overview_detail">85,4 GB di 128 GB utilizzati</string>
+    <string name="storage_overview_summary_format">È possibile liberare fino a %1$s</string>
+    <string name="storage_overview_detail_format">%1$s di %2$s utilizzato</string>
+    <string name="storage_overview_summary_done">È possibile liberare fino a 1,8 GB</string>
+    <string name="storage_overview_detail_done">85,4 GB di 128 GB utilizzati. Inizia con la tua libreria multimediale.</string>
+    <string name="scan_button_idle">Avvia scansione</string>
+    <string name="scan_button_running">Scansione...</string>
+    <string name="scan_status_title">Stato della scansione</string>
+    <string name="scan_status_idle">Pronto per la scansione</string>
+    <string name="scan_status_running">Analisi dei file multimediali</string>
+    <string name="scan_status_done">Scansione completata. I suggerimenti per la pulizia sono pronti.</string>
+    <string name="scan_status_error">Scansione non riuscita. Riprova più tardi.</string>
+    <string name="scan_status_detail_idle">Schermate, video di grandi dimensioni e foto simili verranno controllati per primi.</string>
+    <string name="scan_status_detail_running">Scansione locale. Le tue foto e i tuoi video non verranno caricati.</string>
+    <string name="scan_status_detail_midway">Schermate e video di grandi dimensioni analizzati. Organizzare foto simili.</string>
+    <string name="scan_status_detail_done">Trovato 1,8 GB da pulire. Inizia con screenshot e video di grandi dimensioni.</string>
+    <string name="scan_status_detail_done_format">Trovato %1$s da pulire. Inizia con screenshot e video di grandi dimensioni.</string>
+    <string name="feature_section_title">Strumenti di pulizia essenziali</string>
+    <string name="feature_section_subtitle">La prima versione si concentra sulle 4 attività di pulizia più comuni</string>
+    <string name="feature_similar_title">Foto simili</string>
+    <string name="feature_similar_desc">Pulisci foto simili</string>
+    <string name="feature_screenshots_title">Pulizia degli screenshot</string>
+    <string name="feature_screenshots_desc">Pulisci gli screenshot non utilizzati</string>
+    <string name="feature_videos_title">Video di grandi dimensioni</string>
+    <string name="feature_videos_desc">Pulisci video di grandi dimensioni</string>
+    <string name="feature_contacts_title">Contatta la pulizia</string>
+    <string name="feature_contacts_desc">Pulisci i contatti duplicati</string>
+    <string name="feature_similar_space_format">Gruppi %1$d</string>
+    <string name="count_placeholder">Non scansionato</string>
+    <string name="count_similar_done">128 foto</string>
+    <string name="count_screenshots_done">364 foto</string>
+    <string name="count_videos_done">12 video</string>
+    <string name="count_contacts_done">9 gruppi</string>
+    <string name="recent_section_title">Note sulla versione</string>
+    <string name="recent_section_body">Questa versione include la struttura della schermata iniziale XML, le richieste di autorizzazione multimediale, un flusso di scansione dei segnaposto e un riepilogo dei risultati. Successivamente è possibile aggiungere MediaStore, Contatti e funzionalità di pulizia reale.</string>
+    <string name="permission_denied_message">Per avviare la scansione è necessario l\'accesso ai media.</string>
+    <string name="mock_feature_message">I risultati della scansione reale verranno aggiunti successivamente a questa funzionalità.</string>
+    <string name="scan_complete_message">Il flusso di scansione iniziale è pronto. I dati reali possono essere aggiunti successivamente.</string>
+    <string name="scan_failed_message">Scansione non riuscita: %1$s</string>
+    <string name="unknown_error">Errore sconosciuto</string>
+    <string name="storage_progress_label">Avanzamento dell\'utilizzo dello spazio di archiviazione</string>
+    <string name="phase_two_label">Fase 2</string>
+    <string name="phase_three_label">Fase 3</string>
+    <string name="images_total_title">Immagini totali</string>
+    <string name="videos_total_title">Video totali</string>
+    <string name="clean_page_title">Centro di pulizia</string>
+    <string name="clean_page_subtitle">Inizia con contenuti che liberano più spazio.</string>
+    <string name="clean_page_badge">Pulitore intelligente</string>
+    <string name="clean_overview_title">Risultati della scansione</string>
+    <string name="clean_overview_body">Ripulisci prima le parti più salvaspazio, poi le foto e i contatti simili.</string>
+    <string name="privacy_page_title">Cassaforte privata</string>
+    <string name="privacy_page_subtitle">Un PIN locale protegge i tuoi contenuti multimediali privati e le future importazioni.</string>
+    <string name="profile_page_title">Profilo</string>
+    <string name="profile_page_subtitle">Gestisci la tua iscrizione, le impostazioni e gli acquisti qui.</string>
+    <string name="profile_page_badge">Premio</string>
+    <string name="profile_hero_title">Passa a Pro per un\'esperienza di pulizia completa</string>
+    <string name="profile_hero_body">Pro include azioni batch illimitate, Private Vault e un migliore rilevamento di foto simili.</string>
+    <string name="profile_plan_status_free">Piano attuale: gratuito</string>
+    <string name="profile_plan_status_pro">La prova Pro è attiva</string>
+    <string name="profile_most_popular">Il più popolare</string>
+    <string name="profile_cta_title">Perché aggiornare?</string>
+    <string name="profile_cta_body">Se ripulisci spesso foto, video e contatti, Pro riduce notevolmente i passaggi ripetitivi.</string>
+    <string name="placeholder_card_title">Fase attuale</string>
+    <string name="placeholder_clean_body">La Fase 1 riguarda le basi della scansione, le autorizzazioni e la struttura principale. I risultati reali della pulizia verranno visualizzati qui nella fase successiva.</string>
+    <string name="placeholder_privacy_body">La cassaforte privata non è ancora disponibile. Questa fase include solo la navigazione e il layout.</string>
+    <string name="placeholder_profile_body">Le funzionalità del profilo non sono ancora connesse. L\'iscrizione, le impostazioni e gli acquisti verranno aggiunti in seguito.</string>
+    <string name="overview_reclaim_title">Risparmio di spazio stimato</string>
+    <string name="overview_media_count_title">Media totale</string>
+    <string name="home_note_title">Fase 1 completata</string>
+    <string name="home_note_body">1. Navigazione in basso e framework multipagina\n2. Richieste di autorizzazione multimediale per Android 13+\n3. Base di scansione basata su MediaStore per screenshot e video di grandi dimensioni\n4. Associazione dei risultati della schermata iniziale e gestione dello stato</string>
+    <string name="feature_coming_soon_format">La pagina dei dettagli %1$s verrà aggiunta nella Fase corrispondente.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">Articoli %1$d</string>
+    <string name="count_contact_format">Contatti %1$d</string>
+    <string name="feature_ready_label">Disponibile</string>
+    <string name="permission_action_label">Consenti e scansiona</string>
+    <string name="refresh_action_label">Aggiorna risultati</string>
+    <string name="clean_reclaim_summary_format">%1$s pronto per la pulizia</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">Gruppi %1$d</string>
+    <string name="count_contact_group_format">Gruppi %1$d</string>
+    <string name="clean_permission_title">È necessario l\'accesso ai media</string>
+    <string name="clean_permission_body">Consenti l\'accesso per leggere screenshot e video. Tutti i dati vengono analizzati localmente.</string>
+    <string name="clean_loaded_hint">Tocca una scheda di categoria per visualizzare i dettagli.</string>
+    <string name="clean_loading_hint">Caricamento screenshot e video. Attendere prego.</string>
+    <string name="clean_empty_hint">Nessun risultato della scansione ancora. Consenti l\'accesso ed esegui prima una scansione.</string>
+    <string name="detail_back">Indietro</string>
+    <string name="screenshot_detail_title">Pulizia degli screenshot</string>
+    <string name="screenshot_detail_subtitle">Sfoglia gli screenshot con miniature reali. Tocca una foto per visualizzarne l\'anteprima o seleziona gli elementi da eliminare.</string>
+    <string name="large_video_detail_title">Video di grandi dimensioni</string>
+    <string name="large_video_detail_subtitle">Sfoglia video di grandi dimensioni con copertine. Tocca una copertina per riprodurla o seleziona gli elementi da eliminare. Tocca la riga del filtro per cambiare 100 MB/500 MB.</string>
+    <string name="empty_screenshot_title">Nessuno screenshot trovato</string>
+    <string name="empty_screenshot_body">Non è stato trovato alcuno screenshot nel tuo catalogo multimediale oppure l\'accesso non è stato concesso.</string>
+    <string name="empty_large_video_title">Nessun video di grandi dimensioni trovato</string>
+    <string name="empty_large_video_body">Nessun video supera i 100 MB. È possibile modificare la soglia in un secondo momento.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Data: %1$s</string>
+    <string name="media_item_duration_format">Durata: %1$s</string>
+    <string name="video_threshold_note">Soglia video di grandi dimensioni attuale: 100 MB</string>
+    <string name="select_all_action">Seleziona tutto</string>
+    <string name="clear_selected_action">Deseleziona tutto</string>
+    <string name="delete_selected_action">Elimina selezionato</string>
+    <string name="selected_count_format">%1$d selezionato</string>
+    <string name="delete_dialog_title">Eliminare screenshot?</string>
+    <string name="delete_dialog_message_format">Gli screenshot %1$d selezionati verranno eliminati. Il sistema ti chiederà di confermare nuovamente.</string>
+    <string name="delete_dialog_confirm">Continua</string>
+    <string name="delete_dialog_cancel">Annulla</string>
+    <string name="delete_complete_message_format">Screenshot %1$d elaborati. L\'elenco è stato aggiornato.</string>
+    <string name="delete_items_complete_format">Articoli %1$d elaborati. L\'elenco è stato aggiornato.</string>
+    <string name="delete_failed_message">Impossibile eliminare. Riprova.</string>
+    <string name="delete_video_dialog_title">Eliminare video?</string>
+    <string name="delete_video_dialog_message_format">I video %1$d selezionati verranno eliminati. Il sistema ti chiederà di confermare nuovamente.</string>
+    <string name="delete_similar_dialog_title">Eliminare foto simili?</string>
+    <string name="delete_similar_dialog_message_format">Le foto %1$d selezionate verranno eliminate. Gli articoli da conservare consigliati non sono inclusi.</string>
+    <string name="video_selection_filter_format">%1$d selezionato · Filtro: %2$s (tocca per cambiare)</string>
+    <string name="video_player_unavailable">Nessun lettore video è disponibile su questo dispositivo.</string>
+    <string name="media_preview_title">Anteprima</string>
+    <string name="similar_select_candidates_action">Seleziona i candidati</string>
+    <string name="similar_deselect_candidates_action">Deseleziona tutto</string>
+    <string name="similar_select_all_candidates">Seleziona tutti i candidati</string>
+    <string name="similar_delete_count_action">Elimina selezionati (%1$d)</string>
+    <string name="similar_group_number_format">Gruppo %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Impossibile aprire il programma di disinstallazione del sistema</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Tutti i risultati</string>
+    <string name="similar_page_title">Foto simili</string>
+    <string name="similar_page_subtitle">Esamina gruppi simili con miniature, seleziona candidati ed elimina duplicati.</string>
+    <string name="similar_page_note">La prima versione utilizza regole di raggruppamento leggere. L\'hashing percettivo e il punteggio di nitidezza possono essere aggiunti in seguito.</string>
+    <string name="similar_page_badge">Intelligente simile</string>
+    <string name="similar_page_hero_hint">Conserva le foto con una risoluzione più elevata, file più grandi e timestamp più recenti.</string>
+    <string name="similar_group_summary_format">Trovati gruppi %1$d con le foto dei candidati %2$d nei tuoi album.</string>
+    <string name="similar_group_empty_title">Nessun gruppo di foto simili trovato</string>
+    <string name="similar_group_empty_body">Nessuna foto nello stesso album soddisfaceva i criteri di tempo e dimensione simili.</string>
+    <string name="similar_group_card_subtitle_format">Candidati %1$d · Possono essere liberati fino a %2$s</string>
+    <string name="similar_keep_recommend_label">Consigliato da conservare</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Altri candidati</string>
+    <string name="similar_other_items_more_format">+%1$d altre foto</string>
+    <string name="contacts_page_title">Contatta la pulizia</string>
+    <string name="contacts_page_subtitle">Trova contatti duplicati e vuoti.</string>
+    <string name="contacts_page_badge">Contatta Correggi</string>
+    <string name="contacts_page_hero_hint">Unisci i contatti con lo stesso numero, quindi rimuovi quelli vuoti.</string>
+    <string name="contacts_permission_title">Accesso ai contatti necessario</string>
+    <string name="contacts_permission_body">Consenti l\'accesso per scansionare i contatti localmente.</string>
+    <string name="contacts_scan_title">Scansiona i contatti</string>
+    <string name="contacts_scan_body">Aggiorna per trovare duplicati e contatti vuoti.</string>
+    <string name="contacts_duplicate_title">Contatti duplicati</string>
+    <string name="contacts_empty_title">Contatti vuoti</string>
+    <string name="contacts_duplicate_count_format">%1$d gruppi duplicati</string>
+    <string name="contacts_empty_count_format">%1$d contatti vuoti da pulire</string>
+    <string name="contacts_load_action">Consenti e carica contatti</string>
+    <string name="contacts_refresh_action">Aggiorna contatti</string>
+    <string name="contacts_empty_group_title">Nessun contatto duplicato trovato</string>
+    <string name="contacts_empty_group_body">Non è stato trovato alcun contatto con numeri di telefono duplicati.</string>
+    <string name="contacts_delete_empty_action">Rimuovi contatti vuoti</string>
+    <string name="contacts_merge_action">Unisci gruppo</string>
+    <string name="contacts_view_action">Visualizza in Contatti</string>
+    <string name="contacts_group_title_format">Contatti %1$s · %2$d</string>
+    <string name="contacts_group_number_format">Numero primario: %1$s</string>
+    <string name="contacts_group_members_format">Membri: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Rimuovere i contatti vuoti?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d i contatti vuoti o i contatti senza numeri verranno eliminati.</string>
+    <string name="contacts_merge_complete_message">Al sistema è stato chiesto di unire questo gruppo di contatti.</string>
+    <string name="contacts_cleanup_complete_message_format">Contatti vuoti %1$d rimossi.</string>
+    <string name="contacts_action_failed">Azione di contatto non riuscita. Riprova.</string>
+    <string name="privacy_status_title">Stato di protezione locale</string>
+    <string name="privacy_page_badge">Cassaforte privata</string>
+    <string name="privacy_hero_title">Mantieni i contenuti privati separati dalla pulizia</string>
+    <string name="privacy_hero_body">Configura prima la protezione PIN locale, quindi aggiungi l\'importazione, lo sblocco e il ripristino dei supporti privati.</string>
+    <string name="privacy_status_enabled">PIN impostato a 4 cifre</string>
+    <string name="privacy_status_disabled">Nessun PIN impostato</string>
+    <string name="privacy_status_body_enabled">I media privati importati successivamente saranno protetti dal PIN locale.</string>
+    <string name="privacy_status_body_disabled">Imposta un PIN di 4 cifre prima di aggiungere funzionalità di importazione e sblocco di contenuti multimediali privati.</string>
+    <string name="privacy_set_pin_action">Imposta il PIN</string>
+    <string name="privacy_reset_pin_action">Reimposta PIN</string>
+    <string name="privacy_pin_dialog_title">Imposta un PIN di 4 cifre</string>
+    <string name="privacy_pin_dialog_hint">Inserisci 4 cifre</string>
+    <string name="privacy_pin_invalid">Inserisci un PIN di 4 cifre.</string>
+    <string name="privacy_pin_saved">PIN locale salvato.</string>
+    <string name="privacy_pin_reset_confirm">Cancellare il PIN attuale?</string>
+    <string name="privacy_pin_reset_done">Reimpostazione del PIN.</string>
+    <string name="privacy_feature_lock_title">Sblocco locale</string>
+    <string name="privacy_feature_lock_body">La prima versione utilizza un PIN per la protezione locale. I dati biometrici possono essere aggiunti in seguito.</string>
+    <string name="privacy_feature_vault_title">Mezzi privati</string>
+    <string name="privacy_feature_vault_body">Le foto e i video privati importati successivamente verranno archiviati separatamente ed esclusi dal flusso di pulizia dell\'album principale.</string>
+    <string name="privacy_feature_scope_title">Fase attuale</string>
+    <string name="privacy_feature_scope_body">Questa versione aggiunge lo stato del PIN e la struttura della pagina. Successivamente verranno importati i media privati ​​e la crittografia locale.</string>
+    <string name="profile_plan_title">Piano attuale</string>
+    <string name="profile_plan_free">Gratuito</string>
+    <string name="profile_plan_pro">Pro</string>
+    <string name="profile_plan_body_free">Esegui la scansione, visualizza i risultati e utilizza la pulizia di base.</string>
+    <string name="profile_plan_body_pro">Sblocca pulizia avanzata, Private Vault, azioni illimitate e un\'esperienza senza pubblicità.</string>
+    <string name="profile_upgrade_action">Passa alla versione di prova Pro</string>
+    <string name="profile_restore_action">Ritorno in libertà</string>
+    <string name="profile_upgrade_done">Passato alla versione di prova Pro.</string>
+    <string name="profile_restore_done">Restituito in libertà.</string>
+    <string name="profile_benefits_title">Vantaggi professionali</string>
+    <string name="profile_benefits_body">1. Rilevamento avanzato di foto simili\n2. Pulizia batch illimitata\n3. Filtri video avanzati di grandi dimensioni\n4. Pulizia dei contatti migliorata\n5. Deposito privato\n6. Interfaccia senza pubblicità</string>
+    <string name="detail_page_badge">Visualizzazione dettagliata</string>
+    <string name="detail_page_hint">Esaminare i candidati prima di decidere cosa ripulire o conservare.</string>
+    <string name="premium">PREMIO</string>
+    <string name="settings">Impostazioni</string>
+    <string name="grant_access">Concedi l\'accesso</string>
+    <string name="storage_permission_title">Concedere l\'accesso ai file</string>
+    <string name="storage_permission_detail">CleanSuper AI necessita dell\'accesso ai tuoi file per trovare duplicati, foto sfocate e file grandi. Tutto è elaborato localmente.</string>
+    <string name="storage_permission_scan_point">Trova duplicati, foto sfocate e file grandi nel dispositivo.</string>
+    <string name="storage_permission_privacy_point">I tuoi file restano sul dispositivo e non vengono mai caricati online.</string>
+    <string name="storage_permission_message">Solo per la scansione locale; nessun dato viene caricato o condiviso con terze parti.</string>
+    <string name="storage_permission_continue">Continua</string>
+    <string name="storage_permission_close">Chiudi</string>
+    <string name="storage_permission_example_file">File su questo dispositivo</string>
+    <string name="storage_permission_example_size">Pronto per la scansione</string>
+    <string name="storage_permission_guide_title">Consenti l\'accesso a tutti i file</string>
+    <string name="storage_permission_guide_message">Attiva l\'interruttore in Impostazioni per scansionare e pulire i file su questo dispositivo.</string>
+    <string name="go_to_settings">Vai a Impostazioni</string>
+    <string name="permission_home_title">Le tue foto sono bloccate</string>
+    <string name="permission_home_body">Consenti l\'accesso a foto, video e notifiche per scansionare la tua raccolta in modo sicuro su questo dispositivo e inviare promemoria per la pulizia.</string>
+    <string name="scan_summary_format">Elementi %1$d scansionati · È possibile rivedere %2$s</string>
+    <string name="scan_running_english">Scansione della tua libreria…</string>
+    <string name="scan_ready_english">La tua libreria è pronta</string>
+    <string name="coming_soon">Prossimamente</string>
+    <string name="compression_failed">Impossibile comprimere questa immagine.</string>
+    <string name="compression_saved">Foto compressa salvata in Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Analisi sicura sul dispositivo</string>
+    <string name="home_cleanup_library">Controlla la tua libreria</string>
+    <string name="home_cleanup_badge">Sul dispositivo</string>
+    <string name="home_quick_clean_action">Apri Centro pulizia</string>
+    <string name="home_quick_clean_compact_action">Centro di pulizia</string>
+    <string name="home_reclaim_ready_format">%1$s recuperabile</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Deposito occupato</string>
+    <string name="home_storage_detail_format">%1$s per rivedere · Articoli %2$d</string>
+    <string name="home_quick_tools">Strumenti rapidi</string>
+    <string name="home_quick_tools_subtitle">Le azioni di pulizia più utilizzate, presentate in anticipo</string>
+    <string name="feature_swipe_title">Scorri foto</string>
+    <string name="feature_swipe_desc">Rivedi le foto una per una e invia gli scarti al cestino</string>
+    <string name="home_contacts_short_desc">Unisci duplicati</string>
+    <string name="feature_ready_short">Pronto</string>
+    <string name="feature_review_short">Recensione</string>
+    <string name="tools_section_storage">Archiviazione e supporti</string>
+    <string name="tools_section_device">Strumenti del dispositivo</string>
+    <string name="tools_hero_badge">7 strumenti utili</string>
+    <string name="tools_hero_title">Strumenti utili, in un unico posto</string>
+    <string name="tools_hero_body">Gestisci spazio di archiviazione e contenuti multimediali con azioni semplici e mirate.</string>
+    <string name="tool_file_manager_desc">Sfoglia e pulisci screenshot, video e altro</string>
+    <string name="tool_media_compressor_desc">Riduci le dimensioni di foto e video senza perdere la qualità</string>
+    <string name="tool_secret_space_desc">Blocca le foto private con un PIN sicuro</string>
+    <string name="tool_app_manager_desc">Visualizza le app installate e l\'utilizzo dello spazio di archiviazione</string>
+    <string name="tool_clean_calendar_desc">Rimuovi i vecchi eventi del calendario che ingombrano la tua agenda</string>
+    <string name="tool_ai_enhancer_desc">Migliora le foto sfocate o in condizioni di scarsa illuminazione con l\'intelligenza artificiale</string>
+    <string name="tool_speed_test_desc">Controlla la velocità di download e upload della tua rete</string>
+    <string name="tools_page_subtitle">Tutto ciò di cui hai bisogno per un telefono più pulito</string>
+    <string name="compress_page_subtitle">Risparmia spazio senza perdere i momenti</string>
+    <string name="video_compressor">Compressore video</string>
+    <string name="video_compress_subtitle">Riduci le dimensioni del video con la ricodifica H.264 sul dispositivo</string>
+    <string name="video_compress_card_hint">720p · Qualità equilibrata</string>
+    <string name="choose_video">Scegli Video</string>
+    <string name="choose_video_hint">Scegli un video da comprimere</string>
+    <string name="compress_photo_guide_title">Scegli una foto da comprimere</string>
+    <string name="compress_photo_guide_body">Elaborato sul dispositivo · più piccolo in pochi secondi</string>
+    <string name="compress_video_guide_title">Scegli un video da comprimere</string>
+    <string name="compress_video_guide_body">H.264 sul dispositivo · bilanciato 720p</string>
+    <string name="compress_guide_tap">Tocca per scegliere</string>
+    <string name="enhance_photo_guide_title">Scegli una foto da migliorare</string>
+    <string name="enhance_photo_guide_body">Luminosità · contrasto · nitidezza</string>
+    <string name="preview_original_photo_label">Prima · Foto originale</string>
+    <string name="preview_compressed_photo_label">Dopo · Anteprima compressa</string>
+    <string name="preview_original_video_label">Prima · Video originale</string>
+    <string name="preview_compressed_video_label">Dopo · Anteprima compressa</string>
+    <string name="preview_enhanced_photo_label">Dopo · Anteprima migliorata</string>
+    <string name="selected_video_preview">Anteprima del video selezionato</string>
+    <string name="play_video_preview">Riproduci l\'anteprima del video</string>
+    <string name="video_preview_title">Anteprima video</string>
+    <string name="video_preview_failed">Impossibile riprodurre questo video.</string>
+    <string name="video_compression_saved">Video compresso salvato in Film/CleanSuperAI.</string>
+    <string name="video_compression_failed">Impossibile comprimere questo video.</string>
+    <string name="video_compression_preparing">Preparazione della compressione video…</string>
+    <string name="video_compression_progress_format">Compressione video… %1$d%%</string>
+    <string name="video_compression_finishing">Finalizzazione del video compresso…</string>
+    <string name="video_compression_timeout">Questo video ha richiesto troppo tempo per essere compresso. Prova una clip più breve.</string>
+    <string name="app_manager_subtitle">Controlla le app installate e apri le impostazioni di sistema per disinstallare o svuotare la cache.</string>
+    <string name="app_manager_summary_format">%1$d app utente trovate · toccare per gestire</string>
+    <string name="clean_calendar_subtitle">Trova gli eventi del calendario passati e rimuovi quelli che non ti servono più.</string>
+    <string name="clean_calendar_delete">Elimina selezionato</string>
+    <string name="clean_calendar_empty">Nessun evento passato trovato</string>
+    <string name="clean_calendar_summary_format">%1$d eventi passati · %2$d selezionato</string>
+    <string name="clean_calendar_delete_confirm">Eliminare %1$d gli eventi passati selezionati?</string>
+    <string name="clean_calendar_delete_done">Eventi %1$d eliminati</string>
+    <string name="calendar_permission_hint">Consenti l\'accesso al calendario per scansionare gli eventi passati</string>
+    <string name="calendar_permission_denied">È richiesta l\'autorizzazione del calendario</string>
+    <string name="calendar_untitled">(Senza titolo)</string>
+    <string name="image_enhancer_subtitle">Migliora luminosità, contrasto e nitidezza localmente su questo dispositivo.</string>
+    <string name="image_enhancer_hint">Scegli una foto da migliorare</string>
+    <string name="image_enhancer_ready">Pronto per migliorare</string>
+    <string name="image_enhancer_action">Migliora foto</string>
+    <string name="image_enhancer_working">Migliorare…</string>
+    <string name="image_enhancer_done">Anteprima migliorata pronta · salva quando preferisci</string>
+    <string name="image_enhancer_save">Salva foto migliorata</string>
+    <string name="image_enhancer_saved">Foto migliorata salvata in Immagini/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Impossibile migliorare questa foto.</string>
+    <string name="speed_test_subtitle">Misura download, caricamento e latenza utilizzando i server Cloudflare.</string>
+    <string name="speed_test_hint">Tocca Avvia per eseguire un breve controllo della velocità della rete</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Scaricamento in Mbps</string>
+    <string name="speed_test_start">Avvia il test di velocità</string>
+    <string name="speed_test_running">Test della connessione…</string>
+    <string name="speed_test_done">Prova completata</string>
+    <string name="speed_test_failed">Il test di velocità non è riuscito. Controlla la tua rete e riprova.</string>
+    <string name="speed_test_download_idle">Scarica · in attesa</string>
+    <string name="speed_test_upload_idle">Carica · in attesa</string>
+    <string name="speed_test_latency_idle">Latenza · attesa</string>
+    <string name="speed_test_download_result">Scarica · %1$.1fMbps</string>
+    <string name="speed_test_upload_result">Carica · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Latenza · %1$d ms</string>
+    <string name="photo_compressor">Compressore fotografico</string>
+    <string name="compress_quality_hint">JPEG bilanciato · 70% qualità</string>
+    <string name="choose_photo_hint">Scegli una foto da comprimere</string>
+    <string name="choose_photo">Scegli Foto</string>
+    <string name="compress_preview">Comprimi anteprima</string>
+    <string name="compress_and_save">Comprimi e salva</string>
+    <string name="save_compressed_photo">Salva foto compressa</string>
+    <string name="save_compressed_video">Salva video compresso</string>
+    <string name="share">Condividi</string>
+    <string name="keep">Tieni</string>
+    <string name="move_to_review_bin">Sposta nel cestino</string>
+    <string name="clear_review_bin">Cancella contenitore revisioni</string>
+    <string name="swipe_page_subtitle">Revisione per mese · scorri verso destra per conservare, verso sinistra per eliminare</string>
+    <string name="swipe_trash_open">Aperto</string>
+    <string name="swipe_trash_label_singular">Foto nel cestino</string>
+    <string name="swipe_trash_label_plural">Foto nel cestino</string>
+    <string name="swipe_empty_title">Tutte le foto revisionate</string>
+    <string name="swipe_empty_body">Torna indietro per scegliere un altro mese o apri il cestino per ripristinare le foto.</string>
+    <string name="category_person_format">Persona · %1$d</string>
+    <string name="category_animal_format">Animale · %1$d</string>
+    <string name="category_vehicle_format">Veicolo · %1$d</string>
+    <string name="no_photos_available">Nessuna foto disponibile</string>
+    <string name="splash_tagline">Pulizia intelligente. Privato per progettazione.</string>
+    <string name="selected_photos_deleted">Foto selezionate eliminate</string>
+    <string name="added_to_review_bin">Aggiunto al cestino delle recensioni</string>
+    <string name="photos_deleted_format">Foto %1$d cancellate</string>
+    <string name="delete_photos_failed">Impossibile eliminare le foto selezionate</string>
+    <string name="share_photo">Condividi foto</string>
+    <string name="trash_bin_title_format">Cestino dei rifiuti (%1$s)</string>
+    <string name="trash_bin_title_empty">Cestino</string>
+    <string name="trash_restore_hint">Tocca per ripristinare le foto</string>
+    <string name="trash_empty_action">Elimina tutto nel cestino</string>
+    <string name="trash_restored">Foto restaurata</string>
+    <string name="trash_bin_empty">Il cestino è vuoto</string>
+    <string name="feature_smart_groups">Gruppi intelligenti</string>
+    <string name="feature_duplicate_photos">Foto duplicate</string>
+    <string name="feature_duplicate_videos">Video duplicati</string>
+    <string name="feature_all_videos">Tutti i video</string>
+    <string name="feature_screenshots_short">Schermate</string>
+    <string name="scan_unavailable">Scansione non disponibile</string>
+    <string name="please_try_again">Per favore riprova</string>
+    <string name="tool_file_manager">Gestore file</string>
+    <string name="tool_media_compressor">Compressore multimediale</string>
+    <string name="tool_app_manager">Gestore dell\'app</string>
+    <string name="tool_clean_calendar">Calendario pulito</string>
+    <string name="tool_ai_enhancer">Miglioratore di immagini AI</string>
+    <string name="tool_secret_space">Spazio segreto</string>
+    <string name="tool_speed_test">Prova di velocità</string>
+    <string name="compressing">Compressione…</string>
+    <string name="original_size_format">Originale · %1$s</string>
+    <string name="compressed_result_format">Compresso · %1$s\nSalvato · %2$s</string>
+    <string name="swipe_grant_access_hint">Concedere l\'accesso ai contenuti multimediali da Home per sfogliare le foto</string>
+    <string name="media_item_placeholder">Media</string>
+    <string name="selected_image_preview">Anteprima dell\'immagine selezionata</string>
+    <string name="current_photo">Foto attuale</string>
+    <string name="month_cover">Copertina del mese</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Persona · 0</string>
+    <string name="category_animal_zero">Animale · 0</string>
+    <string name="category_vehicle_zero">Veicolo · 0</string>
+    <string name="duplicate_photos_page_title">Foto duplicate</string>
+    <string name="duplicate_photos_page_subtitle">Trova duplicati esatti in base alle dimensioni e alle dimensioni del file, quindi conserva una copia.</string>
+    <string name="duplicate_photos_page_badge">Corrispondenza esatta</string>
+    <string name="duplicate_photos_summary_format">Trovati gruppi %1$d con foto duplicate %2$d.</string>
+    <string name="duplicate_photos_empty_title">Nessuna foto duplicata trovata</string>
+    <string name="duplicate_photos_empty_body">Non è stata trovata alcuna foto con le stesse dimensioni e dimensioni.</string>
+    <string name="duplicate_videos_page_title">Video duplicati</string>
+    <string name="duplicate_videos_page_subtitle">Trova i video duplicati esatti per dimensione e durata, quindi conserva una copia.</string>
+    <string name="duplicate_videos_page_badge">Corrispondenza esatta</string>
+    <string name="duplicate_videos_summary_format">Trovati gruppi %1$d con video duplicati %2$d.</string>
+    <string name="duplicate_videos_empty_title">Nessun video duplicato trovato</string>
+    <string name="duplicate_videos_empty_body">Non è stato trovato alcun video con le stesse dimensioni e durata.</string>
+    <string name="settings_page_title">Impostazioni</string>
+    <string name="settings_page_subtitle">Lingua, informazioni sull\'app, privacy e cache.</string>
+    <string name="settings_language_title">Lingua</string>
+    <string name="settings_language_subtitle">Scegli la lingua dell\'app preferita</string>
+    <string name="settings_about_title">Circa</string>
+    <string name="settings_about_subtitle">Nome e versione dell\'app</string>
+    <string name="settings_about_message_format">Clean Super AI\nVersione %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Informativa sulla privacy</string>
+    <string name="settings_privacy_policy_subtitle">Come gestiamo i tuoi dati</string>
+    <string name="settings_privacy_policy_body">Tutte le scansioni e la pulizia dei contenuti multimediali vengono eseguite localmente sul tuo dispositivo. Non carichiamo le tue foto, i tuoi video o i tuoi contatti sui nostri server. L\'analisi facoltativa (se abilitata in seguito) seguirà le politiche del negozio. Puoi revocare l\'accesso ai contenuti multimediali in qualsiasi momento nelle impostazioni di sistema.</string>
+    <string name="settings_clear_cache_title">Cancella cache</string>
+    <string name="settings_clear_cache_subtitle">Spazio di archiviazione temporaneo gratuito per le app</string>
+    <string name="settings_clear_cache_confirm">Cancellare i file temporanei della cache? Le tue foto e le tue impostazioni non verranno eliminate.</string>
+    <string name="settings_clear_cache_done_format">Cancellato %1$s dalla cache.</string>
+    <string name="language_page_title">Lingua dell\'app</string>
+    <string name="language_page_subtitle">Per impostazione predefinita, CleanSuper AI segue la lingua del tuo dispositivo.</string>
+    <string name="language_follow_system_title">Segui la lingua del sistema</string>
+    <string name="language_follow_system_subtitle_format">Lingua attuale del dispositivo: %1$s</string>
+    <string name="month_photo_count_format">Foto %1$d</string>
+    <string name="review_bin_pending_format">Foto %1$d in attesa nel cestino delle revisioni</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Condizioni d\'uso</string>
+    <string name="settings_terms_subtitle">Leggi i termini</string>
+    <string name="settings_widget_title">Widget della schermata iniziale</string>
+    <string name="settings_widget_subtitle">Aggiungi una scorciatoia per la pulizia</string>
+    <string name="tool_network_traffic">Traffico di rete</string>
+    <string name="tool_network_traffic_desc">Utilizzo per app</string>
+    <string name="tool_battery_info">Informazioni sulla batteria</string>
+    <string name="tool_battery_info_desc">Carica e salute</string>
+    <string name="tool_device_info">Informazioni sul dispositivo</string>
+    <string name="tool_device_info_desc">Sistema e Wi-Fi</string>
+    <string name="tool_private_vault">Caveau privato</string>
+    <string name="tool_private_vault_desc">Nascondi foto e video</string>
+    <string name="home_more_tools">Più strumenti</string>
+    <string name="home_battery_info">Batteria</string>
+    <string name="home_device_info">Dispositivo</string>
+    <string name="home_large_files">File di grandi dimensioni</string>
+    <string name="home_cache_cleanup">Pulisci la cache</string>
+    <string name="home_network_traffic">Utilizzo dei dati</string>
+    <string name="home_private_vault">Caveau privato</string>
+    <string name="home_picture_cleanup">Immagini</string>
+    <string name="home_video_cleanup">Video</string>
+    <string name="home_audio_cleanup">Audio</string>
+    <string name="media_loading">Caricamento supporto…</string>
+    <string name="media_loading_hint">Organizzare i tuoi file. Attendere prego.</string>
+    <string name="media_count_summary">Elementi %1$d · %2$s · %3$d selezionato</string>
+    <string name="media_empty_title">Nessun supporto trovato</string>
+    <string name="media_empty_body">Non ci sono articoli in questa categoria.</string>
+    <string name="media_error_title">Impossibile caricare il supporto</string>
+    <string name="media_access_title">È necessario l\'accesso allo spazio di archiviazione</string>
+    <string name="media_access_body">Consenti a tutti l\'accesso ai file in Impostazioni per sfogliare questo supporto.</string>
+    <string name="media_delete_title">Eliminare gli elementi selezionati?</string>
+    <string name="media_delete_message">Eliminare gli elementi selezionati %1$d? Android potrebbe chiederti di confermare.</string>
+    <string name="media_recent_group">Entro 1 mese</string>
+    <string name="media_older_group">Più vecchio di 1 mese</string>
+    <string name="media_group_summary">Articoli %1$d · %2$s</string>
+    <string name="audio_player_unavailable">Nessun lettore audio è disponibile su questo dispositivo.</string>
+    <string name="vault_items_summary">%1$d oggetti privati</string>
+    <string name="vault_empty_gallery">Il tuo caveau privato è vuoto. Importa foto o video per vederli qui.</string>
+    <string name="cache_group_app">Cache dell\'app</string>
+    <string name="cache_group_apk">Vecchi file APK</string>
+    <string name="cache_group_residual">File residui</string>
+    <string name="cache_summary">File %1$d · %2$s</string>
+    <string name="cleanup_report_title">Pulizia completata</string>
+    <string name="cleanup_report_freed">Spazio liberato</string>
+    <string name="cleanup_report_count">%1$d degli articoli %2$d rimossi</string>
+    <string name="cleanup_report_other">Pulisci altri file</string>
+    <string name="cleanup_report_done">Fatto</string>
+    <string name="exit_retain_title">Uscire da CleanSuper AI?</string>
+    <string name="exit_retain_message">Aggiungi un widget Home per una pulizia più rapida</string>
+    <string name="exit_retain_confirm_exit">Esci</string>
+    <string name="exit_retain_add">Aggiungi</string>
+    <string name="exit_retain_feature_cache">Cache</string>
+    <string name="exit_retain_feature_large">File di grandi dimensioni</string>
+    <string name="widget_status_storage">Spazio libero</string>
+    <string name="notif_screenshot">Schermate</string>
+    <string name="exit_retain_message_existing">Il tuo widget Home è pronto per una pulizia rapida</string>
+    <string name="notif_cache">Cache</string>
+    <string name="notif_channel_name">Barra degli strumenti di pulizia rapida</string>
+    <string name="notif_channel_desc">Barra degli strumenti persistente per azioni di pulizia rapide</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Promemoria puliti</string>
+    <string name="notif_event_channel_desc">Promemoria locali dopo screenshot, installazioni e disinstallazioni</string>
+    <string name="notif_event_summary_channel_name">Riepilogo pulito dei promemoria</string>
+    <string name="notif_event_screenshot_title">Un altro screenshot? 1 È ora di chiarire gli screenshot</string>
+    <string name="notif_event_install_title">La nuova app è stata spostata, così come la cache. pulire</string>
+    <string name="notif_event_uninstall_title">Disinstallato con successo! per ripulire i residui di file</string>
+    <string name="notif_clean_reminder_title">C\'è molta spazzatura ammucchiata. Puliscilo tutto in una volta.</string>
+    <string name="notif_event_battery_below_50_title">La batteria è carica per più della metà. Prenditene cura adesso, durerà fino al tuo ritorno a casa.</string>
+    <string name="notif_event_battery_below_20_title">Batteria scarica. Vuoi sapere chi ti sta rubando l\'elettricità? Clicca per vedere la classifica.</string>
+    <string name="notif_event_charging_title">Collegato. Il compito di stasera: riempire, quindi pulire.</string>
+    <string name="notif_event_charging_full_title">Completamente carico e pronto all\'uso. Un ultimo controllo: la spazzatura è stata ripulita?</string>
+    <string name="notif_event_charging_to_80_title">Lo sprint finale è dell\'80%. Scarica la spazzatura e fai le valigie leggere per accogliere la piena potenza.</string>
+    <string name="notif_event_charging_disconnect_title">Stacca la spina e parti. Ricordati di prenderti il ​​tempo per ripulire la spazzatura e rimanere in perfetta forma.</string>
+    <string name="notif_event_app_update_title">Una nuova versione è arrivata. Tutto ciò che resta della vecchia versione è stato completamente ripulito.</string>
+    <string name="notif_event_network_change_title">Il web cambia! Visualizza lo stato attuale della rete 1</string>
+    <string name="notif_event_screen_lock_title">Metti giù il telefono e lascia fare a noi. Tempo di riposo davanti allo schermo = tempo di allattamento.</string>
+    <string name="notif_event_screen_on_after_lock_title">Ci incontriamo di nuovo, sei bloccato? La maggior parte è spazzatura, prova a ripulirla.</string>
+    <string name="notif_event_storage_free_drop_title">Lo spazio di archiviazione è cambiato. Vediamo cosa occupa spazio?</string>
+    <string name="notif_event_scheduled_push_1_title">La spazzatura accumulata per così tanto tempo viene subito spazzata via.</string>
+    <string name="notif_event_scheduled_push_2_title">La batteria non è più durevole come prima? Controlla.</string>
+    <string name="notif_event_app_inactive_title">È da molto tempo che non ci vediamo, stava aspettando. Torna indietro e pulisci la spazzatura.</string>
+    <string name="notif_event_scheduled_push_3_title">Un tocco sulle tue playlist: imposta il widget</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Un tocco sulle tue playlist: imposta il widget</item>
+        <item>Rendi tutto più semplice con un widget: aggiungi una scorciatoia musicale</item>
+        <item>Gioca velocemente senza sbloccare: attiva il widget della schermata iniziale</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Hai dimenticato qualcosa</string>
+    <string name="notif_event_app_background_content">Vieni a finire la pulizia in modo che funzioni più agevolmente.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Hai dimenticato qualcosa</item>
+        <item>Manca un passo</item>
+        <item>Buone notizie</item>
+        <item>Te ne sei andato troppo in fretta</item>
+        <item>Non lasciare spazzatura durante la notte</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Vieni a finire la pulizia in modo che funzioni più agevolmente.</item>
+        <item>Un altro tocco per terminare la pulizia e liberare più spazio.</item>
+        <item>Spazio liberabile rilevato: richiedi una pulizia con un solo tocco.</item>
+        <item>Il tuo telefono può essere ancora più veloce: vieni a vedere l\'ottimizzazione.</item>
+        <item>Vieni a finire la pulizia in modo che funzioni più agevolmente.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">I risultati della scansione sono pronti: la spazzatura occupa spazio. Pulisci adesso</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>I risultati della scansione sono pronti: la spazzatura occupa spazio. Pulisci adesso</item>
+        <item>Manca un passo: torna indietro e libera spazio all\'istante.</item>
+        <item>Hai dimenticato di pulire dopo la scansione? 10 secondi per rendere il tuo telefono più leggero.</item>
+        <item>La posta indesiderata è ancora sul tuo telefono: risultati salvati. Torna per pulire con un solo tocco.</item>
+        <item>L\'ultima scansione ha rilevato più elementi da pulire. Vieni a finirlo.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">La pulizia non è ancora terminata: completa l\'ultimo passaggio.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>La pulizia non è ancora terminata: completa l\'ultimo passaggio.</item>
+        <item>Pulizie interrotte: a metà strada. Fine per un telefono più leggero.</item>
+        <item>La pulizia è quasi terminata: non lasciare la spazzatura dietro di te.</item>
+        <item>Hai lasciato il lavoro a metà: finiscilo e senti la differenza.</item>
+        <item>La pulizia interrotta può continuare in qualsiasi momento. Vieni a finirlo.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Foto eliminata: spostata in modo sicuro nel cestino.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Foto eliminata: spostata in modo sicuro nel cestino.</item>
+        <item>Ho appena eliminato 1 foto: vedi quanto spazio hai liberato?</item>
+        <item>Foto eliminata: eliminala definitivamente per liberare spazio adesso.</item>
+        <item>Foto eliminata in modo sicuro: stato di archiviazione aggiornato.</item>
+        <item>Foto eliminata: puoi pulire anche screenshot simili.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Video eliminato: ampio spazio liberato.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Video eliminato: ampio spazio liberato.</item>
+        <item>Video di grandi dimensioni rimosso: la pressione sullo spazio di archiviazione si è allentata immediatamente.</item>
+        <item>Video eliminato: controlla lo stato attuale della memoria.</item>
+        <item>Eliminazione completata: svuota il cestino per liberare completamente lo spazio.</item>
+        <item>Video eliminato: potrebbero esserci altri video di grandi dimensioni dimenticati da pulire.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Audio eliminato: si sommano file di piccole dimensioni. Continuare.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Audio eliminato: si sommano file di piccole dimensioni. Continuare.</item>
+        <item>L\'audio è sparito: è possibile pulire anche altri file simili inutilizzati.</item>
+        <item>Audio eliminato: dettagli di archiviazione aggiornati. Vieni a dare un\'occhiata.</item>
+        <item>1 file audio eliminato: elenco di archiviazione aggiornato.</item>
+        <item>Audio eliminato: svuota il cestino per completare la liberazione dello spazio.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">File eliminato: un po\' più di spazio di archiviazione liberato.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>File eliminato: un po\' più di spazio di archiviazione liberato.</item>
+        <item>File eliminato: il disordine non disturberà più il tuo telefono.</item>
+        <item>File eliminato: scopri cos\'altro puoi pulire.</item>
+        <item>File eliminato: modifiche sincronizzate, stato di archiviazione aggiornato.</item>
+        <item>Il file è stato cancellato: stai recuperando spazio adesso.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Immagine scaricata: aprila e dai un\'occhiata.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Immagine scaricata: aprila e dai un\'occhiata.</item>
+        <item>Immagine scaricata: già che ci sei, pulisci le foto duplicate nel tuo album</item>
+        <item>Download completato: immagine salvata in modo sicuro. Vieni a vedere foto simili</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Video scaricato: non è piccolo. Scopri quanto spazio possono liberare i vecchi video</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Video scaricato: non è piccolo. Scopri quanto spazio possono liberare i vecchi video</item>
+        <item>Nuovo video salvato: trova video di grandi dimensioni da eliminare e libera spazio. Toccami</item>
+        <item>I video occupano spazio: abbiamo trovato articoli pulibili per alleggerire il tuo telefono. Tocca qui</item>
+        <item>Download completato! Pulisci alcuni vecchi video e lo spazio ritorna. Toccami</item>
+        <item>Nuovo video ordinato: facile da trovare o pulire. Tocca per vedere</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Audio scaricato: riordina la tua libreria musicale con un solo tocco. Toccami</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Audio scaricato: riordina la tua libreria musicale con un solo tocco. Toccami</item>
+        <item>Nuovo audio ordinato: pulisci il vecchio audio mentre sei qui. Toccami</item>
+        <item>La libreria musicale si sta riempiendo? Controllare l\'audio pulibile. Tocca qui</item>
+        <item>Audio scaricato: deduplica con un solo tocco. Toccami per riordinare</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Nuovo file salvato: cancella i vecchi file e libera spazio. Tocca qui</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Nuovo file salvato: cancella i vecchi file e libera spazio. Tocca qui</item>
+        <item>Download completato: scopri quali vecchi file puoi pulire. Toccami</item>
+        <item>Nuovo file pronto: archivio intelligente + pulito. Toccami per iniziare</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Cestino svuotato: spazio di archiviazione aggiornato. Controlla il tuo ultimo spazio.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Cestino svuotato: spazio di archiviazione aggiornato. Controlla il tuo ultimo spazio.</item>
+        <item>Il cestino è stato svuotato: pulisci a fondo gli avanzi.</item>
+        <item>Svuotato con successo: più spazzatura da pulire. Vieni a dare un\'occhiata.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Pulisci adesso</string>
+    <string name="notif_event_action_open_home">Aperto</string>
+    <string name="notif_event_action_manage">Gestisci app</string>
+    <string name="notif_event_action_check_battery">Controllare la batteria</string>
+    <string name="notif_event_action_check_network">Controlla la rete</string>
+    <string name="notif_days_unit">giorno</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Lo spazio di archiviazione è cambiato. Vediamo cosa occupa spazio?</item>
+        <item>Rilevati cambiamenti spaziali. Potrebbe esserci della nuova spazzatura, dai un\'occhiata?</item>
+        <item>Lo spazio disponibile si è spostato. Sai chi l\'ha mangiato? Fare clic per dare un\'occhiata.</item>
+        <item>Lo spazio è stretto? Appena rilevato il cambiamento, diamo un\'occhiata ai dettagli.</item>
+        <item>Promemoria per il cambio di spazio: potresti accumulare molta spazzatura. Controlla?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Batteria scarica. Vuoi sapere chi ti sta rubando l\'elettricità? Clicca per vedere la classifica.</item>
+        <item>Toccando il fondo presto. Se elimini le app che rubano elettricità, puoi ancora sopravvivere per un po\'.</item>
+        <item>La batteria è scarica. Cancellare alcuni sfondi è meglio che non fare nulla.</item>
+        <item>La batteria è rossa. Puoi ancora salvarlo, fare clic per aprirlo e dare un\'occhiata.</item>
+        <item>Meno di 20% remains. Facciamo un po\' di primo soccorso per il risparmio energetico e puliamo.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>La batteria è carica per più della metà. Prenditene cura adesso, durerà fino al tuo ritorno a casa.</item>
+        <item>La batteria è carica per più della metà. Prendersi cura della batteria adesso è molto più semplice che aspettare fino al 20%.</item>
+        <item>La batteria è mezza scarica. Quanto può durare? Fare clic per dare un\'occhiata.</item>
+        <item>La batteria è carica per più della metà. È ora di occuparsi del backend, non aspettare che diventi nervoso.</item>
+        <item>È rimasta metà della batteria. Elimina i grandi giocatori assetati di potere e rendi il secondo tempo più stabile.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Lo sprint finale è dell\'80%. Scarica la spazzatura e fai le valigie leggere per accogliere la piena potenza.</item>
+        <item>Ancora 20% smeno di una carica completa. Smettila di fissare lo schermo e lasciaci occuparci della spazzatura.</item>
+        <item>80%: A un passo dalla perfezione. Fare clic una volta e verrà completamente cancellato quando la batteria sarà completamente carica.</item>
+        <item>80%, a buona batteria per un buon cellulare. Ripulire un giro mentre fa caldo?</item>
+        <item>Gli ultimi 20% i che ci sono stati consegnati. Tu guardi la batteria e noi puliamo la spazzatura.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Completamente carico e pronto all\'uso. Un ultimo controllo: la spazzatura è stata ripulita?</item>
+        <item>Dopo la ricarica, il senso del rituale è pieno. Che ne dici di ripulire la spazzatura per commemorarlo?</item>
+        <item>100%, stavolo oggi. Ancora un giro ed è impeccabile.</item>
+        <item>100%. L\'ultimo passo prima di staccare la spina: svuotare la spazzatura, trenta secondi.</item>
+        <item>Finito con piena potenza. Un\'ultima pulizia, perfetta.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Il web cambia! Visualizza lo stato attuale della rete 1</item>
+        <item>Diserzione della rete. Non guardare il segnale durante la pulizia, basta fare clic su di esso ed eseguire la scansione.</item>
+        <item>Non riesci ad aprire la pagina? La pulizia è sempre online.</item>
+        <item>Puoi lavorare offline e il tuo cestino può essere svuotato ora.</item>
+        <item>Se non c\'è segnale, non sono necessari dati per la pulizia, basta fare clic.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Collegato. Il compito di stasera: riempire, quindi pulire.</item>
+        <item>Stai riposando, si sta ricaricando. Lascia che pulisca anche la spazzatura.</item>
+        <item>Durante il tempo di ricarica è sufficiente eliminare la spazzatura accumulata da molto tempo.</item>
+        <item>Solo quando c\'è la corrente elettrica il personale dietro le quinte può osare lavorare liberamente.</item>
+        <item>Diventa un po\' caldo durante la ricarica? Cancellando lo sfondo è possibile abbassare la temperatura.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Stacca la spina e parti. Ricordati di prenderti il ​​tempo per ripulire la spazzatura e rimanere in perfetta forma.</item>
+        <item>Al termine della ricarica, fare le valigie e partire. Basta pulirlo e sarà perfetto.</item>
+        <item>Completamente carico e pronto per l\'uso. Ripulire la spazzatura senza problemi, oggi non ci sono difetti.</item>
+        <item>La ricarica termina. Lo spazio successivo deve essere ripulito e aggiornato un livello alla volta.</item>
+        <item>Non fermarti ai blackout. Resta una cosa: la pulizia.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Ci incontriamo di nuovo, sei bloccato? La maggior parte è spazzatura, prova a ripulirla.</item>
+        <item>Sbloccato? Non aprire prima altre app e svuotare il cestino per trenta secondi.</item>
+        <item>La prima cosa da sbloccare siamo noi. Svuota la spazzatura e ti amerà di più.</item>
+        <item>Trenta secondi dopo lo sblocco. L\'uso più prezioso: pulire la spazzatura.</item>
+        <item>Il tuo cellulare dice: Il backend è un po\' bloccato, potresti aiutarmi?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Metti giù il telefono e lascia fare a noi. Tempo di riposo davanti allo schermo = tempo di allattamento.</item>
+        <item>Fermare il lavoro non significa fermare il lavoro. Ti farò una sorpresa la prossima volta che accendo lo schermo.</item>
+        <item>Migliora silenziosamente mentre si appoggia lo schermo. Fai clic e noi faremo il resto.</item>
+        <item>Un\'ultima cosa prima di bloccare lo schermo: fare clic su Pulisci. Domani mattina un nuovo look.</item>
+        <item>Lo schermo si oscura. Prendi accordi ora e vedrai i risultati domani.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>La nuova app è stata spostata, così come la cache. pulire</item>
+        <item>Comprendiamo la gioia di installare una nuova app. È solo che la cache si accumulerà silenziosamente.</item>
+        <item>Nuova applicazione? Anche la cache è qui, cancellala con un clic.</item>
+        <item>Il nuovo entra e il vecchio esce. Puliscilo spesso e installalo come preferisci.</item>
+        <item>Un altro? Lo spazio si sta riducendo silenziosamente, vieni a ripulirlo.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Disinstallato con successo! per ripulire i residui di file</item>
+        <item>Disinstallato ma non ripulito. Fare clic per terminare.</item>
+        <item>L\'app è stata disinstallata, ma la coda è ancora lì. Pulisci con un clic e saluta una volta per tutte.</item>
+        <item>Non perdere il secondo passaggio: elimina l\'app + cancella i residui. Un clic e il gioco è fatto.</item>
+        <item>Il residuo mangerà metà dello spazio lasciato libero. Scansione approfondita e cancella tutto.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>Una nuova versione è arrivata. Tutto ciò che resta della vecchia versione è stato completamente ripulito.</item>
+        <item>+1 per versione, +1 per cache, per scansione approfondita.</item>
+        <item>L\'aggiornamento è completato e i rimanenti pacchetti di installazione possono essere ripuliti con un clic.</item>
+        <item>L\'aggiornamento è terminato, concludiamo. Puliscilo e mi occuperò io.</item>
+        <item>Ogni aggiornamento lascerà i vecchi file e li gestirà rapidamente.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Un altro screenshot? 1 È ora di chiarire gli screenshot</item>
+        <item>Trovato un nuovo screenshot, fai clic per visualizzarlo e ripulirlo~</item>
+        <item>Ci sono sempre più screenshot, la pulizia con un clic può aiutarti a liberare spazio</item>
+        <item>Lo screenshot è stato acquisito correttamente, quelli duplicati e sfocati possono essere filtrati con un clic.</item>
+        <item>Nuovi screenshot vengono aggiunti al database e le immagini duplicate sono state messe in coda per essere cancellate con un clic.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>C\'è molta spazzatura ammucchiata. Puliscilo tutto in una volta.</item>
+        <item>%1$d pulito l\'ultima volta giorni fa, fai clic per elaborarlo ora</item>
+        <item>Non sono qui da alcuni giorni, quindi pulirò tutto e tornerò sul campo di battaglia con leggerezza.</item>
+        <item>La quota di compensazione oggi non è stata utilizzata. Lo pulirò quando torno.</item>
+        <item>La cache si sta riempiendo e aspetta che tu la controlli</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>È da molto tempo che non ci vediamo, stava aspettando. Torna indietro e pulisci la spazzatura.</item>
+        <item>Non ti vedo da alcuni giorni. Non c\'è riposo per la spazzatura. Torna indietro e spazzalo via.</item>
+        <item>La cache è in coda. Fare clic e scompaiono.</item>
+        <item>Il cestino è occupato mentre sei assente. Svuota con un clic e sentiti più fresco che mai.</item>
+        <item>Indietro? Prima svuota la spazzatura. In trenta secondi il telefono torna leggero come nuovo.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>La spazzatura accumulata per così tanto tempo viene subito spazzata via.</item>
+        <item>È ora di fare pulizia. Il cestino di oggi aspetta che tu faccia clic su di esso.</item>
+        <item>È arrivato lo Space Daily di oggi. Svuota e mantieni la luce.</item>
+        <item>Alcuni file sono molto più grandi di quanto pensi, dai un\'occhiata</item>
+        <item>Trova il ragazzo che ha preso qualche G e ripuliscilo</item>
+        <item>La grande lista dei documenti è pronta, vieni a dare un\'occhiata.</item>
+        <item>Chi occupa più spazio? Rivelato in un secondo.</item>
+        <item>Lo scatto continuo è fantastico, la conclusione è dolorosa. Lascia fare a noi.</item>
+        <item>Le foto simili sono in fila, sta a te scegliere quale conservare</item>
+        <item>Troppe foto simili? Ti aiuteremo a confrontare e rimuovere i duplicati con un solo clic.</item>
+        <item>I video offline memorizzati nella cache dovrebbero essere cancellati.</item>
+        <item>Anche l\'audio rimanente verrà pulito.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>La batteria non è più durevole come prima? Controlla.</item>
+        <item>Chi ti sta rubando l\'elettricità? Lo saprai una volta che lo cercherai.</item>
+        <item>Disattivandoli si prolungherà la durata della batteria.</item>
+        <item>Alcune app sono installate ma mai utilizzate. Vedi quali sono?</item>
+        <item>Anche tenere le app che non usi è un peso, la lista è stata fatta</item>
+        <item>Per quanto riguarda la privacy, prima viene affrontata, meglio è.</item>
+        <item>Nascondi quelli importanti ed elimina quelli inutili. lascia che ti aiuti</item>
+        <item>Dove va il traffico? Scopri chi lo sta usando.</item>
+        <item>I dettagli sul traffico sono pronti e chiari a colpo d\'occhio.</item>
+        <item>C\'è un\'app che si connette segretamente a Internet in background.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{dimensione} di spazzatura: eliminala con un solo tocco</string>
+    <string name="notif_scheduled_large_files">{totale} di file di grandi dimensioni: ripulisci con facilità</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} gruppi di foto duplicate: salva {size}</string>
+    <string name="notif_scheduled_similar_photos">{dimensione} di foto simili: scegli cosa pulire</string>
+    <string name="notif_scheduled_videos">{totale} di video: elimina {n} per liberare spazio</string>
+    <string name="notif_scheduled_audio">{totale} di file audio: è ora di fare ordine</string>
+    <string name="notif_scheduled_apps">{size} utilizzato da {idle} app inattive</string>
+    <string name="notif_scheduled_data">{indietro} di dati utilizzati in background</string>
+    <string name="app_manager_uninstall_selected">Disinstalla selezionate</string>
+    <string name="app_manager_uninstall_selected_count">Disinstalla selezionate (%1$d)</string>
+    <string name="cache_removable">Rimovibile</string>
+    <string name="cache_clean_selected">Rimuovi cache</string>
+    <string name="cache_clean_selected_summary">Pulisci %1$s (%2$d)</string>
+</resources>

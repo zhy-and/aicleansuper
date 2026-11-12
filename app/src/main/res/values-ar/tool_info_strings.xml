@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">درجة حرارة</string>
+    <string name="sys_voltage">الجهد االكهربى</string>
+    <string name="sys_current">التيار الكهربائي</string>
+    <string name="sys_health">صحة</string>
+    <string name="sys_type">نوع البطارية</string>
+    <string name="sys_capacity">سعة البطارية</string>
+    <string name="sys_charging">الشحن</string>
+    <string name="sys_full">ممتلىء</string>
+    <string name="sys_good">جيد</string>
+    <string name="sys_overheat">اسخن</string>
+    <string name="sys_dead">ميت</string>
+    <string name="sys_over_voltage">على الجهد</string>
+    <string name="sys_cold">بارد</string>
+    <string name="sys_unknown">مجهول</string>
+    <string name="sys_model">نموذج:</string>
+    <string name="sys_brand">ماركة:</string>
+    <string name="sys_manufacturer">الشركة المصنعة:</string>
+    <string name="sys_wifi_name">اسم:</string>
+    <string name="sys_wifi_ip">الملكية الفكرية:</string>
+    <string name="sys_wifi_speed">سرعة:</string>
+    <string name="traffic_month">هذا الشهر</string>
+    <string name="traffic_30_days">30 يوما</string>
+    <string name="traffic_24_hours">24 ساعة</string>
+    <string name="traffic_mobile">متحرك</string>
+    <string name="traffic_wifi">واي فاي</string>
+    <string name="traffic_apps">تطبيقات</string>
+</resources>

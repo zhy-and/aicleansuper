@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Создайте 6-значный PIN-код</string>
+    <string name="vlt_enter_pin">Введите свой PIN-код</string>
+    <string name="vlt_confirm_pin">Подтвердите свой PIN-код</string>
+    <string name="vlt_warning">Удаление этого приложения приведет к безвозвратному удалению файлов в Privacy Space.</string>
+    <string name="vlt_pin_mismatch">PIN-коды не совпадают. Попробуйте еще раз.</string>
+    <string name="vlt_pin_wrong">Неправильный PIN-код</string>
+    <string name="vlt_biometric">Использовать отпечаток пальца/лицо</string>
+    <string name="vlt_unlock">Разблокировать конфиденциальное пространство</string>
+    <string name="vlt_use_pin">Введите свой PIN-код</string>
+    <string name="vlt_importing">Импорт...</string>
+    <string name="vlt_imported">Импортировано %1$d элементов.</string>
+    <string name="vlt_restore">Восстановить</string>
+    <string name="vlt_delete">Удалить</string>
+</resources>

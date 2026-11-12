@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Удалить</string>
+    <string name="uninstall_guide_back">Назад</string>
+    <string name="uninstall_guide_wait">Подождите…</string>
+    <string name="uninstall_guide_more_space">Освободите больше места с помощью %1$s</string>
+    <string name="uninstall_guide_smart_clean">Запустить умную очистку</string>
+    <string name="uninstall_guide_scan_files">Найти файлы, которые можно удалить</string>
+    <string name="uninstall_guide_scan_now">Сканировать</string>
+    <string name="uninstall_guide_unused_apps">Неиспользуемые приложения</string>
+    <string name="uninstall_guide_find_apps">Найти приложения, которые больше не нужны</string>
+    <string name="uninstall_guide_view_apps">Посмотреть приложения</string>
+    <string name="uninstall_guide_keep">Оставить %1$s</string>
+    <string name="uninstall_guide_continue">Продолжить удаление</string>
+    <string name="uninstall_guide_why">Почему вы удаляете %1$s?</string>
+    <string name="uninstall_reason_no_need">Приложение больше не нужно</string>
+    <string name="uninstall_reason_ads">Слишком много рекламы</string>
+    <string name="uninstall_reason_space">Освободилось недостаточно места</string>
+    <string name="uninstall_reason_missing_files">Не могу найти файлы для очистки</string>
+    <string name="uninstall_reason_hard">Сложно пользоваться</string>
+    <string name="uninstall_reason_slow">Приложение работает медленно или нестабильно</string>
+    <string name="uninstall_reason_other">Другое</string>
+    <string name="uninstall_guide_private">Ваш отзыв не содержит ваших файлов.</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_uninstall">Удалить</string>
+    <string name="photo_photos_label">Фотографии</string>
+    <string name="notif_large_file">Большой файл</string>
+    <string name="notif_junk">Мусор</string>
+    <string name="notif_apps">Приложения</string>
+    <string name="notif_clean_now">Очистить сейчас</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Понятно</string>
+</resources>

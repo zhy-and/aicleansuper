@@ -16,26 +16,35 @@
         android:orientation="vertical">
 
         <FrameLayout
-            android:id="@+id/btnBack"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="@drawable/bg_icon_button">
-
-            <ImageView
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/detail_back"
-                android:src="@drawable/ic_arrow_back"
-                app:tint="@color/text_primary" />
-        </FrameLayout>
-
-        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:text="@string/tool_ai_enhancer"
-            android:textAppearance="@style/TextAppearance.Cleansuperai.Title" />
+            android:layout_height="42dp">
+
+            <FrameLayout
+                android:id="@+id/btnBack"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_icon_button">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/detail_back"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/text_primary" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/tool_ai_enhancer"
+                android:textAppearance="@style/TextAppearance.Cleansuperai.Title" />
+        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/inlineAdContainer"
@@ -147,6 +156,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:visibility="gone"
                     app:cardBackgroundColor="@color/surface_dark_secondary"
                     app:cardCornerRadius="18dp"
@@ -158,7 +170,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@string/selected_image_preview"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="fitCenter" />
                 </com.google.android.material.card.MaterialCardView>
 
                 <TextView
@@ -177,6 +189,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:visibility="gone"
                     app:cardBackgroundColor="@color/surface_dark_secondary"
                     app:cardCornerRadius="18dp"
@@ -188,7 +203,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="@string/selected_image_preview"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="fitCenter" />
                 </com.google.android.material.card.MaterialCardView>
 
                 <TextView

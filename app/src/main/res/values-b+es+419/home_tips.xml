@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Este dispositivo no admite la fijación de widgets</string>
+    <string name="widget_already_added">Widget ya agregado</string>
+    <string name="home_tip_notification">Manténgase informado sobre la acumulación de archivos basura.</string>
+    <string name="home_tip_notification_action">Permitir</string>
+    <string name="home_tip_widget">Habilite los widgets de escritorio con un clic</string>
+    <string name="home_tip_widget_action">Permitir</string>
+    <string name="home_tip_all_files">Escaneo autorizado para detectar rastros residuales.</string>
+    <string name="home_tip_all_files_action">Permitir</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">L\'épinglage de widgets n\'est pas pris en charge sur cet appareil</string>
+    <string name="widget_already_added">Widget déjà ajouté</string>
+    <string name="home_tip_notification">Restez au courant de l\'accumulation de fichiers indésirables.</string>
+    <string name="home_tip_notification_action">Autoriser</string>
+    <string name="home_tip_widget">Activez les widgets de bureau en un seul clic</string>
+    <string name="home_tip_widget_action">Permettre</string>
+    <string name="home_tip_all_files">Balayage permis pour détecter les traces résiduelles.</string>
+    <string name="home_tip_all_files_action">Permettre</string>
+</resources>

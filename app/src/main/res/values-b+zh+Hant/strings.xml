@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">解除安裝</string>
+    <string name="uninstall_guide_back">返回</string>
+    <string name="uninstall_guide_wait">等一下…</string>
+    <string name="uninstall_guide_more_space">讓 %1$s 幫你釋放更多空間？</string>
+    <string name="uninstall_guide_smart_clean">執行智慧清理</string>
+    <string name="uninstall_guide_scan_files">掃描你可能想刪除的檔案</string>
+    <string name="uninstall_guide_scan_now">立即掃描</string>
+    <string name="uninstall_guide_unused_apps">查看未使用的應用程式</string>
+    <string name="uninstall_guide_find_apps">找出你不再需要的應用程式</string>
+    <string name="uninstall_guide_view_apps">查看應用程式</string>
+    <string name="uninstall_guide_keep">保留 %1$s</string>
+    <string name="uninstall_guide_continue">繼續解除安裝</string>
+    <string name="uninstall_guide_why">為什麼要解除安裝 %1$s？</string>
+    <string name="uninstall_reason_no_need">我不再需要它</string>
+    <string name="uninstall_reason_ads">廣告太多</string>
+    <string name="uninstall_reason_space">未釋放足夠空間</string>
+    <string name="uninstall_reason_missing_files">找不到想清理的檔案</string>
+    <string name="uninstall_reason_hard">使用起來很困難</string>
+    <string name="uninstall_reason_slow">應用程式緩慢或不穩定</string>
+    <string name="uninstall_reason_other">其他</string>
+    <string name="uninstall_guide_private">你的意見回饋不包含你的檔案。</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_uninstall">解除安裝</string>
+    <string name="photo_photos_label">照片</string>
+    <string name="notif_large_file">大文件</string>
+    <string name="notif_junk">垃圾</string>
+    <string name="notif_apps">應用程式</string>
+    <string name="notif_clean_now">立即清理</string>
+    <string name="notif_speed_value_placeholder">0.0</string>
+    <string name="action_got_it_short">知道了</string>
+</resources>

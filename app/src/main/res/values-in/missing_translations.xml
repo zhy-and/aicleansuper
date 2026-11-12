@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Rumah</string>
+    <string name="nav_swipe">Gesek</string>
+    <string name="nav_compress">Kompres</string>
+    <string name="nav_tools">Alat</string>
+    <string name="nav_clean">Bersih</string>
+    <string name="nav_privacy">Privasi</string>
+    <string name="nav_profile">Profil</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Atur foto, video, dan kontak Anda secara lokal</string>
+    <string name="home_badge_text">Pembersihan AI</string>
+    <string name="home_quick_summary_title">Tip Pembersihan Hari Ini</string>
+    <string name="home_quick_summary_body">Mulailah dengan tangkapan layar dan video berukuran besar untuk mengosongkan ruang dengan cepat.</string>
+    <string name="home_scan_insight_title">Status Pemindaian Cerdas</string>
+    <string name="home_ready_title">4 Alat Pembersihan yang Kuat</string>
+    <string name="home_ready_body">Kelola foto, tangkapan layar, video, dan kontak di satu tempat.</string>
+    <string name="storage_overview_title">Ikhtisar Penyimpanan</string>
+    <string name="storage_overview_summary">Hingga 0,0 GB dapat dibebaskan</string>
+    <string name="storage_overview_detail">85,4 GB dari 128 GB yang digunakan</string>
+    <string name="storage_overview_summary_format">Hingga %1$s dapat dibebaskan</string>
+    <string name="storage_overview_detail_format">%1$s dari %2$s digunakan</string>
+    <string name="storage_overview_summary_done">Hingga 1,8 GB dapat dikosongkan</string>
+    <string name="storage_overview_detail_done">85,4 GB dari 128 GB yang digunakan. Mulailah dengan perpustakaan media Anda.</string>
+    <string name="scan_button_idle">Mulai Pindai</string>
+    <string name="scan_button_running">Memindai...</string>
+    <string name="scan_status_title">Status Pemindaian</string>
+    <string name="scan_status_idle">Siap untuk memindai</string>
+    <string name="scan_status_running">Menganalisis file media</string>
+    <string name="scan_status_done">Pemindaian selesai. Saran pembersihan sudah siap.</string>
+    <string name="scan_status_error">Pemindaian gagal. Coba lagi nanti.</string>
+    <string name="scan_status_detail_idle">Tangkapan layar, video berukuran besar, dan foto serupa akan diperiksa terlebih dahulu.</string>
+    <string name="scan_status_detail_running">Memindai secara lokal. Foto dan video Anda tidak akan diunggah.</string>
+    <string name="scan_status_detail_midway">Tangkapan layar dan video besar dianalisis. Mengatur foto serupa.</string>
+    <string name="scan_status_detail_done">Menemukan 1,8 GB untuk dibersihkan. Mulailah dengan tangkapan layar dan video besar.</string>
+    <string name="scan_status_detail_done_format">Menemukan %1$s untuk dibersihkan. Mulailah dengan tangkapan layar dan video besar.</string>
+    <string name="feature_section_title">Alat Pembersihan Penting</string>
+    <string name="feature_section_subtitle">Rilis pertama berfokus pada 4 tugas pembersihan yang paling umum</string>
+    <string name="feature_similar_title">Foto Serupa</string>
+    <string name="feature_similar_desc">Bersihkan foto serupa</string>
+    <string name="feature_screenshots_title">Pembersihan Tangkapan Layar</string>
+    <string name="feature_screenshots_desc">Bersihkan tangkapan layar yang tidak digunakan</string>
+    <string name="feature_videos_title">Video Besar</string>
+    <string name="feature_videos_desc">Bersihkan video berukuran besar</string>
+    <string name="feature_contacts_title">Pembersihan Kontak</string>
+    <string name="feature_contacts_desc">Bersihkan kontak duplikat</string>
+    <string name="feature_similar_space_format">grup %1$d</string>
+    <string name="count_placeholder">Tidak dipindai</string>
+    <string name="count_similar_done">128 foto</string>
+    <string name="count_screenshots_done">364 foto</string>
+    <string name="count_videos_done">12 video</string>
+    <string name="count_contacts_done">9 kelompok</string>
+    <string name="recent_section_title">Catatan Rilis</string>
+    <string name="recent_section_body">Versi ini mencakup struktur layar beranda XML, permintaan izin media, alur pemindaian placeholder, dan ringkasan hasil. MediaStore, Kontak, dan fitur pembersihan nyata dapat ditambahkan selanjutnya.</string>
+    <string name="permission_denied_message">Akses media diperlukan untuk memulai pemindaian.</string>
+    <string name="mock_feature_message">Hasil pemindaian nyata akan ditambahkan ke fitur ini selanjutnya.</string>
+    <string name="scan_complete_message">Alur pemindaian awal sudah siap. Data nyata dapat ditambahkan selanjutnya.</string>
+    <string name="scan_failed_message">Pemindaian gagal: %1$s</string>
+    <string name="unknown_error">Kesalahan tidak diketahui</string>
+    <string name="storage_progress_label">Kemajuan penggunaan penyimpanan</string>
+    <string name="phase_two_label">Fase 2</string>
+    <string name="phase_three_label">Fase 3</string>
+    <string name="images_total_title">Jumlah Gambar</string>
+    <string name="videos_total_title">Jumlah Video</string>
+    <string name="clean_page_title">Pusat Pembersihan</string>
+    <string name="clean_page_subtitle">Mulailah dengan konten yang paling banyak mengosongkan ruang.</string>
+    <string name="clean_page_badge">Pembersih Cerdas</string>
+    <string name="clean_overview_title">Hasil Pemindaian</string>
+    <string name="clean_overview_body">Bersihkan penghemat ruang terbesar terlebih dahulu, lalu foto dan kontak serupa.</string>
+    <string name="privacy_page_title">Gudang Pribadi</string>
+    <string name="privacy_page_subtitle">PIN lokal melindungi media pribadi Anda dan impor di masa mendatang.</string>
+    <string name="profile_page_title">Profil</string>
+    <string name="profile_page_subtitle">Kelola keanggotaan, pengaturan, dan pembelian Anda di sini.</string>
+    <string name="profile_page_badge">Premi</string>
+    <string name="profile_hero_title">Tingkatkan ke Pro untuk pengalaman pembersihan menyeluruh</string>
+    <string name="profile_hero_body">Pro mencakup tindakan batch tanpa batas, Private Vault, dan deteksi foto serupa yang lebih baik.</string>
+    <string name="profile_plan_status_free">Paket saat ini: Gratis</string>
+    <string name="profile_plan_status_pro">Uji coba pro aktif</string>
+    <string name="profile_most_popular">Paling Populer</string>
+    <string name="profile_cta_title">Mengapa Meningkatkan?</string>
+    <string name="profile_cta_body">Jika Anda sering membersihkan foto, video, dan kontak, Pro sangat mengurangi langkah berulang.</string>
+    <string name="placeholder_card_title">Tahap Saat Ini</string>
+    <string name="placeholder_clean_body">Fase 1 mencakup landasan pemindaian, izin, dan kerangka utama. Hasil pembersihan nyata akan muncul di sini pada fase berikutnya.</string>
+    <string name="placeholder_privacy_body">Vault Pribadi belum tersedia. Fase ini hanya mencakup navigasi dan tata letaknya.</string>
+    <string name="placeholder_profile_body">Fitur profil belum terhubung. Keanggotaan, pengaturan, dan pembelian akan ditambahkan nanti.</string>
+    <string name="overview_reclaim_title">Perkiraan Penghematan Ruang</string>
+    <string name="overview_media_count_title">Jumlah Media</string>
+    <string name="home_note_title">Tahap 1 Selesai</string>
+    <string name="home_note_body">1. Navigasi bawah dan kerangka multi-halaman\n2. Permintaan izin media Android 13+\n3. Landasan pemindaian berbasis MediaStore untuk tangkapan layar dan video besar\n4. Pengikatan hasil layar beranda dan pengelolaan status</string>
+    <string name="feature_coming_soon_format">Halaman detail %1$s akan ditambahkan di Fase yang sesuai.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">item %1$d</string>
+    <string name="count_contact_format">Kontak %1$d</string>
+    <string name="feature_ready_label">Tersedia</string>
+    <string name="permission_action_label">Izinkan dan Pindai</string>
+    <string name="refresh_action_label">Segarkan Hasil</string>
+    <string name="clean_reclaim_summary_format">%1$s siap dibersihkan</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">grup %1$d</string>
+    <string name="count_contact_group_format">grup %1$d</string>
+    <string name="clean_permission_title">Diperlukan Akses Media</string>
+    <string name="clean_permission_body">Izinkan akses untuk membaca tangkapan layar dan video Anda. Semua data dianalisis secara lokal.</string>
+    <string name="clean_loaded_hint">Ketuk kartu kategori untuk melihat detailnya.</string>
+    <string name="clean_loading_hint">Memuat tangkapan layar dan video. Harap tunggu.</string>
+    <string name="clean_empty_hint">Belum ada hasil pemindaian. Izinkan akses dan jalankan pemindaian terlebih dahulu.</string>
+    <string name="detail_back">Kembali</string>
+    <string name="screenshot_detail_title">Pembersihan Tangkapan Layar</string>
+    <string name="screenshot_detail_subtitle">Telusuri tangkapan layar dengan thumbnail nyata. Ketuk foto untuk dipratinjau, atau pilih item untuk dihapus.</string>
+    <string name="large_video_detail_title">Video Besar</string>
+    <string name="large_video_detail_subtitle">Jelajahi video besar dengan sampul. Ketuk sampul untuk diputar, atau pilih item yang akan dihapus. Ketuk garis filter untuk beralih 100MB / 500MB.</string>
+    <string name="empty_screenshot_title">Tidak Ada Tangkapan Layar yang Ditemukan</string>
+    <string name="empty_screenshot_body">Tidak ada tangkapan layar yang ditemukan di perpustakaan media Anda, atau akses belum diberikan.</string>
+    <string name="empty_large_video_title">Tidak Ditemukan Video Besar</string>
+    <string name="empty_large_video_body">Tidak ada video yang melebihi 100 MB. Anda dapat menyesuaikan ambang batasnya nanti.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Tanggal: %1$s</string>
+    <string name="media_item_duration_format">Durasi: %1$s</string>
+    <string name="video_threshold_note">Ambang batas video besar saat ini: 100 MB</string>
+    <string name="select_all_action">Pilih Semua</string>
+    <string name="clear_selected_action">Batalkan pilihan Semua</string>
+    <string name="delete_selected_action">Hapus yang Dipilih</string>
+    <string name="selected_count_format">%1$d dipilih</string>
+    <string name="delete_dialog_title">Hapus Tangkapan Layar?</string>
+    <string name="delete_dialog_message_format">Tangkapan layar %1$d yang dipilih akan dihapus. Sistem akan meminta Anda untuk mengkonfirmasi lagi.</string>
+    <string name="delete_dialog_confirm">Lanjutkan</string>
+    <string name="delete_dialog_cancel">Batalkan</string>
+    <string name="delete_complete_message_format">Tangkapan layar %1$d yang diproses. Daftar telah disegarkan.</string>
+    <string name="delete_items_complete_format">Item %1$d yang diproses. Daftar telah disegarkan.</string>
+    <string name="delete_failed_message">Tidak dapat menghapus. Coba lagi.</string>
+    <string name="delete_video_dialog_title">Hapus Video?</string>
+    <string name="delete_video_dialog_message_format">Video %1$d yang dipilih akan dihapus. Sistem akan meminta Anda untuk mengkonfirmasi lagi.</string>
+    <string name="delete_similar_dialog_title">Hapus Foto Serupa?</string>
+    <string name="delete_similar_dialog_message_format">Foto %1$d yang dipilih akan dihapus. Item penyimpanan yang direkomendasikan tidak termasuk.</string>
+    <string name="video_selection_filter_format">%1$d dipilih · Filter: %2$s (ketuk untuk beralih)</string>
+    <string name="video_player_unavailable">Tidak ada pemutar video yang tersedia di perangkat ini.</string>
+    <string name="media_preview_title">Pratinjau</string>
+    <string name="similar_select_candidates_action">Pilih Kandidat</string>
+    <string name="similar_deselect_candidates_action">Batalkan pilihan Semua</string>
+    <string name="similar_select_all_candidates">Pilih semua kandidat</string>
+    <string name="similar_delete_count_action">Hapus yang Dipilih (%1$d)</string>
+    <string name="similar_group_number_format">Grup %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Tidak dapat membuka uninstaller sistem</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Semua Hasil</string>
+    <string name="similar_page_title">Foto Serupa</string>
+    <string name="similar_page_subtitle">Tinjau grup serupa dengan thumbnail, pilih kandidat, dan hapus duplikat.</string>
+    <string name="similar_page_note">Versi pertama menggunakan aturan pengelompokan ringan. Hashing persepsi dan penilaian ketajaman dapat ditambahkan nanti.</string>
+    <string name="similar_page_badge">Cerdas Serupa</string>
+    <string name="similar_page_hero_hint">Simpan foto dengan resolusi lebih tinggi, file lebih besar, dan stempel waktu lebih baru.</string>
+    <string name="similar_group_summary_format">Menemukan grup %1$d dengan foto kandidat %2$d di album Anda.</string>
+    <string name="similar_group_empty_title">Tidak Ditemukan Grup Foto Serupa</string>
+    <string name="similar_group_empty_body">Tidak ada foto dalam album yang sama yang memenuhi kriteria waktu dan dimensi yang sama.</string>
+    <string name="similar_group_card_subtitle_format">Kandidat %1$d · Hingga %2$s dapat dibebaskan</string>
+    <string name="similar_keep_recommend_label">Direkomendasikan untuk Disimpan</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Kandidat Lainnya</string>
+    <string name="similar_other_items_more_format">+%1$d foto lainnya</string>
+    <string name="contacts_page_title">Pembersihan Kontak</string>
+    <string name="contacts_page_subtitle">Temukan kontak duplikat dan kosong.</string>
+    <string name="contacts_page_badge">Perbaikan Kontak</string>
+    <string name="contacts_page_hero_hint">Gabungkan kontak dengan nomor yang sama, lalu hapus kontak yang kosong.</string>
+    <string name="contacts_permission_title">Akses Kontak Diperlukan</string>
+    <string name="contacts_permission_body">Izinkan akses untuk memindai kontak secara lokal.</string>
+    <string name="contacts_scan_title">Pindai Kontak</string>
+    <string name="contacts_scan_body">Segarkan untuk menemukan duplikat dan kontak kosong.</string>
+    <string name="contacts_duplicate_title">Kontak Duplikat</string>
+    <string name="contacts_empty_title">Kontak Kosong</string>
+    <string name="contacts_duplicate_count_format">Grup duplikat %1$d</string>
+    <string name="contacts_empty_count_format">%1$d mengosongkan kontak untuk dibersihkan</string>
+    <string name="contacts_load_action">Izinkan dan Muat Kontak</string>
+    <string name="contacts_refresh_action">Segarkan Kontak</string>
+    <string name="contacts_empty_group_title">Tidak Ada Kontak Duplikat yang Ditemukan</string>
+    <string name="contacts_empty_group_body">Tidak ada kontak dengan nomor telepon duplikat yang ditemukan.</string>
+    <string name="contacts_delete_empty_action">Hapus Kontak Kosong</string>
+    <string name="contacts_merge_action">Gabungkan Grup</string>
+    <string name="contacts_view_action">Lihat di Kontak</string>
+    <string name="contacts_group_title_format">%1$s · %2$d kontak</string>
+    <string name="contacts_group_number_format">Nomor utama: %1$s</string>
+    <string name="contacts_group_members_format">Anggota: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Hapus Kontak Kosong?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d kontak kosong atau kontak tanpa nomor akan dihapus.</string>
+    <string name="contacts_merge_complete_message">Sistem diminta untuk menggabungkan grup kontak ini.</string>
+    <string name="contacts_cleanup_complete_message_format">Menghapus kontak kosong %1$d.</string>
+    <string name="contacts_action_failed">Tindakan kontak gagal. Coba lagi.</string>
+    <string name="privacy_status_title">Status Perlindungan Lokal</string>
+    <string name="privacy_page_badge">Gudang Pribadi</string>
+    <string name="privacy_hero_title">Pisahkan konten pribadi dari pembersihan</string>
+    <string name="privacy_hero_body">Siapkan perlindungan PIN lokal terlebih dahulu, lalu tambahkan impor media pribadi, buka kunci, dan pemulihan.</string>
+    <string name="privacy_status_enabled">Kumpulan PIN 4 digit</string>
+    <string name="privacy_status_disabled">Tidak ada PIN yang disetel</string>
+    <string name="privacy_status_body_enabled">Media pribadi yang diimpor nantinya akan dilindungi oleh PIN lokal Anda.</string>
+    <string name="privacy_status_body_disabled">Tetapkan PIN 4 digit sebelum menambahkan fitur impor dan buka kunci media pribadi.</string>
+    <string name="privacy_set_pin_action">Setel PIN</string>
+    <string name="privacy_reset_pin_action">Setel ulang PIN</string>
+    <string name="privacy_pin_dialog_title">Tetapkan PIN 4 Digit</string>
+    <string name="privacy_pin_dialog_hint">Masukkan 4 digit</string>
+    <string name="privacy_pin_invalid">Masukkan PIN 4 digit.</string>
+    <string name="privacy_pin_saved">PIN lokal disimpan.</string>
+    <string name="privacy_pin_reset_confirm">Hapus PIN saat ini?</string>
+    <string name="privacy_pin_reset_done">penyetelan ulang PIN.</string>
+    <string name="privacy_feature_lock_title">Buka Kunci Lokal</string>
+    <string name="privacy_feature_lock_body">Versi pertama menggunakan PIN untuk perlindungan lokal. Biometrik dapat ditambahkan nanti.</string>
+    <string name="privacy_feature_vault_title">Media Swasta</string>
+    <string name="privacy_feature_vault_body">Foto dan video pribadi yang diimpor nanti akan disimpan secara terpisah dan dikecualikan dari alur pembersihan album utama.</string>
+    <string name="privacy_feature_scope_title">Tahap Saat Ini</string>
+    <string name="privacy_feature_scope_body">Versi ini menambahkan status PIN dan struktur halaman. Impor media pribadi dan enkripsi lokal akan dilakukan berikutnya.</string>
+    <string name="profile_plan_title">Rencana Saat Ini</string>
+    <string name="profile_plan_free">Gratis</string>
+    <string name="profile_plan_pro">Pro</string>
+    <string name="profile_plan_body_free">Pindai, lihat hasilnya, dan gunakan pembersihan dasar.</string>
+    <string name="profile_plan_body_pro">Buka pembersihan tingkat lanjut, Gudang Pribadi, tindakan tak terbatas, dan pengalaman bebas iklan.</string>
+    <string name="profile_upgrade_action">Beralih ke Uji Coba Pro</string>
+    <string name="profile_restore_action">Kembali ke Gratis</string>
+    <string name="profile_upgrade_done">Beralih ke uji coba Pro.</string>
+    <string name="profile_restore_done">Kembali ke Gratis.</string>
+    <string name="profile_benefits_title">Manfaat Pro</string>
+    <string name="profile_benefits_body">1. Deteksi foto serupa tingkat lanjut\n2. Pembersihan batch tanpa batas\n3. Filter video besar tingkat lanjut\n4. Pembersihan kontak yang ditingkatkan\n5. Vault Pribadi\n6. Antarmuka bebas iklan</string>
+    <string name="detail_page_badge">Tampilan Detil</string>
+    <string name="detail_page_hint">Tinjau kandidat sebelum memutuskan apa yang harus dibersihkan atau disimpan.</string>
+    <string name="premium">PREMIUM</string>
+    <string name="settings">Pengaturan</string>
+    <string name="grant_access">Berikan Akses</string>
+    <string name="storage_permission_title">Berikan Akses File</string>
+    <string name="storage_permission_detail">CleanSuper AI memerlukan akses ke file Anda untuk menemukan duplikat, foto buram, dan file besar. Semua diproses secara lokal.</string>
+    <string name="storage_permission_scan_point">Temukan duplikat, foto buram, dan file besar di seluruh penyimpanan.</string>
+    <string name="storage_permission_privacy_point">File Anda tetap ada di perangkat ini dan tidak pernah diunggah.</string>
+    <string name="storage_permission_message">Hanya untuk pemindaian lokal; tidak ada data yang diunggah atau dibagikan dengan pihak ketiga.</string>
+    <string name="storage_permission_continue">Lanjutkan</string>
+    <string name="storage_permission_close">Tutup</string>
+    <string name="storage_permission_example_file">File di perangkat ini</string>
+    <string name="storage_permission_example_size">Siap untuk memindai</string>
+    <string name="storage_permission_guide_title">Izinkan akses ke semua file</string>
+    <string name="storage_permission_guide_message">Hidupkan sakelar di Pengaturan untuk memindai dan membersihkan file di perangkat ini.</string>
+    <string name="go_to_settings">Buka Pengaturan</string>
+    <string name="permission_home_title">Foto Anda terkunci</string>
+    <string name="permission_home_body">Izinkan akses foto, video, dan notifikasi untuk memindai perpustakaan Anda dengan aman di perangkat ini dan mengirimkan pengingat pembersihan.</string>
+    <string name="scan_summary_format">Item %1$d yang dipindai · %2$s dapat ditinjau</string>
+    <string name="scan_running_english">Memindai perpustakaan Anda…</string>
+    <string name="scan_ready_english">Perpustakaan Anda sudah siap</string>
+    <string name="coming_soon">Segera Hadir</string>
+    <string name="compression_failed">Tidak dapat mengompres gambar ini.</string>
+    <string name="compression_saved">Foto terkompresi disimpan ke Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Analisis pada perangkat yang aman</string>
+    <string name="home_cleanup_library">Tinjau perpustakaan Anda</string>
+    <string name="home_cleanup_badge">Di perangkat</string>
+    <string name="home_quick_clean_action">Buka Pusat Pembersihan</string>
+    <string name="home_quick_clean_compact_action">Pusat Pembersihan</string>
+    <string name="home_reclaim_ready_format">%1$s dapat direklamasi</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Penyimpanan terisi</string>
+    <string name="home_storage_detail_format">%1$s untuk ditinjau · item %2$d</string>
+    <string name="home_quick_tools">Alat cepat</string>
+    <string name="home_quick_tools_subtitle">Tindakan pembersihan yang paling sering Anda gunakan, disajikan di depan</string>
+    <string name="feature_swipe_title">Geser Foto</string>
+    <string name="feature_swipe_desc">Tinjau foto satu per satu dan kirim penolakan ke tempat sampah</string>
+    <string name="home_contacts_short_desc">Gabungkan duplikat</string>
+    <string name="feature_ready_short">Siap</string>
+    <string name="feature_review_short">Ulasan</string>
+    <string name="tools_section_storage">Penyimpanan &amp; Media</string>
+    <string name="tools_section_device">Alat Perangkat</string>
+    <string name="tools_hero_badge">7 alat yang berguna</string>
+    <string name="tools_hero_title">Alat yang berguna, di satu tempat</string>
+    <string name="tools_hero_body">Kelola penyimpanan dan media dengan tindakan sederhana dan terfokus.</string>
+    <string name="tool_file_manager_desc">Jelajahi dan bersihkan tangkapan layar, video &amp; lainnya</string>
+    <string name="tool_media_compressor_desc">Kurangi ukuran foto dan video tanpa kehilangan kualitas</string>
+    <string name="tool_secret_space_desc">Kunci foto pribadi di balik PIN aman</string>
+    <string name="tool_app_manager_desc">Lihat aplikasi yang diinstal dan penggunaan penyimpanan</string>
+    <string name="tool_clean_calendar_desc">Hapus acara kalender lama yang mengacaukan jadwal Anda</string>
+    <string name="tool_ai_enhancer_desc">Sempurnakan foto buram atau minim cahaya dengan AI</string>
+    <string name="tool_speed_test_desc">Periksa kecepatan unduh dan unggah jaringan Anda</string>
+    <string name="tools_page_subtitle">Semua yang Anda perlukan untuk ponsel yang lebih bersih</string>
+    <string name="compress_page_subtitle">Menghemat ruang tanpa kehilangan momen</string>
+    <string name="video_compressor">Kompresor Video</string>
+    <string name="video_compress_subtitle">Kurangi ukuran video dengan enkode ulang H.264 di perangkat</string>
+    <string name="video_compress_card_hint">720p · Kualitas seimbang</string>
+    <string name="choose_video">Pilih Video</string>
+    <string name="choose_video_hint">Pilih video untuk dikompres</string>
+    <string name="compress_photo_guide_title">Pilih foto untuk dikompres</string>
+    <string name="compress_photo_guide_body">Diproses di perangkat · lebih kecil dalam hitungan detik</string>
+    <string name="compress_video_guide_title">Pilih video yang akan dikompres</string>
+    <string name="compress_video_guide_body">H.264 di perangkat · 720p seimbang</string>
+    <string name="compress_guide_tap">Ketuk untuk memilih</string>
+    <string name="enhance_photo_guide_title">Pilih foto untuk disempurnakan</string>
+    <string name="enhance_photo_guide_body">Kecerahan · kontras · ketajaman</string>
+    <string name="preview_original_photo_label">Sebelumnya · Foto asli</string>
+    <string name="preview_compressed_photo_label">Setelah · Pratinjau terkompresi</string>
+    <string name="preview_original_video_label">Sebelumnya · Video asli</string>
+    <string name="preview_compressed_video_label">Setelah · Pratinjau terkompresi</string>
+    <string name="preview_enhanced_photo_label">Setelah · Pratinjau yang ditingkatkan</string>
+    <string name="selected_video_preview">Pratinjau video yang dipilih</string>
+    <string name="play_video_preview">Putar pratinjau video</string>
+    <string name="video_preview_title">Pratinjau video</string>
+    <string name="video_preview_failed">Video ini tidak dapat diputar.</string>
+    <string name="video_compression_saved">Video terkompresi disimpan ke Film/CleanSuperAI.</string>
+    <string name="video_compression_failed">Tidak dapat mengompresi video ini.</string>
+    <string name="video_compression_preparing">Mempersiapkan kompresi video…</string>
+    <string name="video_compression_progress_format">Mengompresi video… %1$d%%</string>
+    <string name="video_compression_finishing">Menyelesaikan video terkompresi…</string>
+    <string name="video_compression_timeout">Video ini memerlukan waktu terlalu lama untuk dikompres. Silakan coba klip yang lebih pendek.</string>
+    <string name="app_manager_subtitle">Tinjau aplikasi yang diinstal dan buka pengaturan sistem untuk menghapus instalasi atau menghapus cache.</string>
+    <string name="app_manager_summary_format">Aplikasi pengguna %1$d ditemukan · ketuk untuk mengelola</string>
+    <string name="clean_calendar_subtitle">Temukan acara kalender sebelumnya dan hapus acara yang tidak lagi Anda perlukan.</string>
+    <string name="clean_calendar_delete">Hapus yang Dipilih</string>
+    <string name="clean_calendar_empty">Tidak ditemukan peristiwa masa lalu</string>
+    <string name="clean_calendar_summary_format">%1$d peristiwa yang lalu · %2$d dipilih</string>
+    <string name="clean_calendar_delete_confirm">Hapus %1$d peristiwa masa lalu yang dipilih?</string>
+    <string name="clean_calendar_delete_done">Acara %1$d dihapus</string>
+    <string name="calendar_permission_hint">Izinkan akses kalender untuk memindai acara yang lalu</string>
+    <string name="calendar_permission_denied">Izin kalender diperlukan</string>
+    <string name="calendar_untitled">(Tidak ada judul)</string>
+    <string name="image_enhancer_subtitle">Tingkatkan kecerahan, kontras, dan ketajaman secara lokal di perangkat ini.</string>
+    <string name="image_enhancer_hint">Pilih foto untuk disempurnakan</string>
+    <string name="image_enhancer_ready">Siap ditingkatkan</string>
+    <string name="image_enhancer_action">Sempurnakan Foto</string>
+    <string name="image_enhancer_working">Meningkatkan…</string>
+    <string name="image_enhancer_done">Pratinjau yang ditingkatkan siap · simpan bila Anda menyukainya</string>
+    <string name="image_enhancer_save">Simpan Foto yang Disempurnakan</string>
+    <string name="image_enhancer_saved">Foto yang disempurnakan disimpan ke Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Tidak dapat menyempurnakan foto ini.</string>
+    <string name="speed_test_subtitle">Ukur unduhan, unggah, dan latensi menggunakan server Cloudflare.</string>
+    <string name="speed_test_hint">Ketuk mulai untuk menjalankan pemeriksaan kecepatan jaringan singkat</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Unduhan Mbps</string>
+    <string name="speed_test_start">Mulai Tes Kecepatan</string>
+    <string name="speed_test_running">Menguji koneksi Anda…</string>
+    <string name="speed_test_done">Tes selesai</string>
+    <string name="speed_test_failed">Tes kecepatan gagal. Periksa jaringan Anda dan coba lagi.</string>
+    <string name="speed_test_download_idle">Unduh · menunggu</string>
+    <string name="speed_test_upload_idle">Unggah · menunggu</string>
+    <string name="speed_test_latency_idle">Latensi · menunggu</string>
+    <string name="speed_test_download_result">Unduh · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Unggah · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Latensi · %1$d ms</string>
+    <string name="photo_compressor">Kompresor Foto</string>
+    <string name="compress_quality_hint">JPEG Seimbang · 70% qualitas</string>
+    <string name="choose_photo_hint">Pilih foto untuk dikompres</string>
+    <string name="choose_photo">Pilih Foto</string>
+    <string name="compress_preview">Pratinjau Kompres</string>
+    <string name="compress_and_save">Kompres &amp; Simpan</string>
+    <string name="save_compressed_photo">Simpan Foto Terkompresi</string>
+    <string name="save_compressed_video">Simpan Video Terkompresi</string>
+    <string name="share">Bagikan</string>
+    <string name="keep">Simpan</string>
+    <string name="move_to_review_bin">Pindah ke Sampah</string>
+    <string name="clear_review_bin">Hapus Tempat Tinjauan</string>
+    <string name="swipe_page_subtitle">Tinjau berdasarkan bulan · geser ke kanan untuk menyimpan, ke kiri untuk membuang</string>
+    <string name="swipe_trash_open">Buka</string>
+    <string name="swipe_trash_label_singular">Foto di tempat sampah</string>
+    <string name="swipe_trash_label_plural">Foto di tempat sampah</string>
+    <string name="swipe_empty_title">Semua foto ditinjau</string>
+    <string name="swipe_empty_body">Kembali untuk memilih bulan lain, atau buka tempat sampah untuk memulihkan foto.</string>
+    <string name="category_person_format">Orang · %1$d</string>
+    <string name="category_animal_format">Hewan · %1$d</string>
+    <string name="category_vehicle_format">Kendaraan · %1$d</string>
+    <string name="no_photos_available">Tidak ada foto yang tersedia</string>
+    <string name="splash_tagline">Pembersihan cerdas. Pribadi berdasarkan desain.</string>
+    <string name="selected_photos_deleted">Foto yang dipilih dihapus</string>
+    <string name="added_to_review_bin">Ditambahkan ke Tempat Tinjauan</string>
+    <string name="photos_deleted_format">Foto %1$d dihapus</string>
+    <string name="delete_photos_failed">Tidak dapat menghapus foto yang dipilih</string>
+    <string name="share_photo">Bagikan foto</string>
+    <string name="trash_bin_title_format">Tempat Sampah (%1$s)</string>
+    <string name="trash_bin_title_empty">Tempat Sampah</string>
+    <string name="trash_restore_hint">Ketuk untuk memulihkan foto</string>
+    <string name="trash_empty_action">Hapus semua di sampah</string>
+    <string name="trash_restored">Foto dipulihkan</string>
+    <string name="trash_bin_empty">Tempat sampah kosong</string>
+    <string name="feature_smart_groups">Kelompok pintar</string>
+    <string name="feature_duplicate_photos">Foto Duplikat</string>
+    <string name="feature_duplicate_videos">Video Duplikat</string>
+    <string name="feature_all_videos">Semua Video</string>
+    <string name="feature_screenshots_short">Tangkapan layar</string>
+    <string name="scan_unavailable">Pemindaian tidak tersedia</string>
+    <string name="please_try_again">Silakan coba lagi</string>
+    <string name="tool_file_manager">Manajer File</string>
+    <string name="tool_media_compressor">Kompresor Media</string>
+    <string name="tool_app_manager">Manajer Aplikasi</string>
+    <string name="tool_clean_calendar">Bersihkan Kalender</string>
+    <string name="tool_ai_enhancer">Peningkat Gambar AI</string>
+    <string name="tool_secret_space">Ruang Rahasia</string>
+    <string name="tool_speed_test">Tes Kecepatan</string>
+    <string name="compressing">Mengompresi…</string>
+    <string name="original_size_format">Asli · %1$s</string>
+    <string name="compressed_result_format">Terkompresi · %1$s\nTersimpan · %2$s</string>
+    <string name="swipe_grant_access_hint">Berikan akses media dari Beranda untuk menelusuri foto</string>
+    <string name="media_item_placeholder">Media</string>
+    <string name="selected_image_preview">Pratinjau gambar yang dipilih</string>
+    <string name="current_photo">Foto saat ini</string>
+    <string name="month_cover">Sampul bulan</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Orang · 0</string>
+    <string name="category_animal_zero">Hewan · 0</string>
+    <string name="category_vehicle_zero">Kendaraan · 0</string>
+    <string name="duplicate_photos_page_title">Foto Duplikat</string>
+    <string name="duplicate_photos_page_subtitle">Temukan duplikat yang tepat berdasarkan ukuran dan dimensi file, lalu simpan satu salinan.</string>
+    <string name="duplicate_photos_page_badge">Pencocokan Tepat</string>
+    <string name="duplicate_photos_summary_format">Ditemukan grup %1$d dengan foto duplikat %2$d.</string>
+    <string name="duplicate_photos_empty_title">Tidak Ada Foto Duplikat yang Ditemukan</string>
+    <string name="duplicate_photos_empty_body">Tidak ditemukan foto dengan ukuran dan dimensi yang sama.</string>
+    <string name="duplicate_videos_page_title">Video Duplikat</string>
+    <string name="duplicate_videos_page_subtitle">Temukan video duplikat yang tepat berdasarkan ukuran dan durasi, lalu simpan satu salinan.</string>
+    <string name="duplicate_videos_page_badge">Pencocokan Tepat</string>
+    <string name="duplicate_videos_summary_format">Ditemukan grup %1$d dengan video duplikat %2$d.</string>
+    <string name="duplicate_videos_empty_title">Tidak Ditemukan Video Duplikat</string>
+    <string name="duplicate_videos_empty_body">Tidak ditemukan video dengan ukuran dan durasi yang sama.</string>
+    <string name="settings_page_title">Pengaturan</string>
+    <string name="settings_page_subtitle">Bahasa, info aplikasi, privasi, dan cache.</string>
+    <string name="settings_language_title">Bahasa</string>
+    <string name="settings_language_subtitle">Pilih bahasa aplikasi pilihan Anda</string>
+    <string name="settings_about_title">Tentang</string>
+    <string name="settings_about_subtitle">Nama dan versi aplikasi</string>
+    <string name="settings_about_message_format">Bersih Super AI\nVersi %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Kebijakan Privasi</string>
+    <string name="settings_privacy_policy_subtitle">Bagaimana kami menangani data Anda</string>
+    <string name="settings_privacy_policy_body">Semua pemindaian dan pembersihan media dijalankan secara lokal di perangkat Anda. Kami tidak mengunggah foto, video, atau kontak Anda ke server kami. Analisis opsional (jika diaktifkan nanti) akan mengikuti kebijakan toko. Anda dapat mencabut akses media kapan saja di pengaturan sistem.</string>
+    <string name="settings_clear_cache_title">Hapus Tembolok</string>
+    <string name="settings_clear_cache_subtitle">Penyimpanan aplikasi sementara gratis</string>
+    <string name="settings_clear_cache_confirm">Hapus file cache sementara? Foto dan pengaturan Anda tidak akan dihapus.</string>
+    <string name="settings_clear_cache_done_format">Menghapus cache %1$s.</string>
+    <string name="language_page_title">Bahasa Aplikasi</string>
+    <string name="language_page_subtitle">Secara default, CleanSuper AI mengikuti bahasa perangkat Anda.</string>
+    <string name="language_follow_system_title">Ikuti bahasa sistem</string>
+    <string name="language_follow_system_subtitle_format">Bahasa perangkat saat ini: %1$s</string>
+    <string name="month_photo_count_format">foto %1$d</string>
+    <string name="review_bin_pending_format">Foto %1$d menunggu di Review Bin</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Ketentuan penggunaan</string>
+    <string name="settings_terms_subtitle">Baca ketentuannya</string>
+    <string name="settings_widget_title">Widget layar beranda</string>
+    <string name="settings_widget_subtitle">Tambahkan pintasan pembersihan</string>
+    <string name="tool_network_traffic">Lalu lintas jaringan</string>
+    <string name="tool_network_traffic_desc">Penggunaan berdasarkan aplikasi</string>
+    <string name="tool_battery_info">Informasi baterai</string>
+    <string name="tool_battery_info_desc">Biaya dan kesehatan</string>
+    <string name="tool_device_info">Informasi perangkat</string>
+    <string name="tool_device_info_desc">Sistem dan Wi-Fi</string>
+    <string name="tool_private_vault">Gudang pribadi</string>
+    <string name="tool_private_vault_desc">Sembunyikan foto dan video</string>
+    <string name="home_more_tools">Lebih banyak alat</string>
+    <string name="home_battery_info">Baterai</string>
+    <string name="home_device_info">Perangkat</string>
+    <string name="home_large_files">File besar</string>
+    <string name="home_cache_cleanup">Tembolok bersih</string>
+    <string name="home_network_traffic">Penggunaan data</string>
+    <string name="home_private_vault">Gudang pribadi</string>
+    <string name="home_picture_cleanup">Gambar</string>
+    <string name="home_video_cleanup">Video</string>
+    <string name="home_audio_cleanup">Audio</string>
+    <string name="media_loading">Memuat media…</string>
+    <string name="media_loading_hint">Mengatur file Anda. Harap tunggu.</string>
+    <string name="media_count_summary">%1$d item · %2$s · %3$d dipilih</string>
+    <string name="media_empty_title">Tidak ada media yang ditemukan</string>
+    <string name="media_empty_body">Tidak ada item dalam kategori ini.</string>
+    <string name="media_error_title">Tidak dapat memuat media</string>
+    <string name="media_access_title">Akses penyimpanan diperlukan</string>
+    <string name="media_access_body">Izinkan semua akses file di Pengaturan untuk menelusuri media ini.</string>
+    <string name="media_delete_title">Hapus item yang dipilih?</string>
+    <string name="media_delete_message">Hapus %1$d item yang dipilih? Android mungkin meminta Anda untuk mengonfirmasi.</string>
+    <string name="media_recent_group">Dalam 1 bulan</string>
+    <string name="media_older_group">Lebih dari 1 bulan</string>
+    <string name="media_group_summary">%1$d item · %2$s</string>
+    <string name="audio_player_unavailable">Tidak ada pemutar audio yang tersedia di perangkat ini.</string>
+    <string name="vault_items_summary">%1$d barang pribadi</string>
+    <string name="vault_empty_gallery">Gudang pribadi Anda kosong. Impor foto atau video untuk melihatnya di sini.</string>
+    <string name="cache_group_app">Tembolok aplikasi</string>
+    <string name="cache_group_apk">File APK lama</string>
+    <string name="cache_group_residual">File sisa</string>
+    <string name="cache_summary">File %1$d · %2$s</string>
+    <string name="cleanup_report_title">Pembersihan selesai</string>
+    <string name="cleanup_report_freed">Ruang dibebaskan</string>
+    <string name="cleanup_report_count">%1$d dari item %2$d dihapus</string>
+    <string name="cleanup_report_other">Bersihkan file lainnya</string>
+    <string name="cleanup_report_done">Selesai</string>
+    <string name="exit_retain_title">Keluar dari CleanSuper AI?</string>
+    <string name="exit_retain_message">Tambahkan widget rumah untuk pembersihan lebih cepat</string>
+    <string name="exit_retain_confirm_exit">Keluar</string>
+    <string name="exit_retain_add">Tambahkan</string>
+    <string name="exit_retain_feature_cache">Tembolok</string>
+    <string name="exit_retain_feature_large">File Besar</string>
+    <string name="widget_status_storage">Ruang kosong</string>
+    <string name="notif_screenshot">Tangkapan layar</string>
+    <string name="exit_retain_message_existing">Widget rumah Anda siap dibersihkan dengan cepat</string>
+    <string name="notif_cache">Tembolok</string>
+    <string name="notif_channel_name">Bilah Alat Bersih Cepat</string>
+    <string name="notif_channel_desc">Toolbar persisten untuk tindakan pembersihan cepat</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Pengingat yang bersih</string>
+    <string name="notif_event_channel_desc">Pengingat lokal setelah tangkapan layar, pemasangan, dan pencopotan pemasangan</string>
+    <string name="notif_event_summary_channel_name">Ringkasan pengingat yang bersih</string>
+    <string name="notif_event_screenshot_title">Tangkapan layar lainnya? 1 Saatnya membersihkan tangkapan layar</string>
+    <string name="notif_event_install_title">Aplikasi baru telah dipindahkan, begitu pula cache. membersihkan</string>
+    <string name="notif_event_uninstall_title">Berhasil dicopot pemasangannya! untuk membersihkan sisa file</string>
+    <string name="notif_clean_reminder_title">Ada banyak sampah yang menumpuk. Bersihkan semuanya sekaligus.</string>
+    <string name="notif_event_battery_below_50_title">Baterai sudah terisi lebih dari setengahnya. Jagalah sekarang, itu akan bertahan sampai kamu tiba di rumah.</string>
+    <string name="notif_event_battery_below_20_title">Baterai lemah. Ingin tahu siapa yang mencuri listrik Anda? Klik untuk melihat peringkatnya.</string>
+    <string name="notif_event_charging_title">Dicolokkan. Tugas malam ini: isi ulang, lalu bersihkan.</string>
+    <string name="notif_event_charging_full_title">Terisi penuh dan siap digunakan. Satu pemeriksaan terakhir: Apakah sampah sudah dibersihkan?</string>
+    <string name="notif_event_charging_to_80_title">Sprint terakhir adalah 80%. Bongkar sampah dan kemas dengan ringan untuk mendapatkan kekuatan penuh.</string>
+    <string name="notif_event_charging_disconnect_title">Cabut dan berangkat. Ingatlah untuk meluangkan waktu untuk membersihkan sampah dan tetap dalam kondisi prima.</string>
+    <string name="notif_event_app_update_title">Versi baru telah tiba. Segala sesuatu yang tersisa dari versi lama telah dibersihkan sepenuhnya.</string>
+    <string name="notif_event_network_change_title">Web berubah! Lihat status jaringan saat ini 1</string>
+    <string name="notif_event_screen_lock_title">Letakkan ponsel Anda dan serahkan pada kami. Waktu layar istirahat = waktu menyusui.</string>
+    <string name="notif_event_screen_on_after_lock_title">Kita bertemu lagi, apakah kamu terjebak? Sebagian besar adalah sampah, coba bersihkan.</string>
+    <string name="notif_event_storage_free_drop_title">Ruang penyimpanan telah berubah. Mari kita lihat apa yang memakan ruang?</string>
+    <string name="notif_event_scheduled_push_1_title">Sampah yang menumpuk sekian lama langsung dibersihkan.</string>
+    <string name="notif_event_scheduled_push_2_title">Apakah baterainya tidak tahan lama seperti sebelumnya? Coba lihat.</string>
+    <string name="notif_event_app_inactive_title">Lama tidak bertemu, sudah menunggu. Kembalilah dan bersihkan sampahnya.</string>
+    <string name="notif_event_scheduled_push_3_title">Satu ketukan ke daftar putar Anda — siapkan widget</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Satu ketukan ke daftar putar Anda — siapkan widget</item>
+        <item>Jadikan segalanya lebih mudah dengan widget — tambahkan pintasan musik</item>
+        <item>Mainkan dengan cepat tanpa membuka kunci — aktifkan widget layar beranda</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Anda lupa sesuatu</string>
+    <string name="notif_event_app_background_content">Ayo selesaikan pembersihan agar berjalan lebih lancar.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Anda lupa sesuatu</item>
+        <item>Tinggal satu langkah lagi</item>
+        <item>Kabar baik</item>
+        <item>Kamu pergi terlalu cepat</item>
+        <item>Jangan tinggalkan sampah semalaman</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Ayo selesaikan pembersihan agar berjalan lebih lancar.</item>
+        <item>Satu ketukan lagi untuk menyelesaikan pembersihan dan mengosongkan lebih banyak ruang.</item>
+        <item>Ruang kosong terdeteksi — ayo klaim pembersihan sekali ketuk.</item>
+        <item>Ponsel Anda bisa menjadi lebih cepat lagi — lihat pengoptimalannya.</item>
+        <item>Ayo selesaikan pembersihan agar berjalan lebih lancar.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Hasil pemindaian sudah siap — sampah menghabiskan banyak ruang. Bersihkan sekarang</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Hasil pemindaian sudah siap — sampah menghabiskan banyak ruang. Bersihkan sekarang</item>
+        <item>Satu langkah lagi: kembali dan segera kosongkan ruang.</item>
+        <item>Lupa membersihkan setelah pemindaian? 10 detik untuk menjadikan ponsel Anda lebih ringan.</item>
+        <item>Sampah masih ada di ponsel Anda — hasilnya disimpan. Kembalilah untuk membersihkan sekali ketuk.</item>
+        <item>Pemindaian terakhir menemukan beberapa item untuk dibersihkan. Ayo selesaikan.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Pembersihan belum selesai — selesaikan langkah terakhir.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Pembersihan belum selesai — selesaikan langkah terakhir.</item>
+        <item>Pembersihan terhenti: setengah jalan. Selesai untuk ponsel yang lebih ringan.</item>
+        <item>Pembersihan hampir selesai — jangan tinggalkan sampahnya.</item>
+        <item>Anda meninggalkannya di tengah-tengah pembersihan — selesaikan dan rasakan perbedaannya.</item>
+        <item>Pembersihan terputus dapat dilanjutkan kapan saja. Ayo selesaikan.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Foto dihapus — dipindahkan dengan aman ke keranjang sampah.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Foto dihapus — dipindahkan dengan aman ke keranjang sampah.</item>
+        <item>Baru saja menghapus 1 foto — lihat berapa banyak ruang yang Anda kosongkan?</item>
+        <item>Foto dihapus — hapus secara permanen untuk mengosongkan ruang sekarang.</item>
+        <item>Foto dihapus dengan aman — status penyimpanan diperbarui.</item>
+        <item>Foto dihapus — Anda juga dapat membersihkan tangkapan layar serupa.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Video dihapus — ruang besar dibebaskan.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Video dihapus — ruang besar dibebaskan.</item>
+        <item>Video berukuran besar dihapus — tekanan penyimpanan langsung berkurang.</item>
+        <item>Video dihapus — periksa status penyimpanan Anda saat ini.</item>
+        <item>Penghapusan selesai — kosongkan keranjang sampah untuk mengosongkan ruang sepenuhnya.</item>
+        <item>Video dihapus — mungkin ada lebih banyak video besar yang terlupakan yang perlu dibersihkan.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Audio dihapus — file kecil bertambah. Terus berlanjut.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Audio dihapus — file kecil bertambah. Terus berlanjut.</item>
+        <item>Audio tersebut hilang — lebih banyak file serupa yang tidak terpakai juga dapat dibersihkan.</item>
+        <item>Audio dihapus — detail penyimpanan diperbarui. Ayo lihat.</item>
+        <item>1 file audio dihapus — daftar penyimpanan disegarkan.</item>
+        <item>Audio dihapus — kosongkan keranjang sampah untuk menyelesaikan pengosongan ruang.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">File dihapus — sedikit lebih banyak penyimpanan yang dikosongkan.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>File dihapus — sedikit lebih banyak penyimpanan yang dikosongkan.</item>
+        <item>File dihapus — kekacauan tidak akan lagi mengganggu ponsel Anda.</item>
+        <item>File dihapus — lihat apa lagi yang dapat Anda bersihkan.</item>
+        <item>File dihapus — perubahan disinkronkan, status penyimpanan diperbarui.</item>
+        <item>File tersebut telah dihapus — mendapatkan kembali ruangnya sekarang.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Gambar diunduh — buka dan lihat.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Gambar diunduh — buka dan lihat.</item>
+        <item>Gambar diunduh — bersihkan foto duplikat di album Anda saat Anda sedang menggunakannya</item>
+        <item>Pengunduhan selesai — gambar disimpan dengan aman. Ayo cek foto serupa</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Video yang diunduh — tidaklah kecil. Lihat berapa banyak ruang yang dapat dikosongkan oleh video lama</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Video yang diunduh — tidaklah kecil. Lihat berapa banyak ruang yang dapat dikosongkan oleh video lama</item>
+        <item>Video baru disimpan — temukan video berukuran besar untuk dihapus dan kosongkan ruang. Ketuk saya</item>
+        <item>Video memakan ruang — kami menemukan item yang dapat dibersihkan untuk meringankan ponsel Anda. Ketuk di sini</item>
+        <item>Pengunduhan selesai! Bersihkan beberapa video lama dan ruang kembali. Ketuk saya</item>
+        <item>Video baru diurutkan — mudah ditemukan atau dibersihkan. Ketuk untuk melihat</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Audio diunduh — rapikan perpustakaan musik Anda dalam satu ketukan. Ketuk saya</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Audio diunduh — rapikan perpustakaan musik Anda dalam satu ketukan. Ketuk saya</item>
+        <item>Audio baru diurutkan — bersihkan audio lama saat Anda berada di sini. Ketuk saya</item>
+        <item>Perpustakaan musik penuh? Periksa audio yang dapat dibersihkan. Ketuk di sini</item>
+        <item>Audio diunduh — dedupe dalam satu ketukan. Ketuk saya untuk membereskannya</item>
+    </string-array>
+    <string name="notif_event_file_download_title">File baru disimpan — hapus file lama dan kosongkan ruang. Ketuk di sini</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>File baru disimpan — hapus file lama dan kosongkan ruang. Ketuk di sini</item>
+        <item>Pengunduhan selesai — lihat file lama mana yang dapat Anda bersihkan. Ketuk saya</item>
+        <item>File baru sudah siap — arsip cerdas + bersih. Ketuk saya untuk memulai</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Keranjang sampah dikosongkan — penyimpanan disegarkan. Periksa ruang terbaru Anda.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Keranjang sampah dikosongkan — penyimpanan disegarkan. Periksa ruang terbaru Anda.</item>
+        <item>Tempat sampah dikosongkan — bersihkan sisa makanan secara mendalam.</item>
+        <item>Berhasil dikosongkan — lebih banyak sampah yang harus dibersihkan. Ayo lihat.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Bersihkan sekarang</string>
+    <string name="notif_event_action_open_home">Buka</string>
+    <string name="notif_event_action_manage">Kelola aplikasi</string>
+    <string name="notif_event_action_check_battery">Periksa baterai</string>
+    <string name="notif_event_action_check_network">Periksa jaringan</string>
+    <string name="notif_days_unit">hari</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Ruang penyimpanan telah berubah. Mari kita lihat apa yang memakan ruang?</item>
+        <item>Perubahan spasial terdeteksi. Mungkin ada sampah baru, coba lihat?</item>
+        <item>Ruang yang tersedia telah berpindah. Tahukah kamu siapa yang memakannya? Klik untuk melihatnya.</item>
+        <item>Apakah ruangnya sempit? Baru saja mendeteksi perubahannya, mari kita lihat detailnya.</item>
+        <item>Pengingat perubahan ruang: Anda mungkin mengumpulkan banyak sampah. Coba lihat?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Baterai lemah. Ingin tahu siapa yang mencuri listrik Anda? Klik untuk melihat peringkatnya.</item>
+        <item>Segera mencapai titik terendah. Jika Anda menghapus aplikasi yang mencuri listrik, Anda masih dapat bertahan untuk sementara waktu.</item>
+        <item>Baterai hampir habis. Menghapus beberapa latar belakang lebih baik daripada tidak melakukan apa pun.</item>
+        <item>Baterainya berwarna merah. Anda masih dapat menyimpannya, klik untuk membukanya dan lihat.</item>
+        <item>Kurang dari 20% remain. Mari lakukan pertolongan pertama yang hemat daya dan bersihkan.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Baterai sudah terisi lebih dari setengahnya. Jagalah sekarang, itu akan bertahan sampai kamu tiba di rumah.</item>
+        <item>Baterai sudah terisi lebih dari setengahnya. Merawat baterai kini jauh lebih mudah dibandingkan menunggu hingga 20%.</item>
+        <item>Baterainya habis setengahnya. Berapa lama itu bisa bertahan? Klik untuk melihatnya.</item>
+        <item>Baterai sudah terisi lebih dari setengahnya. Saatnya mengurus backend, jangan menunggu sampai menjadi gugup.</item>
+        <item>Setengah baterainya tersisa. Singkirkan pemain besar yang haus kekuasaan dan buat babak kedua lebih stabil.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Sprint terakhir adalah 80%. Bongkar sampah dan kemas dengan ringan untuk mendapatkan kekuatan penuh.</item>
+        <item>Masih 20% short dari muatan penuh. Berhenti menatap layar Anda dan biarkan kami yang mengurus sampahnya.</item>
+        <item>80%: Selangkah lagi dari kesempurnaan. Klik sekali dan itu akan hilang sepenuhnya ketika baterai terisi penuh.</item>
+        <item>80%, a baterai bagus untuk ponsel bagus. Membersihkan ronde selagi panas?</item>
+        <item>20% i terakhir diberikan kepada kami. Anda melihat baterainya, dan kami membersihkan sampahnya.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Terisi penuh dan siap digunakan. Satu pemeriksaan terakhir: Apakah sampah sudah dibersihkan?</item>
+        <item>Setelah mengisi daya, rasa ritualnya penuh. Bagaimana kalau membersihkan sampah untuk memperingatinya?</item>
+        <item>100%, stabel hari ini. Satu putaran lagi dan itu sempurna.</item>
+        <item>100%. Langkah terakhir sebelum mencabut: bersihkan sampah, tiga puluh detik.</item>
+        <item>Selesai dengan kekuatan penuh. Satu pembersihan terakhir, sempurna.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Web berubah! Lihat status jaringan saat ini 1</item>
+        <item>Desersi jaringan. Jangan melihat sinyal saat membersihkan, cukup klik dan pindai.</item>
+        <item>Tidak dapat membuka halaman? Pembersihan selalu online.</item>
+        <item>Anda dapat bekerja secara offline, dan sampah Anda dapat dibersihkan sekarang.</item>
+        <item>Jika tidak ada sinyal, tidak diperlukan data untuk pembersihan, cukup klik.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Dicolokkan. Tugas malam ini: isi ulang, lalu bersihkan.</item>
+        <item>Anda sedang istirahat, sedang mengisi ulang tenaga. Biarkan ia membersihkan sampah juga.</item>
+        <item>Selama waktu pengisian, cukup untuk membersihkan sampah yang menumpuk dalam waktu lama.</item>
+        <item>Hanya jika listrik tersambung, staf backstage berani bekerja dengan leluasa.</item>
+        <item>Menjadi sedikit panas saat mengisi daya? Menghapus latar belakang dapat menurunkan suhu.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Cabut dan berangkat. Ingatlah untuk meluangkan waktu untuk membersihkan sampah dan tetap dalam kondisi prima.</item>
+        <item>Setelah pengisian daya selesai, berkemas dan berangkat. Bersihkan saja dan itu akan menjadi sempurna.</item>
+        <item>Terisi penuh dan siap digunakan. Membersihkan sampah dengan lancar, tidak ada kekurangannya saat ini.</item>
+        <item>Pengisian daya berakhir. Ruang berikutnya harus dibersihkan dan ditingkatkan satu tingkat pada satu waktu.</item>
+        <item>Jangan berhenti pada pemadaman listrik. Satu hal yang tersisa: pembersihan.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Kita bertemu lagi, apakah kamu terjebak? Sebagian besar adalah sampah, coba bersihkan.</item>
+        <item>Tidak terkunci? Jangan buka aplikasi lain terlebih dahulu dan bersihkan sampah selama tiga puluh detik.</item>
+        <item>Hal pertama yang harus dibuka adalah kita. Bersihkan sampah dan dia akan lebih mencintaimu.</item>
+        <item>Tiga puluh detik setelah membuka kunci. Kegunaan yang paling berharga: membersihkan sampah.</item>
+        <item>Ponsel Anda berbunyi: Backend agak diblokir, dapatkah Anda membantu saya?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Letakkan ponsel Anda dan serahkan pada kami. Waktu layar istirahat = waktu menyusui.</item>
+        <item>Berhenti bekerja bukan berarti berhenti bekerja. Saya akan memberi Anda kejutan saat saya menyalakan layar lagi.</item>
+        <item>Diam-diam menjadi lebih baik sambil mengistirahatkan layar. Klik dan kami akan melakukan sisanya.</item>
+        <item>Satu hal terakhir sebelum mengunci layar: Klik Bersihkan. Tampilan baru besok pagi.</item>
+        <item>Layar menjadi gelap. Buatlah pengaturan sekarang dan lihat hasilnya besok.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Aplikasi baru telah dipindahkan, begitu pula cache. membersihkan</item>
+        <item>Kami memahami betapa menyenangkannya memasang aplikasi baru. Hanya saja cache akan diam-diam menumpuk.</item>
+        <item>Aplikasi Baru? Cache juga ada di sini, bersihkan dengan satu klik.</item>
+        <item>Yang baru masuk dan yang lama keluar. Bersihkan sesering mungkin dan pasang sesuka Anda.</item>
+        <item>Satu lagi? Ruangannya semakin mengecil secara diam-diam, datang dan bersihkan.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Berhasil dicopot pemasangannya! untuk membersihkan sisa file</item>
+        <item>Dicopot tetapi tidak dibersihkan. Klik untuk menyelesaikan.</item>
+        <item>Aplikasinya sudah di-uninstall, tapi ekornya masih ada. Bersihkan dengan satu klik dan ucapkan selamat tinggal untuk selamanya.</item>
+        <item>Jangan lewatkan langkah kedua: hapus Aplikasi + hapus sisanya. Satu klik dan selesai.</item>
+        <item>Residunya akan memakan setengah dari ruang yang dikosongkan. Pindai secara mendalam dan hapus semuanya.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>Versi baru telah tiba. Segala sesuatu yang tersisa dari versi lama telah dibersihkan sepenuhnya.</item>
+        <item>+1 untuk versi, +1 untuk cache, untuk pemindaian mendalam.</item>
+        <item>Pembaruan selesai dan paket instalasi yang tersisa dapat dibersihkan dengan satu klik.</item>
+        <item>Pembaruan telah selesai, mari kita selesaikan. Bersihkan dan saya akan mengambil alih.</item>
+        <item>Setiap pembaruan akan meninggalkan file lama dan menanganinya dengan cepat.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Tangkapan layar lainnya? 1 Saatnya membersihkan tangkapan layar</item>
+        <item>Menemukan tangkapan layar baru, klik untuk melihat dan membersihkannya~</item>
+        <item>Semakin banyak tangkapan layar, pembersihan sekali klik dapat membantu Anda mengosongkan ruang</item>
+        <item>Tangkapan layar berhasil diambil, duplikat dan buram dapat disaring dengan satu klik.</item>
+        <item>Tangkapan layar baru ditambahkan ke database, dan gambar duplikat telah dimasukkan ke dalam antrean untuk dibersihkan dengan satu klik.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Ada banyak sampah yang menumpuk. Bersihkan semuanya sekaligus.</item>
+        <item>%1$d terakhir dibersihkan beberapa hari yang lalu, klik untuk memprosesnya sekarang</item>
+        <item>Saya sudah beberapa hari tidak ke sini, jadi saya akan membersihkannya dan kembali ke medan perang dengan ringan.</item>
+        <item>Kuota kliring belum terpakai hari ini. Saya akan membersihkannya ketika saya kembali.</item>
+        <item>Cache semakin penuh, menunggu Anda memeriksanya</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Lama tidak bertemu, sudah menunggu. Kembalilah dan bersihkan sampahnya.</item>
+        <item>Sudah beberapa hari aku tidak bertemu denganmu. Tidak ada istirahat untuk sampah. Kembalilah dan sapu.</item>
+        <item>Cache berada dalam antrian. Klik dan mereka menghilang.</item>
+        <item>Sampah sibuk saat Anda pergi. Kosongkan dengan satu klik dan rasakan segar seperti biasanya.</item>
+        <item>Kembali? Bersihkan sampah terlebih dahulu. Dalam tiga puluh detik, ponsel menjadi seringan baru.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Sampah yang menumpuk sekian lama langsung dibersihkan.</item>
+        <item>Saatnya membersihkan. Sampah hari ini menunggu Anda untuk mengkliknya.</item>
+        <item>Space Daily hari ini telah tiba. Bersihkan dan jaga agar tetap ringan.</item>
+        <item>Beberapa file jauh lebih besar dari yang Anda kira, lihatlah</item>
+        <item>Temukan orang yang mengambil beberapa G dan bersihkan</item>
+        <item>Daftar besar dokumen sudah siap, datang dan lihat.</item>
+        <item>Siapa yang paling banyak memakan ruang? Terungkap dalam satu detik.</item>
+        <item>Pemotretan bersambungan bagus, finishingnya menyakitkan. Serahkan pada kami.</item>
+        <item>Foto-foto serupa berjejer, terserah Anda untuk memilih yang mana yang akan disimpan</item>
+        <item>Terlalu banyak gambar serupa? Kami akan membantu Anda membandingkan dan menghapus duplikat hanya dengan satu klik.</item>
+        <item>Video offline yang di-cache harus dihapus.</item>
+        <item>Audio yang tersisa juga akan dibersihkan.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Apakah baterainya tidak tahan lama seperti sebelumnya? Coba lihat.</item>
+        <item>Siapa yang mencuri listrik Anda? Anda akan mengetahuinya setelah Anda mencarinya.</item>
+        <item>Mematikannya akan memperpanjang masa pakai baterai.</item>
+        <item>Beberapa aplikasi diinstal tetapi tidak pernah digunakan. Lihat yang mana mereka?</item>
+        <item>Menyimpan aplikasi yang tidak digunakan juga menjadi beban, daftarnya sudah dibuat</item>
+        <item>Mengenai privasi, semakin cepat ditangani, semakin baik.</item>
+        <item>Sembunyikan yang penting dan buang yang tidak diperlukan. biarkan aku membantumu</item>
+        <item>Kemana arah lalu lintasnya? Cari tahu siapa yang menggunakannya.</item>
+        <item>Detail lalu lintas sudah siap dan sekilas jelas.</item>
+        <item>Ada aplikasi yang secara diam-diam terhubung ke Internet di latar belakang.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} sampah—bersihkan dalam satu ketukan</string>
+    <string name="notif_scheduled_large_files">{total} file besar—bersihkan dengan mudah</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} grup foto duplikat—simpan {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} foto serupa—pilih apa yang akan dibersihkan</string>
+    <string name="notif_scheduled_videos">{total} video—hapus {n} untuk mengosongkan ruang</string>
+    <string name="notif_scheduled_audio">{total} file audio—waktunya membereskannya</string>
+    <string name="notif_scheduled_apps">{size} digunakan oleh {idle} aplikasi menganggur</string>
+    <string name="notif_scheduled_data">{back} data yang digunakan di latar belakang</string>
+    <string name="app_manager_uninstall_selected">Uninstal yang dipilih</string>
+    <string name="app_manager_uninstall_selected_count">Uninstal yang dipilih (%1$d)</string>
+    <string name="cache_removable">Dapat dilepas</string>
+    <string name="cache_clean_selected">Hapus Tembolok</string>
+    <string name="cache_clean_selected_summary">Bersihkan %1$s (%2$d)</string>
+</resources>

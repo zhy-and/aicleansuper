@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">Erstellen Sie eine 6-stellige PIN</string>
+    <string name="vlt_enter_pin">Geben Sie Ihre PIN ein</string>
+    <string name="vlt_confirm_pin">Bestätigen Sie Ihre PIN</string>
+    <string name="vlt_warning">Durch die Deinstallation dieser App werden Dateien im Privacy Space dauerhaft gelöscht.</string>
+    <string name="vlt_pin_mismatch">PINs stimmen nicht überein. Versuchen Sie es erneut.</string>
+    <string name="vlt_pin_wrong">Falsche PIN</string>
+    <string name="vlt_biometric">Fingerabdruck/Gesicht verwenden</string>
+    <string name="vlt_unlock">Schalten Sie den Datenschutzbereich frei</string>
+    <string name="vlt_use_pin">Geben Sie Ihre PIN ein</string>
+    <string name="vlt_importing">Importieren...</string>
+    <string name="vlt_imported">Importierte %1$d Artikel</string>
+    <string name="vlt_restore">Wiederherstellen</string>
+    <string name="vlt_delete">Löschen</string>
+</resources>

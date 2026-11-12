@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Bahay</string>
+    <string name="nav_swipe">Mag-swipe</string>
+    <string name="nav_compress">I-compress</string>
+    <string name="nav_tools">Mga gamit</string>
+    <string name="nav_clean">Malinis</string>
+    <string name="nav_privacy">Pagkapribado</string>
+    <string name="nav_profile">Profile</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Ayusin ang iyong mga larawan, video, at mga contact nang lokal</string>
+    <string name="home_badge_text">Paglilinis ng AI</string>
+    <string name="home_quick_summary_title">Mga Tip sa Paglilinis Ngayon</string>
+    <string name="home_quick_summary_body">Magsimula sa mga screenshot at malalaking video upang makapagbakante ng espasyo nang pinakamabilis.</string>
+    <string name="home_scan_insight_title">Katayuan ng Smart Scan</string>
+    <string name="home_ready_title">4 Napakahusay na Mga Tool sa Paglilinis</string>
+    <string name="home_ready_body">Pamahalaan ang mga larawan, screenshot, video, at mga contact sa isang lugar.</string>
+    <string name="storage_overview_title">Pangkalahatang-ideya ng Storage</string>
+    <string name="storage_overview_summary">Hanggang 0.0 GB ang maaaring palayain</string>
+    <string name="storage_overview_detail">85.4 GB ng 128 GB ang ginamit</string>
+    <string name="storage_overview_summary_format">Hanggang %1$s ang maaaring palayain</string>
+    <string name="storage_overview_detail_format">%1$s ng %2$s ginamit</string>
+    <string name="storage_overview_summary_done">Hanggang 1.8 GB ang maaaring palayain</string>
+    <string name="storage_overview_detail_done">85.4 GB ng 128 GB ang ginamit. Magsimula sa iyong media library.</string>
+    <string name="scan_button_idle">Simulan ang Scan</string>
+    <string name="scan_button_running">Ini-scan...</string>
+    <string name="scan_status_title">Katayuan ng Pag-scan</string>
+    <string name="scan_status_idle">Handa nang i-scan</string>
+    <string name="scan_status_running">Pagsusuri ng mga media file</string>
+    <string name="scan_status_done">Tapos na ang pag-scan. Handa na ang mga mungkahi sa paglilinis.</string>
+    <string name="scan_status_error">Nabigo ang pag-scan. Subukan ulit mamaya.</string>
+    <string name="scan_status_detail_idle">Ang mga screenshot, malalaking video, at mga katulad na larawan ay susuriin muna.</string>
+    <string name="scan_status_detail_running">Lokal na pag-scan. Ang iyong mga larawan at video ay hindi maa-upload.</string>
+    <string name="scan_status_detail_midway">Sinuri ang mga screenshot at malalaking video. Pag-aayos ng mga katulad na larawan.</string>
+    <string name="scan_status_detail_done">Nakahanap ng 1.8 GB para linisin. Magsimula sa mga screenshot at malalaking video.</string>
+    <string name="scan_status_detail_done_format">Natagpuan ang %1$s upang linisin. Magsimula sa mga screenshot at malalaking video.</string>
+    <string name="feature_section_title">Mahahalagang Tool sa Paglilinis</string>
+    <string name="feature_section_subtitle">Nakatuon ang unang release sa 4 na pinakakaraniwang gawain sa paglilinis</string>
+    <string name="feature_similar_title">Mga Katulad na Larawan</string>
+    <string name="feature_similar_desc">Linisin ang mga katulad na larawan</string>
+    <string name="feature_screenshots_title">Paglilinis ng Screenshot</string>
+    <string name="feature_screenshots_desc">Linisin ang hindi nagamit na mga screenshot</string>
+    <string name="feature_videos_title">Malaking Video</string>
+    <string name="feature_videos_desc">Linisin ang malalaking video</string>
+    <string name="feature_contacts_title">Contact Cleanup</string>
+    <string name="feature_contacts_desc">Linisin ang mga duplicate na contact</string>
+    <string name="feature_similar_space_format">%1$d pangkat</string>
+    <string name="count_placeholder">Hindi na-scan</string>
+    <string name="count_similar_done">128 mga larawan</string>
+    <string name="count_screenshots_done">364 mga larawan</string>
+    <string name="count_videos_done">12 video</string>
+    <string name="count_contacts_done">9 na grupo</string>
+    <string name="recent_section_title">Mga Tala sa Paglabas</string>
+    <string name="recent_section_body">Kasama sa bersyong ito ang istruktura ng XML home screen, mga kahilingan sa pahintulot ng media, daloy ng pag-scan ng placeholder, at buod ng mga resulta. Maaaring idagdag ang MediaStore, Mga Contact, at mga tunay na feature sa paglilinis.</string>
+    <string name="permission_denied_message">Kinakailangan ang pag-access sa media upang simulan ang pag-scan.</string>
+    <string name="mock_feature_message">Ang mga totoong resulta ng pag-scan ay idaragdag sa tampok na ito sa susunod.</string>
+    <string name="scan_complete_message">Ang paunang daloy ng pag-scan ay handa na. Ang totoong data ay maaaring idagdag sa susunod.</string>
+    <string name="scan_failed_message">Nabigo ang pag-scan: %1$s</string>
+    <string name="unknown_error">Hindi kilalang error</string>
+    <string name="storage_progress_label">Pag-unlad ng paggamit ng storage</string>
+    <string name="phase_two_label">Phase 2</string>
+    <string name="phase_three_label">Phase 3</string>
+    <string name="images_total_title">Kabuuang Mga Larawan</string>
+    <string name="videos_total_title">Kabuuang Mga Video</string>
+    <string name="clean_page_title">Cleanup Center</string>
+    <string name="clean_page_subtitle">Magsimula sa nilalamang nagbibigay ng pinakamaraming espasyo.</string>
+    <string name="clean_page_badge">Smart Cleaner</string>
+    <string name="clean_overview_title">I-scan ang mga Resulta</string>
+    <string name="clean_overview_body">Linisin muna ang pinakamalalaking space saver, pagkatapos ay ang mga katulad na larawan at contact.</string>
+    <string name="privacy_page_title">Pribadong Vault</string>
+    <string name="privacy_page_subtitle">Pinoprotektahan ng lokal na PIN ang iyong pribadong media at mga pag-import sa hinaharap.</string>
+    <string name="profile_page_title">Profile</string>
+    <string name="profile_page_subtitle">Pamahalaan ang iyong membership, mga setting, at mga pagbili dito.</string>
+    <string name="profile_page_badge">Premium</string>
+    <string name="profile_hero_title">Mag-upgrade sa Pro para sa kumpletong karanasan sa paglilinis</string>
+    <string name="profile_hero_body">Kasama sa Pro ang walang limitasyong batch na pagkilos, Pribadong Vault, at mas mahusay na katulad na pag-detect ng larawan.</string>
+    <string name="profile_plan_status_free">Kasalukuyang plano: Libre</string>
+    <string name="profile_plan_status_pro">Aktibo ang pro trial</string>
+    <string name="profile_most_popular">Pinakasikat</string>
+    <string name="profile_cta_title">Bakit Mag-upgrade?</string>
+    <string name="profile_cta_body">Kung madalas mong linisin ang mga larawan, video, at contact, lubos na binabawasan ng Pro ang mga paulit-ulit na hakbang.</string>
+    <string name="placeholder_card_title">Kasalukuyang Yugto</string>
+    <string name="placeholder_clean_body">Sinasaklaw ng Phase 1 ang scan foundation, mga pahintulot, at pangunahing framework. Ang mga tunay na resulta ng paglilinis ay lalabas dito sa susunod na yugto.</string>
+    <string name="placeholder_privacy_body">Hindi pa available ang Private Vault. Kasama lang sa bahaging ito ang nabigasyon at layout nito.</string>
+    <string name="placeholder_profile_body">Hindi pa konektado ang mga feature ng profile. Ang membership, mga setting, at mga pagbili ay idaragdag sa ibang pagkakataon.</string>
+    <string name="overview_reclaim_title">Tinantyang Space Savings</string>
+    <string name="overview_media_count_title">Kabuuang Media</string>
+    <string name="home_note_title">Phase 1 Kumpleto</string>
+    <string name="home_note_body">1. Bottom navigation at multi-page framework\n2. Mga kahilingan sa pahintulot ng media sa Android 13+\n3. MediaStore-based scanning foundation para sa mga screenshot at malalaking video\n4. Pagbubuklod ng resulta ng home screen at pamamahala ng estado</string>
+    <string name="feature_coming_soon_format">Ang pahina ng mga detalye ng %1$s ay idaragdag sa kaukulang Phase.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d item</string>
+    <string name="count_contact_format">%1$d contact</string>
+    <string name="feature_ready_label">Available</string>
+    <string name="permission_action_label">Payagan at I-scan</string>
+    <string name="refresh_action_label">I-refresh ang mga Resulta</string>
+    <string name="clean_reclaim_summary_format">%1$s handa nang linisin</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d pangkat</string>
+    <string name="count_contact_group_format">%1$d pangkat</string>
+    <string name="clean_permission_title">Kailangan ng Media Access</string>
+    <string name="clean_permission_body">Payagan ang access na basahin ang iyong mga screenshot at video. Ang lahat ng data ay lokal na sinusuri.</string>
+    <string name="clean_loaded_hint">Mag-tap ng card ng kategorya para tingnan ang mga detalye.</string>
+    <string name="clean_loading_hint">Naglo-load ng mga screenshot at video. Mangyaring maghintay.</string>
+    <string name="clean_empty_hint">Wala pang resulta ng pag-scan. Payagan ang pag-access at magpatakbo muna ng pag-scan.</string>
+    <string name="detail_back">Bumalik</string>
+    <string name="screenshot_detail_title">Paglilinis ng Screenshot</string>
+    <string name="screenshot_detail_subtitle">Mag-browse ng mga screenshot gamit ang totoong mga thumbnail. I-tap ang isang larawan upang i-preview, o pumili ng mga item na tatanggalin.</string>
+    <string name="large_video_detail_title">Malaking Video</string>
+    <string name="large_video_detail_subtitle">Mag-browse ng malalaking video na may mga pabalat. Mag-tap ng cover para i-play, o pumili ng mga item na tatanggalin. I-tap ang linya ng filter para lumipat ng 100MB / 500MB.</string>
+    <string name="empty_screenshot_title">Walang Nakitang Mga Screenshot</string>
+    <string name="empty_screenshot_body">Walang nakitang mga screenshot sa iyong media library, o hindi nabigyan ng access.</string>
+    <string name="empty_large_video_title">Walang Nahanap na Malaking Video</string>
+    <string name="empty_large_video_body">Walang mga video na lalampas sa 100 MB. Maaari mong ayusin ang threshold sa ibang pagkakataon.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Petsa: %1$s</string>
+    <string name="media_item_duration_format">Tagal: %1$s</string>
+    <string name="video_threshold_note">Kasalukuyang malaking threshold ng video: 100 MB</string>
+    <string name="select_all_action">Piliin ang Lahat</string>
+    <string name="clear_selected_action">Alisin sa pagkakapili ang Lahat</string>
+    <string name="delete_selected_action">Tanggalin ang Napili</string>
+    <string name="selected_count_format">%1$d ang napili</string>
+    <string name="delete_dialog_title">Tanggalin ang Mga Screenshot?</string>
+    <string name="delete_dialog_message_format">Ang mga napiling %1$d na mga screenshot ay tatanggalin. Hihilingin sa iyo ng system na kumpirmahin muli.</string>
+    <string name="delete_dialog_confirm">Magpatuloy</string>
+    <string name="delete_dialog_cancel">Kanselahin</string>
+    <string name="delete_complete_message_format">Mga naprosesong %1$d na mga screenshot. Na-refresh ang listahan.</string>
+    <string name="delete_items_complete_format">Naprosesong %1$d item. Na-refresh ang listahan.</string>
+    <string name="delete_failed_message">Hindi matanggal. Subukan muli.</string>
+    <string name="delete_video_dialog_title">Tanggalin ang Mga Video?</string>
+    <string name="delete_video_dialog_message_format">Ang mga napiling %1$d na video ay tatanggalin. Hihilingin sa iyo ng system na kumpirmahin muli.</string>
+    <string name="delete_similar_dialog_title">Tanggalin ang Mga Katulad na Larawan?</string>
+    <string name="delete_similar_dialog_message_format">Ang mga napiling %1$d na larawan ay tatanggalin. Hindi kasama ang mga inirerekomendang keep item.</string>
+    <string name="video_selection_filter_format">%1$d napili · Filter: %2$s (i-tap para lumipat)</string>
+    <string name="video_player_unavailable">Walang available na video player sa device na ito.</string>
+    <string name="media_preview_title">Silipin</string>
+    <string name="similar_select_candidates_action">Pumili ng mga Kandidato</string>
+    <string name="similar_deselect_candidates_action">Alisin sa pagkakapili ang Lahat</string>
+    <string name="similar_select_all_candidates">Piliin ang lahat ng kandidato</string>
+    <string name="similar_delete_count_action">Tanggalin ang Napili (%1$d)</string>
+    <string name="similar_group_number_format">Pangkat %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Hindi mabuksan ang system uninstaller</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Lahat ng Resulta</string>
+    <string name="similar_page_title">Mga Katulad na Larawan</string>
+    <string name="similar_page_subtitle">Suriin ang mga katulad na grupo na may mga thumbnail, pumili ng mga kandidato, at magtanggal ng mga duplicate.</string>
+    <string name="similar_page_note">Ang unang bersyon ay gumagamit ng magaan na mga panuntunan sa pagpapangkat. Maaaring idagdag ang perceptual hashing at sharpness scoring sa ibang pagkakataon.</string>
+    <string name="similar_page_badge">Matalinong Katulad</string>
+    <string name="similar_page_hero_hint">Panatilihin ang mga larawang may mas mataas na resolution, mas malalaking file, at mas kamakailang mga timestamp.</string>
+    <string name="similar_group_summary_format">Nakakita ng mga %1$d na grupo na may %2$d na mga larawan ng kandidato sa iyong mga album.</string>
+    <string name="similar_group_empty_title">Walang Nahanap na Katulad na Mga Grupo ng Larawan</string>
+    <string name="similar_group_empty_body">Walang mga larawan sa parehong album ang nakakatugon sa parehong pamantayan ng oras at dimensyon.</string>
+    <string name="similar_group_card_subtitle_format">Mga kandidatong %1$d · Hanggang %2$s ang maaaring palayain</string>
+    <string name="similar_keep_recommend_label">Inirerekomenda sa Keep</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Iba pang mga Kandidato</string>
+    <string name="similar_other_items_more_format">+%1$d higit pang mga larawan</string>
+    <string name="contacts_page_title">Contact Cleanup</string>
+    <string name="contacts_page_subtitle">Maghanap ng mga duplicate at walang laman na contact.</string>
+    <string name="contacts_page_badge">Contact Fix</string>
+    <string name="contacts_page_hero_hint">Pagsamahin ang mga contact na may parehong numero, pagkatapos ay alisin ang mga walang laman.</string>
+    <string name="contacts_permission_title">Kailangan ng Access sa Mga Contact</string>
+    <string name="contacts_permission_body">Payagan ang access upang i-scan ang mga contact nang lokal.</string>
+    <string name="contacts_scan_title">I-scan ang Mga Contact</string>
+    <string name="contacts_scan_body">I-refresh upang makahanap ng mga duplicate at walang laman na contact.</string>
+    <string name="contacts_duplicate_title">Mga Duplicate na Contact</string>
+    <string name="contacts_empty_title">Walang laman ang Mga Contact</string>
+    <string name="contacts_duplicate_count_format">%1$d mga duplicate na pangkat</string>
+    <string name="contacts_empty_count_format">%1$d mga walang laman na contact para linisin</string>
+    <string name="contacts_load_action">Payagan at I-load ang Mga Contact</string>
+    <string name="contacts_refresh_action">I-refresh ang Mga Contact</string>
+    <string name="contacts_empty_group_title">Walang Nahanap na Duplicate na Contact</string>
+    <string name="contacts_empty_group_body">Walang nakitang mga contact na may mga duplicate na numero ng telepono.</string>
+    <string name="contacts_delete_empty_action">Alisin ang Empty Contacts</string>
+    <string name="contacts_merge_action">Pagsamahin ang Grupo</string>
+    <string name="contacts_view_action">Tingnan sa Mga Contact</string>
+    <string name="contacts_group_title_format">%1$s · %2$d contact</string>
+    <string name="contacts_group_number_format">Pangunahing numero: %1$s</string>
+    <string name="contacts_group_members_format">Mga Miyembro: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Alisin ang Empty Contacts?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d ang mga walang laman na contact o mga contact na walang numero ay tatanggalin.</string>
+    <string name="contacts_merge_complete_message">Hiniling sa system na pagsamahin ang contact group na ito.</string>
+    <string name="contacts_cleanup_complete_message_format">Inalis ang %1$d na walang laman na contact.</string>
+    <string name="contacts_action_failed">Nabigo ang pagkilos sa pakikipag-ugnayan. Subukan muli.</string>
+    <string name="privacy_status_title">Katayuan ng Lokal na Proteksyon</string>
+    <string name="privacy_page_badge">Pribadong Vault</string>
+    <string name="privacy_hero_title">Panatilihing hiwalay ang pribadong content sa paglilinis</string>
+    <string name="privacy_hero_body">I-set up muna ang proteksyon ng lokal na PIN, pagkatapos ay magdagdag ng pribadong pag-import ng media, pag-unlock, at pag-recover.</string>
+    <string name="privacy_status_enabled">4-digit na PIN set</string>
+    <string name="privacy_status_disabled">Walang nakatakdang PIN</string>
+    <string name="privacy_status_body_enabled">Ang pribadong media na na-import sa ibang pagkakataon ay mapoprotektahan ng iyong lokal na PIN.</string>
+    <string name="privacy_status_body_disabled">Magtakda ng 4 na digit na PIN bago magdagdag ng mga feature ng pribadong pag-import at pag-unlock ng media.</string>
+    <string name="privacy_set_pin_action">Itakda ang PIN</string>
+    <string name="privacy_reset_pin_action">I-reset ang PIN</string>
+    <string name="privacy_pin_dialog_title">Magtakda ng 4-Digit na PIN</string>
+    <string name="privacy_pin_dialog_hint">Maglagay ng 4 na digit</string>
+    <string name="privacy_pin_invalid">Maglagay ng 4-digit na PIN.</string>
+    <string name="privacy_pin_saved">Na-save ang lokal na PIN.</string>
+    <string name="privacy_pin_reset_confirm">I-clear ang kasalukuyang PIN?</string>
+    <string name="privacy_pin_reset_done">Pag-reset ng PIN.</string>
+    <string name="privacy_feature_lock_title">Lokal na Unlock</string>
+    <string name="privacy_feature_lock_body">Gumagamit ang unang bersyon ng PIN para sa lokal na proteksyon. Maaaring idagdag ang biometrics sa ibang pagkakataon.</string>
+    <string name="privacy_feature_vault_title">Pribadong Media</string>
+    <string name="privacy_feature_vault_body">Ang mga pribadong larawan at video na na-import sa ibang pagkakataon ay iimbak nang hiwalay at hindi kasama sa pangunahing daloy ng paglilinis ng album.</string>
+    <string name="privacy_feature_scope_title">Kasalukuyang Yugto</string>
+    <string name="privacy_feature_scope_body">Ang bersyon na ito ay nagdaragdag ng katayuan ng PIN at ang istraktura ng pahina. Susunod ang pag-import ng pribadong media at lokal na pag-encrypt.</string>
+    <string name="profile_plan_title">Kasalukuyang Plano</string>
+    <string name="profile_plan_free">Libre</string>
+    <string name="profile_plan_pro">Pro</string>
+    <string name="profile_plan_body_free">I-scan, tingnan ang mga resulta, at gamitin ang pangunahing paglilinis.</string>
+    <string name="profile_plan_body_pro">I-unlock ang advanced na paglilinis, Pribadong Vault, walang limitasyong mga pagkilos, at isang karanasang walang ad.</string>
+    <string name="profile_upgrade_action">Lumipat sa Pro Trial</string>
+    <string name="profile_restore_action">Bumalik sa Libre</string>
+    <string name="profile_upgrade_done">Lumipat sa Pro trial.</string>
+    <string name="profile_restore_done">Ibinalik sa Libre.</string>
+    <string name="profile_benefits_title">Mga Benepisyo ng Pro</string>
+    <string name="profile_benefits_body">1. Advanced na katulad na photo detection\n2. Walang limitasyong batch na paglilinis\n3. Advanced na malalaking video filter\n4. Pinahusay na paglilinis ng contact\n5. Pribadong Vault\n6. Interface na walang ad</string>
+    <string name="detail_page_badge">View ng Detalye</string>
+    <string name="detail_page_hint">Suriin ang mga kandidato bago magpasya kung ano ang lilinisin o panatilihin.</string>
+    <string name="premium">PREMIUM</string>
+    <string name="settings">Mga setting</string>
+    <string name="grant_access">Bigyan ng Access</string>
+    <string name="storage_permission_title">Bigyan ang File Access</string>
+    <string name="storage_permission_detail">Payagan ang access upang mahanap ang mga duplicate na larawan, malalaking file, at iba pang maaaring linisin.</string>
+    <string name="storage_permission_scan_point">I-scan ang mga file sa device na ito upang makita ang maaaring linisin.</string>
+    <string name="storage_permission_privacy_point">Nananatili sa device na ito ang iyong mga file at hindi kailanman ina-upload.</string>
+    <string name="storage_permission_message">Para sa lokal na pag-scan lamang; walang data na na-upload o ibinabahagi sa mga third party.</string>
+    <string name="storage_permission_continue">Magpatuloy</string>
+    <string name="storage_permission_close">Isara</string>
+    <string name="storage_permission_example_file">Mga file sa device na ito</string>
+    <string name="storage_permission_example_size">Handa nang i-scan</string>
+    <string name="storage_permission_guide_title">Payagan ang access sa lahat ng mga file</string>
+    <string name="storage_permission_guide_message">I-on ang switch sa Mga Setting para i-scan at linisin ang mga file sa device na ito.</string>
+    <string name="go_to_settings">Pumunta sa Mga Setting</string>
+    <string name="permission_home_title">Naka-lock ang iyong mga larawan</string>
+    <string name="permission_home_body">Payagan ang access sa larawan, video, at notification na i-scan ang iyong library nang secure sa device na ito at magpadala ng mga paalala sa paglilinis.</string>
+    <string name="scan_summary_format">Mga na-scan na %1$d item · Maaaring suriin ang %2$s</string>
+    <string name="scan_running_english">Ini-scan ang iyong library…</string>
+    <string name="scan_ready_english">Handa na ang iyong library</string>
+    <string name="coming_soon">Malapit na</string>
+    <string name="compression_failed">Hindi ma-compress ang larawang ito.</string>
+    <string name="compression_saved">Naka-save ang naka-compress na larawan sa Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Secure na pagsusuri sa device</string>
+    <string name="home_cleanup_library">Suriin ang iyong library</string>
+    <string name="home_cleanup_badge">Nasa device</string>
+    <string name="home_quick_clean_action">Buksan ang Cleanup Center</string>
+    <string name="home_quick_clean_compact_action">Cleanup Center</string>
+    <string name="home_reclaim_ready_format">%1$s nare-reclaim</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Okupado ang imbakan</string>
+    <string name="home_storage_detail_format">%1$s na susuriin · %2$d item</string>
+    <string name="home_quick_tools">Mabilis na mga kasangkapan</string>
+    <string name="home_quick_tools_subtitle">Ang iyong pinakaginagamit na mga aksyon sa paglilinis, na inilatag sa harap</string>
+    <string name="feature_swipe_title">Mag-swipe ng Mga Larawan</string>
+    <string name="feature_swipe_desc">Suriin ang mga larawan nang isa-isa at ipadala ang mga pagtanggi sa basurahan</string>
+    <string name="home_contacts_short_desc">Pagsamahin ang mga duplicate</string>
+    <string name="feature_ready_short">handa na</string>
+    <string name="feature_review_short">Balik-aral</string>
+    <string name="tools_section_storage">Imbakan at Media</string>
+    <string name="tools_section_device">Mga Tool ng Device</string>
+    <string name="tools_hero_badge">7 kapaki-pakinabang na tool</string>
+    <string name="tools_hero_title">Mga kapaki-pakinabang na tool, sa isang lugar</string>
+    <string name="tools_hero_body">Pamahalaan ang storage at media gamit ang simple, nakatutok na pagkilos.</string>
+    <string name="tool_file_manager_desc">Mag-browse at linisin ang mga screenshot, video at higit pa</string>
+    <string name="tool_media_compressor_desc">Bawasan ang laki ng larawan at video nang hindi nawawala ang kalidad</string>
+    <string name="tool_secret_space_desc">I-lock ang mga pribadong larawan sa likod ng isang secure na PIN</string>
+    <string name="tool_app_manager_desc">Tingnan ang mga naka-install na app at paggamit ng storage</string>
+    <string name="tool_clean_calendar_desc">Alisin ang mga lumang kaganapan sa kalendaryo na nakakalat sa iyong iskedyul</string>
+    <string name="tool_ai_enhancer_desc">Pagandahin ang malabo o mahinang liwanag na mga larawan gamit ang AI</string>
+    <string name="tool_speed_test_desc">Suriin ang bilis ng pag-download at pag-upload ng iyong network</string>
+    <string name="tools_page_subtitle">Lahat ng kailangan mo para sa isang mas malinis na telepono</string>
+    <string name="compress_page_subtitle">Makatipid ng espasyo nang hindi nawawala ang mga sandali</string>
+    <string name="video_compressor">Video Compressor</string>
+    <string name="video_compress_subtitle">Bawasan ang laki ng video gamit ang on-device na H.264 na muling pag-encode</string>
+    <string name="video_compress_card_hint">720p · Balanseng kalidad</string>
+    <string name="choose_video">Piliin ang Video</string>
+    <string name="choose_video_hint">Pumili ng video na i-compress</string>
+    <string name="compress_photo_guide_title">Pumili ng larawang i-compress</string>
+    <string name="compress_photo_guide_body">Naproseso sa device · mas maliit sa ilang segundo</string>
+    <string name="compress_video_guide_title">Pumili ng video na i-compress</string>
+    <string name="compress_video_guide_body">On-device H.264 · balanseng 720p</string>
+    <string name="compress_guide_tap">I-tap para pumili</string>
+    <string name="enhance_photo_guide_title">Pumili ng larawang pagandahin</string>
+    <string name="enhance_photo_guide_body">Liwanag · contrast · sharpness</string>
+    <string name="preview_original_photo_label">Bago · Orihinal na larawan</string>
+    <string name="preview_compressed_photo_label">Pagkatapos · Naka-compress na preview</string>
+    <string name="preview_original_video_label">Bago · Orihinal na video</string>
+    <string name="preview_compressed_video_label">Pagkatapos · Naka-compress na preview</string>
+    <string name="preview_enhanced_photo_label">Pagkatapos · Pinahusay na preview</string>
+    <string name="selected_video_preview">Napiling preview ng video</string>
+    <string name="play_video_preview">I-play ang preview ng video</string>
+    <string name="video_preview_title">Preview ng video</string>
+    <string name="video_preview_failed">Hindi ma-play ang video na ito.</string>
+    <string name="video_compression_saved">Naka-save ang naka-compress na video sa Movies/CleanSuperAI.</string>
+    <string name="video_compression_failed">Hindi ma-compress ang video na ito.</string>
+    <string name="video_compression_preparing">Inihahanda ang video compression...</string>
+    <string name="video_compression_progress_format">Kino-compress ang video... %1$d%%</string>
+    <string name="video_compression_finishing">Tinatapos ang naka-compress na video...</string>
+    <string name="video_compression_timeout">Masyadong mahaba ang video na ito sa pag-compress. Mangyaring subukan ang isang mas maikling clip.</string>
+    <string name="app_manager_subtitle">Suriin ang mga naka-install na app at buksan ang mga setting ng system upang i-uninstall o i-clear ang cache.</string>
+    <string name="app_manager_summary_format">%1$d user apps nakita · i-tap upang pamahalaan</string>
+    <string name="clean_calendar_subtitle">Maghanap ng mga nakaraang kaganapan sa kalendaryo at alisin ang mga hindi mo na kailangan.</string>
+    <string name="clean_calendar_delete">Tanggalin ang Napili</string>
+    <string name="clean_calendar_empty">Walang nakitang mga nakaraang kaganapan</string>
+    <string name="clean_calendar_summary_format">%1$d nakaraang mga kaganapan · %2$d napili</string>
+    <string name="clean_calendar_delete_confirm">I-delete ang %1$d na napiling mga nakaraang kaganapan?</string>
+    <string name="clean_calendar_delete_done">Tinanggal ang mga kaganapang %1$d</string>
+    <string name="calendar_permission_hint">Payagan ang access sa kalendaryo upang i-scan ang mga nakaraang kaganapan</string>
+    <string name="calendar_permission_denied">Kinakailangan ang pahintulot sa kalendaryo</string>
+    <string name="calendar_untitled">(Walang pamagat)</string>
+    <string name="image_enhancer_subtitle">Pahusayin ang liwanag, contrast, at sharpness nang lokal sa device na ito.</string>
+    <string name="image_enhancer_hint">Pumili ng larawang pagandahin</string>
+    <string name="image_enhancer_ready">Handa nang pagandahin</string>
+    <string name="image_enhancer_action">Pagandahin ang Larawan</string>
+    <string name="image_enhancer_working">Pinapahusay…</string>
+    <string name="image_enhancer_done">Handa na ang pinahusay na preview · i-save kapag nagustuhan mo</string>
+    <string name="image_enhancer_save">I-save ang Pinahusay na Larawan</string>
+    <string name="image_enhancer_saved">Na-save ang pinahusay na larawan sa Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Hindi ma-enhance ang larawang ito.</string>
+    <string name="speed_test_subtitle">Sukatin ang pag-download, pag-upload, at latency gamit ang mga server ng Cloudflare.</string>
+    <string name="speed_test_hint">I-tap ang simula upang magpatakbo ng maikling pagsusuri sa bilis ng network</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mbps download</string>
+    <string name="speed_test_start">Simulan ang Speed Test</string>
+    <string name="speed_test_running">Sinusubukan ang iyong koneksyon...</string>
+    <string name="speed_test_done">Tapos na ang pagsubok</string>
+    <string name="speed_test_failed">Nabigo ang speed test. Suriin ang iyong network at subukang muli.</string>
+    <string name="speed_test_download_idle">I-download · naghihintay</string>
+    <string name="speed_test_upload_idle">Mag-upload · naghihintay</string>
+    <string name="speed_test_latency_idle">Latency · naghihintay</string>
+    <string name="speed_test_download_result">I-download · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Mag-upload · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Latency · %1$d ms</string>
+    <string name="photo_compressor">Photo Compressor</string>
+    <string name="compress_quality_hint">Balanseng JPEG · 70% quality</string>
+    <string name="choose_photo_hint">Pumili ng larawan upang i-compress</string>
+    <string name="choose_photo">Pumili ng Larawan</string>
+    <string name="compress_preview">I-compress ang Preview</string>
+    <string name="compress_and_save">I-compress at I-save</string>
+    <string name="save_compressed_photo">I-save ang Naka-compress na Larawan</string>
+    <string name="save_compressed_video">I-save ang Compressed Video</string>
+    <string name="share">Ibahagi</string>
+    <string name="keep">Panatilihin</string>
+    <string name="move_to_review_bin">Ilipat sa Basura</string>
+    <string name="clear_review_bin">I-clear ang Review Bin</string>
+    <string name="swipe_page_subtitle">Suriin ayon sa buwan · mag-swipe pakanan para panatilihin, pakaliwa para i-trash</string>
+    <string name="swipe_trash_open">Bukas</string>
+    <string name="swipe_trash_label_singular">Larawan sa basurahan</string>
+    <string name="swipe_trash_label_plural">Mga larawan sa basurahan</string>
+    <string name="swipe_empty_title">Sinuri ang lahat ng larawan</string>
+    <string name="swipe_empty_body">Bumalik upang pumili ng isa pang buwan, o buksan ang trash bin upang i-restore ang mga larawan.</string>
+    <string name="category_person_format">Tao · %1$d</string>
+    <string name="category_animal_format">Hayop · %1$d</string>
+    <string name="category_vehicle_format">Sasakyan · %1$d</string>
+    <string name="no_photos_available">Walang available na mga larawan</string>
+    <string name="splash_tagline">Matalinong paglilinis. Pribado ayon sa disenyo.</string>
+    <string name="selected_photos_deleted">Na-delete ang mga napiling larawan</string>
+    <string name="added_to_review_bin">Idinagdag sa Review Bin</string>
+    <string name="photos_deleted_format">%1$d na mga larawan ay tinanggal</string>
+    <string name="delete_photos_failed">Hindi matanggal ang mga napiling larawan</string>
+    <string name="share_photo">Ibahagi ang larawan</string>
+    <string name="trash_bin_title_format">Trash Bin (%1$s)</string>
+    <string name="trash_bin_title_empty">Trash Bin</string>
+    <string name="trash_restore_hint">I-tap para i-restore ang mga larawan</string>
+    <string name="trash_empty_action">Tanggalin lahat sa basurahan</string>
+    <string name="trash_restored">Na-restore ang larawan</string>
+    <string name="trash_bin_empty">Walang laman ang basurahan</string>
+    <string name="feature_smart_groups">Mga matalinong grupo</string>
+    <string name="feature_duplicate_photos">Mga Dobleng Larawan</string>
+    <string name="feature_duplicate_videos">Mga Duplicate na Video</string>
+    <string name="feature_all_videos">Lahat ng Video</string>
+    <string name="feature_screenshots_short">Mga screenshot</string>
+    <string name="scan_unavailable">Hindi available ang pag-scan</string>
+    <string name="please_try_again">Pakisubukang muli</string>
+    <string name="tool_file_manager">Tagapamahala ng File</string>
+    <string name="tool_media_compressor">Media Compressor</string>
+    <string name="tool_app_manager">Tagapamahala ng App</string>
+    <string name="tool_clean_calendar">Malinis na Kalendaryo</string>
+    <string name="tool_ai_enhancer">AI Image Enhancer</string>
+    <string name="tool_secret_space">Secret Space</string>
+    <string name="tool_speed_test">Pagsubok sa Bilis</string>
+    <string name="compressing">Kino-compress…</string>
+    <string name="original_size_format">Orihinal · %1$s</string>
+    <string name="compressed_result_format">Naka-compress · %1$s\nNa-save · %2$s</string>
+    <string name="swipe_grant_access_hint">Magbigay ng media access mula sa Home para mag-browse ng mga larawan</string>
+    <string name="media_item_placeholder">Media</string>
+    <string name="selected_image_preview">Napiling preview ng larawan</string>
+    <string name="current_photo">Kasalukuyang larawan</string>
+    <string name="month_cover">Pabalat ng buwan</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Tao · 0</string>
+    <string name="category_animal_zero">Hayop · 0</string>
+    <string name="category_vehicle_zero">Sasakyan · 0</string>
+    <string name="duplicate_photos_page_title">Mga Dobleng Larawan</string>
+    <string name="duplicate_photos_page_subtitle">Maghanap ng mga eksaktong duplicate ayon sa laki at sukat ng file, pagkatapos ay panatilihin ang isang kopya.</string>
+    <string name="duplicate_photos_page_badge">Eksaktong Tugma</string>
+    <string name="duplicate_photos_summary_format">Natagpuan ang mga pangkat na %1$d na may %2$d na mga duplicate na larawan.</string>
+    <string name="duplicate_photos_empty_title">Walang Nahanap na Duplicate na Larawan</string>
+    <string name="duplicate_photos_empty_body">Walang nakitang mga larawang may parehong laki at sukat.</string>
+    <string name="duplicate_videos_page_title">Mga Duplicate na Video</string>
+    <string name="duplicate_videos_page_subtitle">Maghanap ng eksaktong mga duplicate na video ayon sa laki at tagal, pagkatapos ay panatilihin ang isang kopya.</string>
+    <string name="duplicate_videos_page_badge">Eksaktong Tugma</string>
+    <string name="duplicate_videos_summary_format">Natagpuan ang mga pangkat na %1$d na may mga %2$d na duplicate na video.</string>
+    <string name="duplicate_videos_empty_title">Walang Nahanap na Duplicate na Video</string>
+    <string name="duplicate_videos_empty_body">Walang nakitang mga video na may parehong laki at tagal.</string>
+    <string name="settings_page_title">Mga setting</string>
+    <string name="settings_page_subtitle">Wika, impormasyon ng app, privacy, at cache.</string>
+    <string name="settings_language_title">Wika</string>
+    <string name="settings_language_subtitle">Piliin ang iyong gustong wika ng app</string>
+    <string name="settings_about_title">Tungkol sa</string>
+    <string name="settings_about_subtitle">Pangalan at bersyon ng app</string>
+    <string name="settings_about_message_format">Clean Super AI\nBersyon %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Patakaran sa Privacy</string>
+    <string name="settings_privacy_policy_subtitle">Paano namin pinangangasiwaan ang iyong data</string>
+    <string name="settings_privacy_policy_body">Ang lahat ng pag-scan at paglilinis ng media ay lokal na tumatakbo sa iyong device. Hindi namin ina-upload ang iyong mga larawan, video, o contact sa aming mga server. Ang opsyonal na analytics (kung naka-enable sa ibang pagkakataon) ay susunod sa mga patakaran ng tindahan. Maaari mong bawiin ang media access anumang oras sa mga setting ng system.</string>
+    <string name="settings_clear_cache_title">I-clear ang Cache</string>
+    <string name="settings_clear_cache_subtitle">Libreng pansamantalang imbakan ng app</string>
+    <string name="settings_clear_cache_confirm">I-clear ang mga pansamantalang cache file? Hindi matatanggal ang iyong mga larawan at setting.</string>
+    <string name="settings_clear_cache_done_format">Na-clear ang %1$s ng cache.</string>
+    <string name="language_page_title">Wika ng App</string>
+    <string name="language_page_subtitle">Bilang default, sinusunod ng CleanSuper AI ang wika ng iyong device.</string>
+    <string name="language_follow_system_title">Sundin ang wika ng system</string>
+    <string name="language_follow_system_subtitle_format">Kasalukuyang wika ng device: %1$s</string>
+    <string name="month_photo_count_format">%1$d mga larawan</string>
+    <string name="review_bin_pending_format">%1$d na mga larawang naghihintay sa Review Bin</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Mga tuntunin sa paggamit</string>
+    <string name="settings_terms_subtitle">Basahin ang mga tuntunin</string>
+    <string name="settings_widget_title">Widget ng home screen</string>
+    <string name="settings_widget_subtitle">Magdagdag ng shortcut sa paglilinis</string>
+    <string name="tool_network_traffic">Trapiko sa network</string>
+    <string name="tool_network_traffic_desc">Paggamit ayon sa app</string>
+    <string name="tool_battery_info">Impormasyon ng baterya</string>
+    <string name="tool_battery_info_desc">Pagsingil at kalusugan</string>
+    <string name="tool_device_info">Impormasyon ng device</string>
+    <string name="tool_device_info_desc">System at Wi-Fi</string>
+    <string name="tool_private_vault">Pribadong vault</string>
+    <string name="tool_private_vault_desc">Itago ang mga larawan at video</string>
+    <string name="home_more_tools">Higit pang mga tool</string>
+    <string name="home_battery_info">Baterya</string>
+    <string name="home_device_info">Device</string>
+    <string name="home_large_files">Malaking file</string>
+    <string name="home_cache_cleanup">Malinis ang cache</string>
+    <string name="home_network_traffic">Paggamit ng data</string>
+    <string name="home_private_vault">Pribadong vault</string>
+    <string name="home_picture_cleanup">Mga larawan</string>
+    <string name="home_video_cleanup">Mga video</string>
+    <string name="home_audio_cleanup">Audio</string>
+    <string name="media_loading">Nilo-load ang media…</string>
+    <string name="media_loading_hint">Pag-aayos ng iyong mga file. Mangyaring maghintay.</string>
+    <string name="media_count_summary">%1$d item · %2$s · %3$d napili</string>
+    <string name="media_empty_title">Walang nakitang media</string>
+    <string name="media_empty_body">Walang mga item sa kategoryang ito.</string>
+    <string name="media_error_title">Hindi ma-load ang media</string>
+    <string name="media_access_title">Kailangan ng access sa storage</string>
+    <string name="media_access_body">Payagan ang lahat ng file na ma-access sa Mga Setting upang i-browse ang media na ito.</string>
+    <string name="media_delete_title">Tanggalin ang mga napiling item?</string>
+    <string name="media_delete_message">Tanggalin ang %1$d mga napiling item? Maaaring hilingin sa iyo ng Android na kumpirmahin.</string>
+    <string name="media_recent_group">Sa loob ng 1 buwan</string>
+    <string name="media_older_group">Mas matanda sa 1 buwan</string>
+    <string name="media_group_summary">%1$d item · %2$s</string>
+    <string name="audio_player_unavailable">Walang available na audio player sa device na ito.</string>
+    <string name="vault_items_summary">%1$d pribadong item</string>
+    <string name="vault_empty_gallery">Walang laman ang iyong pribadong vault. Mag-import ng mga larawan o video upang makita ang mga ito dito.</string>
+    <string name="cache_group_app">Cache ng app</string>
+    <string name="cache_group_apk">Mga lumang APK file</string>
+    <string name="cache_group_residual">Mga natitirang file</string>
+    <string name="cache_summary">%1$d file · %2$s</string>
+    <string name="cleanup_report_title">Kumpleto ang paglilinis</string>
+    <string name="cleanup_report_freed">Space freed</string>
+    <string name="cleanup_report_count">%1$d ng %2$d item ay inalis</string>
+    <string name="cleanup_report_other">Linisin ang iba pang mga file</string>
+    <string name="cleanup_report_done">Tapos na</string>
+    <string name="exit_retain_title">Lumabas sa CleanSuper AI?</string>
+    <string name="exit_retain_message">Magdagdag ng home widget para sa mas mabilis na paglilinis</string>
+    <string name="exit_retain_confirm_exit">Lumabas</string>
+    <string name="exit_retain_add">Idagdag</string>
+    <string name="exit_retain_feature_cache">Cache</string>
+    <string name="exit_retain_feature_large">Malaking File</string>
+    <string name="widget_status_storage">Libreng espasyo</string>
+    <string name="notif_screenshot">Mga screenshot</string>
+    <string name="exit_retain_message_existing">Ang iyong home widget ay handa na para sa mabilisang paglilinis</string>
+    <string name="notif_cache">Cache</string>
+    <string name="notif_channel_name">Mabilis na Malinis na Toolbar</string>
+    <string name="notif_channel_desc">Persistent na toolbar para sa mabilis na mga pagkilos sa paglilinis</string>
+    <string name="notif_speed_placeholder">0.0 KB/s</string>
+    <string name="notif_event_channel_name">Malinis na mga paalala</string>
+    <string name="notif_event_channel_desc">Mga lokal na paalala pagkatapos ng mga screenshot, pag-install, at pag-uninstall</string>
+    <string name="notif_event_summary_channel_name">Malinis na buod ng paalala</string>
+    <string name="notif_event_screenshot_title">Isa pang screenshot? 1 Oras na para i-clear ang mga screenshot</string>
+    <string name="notif_event_install_title">Lumipat na ang bagong app, at gayundin ang cache. maglinis</string>
+    <string name="notif_event_uninstall_title">Matagumpay na na-uninstall! upang linisin ang mga nalalabi sa file</string>
+    <string name="notif_clean_reminder_title">Maraming basurang nakatambak. Linisin ito nang sabay-sabay.</string>
+    <string name="notif_event_battery_below_50_title">Ang baterya ay higit sa kalahating puno. Mag-ingat ka ngayon, tatagal ito hanggang sa pag-uwi mo.</string>
+    <string name="notif_event_battery_below_20_title">Mababang baterya. Gusto mong malaman kung sino ang nagnanakaw ng iyong kuryente? I-click upang makita ang mga ranggo.</string>
+    <string name="notif_event_charging_title">Naka-plug in. Gawain ngayong gabi: mag-refill, pagkatapos ay linisin.</string>
+    <string name="notif_event_charging_full_title">Ganap na naka-charge at handa nang umalis. Isang huling pagsusuri: Nalinis na ba ang basura?</string>
+    <string name="notif_event_charging_to_80_title">Ang huling sprint ay 80%. Alisin ang basurahan at mag-empake nang bahagya upang tanggapin ang buong lakas.</string>
+    <string name="notif_event_charging_disconnect_title">I-unplug at i-set off. Tandaan na maglaan ng oras upang linisin ang basura at manatili sa tip-top na hugis.</string>
+    <string name="notif_event_app_update_title">May dumating na bagong bersyon. Ang lahat ng natitira sa lumang bersyon ay ganap na nalinis.</string>
+    <string name="notif_event_network_change_title">Nagbabago ang web! Tingnan ang kasalukuyang katayuan ng network 1</string>
+    <string name="notif_event_screen_lock_title">Ibaba ang iyong telepono at ipaubaya ito sa amin. Oras ng screen ng pahinga = oras ng pag-aalaga.</string>
+    <string name="notif_event_screen_on_after_lock_title">Nagkita ulit tayo, suplado ka ba? Karamihan sa mga ito ay basura, subukang linisin ito.</string>
+    <string name="notif_event_storage_free_drop_title">Nagbago ang storage space. Tingnan natin kung ano ang kumukuha ng espasyo?</string>
+    <string name="notif_event_scheduled_push_1_title">Ang mga basurang matagal nang naipon ay agad na nililimas.</string>
+    <string name="notif_event_scheduled_push_2_title">Ang baterya ba ay hindi kasing tibay ng dati? Suriin ito.</string>
+    <string name="notif_event_app_inactive_title">Matagal nang hindi nagkita, naghintay. Bumalik at itapon ang basura.</string>
+    <string name="notif_event_scheduled_push_3_title">Isang tap sa iyong mga playlist — i-set up ang widget</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Isang tap sa iyong mga playlist — i-set up ang widget</item>
+        <item>Gawing mas madali ang lahat gamit ang isang widget — magdagdag ng shortcut sa musika</item>
+        <item>Maglaro nang mabilis nang hindi ina-unlock — paganahin ang home-screen widget</item>
+    </string-array>
+    <string name="notif_event_app_background_title">May nakalimutan ka</string>
+    <string name="notif_event_app_background_content">Halina\'t tapusin ang paglilinis upang ito ay maging mas maayos.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>May nakalimutan ka</item>
+        <item>Isang hakbang ang natitira</item>
+        <item>Magandang balita</item>
+        <item>Masyado kang mabilis umalis</item>
+        <item>Huwag mag-iwan ng basura sa magdamag</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Halina\'t tapusin ang paglilinis upang ito ay maging mas maayos.</item>
+        <item>Isang tap pa para tapusin ang paglilinis at magbakante ng mas maraming espasyo.</item>
+        <item>Na-detect ang malayang espasyo — mag-claim ng one-tap clean.</item>
+        <item>Ang iyong telepono ay maaaring maging mas mabilis — tingnan ang pag-optimize.</item>
+        <item>Halina\'t tapusin ang paglilinis upang ito ay maging mas maayos.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Handa na ang mga resulta ng pag-scan — kumukuha ng espasyo ang basura. Malinis ngayon</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Handa na ang mga resulta ng pag-scan — kumukuha ng espasyo ang basura. Malinis ngayon</item>
+        <item>Isang hakbang ang natitira: bumalik at magbakante ng espasyo kaagad.</item>
+        <item>Nakalimutang linisin pagkatapos ng pag-scan? 10 segundo upang gawing mas magaan ang iyong telepono.</item>
+        <item>Nasa iyong telepono pa rin ang basura — na-save ang mga resulta. Bumalik para sa one-tap clean.</item>
+        <item>Nakahanap ang huling pag-scan ng maraming item na lilinisin. Halika tapusin mo na.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Hindi pa tapos ang paglilinis — tapusin na ang huling hakbang.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Hindi pa tapos ang paglilinis — tapusin na ang huling hakbang.</item>
+        <item>Naputol ang paglilinis: nasa kalagitnaan. Tapusin para sa mas magaan na telepono.</item>
+        <item>Malapit nang matapos ang paglilinis — huwag iwanan ang basura.</item>
+        <item>Umalis ka sa kalagitnaan ng malinis - tapusin ito at damhin ang pagkakaiba.</item>
+        <item>Ang naantala na paglilinis ay maaaring magpatuloy anumang oras. Halika tapusin mo na.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Photo deleted — ligtas na inilipat sa recycle bin.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Photo deleted — ligtas na inilipat sa recycle bin.</item>
+        <item>Kaka-delete lang ng 1 larawan — tingnan kung gaano karaming espasyo ang nalaya mo?</item>
+        <item>Tinanggal ang larawan — permanenteng tanggalin sa libreng espasyo ngayon.</item>
+        <item>Ligtas na tinanggal ang larawan — na-update ang katayuan ng imbakan.</item>
+        <item>Na-delete ang larawan — maaari mo ring linisin ang mga katulad na screenshot.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Tinanggal ang video — malaking espasyo ang nililibre.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Tinanggal ang video — malaking espasyo ang nililibre.</item>
+        <item>Inalis ang malaking video — humina kaagad ang presyon ng storage.</item>
+        <item>Natanggal ang video — tingnan ang iyong kasalukuyang katayuan ng storage.</item>
+        <item>I-delete ang tapos na — alisan ng laman ang recycle bin upang ganap na mabakante ang espasyo.</item>
+        <item>Na-delete ang video — maaaring may mas maraming nakalimutang malalaking video na lilinisin.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Na-delete ang audio — nagdadagdag ang maliliit na file. Ituloy mo.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Na-delete ang audio — nagdadagdag ang maliliit na file. Ituloy mo.</item>
+        <item>Nawala ang audio na iyon — mas maraming katulad na hindi nagamit na mga file ang maaari ding linisin.</item>
+        <item>Na-delete ang audio — na-update ang mga detalye ng storage. Halika tingnan mo.</item>
+        <item>1 audio file ang tinanggal — na-refresh ang listahan ng imbakan.</item>
+        <item>Tinanggal ang audio — alisan ng laman ang recycle bin upang tapusin ang pagbakante ng espasyo.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Na-delete ang file — medyo nabakante ang storage.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Na-delete ang file — medyo nabakante ang storage.</item>
+        <item>Na-delete na ang file — hindi na aabalahin ng kalat ang iyong telepono.</item>
+        <item>Na-delete ang file — tingnan kung ano pa ang maaari mong linisin.</item>
+        <item>Tinanggal ang file — na-sync ang mga pagbabago, na-update ang katayuan ng storage.</item>
+        <item>Na-clear na ang file na iyon — nagre-reclaim ng space ngayon.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Na-download ang larawan — buksan ito at tingnan.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Na-download ang larawan — buksan ito at tingnan.</item>
+        <item>Na-download na larawan — linisin ang mga duplicate na larawan sa iyong album habang nandoon ka</item>
+        <item>Tapos na ang pag-download — ligtas na na-save ang imahe. Halika at tingnan ang mga katulad na larawan</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Na-download ang video — hindi ito maliit. Tingnan kung gaano karaming espasyo ang maaaring malaya ng mga lumang video</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Na-download ang video — hindi ito maliit. Tingnan kung gaano karaming espasyo ang maaaring malaya ng mga lumang video</item>
+        <item>Bagong video na na-save — maghanap ng malalaking video na tatanggalin at magbakante ng espasyo. Tapikin mo ako</item>
+        <item>Ang mga video ay tumatagal ng espasyo — nakakita kami ng mga bagay na nalilinis upang gumaan ang iyong telepono. Tapikin dito</item>
+        <item>Tapos na ang pag-download! Linisin ang ilang lumang video at babalik ang espasyo. Tapikin mo ako</item>
+        <item>Bagong video inayos — madaling hanapin o linisin. I-tap para makita</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Na-download ang audio — ayusin ang iyong library ng musika sa isang tap. Tapikin mo ako</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Na-download ang audio — ayusin ang iyong library ng musika sa isang tap. Tapikin mo ako</item>
+        <item>Bagong audio pinagsunod-sunod — linisin ang lumang audio habang narito ka. Tapikin mo ako</item>
+        <item>Napupuno ang library ng musika? Suriin ang nalilinis na audio. Tapikin dito</item>
+        <item>Na-download ang audio — dedupe sa isang tap. Tapikin ako para maglinis</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Bagong file na na-save — i-clear ang mga lumang file at libreng espasyo. Tapikin dito</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Bagong file na na-save — i-clear ang mga lumang file at libreng espasyo. Tapikin dito</item>
+        <item>Tapos na ang pag-download — tingnan kung aling mga lumang file ang maaari mong linisin. Tapikin mo ako</item>
+        <item>Handa na ang bagong file — matalinong archive + malinis. I-tap ako para magsimula</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Walang laman ang recycle bin — na-refresh ang storage. Suriin ang iyong pinakabagong espasyo.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Walang laman ang recycle bin — na-refresh ang storage. Suriin ang iyong pinakabagong espasyo.</item>
+        <item>Walang laman ang recycle bin — dumating ang mga natirang malinis na malinis.</item>
+        <item>Matagumpay na na-emptyed — mas maraming basurang lilinisin. Halika tingnan mo.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Malinis ngayon</string>
+    <string name="notif_event_action_open_home">Bukas</string>
+    <string name="notif_event_action_manage">Pamahalaan ang mga app</string>
+    <string name="notif_event_action_check_battery">Suriin ang baterya</string>
+    <string name="notif_event_action_check_network">Suriin ang network</string>
+    <string name="notif_days_unit">araw</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Nagbago ang storage space. Tingnan natin kung ano ang kumukuha ng espasyo?</item>
+        <item>Nakita ang mga pagbabago sa spatial. Maaaring may ilang bagong basura, tingnan mo?</item>
+        <item>Ang magagamit na espasyo ay inilipat. Alam mo ba kung sino ang kumain nito? I-click upang tingnan.</item>
+        <item>Mahigpit ba ang espasyo? Nakita lang ang pagbabago, tingnan natin ang mga detalye.</item>
+        <item>Paalala sa pagbabago ng espasyo: Maaari kang makaipon ng maraming basura. Tingnan ito?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Mababang baterya. Gusto mong malaman kung sino ang nagnanakaw ng iyong kuryente? I-click upang makita ang mga ranggo.</item>
+        <item>Bottoming out sa lalong madaling panahon. Kung aalisin mo ang mga app na nagnanakaw ng kuryente, makakaligtas ka pa rin sa ilang sandali.</item>
+        <item>Ubos na ang baterya. Ang pag-clear ng ilang background ay mas mahusay kaysa sa walang ginagawa.</item>
+        <item>Ang baterya ay pula. Maaari mo pa ring i-save ito, i-click upang buksan ito at tingnan.</item>
+        <item>Mas mababa sa 20% remains. Gumawa tayo ng pangunang lunas na nakakatipid sa kuryente at maglinis.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Ang baterya ay higit sa kalahating puno. Mag-ingat ka ngayon, tatagal ito hanggang sa pag-uwi mo.</item>
+        <item>Ang baterya ay higit sa kalahating puno. Ang pag-aalaga sa baterya ngayon ay mas madali kaysa maghintay hanggang 20%.</item>
+        <item>Ang baterya ay nawala sa kalahati. Gaano ito katagal? I-click upang tingnan.</item>
+        <item>Ang baterya ay higit sa kalahating puno. Oras na para alagaan ang backend, huwag hintayin na kabahan ito.</item>
+        <item>Kalahati ng baterya ang natitira. Alisin ang malalaking manlalarong gutom sa kapangyarihan at gawing mas matatag ang ikalawang kalahati.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Ang huling sprint ay 80%. Alisin ang basurahan at mag-empake nang bahagya upang tanggapin ang buong lakas.</item>
+        <item>20% short pa rin ng full charge. Itigil ang pagtitig sa iyong screen at hayaan kaming mag-ingat sa basura.</item>
+        <item>80%: Isang hakbang ang layo mula sa pagiging perpekto. Mag-click nang isang beses at ito ay ganap na malilinis kapag ang baterya ay ganap na na-charge.</item>
+        <item>80%, a magandang baterya para sa magandang mobile phone. Naglilinis ng isang bilog habang mainit?</item>
+        <item>Ang huling 20% i na ibinigay sa amin. Tinitingnan mo ang baterya, at nililinis namin ang basura.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Ganap na naka-charge at handa nang umalis. Isang huling pagsusuri: Nalinis na ba ang basura?</item>
+        <item>Pagkatapos mag-charge, puno na ang sense of ritual. Paano ang tungkol sa paglilinis ng basura upang gunitain ito?</item>
+        <item>100%, stable ngayon. Isang round pa at walang kamali-mali.</item>
+        <item>100%. Ang huling hakbang bago mag-unplug: tanggalin ang basura, tatlumpung segundo.</item>
+        <item>Natapos nang buong lakas. Isang huling paglilinis, perpekto.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Nagbabago ang web! Tingnan ang kasalukuyang katayuan ng network 1</item>
+        <item>Pag-alis ng network. Huwag tumingin sa signal kapag naglilinis, i-click lamang ito at i-scan.</item>
+        <item>Hindi mabuksan ang pahina? Ang paglilinis ay palaging online.</item>
+        <item>Maaari kang magtrabaho nang offline, at ang iyong basura ay maaaring i-clear ngayon.</item>
+        <item>Kung walang signal, walang data na kinakailangan para sa paglilinis, i-click lamang.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Naka-plug in. Ang gawain ngayong gabi: mag-refill, pagkatapos ay linisin.</item>
+        <item>Nagpapahinga ka, nagre-recharge ito. Hayaang linisin din nito ang basura.</item>
+        <item>Sa oras ng pag-charge, sapat na upang alisin ang mga basura na naipon sa mahabang panahon.</item>
+        <item>Kapag nakasaksak lang ang kuryente ay malayang maglakas-loob ang mga tauhan sa backstage na magtrabaho.</item>
+        <item>Medyo naiinitan habang nagcha-charge? Ang pag-clear sa background ay maaaring magpababa ng temperatura.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>I-unplug at i-set off. Tandaan na maglaan ng oras upang linisin ang basura at manatili sa tip-top na hugis.</item>
+        <item>Pagkatapos mag-charge, mag-empake at umalis. Linisin lamang ito at ito ay magiging perpekto.</item>
+        <item>Ganap na naka-charge at handa nang gamitin. Ang paglilinis ng basura ay maayos, walang pagkukulang ngayon.</item>
+        <item>Matatapos ang pag-charge. Ang susunod na espasyo ay lilinisin at i-upgrade nang paisa-isa.</item>
+        <item>Huwag tumigil sa mga blackout. Isang bagay ang natitira: paglilinis.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Nagkita ulit tayo, suplado ka ba? Karamihan sa mga ito ay basura, subukang linisin ito.</item>
+        <item>Naka-unlock? Huwag munang magbukas ng ibang app at i-clear ang basurahan sa loob ng tatlumpung segundo.</item>
+        <item>Ang unang i-unlock ay tayo. Alisin ang basura at mas mamahalin ka nito.</item>
+        <item>Tatlumpung segundo pagkatapos ng pag-unlock. Ang pinakamahalagang gamit: paglilinis ng basura.</item>
+        <item>Sabi ng iyong cell phone: Medyo naka-block ang backend, pwede mo ba akong tulungan?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Ibaba ang iyong telepono at ipaubaya ito sa amin. Oras ng screen ng pahinga = oras ng pag-aalaga.</item>
+        <item>Ang pagtigil sa trabaho ay hindi nangangahulugan ng pagtigil sa trabaho. Bibigyan kita ng surpresa sa susunod na buksan ko ang screen.</item>
+        <item>Tahimik na gumaganda habang pinapahinga ang screen. Mag-click at gagawin namin ang iba pa.</item>
+        <item>Isang huling bagay bago i-lock ang screen: I-click ang Clean. Isang bagong hitsura bukas ng umaga.</item>
+        <item>Nagdidilim ang screen. Mag-ayos ngayon at tingnan ang mga resulta bukas.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Lumipat na ang bagong app, at gayundin ang cache. maglinis</item>
+        <item>Naiintindihan namin ang kagalakan ng pag-install ng bagong app. Tahimik lang na tambak ang cache.</item>
+        <item>Bagong App? Nandito rin ang cache, i-clear ito sa isang click.</item>
+        <item>Ang bago ay pumapasok at ang luma ay lumalabas. Linisin ito nang madalas at i-install ito ayon sa gusto mo.</item>
+        <item>Isa pa? Ang espasyo ay lumiliit nang tahimik, halika at linisin ito.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Matagumpay na na-uninstall! upang linisin ang mga nalalabi sa file</item>
+        <item>Na-uninstall ngunit hindi nalinis. I-click upang matapos.</item>
+        <item>Na-uninstall ang app, ngunit nandoon pa rin ang buntot. Maglinis sa isang click at magpaalam nang isang beses at para sa lahat.</item>
+        <item>Huwag palampasin ang pangalawang hakbang: tanggalin ang App + i-clear ang nalalabi. Isang pag-click at tapos na.</item>
+        <item>Kakainin ng nalalabi ang kalahati ng nabakanteng espasyo. Malalim na i-scan at i-clear ang lahat.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>May dumating na bagong bersyon. Ang lahat ng natitira sa lumang bersyon ay ganap na nalinis.</item>
+        <item>+1 para sa bersyon, +1 para sa cache, para sa malalim na pag-scan.</item>
+        <item>Ang pag-update ay nakumpleto at ang natitirang mga pakete ng pag-install ay maaaring malinis sa isang pag-click.</item>
+        <item>Tapos na ang update, tapusin na natin. Linisin mo at ako na ang bahala.</item>
+        <item>Ang bawat pag-update ay mag-iiwan ng mga lumang file at haharapin ang mga ito nang mabilis.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Isa pang screenshot? 1 Oras na para i-clear ang mga screenshot</item>
+        <item>Nakahanap ng bagong screenshot, i-click upang tingnan at linisin ito~</item>
+        <item>Parami nang parami ang mga screenshot, ang one-click na paglilinis ay makakatulong sa iyo na gumawa ng espasyo</item>
+        <item>Matagumpay na nakuha ang screenshot, maaaring i-filter ang mga duplicate at blur sa isang click.</item>
+        <item>Ang mga bagong screenshot ay idinagdag sa database, at ang mga duplicate na larawan ay nakapila para sa pag-clear sa isang click.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Maraming basurang nakatambak. Linisin ito nang sabay-sabay.</item>
+        <item>Huling nalinis %1$d araw na nakalipas, i-click upang iproseso ito ngayon</item>
+        <item>Ilang araw na akong wala rito, kaya lilinisin ko ito at babalik sa larangan ng digmaan nang basta-basta.</item>
+        <item>Ang clearing quota ay hindi nagamit ngayon. Lilinawin ko ito pagbalik ko.</item>
+        <item>Napupuno na ang cache, naghihintay na tingnan mo ito</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Matagal nang hindi nagkita, naghintay. Bumalik at itapon ang basura.</item>
+        <item>Ilang araw na kitang hindi nakikita. Walang pahinga para sa mga basura. Bumalik ka at walisin mo.</item>
+        <item>Nakapila ang cache. Mag-click at mawala sila.</item>
+        <item>Busy ang basura habang wala ka. Walang laman sa isang pag-click at sariwa ang pakiramdam gaya ng dati.</item>
+        <item>Bumalik? Linisin muna ang basura. Sa loob ng tatlumpung segundo, ang telepono ay kasing liwanag ng bago.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Ang mga basurang matagal nang naipon ay agad na nililimas.</item>
+        <item>Oras na para maglinis. Ang basura ngayon ay naghihintay para sa iyo na mag-click dito.</item>
+        <item>Dumating ang Space Daily ngayong araw. Alisin at panatilihin itong maliwanag.</item>
+        <item>Ang ilang mga file ay mas malaki kaysa sa iyong iniisip, tingnan</item>
+        <item>Hanapin ang taong kumuha ng ilang G\'s at linisin ito</item>
+        <item>Handa na ang malaking listahan ng dokumento, halika at tingnan.</item>
+        <item>Sino ang kumukuha ng pinakamaraming espasyo? Nabunyag sa isang segundo.</item>
+        <item>Ang tuluy-tuloy na pagbaril ay mahusay, ang pagtatapos ay masakit. Ipaubaya sa amin.</item>
+        <item>Naka-line up ang mga katulad na larawan, ikaw ang bahalang pumili kung alin ang pananatilihin</item>
+        <item>Napakaraming katulad na mga larawan? Tutulungan ka naming paghambingin at alisin ang mga duplicate sa isang click lang.</item>
+        <item>Dapat i-clear ang mga naka-cache na offline na video.</item>
+        <item>Ang natitirang audio ay lilinisin din.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Ang baterya ba ay hindi kasing tibay ng dati? Suriin ito.</item>
+        <item>Sino ang nagnanakaw ng iyong kuryente? Malalaman mo kapag tiningnan mo ito.</item>
+        <item>Ang pag-off sa mga ito ay magpapahaba ng buhay ng baterya.</item>
+        <item>Ang ilang mga app ay naka-install ngunit hindi kailanman ginagamit. Tingnan kung alin sila?</item>
+        <item>Ang pagpapanatiling mga app na hindi mo ginagamit ay isang pabigat din, ang listahan ay nagawa na</item>
+        <item>Tungkol sa pagkapribado, mas maaga itong hinarap, mas mabuti.</item>
+        <item>Itago ang mga mahalaga at alisin ang mga hindi kailangan. hayaan mo akong tulungan ka</item>
+        <item>Saan napupunta ang traffic? Alamin kung sino ang gumagamit nito.</item>
+        <item>Ang mga detalye ng trapiko ay handa at malinaw sa isang sulyap.</item>
+        <item>Mayroong isang app na lihim na kumokonekta sa Internet sa background.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} ng junk—i-clear ito sa isang tap</string>
+    <string name="notif_scheduled_large_files">{total} ng malalaking file—maglinis nang madali</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} mga grupo ng mga duplicate na larawan—save {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} ng mga katulad na larawan—piliin kung ano ang lilinisin</string>
+    <string name="notif_scheduled_videos">{total} ng mga video—tanggalin ang {n} upang magbakante ng espasyo</string>
+    <string name="notif_scheduled_audio">{total} ng mga audio file—oras na para mag-ayos</string>
+    <string name="notif_scheduled_apps">{size} na ginagamit ng {idle} idle apps</string>
+    <string name="notif_scheduled_data">{back} ng data na ginamit sa background</string>
+    <string name="app_manager_uninstall_selected">I-uninstall ang napili</string>
+    <string name="app_manager_uninstall_selected_count">I-uninstall ang napili (%1$d)</string>
+    <string name="cache_removable">Matatanggal</string>
+    <string name="cache_clean_selected">Alisin ang Cache</string>
+    <string name="cache_clean_selected_summary">Malinis %1$s (%2$d)</string>
+</resources>

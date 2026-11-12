@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Temperatuur</string>
+    <string name="sys_voltage">Spanning</string>
+    <string name="sys_current">Elektrische stroom</string>
+    <string name="sys_health">Gezondheid</string>
+    <string name="sys_type">Batterijtype</string>
+    <string name="sys_capacity">Batterijcapaciteit</string>
+    <string name="sys_charging">opladen</string>
+    <string name="sys_full">vol</string>
+    <string name="sys_good">Goed</string>
+    <string name="sys_overheat">Oververhitting</string>
+    <string name="sys_dead">Dood</string>
+    <string name="sys_over_voltage">Overspanning</string>
+    <string name="sys_cold">Koud</string>
+    <string name="sys_unknown">onbekend</string>
+    <string name="sys_model">Model:</string>
+    <string name="sys_brand">Merk:</string>
+    <string name="sys_manufacturer">Fabrikant:</string>
+    <string name="sys_wifi_name">Naam:</string>
+    <string name="sys_wifi_ip">IP-adres:</string>
+    <string name="sys_wifi_speed">Snelheid:</string>
+    <string name="traffic_month">Deze maand</string>
+    <string name="traffic_30_days">30 dagen</string>
+    <string name="traffic_24_hours">24 uur</string>
+    <string name="traffic_mobile">Mobiel</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">Apps</string>
+</resources>

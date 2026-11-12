@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">6 இலக்க பின்னை உருவாக்கவும்</string>
+    <string name="vlt_enter_pin">உங்கள் பின்னை உள்ளிடவும்</string>
+    <string name="vlt_confirm_pin">உங்கள் பின்னை உறுதிப்படுத்தவும்</string>
+    <string name="vlt_warning">இந்த ஆப்ஸை நிறுவல் நீக்கினால் தனியுரிமை இடத்தில் உள்ள கோப்புகள் நிரந்தரமாக நீக்கப்படும்.</string>
+    <string name="vlt_pin_mismatch">பின்கள் பொருந்தவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="vlt_pin_wrong">தவறான பின்</string>
+    <string name="vlt_biometric">கைரேகை / முகத்தைப் பயன்படுத்தவும்</string>
+    <string name="vlt_unlock">தனியுரிமை இடத்தைத் திறக்கவும்</string>
+    <string name="vlt_use_pin">உங்கள் பின்னை உள்ளிடவும்</string>
+    <string name="vlt_importing">இறக்குமதி செய்கிறது...</string>
+    <string name="vlt_imported">%1$d உருப்படிகள் இறக்குமதி செய்யப்பட்டன</string>
+    <string name="vlt_restore">மீட்டமை</string>
+    <string name="vlt_delete">நீக்கு</string>
+</resources>

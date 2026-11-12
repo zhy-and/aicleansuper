@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">விட்ஜெட்களை பின்னிங் செய்வது இந்தச் சாதனத்தில் ஆதரிக்கப்படவில்லை</string>
+    <string name="widget_already_added">விட்ஜெட் ஏற்கனவே சேர்க்கப்பட்டது</string>
+    <string name="home_tip_notification">குப்பைக் கோப்புகள் குவிந்து கிடப்பது குறித்து தொடர்ந்து அறிந்திருங்கள்.</string>
+    <string name="home_tip_notification_action">இயக்கு</string>
+    <string name="home_tip_widget">ஒரே கிளிக்கில் டெஸ்க்டாப் விட்ஜெட்களை இயக்கவும்</string>
+    <string name="home_tip_widget_action">அனுமதி</string>
+    <string name="home_tip_all_files">மீதமுள்ள தடயங்களைக் கண்டறிய அங்கீகரிக்கப்பட்ட ஸ்கேனிங்.</string>
+    <string name="home_tip_all_files_action">அனுமதி</string>
+</resources>

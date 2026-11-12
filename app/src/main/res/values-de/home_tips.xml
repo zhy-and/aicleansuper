@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Das Anheften von Widgets wird auf diesem Gerät nicht unterstützt</string>
+    <string name="widget_already_added">Widget bereits hinzugefügt</string>
+    <string name="home_tip_notification">Bleiben Sie über die Ansammlung von Junk-Dateien auf dem Laufenden.</string>
+    <string name="home_tip_notification_action">Aktivieren</string>
+    <string name="home_tip_widget">Aktivieren Sie Desktop-Widgets mit einem Klick</string>
+    <string name="home_tip_widget_action">Erlauben</string>
+    <string name="home_tip_all_files">Autorisiertes Scannen zur Erkennung von Restspuren.</string>
+    <string name="home_tip_all_files_action">Erlauben</string>
+</resources>

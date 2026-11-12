@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vlt_set_pin">قم بإنشاء رقم التعريف الشخصي (PIN) المكون من 6 أرقام</string>
+    <string name="vlt_enter_pin">أدخل رقم التعريف الشخصي الخاص بك</string>
+    <string name="vlt_confirm_pin">قم بتأكيد رقم التعريف الشخصي الخاص بك</string>
+    <string name="vlt_warning">سيؤدي إلغاء تثبيت هذا التطبيق إلى حذف الملفات الموجودة في مساحة الخصوصية نهائيًا.</string>
+    <string name="vlt_pin_mismatch">أرقام التعريف الشخصية غير متطابقة. حاول ثانية.</string>
+    <string name="vlt_pin_wrong">رقم التعريف الشخصي غير صحيح</string>
+    <string name="vlt_biometric">استخدام بصمة الإصبع / الوجه</string>
+    <string name="vlt_unlock">فتح مساحة الخصوصية</string>
+    <string name="vlt_use_pin">أدخل رقم التعريف الشخصي الخاص بك</string>
+    <string name="vlt_importing">جارٍ الاستيراد...</string>
+    <string name="vlt_imported">تم استيراد %1$d من العناصر</string>
+    <string name="vlt_restore">يعيد</string>
+    <string name="vlt_delete">يمسح</string>
+</resources>

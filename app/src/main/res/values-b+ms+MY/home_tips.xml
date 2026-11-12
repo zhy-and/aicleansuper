@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Menyemat widget tidak disokong pada peranti ini</string>
+    <string name="widget_already_added">Widget sudah ditambah</string>
+    <string name="home_tip_notification">Kekal dimaklumkan tentang pengumpulan fail sampah.</string>
+    <string name="home_tip_notification_action">Dayakan</string>
+    <string name="home_tip_widget">Dayakan widget desktop dengan satu klik</string>
+    <string name="home_tip_widget_action">benarkan</string>
+    <string name="home_tip_all_files">Pengimbasan dibenarkan untuk mengesan kesan sisa.</string>
+    <string name="home_tip_all_files_action">benarkan</string>
+</resources>

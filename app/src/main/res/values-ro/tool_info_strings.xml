@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">Temperatură</string>
+    <string name="sys_voltage">Voltaj</string>
+    <string name="sys_current">Curent electric</string>
+    <string name="sys_health">Sănătate</string>
+    <string name="sys_type">Tip baterie</string>
+    <string name="sys_capacity">Capacitatea bateriei</string>
+    <string name="sys_charging">încărcarea</string>
+    <string name="sys_full">deplin</string>
+    <string name="sys_good">Bun</string>
+    <string name="sys_overheat">Supraîncălzi</string>
+    <string name="sys_dead">Mort</string>
+    <string name="sys_over_voltage">Supratensiune</string>
+    <string name="sys_cold">Rece</string>
+    <string name="sys_unknown">necunoscut</string>
+    <string name="sys_model">Model:</string>
+    <string name="sys_brand">Marca:</string>
+    <string name="sys_manufacturer">Producător:</string>
+    <string name="sys_wifi_name">Nume:</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">Viteză:</string>
+    <string name="traffic_month">Luna aceasta</string>
+    <string name="traffic_30_days">30 de zile</string>
+    <string name="traffic_24_hours">24 de ore</string>
+    <string name="traffic_mobile">Mobil</string>
+    <string name="traffic_wifi">WIFI</string>
+    <string name="traffic_apps">Aplicații</string>
+</resources>

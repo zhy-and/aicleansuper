@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Закрепление виджетов не поддерживается на этом устройстве.</string>
+    <string name="widget_already_added">Виджет уже добавлен</string>
+    <string name="home_tip_notification">Будьте в курсе накопления ненужных файлов.</string>
+    <string name="home_tip_notification_action">Давать возможность</string>
+    <string name="home_tip_widget">Включите виджеты на рабочем столе одним щелчком мыши</string>
+    <string name="home_tip_widget_action">Позволять</string>
+    <string name="home_tip_all_files">Авторизованное сканирование для обнаружения остаточных следов.</string>
+    <string name="home_tip_all_files_action">Позволять</string>
+</resources>

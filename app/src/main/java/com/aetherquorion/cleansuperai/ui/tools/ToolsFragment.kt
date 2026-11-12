@@ -10,7 +10,9 @@ import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentToolsBinding
 import com.aetherquorion.cleansuperai.databinding.ViewToolItemBinding
+import com.aetherquorion.cleansuperai.databinding.ViewToolTileBinding
 import com.aetherquorion.cleansuperai.ui.clean.CleanCenterFragment
+import com.aetherquorion.cleansuperai.ui.vault.VaultFragment
 
 class ToolsFragment : Fragment() {
     private var _binding: FragmentToolsBinding? = null
@@ -34,44 +36,52 @@ class ToolsFragment : Fragment() {
             binding.toolFileManager,
             R.string.tool_file_manager,
             R.string.tool_file_manager_desc,
-            R.drawable.ic_clean,
-            R.drawable.bg_home_tool_icon_green,
+            R.drawable.ic_storage_permission_file,
+            R.drawable.bg_home_feature_icon_green,
         )
         configure(
             binding.toolMediaCompressor,
             R.string.tool_media_compressor,
             R.string.tool_media_compressor_desc,
             R.drawable.ic_nav_compress,
-            R.drawable.bg_home_tool_icon_blue,
+            R.drawable.bg_home_feature_icon_blue,
         )
         configure(
             binding.toolAppManager,
             R.string.tool_app_manager,
             R.string.tool_app_manager_desc,
-            R.drawable.ic_apps,
-            R.drawable.bg_home_tool_icon_orange,
+            R.drawable.ic_tool_apps_grid,
+            R.drawable.bg_home_feature_icon_orange,
         )
         configure(
             binding.toolCalendar,
             R.string.tool_clean_calendar,
             R.string.tool_clean_calendar_desc,
             R.drawable.ic_calendar,
-            R.drawable.bg_home_tool_icon_teal,
+            R.drawable.bg_home_feature_icon_teal,
         )
         configure(
             binding.toolEnhancer,
             R.string.tool_ai_enhancer,
             R.string.tool_ai_enhancer_desc,
             R.drawable.ic_enhance,
-            R.drawable.bg_home_tool_icon_pink,
+            R.drawable.bg_home_feature_icon_pink,
         )
         configure(
             binding.toolSpeedTest,
             R.string.tool_speed_test,
             R.string.tool_speed_test_desc,
             R.drawable.ic_speed,
-            R.drawable.bg_home_tool_icon_blue,
+            R.drawable.bg_home_feature_icon_blue,
         )
+        configure(binding.toolNetworkTraffic, R.string.tool_network_traffic, R.string.tool_network_traffic_desc,
+            R.drawable.ic_chart, R.drawable.bg_home_feature_icon_blue)
+        configure(binding.toolBatteryInfo, R.string.tool_battery_info, R.string.tool_battery_info_desc,
+            R.drawable.ic_home_battery, R.drawable.bg_home_feature_icon_orange)
+        configure(binding.toolDeviceInfo, R.string.tool_device_info, R.string.tool_device_info_desc,
+            R.drawable.ic_phone, R.drawable.bg_home_feature_icon_green)
+        configure(binding.toolPrivateVault, R.string.tool_private_vault, R.string.tool_private_vault_desc,
+            R.drawable.ic_lock, R.drawable.bg_home_feature_icon_pink)
 
         binding.toolFileManager.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(CleanCenterFragment(), "clean_center")
@@ -91,6 +101,18 @@ class ToolsFragment : Fragment() {
         binding.toolSpeedTest.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(SpeedTestFragment(), "speed_test")
         }
+        binding.toolNetworkTraffic.root.setOnClickListener {
+            (activity as? MainActivity)?.openDetail(NetworkTrafficFragment(), "network_traffic")
+        }
+        binding.toolBatteryInfo.root.setOnClickListener {
+            (activity as? MainActivity)?.openDetail(SystemInfoFragment.battery(), "battery_info")
+        }
+        binding.toolDeviceInfo.root.setOnClickListener {
+            (activity as? MainActivity)?.openDetail(SystemInfoFragment.device(), "device_info")
+        }
+        binding.toolPrivateVault.root.setOnClickListener {
+            (activity as? MainActivity)?.openDetail(VaultFragment(), "vault")
+        }
     }
 
     override fun onDestroyView() {
@@ -107,6 +129,20 @@ class ToolsFragment : Fragment() {
     ) {
         item.tvToolTitle.setText(titleRes)
         item.tvToolSubtitle.isVisible = true
+        item.tvToolSubtitle.setText(subtitleRes)
+        item.tvToolBadge.isVisible = false
+        item.ivToolIcon.setImageResource(iconRes)
+        item.iconContainer.setBackgroundResource(iconBackgroundRes)
+    }
+
+    private fun configure(
+        item: ViewToolTileBinding,
+        titleRes: Int,
+        subtitleRes: Int,
+        iconRes: Int,
+        iconBackgroundRes: Int,
+    ) {
+        item.tvToolTitle.setText(titleRes)
         item.tvToolSubtitle.setText(subtitleRes)
         item.ivToolIcon.setImageResource(iconRes)
         item.iconContainer.setBackgroundResource(iconBackgroundRes)

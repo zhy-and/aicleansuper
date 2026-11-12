@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">이 기기에서는 위젯 고정이 지원되지 않습니다.</string>
+    <string name="widget_already_added">위젯이 이미 추가되었습니다.</string>
+    <string name="home_tip_notification">정크 파일 축적에 대한 최신 정보를 받아보세요.</string>
+    <string name="home_tip_notification_action">할 수 있게 하다</string>
+    <string name="home_tip_widget">한 번의 클릭으로 데스크탑 위젯을 활성화하세요</string>
+    <string name="home_tip_widget_action">허용하다</string>
+    <string name="home_tip_all_files">잔여 흔적을 탐지하기 위한 인증된 스캐닝.</string>
+    <string name="home_tip_all_files_action">허용하다</string>
+</resources>

@@ -46,13 +46,19 @@ class PhotoDetailFragment : Fragment() {
 
     private val trashAdapter = TrashBinAdapter(::restoreTrashItem)
     private var dragStartX = 0f
+    private var dragStartY = 0f
     private var dragActive = false
+    private var photoTransitioning = false
 
     private val deleteLauncher =
         registerForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
+                val report = com.aetherquorion.cleansuperai.ui.flow.CleanupResult(
+                    pendingDeleteUris.size, pendingDeleteUris.size,
+                    trashEntries.filter { it.uri in pendingDeleteUris }.sumOf { it.sizeBytes })
                 clearReviewBin()
                 Toast.makeText(requireContext(), R.string.selected_photos_deleted, Toast.LENGTH_SHORT).show()
+                showCleanupReport(report)
             }
         }
 
@@ -84,6 +90,22 @@ class PhotoDetailFragment : Fragment() {
         binding.btnCloseTrash.setOnClickListener { closeTrashBin() }
         binding.trashScrim.setOnClickListener { closeTrashBin() }
         binding.btnClearPending.setOnClickListener { deletePendingPhotos() }
+        binding.btnRestoreAll.setOnClickListener { restoreAllTrashItems() }
+        binding.tvTrashTitle.setOnTouchListener { _, event ->
+            when (event.actionMasked) {
+                MotionEvent.ACTION_DOWN -> { dragStartY = event.rawY; true }
+                MotionEvent.ACTION_MOVE -> {
+                    binding.trashSheet.translationY = (event.rawY - dragStartY).coerceAtLeast(0f)
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    if (binding.trashSheet.translationY > binding.trashSheet.height * 0.15f) closeTrashBin()
+                    else binding.trashSheet.animate().translationY(0f).setDuration(180L).start()
+                    true
+                }
+                else -> false
+            }
+        }
 
         binding.recyclerTrashBin.layoutManager = GridLayoutManager(requireContext(), 2)
         binding.recyclerTrashBin.setHasFixedSize(true)
@@ -102,7 +124,7 @@ class PhotoDetailFragment : Fragment() {
 
     private fun attachSwipeGesture() {
         binding.cardPhoto.setOnTouchListener { _, event ->
-            if (photoUris.isEmpty()) return@setOnTouchListener false
+            if (photoUris.isEmpty() || photoTransitioning) return@setOnTouchListener false
             when (event.actionMasked) {
                 MotionEvent.ACTION_DOWN -> {
                     binding.cardPhoto.animate().cancel()
@@ -155,7 +177,8 @@ class PhotoDetailFragment : Fragment() {
     }
 
     private fun animateSwipe(commitToBin: Boolean) {
-        if (photoUris.isEmpty()) return
+        if (photoUris.isEmpty() || photoTransitioning) return
+        photoTransitioning = true
         val direction = if (commitToBin) -1f else 1f
         val targetX = binding.photoStage.width * direction
         binding.cardPhoto.animate()
@@ -164,9 +187,15 @@ class PhotoDetailFragment : Fragment() {
             .alpha(0.2f)
             .setDuration(180L)
             .withEndAction {
-                reviewCurrent(commitToBin)
-                binding.cardPhoto.alpha = 1f
-                resetCardPosition(immediate = true)
+                binding.cardPhoto.alpha = 0f
+                binding.cardPhoto.translationX = 0f
+                binding.cardPhoto.rotation = 0f
+                binding.cardPhoto.scaleX = 1f
+                binding.cardPhoto.scaleY = 1f
+                binding.cardPhoto.setLayerType(View.LAYER_TYPE_NONE, null)
+                binding.btnMoveToBin.alpha = 1f
+                binding.btnKeep.alpha = 1f
+                reviewCurrent(commitToBin, revealPhotoOnLoad = true)
             }
             .start()
     }
@@ -193,7 +222,7 @@ class PhotoDetailFragment : Fragment() {
 
     private fun currentUri(): Uri? = photoUris.firstOrNull()
 
-    private fun reviewCurrent(commitToBin: Boolean) {
+    private fun reviewCurrent(commitToBin: Boolean, revealPhotoOnLoad: Boolean = false) {
         val uri = currentUri() ?: return
         if (commitToBin) {
             reviewStore.moveToTrash(uri)
@@ -205,10 +234,10 @@ class PhotoDetailFragment : Fragment() {
             addPendingTrashEntry(uri)
             loadTrashBinSummaryAsync()
         }
-        render()
+        render(revealPhotoOnLoad)
     }
 
-    private fun render() {
+    private fun render(revealPhotoOnLoad: Boolean = false) {
         val currentUri = currentUri()
         binding.tvTitle.text = monthLabel.ifEmpty { getString(R.string.feature_swipe_title) }
         binding.emptyState.isVisible = currentUri == null
@@ -223,11 +252,23 @@ class PhotoDetailFragment : Fragment() {
                 error(R.drawable.ic_media_placeholder)
                 crossfade(false)
                 size(1280)
+                if (revealPhotoOnLoad) {
+                    listener(
+                        onSuccess = { _, _ -> finishPhotoTransition() },
+                        onError = { _, _ -> finishPhotoTransition() },
+                    )
+                }
             }
         } else {
             binding.imagePhoto.setImageDrawable(null)
+            if (revealPhotoOnLoad) finishPhotoTransition()
         }
         renderTrashBinSummary()
+    }
+
+    private fun finishPhotoTransition() {
+        _binding?.cardPhoto?.alpha = 1f
+        photoTransitioning = false
     }
 
     private fun renderTrashBinSummary(entries: List<TrashPhotoItem> = trashEntries) {
@@ -238,6 +279,7 @@ class PhotoDetailFragment : Fragment() {
         )
         binding.btnOpenTrash.isEnabled = entries.isNotEmpty()
         binding.btnClearPending.isEnabled = entries.isNotEmpty()
+        binding.btnRestoreAll.isEnabled = entries.isNotEmpty()
         binding.tvTrashTitle.text = if (entries.isEmpty()) {
             getString(R.string.trash_bin_title_empty)
         } else {
@@ -266,13 +308,20 @@ class PhotoDetailFragment : Fragment() {
     }
 
     private fun openTrashBin() {
+        binding.trashSheet.translationY = 0f
         renderTrashBinSummary()
         loadTrashBinSummaryAsync()
         binding.trashOverlay.isVisible = true
     }
 
     private fun closeTrashBin() {
+        binding.trashSheet.translationY = 0f
         binding.trashOverlay.isVisible = false
+    }
+
+    private fun restoreAllTrashItems() {
+        trashEntries.toList().forEach(::restoreTrashItem)
+        closeTrashBin()
     }
 
     private fun shareCurrent() {
@@ -303,6 +352,7 @@ class PhotoDetailFragment : Fragment() {
         val entries = trashEntries
         if (entries.isEmpty()) return
         pendingDeleteUris = entries.map(TrashPhotoItem::uri)
+        val attemptedBytes = entries.sumOf { it.sizeBytes }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             val request = MediaStore.createDeleteRequest(requireContext().contentResolver, pendingDeleteUris)
@@ -323,11 +373,19 @@ class PhotoDetailFragment : Fragment() {
                         getString(R.string.photos_deleted_format, deleted),
                         Toast.LENGTH_SHORT,
                     ).show()
+                    showCleanupReport(com.aetherquorion.cleansuperai.ui.flow.CleanupResult(
+                        entries.size, deleted, if (deleted == entries.size) attemptedBytes else 0L))
                 } else {
                     Toast.makeText(requireContext(), R.string.delete_photos_failed, Toast.LENGTH_SHORT).show()
                 }
             }
         }
+    }
+
+    private fun showCleanupReport(result: com.aetherquorion.cleansuperai.ui.flow.CleanupResult) {
+        (activity as? com.aetherquorion.cleansuperai.MainActivity)?.openDetail(
+            com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment.newInstance(
+                getString(R.string.home_picture_cleanup), result), "cleanup_report")
     }
 
     private fun clearReviewBin() {

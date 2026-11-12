@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sys_temperature">温度</string>
+    <string name="sys_voltage">電圧</string>
+    <string name="sys_current">電流</string>
+    <string name="sys_health">健康</string>
+    <string name="sys_type">電池のタイプ</string>
+    <string name="sys_capacity">バッテリー容量</string>
+    <string name="sys_charging">充電</string>
+    <string name="sys_full">満杯</string>
+    <string name="sys_good">良い</string>
+    <string name="sys_overheat">オーバーヒート</string>
+    <string name="sys_dead">死んだ</string>
+    <string name="sys_over_voltage">過電圧</string>
+    <string name="sys_cold">寒い</string>
+    <string name="sys_unknown">未知</string>
+    <string name="sys_model">モデル：</string>
+    <string name="sys_brand">ブランド：</string>
+    <string name="sys_manufacturer">メーカー:</string>
+    <string name="sys_wifi_name">名前：</string>
+    <string name="sys_wifi_ip">IP:</string>
+    <string name="sys_wifi_speed">スピード：</string>
+    <string name="traffic_month">今月</string>
+    <string name="traffic_30_days">30日</string>
+    <string name="traffic_24_hours">24時間</string>
+    <string name="traffic_mobile">携帯</string>
+    <string name="traffic_wifi">WI-FI</string>
+    <string name="traffic_apps">アプリ</string>
+</resources>

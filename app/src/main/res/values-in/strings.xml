@@ -1,0 +1,32 @@
+<resources>
+    <string name="shortcut_uninstall">Uninstal</string>
+    <string name="uninstall_guide_back">Kembali</string>
+    <string name="uninstall_guide_wait">Tunggu sebentar…</string>
+    <string name="uninstall_guide_more_space">Biarkan %1$s membantu mengosongkan lebih banyak ruang</string>
+    <string name="uninstall_guide_smart_clean">Jalankan pembersihan pintar</string>
+    <string name="uninstall_guide_scan_files">Pindai file yang mungkin ingin Anda hapus</string>
+    <string name="uninstall_guide_scan_now">Pindai sekarang</string>
+    <string name="uninstall_guide_unused_apps">Lihat aplikasi yang tidak digunakan</string>
+    <string name="uninstall_guide_find_apps">Temukan aplikasi yang tidak lagi Anda perlukan</string>
+    <string name="uninstall_guide_view_apps">Lihat aplikasi</string>
+    <string name="uninstall_guide_keep">Pertahankan %1$s</string>
+    <string name="uninstall_guide_continue">Lanjutkan menguninstal</string>
+    <string name="uninstall_guide_why">Mengapa menguninstal %1$s?</string>
+    <string name="uninstall_reason_no_need">Saya tidak membutuhkannya lagi</string>
+    <string name="uninstall_reason_ads">Terlalu banyak iklan</string>
+    <string name="uninstall_reason_space">Tidak cukup mengosongkan ruang</string>
+    <string name="uninstall_reason_missing_files">Saya tidak dapat menemukan file yang ingin dibersihkan</string>
+    <string name="uninstall_reason_hard">Sulit digunakan</string>
+    <string name="uninstall_reason_slow">Aplikasi lambat atau tidak stabil</string>
+    <string name="uninstall_reason_other">Lainnya</string>
+    <string name="uninstall_guide_private">Masukan Anda tidak menyertakan file Anda.</string>
+    <string name="action_cancel">Membatalkan</string>
+    <string name="action_uninstall">Copot pemasangan</string>
+    <string name="photo_photos_label">Foto</string>
+    <string name="notif_large_file">Berkas Besar</string>
+    <string name="notif_junk">Sampah</string>
+    <string name="notif_apps">Aplikasi</string>
+    <string name="notif_clean_now">Bersihkan Sekarang</string>
+    <string name="notif_speed_value_placeholder">0,0</string>
+    <string name="action_got_it_short">Mengerti</string>
+</resources>

@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Thuis</string>
+    <string name="nav_swipe">Veeg</string>
+    <string name="nav_compress">Comprimeren</string>
+    <string name="nav_tools">Gereedschap</string>
+    <string name="nav_clean">Schoon</string>
+    <string name="nav_privacy">Privacy</string>
+    <string name="nav_profile">Profiel</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Organiseer uw foto\'s, video\'s en contacten lokaal</string>
+    <string name="home_badge_text">AI-opruiming</string>
+    <string name="home_quick_summary_title">De opruimtips van vandaag</string>
+    <string name="home_quick_summary_body">Begin met schermafbeeldingen en grote video\'s om zo snel mogelijk ruimte vrij te maken.</string>
+    <string name="home_scan_insight_title">Slimme scanstatus</string>
+    <string name="home_ready_title">4 krachtige opruimhulpmiddelen</string>
+    <string name="home_ready_body">Beheer foto\'s, schermafbeeldingen, video\'s en contacten op één plek.</string>
+    <string name="storage_overview_title">Overzicht opslag</string>
+    <string name="storage_overview_summary">Er kan maximaal 0,0 GB worden vrijgemaakt</string>
+    <string name="storage_overview_detail">85,4 GB van 128 GB gebruikt</string>
+    <string name="storage_overview_summary_format">Er kunnen maximaal %1$s worden vrijgegeven</string>
+    <string name="storage_overview_detail_format">%1$s of %2$s gebruikt</string>
+    <string name="storage_overview_summary_done">Er kan maximaal 1,8 GB worden vrijgemaakt</string>
+    <string name="storage_overview_detail_done">85,4 GB van 128 GB gebruikt. Begin met uw mediabibliotheek.</string>
+    <string name="scan_button_idle">Start scannen</string>
+    <string name="scan_button_running">Scannen...</string>
+    <string name="scan_status_title">Scanstatus</string>
+    <string name="scan_status_idle">Klaar om te scannen</string>
+    <string name="scan_status_running">Analyseren van mediabestanden</string>
+    <string name="scan_status_done">Scannen voltooid. Opruimsuggesties zijn klaar.</string>
+    <string name="scan_status_error">Scannen mislukt. Probeer het later opnieuw.</string>
+    <string name="scan_status_detail_idle">Schermafbeeldingen, grote video\'s en soortgelijke foto\'s worden eerst gecontroleerd.</string>
+    <string name="scan_status_detail_running">Lokaal scannen. Je foto\'s en video\'s worden niet geüpload.</string>
+    <string name="scan_status_detail_midway">Screenshots en grote video\'s geanalyseerd. Soortgelijke foto\'s organiseren.</string>
+    <string name="scan_status_detail_done">1,8 GB gevonden om op te ruimen. Begin met screenshots en grote video\'s.</string>
+    <string name="scan_status_detail_done_format">%1$s gevonden om op te ruimen. Begin met screenshots en grote video\'s.</string>
+    <string name="feature_section_title">Essentiële opruimhulpmiddelen</string>
+    <string name="feature_section_subtitle">De eerste release richt zich op de 4 meest voorkomende opruimtaken</string>
+    <string name="feature_similar_title">Soortgelijke foto\'s</string>
+    <string name="feature_similar_desc">Maak vergelijkbare foto\'s schoon</string>
+    <string name="feature_screenshots_title">Schermafdruk opruimen</string>
+    <string name="feature_screenshots_desc">Maak ongebruikte schermafbeeldingen schoon</string>
+    <string name="feature_videos_title">Grote video\'s</string>
+    <string name="feature_videos_desc">Maak grote video\'s schoon</string>
+    <string name="feature_contacts_title">Neem contact op met Opruimen</string>
+    <string name="feature_contacts_desc">Maak dubbele contacten schoon</string>
+    <string name="feature_similar_space_format">%1$d-groepen</string>
+    <string name="count_placeholder">Niet gescand</string>
+    <string name="count_similar_done">128 foto\'s</string>
+    <string name="count_screenshots_done">364 foto\'s</string>
+    <string name="count_videos_done">12 video\'s</string>
+    <string name="count_contacts_done">9 groepen</string>
+    <string name="recent_section_title">Release-opmerkingen</string>
+    <string name="recent_section_body">Deze versie bevat de XML-startschermstructuur, mediatoestemmingsverzoeken, een tijdelijke scanstroom en een resultatenoverzicht. MediaStore, Contacten en echte opruimfuncties kunnen vervolgens worden toegevoegd.</string>
+    <string name="permission_denied_message">Mediatoegang is vereist om te beginnen met scannen.</string>
+    <string name="mock_feature_message">Echte scanresultaten worden hierna aan deze functie toegevoegd.</string>
+    <string name="scan_complete_message">De eerste scanstroom is gereed. Vervolgens kunnen echte gegevens worden toegevoegd.</string>
+    <string name="scan_failed_message">Scannen mislukt: %1$s</string>
+    <string name="unknown_error">Onbekende fout</string>
+    <string name="storage_progress_label">Voortgang opslaggebruik</string>
+    <string name="phase_two_label">Fase 2</string>
+    <string name="phase_three_label">Fase 3</string>
+    <string name="images_total_title">Totaal aantal afbeeldingen</string>
+    <string name="videos_total_title">Totaal video\'s</string>
+    <string name="clean_page_title">Opruimcentrum</string>
+    <string name="clean_page_subtitle">Begin met inhoud die de meeste ruimte vrijmaakt.</string>
+    <string name="clean_page_badge">Slimme reiniger</string>
+    <string name="clean_overview_title">Scanresultaten</string>
+    <string name="clean_overview_body">Ruim eerst de grootste ruimtebesparingen op en daarna vergelijkbare foto\'s en contacten.</string>
+    <string name="privacy_page_title">Privékluis</string>
+    <string name="privacy_page_subtitle">Een lokale pincode beschermt uw privémedia en toekomstige import.</string>
+    <string name="profile_page_title">Profiel</string>
+    <string name="profile_page_subtitle">Beheer hier uw lidmaatschap, instellingen en aankopen.</string>
+    <string name="profile_page_badge">Premie</string>
+    <string name="profile_hero_title">Upgrade naar Pro voor de volledige opruimervaring</string>
+    <string name="profile_hero_body">Pro bevat onbeperkte batchacties, privékluis en betere detectie van vergelijkbare foto\'s.</string>
+    <string name="profile_plan_status_free">Huidig abonnement: Gratis</string>
+    <string name="profile_plan_status_pro">Pro-proefversie is actief</string>
+    <string name="profile_most_popular">Meest populair</string>
+    <string name="profile_cta_title">Waarom upgraden?</string>
+    <string name="profile_cta_body">Als u vaak foto\'s, video\'s en contacten opruimt, vermindert Pro de repetitieve stappen aanzienlijk.</string>
+    <string name="placeholder_card_title">Huidige fase</string>
+    <string name="placeholder_clean_body">Fase 1 omvat de scanbasis, machtigingen en het hoofdframework. Echte opruimresultaten zullen hier in de volgende fase verschijnen.</string>
+    <string name="placeholder_privacy_body">Privékluis is nog niet beschikbaar. Deze fase omvat alleen de navigatie en lay-out.</string>
+    <string name="placeholder_profile_body">Profielfuncties zijn nog niet gekoppeld. Lidmaatschap, instellingen en aankopen worden later toegevoegd.</string>
+    <string name="overview_reclaim_title">Geschatte ruimtebesparing</string>
+    <string name="overview_media_count_title">Totaal Media</string>
+    <string name="home_note_title">Fase 1 voltooid</string>
+    <string name="home_note_body">1. Bottom-navigatie en raamwerk met meerdere pagina\'s\n2. Android 13+ mediatoestemmingsverzoeken\n3. Op MediaStore gebaseerde scanbasis voor schermafbeeldingen en grote video\'s\n4. Resultaatbinding op startscherm en statusbeheer</string>
+    <string name="feature_coming_soon_format">De %1$s-detailpagina wordt in de bijbehorende fase toegevoegd.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">%1$d-artikelen</string>
+    <string name="count_contact_format">%1$d-contacten</string>
+    <string name="feature_ready_label">Beschikbaar</string>
+    <string name="permission_action_label">Toestaan en scannen</string>
+    <string name="refresh_action_label">Resultaten vernieuwen</string>
+    <string name="clean_reclaim_summary_format">%1$s klaar om op te ruimen</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">%1$d-groepen</string>
+    <string name="count_contact_group_format">%1$d-groepen</string>
+    <string name="clean_permission_title">Mediatoegang vereist</string>
+    <string name="clean_permission_body">Geef toegang om uw schermafbeeldingen en video\'s te lezen. Alle gegevens worden lokaal geanalyseerd.</string>
+    <string name="clean_loaded_hint">Tik op een categoriekaart om details te bekijken.</string>
+    <string name="clean_loading_hint">Schermafbeeldingen en video\'s laden. Wacht alstublieft.</string>
+    <string name="clean_empty_hint">Nog geen scanresultaten. Geef toegang en voer eerst een scan uit.</string>
+    <string name="detail_back">Terug</string>
+    <string name="screenshot_detail_title">Schermafdruk opruimen</string>
+    <string name="screenshot_detail_subtitle">Blader door screenshots met echte miniaturen. Tik op een foto om een ​​voorbeeld te bekijken of selecteer items om te verwijderen.</string>
+    <string name="large_video_detail_title">Grote video\'s</string>
+    <string name="large_video_detail_subtitle">Blader door grote video\'s met covers. Tik op een cover om af te spelen of selecteer items om te verwijderen. Tik op de filterlijn om te schakelen tussen 100 MB / 500 MB.</string>
+    <string name="empty_screenshot_title">Geen schermafbeeldingen gevonden</string>
+    <string name="empty_screenshot_body">Er zijn geen screenshots gevonden in uw mediabibliotheek of er is geen toegang verleend.</string>
+    <string name="empty_large_video_title">Geen grote video\'s gevonden</string>
+    <string name="empty_large_video_body">Er zijn geen video\'s groter dan 100 MB. U kunt de drempel later aanpassen.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Datum: %1$s</string>
+    <string name="media_item_duration_format">Duur: %1$s</string>
+    <string name="video_threshold_note">Huidige grote videodrempel: 100 MB</string>
+    <string name="select_all_action">Selecteer Alles</string>
+    <string name="clear_selected_action">Deselecteer Alles</string>
+    <string name="delete_selected_action">Geselecteerde verwijderen</string>
+    <string name="selected_count_format">%1$d geselecteerd</string>
+    <string name="delete_dialog_title">Schermafbeeldingen verwijderen?</string>
+    <string name="delete_dialog_message_format">De geselecteerde %1$d-screenshots worden verwijderd. Het systeem vraagt ​​u opnieuw om te bevestigen.</string>
+    <string name="delete_dialog_confirm">Ga door</string>
+    <string name="delete_dialog_cancel">Annuleer</string>
+    <string name="delete_complete_message_format">%1$d-screenshots verwerkt. De lijst is vernieuwd.</string>
+    <string name="delete_items_complete_format">Verwerkte %1$d-artikelen. De lijst is vernieuwd.</string>
+    <string name="delete_failed_message">Kan niet verwijderen. Probeer het opnieuw.</string>
+    <string name="delete_video_dialog_title">Video\'s verwijderen?</string>
+    <string name="delete_video_dialog_message_format">De geselecteerde %1$d-video\'s worden verwijderd. Het systeem vraagt ​​u opnieuw om te bevestigen.</string>
+    <string name="delete_similar_dialog_title">Vergelijkbare foto\'s verwijderen?</string>
+    <string name="delete_similar_dialog_message_format">De geselecteerde %1$d-foto\'s worden verwijderd. Aanbevolen bewaarartikelen zijn niet inbegrepen.</string>
+    <string name="video_selection_filter_format">%1$d geselecteerd · Filter: %2$s (tik om te wisselen)</string>
+    <string name="video_player_unavailable">Er is geen videospeler beschikbaar op dit apparaat.</string>
+    <string name="media_preview_title">Voorbeeld</string>
+    <string name="similar_select_candidates_action">Selecteer Kandidaten</string>
+    <string name="similar_deselect_candidates_action">Deselecteer Alles</string>
+    <string name="similar_select_all_candidates">Selecteer alle kandidaten</string>
+    <string name="similar_delete_count_action">Geselecteerde verwijderen (%1$d)</string>
+    <string name="similar_group_number_format">Groep %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Kan het systeemverwijderingsprogramma niet openen</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Alle resultaten</string>
+    <string name="similar_page_title">Soortgelijke foto\'s</string>
+    <string name="similar_page_subtitle">Beoordeel vergelijkbare groepen met miniaturen, selecteer kandidaten en verwijder duplicaten.</string>
+    <string name="similar_page_note">De eerste versie maakt gebruik van lichtgewicht groeperingsregels. Perceptuele hashing en scherptescores kunnen later worden toegevoegd.</string>
+    <string name="similar_page_badge">Slim vergelijkbaar</string>
+    <string name="similar_page_hero_hint">Bewaar foto\'s met een hogere resolutie, grotere bestanden en recentere tijdstempels.</string>
+    <string name="similar_group_summary_format">%1$d-groepen gevonden met %2$d-kandidaatfoto\'s in uw albums.</string>
+    <string name="similar_group_empty_title">Geen vergelijkbare fotogroepen gevonden</string>
+    <string name="similar_group_empty_body">Geen enkele foto in hetzelfde album voldeed aan dezelfde criteria voor tijd en dimensie.</string>
+    <string name="similar_group_card_subtitle_format">%1$d-kandidaten · Maximaal %2$s kunnen worden vrijgelaten</string>
+    <string name="similar_keep_recommend_label">Aanbevolen om te bewaren</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Andere kandidaten</string>
+    <string name="similar_other_items_more_format">+%1$d meer foto\'s</string>
+    <string name="contacts_page_title">Neem contact op met Opruimen</string>
+    <string name="contacts_page_subtitle">Vind dubbele en lege contacten.</string>
+    <string name="contacts_page_badge">Neem contact op met Fix</string>
+    <string name="contacts_page_hero_hint">Voeg contacten met hetzelfde nummer samen en verwijder vervolgens de lege contacten.</string>
+    <string name="contacts_permission_title">Toegang tot contacten vereist</string>
+    <string name="contacts_permission_body">Sta toegang toe om contacten lokaal te scannen.</string>
+    <string name="contacts_scan_title">Contacten scannen</string>
+    <string name="contacts_scan_body">Vernieuw om duplicaten en lege contacten te vinden.</string>
+    <string name="contacts_duplicate_title">Dubbele contacten</string>
+    <string name="contacts_empty_title">Lege contacten</string>
+    <string name="contacts_duplicate_count_format">%1$d dubbele groepen</string>
+    <string name="contacts_empty_count_format">%1$d lege contacten om op te ruimen</string>
+    <string name="contacts_load_action">Contacten toestaan en laden</string>
+    <string name="contacts_refresh_action">Vernieuw contacten</string>
+    <string name="contacts_empty_group_title">Geen dubbele contacten gevonden</string>
+    <string name="contacts_empty_group_body">Er zijn geen contacten met dubbele telefoonnummers gevonden.</string>
+    <string name="contacts_delete_empty_action">Verwijder lege contacten</string>
+    <string name="contacts_merge_action">Groep samenvoegen</string>
+    <string name="contacts_view_action">Bekijk in Contacten</string>
+    <string name="contacts_group_title_format">%1$s · %2$d-contacten</string>
+    <string name="contacts_group_number_format">Primair nummer: %1$s</string>
+    <string name="contacts_group_members_format">Leden: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Lege contacten verwijderen?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d lege contacten of contacten zonder nummers worden verwijderd.</string>
+    <string name="contacts_merge_complete_message">Het systeem is gevraagd deze contactgroep samen te voegen.</string>
+    <string name="contacts_cleanup_complete_message_format">Lege contacten %1$d verwijderd.</string>
+    <string name="contacts_action_failed">Contactactie mislukt. Probeer het opnieuw.</string>
+    <string name="privacy_status_title">Lokale beschermingsstatus</string>
+    <string name="privacy_page_badge">Privé kluis</string>
+    <string name="privacy_hero_title">Houd privé-inhoud gescheiden van het opruimen</string>
+    <string name="privacy_hero_body">Stel eerst de lokale pincodebeveiliging in en voeg vervolgens het importeren, ontgrendelen en herstellen van privémedia toe.</string>
+    <string name="privacy_status_enabled">4-cijferige pincode ingesteld</string>
+    <string name="privacy_status_disabled">Geen pincode ingesteld</string>
+    <string name="privacy_status_body_enabled">Privémedia die later worden geïmporteerd, worden beschermd door uw lokale pincode.</string>
+    <string name="privacy_status_body_disabled">Stel een pincode van vier cijfers in voordat u functies voor het importeren en ontgrendelen van privémedia toevoegt.</string>
+    <string name="privacy_set_pin_action">Pincode instellen</string>
+    <string name="privacy_reset_pin_action">Pincode opnieuw instellen</string>
+    <string name="privacy_pin_dialog_title">Stel een 4-cijferige pincode in</string>
+    <string name="privacy_pin_dialog_hint">Voer 4 cijfers in</string>
+    <string name="privacy_pin_invalid">Voer een pincode van vier cijfers in.</string>
+    <string name="privacy_pin_saved">Lokale pincode opgeslagen.</string>
+    <string name="privacy_pin_reset_confirm">De huidige pincode wissen?</string>
+    <string name="privacy_pin_reset_done">Pincode opnieuw instellen.</string>
+    <string name="privacy_feature_lock_title">Lokale ontgrendeling</string>
+    <string name="privacy_feature_lock_body">De eerste versie gebruikt een pincode voor lokale bescherming. Biometrie kan later worden toegevoegd.</string>
+    <string name="privacy_feature_vault_title">Privémedia</string>
+    <string name="privacy_feature_vault_body">Privéfoto\'s en later geïmporteerde video\'s worden afzonderlijk opgeslagen en uitgesloten van de opschoningsstroom van het hoofdalbum.</string>
+    <string name="privacy_feature_scope_title">Huidige fase</string>
+    <string name="privacy_feature_scope_body">Deze versie voegt de pincodestatus en de paginastructuur toe. Import van privémedia en lokale codering komen daarna.</string>
+    <string name="profile_plan_title">Huidig abonnement</string>
+    <string name="profile_plan_free">Gratis</string>
+    <string name="profile_plan_pro">Pro</string>
+    <string name="profile_plan_body_free">Scan, bekijk resultaten en gebruik basisopruiming.</string>
+    <string name="profile_plan_body_pro">Ontgrendel geavanceerd opschonen, privékluis, onbeperkte acties en een advertentievrije ervaring.</string>
+    <string name="profile_upgrade_action">Schakel over naar Pro-proefversie</string>
+    <string name="profile_restore_action">Keer terug naar Gratis</string>
+    <string name="profile_upgrade_done">Overgestapt naar Pro-proefperiode.</string>
+    <string name="profile_restore_done">Teruggekeerd naar Vrij.</string>
+    <string name="profile_benefits_title">Pro-voordelen</string>
+    <string name="profile_benefits_body">1. Geavanceerde soortgelijke fotodetectie\n2. Onbeperkt batchopschonen\n3. Geavanceerde grote videofilters\n4. Verbeterde opschoning van contacten\n5. Privékluis\n6. Advertentievrije interface</string>
+    <string name="detail_page_badge">Detailweergave</string>
+    <string name="detail_page_hint">Beoordeel kandidaten voordat u besluit wat u wilt opruimen of bewaren.</string>
+    <string name="premium">PREMIUM</string>
+    <string name="settings">Instellingen</string>
+    <string name="grant_access">Toegang verlenen</string>
+    <string name="storage_permission_title">Bestandstoegang verlenen</string>
+    <string name="storage_permission_detail">CleanSuper AI heeft toegang nodig tot je bestanden om duplicaten, wazige foto\'s en grote bestanden te vinden. Alles wordt lokaal verwerkt.</string>
+    <string name="storage_permission_scan_point">Vind dubbele en onscherpe foto’s en grote bestanden.</string>
+    <string name="storage_permission_privacy_point">Je bestanden blijven op dit apparaat en worden nooit geüpload.</string>
+    <string name="storage_permission_message">Alleen voor lokaal scannen; er worden geen gegevens geüpload of gedeeld met derden.</string>
+    <string name="storage_permission_continue">Ga door</string>
+    <string name="storage_permission_close">Sluiten</string>
+    <string name="storage_permission_example_file">Bestanden op dit apparaat</string>
+    <string name="storage_permission_example_size">Klaar om te scannen</string>
+    <string name="storage_permission_guide_title">Geef toegang tot alle bestanden</string>
+    <string name="storage_permission_guide_message">Zet de schakelaar in Instellingen aan om bestanden op dit apparaat te scannen en op te schonen.</string>
+    <string name="go_to_settings">Ga naar Instellingen</string>
+    <string name="permission_home_title">Je foto\'s zijn vergrendeld</string>
+    <string name="permission_home_body">Geef toegang tot foto\'s, video\'s en meldingen om uw bibliotheek veilig op dit apparaat te scannen en opschoonherinneringen te sturen.</string>
+    <string name="scan_summary_format">Gescande %1$d-items · %2$s kan worden beoordeeld</string>
+    <string name="scan_running_english">Uw bibliotheek scannen…</string>
+    <string name="scan_ready_english">Uw bibliotheek is klaar</string>
+    <string name="coming_soon">Binnenkort beschikbaar</string>
+    <string name="compression_failed">Kan deze afbeelding niet comprimeren.</string>
+    <string name="compression_saved">Gecomprimeerde foto opgeslagen in Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Veilige analyse op het apparaat</string>
+    <string name="home_cleanup_library">Controleer uw bibliotheek</string>
+    <string name="home_cleanup_badge">Op apparaat</string>
+    <string name="home_quick_clean_action">Open Opruimcentrum</string>
+    <string name="home_quick_clean_compact_action">Opruimcentrum</string>
+    <string name="home_reclaim_ready_format">%1$s terug te vorderen</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Opslag bezet</string>
+    <string name="home_storage_detail_format">%1$s om · %2$d-artikelen te beoordelen</string>
+    <string name="home_quick_tools">Snelle hulpmiddelen</string>
+    <string name="home_quick_tools_subtitle">Je meest gebruikte opruimacties, op voorhand op een rij gezet</string>
+    <string name="feature_swipe_title">Veeg foto\'s</string>
+    <string name="feature_swipe_desc">Bekijk foto\'s één voor één en stuur afgekeurde foto\'s naar de prullenbak</string>
+    <string name="home_contacts_short_desc">Duplicaten samenvoegen</string>
+    <string name="feature_ready_short">Klaar</string>
+    <string name="feature_review_short">Beoordeling</string>
+    <string name="tools_section_storage">Opslag en media</string>
+    <string name="tools_section_device">Apparaathulpmiddelen</string>
+    <string name="tools_hero_badge">7 handige hulpmiddelen</string>
+    <string name="tools_hero_title">Handige tools, op één plek</string>
+    <string name="tools_hero_body">Beheer opslag en media met eenvoudige, gerichte acties.</string>
+    <string name="tool_file_manager_desc">Blader door schermafbeeldingen, video\'s en meer en maak deze schoon</string>
+    <string name="tool_media_compressor_desc">Verklein het foto- en videoformaat zonder kwaliteitsverlies</string>
+    <string name="tool_secret_space_desc">Vergrendel privéfoto\'s achter een veilige pincode</string>
+    <string name="tool_app_manager_desc">Bekijk geïnstalleerde apps en opslaggebruik</string>
+    <string name="tool_clean_calendar_desc">Verwijder oude agenda-afspraken die uw planning rommelig maken</string>
+    <string name="tool_ai_enhancer_desc">Verbeter wazige foto\'s of foto\'s bij weinig licht met AI</string>
+    <string name="tool_speed_test_desc">Controleer de download- en uploadsnelheid van uw netwerk</string>
+    <string name="tools_page_subtitle">Alles wat je nodig hebt voor een schonere telefoon</string>
+    <string name="compress_page_subtitle">Bespaar ruimte zonder de momenten te verliezen</string>
+    <string name="video_compressor">Videocompressor</string>
+    <string name="video_compress_subtitle">Verklein het videoformaat met H.264-hercodering op het apparaat</string>
+    <string name="video_compress_card_hint">720p · Evenwichtige kwaliteit</string>
+    <string name="choose_video">Kies Video</string>
+    <string name="choose_video_hint">Kies een video om te comprimeren</string>
+    <string name="compress_photo_guide_title">Kies een foto om te comprimeren</string>
+    <string name="compress_photo_guide_body">Verwerkt op apparaat · kleiner in seconden</string>
+    <string name="compress_video_guide_title">Kies een video om te comprimeren</string>
+    <string name="compress_video_guide_body">H.264 op het apparaat · gebalanceerde 720p</string>
+    <string name="compress_guide_tap">Tik om te kiezen</string>
+    <string name="enhance_photo_guide_title">Kies een foto om te verbeteren</string>
+    <string name="enhance_photo_guide_body">Helderheid · contrast · scherpte</string>
+    <string name="preview_original_photo_label">Voor · Originele foto</string>
+    <string name="preview_compressed_photo_label">Na · Gecomprimeerd voorbeeld</string>
+    <string name="preview_original_video_label">Voor · Originele video</string>
+    <string name="preview_compressed_video_label">Na · Gecomprimeerd voorbeeld</string>
+    <string name="preview_enhanced_photo_label">Na · Verbeterd voorbeeld</string>
+    <string name="selected_video_preview">Geselecteerd videovoorbeeld</string>
+    <string name="play_video_preview">Videovoorbeeld afspelen</string>
+    <string name="video_preview_title">Videovoorbeeld</string>
+    <string name="video_preview_failed">Deze video kan niet worden afgespeeld.</string>
+    <string name="video_compression_saved">Gecomprimeerde video opgeslagen in Movies/CleanSuperAI.</string>
+    <string name="video_compression_failed">Kan deze video niet comprimeren.</string>
+    <string name="video_compression_preparing">Videocompressie voorbereiden…</string>
+    <string name="video_compression_progress_format">Video comprimeren… %1$d%%</string>
+    <string name="video_compression_finishing">Gecomprimeerde video finaliseren…</string>
+    <string name="video_compression_timeout">Het comprimeren van deze video duurde te lang. Probeer een kortere clip.</string>
+    <string name="app_manager_subtitle">Controleer geïnstalleerde apps en open systeeminstellingen om de cache te verwijderen of te wissen.</string>
+    <string name="app_manager_summary_format">%1$d-gebruikersapps gevonden · tik om te beheren</string>
+    <string name="clean_calendar_subtitle">Vind eerdere agenda-afspraken en verwijder de afspraken die u niet langer nodig heeft.</string>
+    <string name="clean_calendar_delete">Geselecteerde verwijderen</string>
+    <string name="clean_calendar_empty">Geen evenementen uit het verleden gevonden</string>
+    <string name="clean_calendar_summary_format">%1$d evenementen uit het verleden · %2$d geselecteerd</string>
+    <string name="clean_calendar_delete_confirm">%1$d geselecteerde eerdere evenementen verwijderen?</string>
+    <string name="clean_calendar_delete_done">%1$d-gebeurtenissen verwijderd</string>
+    <string name="calendar_permission_hint">Sta agendatoegang toe om eerdere gebeurtenissen te scannen</string>
+    <string name="calendar_permission_denied">Agendatoestemming is vereist</string>
+    <string name="calendar_untitled">(Geen titel)</string>
+    <string name="image_enhancer_subtitle">Verbeter de helderheid, het contrast en de scherpte lokaal op dit apparaat.</string>
+    <string name="image_enhancer_hint">Kies een foto om te verbeteren</string>
+    <string name="image_enhancer_ready">Klaar om te verbeteren</string>
+    <string name="image_enhancer_action">Verbeter foto</string>
+    <string name="image_enhancer_working">Verbeteren…</string>
+    <string name="image_enhancer_done">Verbeterde preview klaar · opslaan wanneer je het leuk vindt</string>
+    <string name="image_enhancer_save">Verbeterde foto opslaan</string>
+    <string name="image_enhancer_saved">Verbeterde foto opgeslagen in Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Kan deze foto niet verbeteren.</string>
+    <string name="speed_test_subtitle">Meet downloads, uploads en latentie met behulp van Cloudflare-servers.</string>
+    <string name="speed_test_hint">Tik op start om een korte netwerksnelheidscontrole uit te voeren</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Mbps downloaden</string>
+    <string name="speed_test_start">Snelheidstest starten</string>
+    <string name="speed_test_running">Je verbinding testen...</string>
+    <string name="speed_test_done">Test voltooid</string>
+    <string name="speed_test_failed">Snelheidstest mislukt. Controleer uw netwerk en probeer het opnieuw.</string>
+    <string name="speed_test_download_idle">Downloaden · wachten</string>
+    <string name="speed_test_upload_idle">Uploaden · wachten</string>
+    <string name="speed_test_latency_idle">Latentie · wachten</string>
+    <string name="speed_test_download_result">Downloaden · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Uploaden · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Latentie · %1$d ms</string>
+    <string name="photo_compressor">Fotocompressor</string>
+    <string name="compress_quality_hint">Gebalanceerde JPEG · 70% qualiteit</string>
+    <string name="choose_photo_hint">Kies een foto om te comprimeren</string>
+    <string name="choose_photo">Kies Foto</string>
+    <string name="compress_preview">Voorvertoning comprimeren</string>
+    <string name="compress_and_save">Comprimeren en opslaan</string>
+    <string name="save_compressed_photo">Gecomprimeerde foto opslaan</string>
+    <string name="save_compressed_video">Bewaar gecomprimeerde video</string>
+    <string name="share">Deel</string>
+    <string name="keep">Houd</string>
+    <string name="move_to_review_bin">Verplaatsen naar prullenbak</string>
+    <string name="clear_review_bin">Overzichtsbak wissen</string>
+    <string name="swipe_page_subtitle">Overzicht per maand · veeg naar rechts om te bewaren, naar links naar de prullenbak</string>
+    <string name="swipe_trash_open">Openen</string>
+    <string name="swipe_trash_label_singular">Foto in de prullenbak</string>
+    <string name="swipe_trash_label_plural">Foto\'s in de prullenbak</string>
+    <string name="swipe_empty_title">Alle foto\'s beoordeeld</string>
+    <string name="swipe_empty_body">Ga terug om een andere maand te kiezen, of open de prullenbak om foto\'s te herstellen.</string>
+    <string name="category_person_format">Persoon · %1$d</string>
+    <string name="category_animal_format">Dier · %1$d</string>
+    <string name="category_vehicle_format">Voertuig · %1$d</string>
+    <string name="no_photos_available">Geen foto\'s beschikbaar</string>
+    <string name="splash_tagline">Slim opruimen. Privé door ontwerp.</string>
+    <string name="selected_photos_deleted">Geselecteerde foto\'s verwijderd</string>
+    <string name="added_to_review_bin">Toegevoegd aan beoordelingsbak</string>
+    <string name="photos_deleted_format">%1$d-foto\'s verwijderd</string>
+    <string name="delete_photos_failed">Kan geselecteerde foto\'s niet verwijderen</string>
+    <string name="share_photo">Deel foto</string>
+    <string name="trash_bin_title_format">Prullenbak (%1$s)</string>
+    <string name="trash_bin_title_empty">Prullenbak</string>
+    <string name="trash_restore_hint">Tik om foto\'s te herstellen</string>
+    <string name="trash_empty_action">Verwijder alles in de prullenbak</string>
+    <string name="trash_restored">Foto hersteld</string>
+    <string name="trash_bin_empty">Prullenbak is leeg</string>
+    <string name="feature_smart_groups">Slimme groepen</string>
+    <string name="feature_duplicate_photos">Dubbele foto\'s</string>
+    <string name="feature_duplicate_videos">Dubbele video\'s</string>
+    <string name="feature_all_videos">Alle video\'s</string>
+    <string name="feature_screenshots_short">Schermafbeeldingen</string>
+    <string name="scan_unavailable">Scannen niet beschikbaar</string>
+    <string name="please_try_again">Probeer het opnieuw</string>
+    <string name="tool_file_manager">Bestandsbeheer</string>
+    <string name="tool_media_compressor">Mediacompressor</string>
+    <string name="tool_app_manager">App-beheer</string>
+    <string name="tool_clean_calendar">Schone kalender</string>
+    <string name="tool_ai_enhancer">AI-beeldverbetering</string>
+    <string name="tool_secret_space">Geheime ruimte</string>
+    <string name="tool_speed_test">Snelheidstest</string>
+    <string name="compressing">Comprimeren…</string>
+    <string name="original_size_format">Origineel · %1$s</string>
+    <string name="compressed_result_format">Gecomprimeerd · %1$s\nOpgeslagen · %2$s</string>
+    <string name="swipe_grant_access_hint">Verleen mediatoegang vanuit Home om door foto\'s te bladeren</string>
+    <string name="media_item_placeholder">Media</string>
+    <string name="selected_image_preview">Geselecteerd afbeeldingsvoorbeeld</string>
+    <string name="current_photo">Huidige foto</string>
+    <string name="month_cover">Maanddekking</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Persoon · 0</string>
+    <string name="category_animal_zero">Dier · 0</string>
+    <string name="category_vehicle_zero">Voertuig · 0</string>
+    <string name="duplicate_photos_page_title">Dubbele foto\'s</string>
+    <string name="duplicate_photos_page_subtitle">Zoek exacte duplicaten op bestandsgrootte en afmetingen en bewaar vervolgens één exemplaar.</string>
+    <string name="duplicate_photos_page_badge">Exacte overeenkomst</string>
+    <string name="duplicate_photos_summary_format">%1$d-groepen gevonden met dubbele %2$d-foto\'s.</string>
+    <string name="duplicate_photos_empty_title">Geen dubbele foto\'s gevonden</string>
+    <string name="duplicate_photos_empty_body">Er zijn geen foto\'s gevonden met dezelfde maat en afmetingen.</string>
+    <string name="duplicate_videos_page_title">Dubbele video\'s</string>
+    <string name="duplicate_videos_page_subtitle">Vind exacte dubbele video\'s op grootte en duur en bewaar vervolgens één exemplaar.</string>
+    <string name="duplicate_videos_page_badge">Exacte overeenkomst</string>
+    <string name="duplicate_videos_summary_format">%1$d-groepen gevonden met dubbele %2$d-video\'s.</string>
+    <string name="duplicate_videos_empty_title">Geen dubbele video\'s gevonden</string>
+    <string name="duplicate_videos_empty_body">Er zijn geen video\'s met dezelfde grootte en duur gevonden.</string>
+    <string name="settings_page_title">Instellingen</string>
+    <string name="settings_page_subtitle">Taal, app-info, privacy en cache.</string>
+    <string name="settings_language_title">Taal</string>
+    <string name="settings_language_subtitle">Kies de app-taal van uw voorkeur</string>
+    <string name="settings_about_title">Over</string>
+    <string name="settings_about_subtitle">App-naam en -versie</string>
+    <string name="settings_about_message_format">Clean Super AI\nVersie %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Privacybeleid</string>
+    <string name="settings_privacy_policy_subtitle">Hoe wij met uw gegevens omgaan</string>
+    <string name="settings_privacy_policy_body">Alle mediascans en -opschoningen worden lokaal op uw apparaat uitgevoerd. We uploaden uw foto\'s, video\'s of contacten niet naar onze servers. Optionele analyses (indien later ingeschakeld) volgen het winkelbeleid. Je kunt mediatoegang op elk gewenst moment intrekken via de systeeminstellingen.</string>
+    <string name="settings_clear_cache_title">Cache wissen</string>
+    <string name="settings_clear_cache_subtitle">Gratis tijdelijke app-opslag</string>
+    <string name="settings_clear_cache_confirm">Tijdelijke cachebestanden wissen? Uw foto\'s en instellingen worden niet verwijderd.</string>
+    <string name="settings_clear_cache_done_format">%1$s cache gewist.</string>
+    <string name="language_page_title">App-taal</string>
+    <string name="language_page_subtitle">Standaard volgt CleanSuper AI de taal van uw apparaat.</string>
+    <string name="language_follow_system_title">Volg de systeemtaal</string>
+    <string name="language_follow_system_subtitle_format">Huidige apparaattaal: %1$s</string>
+    <string name="month_photo_count_format">%1$d-foto\'s</string>
+    <string name="review_bin_pending_format">%1$d-foto\'s wachtend in de beoordelingsbak</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Gebruiksvoorwaarden</string>
+    <string name="settings_terms_subtitle">Lees de voorwaarden</string>
+    <string name="settings_widget_title">Startschermwidget</string>
+    <string name="settings_widget_subtitle">Voeg een schoonmaaksnelkoppeling toe</string>
+    <string name="tool_network_traffic">Netwerkverkeer</string>
+    <string name="tool_network_traffic_desc">Gebruik per app</string>
+    <string name="tool_battery_info">Batterij-informatie</string>
+    <string name="tool_battery_info_desc">Lading en gezondheid</string>
+    <string name="tool_device_info">Apparaatinformatie</string>
+    <string name="tool_device_info_desc">Systeem en wifi</string>
+    <string name="tool_private_vault">Privé kluis</string>
+    <string name="tool_private_vault_desc">Verberg foto\'s en video\'s</string>
+    <string name="home_more_tools">Meer gereedschap</string>
+    <string name="home_battery_info">Batterij</string>
+    <string name="home_device_info">Apparaat</string>
+    <string name="home_large_files">Grote bestanden</string>
+    <string name="home_cache_cleanup">Cache schoon</string>
+    <string name="home_network_traffic">Datagebruik</string>
+    <string name="home_private_vault">Privé kluis</string>
+    <string name="home_picture_cleanup">Afbeeldingen</string>
+    <string name="home_video_cleanup">Video\'s</string>
+    <string name="home_audio_cleanup">Audio</string>
+    <string name="media_loading">Media laden…</string>
+    <string name="media_loading_hint">Het organiseren van uw bestanden. Wacht alstublieft.</string>
+    <string name="media_count_summary">%1$d-artikelen · %2$s · %3$d geselecteerd</string>
+    <string name="media_empty_title">Geen media gevonden</string>
+    <string name="media_empty_body">Er zijn geen artikelen in deze categorie.</string>
+    <string name="media_error_title">Kan media niet laden</string>
+    <string name="media_access_title">Toegang tot opslag vereist</string>
+    <string name="media_access_body">Geef alle bestanden toegang via Instellingen om door deze media te bladeren.</string>
+    <string name="media_delete_title">Geselecteerde items verwijderen?</string>
+    <string name="media_delete_message">%1$d geselecteerde items verwijderen? Android vraagt ​​u mogelijk om bevestiging.</string>
+    <string name="media_recent_group">Binnen 1 maand</string>
+    <string name="media_older_group">Ouder dan 1 maand</string>
+    <string name="media_group_summary">%1$d-artikelen · %2$s</string>
+    <string name="audio_player_unavailable">Er is geen audiospeler beschikbaar op dit apparaat.</string>
+    <string name="vault_items_summary">%1$d privé-items</string>
+    <string name="vault_empty_gallery">Uw privékluis is leeg. Importeer foto\'s of video\'s om ze hier te bekijken.</string>
+    <string name="cache_group_app">App-cache</string>
+    <string name="cache_group_apk">Oude APK-bestanden</string>
+    <string name="cache_group_residual">Resterende bestanden</string>
+    <string name="cache_summary">%1$d-bestanden · %2$s</string>
+    <string name="cleanup_report_title">Reiniging voltooid</string>
+    <string name="cleanup_report_freed">Ruimte vrijgemaakt</string>
+    <string name="cleanup_report_count">%1$d van %2$d-artikelen verwijderd</string>
+    <string name="cleanup_report_other">Andere bestanden opschonen</string>
+    <string name="cleanup_report_done">Klaar</string>
+    <string name="exit_retain_title">CleanSuper AI afsluiten?</string>
+    <string name="exit_retain_message">Voeg een thuiswidget toe voor sneller schoonmaken</string>
+    <string name="exit_retain_confirm_exit">Afsluiten</string>
+    <string name="exit_retain_add">Toevoegen</string>
+    <string name="exit_retain_feature_cache">Cache</string>
+    <string name="exit_retain_feature_large">Grote bestanden</string>
+    <string name="widget_status_storage">Vrije ruimte</string>
+    <string name="notif_screenshot">Schermafbeeldingen</string>
+    <string name="exit_retain_message_existing">Je huiswidget is klaar voor een snelle schoonmaakbeurt</string>
+    <string name="notif_cache">Cache</string>
+    <string name="notif_channel_name">Werkbalk Snel opschonen</string>
+    <string name="notif_channel_desc">Permanente werkbalk voor snelle opschoonacties</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Schone herinneringen</string>
+    <string name="notif_event_channel_desc">Lokale herinneringen na screenshots, installaties en verwijderingen</string>
+    <string name="notif_event_summary_channel_name">Overzichtelijke herinnering</string>
+    <string name="notif_event_screenshot_title">Nog een schermafdruk? 1 Het is tijd om de schermafbeeldingen op te ruimen</string>
+    <string name="notif_event_install_title">De nieuwe app is ingetrokken, en dat geldt ook voor de cache. opruimen</string>
+    <string name="notif_event_uninstall_title">Succesvol verwijderd! om bestandsresten op te ruimen</string>
+    <string name="notif_clean_reminder_title">Er ligt veel afval opgestapeld. Maak het allemaal in één keer schoon.</string>
+    <string name="notif_event_battery_below_50_title">De batterij is meer dan de helft vol. Zorg er nu voor, het zal zo blijven tot je thuiskomt.</string>
+    <string name="notif_event_battery_below_20_title">Lage batterij. Wilt u weten wie uw elektriciteit steelt? Klik om de ranglijst te bekijken.</string>
+    <string name="notif_event_charging_title">De stekker in het stopcontact. De taak van vanavond: bijvullen en dan schoonmaken.</string>
+    <string name="notif_event_charging_full_title">Volledig opgeladen en klaar voor gebruik. Nog een laatste controle: is het afval opgeruimd?</string>
+    <string name="notif_event_charging_to_80_title">De eindsprint bedraagt ​​80%. Maak het afval leeg en pak het licht in om volledige kracht te verwelkomen.</string>
+    <string name="notif_event_charging_disconnect_title">Haal de stekker uit het stopcontact en ga op pad. Vergeet niet om de tijd te nemen om het afval op te ruimen en in topvorm te blijven.</string>
+    <string name="notif_event_app_update_title">Er is een nieuwe versie gearriveerd. Alles wat overblijft van de oude versie wordt volledig opgeruimd.</string>
+    <string name="notif_event_network_change_title">Het internet verandert! Bekijk de huidige netwerkstatus 1</string>
+    <string name="notif_event_screen_lock_title">Leg uw telefoon neer en laat het aan ons over. Rustschermtijd = verpleegtijd.</string>
+    <string name="notif_event_screen_on_after_lock_title">We ontmoeten elkaar weer, zit je vast? Het meeste is afval, probeer het op te ruimen.</string>
+    <string name="notif_event_storage_free_drop_title">De opslagruimte is veranderd. Laten we eens kijken wat ruimte in beslag neemt?</string>
+    <string name="notif_event_scheduled_push_1_title">Het afval dat zo lang heeft opgehoopt, wordt in één keer opgeruimd.</string>
+    <string name="notif_event_scheduled_push_2_title">Is de batterij niet zo duurzaam als voorheen? Bekijk het eens.</string>
+    <string name="notif_event_app_inactive_title">Lang niet gezien, het heeft gewacht. Kom terug en ruim het afval op.</string>
+    <string name="notif_event_scheduled_push_3_title">Eén tik op uw afspeellijsten: stel de widget in</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Eén tik op uw afspeellijsten: stel de widget in</item>
+        <item>Maak alles eenvoudiger met een widget: voeg een muzieksnelkoppeling toe</item>
+        <item>Speel snel zonder te ontgrendelen: schakel de startschermwidget in</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Je bent iets vergeten</string>
+    <string name="notif_event_app_background_content">Maak het schoonmaken af, zodat het soepeler verloopt.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Je bent iets vergeten</item>
+        <item>Nog één stap over</item>
+        <item>Goed nieuws</item>
+        <item>Je bent te snel vertrokken</item>
+        <item>Laat rommel niet van de ene op de andere dag liggen</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Maak het schoonmaken af, zodat het soepeler verloopt.</item>
+        <item>Nog één tik om het schoonmaken te voltooien en meer ruimte vrij te maken.</item>
+        <item>Vrije ruimte gedetecteerd: claim een ​​schoonmaakbeurt met één tik.</item>
+        <item>Je telefoon kan nog sneller zijn: bekijk de optimalisatie.</item>
+        <item>Maak het schoonmaken af, zodat het soepeler verloopt.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">De scanresultaten zijn klaar: rommel neemt ruimte in beslag. Maak nu schoon</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>De scanresultaten zijn klaar: rommel neemt ruimte in beslag. Maak nu schoon</item>
+        <item>Nog één stap over: kom terug en maak direct ruimte vrij.</item>
+        <item>Vergeten op te ruimen na de scan? 10 seconden om uw telefoon lichter te maken.</item>
+        <item>Er staat nog steeds ongewenste e-mail op uw telefoon: de resultaten zijn opgeslagen. Kom terug voor één tik schoon.</item>
+        <item>Bij de laatste scan zijn meerdere items gevonden die moeten worden schoongemaakt. Kom het afmaken.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Het schoonmaken is nog niet klaar. Voltooi de laatste stap.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Het schoonmaken is nog niet klaar. Voltooi de laatste stap.</item>
+        <item>Reiniging onderbroken: halverwege. Eindig voor een lichtere telefoon.</item>
+        <item>Het schoonmaken is bijna klaar. Laat de rommel niet achter.</item>
+        <item>Je bent halverwege de schoonmaak vertrokken - maak het af en voel het verschil.</item>
+        <item>Een onderbroken reiniging kan op elk moment worden voortgezet. Kom het afmaken.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Foto verwijderd — veilig verplaatst naar de prullenbak.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Foto verwijderd — veilig verplaatst naar de prullenbak.</item>
+        <item>Ik heb zojuist één foto verwijderd. Zie je hoeveel ruimte je hebt vrijgemaakt?</item>
+        <item>Foto verwijderd - verwijder nu permanent om ruimte vrij te maken.</item>
+        <item>Foto veilig verwijderd - opslagstatus bijgewerkt.</item>
+        <item>Foto verwijderd - u kunt soortgelijke schermafbeeldingen ook opschonen.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Video verwijderd – grote ruimte wordt vrijgemaakt.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Video verwijderd – grote ruimte wordt vrijgemaakt.</item>
+        <item>Grote video verwijderd; de opslagdruk nam meteen af.</item>
+        <item>Video verwijderd: controleer uw huidige opslagstatus.</item>
+        <item>Verwijderen voltooid: maak de prullenbak leeg om ruimte vrij te maken.</item>
+        <item>Video verwijderd: er zijn mogelijk nog meer vergeten grote video\'s die moeten worden opgeschoond.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Audio verwijderd - kleine bestanden tellen op. Blijf doorgaan.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Audio verwijderd - kleine bestanden tellen op. Blijf doorgaan.</item>
+        <item>Die audio is verdwenen - meer vergelijkbare ongebruikte bestanden kunnen ook worden opgeschoond.</item>
+        <item>Audio verwijderd: opslaggegevens bijgewerkt. Kom eens kijken.</item>
+        <item>1 audiobestand verwijderd — opslaglijst vernieuwd.</item>
+        <item>Audio verwijderd: leeg de prullenbak om het vrijmaken van ruimte te voltooien.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Bestand verwijderd - er is wat meer opslagruimte vrijgemaakt.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Bestand verwijderd - er is wat meer opslagruimte vrijgemaakt.</item>
+        <item>Bestand verwijderd: rommel heeft geen last meer van uw telefoon.</item>
+        <item>Bestand verwijderd: kijk wat u nog meer kunt opschonen.</item>
+        <item>Bestand verwijderd: wijzigingen gesynchroniseerd, opslagstatus bijgewerkt.</item>
+        <item>Dat bestand is gewist en maakt nu ruimte vrij.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Afbeelding gedownload - open het en bekijk het.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Afbeelding gedownload - open het en bekijk het.</item>
+        <item>Afbeelding gedownload: verwijder dubbele foto\'s in uw album terwijl u bezig bent</item>
+        <item>Downloaden voltooid - afbeelding veilig opgeslagen. Kom vergelijkbare foto\'s bekijken</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Video gedownload - het is niet klein. Kijk hoeveel ruimte oude video\'s kunnen vrijmaken</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Video gedownload - het is niet klein. Kijk hoeveel ruimte oude video\'s kunnen vrijmaken</item>
+        <item>Nieuwe video opgeslagen: vind grote video\'s om te verwijderen en maak ruimte vrij. Tik op mij</item>
+        <item>Video\'s nemen ruimte in beslag: we hebben reinigbare items gevonden om je telefoon lichter te maken. Tik hier</item>
+        <item>Downloaden voltooid! Maak een paar oude video\'s schoon en de ruimte komt terug. Tik op mij</item>
+        <item>Nieuwe video gesorteerd - gemakkelijk te vinden of op te schonen. Tik om te zien</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Audio gedownload: ruim uw muziekbibliotheek op met één tik. Tik op mij</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Audio gedownload: ruim uw muziekbibliotheek op met één tik. Tik op mij</item>
+        <item>Nieuwe audio gesorteerd: verwijder oude audio terwijl u hier bent. Tik op mij</item>
+        <item>Muziekbibliotheek raakt vol? Controleer reinigbare audio. Tik hier</item>
+        <item>Audio gedownload: ontdubbelen met één tik. Tik op mij om op te ruimen</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Nieuw bestand opgeslagen - wis oude bestanden en maak ruimte vrij. Tik hier</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Nieuw bestand opgeslagen - wis oude bestanden en maak ruimte vrij. Tik hier</item>
+        <item>Downloaden voltooid: kijk welke oude bestanden u kunt opschonen. Tik op mij</item>
+        <item>Nieuw bestand klaar - slim archief + opschonen. Tik op mij om te beginnen</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Prullenbak geleegd — opslag vernieuwd. Controleer uw nieuwste ruimte.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Prullenbak geleegd — opslag vernieuwd. Controleer uw nieuwste ruimte.</item>
+        <item>Prullenbak geleegd – maak de restjes grondig schoon.</item>
+        <item>Succesvol geleegd - meer rommel om op te ruimen. Kom eens kijken.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Maak nu schoon</string>
+    <string name="notif_event_action_open_home">Openen</string>
+    <string name="notif_event_action_manage">Beheer apps</string>
+    <string name="notif_event_action_check_battery">Controleer de batterij</string>
+    <string name="notif_event_action_check_network">Controleer netwerk</string>
+    <string name="notif_days_unit">dag</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>De opslagruimte is veranderd. Laten we eens kijken wat ruimte in beslag neemt?</item>
+        <item>Ruimtelijke veranderingen gedetecteerd. Mogelijk is er nieuw afval, kijk eens?</item>
+        <item>De beschikbare ruimte is verplaatst. Weet jij wie het heeft gegeten? Klik om een ​​kijkje te nemen.</item>
+        <item>Is de ruimte krap? Ik heb zojuist de wijziging gedetecteerd. Laten we de details eens bekijken.</item>
+        <item>Herinnering voor het wijzigen van de ruimte: u kunt veel afval verzamelen. Bekijk het eens?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Lage batterij. Wilt u weten wie uw elektriciteit steelt? Klik om de ranglijst te bekijken.</item>
+        <item>Binnenkort een dieptepunt. Als je de apps opruimt die elektriciteit stelen, kun je nog een tijdje overleven.</item>
+        <item>De batterij is bijna leeg. Een paar achtergronden opruimen is beter dan niets doen.</item>
+        <item>De batterij is rood. Je kunt het nog steeds opslaan, klik om het te openen en te bekijken.</item>
+        <item>Minder dan 20% remains. Laten we wat energiebesparende eerste hulp doen en opruimen.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>De batterij is meer dan de helft vol. Zorg er nu voor, het zal zo blijven tot je thuiskomt.</item>
+        <item>De batterij is meer dan de helft vol. Het is nu veel gemakkelijker om voor de batterij te zorgen dan te wachten tot 20%.</item>
+        <item>De batterij is voor de helft leeg. Hoe lang kan het duren? Klik om een ​​kijkje te nemen.</item>
+        <item>De batterij is meer dan de helft vol. Het is tijd om voor de backend te zorgen, wacht niet tot deze nerveus wordt.</item>
+        <item>De helft van de batterij is nog over. Schakel de grote, op macht beluste spelers uit en maak de tweede helft stabieler.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>De eindsprint bedraagt ​​80%. Maak het afval leeg en pak het licht in om volledige kracht te verwelkomen.</item>
+        <item>Nog 20% s zonder volledige lading. Stop met staren naar je scherm en laat ons voor het afval zorgen.</item>
+        <item>80%: Eén stap verwijderd van perfectie. Klik één keer en het wordt volledig gewist wanneer de batterij volledig is opgeladen.</item>
+        <item>80%, a goede batterij voor een goede mobiele telefoon. Een rondje opruimen terwijl het warm is?</item>
+        <item>De laatste 20% i\'s die aan ons zijn gegeven. Jij kijkt naar de batterij en wij ruimen het afval op.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Volledig opgeladen en klaar voor gebruik. Nog een laatste controle: is het afval opgeruimd?</item>
+        <item>Na het opladen is het gevoel van ritueel vol. Wat dacht je van het opruimen van het afval om dit te herdenken?</item>
+        <item>100%, stabel vandaag. Nog één ronde en het is vlekkeloos.</item>
+        <item>100%. De laatste stap voordat u de stekker uit het stopcontact haalt: ruim de prullenbak op, dertig seconden.</item>
+        <item>Afgewerkt met volle kracht. Nog een laatste schoonmaakbeurt, perfect.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Het internet verandert! Bekijk de huidige netwerkstatus 1</item>
+        <item>Netwerkverlating. Kijk niet naar het signaal tijdens het schoonmaken, klik er gewoon op en scan.</item>
+        <item>Kunt u de pagina niet openen? Opruimen is altijd online.</item>
+        <item>U kunt offline werken en uw prullenbak kan nu worden gewist.</item>
+        <item>Als er geen signaal is, zijn er geen gegevens nodig voor het opschonen, klik gewoon.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>De stekker in het stopcontact. De taak van vanavond: bijvullen en dan schoonmaken.</item>
+        <item>Je rust uit, hij wordt opgeladen. Laat het ook het afval opruimen.</item>
+        <item>Tijdens de oplaadtijd is het voldoende om het afval op te ruimen dat zich al lange tijd heeft opgehoopt.</item>
+        <item>Pas als de elektriciteit is aangesloten, durft het backstagepersoneel vrij te werken.</item>
+        <item>Wordt het een beetje warm tijdens het opladen? Het wissen van de achtergrond kan de temperatuur verlagen.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Haal de stekker uit het stopcontact en ga op pad. Vergeet niet om de tijd te nemen om het afval op te ruimen en in topvorm te blijven.</item>
+        <item>Nadat het opladen is voltooid, kunt u uw spullen inpakken en op pad gaan. Maak het gewoon schoon en het zal perfect zijn.</item>
+        <item>Volledig opgeladen en klaar voor gebruik. Het afval soepel opruimen, er is vandaag geen tekortkoming.</item>
+        <item>Het opladen eindigt. De volgende ruimte moet niveau voor niveau worden opgeruimd en geüpgraded.</item>
+        <item>Stop niet bij black-outs. Er blijft nog één ding over: opruimen.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>We ontmoeten elkaar weer, zit je vast? Het meeste is afval, probeer het op te ruimen.</item>
+        <item>Ontgrendeld? Open niet eerst andere apps en wis de prullenbak gedurende dertig seconden.</item>
+        <item>Het eerste dat moet worden ontgrendeld, zijn wij. Ruim de prullenbak op en hij zal meer van je houden.</item>
+        <item>Dertig seconden na ontgrendeling. Het meest waardevolle gebruik: afval opruimen.</item>
+        <item>Je mobiele telefoon zei: De backend is een beetje geblokkeerd, kun je me helpen?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Leg uw telefoon neer en laat het aan ons over. Rustschermtijd = verpleegtijd.</item>
+        <item>Stoppen met werken betekent niet dat je stopt met werken. De volgende keer dat ik het scherm aanzet, zal ik je een verrassing geven.</item>
+        <item>Wordt stilletjes beter terwijl u het scherm laat rusten. Klik en wij doen de rest.</item>
+        <item>Nog een laatste ding voordat u het scherm vergrendelt: klik op Opschonen. Morgenochtend een nieuwe look.</item>
+        <item>Het scherm wordt donker. Maak nu afspraken en zie morgen de resultaten.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>De nieuwe app is ingetrokken, en dat geldt ook voor de cache. opruimen</item>
+        <item>Wij begrijpen hoe leuk het is om een nieuwe app te installeren. Het is alleen zo dat de cache zich stilletjes zal opstapelen.</item>
+        <item>Nieuwe app? De cache is ook hier, wis deze met één klik.</item>
+        <item>Het nieuwe komt binnen en het oude gaat eruit. Maak hem regelmatig schoon en installeer hem zoals jij wilt.</item>
+        <item>Nog een? De ruimte wordt stilletjes kleiner, kom maar opruimen.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Succesvol verwijderd! om bestandsresten op te ruimen</item>
+        <item>Verwijderd maar niet opgeschoond. Klik om te voltooien.</item>
+        <item>De app is verwijderd, maar de staart zit er nog steeds. Ruim op met één klik en neem voor eens en voor altijd afscheid.</item>
+        <item>Mis de tweede stap niet: verwijder de app en verwijder het residu. Eén klik en klaar.</item>
+        <item>Het residu zal de helft van de vrijgekomen ruimte opeten. Diep scannen en alles wissen.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>Er is een nieuwe versie gearriveerd. Alles wat overblijft van de oude versie wordt volledig opgeruimd.</item>
+        <item>+1 voor versie, +1 voor cache, voor diepgaand scannen.</item>
+        <item>De update is voltooid en de resterende installatiepakketten kunnen met één klik worden opgeschoond.</item>
+        <item>De update is voltooid, laten we afronden. Maak het schoon, dan neem ik het over.</item>
+        <item>Elke update laat oude bestanden achter en verwerkt deze snel.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Nog een schermafdruk? 1 Het is tijd om de schermafbeeldingen op te ruimen</item>
+        <item>Een nieuwe schermafbeelding gevonden, klik om deze te bekijken en op te ruimen~</item>
+        <item>Er zijn steeds meer schermafbeeldingen, met één klik opschonen kunt u ruimte vrijmaken</item>
+        <item>De schermafbeelding is met succes gemaakt, dubbele en wazige schermafbeeldingen kunnen met één klik worden uitgefilterd.</item>
+        <item>Er zijn nieuwe schermafbeeldingen aan de database toegevoegd en dubbele afbeeldingen zijn in de wachtrij geplaatst om met één klik te worden gewist.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Er ligt veel afval opgestapeld. Maak het allemaal in één keer schoon.</item>
+        <item>%1$d voor het laatst dagen geleden schoongemaakt. Klik om het nu te verwerken</item>
+        <item>Ik ben hier al een paar dagen niet meer, dus ik ruim het op en ga rustig terug naar het slagveld.</item>
+        <item>Het clearingquotum is vandaag niet gebruikt. Ik zal het opruimen als ik terugkom.</item>
+        <item>De cache raakt vol en wacht tot jij hem kunt bekijken</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Lang niet gezien, het heeft gewacht. Kom terug en ruim het afval op.</item>
+        <item>Ik heb je al een paar dagen niet gezien. Er is geen rust voor het afval. Kom terug en ruim het op.</item>
+        <item>De cache staat in de wachtrij. Klik en ze verdwijnen.</item>
+        <item>De prullenbak is bezig terwijl je weg bent. Leeg met één klik en voel je zo fris als altijd.</item>
+        <item>Rug? Ruim eerst de prullenbak op. Binnen dertig seconden is de telefoon zo licht als nieuw.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Het afval dat zo lang heeft opgehoopt, wordt in één keer opgeruimd.</item>
+        <item>Tijd om op te ruimen. De prullenbak van vandaag wacht tot je erop klikt.</item>
+        <item>De Space Daily van vandaag is gearriveerd. Ruim op en houd het licht.</item>
+        <item>Sommige bestanden zijn veel groter dan je denkt, kijk maar eens</item>
+        <item>Zoek de man die een paar G\'s heeft meegenomen en ruim het op</item>
+        <item>De grote documentenlijst is klaar, kom gerust eens kijken.</item>
+        <item>Wie neemt de meeste ruimte in beslag? Binnen één seconde onthuld.</item>
+        <item>Continu fotograferen is geweldig, afwerken is pijnlijk. Laat het aan ons over.</item>
+        <item>Er staan vergelijkbare foto\'s op een rij, het is aan jou om te kiezen welke je wilt bewaren</item>
+        <item>Te veel vergelijkbare foto\'s? Wij helpen u duplicaten met slechts één klik te vergelijken en te verwijderen.</item>
+        <item>De in de cache opgeslagen offline video\'s moeten worden gewist.</item>
+        <item>De resterende audio wordt ook schoongemaakt.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Is de batterij niet zo duurzaam als voorheen? Bekijk het eens.</item>
+        <item>Wie steelt uw elektriciteit? Je weet het zodra je het opzoekt.</item>
+        <item>Als u deze uitschakelt, wordt de levensduur van de batterij verlengd.</item>
+        <item>Sommige apps zijn geïnstalleerd maar nooit gebruikt. Zie je welke dat zijn?</item>
+        <item>Het bewaren van apps die je niet gebruikt is ook een last, de lijst is gemaakt</item>
+        <item>Wat privacy betreft: hoe eerder er iets aan gedaan wordt, hoe beter.</item>
+        <item>Verberg de belangrijke en verwijder de onnodige. laat mij je helpen</item>
+        <item>Waar gaat het verkeer naartoe? Ontdek wie het gebruikt.</item>
+        <item>Verkeersgegevens zijn in één oogopslag gereed en duidelijk.</item>
+        <item>Er is een app die op de achtergrond stiekem verbinding maakt met internet.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} rommel: verwijder het met één tik</string>
+    <string name="notif_scheduled_large_files">{totaal} grote bestanden: gemakkelijk opschonen</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} groepen dubbele foto\'s: bewaar {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} vergelijkbare foto\'s: kies wat je wilt opruimen</string>
+    <string name="notif_scheduled_videos">{totaal} video\'s: verwijder {n} om ruimte vrij te maken</string>
+    <string name="notif_scheduled_audio">{totaal} audiobestanden: tijd om op te ruimen</string>
+    <string name="notif_scheduled_apps">{size} gebruikt door {idle} inactieve apps</string>
+    <string name="notif_scheduled_data">{back} van gegevens die op de achtergrond worden gebruikt</string>
+    <string name="app_manager_uninstall_selected">Selectie verwijderen</string>
+    <string name="app_manager_uninstall_selected_count">Selectie verwijderen (%1$d)</string>
+    <string name="cache_removable">Verwijderbaar</string>
+    <string name="cache_clean_selected">Cache verwijderen</string>
+    <string name="cache_clean_selected_summary">Reinig %1$s (%2$d)</string>
+</resources>

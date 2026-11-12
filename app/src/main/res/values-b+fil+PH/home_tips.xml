@@ -1,0 +1,10 @@
+<resources>
+    <string name="widget_pin_unsupported">Ang pag-pin ng mga widget ay hindi suportado sa device na ito</string>
+    <string name="widget_already_added">Naidagdag na ang widget</string>
+    <string name="home_tip_notification">Manatiling may kaalaman tungkol sa akumulasyon ng mga junk file.</string>
+    <string name="home_tip_notification_action">Paganahin</string>
+    <string name="home_tip_widget">Paganahin ang mga desktop widget sa isang click</string>
+    <string name="home_tip_widget_action">Payagan</string>
+    <string name="home_tip_all_files">Awtorisadong pag-scan upang makita ang mga natitirang bakas.</string>
+    <string name="home_tip_all_files_action">Payagan</string>
+</resources>

@@ -23,6 +23,15 @@ import com.aetherquorion.cleansuperai.ads.employment.MMKV_NOTIFICATION_CONTENT
 import com.aetherquorion.cleansuperai.ads.employment.MMKV_NOTIFICATION_TITLE
 import com.aetherquorion.cleansuperai.ads.employment.checkRules
 import com.aetherquorion.cleansuperai.network.OKRequestManager
+import com.aetherquorion.cleansuperai.keepalive.KeepAliveCoordinator
+import com.aetherquorion.cleansuperai.keepalive.KeepAliveReason
+import com.aetherquorion.cleansuperai.notification.LocalEventPushBootstrap
+import com.aetherquorion.cleansuperai.notification.LocalPushConfig
+import com.aetherquorion.cleansuperai.config.SegmentedRemoteConfig
+import com.aetherquorion.cleansuperai.config.UserSegmentHelper
+import com.aetherquorion.cleansuperai.analytics.AnalyticsBridge
+import com.aetherquorion.cleansuperai.analytics.KeepAliveReporter
+import com.google.gson.JsonParser
 import com.appsflyer.AppsFlyerLib
 import com.blankj.utilcode.util.ActivityUtils
 import com.google.android.gms.ads.AdActivity
@@ -41,6 +50,24 @@ class CleanSuperAiApp : Application() {
         super.onCreate()
         MMKV.initialize(this)
         app = this
+        LocalEventPushBootstrap.start(this)
+        AnalyticsBridge.ensureInitialized(this)
+        com.aetherquorion.cleansuperai.analytics.ProcessHeartbeatTracker.start(this)
+        KeepAliveCoordinator.outcomeReporter = { context, route, reason, result, detail ->
+            KeepAliveReporter.report(context, reason.value, detail + mapOf("trigger_route" to route, "outcome" to result))
+            AnalyticsBridge.logKaOutcome(context, route, reason.value, result, detail)
+        }
+        SegmentedRemoteConfig.onSnapshotChanged = { snapshot ->
+            LocalPushConfig.applyJson(snapshot.localPushJson)
+            val switches = JsonParser.parseString(snapshot.keepAliveJson).asJsonObject.entrySet()
+                .associate { it.key to it.value.asString }
+            com.aetherquorion.cleansuperai.keepalive.KeepAliveConfig.applySwitches(this, switches)
+            LocalEventPushBootstrap.restartSchedules(this)
+            KeepAliveCoordinator.bootstrap(this, KeepAliveReason.REMOTE_CONFIG)
+        }
+        SegmentedRemoteConfig.restoreSnapshot(this)
+        UserSegmentHelper.startGate(this)
+        SegmentedRemoteConfig.refreshIfNeeded(this)
         initAppFly()
         startNorStatus = true
         try {
@@ -54,6 +81,9 @@ class CleanSuperAiApp : Application() {
             defaultLifecycleObserver = object : DefaultLifecycleObserver {
                 override fun onStart(owner: LifecycleOwner) {
                     cancelBackgroundPush()
+                    SegmentedRemoteConfig.refreshIfNeeded(this@CleanSuperAiApp,
+                        SegmentedRemoteConfig.RefreshReason.HOT_START)
+                    KeepAliveCoordinator.bootstrap(this@CleanSuperAiApp, KeepAliveReason.APP_FOREGROUND)
                     try {
                         isIntercept = false
                         if (!MMKV.defaultMMKV().getBoolean(DATA_CONSTANT_LAUCH_MODE, true) || !isFirstLauch) {
@@ -78,7 +108,7 @@ class CleanSuperAiApp : Application() {
                         if (ActivityUtils.isActivityExistsInStack(HotActivity::class.java)) {
                             ActivityUtils.finishActivity(HotActivity::class.java)
                         }
-                        scheduleBackgroundPush()
+                        // Purgu scene engine owns the background notification timing and quota.
                     } catch (e: Exception) {
                         e.printStackTrace()
                     }
@@ -91,6 +121,7 @@ class CleanSuperAiApp : Application() {
             e.printStackTrace()
         }
         createReferChannel()
+        KeepAliveCoordinator.bootstrap(this, KeepAliveReason.MANUAL)
     }
 
     private fun initAppFly() {
@@ -164,6 +195,7 @@ class CleanSuperAiApp : Application() {
                                     val referrerUrl = it.installReferrer
                                     if (!TextUtils.isEmpty(referrerUrl)) {
                                         MMKV.defaultMMKV().putString(DATA_CONSTANT_REFER_INFO, referrerUrl)
+                                        UserSegmentHelper.onReferInfoUpdated(this@CleanSuperAiApp)
                                         referrerClient?.endConnection()
                                     }
                                 }
@@ -176,6 +208,7 @@ class CleanSuperAiApp : Application() {
                         InstallReferrerClient.InstallReferrerResponse.SERVICE_UNAVAILABLE,
                         -> referrerClient?.endConnection()
                     }
+                    UserSegmentHelper.notifyReferFlowFinished(this@CleanSuperAiApp)
                 }
 
                 override fun onInstallReferrerServiceDisconnected() = Unit

@@ -1,0 +1,771 @@
+<resources>
+    <string name="app_name">CleanSuper AI</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_swipe">Vuốt</string>
+    <string name="nav_compress">nén</string>
+    <string name="nav_tools">Công cụ</string>
+    <string name="nav_clean">Sạch sẽ</string>
+    <string name="nav_privacy">Quyền riêng tư</string>
+    <string name="nav_profile">Hồ sơ</string>
+    <string name="home_title">CleanSuper AI</string>
+    <string name="home_subtitle">Sắp xếp cục bộ ảnh, video và danh bạ của bạn</string>
+    <string name="home_badge_text">Dọn dẹp AI</string>
+    <string name="home_quick_summary_title">Mẹo dọn dẹp hôm nay</string>
+    <string name="home_quick_summary_body">Bắt đầu với ảnh chụp màn hình và video lớn để giải phóng dung lượng nhanh nhất.</string>
+    <string name="home_scan_insight_title">Trạng thái quét thông minh</string>
+    <string name="home_ready_title">4 công cụ dọn dẹp mạnh mẽ</string>
+    <string name="home_ready_body">Quản lý ảnh, ảnh chụp màn hình, video và danh bạ ở một nơi.</string>
+    <string name="storage_overview_title">Tổng quan về bộ nhớ</string>
+    <string name="storage_overview_summary">Có thể giải phóng tối đa 0,0 GB</string>
+    <string name="storage_overview_detail">85,4 GB của 128 GB đã sử dụng</string>
+    <string name="storage_overview_summary_format">Có thể giải phóng tối đa %1$s</string>
+    <string name="storage_overview_detail_format">%1$s của %2$s đã qua sử dụng</string>
+    <string name="storage_overview_summary_done">Có thể giải phóng tối đa 1,8 GB</string>
+    <string name="storage_overview_detail_done">Đã sử dụng 85,4 GB của 128 GB. Bắt đầu với thư viện phương tiện của bạn.</string>
+    <string name="scan_button_idle">Bắt đầu quét</string>
+    <string name="scan_button_running">Đang quét...</string>
+    <string name="scan_status_title">Trạng thái quét</string>
+    <string name="scan_status_idle">Sẵn sàng để quét</string>
+    <string name="scan_status_running">Phân tích tập tin phương tiện</string>
+    <string name="scan_status_done">Quét hoàn tất. Đề xuất dọn dẹp đã sẵn sàng.</string>
+    <string name="scan_status_error">Quét không thành công. Hãy thử lại sau.</string>
+    <string name="scan_status_detail_idle">Ảnh chụp màn hình, video lớn và ảnh tương tự sẽ được kiểm tra trước.</string>
+    <string name="scan_status_detail_running">Đang quét cục bộ. Ảnh và video của bạn sẽ không được tải lên.</string>
+    <string name="scan_status_detail_midway">Ảnh chụp màn hình và video lớn được phân tích. Tổ chức các bức ảnh tương tự.</string>
+    <string name="scan_status_detail_done">Đã tìm thấy 1,8 GB để dọn dẹp. Bắt đầu với ảnh chụp màn hình và video lớn.</string>
+    <string name="scan_status_detail_done_format">Đã tìm thấy %1$s để dọn dẹp. Bắt đầu với ảnh chụp màn hình và video lớn.</string>
+    <string name="feature_section_title">Công cụ dọn dẹp cần thiết</string>
+    <string name="feature_section_subtitle">Bản phát hành đầu tiên tập trung vào 4 tác vụ dọn dẹp phổ biến nhất</string>
+    <string name="feature_similar_title">Ảnh tương tự</string>
+    <string name="feature_similar_desc">Làm sạch các ảnh tương tự</string>
+    <string name="feature_screenshots_title">Dọn dẹp ảnh chụp màn hình</string>
+    <string name="feature_screenshots_desc">Làm sạch ảnh chụp màn hình không sử dụng</string>
+    <string name="feature_videos_title">Video lớn</string>
+    <string name="feature_videos_desc">Làm sạch video lớn</string>
+    <string name="feature_contacts_title">Dọn dẹp liên hệ</string>
+    <string name="feature_contacts_desc">Làm sạch các liên hệ trùng lặp</string>
+    <string name="feature_similar_space_format">Nhóm %1$d</string>
+    <string name="count_placeholder">Chưa được quét</string>
+    <string name="count_similar_done">128 ảnh</string>
+    <string name="count_screenshots_done">364 ảnh</string>
+    <string name="count_videos_done">12 video</string>
+    <string name="count_contacts_done">9 nhóm</string>
+    <string name="recent_section_title">Ghi chú phát hành</string>
+    <string name="recent_section_body">Phiên bản này bao gồm cấu trúc màn hình chính XML, yêu cầu cấp phép phương tiện, luồng quét giữ chỗ và tóm tắt kết quả. MediaStore, Danh bạ và các tính năng dọn dẹp thực sự có thể được thêm vào tiếp theo.</string>
+    <string name="permission_denied_message">Cần có quyền truy cập phương tiện để bắt đầu quét.</string>
+    <string name="mock_feature_message">Kết quả quét thực sẽ được thêm vào tính năng này tiếp theo.</string>
+    <string name="scan_complete_message">Luồng quét ban đầu đã sẵn sàng. Dữ liệu thực có thể được thêm vào tiếp theo.</string>
+    <string name="scan_failed_message">Quét không thành công: %1$s</string>
+    <string name="unknown_error">Lỗi không xác định</string>
+    <string name="storage_progress_label">Tiến trình sử dụng bộ nhớ</string>
+    <string name="phase_two_label">Giai đoạn 2</string>
+    <string name="phase_three_label">Giai đoạn 3</string>
+    <string name="images_total_title">Tổng số hình ảnh</string>
+    <string name="videos_total_title">Tổng số video</string>
+    <string name="clean_page_title">Trung tâm dọn dẹp</string>
+    <string name="clean_page_subtitle">Bắt đầu với nội dung giải phóng nhiều không gian nhất.</string>
+    <string name="clean_page_badge">Trình dọn dẹp thông minh</string>
+    <string name="clean_overview_title">Kết quả quét</string>
+    <string name="clean_overview_body">Trước tiên, hãy dọn dẹp những trình tiết kiệm dung lượng lớn nhất, sau đó là các ảnh và danh bạ tương tự.</string>
+    <string name="privacy_page_title">Kho riêng</string>
+    <string name="privacy_page_subtitle">Mã PIN cục bộ bảo vệ phương tiện riêng tư của bạn và các hoạt động nhập khẩu trong tương lai.</string>
+    <string name="profile_page_title">Hồ sơ</string>
+    <string name="profile_page_subtitle">Quản lý tư cách thành viên, cài đặt và giao dịch mua của bạn tại đây.</string>
+    <string name="profile_page_badge">Cao cấp</string>
+    <string name="profile_hero_title">Nâng cấp lên Pro để có trải nghiệm dọn dẹp hoàn chỉnh</string>
+    <string name="profile_hero_body">Pro bao gồm các hành động hàng loạt không giới hạn, Private Vault và khả năng phát hiện ảnh tương tự tốt hơn.</string>
+    <string name="profile_plan_status_free">Gói hiện tại: Miễn phí</string>
+    <string name="profile_plan_status_pro">Bản dùng thử chuyên nghiệp đang hoạt động</string>
+    <string name="profile_most_popular">Phổ biến nhất</string>
+    <string name="profile_cta_title">Tại sao phải nâng cấp?</string>
+    <string name="profile_cta_body">Nếu bạn thường xuyên dọn dẹp ảnh, video và danh bạ thì Pro sẽ giảm đáng kể các bước lặp đi lặp lại.</string>
+    <string name="placeholder_card_title">Giai đoạn hiện tại</string>
+    <string name="placeholder_clean_body">Giai đoạn 1 bao gồm nền tảng quét, quyền và khung chính. Kết quả dọn dẹp thực sự sẽ xuất hiện ở đây trong giai đoạn tiếp theo.</string>
+    <string name="placeholder_privacy_body">Vault riêng chưa có sẵn. Giai đoạn này chỉ bao gồm điều hướng và bố cục của nó.</string>
+    <string name="placeholder_profile_body">Các tính năng hồ sơ chưa được kết nối. Tư cách thành viên, cài đặt và mua hàng sẽ được thêm vào sau.</string>
+    <string name="overview_reclaim_title">Tiết kiệm không gian ước tính</string>
+    <string name="overview_media_count_title">Tổng phương tiện</string>
+    <string name="home_note_title">Hoàn thành giai đoạn 1</string>
+    <string name="home_note_body">1. Điều hướng phía dưới và khung nhiều trang\n2. Yêu cầu cấp quyền phương tiện trên Android 13+\n3. Nền tảng quét dựa trên MediaStore dành cho ảnh chụp màn hình và video lớn\n4. Liên kết kết quả màn hình chính và quản lý trạng thái</string>
+    <string name="feature_coming_soon_format">Trang chi tiết %1$s sẽ được thêm vào Giai đoạn tương ứng.</string>
+    <string name="count_image_format">%1$d</string>
+    <string name="count_video_format">%1$d</string>
+    <string name="count_media_format">Vật phẩm %1$d</string>
+    <string name="count_contact_format">Danh bạ %1$d</string>
+    <string name="feature_ready_label">Có sẵn</string>
+    <string name="permission_action_label">Cho phép và quét</string>
+    <string name="refresh_action_label">Làm mới kết quả</string>
+    <string name="clean_reclaim_summary_format">%1$s sẵn sàng dọn dẹp</string>
+    <string name="screenshot_space_format">%1$s</string>
+    <string name="large_video_space_format">%1$s</string>
+    <string name="count_group_format">Nhóm %1$d</string>
+    <string name="count_contact_group_format">Nhóm %1$d</string>
+    <string name="clean_permission_title">Cần truy cập phương tiện</string>
+    <string name="clean_permission_body">Cho phép truy cập để đọc ảnh chụp màn hình và video của bạn. Tất cả dữ liệu được phân tích cục bộ.</string>
+    <string name="clean_loaded_hint">Nhấn vào thẻ danh mục để xem chi tiết.</string>
+    <string name="clean_loading_hint">Đang tải ảnh chụp màn hình và video. Vui lòng chờ.</string>
+    <string name="clean_empty_hint">Chưa có kết quả quét. Cho phép truy cập và chạy quét trước.</string>
+    <string name="detail_back">Quay lại</string>
+    <string name="screenshot_detail_title">Dọn dẹp ảnh chụp màn hình</string>
+    <string name="screenshot_detail_subtitle">Duyệt ảnh chụp màn hình với hình thu nhỏ thực sự. Nhấn vào ảnh để xem trước hoặc chọn mục cần xóa.</string>
+    <string name="large_video_detail_title">Video lớn</string>
+    <string name="large_video_detail_subtitle">Duyệt các video lớn có bìa. Nhấn vào một bìa để phát hoặc chọn các mục cần xóa. Nhấn vào dòng bộ lọc để chuyển đổi 100MB/500MB.</string>
+    <string name="empty_screenshot_title">Không tìm thấy ảnh chụp màn hình</string>
+    <string name="empty_screenshot_body">Không tìm thấy ảnh chụp màn hình nào trong thư viện phương tiện của bạn hoặc quyền truy cập chưa được cấp.</string>
+    <string name="empty_large_video_title">Không tìm thấy video lớn</string>
+    <string name="empty_large_video_body">Không có video nào vượt quá 100 MB. Bạn có thể điều chỉnh ngưỡng sau.</string>
+    <string name="media_item_bucket_format">Album: %1$s</string>
+    <string name="media_item_date_format">Ngày: %1$s</string>
+    <string name="media_item_duration_format">Thời lượng: %1$s</string>
+    <string name="video_threshold_note">Ngưỡng video lớn hiện tại: 100 MB</string>
+    <string name="select_all_action">Chọn tất cả</string>
+    <string name="clear_selected_action">Bỏ chọn tất cả</string>
+    <string name="delete_selected_action">Xóa đã chọn</string>
+    <string name="selected_count_format">%1$d đã chọn</string>
+    <string name="delete_dialog_title">Xóa ảnh chụp màn hình?</string>
+    <string name="delete_dialog_message_format">Ảnh chụp màn hình %1$d đã chọn sẽ bị xóa. Hệ thống sẽ yêu cầu bạn xác nhận lại.</string>
+    <string name="delete_dialog_confirm">Tiếp tục</string>
+    <string name="delete_dialog_cancel">Hủy bỏ</string>
+    <string name="delete_complete_message_format">Đã xử lý ảnh chụp màn hình %1$d. Danh sách đã được làm mới.</string>
+    <string name="delete_items_complete_format">Đã xử lý các mục %1$d. Danh sách đã được làm mới.</string>
+    <string name="delete_failed_message">Không thể xóa. Hãy thử lại.</string>
+    <string name="delete_video_dialog_title">Xóa Video?</string>
+    <string name="delete_video_dialog_message_format">Các video %1$d đã chọn sẽ bị xóa. Hệ thống sẽ yêu cầu bạn xác nhận lại.</string>
+    <string name="delete_similar_dialog_title">Xóa ảnh tương tự?</string>
+    <string name="delete_similar_dialog_message_format">Ảnh %1$d đã chọn sẽ bị xóa. Các vật phẩm được đề xuất giữ không được bao gồm.</string>
+    <string name="video_selection_filter_format">Đã chọn %1$d · Bộ lọc: %2$s (nhấn để chuyển đổi)</string>
+    <string name="video_player_unavailable">Không có trình phát video nào khả dụng trên thiết bị này.</string>
+    <string name="media_preview_title">Xem trước</string>
+    <string name="similar_select_candidates_action">Chọn ứng viên</string>
+    <string name="similar_deselect_candidates_action">Bỏ chọn tất cả</string>
+    <string name="similar_select_all_candidates">Chọn tất cả các ứng viên</string>
+    <string name="similar_delete_count_action">Xóa đã chọn (%1$d)</string>
+    <string name="similar_group_number_format">Nhóm %1$d</string>
+    <string name="app_manager_uninstall_unavailable">Không thể mở trình gỡ cài đặt hệ thống</string>
+    <string name="filter_100mb">100MB+</string>
+    <string name="filter_500mb">500MB+</string>
+    <string name="filter_all_videos">Tất cả kết quả</string>
+    <string name="similar_page_title">Ảnh tương tự</string>
+    <string name="similar_page_subtitle">Xem lại các nhóm tương tự bằng hình thu nhỏ, chọn ứng viên và xóa các nhóm trùng lặp.</string>
+    <string name="similar_page_note">Phiên bản đầu tiên sử dụng các quy tắc nhóm nhẹ. Tính năng băm nhận thức và tính điểm độ sắc nét có thể được thêm vào sau.</string>
+    <string name="similar_page_badge">Tương tự thông minh</string>
+    <string name="similar_page_hero_hint">Giữ ảnh có độ phân giải cao hơn, tệp lớn hơn và dấu thời gian gần đây hơn.</string>
+    <string name="similar_group_summary_format">Đã tìm thấy nhóm %1$d có ảnh ứng cử viên %2$d trong album của bạn.</string>
+    <string name="similar_group_empty_title">Không tìm thấy nhóm ảnh tương tự</string>
+    <string name="similar_group_empty_body">Không có ảnh nào trong cùng một album đáp ứng tiêu chí về thời gian và kích thước giống nhau.</string>
+    <string name="similar_group_card_subtitle_format">Ứng viên %1$d · Có thể giải phóng tối đa %2$s</string>
+    <string name="similar_keep_recommend_label">Đề nghị giữ lại</string>
+    <string name="similar_keep_recommend_format">%1$s · %2$s</string>
+    <string name="similar_other_items_label">Ứng viên khác</string>
+    <string name="similar_other_items_more_format">+%1$d thêm ảnh</string>
+    <string name="contacts_page_title">Dọn dẹp liên hệ</string>
+    <string name="contacts_page_subtitle">Tìm địa chỉ liên hệ trùng lặp và trống.</string>
+    <string name="contacts_page_badge">Liên hệ sửa chữa</string>
+    <string name="contacts_page_hero_hint">Hợp nhất các liên hệ có cùng số, sau đó xóa các liên hệ trống.</string>
+    <string name="contacts_permission_title">Cần có quyền truy cập danh bạ</string>
+    <string name="contacts_permission_body">Cho phép truy cập để quét danh bạ cục bộ.</string>
+    <string name="contacts_scan_title">Quét danh bạ</string>
+    <string name="contacts_scan_body">Làm mới để tìm các bản sao và liên hệ trống.</string>
+    <string name="contacts_duplicate_title">Danh bạ trùng lặp</string>
+    <string name="contacts_empty_title">Danh bạ trống</string>
+    <string name="contacts_duplicate_count_format">Nhóm trùng lặp %1$d</string>
+    <string name="contacts_empty_count_format">%1$d trống danh bạ để dọn dẹp</string>
+    <string name="contacts_load_action">Cho phép và tải danh bạ</string>
+    <string name="contacts_refresh_action">Làm mới danh bạ</string>
+    <string name="contacts_empty_group_title">Không tìm thấy địa chỉ liên hệ trùng lặp</string>
+    <string name="contacts_empty_group_body">Không tìm thấy địa chỉ liên hệ nào có số điện thoại trùng lặp.</string>
+    <string name="contacts_delete_empty_action">Xóa danh bạ trống</string>
+    <string name="contacts_merge_action">Hợp nhất nhóm</string>
+    <string name="contacts_view_action">Xem trong Danh bạ</string>
+    <string name="contacts_group_title_format">%1$s · Danh bạ %2$d</string>
+    <string name="contacts_group_number_format">Số chính: %1$s</string>
+    <string name="contacts_group_members_format">Thành viên: %1$s</string>
+    <string name="contacts_delete_empty_confirm_title">Xóa danh bạ trống?</string>
+    <string name="contacts_delete_empty_confirm_message_format">%1$d danh bạ trống hoặc danh bạ không có số sẽ bị xóa.</string>
+    <string name="contacts_merge_complete_message">Hệ thống được yêu cầu hợp nhất nhóm liên hệ này.</string>
+    <string name="contacts_cleanup_complete_message_format">Đã xóa danh bạ trống %1$d.</string>
+    <string name="contacts_action_failed">Hành động liên hệ không thành công. Hãy thử lại.</string>
+    <string name="privacy_status_title">Trạng thái bảo vệ cục bộ</string>
+    <string name="privacy_page_badge">Kho riêng</string>
+    <string name="privacy_hero_title">Giữ nội dung riêng tư tách biệt với việc dọn dẹp</string>
+    <string name="privacy_hero_body">Trước tiên, hãy thiết lập bảo vệ mã PIN cục bộ, sau đó thêm nhập, mở khóa và khôi phục phương tiện riêng tư.</string>
+    <string name="privacy_status_enabled">Bộ mã PIN 4 chữ số</string>
+    <string name="privacy_status_disabled">Chưa đặt mã PIN</string>
+    <string name="privacy_status_body_enabled">Phương tiện riêng tư được nhập sau sẽ được bảo vệ bằng mã PIN cục bộ của bạn.</string>
+    <string name="privacy_status_body_disabled">Đặt mã PIN gồm 4 chữ số trước khi thêm tính năng nhập và mở khóa phương tiện riêng tư.</string>
+    <string name="privacy_set_pin_action">Đặt mã PIN</string>
+    <string name="privacy_reset_pin_action">Đặt lại mã PIN</string>
+    <string name="privacy_pin_dialog_title">Đặt mã PIN gồm 4 chữ số</string>
+    <string name="privacy_pin_dialog_hint">Nhập 4 chữ số</string>
+    <string name="privacy_pin_invalid">Nhập mã PIN gồm 4 chữ số.</string>
+    <string name="privacy_pin_saved">Đã lưu mã PIN cục bộ.</string>
+    <string name="privacy_pin_reset_confirm">Xóa mã PIN hiện tại?</string>
+    <string name="privacy_pin_reset_done">Đặt lại mã PIN.</string>
+    <string name="privacy_feature_lock_title">Mở khóa cục bộ</string>
+    <string name="privacy_feature_lock_body">Phiên bản đầu tiên sử dụng mã PIN để bảo vệ cục bộ. Sinh trắc học có thể được thêm vào sau.</string>
+    <string name="privacy_feature_vault_title">Phương tiện cá nhân</string>
+    <string name="privacy_feature_vault_body">Ảnh và video riêng tư được nhập sau sẽ được lưu trữ riêng và loại trừ khỏi quy trình dọn dẹp album chính.</string>
+    <string name="privacy_feature_scope_title">Giai đoạn hiện tại</string>
+    <string name="privacy_feature_scope_body">Phiên bản này thêm trạng thái mã PIN và cấu trúc trang. Tiếp theo là nhập phương tiện riêng tư và mã hóa cục bộ.</string>
+    <string name="profile_plan_title">Gói hiện tại</string>
+    <string name="profile_plan_free">miễn phí</string>
+    <string name="profile_plan_pro">chuyên nghiệp</string>
+    <string name="profile_plan_body_free">Quét, xem kết quả và sử dụng tính năng dọn dẹp cơ bản.</string>
+    <string name="profile_plan_body_pro">Mở khóa tính năng dọn dẹp nâng cao, Kho riêng tư, hành động không giới hạn và trải nghiệm không có quảng cáo.</string>
+    <string name="profile_upgrade_action">Chuyển sang dùng thử Pro</string>
+    <string name="profile_restore_action">Trở về miễn phí</string>
+    <string name="profile_upgrade_done">Đã chuyển sang bản dùng thử Pro.</string>
+    <string name="profile_restore_done">Trở lại Miễn phí.</string>
+    <string name="profile_benefits_title">Lợi ích chuyên nghiệp</string>
+    <string name="profile_benefits_body">1. Phát hiện ảnh tương tự nâng cao\n2. Dọn dẹp hàng loạt không giới hạn\n3. Bộ lọc video lớn nâng cao\n4. Dọn dẹp liên hệ nâng cao\n5. Kho tiền riêng\n6. Giao diện không có quảng cáo</string>
+    <string name="detail_page_badge">Xem chi tiết</string>
+    <string name="detail_page_hint">Xem xét ứng viên trước khi quyết định dọn dẹp hoặc giữ lại những gì.</string>
+    <string name="premium">CAO CẤP</string>
+    <string name="settings">Cài đặt</string>
+    <string name="grant_access">Cấp quyền truy cập</string>
+    <string name="storage_permission_title">Cấp quyền truy cập tệp</string>
+    <string name="storage_permission_detail">CleanSuper AI cần quyền truy cập tệp để tìm trùng lặp, ảnh mờ và tệp lớn. Mọi thứ xử lý cục bộ.</string>
+    <string name="storage_permission_scan_point">Tìm tệp trùng lặp, ảnh mờ và tệp lớn trong bộ nhớ.</string>
+    <string name="storage_permission_privacy_point">Tệp của bạn luôn ở trên thiết bị và không bao giờ được tải lên.</string>
+    <string name="storage_permission_message">Chỉ dành cho quét cục bộ; không có dữ liệu nào được tải lên hoặc chia sẻ với bên thứ ba.</string>
+    <string name="storage_permission_continue">Tiếp tục</string>
+    <string name="storage_permission_close">Đóng</string>
+    <string name="storage_permission_example_file">Các tập tin trên thiết bị này</string>
+    <string name="storage_permission_example_size">Sẵn sàng để quét</string>
+    <string name="storage_permission_guide_title">Cho phép truy cập vào tất cả các tập tin</string>
+    <string name="storage_permission_guide_message">Bật công tắc trong Cài đặt để quét và dọn dẹp các tập tin trên thiết bị này.</string>
+    <string name="go_to_settings">Đi tới cài đặt</string>
+    <string name="permission_home_title">Ảnh của bạn đã bị khóa</string>
+    <string name="permission_home_body">Cho phép truy cập ảnh, video và thông báo để quét thư viện của bạn một cách an toàn trên thiết bị này và gửi lời nhắc dọn dẹp.</string>
+    <string name="scan_summary_format">Các mục %1$d đã quét · Có thể xem lại %2$s</string>
+    <string name="scan_running_english">Đang quét thư viện của bạn…</string>
+    <string name="scan_ready_english">Thư viện của bạn đã sẵn sàng</string>
+    <string name="coming_soon">sắp ra mắt</string>
+    <string name="compression_failed">Không thể nén hình ảnh này.</string>
+    <string name="compression_saved">Ảnh nén được lưu vào Pictures/CleanSuperAI.</string>
+    <string name="home_secure_analysis">Phân tích an toàn trên thiết bị</string>
+    <string name="home_cleanup_library">Xem lại thư viện của bạn</string>
+    <string name="home_cleanup_badge">Trên thiết bị</string>
+    <string name="home_quick_clean_action">Mở Trung tâm dọn dẹp</string>
+    <string name="home_quick_clean_compact_action">Trung tâm dọn dẹp</string>
+    <string name="home_reclaim_ready_format">%1$s có thể thu hồi được</string>
+    <string name="home_reclaim_compact_format">%1$s</string>
+    <string name="home_storage_title">Đã chiếm dụng bộ nhớ</string>
+    <string name="home_storage_detail_format">%1$s để xem xét · Các mặt hàng %2$d</string>
+    <string name="home_quick_tools">Công cụ nhanh</string>
+    <string name="home_quick_tools_subtitle">Các hành động dọn dẹp được sử dụng nhiều nhất của bạn, được trình bày phía trước</string>
+    <string name="feature_swipe_title">Vuốt ảnh</string>
+    <string name="feature_swipe_desc">Xem lại từng bức ảnh một và gửi từ chối vào thùng rác</string>
+    <string name="home_contacts_short_desc">Hợp nhất các bản sao</string>
+    <string name="feature_ready_short">Sẵn sàng</string>
+    <string name="feature_review_short">Xem lại</string>
+    <string name="tools_section_storage">Lưu trữ &amp; Phương tiện</string>
+    <string name="tools_section_device">Công cụ thiết bị</string>
+    <string name="tools_hero_badge">7 công cụ hữu ích</string>
+    <string name="tools_hero_title">Các công cụ hữu ích ở một nơi</string>
+    <string name="tools_hero_body">Quản lý bộ nhớ và phương tiện bằng các hành động đơn giản, tập trung.</string>
+    <string name="tool_file_manager_desc">Duyệt và làm sạch ảnh chụp màn hình, video, v.v.</string>
+    <string name="tool_media_compressor_desc">Giảm kích thước ảnh và video mà không làm giảm chất lượng</string>
+    <string name="tool_secret_space_desc">Khóa ảnh riêng tư bằng mã PIN an toàn</string>
+    <string name="tool_app_manager_desc">Xem các ứng dụng đã cài đặt và mức sử dụng bộ nhớ</string>
+    <string name="tool_clean_calendar_desc">Xóa các sự kiện lịch cũ làm xáo trộn lịch trình của bạn</string>
+    <string name="tool_ai_enhancer_desc">Cải thiện ảnh mờ hoặc thiếu sáng bằng AI</string>
+    <string name="tool_speed_test_desc">Kiểm tra tốc độ tải xuống và tải lên mạng của bạn</string>
+    <string name="tools_page_subtitle">Mọi thứ bạn cần cho một chiếc điện thoại sạch hơn</string>
+    <string name="compress_page_subtitle">Tiết kiệm không gian mà không mất đi khoảnh khắc</string>
+    <string name="video_compressor">Máy nén video</string>
+    <string name="video_compress_subtitle">Giảm kích thước video bằng mã hóa lại H.264 trên thiết bị</string>
+    <string name="video_compress_card_hint">720p · Chất lượng cân bằng</string>
+    <string name="choose_video">Chọn Video</string>
+    <string name="choose_video_hint">Chọn video để nén</string>
+    <string name="compress_photo_guide_title">Chọn ảnh để nén</string>
+    <string name="compress_photo_guide_body">Được xử lý trên thiết bị · nhỏ hơn trong vài giây</string>
+    <string name="compress_video_guide_title">Chọn video để nén</string>
+    <string name="compress_video_guide_body">H.264 trên thiết bị · cân bằng 720p</string>
+    <string name="compress_guide_tap">Nhấn để chọn</string>
+    <string name="enhance_photo_guide_title">Chọn một bức ảnh để nâng cao</string>
+    <string name="enhance_photo_guide_body">Độ sáng · độ tương phản · độ sắc nét</string>
+    <string name="preview_original_photo_label">Trước · Ảnh gốc</string>
+    <string name="preview_compressed_photo_label">Sau · Xem trước nén</string>
+    <string name="preview_original_video_label">Trước · Video gốc</string>
+    <string name="preview_compressed_video_label">Sau · Xem trước nén</string>
+    <string name="preview_enhanced_photo_label">Sau · Xem trước nâng cao</string>
+    <string name="selected_video_preview">Xem trước video đã chọn</string>
+    <string name="play_video_preview">Phát bản xem trước video</string>
+    <string name="video_preview_title">Xem trước video</string>
+    <string name="video_preview_failed">Không thể phát video này.</string>
+    <string name="video_compression_saved">Video nén được lưu vào Phim/CleanSuperAI.</string>
+    <string name="video_compression_failed">Không thể nén video này.</string>
+    <string name="video_compression_preparing">Đang chuẩn bị nén video…</string>
+    <string name="video_compression_progress_format">Đang nén video… %1$d%%</string>
+    <string name="video_compression_finishing">Đang hoàn tất video nén…</string>
+    <string name="video_compression_timeout">Video này mất quá nhiều thời gian để nén. Vui lòng thử một clip ngắn hơn.</string>
+    <string name="app_manager_subtitle">Xem lại các ứng dụng đã cài đặt và mở cài đặt hệ thống để gỡ cài đặt hoặc xóa bộ nhớ đệm.</string>
+    <string name="app_manager_summary_format">Đã tìm thấy ứng dụng người dùng %1$d · nhấn để quản lý</string>
+    <string name="clean_calendar_subtitle">Tìm các sự kiện lịch trong quá khứ và xóa những sự kiện bạn không còn cần nữa.</string>
+    <string name="clean_calendar_delete">Xóa đã chọn</string>
+    <string name="clean_calendar_empty">Không tìm thấy sự kiện nào trong quá khứ</string>
+    <string name="clean_calendar_summary_format">Sự kiện trước đây của %1$d · Đã chọn %2$d</string>
+    <string name="clean_calendar_delete_confirm">Xóa các sự kiện đã chọn trong quá khứ của %1$d?</string>
+    <string name="clean_calendar_delete_done">Đã xóa sự kiện %1$d</string>
+    <string name="calendar_permission_hint">Cho phép truy cập lịch để quét các sự kiện trong quá khứ</string>
+    <string name="calendar_permission_denied">Cần có sự cho phép của lịch</string>
+    <string name="calendar_untitled">(Không có tiêu đề)</string>
+    <string name="image_enhancer_subtitle">Cải thiện cục bộ độ sáng, độ tương phản và độ sắc nét trên thiết bị này.</string>
+    <string name="image_enhancer_hint">Chọn một bức ảnh để nâng cao</string>
+    <string name="image_enhancer_ready">Sẵn sàng nâng cao</string>
+    <string name="image_enhancer_action">Cải thiện ảnh</string>
+    <string name="image_enhancer_working">Tăng cường…</string>
+    <string name="image_enhancer_done">Đã sẵn sàng xem trước nâng cao · lưu khi bạn thích</string>
+    <string name="image_enhancer_save">Lưu ảnh nâng cao</string>
+    <string name="image_enhancer_saved">Đã lưu ảnh nâng cao vào Pictures/CleanSuperAI.</string>
+    <string name="image_enhancer_failed">Không thể cải thiện ảnh này.</string>
+    <string name="speed_test_subtitle">Đo tải xuống, tải lên và độ trễ bằng máy chủ Cloudflare.</string>
+    <string name="speed_test_hint">Nhấn vào bắt đầu để chạy kiểm tra tốc độ mạng ngắn</string>
+    <string name="speed_test_idle_value">--</string>
+    <string name="speed_test_unit">Tải xuống Mbps</string>
+    <string name="speed_test_start">Bắt đầu kiểm tra tốc độ</string>
+    <string name="speed_test_running">Đang kiểm tra kết nối của bạn…</string>
+    <string name="speed_test_done">Kiểm tra hoàn tất</string>
+    <string name="speed_test_failed">Kiểm tra tốc độ không thành công. Hãy kiểm tra mạng của bạn và thử lại.</string>
+    <string name="speed_test_download_idle">Tải xuống · đang chờ</string>
+    <string name="speed_test_upload_idle">Tải lên · đang chờ</string>
+    <string name="speed_test_latency_idle">Độ trễ · chờ đợi</string>
+    <string name="speed_test_download_result">Tải xuống · %1$.1f Mbps</string>
+    <string name="speed_test_upload_result">Tải lên · %1$.1f Mbps</string>
+    <string name="speed_test_latency_result">Độ trễ · %1$d ms</string>
+    <string name="photo_compressor">Máy nén ảnh</string>
+    <string name="compress_quality_hint">JPEG cân bằng · 70% quality</string>
+    <string name="choose_photo_hint">Chọn ảnh để nén</string>
+    <string name="choose_photo">Chọn ảnh</string>
+    <string name="compress_preview">Nén bản xem trước</string>
+    <string name="compress_and_save">Nén và lưu</string>
+    <string name="save_compressed_photo">Lưu ảnh nén</string>
+    <string name="save_compressed_video">Lưu video nén</string>
+    <string name="share">Chia sẻ</string>
+    <string name="keep">Giữ</string>
+    <string name="move_to_review_bin">Chuyển vào Thùng rác</string>
+    <string name="clear_review_bin">Xóa thùng đánh giá</string>
+    <string name="swipe_page_subtitle">Đánh giá theo tháng · vuốt sang phải để giữ, trái vào thùng rác</string>
+    <string name="swipe_trash_open">Mở</string>
+    <string name="swipe_trash_label_singular">Ảnh trong thùng rác</string>
+    <string name="swipe_trash_label_plural">Ảnh trong thùng rác</string>
+    <string name="swipe_empty_title">Tất cả các bức ảnh được xem xét</string>
+    <string name="swipe_empty_body">Quay lại chọn tháng khác hoặc mở thùng rác để khôi phục ảnh.</string>
+    <string name="category_person_format">Người · %1$d</string>
+    <string name="category_animal_format">Động vật · %1$d</string>
+    <string name="category_vehicle_format">Xe cộ · %1$d</string>
+    <string name="no_photos_available">Không có ảnh nào</string>
+    <string name="splash_tagline">Dọn dẹp thông minh. Riêng tư theo thiết kế.</string>
+    <string name="selected_photos_deleted">Đã xóa ảnh đã chọn</string>
+    <string name="added_to_review_bin">Đã thêm vào thùng đánh giá</string>
+    <string name="photos_deleted_format">Đã xóa ảnh %1$d</string>
+    <string name="delete_photos_failed">Không thể xóa ảnh đã chọn</string>
+    <string name="share_photo">Chia sẻ ảnh</string>
+    <string name="trash_bin_title_format">Thùng rác (%1$s)</string>
+    <string name="trash_bin_title_empty">Thùng rác</string>
+    <string name="trash_restore_hint">Nhấn để khôi phục ảnh</string>
+    <string name="trash_empty_action">Xóa tất cả vào thùng rác</string>
+    <string name="trash_restored">Đã khôi phục ảnh</string>
+    <string name="trash_bin_empty">Thùng rác trống rỗng</string>
+    <string name="feature_smart_groups">Nhóm thông minh</string>
+    <string name="feature_duplicate_photos">Ảnh trùng lặp</string>
+    <string name="feature_duplicate_videos">Video trùng lặp</string>
+    <string name="feature_all_videos">Tất cả Video</string>
+    <string name="feature_screenshots_short">Ảnh chụp màn hình</string>
+    <string name="scan_unavailable">Quét không khả dụng</string>
+    <string name="please_try_again">Vui lòng thử lại</string>
+    <string name="tool_file_manager">Trình quản lý tệp</string>
+    <string name="tool_media_compressor">Máy nén phương tiện</string>
+    <string name="tool_app_manager">Trình quản lý ứng dụng</string>
+    <string name="tool_clean_calendar">Lịch sạch</string>
+    <string name="tool_ai_enhancer">Công cụ nâng cao hình ảnh AI</string>
+    <string name="tool_secret_space">Không gian bí mật</string>
+    <string name="tool_speed_test">Kiểm tra tốc độ</string>
+    <string name="compressing">Đang nén…</string>
+    <string name="original_size_format">Bản gốc · %1$s</string>
+    <string name="compressed_result_format">Đã nén · %1$s\nĐã lưu · %2$s</string>
+    <string name="swipe_grant_access_hint">Cấp quyền truy cập phương tiện từ Trang chủ để duyệt ảnh</string>
+    <string name="media_item_placeholder">Phương tiện truyền thông</string>
+    <string name="selected_image_preview">Xem trước hình ảnh đã chọn</string>
+    <string name="current_photo">Ảnh hiện tại</string>
+    <string name="month_cover">Bìa tháng</string>
+    <string name="em_dash">—</string>
+    <string name="category_person_zero">Người · 0</string>
+    <string name="category_animal_zero">Động vật · 0</string>
+    <string name="category_vehicle_zero">Xe cộ · 0</string>
+    <string name="duplicate_photos_page_title">Ảnh trùng lặp</string>
+    <string name="duplicate_photos_page_subtitle">Tìm các bản sao chính xác theo kích thước và kích thước tệp, sau đó giữ một bản sao.</string>
+    <string name="duplicate_photos_page_badge">Kết hợp chính xác</string>
+    <string name="duplicate_photos_summary_format">Đã tìm thấy nhóm %1$d có ảnh trùng lặp %2$d.</string>
+    <string name="duplicate_photos_empty_title">Không tìm thấy ảnh trùng lặp</string>
+    <string name="duplicate_photos_empty_body">Không tìm thấy ảnh nào có cùng kích thước và kích thước.</string>
+    <string name="duplicate_videos_page_title">Video trùng lặp</string>
+    <string name="duplicate_videos_page_subtitle">Tìm các video trùng lặp chính xác theo kích thước và thời lượng, sau đó giữ một bản sao.</string>
+    <string name="duplicate_videos_page_badge">Kết hợp chính xác</string>
+    <string name="duplicate_videos_summary_format">Đã tìm thấy nhóm %1$d có video trùng lặp %2$d.</string>
+    <string name="duplicate_videos_empty_title">Không tìm thấy video trùng lặp</string>
+    <string name="duplicate_videos_empty_body">Không tìm thấy video nào có cùng kích thước và thời lượng.</string>
+    <string name="settings_page_title">Cài đặt</string>
+    <string name="settings_page_subtitle">Ngôn ngữ, thông tin ứng dụng, quyền riêng tư và bộ nhớ đệm.</string>
+    <string name="settings_language_title">Ngôn ngữ</string>
+    <string name="settings_language_subtitle">Chọn ngôn ngữ ứng dụng ưa thích của bạn</string>
+    <string name="settings_about_title">Giới thiệu</string>
+    <string name="settings_about_subtitle">Tên và phiên bản ứng dụng</string>
+    <string name="settings_about_message_format">Sạch siêu AI\nPhiên bản %1$s (%2$d)</string>
+    <string name="settings_privacy_policy_title">Chính sách bảo mật</string>
+    <string name="settings_privacy_policy_subtitle">Cách chúng tôi xử lý dữ liệu của bạn</string>
+    <string name="settings_privacy_policy_body">Tất cả quá trình quét và dọn dẹp phương tiện đều chạy cục bộ trên thiết bị của bạn. Chúng tôi không tải ảnh, video hoặc danh bạ của bạn lên máy chủ của chúng tôi. Phân tích tùy chọn (nếu được bật sau) sẽ tuân theo chính sách của cửa hàng. Bạn có thể thu hồi quyền truy cập phương tiện bất cứ lúc nào trong cài đặt hệ thống.</string>
+    <string name="settings_clear_cache_title">Xóa bộ nhớ đệm</string>
+    <string name="settings_clear_cache_subtitle">Lưu trữ ứng dụng tạm thời miễn phí</string>
+    <string name="settings_clear_cache_confirm">Xóa các tập tin bộ nhớ đệm tạm thời? Ảnh và cài đặt của bạn sẽ không bị xóa.</string>
+    <string name="settings_clear_cache_done_format">Đã xóa bộ nhớ đệm %1$s.</string>
+    <string name="language_page_title">Ngôn ngữ ứng dụng</string>
+    <string name="language_page_subtitle">Theo mặc định, CleanSuper AI tuân theo ngôn ngữ thiết bị của bạn.</string>
+    <string name="language_follow_system_title">Theo dõi ngôn ngữ hệ thống</string>
+    <string name="language_follow_system_subtitle_format">Ngôn ngữ thiết bị hiện tại: %1$s</string>
+    <string name="month_photo_count_format">Ảnh %1$d</string>
+    <string name="review_bin_pending_format">Ảnh %1$d đang chờ trong Thùng đánh giá</string>
+    <string name="media_bucket_video">Video</string>
+    <string name="settings_terms_title">Điều khoản sử dụng</string>
+    <string name="settings_terms_subtitle">Đọc các điều khoản</string>
+    <string name="settings_widget_title">Tiện ích màn hình chính</string>
+    <string name="settings_widget_subtitle">Thêm phím tắt dọn dẹp</string>
+    <string name="tool_network_traffic">Lưu lượng mạng</string>
+    <string name="tool_network_traffic_desc">Mức sử dụng theo ứng dụng</string>
+    <string name="tool_battery_info">Thông tin pin</string>
+    <string name="tool_battery_info_desc">Sạc và sức khỏe</string>
+    <string name="tool_device_info">Thông tin thiết bị</string>
+    <string name="tool_device_info_desc">Hệ thống và Wi-Fi</string>
+    <string name="tool_private_vault">Kho tiền riêng</string>
+    <string name="tool_private_vault_desc">Ẩn ảnh và video</string>
+    <string name="home_more_tools">Thêm công cụ</string>
+    <string name="home_battery_info">Pin</string>
+    <string name="home_device_info">Thiết bị</string>
+    <string name="home_large_files">Tệp lớn</string>
+    <string name="home_cache_cleanup">Làm sạch bộ nhớ đệm</string>
+    <string name="home_network_traffic">Sử dụng dữ liệu</string>
+    <string name="home_private_vault">Kho tiền riêng</string>
+    <string name="home_picture_cleanup">Hình Ảnh</string>
+    <string name="home_video_cleanup">Video</string>
+    <string name="home_audio_cleanup">Âm thanh</string>
+    <string name="media_loading">Đang tải phương tiện…</string>
+    <string name="media_loading_hint">Sắp xếp các tập tin của bạn. Vui lòng chờ.</string>
+    <string name="media_count_summary">Các mục %1$d · %2$s · Đã chọn %3$d</string>
+    <string name="media_empty_title">Không tìm thấy phương tiện nào</string>
+    <string name="media_empty_body">Không có mục nào trong danh mục này.</string>
+    <string name="media_error_title">Không thể tải phương tiện</string>
+    <string name="media_access_title">Cần có quyền truy cập vào bộ nhớ</string>
+    <string name="media_access_body">Cho phép tất cả các tệp truy cập trong Cài đặt để duyệt phương tiện này.</string>
+    <string name="media_delete_title">Xóa các mục đã chọn?</string>
+    <string name="media_delete_message">Xóa các mục đã chọn %1$d? Android có thể yêu cầu bạn xác nhận.</string>
+    <string name="media_recent_group">Trong vòng 1 tháng</string>
+    <string name="media_older_group">Cách đây hơn 1 tháng</string>
+    <string name="media_group_summary">Vật phẩm %1$d · %2$s</string>
+    <string name="audio_player_unavailable">Không có trình phát âm thanh nào có sẵn trên thiết bị này.</string>
+    <string name="vault_items_summary">Vật phẩm riêng tư %1$d</string>
+    <string name="vault_empty_gallery">Kho tiền riêng của bạn trống rỗng. Nhập ảnh hoặc video để xem chúng ở đây.</string>
+    <string name="cache_group_app">Bộ nhớ đệm ứng dụng</string>
+    <string name="cache_group_apk">Tệp APK cũ</string>
+    <string name="cache_group_residual">Các tập tin còn lại</string>
+    <string name="cache_summary">Các tập tin %1$d · %2$s</string>
+    <string name="cleanup_report_title">Vệ sinh hoàn tất</string>
+    <string name="cleanup_report_freed">Không gian được giải phóng</string>
+    <string name="cleanup_report_count">Đã xóa %1$d trong số các mục %2$d</string>
+    <string name="cleanup_report_other">Làm sạch các tập tin khác</string>
+    <string name="cleanup_report_done">Xong</string>
+    <string name="exit_retain_title">Thoát CleanSuper AI?</string>
+    <string name="exit_retain_message">Thêm tiện ích gia đình để dọn dẹp nhanh hơn</string>
+    <string name="exit_retain_confirm_exit">Thoát</string>
+    <string name="exit_retain_add">Thêm</string>
+    <string name="exit_retain_feature_cache">Bộ nhớ đệm</string>
+    <string name="exit_retain_feature_large">Tệp lớn</string>
+    <string name="widget_status_storage">Không gian trống</string>
+    <string name="notif_screenshot">Ảnh chụp màn hình</string>
+    <string name="exit_retain_message_existing">Tiện ích nhà của bạn đã sẵn sàng để dọn dẹp nhanh chóng</string>
+    <string name="notif_cache">Bộ nhớ đệm</string>
+    <string name="notif_channel_name">Thanh công cụ làm sạch nhanh</string>
+    <string name="notif_channel_desc">Thanh công cụ liên tục cho các thao tác dọn dẹp nhanh chóng</string>
+    <string name="notif_speed_placeholder">0,0 KB/s</string>
+    <string name="notif_event_channel_name">Lời nhắc sạch</string>
+    <string name="notif_event_channel_desc">Lời nhắc cục bộ sau khi chụp ảnh màn hình, cài đặt và gỡ cài đặt</string>
+    <string name="notif_event_summary_channel_name">Tóm tắt lời nhắc sạch</string>
+    <string name="notif_event_screenshot_title">Một ảnh chụp màn hình khác? 1 Đã đến lúc xóa ảnh chụp màn hình</string>
+    <string name="notif_event_install_title">Ứng dụng mới đã được chuyển đến và bộ đệm cũng vậy. dọn dẹp</string>
+    <string name="notif_event_uninstall_title">Đã gỡ cài đặt thành công! để dọn dẹp dư lượng tập tin</string>
+    <string name="notif_clean_reminder_title">Có rất nhiều rác chất đống. Làm sạch tất cả cùng một lúc.</string>
+    <string name="notif_event_battery_below_50_title">Pin đã đầy hơn một nửa. Hãy chăm sóc nó ngay bây giờ, nó sẽ kéo dài cho đến khi bạn về đến nhà.</string>
+    <string name="notif_event_battery_below_20_title">Pin yếu. Bạn muốn biết ai đang ăn cắp điện của bạn? Nhấn vào đây để xem bảng xếp hạng.</string>
+    <string name="notif_event_charging_title">Đã cắm điện. Nhiệm vụ của tối nay: đổ đầy pin, sau đó làm sạch.</string>
+    <string name="notif_event_charging_full_title">Sạc đầy và sẵn sàng để đi. Kiểm tra lần cuối: Thùng rác đã được dọn sạch chưa?</string>
+    <string name="notif_event_charging_to_80_title">Lần chạy nước rút cuối cùng là 80%. Dỡ rác và đóng gói nhẹ nhàng để chào đón toàn bộ sức mạnh.</string>
+    <string name="notif_event_charging_disconnect_title">Rút phích cắm và khởi hành. Hãy nhớ dành thời gian để dọn rác và giữ dáng ở trạng thái tốt nhất.</string>
+    <string name="notif_event_app_update_title">Một phiên bản mới đã đến. Mọi thứ còn sót lại từ phiên bản cũ đều được dọn sạch hoàn toàn.</string>
+    <string name="notif_event_network_change_title">Trang web thay đổi! Xem trạng thái mạng hiện tại 1</string>
+    <string name="notif_event_screen_lock_title">Hãy đặt điện thoại của bạn xuống và để việc đó cho chúng tôi. Thời gian nghỉ ngơi trên màn hình = thời gian cho con bú.</string>
+    <string name="notif_event_screen_on_after_lock_title">Chúng ta lại gặp nhau, bạn có bị mắc kẹt không? Hầu hết là rác, hãy thử dọn sạch nó.</string>
+    <string name="notif_event_storage_free_drop_title">Không gian lưu trữ đã thay đổi. Hãy xem những gì chiếm không gian?</string>
+    <string name="notif_event_scheduled_push_1_title">Rác tích tụ bấy lâu nay sẽ được dọn sạch ngay lập tức.</string>
+    <string name="notif_event_scheduled_push_2_title">Pin không còn bền như trước nữa? Hãy kiểm tra nó.</string>
+    <string name="notif_event_app_inactive_title">Đã lâu không gặp, nó đã chờ đợi. Hãy quay lại và dọn rác.</string>
+    <string name="notif_event_scheduled_push_3_title">Một lần nhấn vào danh sách phát của bạn - thiết lập tiện ích</string>
+    <string-array name="notif_event_scheduled_push_3_titles">
+        <item>Một lần nhấn vào danh sách phát của bạn - thiết lập tiện ích</item>
+        <item>Làm mọi thứ dễ dàng hơn với tiện ích - thêm lối tắt nhạc</item>
+        <item>Chơi nhanh mà không cần mở khóa — bật tiện ích màn hình chính</item>
+    </string-array>
+    <string name="notif_event_app_background_title">Bạn đã quên điều gì đó</string>
+    <string name="notif_event_app_background_content">Hãy dọn dẹp xong để nó chạy mượt mà hơn.</string>
+    <string-array name="notif_event_app_background_titles">
+        <item>Bạn đã quên điều gì đó</item>
+        <item>Còn một bước nữa</item>
+        <item>tin tốt</item>
+        <item>Bạn đã rời đi quá nhanh</item>
+        <item>Đừng để rác qua đêm</item>
+    </string-array>
+    <string-array name="notif_event_app_background_contents">
+        <item>Hãy dọn dẹp xong để nó chạy mượt mà hơn.</item>
+        <item>Nhấn thêm một lần nữa để hoàn tất quá trình dọn dẹp và giải phóng thêm dung lượng.</item>
+        <item>Đã phát hiện thấy dung lượng có thể giải phóng - hãy đến yêu cầu dọn dẹp chỉ bằng một cú chạm.</item>
+        <item>Điện thoại của bạn có thể còn nhanh hơn nữa — hãy đến xem tính năng tối ưu hóa.</item>
+        <item>Hãy dọn dẹp xong để nó chạy mượt mà hơn.</item>
+    </string-array>
+    <string name="notif_event_scan_done_uncleaned_title">Kết quả quét đã sẵn sàng — rác đang chiếm dung lượng. Dọn dẹp ngay bây giờ</string>
+    <string-array name="notif_event_scan_done_uncleaned_titles">
+        <item>Kết quả quét đã sẵn sàng — rác đang chiếm dung lượng. Dọn dẹp ngay bây giờ</item>
+        <item>Còn một bước nữa: quay lại và giải phóng không gian ngay lập tức.</item>
+        <item>Quên làm sạch sau khi quét? 10 giây để làm cho điện thoại của bạn nhẹ hơn.</item>
+        <item>Thư rác vẫn còn trên điện thoại của bạn — đã lưu kết quả. Hãy quay lại để làm sạch bằng một cú chạm.</item>
+        <item>Lần quét cuối cùng đã tìm thấy nhiều mục cần dọn dẹp. Hãy hoàn thành nó.</item>
+    </string-array>
+    <string name="notif_event_scan_interrupted_title">Việc dọn dẹp vẫn chưa xong - hãy hoàn thành bước cuối cùng.</string>
+    <string-array name="notif_event_scan_interrupted_titles">
+        <item>Việc dọn dẹp vẫn chưa xong - hãy hoàn thành bước cuối cùng.</item>
+        <item>Việc dọn dẹp bị gián đoạn: được nửa đường. Kết thúc cho một chiếc điện thoại nhẹ hơn.</item>
+        <item>Việc dọn dẹp gần như đã hoàn tất - đừng bỏ lại rác.</item>
+        <item>Bạn dọn dẹp giữa chừng - hãy hoàn thành nó và cảm nhận sự khác biệt.</item>
+        <item>Việc dọn dẹp bị gián đoạn có thể tiếp tục bất cứ lúc nào. Hãy hoàn thành nó.</item>
+    </string-array>
+    <string name="notif_event_image_deleted_title">Đã xóa ảnh - được chuyển vào thùng rác một cách an toàn.</string>
+    <string-array name="notif_event_image_deleted_titles">
+        <item>Đã xóa ảnh - được chuyển vào thùng rác một cách an toàn.</item>
+        <item>Vừa xóa 1 ảnh - hãy xem bạn đã giải phóng bao nhiêu dung lượng?</item>
+        <item>Đã xóa ảnh — xóa vĩnh viễn để giải phóng dung lượng ngay bây giờ.</item>
+        <item>Ảnh đã được xóa an toàn - trạng thái lưu trữ đã được cập nhật.</item>
+        <item>Đã xóa ảnh - bạn cũng có thể xóa các ảnh chụp màn hình tương tự.</item>
+    </string-array>
+    <string name="notif_event_video_deleted_title">Video đã bị xóa - không gian rộng lớn được giải phóng.</string>
+    <string-array name="notif_event_video_deleted_titles">
+        <item>Video đã bị xóa - không gian rộng lớn được giải phóng.</item>
+        <item>Đã xóa video lớn — áp lực lưu trữ giảm ngay lập tức.</item>
+        <item>Đã xóa video — hãy kiểm tra trạng thái lưu trữ hiện tại của bạn.</item>
+        <item>Xóa xong — dọn sạch thùng rác để giải phóng hoàn toàn dung lượng.</item>
+        <item>Đã xóa video — có thể còn nhiều video lớn bị lãng quên cần dọn dẹp.</item>
+    </string-array>
+    <string name="notif_event_audio_deleted_title">Âm thanh đã bị xóa - các tập tin nhỏ được thêm vào. Tiếp tục đi.</string>
+    <string-array name="notif_event_audio_deleted_titles">
+        <item>Âm thanh đã bị xóa - các tập tin nhỏ được thêm vào. Tiếp tục đi.</item>
+        <item>Âm thanh đó đã biến mất - nhiều tệp không sử dụng tương tự khác cũng có thể được xóa.</item>
+        <item>Đã xóa âm thanh - đã cập nhật chi tiết bộ nhớ. Hãy đến xem.</item>
+        <item>Đã xóa 1 tệp âm thanh - danh sách lưu trữ được làm mới.</item>
+        <item>Đã xóa âm thanh — dọn sạch thùng rác để hoàn tất việc giải phóng dung lượng.</item>
+    </string-array>
+    <string name="notif_event_file_deleted_title">Đã xóa tệp - giải phóng thêm một chút dung lượng lưu trữ.</string>
+    <string-array name="notif_event_file_deleted_titles">
+        <item>Đã xóa tệp - giải phóng thêm một chút dung lượng lưu trữ.</item>
+        <item>Đã xóa tệp - sự lộn xộn sẽ không làm phiền điện thoại của bạn nữa.</item>
+        <item>Tệp đã bị xóa - hãy xem bạn có thể xóa những gì khác.</item>
+        <item>Tệp đã bị xóa - các thay đổi được đồng bộ hóa, trạng thái lưu trữ được cập nhật.</item>
+        <item>Tệp đó đã bị xóa - hiện đang lấy lại dung lượng.</item>
+    </string-array>
+    <string name="notif_event_image_download_title">Hình ảnh đã tải xuống - hãy mở nó và xem.</string>
+    <string-array name="notif_event_image_download_titles">
+        <item>Hình ảnh đã tải xuống - hãy mở nó và xem.</item>
+        <item>Đã tải xuống hình ảnh — xóa các ảnh trùng lặp trong album của bạn khi bạn đang ở đó</item>
+        <item>Tải xuống xong - hình ảnh được lưu an toàn. Hãy đến kiểm tra các bức ảnh tương tự</item>
+    </string-array>
+    <string name="notif_event_video_download_title">Video đã tải xuống — nó không hề nhỏ. Xem video cũ có thể giải phóng bao nhiêu dung lượng</string>
+    <string-array name="notif_event_video_download_titles">
+        <item>Video đã tải xuống — nó không hề nhỏ. Xem video cũ có thể giải phóng bao nhiêu dung lượng</item>
+        <item>Đã lưu video mới — tìm các video lớn để xóa và giải phóng dung lượng. Nhấn vào tôi</item>
+        <item>Video chiếm dung lượng — chúng tôi đã tìm thấy những vật dụng có thể làm sạch để làm nhẹ điện thoại của bạn. Nhấn vào đây</item>
+        <item>Tải xuống xong! Làm sạch một vài video cũ và dung lượng sẽ quay trở lại. Nhấn vào tôi</item>
+        <item>Video mới được sắp xếp — dễ tìm hoặc sạch. Nhấn để xem</item>
+    </string-array>
+    <string name="notif_event_audio_download_title">Đã tải xuống âm thanh - dọn dẹp thư viện nhạc của bạn chỉ bằng một cú chạm. Nhấn vào tôi</string>
+    <string-array name="notif_event_audio_download_titles">
+        <item>Đã tải xuống âm thanh - dọn dẹp thư viện nhạc của bạn chỉ bằng một cú chạm. Nhấn vào tôi</item>
+        <item>Đã sắp xếp âm thanh mới — xóa sạch âm thanh cũ khi bạn ở đây. Nhấn vào tôi</item>
+        <item>Thư viện nhạc sắp đầy? Kiểm tra âm thanh có thể làm sạch. Nhấn vào đây</item>
+        <item>Đã tải xuống âm thanh - loại bỏ trùng lặp chỉ bằng một lần nhấn. Nhấn vào tôi để dọn dẹp</item>
+    </string-array>
+    <string name="notif_event_file_download_title">Đã lưu tệp mới - xóa các tệp cũ và giải phóng dung lượng. Nhấn vào đây</string>
+    <string-array name="notif_event_file_download_titles">
+        <item>Đã lưu tệp mới - xóa các tệp cũ và giải phóng dung lượng. Nhấn vào đây</item>
+        <item>Tải xuống xong - xem những tập tin cũ nào bạn có thể xóa. Nhấn vào tôi</item>
+        <item>Tệp mới đã sẵn sàng — lưu trữ thông minh + sạch sẽ. Hãy nhấn vào tôi để bắt đầu</item>
+    </string-array>
+    <string name="notif_event_trash_emptied_title">Thùng rác đã trống - bộ nhớ đã được làm mới. Kiểm tra không gian mới nhất của bạn.</string>
+    <string-array name="notif_event_trash_emptied_titles">
+        <item>Thùng rác đã trống - bộ nhớ đã được làm mới. Kiểm tra không gian mới nhất của bạn.</item>
+        <item>Thùng rác đã trống - hãy dọn sạch thức ăn thừa.</item>
+        <item>Đã dọn sạch thành công — còn nhiều rác cần dọn dẹp hơn. Hãy đến xem.</item>
+    </string-array>
+    <string name="notif_event_action_clean">Dọn dẹp ngay bây giờ</string>
+    <string name="notif_event_action_open_home">Mở</string>
+    <string name="notif_event_action_manage">Quản lý ứng dụng</string>
+    <string name="notif_event_action_check_battery">Kiểm tra pin</string>
+    <string name="notif_event_action_check_network">Kiểm tra mạng</string>
+    <string name="notif_days_unit">ngày</string>
+    <string-array name="notif_event_storage_free_drop_titles">
+        <item>Không gian lưu trữ đã thay đổi. Hãy xem những gì chiếm không gian?</item>
+        <item>Những thay đổi không gian được phát hiện. Có thể có một số rác mới, hãy xem?</item>
+        <item>Không gian có sẵn đã di chuyển. Bạn có biết ai đã ăn nó không? Nhấn vào đây để xem.</item>
+        <item>Không gian có chật hẹp không? Vừa phát hiện ra sự thay đổi, chúng ta cùng xem chi tiết nhé.</item>
+        <item>Nhắc nhở thay đổi không gian: Bạn có thể tích lũy rất nhiều rác. Kiểm tra xem nó ra?</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_20_titles">
+        <item>Pin yếu. Bạn muốn biết ai đang ăn cắp điện của bạn? Nhấn vào đây để xem bảng xếp hạng.</item>
+        <item>Sắp chạm đáy. Nếu bạn dọn sạch những ứng dụng ăn cắp điện thì bạn vẫn có thể sống sót được một thời gian.</item>
+        <item>Pin sắp hết. Xóa một vài hình nền sẽ tốt hơn là không làm gì cả.</item>
+        <item>Pin có màu đỏ. Bạn vẫn có thể lưu nó, bấm vào để mở nó và xem qua.</item>
+        <item>Ít hơn 20% remain. Hãy thực hiện một số thao tác sơ cứu tiết kiệm năng lượng và dọn dẹp.</item>
+    </string-array>
+    <string-array name="notif_event_battery_below_50_titles">
+        <item>Pin đã đầy hơn một nửa. Hãy chăm sóc nó ngay bây giờ, nó sẽ kéo dài cho đến khi bạn về đến nhà.</item>
+        <item>Pin đã đầy hơn một nửa. Việc chăm sóc pin lúc này dễ dàng hơn rất nhiều so với việc đợi đến 20%.</item>
+        <item>Pin đã hết một nửa. Nó có thể kéo dài bao lâu? Nhấn vào đây để xem.</item>
+        <item>Pin đã đầy hơn một nửa. Đã đến lúc chăm sóc phần phụ trợ, đừng đợi nó lo lắng.</item>
+        <item>Còn một nửa pin. Loại bỏ những cầu thủ háu năng lượng lớn và giúp hiệp hai ổn định hơn.</item>
+    </string-array>
+    <string-array name="notif_event_charging_to_80_titles">
+        <item>Lần chạy nước rút cuối cùng là 80%. Dỡ rác và đóng gói nhẹ nhàng để chào đón toàn bộ sức mạnh.</item>
+        <item>Vẫn còn 20% short sạc đầy. Hãy ngừng nhìn chằm chằm vào màn hình của bạn và để chúng tôi xử lý thùng rác.</item>
+        <item>80%: Còn một bước nữa là tới sự hoàn hảo. Bấm một lần và nó sẽ bị xóa hoàn toàn khi pin được sạc đầy.</item>
+        <item>80%, a pin tốt cho một chiếc điện thoại di động tốt. Dọn dẹp một lúc khi trời còn nóng?</item>
+        <item>20% i cuối cùng được trao cho chúng tôi. Bạn nhìn vào pin và chúng tôi dọn rác.</item>
+    </string-array>
+    <string-array name="notif_event_charging_full_titles">
+        <item>Sạc đầy và sẵn sàng để đi. Kiểm tra lần cuối: Thùng rác đã được dọn sạch chưa?</item>
+        <item>Sau khi sạc, cảm giác nghi lễ tràn đầy. Làm thế nào về việc dọn rác để kỷ niệm nó?</item>
+        <item>100%, sbàn hôm nay. Thêm một vòng nữa và nó hoàn hảo.</item>
+        <item>100%. Bước cuối cùng trước khi rút phích cắm: dọn sạch thùng rác, ba mươi giây.</item>
+        <item>Hoàn thành với toàn bộ sức mạnh. Một lần dọn dẹp cuối cùng, hoàn hảo.</item>
+    </string-array>
+    <string-array name="notif_event_network_change_titles">
+        <item>Trang web thay đổi! Xem trạng thái mạng hiện tại 1</item>
+        <item>Sự đào ngũ của mạng. Đừng nhìn vào tín hiệu khi làm sạch, chỉ cần nhấp vào nó và quét.</item>
+        <item>Không thể mở trang? Dọn dẹp luôn trực tuyến.</item>
+        <item>Bạn có thể làm việc ngoại tuyến và thùng rác của bạn có thể được xóa ngay bây giờ.</item>
+        <item>Nếu không có tín hiệu, không cần dữ liệu để dọn dẹp, chỉ cần nhấp chuột.</item>
+    </string-array>
+    <string-array name="notif_event_charging_titles">
+        <item>Đã cắm điện. Nhiệm vụ của tối nay: nạp tiền, sau đó dọn dẹp.</item>
+        <item>Bạn đang nghỉ ngơi, nó đang sạc lại. Hãy để nó dọn sạch thùng rác là tốt.</item>
+        <item>Trong thời gian sạc, chỉ cần dọn sạch rác tích tụ lâu ngày là đủ.</item>
+        <item>Chỉ khi có điện, nhân viên hậu trường mới dám làm việc thoải mái.</item>
+        <item>Bị nóng một chút trong khi sạc? Xóa nền có thể làm giảm nhiệt độ.</item>
+    </string-array>
+    <string-array name="notif_event_charging_disconnect_titles">
+        <item>Rút phích cắm và khởi hành. Hãy nhớ dành thời gian để dọn rác và giữ dáng ở trạng thái tốt nhất.</item>
+        <item>Sau khi sạc xong, thu dọn đồ đạc và khởi hành. Chỉ cần làm sạch nó và nó sẽ hoàn hảo.</item>
+        <item>Sạc đầy và sẵn sàng để sử dụng. Dọn rác một cách suôn sẻ, hôm nay không có thiếu sót gì.</item>
+        <item>Quá trình sạc kết thúc. Không gian tiếp theo sẽ được dọn dẹp và nâng cấp từng cấp một.</item>
+        <item>Đừng dừng lại ở việc mất điện. Còn lại một việc: dọn dẹp.</item>
+    </string-array>
+    <string-array name="notif_event_screen_on_after_lock_titles">
+        <item>Chúng ta lại gặp nhau, bạn có bị mắc kẹt không? Hầu hết là rác, hãy thử dọn sạch nó.</item>
+        <item>Đã mở khóa? Đừng mở các ứng dụng khác trước và dọn thùng rác trong ba mươi giây.</item>
+        <item>Điều đầu tiên để mở khóa là chúng tôi. Hãy dọn rác và nó sẽ yêu bạn nhiều hơn.</item>
+        <item>Ba mươi giây sau khi mở khóa. Công dụng có giá trị nhất: dọn rác.</item>
+        <item>Điện thoại di động của bạn cho biết: Phần phụ trợ hơi bị chặn, bạn có thể giúp tôi không?</item>
+    </string-array>
+    <string-array name="notif_event_screen_lock_titles">
+        <item>Hãy đặt điện thoại của bạn xuống và để việc đó cho chúng tôi. Thời gian nghỉ ngơi trên màn hình = thời gian cho con bú.</item>
+        <item>Dừng công việc không có nghĩa là dừng công việc. Tôi sẽ mang đến cho bạn một điều bất ngờ vào lần tới khi tôi bật màn hình lên.</item>
+        <item>Âm thầm trở nên tốt hơn trong khi nghỉ ngơi màn hình. Hãy nhấp vào và chúng tôi sẽ làm phần còn lại.</item>
+        <item>Điều cuối cùng trước khi khóa màn hình: Nhấp vào Clean. Một diện mạo mới vào sáng mai.</item>
+        <item>Màn hình tối đi. Hãy sắp xếp ngay bây giờ và xem kết quả vào ngày mai.</item>
+    </string-array>
+    <string-array name="notif_event_install_titles">
+        <item>Ứng dụng mới đã được chuyển đến và bộ đệm cũng vậy. dọn dẹp</item>
+        <item>Chúng tôi hiểu niềm vui của việc cài đặt một ứng dụng mới. Chỉ là bộ nhớ đệm sẽ âm thầm tích tụ.</item>
+        <item>Ứng dụng mới? Bộ nhớ đệm cũng ở đây, hãy xóa nó bằng một cú nhấp chuột.</item>
+        <item>Cái mới đến và cái cũ đi ra. Làm sạch nó thường xuyên và cài đặt nó theo ý muốn.</item>
+        <item>Một cái khác? Không gian dần dần thu hẹp lại, hãy đến và dọn dẹp nó.</item>
+    </string-array>
+    <string-array name="notif_event_uninstall_titles">
+        <item>Đã gỡ cài đặt thành công! để dọn dẹp dư lượng tập tin</item>
+        <item>Đã gỡ bỏ nhưng chưa dọn sạch. Bấm để hoàn tất.</item>
+        <item>Ứng dụng đã được gỡ cài đặt nhưng phần đuôi vẫn còn đó. Dọn dẹp chỉ bằng một cú nhấp chuột và nói lời tạm biệt một lần và mãi mãi.</item>
+        <item>Đừng bỏ lỡ bước thứ hai: xóa Ứng dụng + xóa cặn. Một cú nhấp chuột và hoàn tất.</item>
+        <item>Phần còn lại sẽ chiếm hết một nửa không gian trống. Quét sâu và xóa mọi thứ.</item>
+    </string-array>
+    <string-array name="notif_event_app_update_titles">
+        <item>Một phiên bản mới đã đến. Mọi thứ còn sót lại từ phiên bản cũ đều được dọn sạch hoàn toàn.</item>
+        <item>+1 cho phiên bản, +1 cho bộ đệm, để quét sâu.</item>
+        <item>Quá trình cập nhật hoàn tất và các gói cài đặt còn lại có thể được dọn sạch chỉ bằng một cú nhấp chuột.</item>
+        <item>Quá trình cập nhật đã hoàn tất, hãy kết thúc. Hãy dọn dẹp nó và tôi sẽ tiếp quản.</item>
+        <item>Mỗi bản cập nhật sẽ để lại các tập tin cũ và xử lý chúng một cách nhanh chóng.</item>
+    </string-array>
+    <string-array name="notif_event_screenshot_titles">
+        <item>Một ảnh chụp màn hình khác? 1 Đã đến lúc xóa ảnh chụp màn hình</item>
+        <item>Đã tìm thấy ảnh chụp màn hình mới, nhấp để xem và dọn dẹp nó ~</item>
+        <item>Ngày càng có nhiều ảnh chụp màn hình, việc dọn dẹp chỉ bằng một cú nhấp chuột có thể giúp bạn giải phóng không gian</item>
+        <item>Ảnh chụp màn hình đã được chụp thành công, những ảnh trùng lặp và bị mờ có thể được lọc ra chỉ bằng một cú nhấp chuột.</item>
+        <item>Ảnh chụp màn hình mới được thêm vào cơ sở dữ liệu và các hình ảnh trùng lặp đã được xếp hàng để xóa chỉ bằng một cú nhấp chuột.</item>
+    </string-array>
+    <string-array name="notif_event_clean_reminder_titles">
+        <item>Có rất nhiều rác chất đống. Làm sạch tất cả cùng một lúc.</item>
+        <item>%1$d được làm sạch lần cuối cách đây vài ngày, nhấp để xử lý ngay bây giờ</item>
+        <item>Đã mấy ngày không đến đây, tôi sẽ dọn dẹp sạch sẽ rồi nhẹ nhàng quay lại chiến trường.</item>
+        <item>Hạn ngạch thanh toán bù trừ vẫn chưa được sử dụng ngày hôm nay. Tôi sẽ xóa nó khi tôi trở lại.</item>
+        <item>Bộ nhớ đệm sắp đầy, chờ bạn kiểm tra</item>
+    </string-array>
+    <string-array name="notif_event_app_inactive_titles">
+        <item>Đã lâu không gặp, nó đã chờ đợi. Hãy quay lại và dọn rác.</item>
+        <item>Đã mấy ngày không gặp bạn. Không có phần còn lại cho rác. Hãy quay lại và quét nó lên.</item>
+        <item>Bộ đệm được xếp hàng đợi. Nhấp vào và chúng biến mất.</item>
+        <item>Thùng rác đang bận khi bạn đi vắng. Làm trống chỉ bằng một cú nhấp chuột và cảm thấy tươi mới hơn bao giờ hết.</item>
+        <item>Mặt sau? Hãy dọn rác trước. Trong ba mươi giây, điện thoại sẽ nhẹ như mới.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_1_titles">
+        <item>Rác tích tụ bấy lâu nay sẽ được dọn sạch ngay lập tức.</item>
+        <item>Đã đến lúc dọn dẹp. Thùng rác của ngày hôm nay đang chờ bạn nhấp vào.</item>
+        <item>Tờ Space Daily hôm nay đã đến. Dọn dẹp và giữ cho nó nhẹ nhàng.</item>
+        <item>Một số tệp lớn hơn nhiều so với bạn nghĩ, hãy xem qua</item>
+        <item>Tìm anh chàng đã lấy được vài điểm G và dọn dẹp nó</item>
+        <item>Danh sách tài liệu lớn đã sẵn sàng, hãy đến xem.</item>
+        <item>Ai chiếm nhiều không gian nhất? Tiết lộ trong một giây.</item>
+        <item>Chụp liên tục thì tuyệt, hoàn thiện thì đau. Hãy để nó cho chúng tôi.</item>
+        <item>Những bức ảnh tương tự được xếp thành hàng, bạn có thể chọn giữ bức nào</item>
+        <item>Có quá nhiều hình ảnh giống nhau? Chúng tôi sẽ giúp bạn so sánh và loại bỏ các bản sao chỉ bằng một cú nhấp chuột.</item>
+        <item>Các video ngoại tuyến được lưu trong bộ nhớ đệm sẽ bị xóa.</item>
+        <item>Âm thanh còn lại cũng sẽ được làm sạch.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_push_2_titles">
+        <item>Pin không còn bền như trước nữa? Hãy kiểm tra nó.</item>
+        <item>Ai đang ăn cắp điện của bạn? Bạn sẽ biết khi bạn tra cứu nó.</item>
+        <item>Tắt những thứ này sẽ kéo dài tuổi thọ pin.</item>
+        <item>Một số ứng dụng được cài đặt nhưng không bao giờ được sử dụng. Hãy xem họ là ai?</item>
+        <item>Giữ lại những ứng dụng bạn không dùng cũng là một gánh nặng, danh sách đã được lập sẵn</item>
+        <item>Về quyền riêng tư, việc xử lý càng sớm thì càng tốt.</item>
+        <item>Ẩn những cái quan trọng và loại bỏ những cái không cần thiết. hãy để tôi giúp bạn</item>
+        <item>Giao thông đi đâu? Tìm hiểu xem ai đang sử dụng nó.</item>
+        <item>Thông tin chi tiết về giao thông luôn sẵn sàng và rõ ràng trong nháy mắt.</item>
+        <item>Có một ứng dụng bí mật kết nối Internet ở chế độ nền.</item>
+    </string-array>
+    <string name="notif_scheduled_storage_clean">{size} rác—xóa nó chỉ bằng một lần nhấn</string>
+    <string name="notif_scheduled_large_files">{tổng cộng} tệp lớn—dọn dẹp dễ dàng</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} nhóm ảnh trùng lặp—tiết kiệm {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} của các ảnh tương tự—chọn nội dung cần xóa</string>
+    <string name="notif_scheduled_videos">{total} video—xóa {n} để giải phóng dung lượng</string>
+    <string name="notif_scheduled_audio">{tổng cộng} tệp âm thanh—đã đến lúc dọn dẹp</string>
+    <string name="notif_scheduled_apps">{size} được sử dụng bởi các ứng dụng nhàn rỗi {idle}</string>
+    <string name="notif_scheduled_data">{trở lại} dữ liệu được sử dụng ở chế độ nền</string>
+    <string name="app_manager_uninstall_selected">Gỡ cài đặt mục đã chọn</string>
+    <string name="app_manager_uninstall_selected_count">Gỡ cài đặt mục đã chọn (%1$d)</string>
+    <string name="cache_removable">Có thể tháo rời</string>
+    <string name="cache_clean_selected">Xóa bộ nhớ đệm</string>
+    <string name="cache_clean_selected_summary">Sạch %1$s (%2$d)</string>
+</resources>
