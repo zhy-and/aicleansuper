@@ -128,7 +128,7 @@ class CleanSuperAiApp : Application() {
         AppsFlyerLib.getInstance().init("TX2uVpH9Wi74UNhFV9RLvY", null, this)
         AppsFlyerLib.getInstance().start(this)
         //todo
-        AppsFlyerLib.getInstance().setDebugLog(true)
+//        AppsFlyerLib.getInstance().setDebugLog(true)
     }
 
     private fun scheduleBackgroundPush() {
