@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>تنبيه التخزين: تم العثور على {size} من النفايات غير المرغوب فيها. تنظيفه بنقرة واحدة.</item>
+        <item>تم إنشاء {size} من ذاكرة التخزين المؤقت. قم بإخلاء مساحة الآن.</item>
+        <item>تم العثور على {apps} تطبيقًا يستخدم {size}. قم بتنظيفها.</item>
+        <item>عثر النظام على {size} من الملفات المؤقتة. تنظيفها بأمان.</item>
+        <item>يقوم أحد التطبيقات بإنشاء ذاكرة تخزين مؤقت. انقر لمراجعته.</item>
+        <item>تم العثور على {size} من المجلدات الفارغة والملفات المكررة. تنظيفها بنقرة واحدة.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>صورك تشغل مساحة. ضغطها واحتفظ بها حادة.</item>
+        <item>هل قمت بحفظ {photos} صورة؟ قم بضغطها لإفساح المجال للمزيد.</item>
+        <item>{photos} صورة يمكن أن تحرر {size} صورة. قم بضغطها الآن.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>تستخدم مقاطع الفيديو {size}. قم بضغطها دفعة واحدة وتوفير المساحة.</item>
+        <item>قم بضغط مقاطع الفيديو الخاصة بك واحفظ ما يصل إلى {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>تم العثور على {photos} صورة ضبابية. تعزيزها للحصول على نظرة أكثر وضوحا.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>تم العثور على {contacts} جهات اتصال مكررة. دمجها بنقرة واحدة.</item>
+        <item>تم العثور على {contacts} جهة اتصال بدون أسماء. قم بترتيب دفتر العناوين الخاص بك.</item>
+        <item>لم يتم الاحتفاظ بنسخة احتياطية من جهات الاتصال الخاصة بك مؤخرًا. ابقهم آمنين.</item>
+        <item>{contacts} سجلات الاتصال غير مكتملة. املأ التفاصيل.</item>
+        <item>بعض جهات الاتصال المستوردة حديثًا مكررة. قم بتنظيمهم الآن.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>الحدث الخاص بك القادم هو الخروج. استعد.</item>
+        <item>الحدث المهم الخاص بك هو في {days} يوما. هل أنت مستعد؟</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>ما مدى سرعة اتصالك؟ قم بإجراء اختبار سريع للسرعة.</item>
+        <item>الشبكات المحولة؟ تحقق من أيهما أسرع ويستخدم بيانات أقل.</item>
+    </string-array>
+</resources>

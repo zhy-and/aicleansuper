@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>அனைத்தும்</item>
+        <item>படங்கள்</item>
+        <item>வீடியோக்கள்</item>
+        <item>ஒலி</item>
+        <item>ஆவணங்கள்</item>
+        <item>காப்பகங்கள்</item>
+        <item>APK</item>
+        <item>பிற</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>எல்லாக் காலமும்</item>
+        <item>1 வாரம்</item>
+        <item>1 மாதம்</item>
+        <item>3 மாதங்கள்</item>
+        <item>6 மாதங்கள்</item>
+        <item>1 ஆண்டு</item>
+    </string-array>
+    <string name="large_file_filter_type">வகை</string>
+    <string name="large_file_filter_size">அளவு</string>
+    <string name="large_file_filter_time">காலம்</string>
+    <string name="large_file_filter_description">%1$s வடிகட்டி: %2$s</string>
+    <string name="large_file_access_required">அனைத்துக் கோப்புகளுக்கும் அணுகல் தேவை</string>
+    <string name="large_file_scanning">கோப்புகள் ஸ்கேன் செய்யப்படுகின்றன…</string>
+    <string name="large_file_summary">%1$d கோப்புகள் · %2$s</string>
+    <string name="large_file_select_all">அனைத்தையும் தேர்ந்தெடு</string>
+    <string name="large_file_deselect_all">அனைத்துத் தேர்வுகளையும் நீக்கு</string>
+    <string name="large_file_select_all_shown">காட்டப்படும் அனைத்தையும் தேர்ந்தெடு</string>
+    <string name="large_file_deselect_all_shown">காட்டப்படும் அனைத்தின் தேர்வையும் நீக்கு</string>
+    <string name="large_file_delete_selected">தேர்ந்தவற்றை நீக்கு</string>
+    <string name="large_file_delete_amount">%1$s (%2$d) நீக்கு</string>
+    <string name="large_file_open">திற</string>
+    <string name="large_file_delete">நீக்கு</string>
+    <string name="large_file_delete_confirm">தேர்ந்தெடுத்த %1$d கோப்புகளை நீக்கவா?</string>
+    <string name="large_file_deleted_summary">%2$d கோப்புகளில் %1$d நீக்கப்பட்டன</string>
+    <string name="sys_level">நிலை அளவு</string>
+    <string name="sys_status">நிலை</string>
+    <string name="sys_discharging">பேட்டரி மின்னிறங்குகிறது</string>
+    <string name="sys_android_version">Android பதிப்பு</string>
+    <string name="traffic_usage_required">பயன்பாட்டுத் தரவை அணுக அனுமதி தேவை. அனுமதிக்கத் தட்டவும்.</string>
+    <string name="traffic_loading">ஏற்றப்படுகிறது…</string>
+    <string name="traffic_empty">செயலிகளின் நெட்வொர்க் பயன்பாட்டுத் தரவு இல்லை</string>
+    <string name="traffic_guide_message">ஒவ்வொரு செயலியின் நெட்வொர்க் பயன்பாட்டைப் பார்க்க, அமைப்புகளில் இந்தச் செயலிக்குப் பயன்பாட்டுத் தரவை அணுக அனுமதிக்கவும்.</string>
+    <string name="app_manager_uninstall_confirm">தேர்ந்தெடுத்த %1$d செயலிகளை நிறுவல் நீக்கவா? ஒவ்வொரு செயலிக்கும் Android உறுதிப்படுத்தக் கேட்கும்.</string>
+    <string name="home_pending_items_format">சுத்தம் செய்ய வேண்டியவை: %1$d</string>
+    <string name="info_report_title">அறிக்கை</string>
+    <string name="new_feature_badge_description">புதிய அம்சம்</string>
+    <string name="cache_access_required">தற்காலிகச் சேமிப்பை ஸ்கேன் செய்ய அனைத்துக் கோப்புகளுக்கும் அணுகல் அனுமதி வழங்கவும்</string>
+    <string name="cache_confirm_clean">தேர்ந்தெடுத்த %1$d உருப்படிகளைச் சுத்தம் செய்யவா?</string>
+    <string name="cache_clean_action">சுத்தம் செய்</string>
+    <string name="cache_clean_result">%2$d உருப்படிகளில் %1$d சுத்தம் செய்யப்பட்டன</string>
+    <string name="cleanup_report_complete">சுத்தம் செய்து முடித்துவிட்டீர்கள்.</string>
+    <string name="cleanup_report_explore">மேலும் கருவிகளைப் பார்க்கவும்</string>
+    <string name="cleanup_report_go">செல்</string>
+    <string name="widget_action_files">கோப்புகள்</string>
+    <string name="widget_action_photos">புகைப்படங்கள்</string>
+    <string name="vlt_select_all">அனைத்தையும் தேர்ந்தெடு</string>
+    <string name="vlt_deselect_all">அனைத்துத் தேர்வுகளையும் நீக்கு</string>
+    <string name="vlt_import_media">புகைப்படங்கள் அல்லது வீடியோக்களை இறக்குமதி செய்</string>
+    <string name="vlt_originals_remain">; %1$d அசல் கோப்புகள் சாதனத்தில் உள்ளன</string>
+    <string name="vlt_restore_confirm">%1$d கோப்புகளை Pictures/PurGuClean க்கு மீட்டெடுக்கவா?</string>
+    <string name="vlt_restored_count">%2$d கோப்புகளில் %1$d மீட்டெடுக்கப்பட்டன</string>
+    <string name="vlt_delete_confirm">%1$d தனிப்பட்ட கோப்புகளை நிரந்தரமாக நீக்கவா?</string>
+    <string name="app_manager_select_app">செயலியைத் தேர்ந்தெடு</string>
+</resources>

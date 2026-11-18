@@ -17,12 +17,14 @@ import android.os.Looper
 import android.util.Log
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
+import androidx.core.content.ContextCompat
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 
 /** Independent foreground notification surface; routes to the current app home screen. */
 class NotificationToolbarService : Service() {
     private var rejected = false
+    private var channelName: String? = null
     private val handler = Handler(Looper.getMainLooper())
     private val speedUpdate = object : Runnable {
         override fun run() {
@@ -37,7 +39,6 @@ class NotificationToolbarService : Service() {
 
     override fun onCreate() {
         super.onCreate()
-        createChannel()
         promote()
         handler.postDelayed(speedUpdate, 7_000L)
     }
@@ -77,21 +78,31 @@ class NotificationToolbarService : Service() {
     }
 
     private fun buildNotification(): Notification {
+        val localized = ContextCompat.getContextForLanguage(this)
+        updateChannelName(localized.getString(R.string.home_quick_tools))
         val speed = NetworkSpeedTracker.sample()
+        val speedUnit = localized.getString(R.string.notif_speed_unit)
         fun view(layout: Int, expanded: Boolean): RemoteViews = RemoteViews(packageName, layout).apply {
             setTextViewText(R.id.notif_speed_value, speed.value)
-            setTextViewText(R.id.notif_speed_unit, getString(R.string.notif_speed_unit))
+            setTextViewText(R.id.notif_speed_unit, speedUnit)
+            setTextViewText(R.id.notif_label_cache, localized.getString(R.string.notif_junk))
+            setTextViewText(R.id.notif_label_photos, localized.getString(R.string.photo_photos_label))
+            setTextViewText(R.id.notif_label_apps, localized.getString(R.string.notif_apps))
+            setTextViewText(R.id.notif_label_large, localized.getString(R.string.notif_large_file))
             setOnClickPendingIntent(R.id.notif_action_cache, route("cache", 1))
             setOnClickPendingIntent(R.id.notif_action_photos, route("picture_clean", 2))
             setOnClickPendingIntent(R.id.notif_action_apps, route("apps", 3))
             setOnClickPendingIntent(R.id.notif_action_large, route("large", 4))
-            if (expanded) setOnClickPendingIntent(R.id.notif_action_clean, route("cache", 5))
+            if (expanded) {
+                setTextViewText(R.id.notif_label_clean, localized.getString(R.string.notif_clean_now))
+                setOnClickPendingIntent(R.id.notif_action_clean, route("cache", 5))
+            }
         }
         val now = System.currentTimeMillis()
         val pinWhen = com.tencent.mmkv.MMKV.defaultMMKV().getString("notification_pin_when", "1") == "1"
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.mipmap.ic_launcher)
-            .setContentTitle(getString(R.string.app_name))
+            .setContentTitle(localized.getString(R.string.app_name))
             .setContentText(speed.fullText)
             .setStyle(NotificationCompat.DecoratedCustomViewStyle())
             .setCustomContentView(view(R.layout.notification_toolbar_collapsed, false))
@@ -117,10 +128,11 @@ class NotificationToolbarService : Service() {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
         }, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
-    private fun createChannel() {
-        if (Build.VERSION.SDK_INT >= 26) {
+    private fun updateChannelName(name: String) {
+        if (Build.VERSION.SDK_INT >= 26 && channelName != name) {
             val manager = getSystemService(NotificationManager::class.java) ?: return
-            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, "Cleaner tools", NotificationManager.IMPORTANCE_HIGH).apply { setShowBadge(false) })
+            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, name, NotificationManager.IMPORTANCE_HIGH).apply { setShowBadge(false) })
+            channelName = name
         }
     }
 

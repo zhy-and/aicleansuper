@@ -108,7 +108,7 @@
             android:theme="@style/Theme.Cleansuperai.VideoPreview" />
         <activity
             android:name=".HotActivity"
-            android:exported="false"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Cleansuperai.Splash" />
         <activity
@@ -121,7 +121,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
         </activity>
 
         <meta-data

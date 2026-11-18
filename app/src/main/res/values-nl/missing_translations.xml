@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Prullenbak (%1$s)</string>
     <string name="trash_bin_title_empty">Prullenbak</string>
     <string name="trash_restore_hint">Tik om foto\'s te herstellen</string>
-    <string name="trash_empty_action">Verwijder alles in de prullenbak</string>
+    <string name="trash_empty_action">Foto’s verwijderen</string>
     <string name="trash_restored">Foto hersteld</string>
     <string name="trash_bin_empty">Prullenbak is leeg</string>
     <string name="feature_smart_groups">Slimme groepen</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Schone herinneringen</string>
     <string name="notif_event_channel_desc">Lokale herinneringen na screenshots, installaties en verwijderingen</string>
     <string name="notif_event_summary_channel_name">Overzichtelijke herinnering</string>
-    <string name="notif_event_screenshot_title">Nog een schermafdruk? 1 Het is tijd om de schermafbeeldingen op te ruimen</string>
-    <string name="notif_event_install_title">De nieuwe app is ingetrokken, en dat geldt ook voor de cache. opruimen</string>
-    <string name="notif_event_uninstall_title">Succesvol verwijderd! om bestandsresten op te ruimen</string>
-    <string name="notif_clean_reminder_title">Er ligt veel afval opgestapeld. Maak het allemaal in één keer schoon.</string>
-    <string name="notif_event_battery_below_50_title">De batterij is meer dan de helft vol. Zorg er nu voor, het zal zo blijven tot je thuiskomt.</string>
-    <string name="notif_event_battery_below_20_title">Lage batterij. Wilt u weten wie uw elektriciteit steelt? Klik om de ranglijst te bekijken.</string>
-    <string name="notif_event_charging_title">De stekker in het stopcontact. De taak van vanavond: bijvullen en dan schoonmaken.</string>
-    <string name="notif_event_charging_full_title">Volledig opgeladen en klaar voor gebruik. Nog een laatste controle: is het afval opgeruimd?</string>
-    <string name="notif_event_charging_to_80_title">De eindsprint bedraagt ​​80%. Maak het afval leeg en pak het licht in om volledige kracht te verwelkomen.</string>
-    <string name="notif_event_charging_disconnect_title">Haal de stekker uit het stopcontact en ga op pad. Vergeet niet om de tijd te nemen om het afval op te ruimen en in topvorm te blijven.</string>
-    <string name="notif_event_app_update_title">Er is een nieuwe versie gearriveerd. Alles wat overblijft van de oude versie wordt volledig opgeruimd.</string>
-    <string name="notif_event_network_change_title">Het internet verandert! Bekijk de huidige netwerkstatus 1</string>
-    <string name="notif_event_screen_lock_title">Leg uw telefoon neer en laat het aan ons over. Rustschermtijd = verpleegtijd.</string>
-    <string name="notif_event_screen_on_after_lock_title">We ontmoeten elkaar weer, zit je vast? Het meeste is afval, probeer het op te ruimen.</string>
-    <string name="notif_event_storage_free_drop_title">De opslagruimte is veranderd. Laten we eens kijken wat ruimte in beslag neemt?</string>
-    <string name="notif_event_scheduled_push_1_title">Het afval dat zo lang heeft opgehoopt, wordt in één keer opgeruimd.</string>
-    <string name="notif_event_scheduled_push_2_title">Is de batterij niet zo duurzaam als voorheen? Bekijk het eens.</string>
-    <string name="notif_event_app_inactive_title">Lang niet gezien, het heeft gewacht. Kom terug en ruim het afval op.</string>
-    <string name="notif_event_scheduled_push_3_title">Eén tik op uw afspeellijsten: stel de widget in</string>
+    <string name="notif_event_screenshot_title">Nieuwe screenshot! Kijken of je die wilt bewaren.</string>
+    <string name="notif_event_install_title">De cache van de nieuwe app is er, klik maar even op</string>
+    <string name="notif_event_uninstall_title">De app is net verwijderd, maar er blijven wat over. Laten we even kijken.</string>
+    <string name="notif_clean_reminder_title">Ik heb mijn telefoon al zo lang niet meer opgeruimd, ik moet het eens bekijken.</string>
+    <string name="notif_event_battery_below_50_title">Klik erop en je begrijpt het: als de batterij meer dan de helft is, maak dan eerst schoon.</string>
+    <string name="notif_event_battery_below_20_title">Batterij bijna leeg, wacht niet langer. Open het en maak het schoon.</string>
+    <string name="notif_event_charging_title">Nu hij opgeladen is, even kijken naar de cache</string>
+    <string name="notif_event_charging_full_title">Nog vol, verspil het niet. Open de cache eens.</string>
+    <string name="notif_event_charging_to_80_title">Laden bezig, tijd om wat rom te opruimen</string>
+    <string name="notif_event_charging_disconnect_title">Ladekabel uitgestoken, offline. Open en kijk.</string>
+    <string name="notif_event_app_update_title">De app is net bijgewerkt, tijd om de oude cache te wissen.</string>
+    <string name="notif_event_network_change_title">Geen netwerk meer, open maar even de lokale cache.</string>
+    <string name="notif_event_screen_lock_title">Scherm uit, de achtergrondopruiming begint nu</string>
+    <string name="notif_event_screen_on_after_lock_title">Scherm is net aangezet, klik om de cache te bekijken</string>
+    <string name="notif_event_storage_free_drop_title">De ruimte is weer kleiner geworden, klik eens om te zien wie er ruimte inneemt</string>
+    <string name="notif_event_scheduled_push_1_title">De vorige keer was ik halverwege gestopt, dus ik open het even om te kijken.</string>
+    <string name="notif_event_scheduled_push_2_title">Appen op de achtergrond verbruiken stiekem je batterij, klik maar eens op dit bericht</string>
+    <string name="notif_event_app_inactive_title">Lang niet gezien, ik dacht al dat je het vergeten was. Klik maar even op de app.</string>
+    <string name="notif_event_scheduled_push_3_title">Voeg een widget toe aan je startscherm en ruim op zonder de app te openen</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Eén tik op uw afspeellijsten: stel de widget in</item>
-        <item>Maak alles eenvoudiger met een widget: voeg een muzieksnelkoppeling toe</item>
-        <item>Speel snel zonder te ontgrendelen: schakel de startschermwidget in</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Je bent iets vergeten</string>
+    <item>Voeg een widget toe aan je startscherm en ruim op zonder de app te openen</item>
+    <item>Met een widget heb je opruimen altijd bij de hand</item>
+    <item>Je widget is klaar. Geef hem een plek op je startscherm</item>
+    <item>Voeg met één tik een widget toe en ruim op vanaf je startscherm</item>
+    <item>Voeg een widget toe om makkelijker op te ruimen</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Kom terug, met één klik is het in 3 seconden klaar</string>
     <string name="notif_event_app_background_content">Maak het schoonmaken af, zodat het soepeler verloopt.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Je bent iets vergeten</item>
-        <item>Nog één stap over</item>
-        <item>Goed nieuws</item>
-        <item>Je bent te snel vertrokken</item>
-        <item>Laat rommel niet van de ene op de andere dag liggen</item>
-    </string-array>
+    <item>Kom terug, met één klik is het in 3 seconden klaar</item>
+    <item>Die vorige pagina had nog wat rommel</item>
+    <item>Niet zo snel weggaan, ruim het even op</item>
+    <item>Nog maar één stap, kom terug en ruim je ruimte op</item>
+    <item>Niet afsluiten, het opruimen is nog niet klaar</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Maak het schoonmaken af, zodat het soepeler verloopt.</item>
         <item>Nog één tik om het schoonmaken te voltooien en meer ruimte vrij te maken.</item>
@@ -530,239 +532,244 @@
         <item>Je telefoon kan nog sneller zijn: bekijk de optimalisatie.</item>
         <item>Maak het schoonmaken af, zodat het soepeler verloopt.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">De scanresultaten zijn klaar: rommel neemt ruimte in beslag. Maak nu schoon</string>
+    <string name="notif_event_scan_done_uncleaned_title">Scan voltooid, alleen nog de laatste schoonmaakstap nodig</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>De scanresultaten zijn klaar: rommel neemt ruimte in beslag. Maak nu schoon</item>
-        <item>Nog één stap over: kom terug en maak direct ruimte vrij.</item>
-        <item>Vergeten op te ruimen na de scan? 10 seconden om uw telefoon lichter te maken.</item>
-        <item>Er staat nog steeds ongewenste e-mail op uw telefoon: de resultaten zijn opgeslagen. Kom terug voor één tik schoon.</item>
-        <item>Bij de laatste scan zijn meerdere items gevonden die moeten worden schoongemaakt. Kom het afmaken.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Het schoonmaken is nog niet klaar. Voltooi de laatste stap.</string>
+    <item>Scan voltooid, alleen nog de laatste schoonmaakstap nodig</item>
+    <item>Scan voltooid, alleen nog een klein beetje schoonmaken nodig</item>
+    <item>Detectie voltooid, kom binnen en maak het vuil weg</item>
+    <item>Scan is voltooid, het vuil wacht nog op schoonmaak</item>
+    <item>Je hebt net gesaneerd maar nog niet schoongemaakt, kom binnen kijken</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">De opruiming is nog niet voltooid, kom maar weer verder</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Het schoonmaken is nog niet klaar. Voltooi de laatste stap.</item>
-        <item>Reiniging onderbroken: halverwege. Eindig voor een lichtere telefoon.</item>
-        <item>Het schoonmaken is bijna klaar. Laat de rommel niet achter.</item>
-        <item>Je bent halverwege de schoonmaak vertrokken - maak het af en voel het verschil.</item>
-        <item>Een onderbroken reiniging kan op elk moment worden voortgezet. Kom het afmaken.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Foto verwijderd — veilig verplaatst naar de prullenbak.</string>
+    <item>De opruiming is nog niet voltooid, kom maar weer verder</item>
+    <item>De vorige opruiming is onderbroken, laten we verder gaan</item>
+    <item>Het is bijna klaar, willen we verder?</item>
+    <item>De opruiming is gepauzeerd, laten we de ruimte verder vrijmaken</item>
+    <item>De opruimingsopdracht is nog niet voltooid, laten we verder gaan</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Afbeelding verwijderd. Ga het maar uit de prullenbak verwijderen.</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Foto verwijderd — veilig verplaatst naar de prullenbak.</item>
-        <item>Ik heb zojuist één foto verwijderd. Zie je hoeveel ruimte je hebt vrijgemaakt?</item>
-        <item>Foto verwijderd - verwijder nu permanent om ruimte vrij te maken.</item>
-        <item>Foto veilig verwijderd - opslagstatus bijgewerkt.</item>
-        <item>Foto verwijderd - u kunt soortgelijke schermafbeeldingen ook opschonen.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Video verwijderd – grote ruimte wordt vrijgemaakt.</string>
+    <item>Afbeelding verwijderd. Ga het maar uit de prullenbak verwijderen.</item>
+    <item>Afbeelding verwijderd. Verwijder de prullenbak ook maar mee.</item>
+    <item>Afbeelding is al in de prullenbak. Kom hem maar even opruimen.</item>
+    <item>De afbeeldingen in de prullenbak nemen nog ruimte in beslag. Verwijder ze maar.</item>
+    <item>Deze afbeelding is net verwijderd. Wil je hem echt volledig verwijderen?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Video is verwijderd, leeg het prullenbakje voor meer ruimte</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Video verwijderd – grote ruimte wordt vrijgemaakt.</item>
-        <item>Grote video verwijderd; de opslagdruk nam meteen af.</item>
-        <item>Video verwijderd: controleer uw huidige opslagstatus.</item>
-        <item>Verwijderen voltooid: maak de prullenbak leeg om ruimte vrij te maken.</item>
-        <item>Video verwijderd: er zijn mogelijk nog meer vergeten grote video\'s die moeten worden opgeschoond.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Audio verwijderd - kleine bestanden tellen op. Blijf doorgaan.</string>
+    <item>Video is verwijderd, leeg het prullenbakje voor meer ruimte</item>
+    <item>De video is verwijderd, maar de ruimte is nog niet vrijgemaakt</item>
+    <item>De video is in het prullenbakje, kom hem even opruimen</item>
+    <item>Een video is verwijderd en staat in het prullenbakje te wachten</item>
+    <item>Er is nog ruimte in het prullenbakje voor video\'s</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Audio is verwijderd, maar de cache bevat nog fragmenten. Open en bekijk het.</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Audio verwijderd - kleine bestanden tellen op. Blijf doorgaan.</item>
-        <item>Die audio is verdwenen - meer vergelijkbare ongebruikte bestanden kunnen ook worden opgeschoond.</item>
-        <item>Audio verwijderd: opslaggegevens bijgewerkt. Kom eens kijken.</item>
-        <item>1 audiobestand verwijderd — opslaglijst vernieuwd.</item>
-        <item>Audio verwijderd: leeg de prullenbak om het vrijmaken van ruimte te voltooien.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Bestand verwijderd - er is wat meer opslagruimte vrijgemaakt.</string>
+    <item>Audio is verwijderd, maar de cache bevat nog fragmenten. Open en bekijk het.</item>
+    <item>Audio is verwijderd. Maak het recycyclingbakje ook schoon.</item>
+    <item>Verwijdering succesvol. Kom het recycyclingbakje leegmaken.</item>
+    <item>Een audiofragment is verwijderd, het recycyclingbakje moet worden opgeruimd.</item>
+    <item>Kom binnen om de oude opnames in het cachemapotentieel schoon te maken.</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Bestand verwijderd, ga het in de prullenbak opruimen</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Bestand verwijderd - er is wat meer opslagruimte vrijgemaakt.</item>
-        <item>Bestand verwijderd: rommel heeft geen last meer van uw telefoon.</item>
-        <item>Bestand verwijderd: kijk wat u nog meer kunt opschonen.</item>
-        <item>Bestand verwijderd: wijzigingen gesynchroniseerd, opslagstatus bijgewerkt.</item>
-        <item>Dat bestand is gewist en maakt nu ruimte vrij.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Afbeelding gedownload - open het en bekijk het.</string>
+    <item>Bestand verwijderd, ga het in de prullenbak opruimen</item>
+    <item>Bestand verwijderd, maar de ruimte is nog niet vrijgemaakt</item>
+    <item>Bestand is in de prullenbak, ruim het even op</item>
+    <item>Bestand verwijderd, kom de ruimte vrijmaken</item>
+    <item>Bestand verwijderd, het is efficiënter om de prullenbak leeg te maken</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Afbeeldingen gedownload. Ga eens kijken waar ze staan.</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Afbeelding gedownload - open het en bekijk het.</item>
-        <item>Afbeelding gedownload: verwijder dubbele foto\'s in uw album terwijl u bezig bent</item>
-        <item>Downloaden voltooid - afbeelding veilig opgeslagen. Kom vergelijkbare foto\'s bekijken</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Video gedownload - het is niet klein. Kijk hoeveel ruimte oude video\'s kunnen vrijmaken</string>
+    <item>Afbeeldingen gedownload. Ga eens kijken waar ze staan.</item>
+    <item>Nieuwe afbeeldingen zijn net in het album gekomen. Open het eens om te kijken.</item>
+    <item>Zijn de nieuwe afbeeldingen een duplicaat van de oude? Je weet het pas als je het opent.</item>
+    <item>Download voltooid. De dubbele afbeeldingen in het album moeten nu worden verwijderd.</item>
+    <item>Afbeeldingen gedownload. Kijk eens hoeveel ruimte er nog over is.</item>
+  </string-array>
+    <string name="notif_event_video_download_title">De videobibliotheek is bijna vol, ga kijken</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Video gedownload - het is niet klein. Kijk hoeveel ruimte oude video\'s kunnen vrijmaken</item>
-        <item>Nieuwe video opgeslagen: vind grote video\'s om te verwijderen en maak ruimte vrij. Tik op mij</item>
-        <item>Video\'s nemen ruimte in beslag: we hebben reinigbare items gevonden om je telefoon lichter te maken. Tik hier</item>
-        <item>Downloaden voltooid! Maak een paar oude video\'s schoon en de ruimte komt terug. Tik op mij</item>
-        <item>Nieuwe video gesorteerd - gemakkelijk te vinden of op te schonen. Tik om te zien</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Audio gedownload: ruim uw muziekbibliotheek op met één tik. Tik op mij</string>
+    <item>De videobibliotheek is bijna vol, ga kijken</item>
+    <item>Klik op mij om die enorme video die net is gedownload te bekijken</item>
+    <item>Download voltooid, kijk eens hoeveel ruimte het inneemt</item>
+    <item>De video is net gedownload, mijn telefoon is een beetje vol</item>
+    <item>Klik hier om de videobestanden te selecteren die ruimte innemen</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Waar is de nieuwe audio geïntegreerd? Kijk maar eens als je het opent.</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Audio gedownload: ruim uw muziekbibliotheek op met één tik. Tik op mij</item>
-        <item>Nieuwe audio gesorteerd: verwijder oude audio terwijl u hier bent. Tik op mij</item>
-        <item>Muziekbibliotheek raakt vol? Controleer reinigbare audio. Tik hier</item>
-        <item>Audio gedownload: ontdubbelen met één tik. Tik op mij om op te ruimen</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Nieuw bestand opgeslagen - wis oude bestanden en maak ruimte vrij. Tik hier</string>
+    <item>Waar is de nieuwe audio geïntegreerd? Kijk maar eens als je het opent.</item>
+    <item>De audio is net gedownload, laten we de opslag even opruimen.</item>
+    <item>Nieuwe audio is gedownload, kom even kijken.</item>
+    <item>De audio is net gedownload, mijn telefoon is een beetje vol.</item>
+    <item>Audio is gedownload, het is tijd om de opslag even op te ruimen.</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Bestand gedownload, tijd om de opslag op te ruimen</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Nieuw bestand opgeslagen - wis oude bestanden en maak ruimte vrij. Tik hier</item>
-        <item>Downloaden voltooid: kijk welke oude bestanden u kunt opschonen. Tik op mij</item>
-        <item>Nieuw bestand klaar - slim archief + opschonen. Tik op mij om te beginnen</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Prullenbak geleegd — opslag vernieuwd. Controleer uw nieuwste ruimte.</string>
+    <item>Bestand gedownload, tijd om de opslag op te ruimen</item>
+    <item>Net het bestand gedownload, laten we wat ruimte vrijmaken</item>
+    <item>Klik hier om het nieuwe bestand goed te categoriseren</item>
+    <item>Wat is er nieuw in de downloadmap? Klik maar eens open</item>
+    <item>Bestand gedownload, kom hier om het op te ruimen</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Leeg gemaakt, kijk hoeveel ruimte er vrijkomt</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Prullenbak geleegd — opslag vernieuwd. Controleer uw nieuwste ruimte.</item>
-        <item>Prullenbak geleegd – maak de restjes grondig schoon.</item>
-        <item>Succesvol geleegd - meer rommel om op te ruimen. Kom eens kijken.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Maak nu schoon</string>
+    <item>Leeg gemaakt, kijk hoeveel ruimte er vrijkomt</item>
+    <item>Recyclingbak leeg, telefoon voelt direct lichter aan</item>
+    <item>Recyclingbak leeg, telefoon is licht en luchtig</item>
+    <item>Recyclingbak is leeg, nog wat meer kan</item>
+    <item>Leeg gemaakt, hoeveel ruimte is er nog beschikbaar?</item>
+  </string-array>
+    <string name="notif_event_action_clean">Schoonmaken</string>
     <string name="notif_event_action_open_home">Openen</string>
-    <string name="notif_event_action_manage">Beheer apps</string>
-    <string name="notif_event_action_check_battery">Controleer de batterij</string>
-    <string name="notif_event_action_check_network">Controleer netwerk</string>
+    <string name="notif_event_action_manage">Beheer</string>
+    <string name="notif_event_action_check_battery">Batterij controleren</string>
+    <string name="notif_event_action_check_network">Dataverbruik bekijken</string>
     <string name="notif_days_unit">dag</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>De opslagruimte is veranderd. Laten we eens kijken wat ruimte in beslag neemt?</item>
-        <item>Ruimtelijke veranderingen gedetecteerd. Mogelijk is er nieuw afval, kijk eens?</item>
-        <item>De beschikbare ruimte is verplaatst. Weet jij wie het heeft gegeten? Klik om een ​​kijkje te nemen.</item>
-        <item>Is de ruimte krap? Ik heb zojuist de wijziging gedetecteerd. Laten we de details eens bekijken.</item>
-        <item>Herinnering voor het wijzigen van de ruimte: u kunt veel afval verzamelen. Bekijk het eens?</item>
-    </string-array>
+    <item>De ruimte is weer kleiner geworden, klik eens om te zien wie er ruimte inneemt</item>
+    <item>Ga even kijken, er zijn weer nieuwe foto\'s in het album opgestapeld</item>
+    <item>De chatcache wordt steeds groter, open het om de waarheid te zien</item>
+    <item>Er is weer een stapel troep verschenen, kom binnen om het te ontdekken</item>
+    <item>Klik op mij, de troep is een berg geworden en niemand ruimt het op</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Lage batterij. Wilt u weten wie uw elektriciteit steelt? Klik om de ranglijst te bekijken.</item>
-        <item>Binnenkort een dieptepunt. Als je de apps opruimt die elektriciteit stelen, kun je nog een tijdje overleven.</item>
-        <item>De batterij is bijna leeg. Een paar achtergronden opruimen is beter dan niets doen.</item>
-        <item>De batterij is rood. Je kunt het nog steeds opslaan, klik om het te openen en te bekijken.</item>
-        <item>Minder dan 20% remains. Laten we wat energiebesparende eerste hulp doen en opruimen.</item>
-    </string-array>
+    <item>Batterij bijna leeg, wacht niet langer. Open het en maak het schoon.</item>
+    <item>Je houdt het niet meer vol tot je thuiskomt. Open het en maak de cache schoon.</item>
+    <item>Het batterijlampje brandt al. Ga even kijken.</item>
+    <item>De batterij is bijna leeg. Open het en ontdek wat de oorzaak is.</item>
+    <item>De batterij is bijna leeg. Open het en kijk of het nog gered kan worden.</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>De batterij is meer dan de helft vol. Zorg er nu voor, het zal zo blijven tot je thuiskomt.</item>
-        <item>De batterij is meer dan de helft vol. Het is nu veel gemakkelijker om voor de batterij te zorgen dan te wachten tot 20%.</item>
-        <item>De batterij is voor de helft leeg. Hoe lang kan het duren? Klik om een ​​kijkje te nemen.</item>
-        <item>De batterij is meer dan de helft vol. Het is tijd om voor de backend te zorgen, wacht niet tot deze nerveus wordt.</item>
-        <item>De helft van de batterij is nog over. Schakel de grote, op macht beluste spelers uit en maak de tweede helft stabieler.</item>
-    </string-array>
+    <item>Klik erop en je begrijpt het: als de batterij meer dan de helft is, maak dan eerst schoon.</item>
+    <item>De batterij is onder de middenlijn. Klik erop om de cache te wissen.</item>
+    <item>Er is nog maar een halve balk over. Ga naar binnen om je fotoalbum op te ruimen.</item>
+    <item>De batterij is stabiel. Klik hier om de cache te wissen.</item>
+    <item>De batterij is op een gemiddeld niveau. Klik hier voor een zorgeloze cache-wissing.</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>De eindsprint bedraagt ​​80%. Maak het afval leeg en pak het licht in om volledige kracht te verwelkomen.</item>
-        <item>Nog 20% s zonder volledige lading. Stop met staren naar je scherm en laat ons voor het afval zorgen.</item>
-        <item>80%: Eén stap verwijderd van perfectie. Klik één keer en het wordt volledig gewist wanneer de batterij volledig is opgeladen.</item>
-        <item>80%, a goede batterij voor een goede mobiele telefoon. Een rondje opruimen terwijl het warm is?</item>
-        <item>De laatste 20% i\'s die aan ons zijn gegeven. Jij kijkt naar de batterij en wij ruimen het afval op.</item>
-    </string-array>
+    <item>Laden bezig, tijd om wat rom te opruimen</item>
+    <item>Bijna vol, veel rom. Kom en ontdek de dader</item>
+    <item>Nog maar een klein beetje te gaan, klik op mij om rom op te ruimen</item>
+    <item>Bijna volledig opgeladen, open en klaar voor schoonheid</item>
+    <item>Laden en wachten tegelijk, klik om de cache te wissen</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Volledig opgeladen en klaar voor gebruik. Nog een laatste controle: is het afval opgeruimd?</item>
-        <item>Na het opladen is het gevoel van ritueel vol. Wat dacht je van het opruimen van het afval om dit te herdenken?</item>
-        <item>100%, stabel vandaag. Nog één ronde en het is vlekkeloos.</item>
-        <item>100%. De laatste stap voordat u de stekker uit het stopcontact haalt: ruim de prullenbak op, dertig seconden.</item>
-        <item>Afgewerkt met volle kracht. Nog een laatste schoonmaakbeurt, perfect.</item>
-    </string-array>
+    <item>Nog vol, verspil het niet. Open de cache eens.</item>
+    <item>Volledig opgeladen, nu is het tijd om wat onnodig te verwijderen.</item>
+    <item>Volledig opgeladen, tijd om op te ruimen. Open de cache en maak het schoon.</item>
+    <item>Volledig opgeladen, tijd om het album op te ruimen. Kom even kijken.</item>
+    <item>Volledig opgeladen en wachtend. Kom even wat onnodig verwijderen.</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Het internet verandert! Bekijk de huidige netwerkstatus 1</item>
-        <item>Netwerkverlating. Kijk niet naar het signaal tijdens het schoonmaken, klik er gewoon op en scan.</item>
-        <item>Kunt u de pagina niet openen? Opruimen is altijd online.</item>
-        <item>U kunt offline werken en uw prullenbak kan nu worden gewist.</item>
-        <item>Als er geen signaal is, zijn er geen gegevens nodig voor het opschonen, klik gewoon.</item>
-    </string-array>
+    <item>Geen netwerk meer, open maar even de lokale cache.</item>
+    <item>Netwerk gewisseld, gebruik de kans om de cache te bekijken.</item>
+    <item>Onstabiel netwerk, maar geen zorgen, open het en het is schoon.</item>
+    <item>Verbinding verloren, klik erop om de lokale troep te bekijken.</item>
+    <item>Netwerk opnieuw verbonden, ga binnen en kijk naar de cache.</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>De stekker in het stopcontact. De taak van vanavond: bijvullen en dan schoonmaken.</item>
-        <item>Je rust uit, hij wordt opgeladen. Laat het ook het afval opruimen.</item>
-        <item>Tijdens de oplaadtijd is het voldoende om het afval op te ruimen dat zich al lange tijd heeft opgehoopt.</item>
-        <item>Pas als de elektriciteit is aangesloten, durft het backstagepersoneel vrij te werken.</item>
-        <item>Wordt het een beetje warm tijdens het opladen? Het wissen van de achtergrond kan de temperatuur verlagen.</item>
-    </string-array>
+    <item>Nu hij opgeladen is, even kijken naar de cache</item>
+    <item>Opladen begint, kom binnen voor een diepe schoonmaak</item>
+    <item>Het opladen is net begonnen, klik op \'schoonmaken\'</item>
+    <item>Het opladen is begonnen, dus doe het snel, open het en het is schoon</item>
+    <item>De oplader is klaar, ga binnen en kijk naar de cache</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Haal de stekker uit het stopcontact en ga op pad. Vergeet niet om de tijd te nemen om het afval op te ruimen en in topvorm te blijven.</item>
-        <item>Nadat het opladen is voltooid, kunt u uw spullen inpakken en op pad gaan. Maak het gewoon schoon en het zal perfect zijn.</item>
-        <item>Volledig opgeladen en klaar voor gebruik. Het afval soepel opruimen, er is vandaag geen tekortkoming.</item>
-        <item>Het opladen eindigt. De volgende ruimte moet niveau voor niveau worden opgeruimd en geüpgraded.</item>
-        <item>Stop niet bij black-outs. Er blijft nog één ding over: opruimen.</item>
-    </string-array>
+    <item>Ladekabel uitgestoken, offline. Open en kijk.</item>
+    <item>Stroomuitval, geen internet nodig. Open en bekijk de lokale gegevens.</item>
+    <item>Stroomkabel uitgestoken, handig. Open en maak alles schoon.</item>
+    <item>Stroomuitval! Kijk eens hoe lang de batterij nog meegaat.</item>
+    <item>Kabel uitgestoken, perfect. Ga de fotoalbum opruimen.</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>We ontmoeten elkaar weer, zit je vast? Het meeste is afval, probeer het op te ruimen.</item>
-        <item>Ontgrendeld? Open niet eerst andere apps en wis de prullenbak gedurende dertig seconden.</item>
-        <item>Het eerste dat moet worden ontgrendeld, zijn wij. Ruim de prullenbak op en hij zal meer van je houden.</item>
-        <item>Dertig seconden na ontgrendeling. Het meest waardevolle gebruik: afval opruimen.</item>
-        <item>Je mobiele telefoon zei: De backend is een beetje geblokkeerd, kun je me helpen?</item>
-    </string-array>
+    <item>Scherm is net aangezet, klik om de cache te bekijken</item>
+    <item>Succesvol ontgrendeld, is er nog genoeg ruimte?</item>
+    <item>Scherm is aangezet, een blik en je ziet direct wat er op de telefoon staat</item>
+    <item>Scherm is net aangezet, kom binnen om je fotoalbum te ordenen</item>
+    <item>Scherm is aangezet, klik erop en je begrijpt meteen de situatie</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Leg uw telefoon neer en laat het aan ons over. Rustschermtijd = verpleegtijd.</item>
-        <item>Stoppen met werken betekent niet dat je stopt met werken. De volgende keer dat ik het scherm aanzet, zal ik je een verrassing geven.</item>
-        <item>Wordt stilletjes beter terwijl u het scherm laat rusten. Klik en wij doen de rest.</item>
-        <item>Nog een laatste ding voordat u het scherm vergrendelt: klik op Opschonen. Morgenochtend een nieuwe look.</item>
-        <item>Het scherm wordt donker. Maak nu afspraken en zie morgen de resultaten.</item>
-    </string-array>
+    <item>Scherm uit, de achtergrondopruiming begint nu</item>
+    <item>Voor de lockscreen even even kijken naar de cache</item>
+    <item>Perfect voor voor het slapengaan, tijd om de fotoalbum te ordenen</item>
+    <item>Het scherm gaat al snel donker worden, open gewoon \'Simpel Opruimen\'</item>
+    <item>Voordat het scherm uitgaat, maak je je telefoon vrij, open het en je begrijpt het meteen</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>De nieuwe app is ingetrokken, en dat geldt ook voor de cache. opruimen</item>
-        <item>Wij begrijpen hoe leuk het is om een nieuwe app te installeren. Het is alleen zo dat de cache zich stilletjes zal opstapelen.</item>
-        <item>Nieuwe app? De cache is ook hier, wis deze met één klik.</item>
-        <item>Het nieuwe komt binnen en het oude gaat eruit. Maak hem regelmatig schoon en installeer hem zoals jij wilt.</item>
-        <item>Nog een? De ruimte wordt stilletjes kleiner, kom maar opruimen.</item>
-    </string-array>
+    <item>De cache van de nieuwe app is er, klik maar even op</item>
+    <item>Nieuwe app geïnstalleerd, tijd om het installatiepakket op te ruimen</item>
+    <item>Een nieuw gezicht verschijnt stilletjes in de cache, kom maar kijken</item>
+    <item>Kijk eens, het nieuwe app-cachepakket staat bovenaan</item>
+    <item>Klik hier, het nieuwe app-installatiepakket neemt nog steeds ruimte in beslag</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Succesvol verwijderd! om bestandsresten op te ruimen</item>
-        <item>Verwijderd maar niet opgeschoond. Klik om te voltooien.</item>
-        <item>De app is verwijderd, maar de staart zit er nog steeds. Ruim op met één klik en neem voor eens en voor altijd afscheid.</item>
-        <item>Mis de tweede stap niet: verwijder de app en verwijder het residu. Eén klik en klaar.</item>
-        <item>Het residu zal de helft van de vrijgekomen ruimte opeten. Diep scannen en alles wissen.</item>
-    </string-array>
+    <item>De app is net verwijderd, maar er blijven wat over. Laten we even kijken.</item>
+    <item>Even binnenkijken, er zijn nog wat restjes na het verwijderen.</item>
+    <item>Verwijdering geslaagd, maar na een schoonmaak is het echt netjes.</item>
+    <item>Na het verwijderen blijven er nog wat over. Open het even en het voelt fris aan.</item>
+    <item>De ruimte is na het verwijderen niet veranderd? Kom even kijken waarom.</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>Er is een nieuwe versie gearriveerd. Alles wat overblijft van de oude versie wordt volledig opgeruimd.</item>
-        <item>+1 voor versie, +1 voor cache, voor diepgaand scannen.</item>
-        <item>De update is voltooid en de resterende installatiepakketten kunnen met één klik worden opgeschoond.</item>
-        <item>De update is voltooid, laten we afronden. Maak het schoon, dan neem ik het over.</item>
-        <item>Elke update laat oude bestanden achter en verwerkt deze snel.</item>
-    </string-array>
+    <item>De app is net bijgewerkt, tijd om de oude cache te wissen.</item>
+    <item>Na de update is de cache weer toegenomen, even openen en kijken.</item>
+    <item>De cache na de update, even binnenkijken voor meer gemak.</item>
+    <item>Het updatepakket neemt nog veel ruimte in, openen en wissen.</item>
+    <item>Er zijn nog restanten van de nieuwe versie die wachten om gewist te worden, klik op mij!</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Nog een schermafdruk? 1 Het is tijd om de schermafbeeldingen op te ruimen</item>
-        <item>Een nieuwe schermafbeelding gevonden, klik om deze te bekijken en op te ruimen~</item>
-        <item>Er zijn steeds meer schermafbeeldingen, met één klik opschonen kunt u ruimte vrijmaken</item>
-        <item>De schermafbeelding is met succes gemaakt, dubbele en wazige schermafbeeldingen kunnen met één klik worden uitgefilterd.</item>
-        <item>Er zijn nieuwe schermafbeeldingen aan de database toegevoegd en dubbele afbeeldingen zijn in de wachtrij geplaatst om met één klik te worden gewist.</item>
-    </string-array>
+    <item>Nieuwe screenshot! Kijken of je die wilt bewaren.</item>
+    <item>Een stapel screenshots in het album. Open en je bent klaar.</item>
+    <item>Screenshot geslaagd! Tijd om het album op te ruimen.</item>
+    <item>Nieuwe afbeelding net gemaakt. Open en je krijgt een verrassing!</item>
+    <item>Nieuwe screenshot in het album. Open en kijk, dan is het nog makkelijker.</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Er ligt veel afval opgestapeld. Maak het allemaal in één keer schoon.</item>
-        <item>%1$d voor het laatst dagen geleden schoongemaakt. Klik om het nu te verwerken</item>
-        <item>Ik ben hier al een paar dagen niet meer, dus ik ruim het op en ga rustig terug naar het slagveld.</item>
-        <item>Het clearingquotum is vandaag niet gebruikt. Ik zal het opruimen als ik terugkom.</item>
-        <item>De cache raakt vol en wacht tot jij hem kunt bekijken</item>
-    </string-array>
+    <item>Ik heb mijn telefoon al zo lang niet meer opgeruimd, ik moet het eens bekijken.</item>
+    <item>Ik heb al zo lang spullen opgehoopt, ik ga even kijken wat er opgeruimd moet worden.</item>
+    <item>Mijn telefoon is al lang niet schoongemaakt, er zit veel stof op. Ik open het maar even om op te ruimen.</item>
+    <item>Ik open de foto\'s om te kijken, de cache is al een hele berg geworden.</item>
+    <item>De cache heeft zo lang met je meegewerkt, het is tijd om op te ruimen. Klik op mij!</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Lang niet gezien, het heeft gewacht. Kom terug en ruim het afval op.</item>
-        <item>Ik heb je al een paar dagen niet gezien. Er is geen rust voor het afval. Kom terug en ruim het op.</item>
-        <item>De cache staat in de wachtrij. Klik en ze verdwijnen.</item>
-        <item>De prullenbak is bezig terwijl je weg bent. Leeg met één klik en voel je zo fris als altijd.</item>
-        <item>Rug? Ruim eerst de prullenbak op. Binnen dertig seconden is de telefoon zo licht als nieuw.</item>
-    </string-array>
+    <item>Lang niet gezien, ik dacht al dat je het vergeten was. Klik maar even op de app.</item>
+    <item>Lang niet geopend, ga even binnen en maak het weer netjes.</item>
+    <item>Lang niet gezien, kom binnen en ontdek het zelf.</item>
+    <item>Het icoon staat bijna vergeten, klik maar even op de app.</item>
+    <item>Je bent vast vergeten, we wachten al lang. Kom maar kijken.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Het afval dat zo lang heeft opgehoopt, wordt in één keer opgeruimd.</item>
-        <item>Tijd om op te ruimen. De prullenbak van vandaag wacht tot je erop klikt.</item>
-        <item>De Space Daily van vandaag is gearriveerd. Ruim op en houd het licht.</item>
-        <item>Sommige bestanden zijn veel groter dan je denkt, kijk maar eens</item>
-        <item>Zoek de man die een paar G\'s heeft meegenomen en ruim het op</item>
-        <item>De grote documentenlijst is klaar, kom gerust eens kijken.</item>
-        <item>Wie neemt de meeste ruimte in beslag? Binnen één seconde onthuld.</item>
-        <item>Continu fotograferen is geweldig, afwerken is pijnlijk. Laat het aan ons over.</item>
-        <item>Er staan vergelijkbare foto\'s op een rij, het is aan jou om te kiezen welke je wilt bewaren</item>
-        <item>Te veel vergelijkbare foto\'s? Wij helpen u duplicaten met slechts één klik te vergelijken en te verwijderen.</item>
-        <item>De in de cache opgeslagen offline video\'s moeten worden gewist.</item>
-        <item>De resterende audio wordt ook schoongemaakt.</item>
-    </string-array>
+    <item>De vorige keer was ik halverwege gestopt, dus ik open het even om te kijken.</item>
+    <item>Het schoonmaken is halverwege gestopt, ik ga even kijken waar het gebleven is.</item>
+    <item>Er zijn een heleboel grote video\'s die veel ruimte innemen, ik open het even om te kijken.</item>
+    <item>Er is nog een supergroot bestand dat niet is opgeruimd, ik open het om het op te ruimen.</item>
+    <item>Er is een HD-video die veel ruimte inneemt, ik kom het even laten zien.</item>
+    <item>Herhaalde foto\'s nemen ruimte in beslag, ga eens kijken wat je kunt verwijderen</item>
+    <item>Herhaalde gezichten in je album, tik op mij om er een paar te verwijderen</item>
+    <item>Een stapel vergelijkbare landschapsfoto\'s, ga eens kijken welke je kunt verwijderen</item>
+    <item>Grote video\'s nemen veel ruimte in beslag, klik erop om te bekijken</item>
+    <item>Voice-berichten vullen de chat-cache, ga erin om ze te ordenen</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Is de batterij niet zo duurzaam als voorheen? Bekijk het eens.</item>
-        <item>Wie steelt uw elektriciteit? Je weet het zodra je het opzoekt.</item>
-        <item>Als u deze uitschakelt, wordt de levensduur van de batterij verlengd.</item>
-        <item>Sommige apps zijn geïnstalleerd maar nooit gebruikt. Zie je welke dat zijn?</item>
-        <item>Het bewaren van apps die je niet gebruikt is ook een last, de lijst is gemaakt</item>
-        <item>Wat privacy betreft: hoe eerder er iets aan gedaan wordt, hoe beter.</item>
-        <item>Verberg de belangrijke en verwijder de onnodige. laat mij je helpen</item>
-        <item>Waar gaat het verkeer naartoe? Ontdek wie het gebruikt.</item>
-        <item>Verkeersgegevens zijn in één oogopslag gereed en duidelijk.</item>
-        <item>Er is een app die op de achtergrond stiekem verbinding maakt met internet.</item>
-    </string-array>
+    <item>Appen op de achtergrond verbruiken stiekem je batterij, klik maar eens op dit bericht</item>
+    <item>De batterij daalt stilletjes tijdens de hele slaapmodus, tik hierop</item>
+    <item>Synchrofuncties blijven constant open en verbruiken meer stroom, kom het controleren</item>
+    <item>Veel apps zijn al een half jaar niet geopend, ga eens kijken</item>
+    <item>Voorafgeïnstalleerde apps nemen voor niets ruimte in, kom ze opruimen</item>
+    <item>Kijk eens, er zijn niet veel vaak gebruikte apps.</item>
+    <item>Sla je privéfoto\'s op in een privéruimte, klik erop om te zien.</item>
+    <item>Verberg je selfies goed zodat niemand ze vindt, kom erachter.</item>
+    <item>Je data is deze maand bijna op, klik erop om te zien.</item>
+    <item>Het energiebesparende modus bespaart veel data, ga kijken.</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} rommel: verwijder het met één tik</string>
-    <string name="notif_scheduled_large_files">{totaal} grote bestanden: gemakkelijk opschonen</string>
+    <string name="notif_scheduled_large_files">{total} grote bestanden: gemakkelijk opschonen</string>
     <string name="notif_scheduled_duplicate_photos">{groups} groepen dubbele foto\'s: bewaar {size}</string>
     <string name="notif_scheduled_similar_photos">{size} vergelijkbare foto\'s: kies wat je wilt opruimen</string>
-    <string name="notif_scheduled_videos">{totaal} video\'s: verwijder {n} om ruimte vrij te maken</string>
-    <string name="notif_scheduled_audio">{totaal} audiobestanden: tijd om op te ruimen</string>
+    <string name="notif_scheduled_videos">{total} video\'s: verwijder {n} om ruimte vrij te maken</string>
+    <string name="notif_scheduled_audio">{total} audiobestanden: tijd om op te ruimen</string>
     <string name="notif_scheduled_apps">{size} gebruikt door {idle} inactieve apps</string>
-    <string name="notif_scheduled_data">{back} van gegevens die op de achtergrond worden gebruikt</string>
+    <string name="notif_scheduled_data">{back} mobiele data is op de achtergrond gebruikt</string>
     <string name="app_manager_uninstall_selected">Selectie verwijderen</string>
     <string name="app_manager_uninstall_selected_count">Selectie verwijderen (%1$d)</string>
     <string name="cache_removable">Verwijderbaar</string>

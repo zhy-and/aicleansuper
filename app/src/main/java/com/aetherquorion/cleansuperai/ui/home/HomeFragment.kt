@@ -298,6 +298,10 @@ class HomeFragment : Fragment() {
             openDetail(VaultFragment(), "vault")
         }
         configureCard(binding.cardPictureCleanup, getString(R.string.home_picture_cleanup), null, "", R.drawable.ic_image, R.drawable.bg_home_more_icon_picture)
+        listOf(binding.cardSimilarPhotos, binding.cardScreenshots,
+            binding.cardBatteryInfo, binding.cardPictureCleanup).forEach { card ->
+            card.tvNewBadge.isVisible = true
+        }
         configureCard(binding.cardVideoCleanup, getString(R.string.home_video_cleanup), null, "", R.drawable.ic_video_library, R.drawable.bg_home_more_icon_video)
         configureCard(binding.cardAudioCleanup, getString(R.string.home_audio_cleanup), null, "", R.drawable.ic_home_audio, R.drawable.bg_home_more_icon_audio)
         binding.cardPictureCleanup.root.setOnClickListener {

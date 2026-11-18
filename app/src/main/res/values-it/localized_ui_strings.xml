@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">Seleziona app</string>
+    <string name="app_manager_uninstall_confirm">Disinstallare le %1$d app selezionate? Android ti chiederà di confermare ogni disinstallazione.</string>
+    <string name="cache_access_required">Consenti l’accesso a tutti i file per analizzare la cache</string>
+    <string name="cache_clean_action">Pulisci</string>
+    <string name="cache_clean_result">Puliti %1$d elementi su %2$d</string>
+    <string name="cache_confirm_clean">Pulire i %1$d elementi selezionati?</string>
+    <string name="cleanup_report_complete">La pulizia è completata.</string>
+    <string name="cleanup_report_explore">Scopri altri strumenti</string>
+    <string name="cleanup_report_go">Apri</string>
+    <string name="home_pending_items_format">Elementi da pulire: %1$d</string>
+    <string name="info_report_title">Resoconto</string>
+    <string name="large_file_access_required">È necessario l’accesso a tutti i file</string>
+    <string name="large_file_delete">Elimina</string>
+    <string name="large_file_delete_amount">Elimina %1$s (%2$d)</string>
+    <string name="large_file_delete_confirm">Eliminare i %1$d file selezionati?</string>
+    <string name="large_file_delete_selected">Elimina la selezione</string>
+    <string name="large_file_deleted_summary">Eliminati %1$d file su %2$d</string>
+    <string name="large_file_deselect_all">Deseleziona tutto</string>
+    <string name="large_file_deselect_all_shown">Deseleziona tutti i file visualizzati</string>
+    <string name="large_file_filter_description">Filtro %1$s: %2$s</string>
+    <string name="large_file_filter_size">Dimensioni</string>
+    <string name="large_file_filter_time">Periodo</string>
+    <string name="large_file_filter_type">Tipo</string>
+    <string name="large_file_open">Apri</string>
+    <string name="large_file_scanning">Analisi dei file…</string>
+    <string name="large_file_select_all">Seleziona tutto</string>
+    <string name="large_file_select_all_shown">Seleziona tutti i file visualizzati</string>
+    <string name="large_file_summary">%1$d file · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Qualsiasi periodo</item>
+        <item>1 settimana</item>
+        <item>1 mese</item>
+        <item>3 mesi</item>
+        <item>6 mesi</item>
+        <item>1 anno</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Tutti</item>
+        <item>Immagini</item>
+        <item>Video</item>
+        <item>Audio</item>
+        <item>Documenti</item>
+        <item>Archivi</item>
+        <item>APK</item>
+        <item>Altro</item>
+    </string-array>
+    <string name="new_feature_badge_description">Nuova funzionalità</string>
+    <string name="sys_android_version">Versione di Android</string>
+    <string name="sys_discharging">In scarica</string>
+    <string name="sys_level">Livello</string>
+    <string name="sys_status">Stato</string>
+    <string name="traffic_empty">Nessun traffico dati delle app rilevato</string>
+    <string name="traffic_guide_message">Nelle impostazioni, consenti a questa app di accedere ai dati di utilizzo per visualizzare il traffico di ogni app.</string>
+    <string name="traffic_loading">Caricamento…</string>
+    <string name="traffic_usage_required">È necessario l’accesso ai dati di utilizzo. Tocca per concederlo.</string>
+    <string name="vlt_delete_confirm">Eliminare definitivamente %1$d file privati?</string>
+    <string name="vlt_deselect_all">Deseleziona tutto</string>
+    <string name="vlt_import_media">Importa foto o video</string>
+    <string name="vlt_originals_remain">; %1$d file originali restano sul dispositivo</string>
+    <string name="vlt_restore_confirm">Ripristinare %1$d file in Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">Ripristinati %1$d file su %2$d</string>
+    <string name="vlt_select_all">Seleziona tutto</string>
+    <string name="widget_action_files">File</string>
+    <string name="widget_action_photos">Foto</string>
+</resources>

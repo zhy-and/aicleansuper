@@ -16,7 +16,17 @@ import com.aetherquorion.cleansuperai.databinding.ItemMediaCleanupBinding
 class MediaCleanupAdapter(
     private val onPreviewClick: (DisplayMediaItem) -> Unit,
     private val onSelectionClick: (DisplayMediaItem) -> Unit = {},
+    private val selectedIds: Set<Long>? = null,
 ) : ListAdapter<DisplayMediaItem, MediaCleanupAdapter.MediaCleanupViewHolder>(DiffCallback) {
+
+    fun refreshVisibleSelection(list: RecyclerView) {
+        for (index in 0 until list.childCount) {
+            val holder = list.getChildViewHolder(list.getChildAt(index)) as? MediaCleanupViewHolder ?: continue
+            if (holder.bindingAdapter !== this) continue
+            val position = holder.bindingAdapterPosition
+            if (position in 0 until itemCount) holder.bindSelection(getItem(position), selectedIds)
+        }
+    }
 
     init {
         setHasStableIds(true)
@@ -32,7 +42,7 @@ class MediaCleanupAdapter(
     }
 
     override fun onBindViewHolder(holder: MediaCleanupViewHolder, position: Int) {
-        holder.bind(getItem(position))
+        holder.bind(getItem(position), selectedIds)
     }
 
     override fun getItemId(position: Int): Long = getItem(position).stableId
@@ -42,24 +52,12 @@ class MediaCleanupAdapter(
         private val onPreviewClick: (DisplayMediaItem) -> Unit,
         private val onSelectionClick: (DisplayMediaItem) -> Unit,
     ) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: DisplayMediaItem) {
+        fun bind(item: DisplayMediaItem, selectedIds: Set<Long>?) {
             binding.tvTitle.text = item.title
             binding.tvSize.text = item.sizeText
             binding.btnSelect.isVisible = item.isSelectable
             binding.tvVideoBadge.isVisible = item.isVideo
-            binding.selectionScrim.isVisible = item.isSelected
-
-            if (item.isSelected) {
-                binding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox_checked)
-                binding.imageSelect.setImageResource(R.drawable.ic_check)
-                binding.imageSelect.imageTintList =
-                    ContextCompat.getColorStateList(binding.root.context, R.color.white)
-            } else {
-                binding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox)
-                binding.imageSelect.setImageResource(R.drawable.ic_circle_outline)
-                binding.imageSelect.imageTintList =
-                    ContextCompat.getColorStateList(binding.root.context, R.color.white)
-            }
+            bindSelection(item, selectedIds)
 
             binding.imageThumb.load(if (item.isAudio) R.drawable.ic_volume else item.thumbnailUri) {
                 crossfade(false)
@@ -80,6 +78,23 @@ class MediaCleanupAdapter(
             binding.cardRoot.setOnClickListener(null)
             binding.cardRoot.isClickable = false
             binding.cardRoot.isFocusable = false
+        }
+
+        fun bindSelection(item: DisplayMediaItem, selectedIds: Set<Long>?) {
+            val selected = selectedIds?.contains(item.stableId) ?: item.isSelected
+            binding.selectionScrim.isVisible = selected
+            if (selected) {
+                binding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox_checked)
+                binding.imageSelect.setImageResource(R.drawable.ic_check)
+                binding.imageSelect.imageTintList =
+                    ContextCompat.getColorStateList(binding.root.context, R.color.white)
+            } else {
+                binding.imageSelect.setBackgroundResource(R.drawable.bg_select_checkbox)
+                binding.imageSelect.setImageResource(R.drawable.ic_circle_outline)
+                binding.imageSelect.imageTintList =
+                    ContextCompat.getColorStateList(binding.root.context, R.color.white)
+            }
+
         }
     }
 

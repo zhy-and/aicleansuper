@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Trash Bin (%1$s)</string>
     <string name="trash_bin_title_empty">Trash Bin</string>
     <string name="trash_restore_hint">I-tap para i-restore ang mga larawan</string>
-    <string name="trash_empty_action">Tanggalin lahat sa basurahan</string>
+    <string name="trash_empty_action">I-delete ang mga larawan</string>
     <string name="trash_restored">Na-restore ang larawan</string>
     <string name="trash_bin_empty">Walang laman ang basurahan</string>
     <string name="feature_smart_groups">Mga matalinong grupo</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Malinis na mga paalala</string>
     <string name="notif_event_channel_desc">Mga lokal na paalala pagkatapos ng mga screenshot, pag-install, at pag-uninstall</string>
     <string name="notif_event_summary_channel_name">Malinis na buod ng paalala</string>
-    <string name="notif_event_screenshot_title">Isa pang screenshot? 1 Oras na para i-clear ang mga screenshot</string>
-    <string name="notif_event_install_title">Lumipat na ang bagong app, at gayundin ang cache. maglinis</string>
-    <string name="notif_event_uninstall_title">Matagumpay na na-uninstall! upang linisin ang mga nalalabi sa file</string>
-    <string name="notif_clean_reminder_title">Maraming basurang nakatambak. Linisin ito nang sabay-sabay.</string>
-    <string name="notif_event_battery_below_50_title">Ang baterya ay higit sa kalahating puno. Mag-ingat ka ngayon, tatagal ito hanggang sa pag-uwi mo.</string>
-    <string name="notif_event_battery_below_20_title">Mababang baterya. Gusto mong malaman kung sino ang nagnanakaw ng iyong kuryente? I-click upang makita ang mga ranggo.</string>
-    <string name="notif_event_charging_title">Naka-plug in. Gawain ngayong gabi: mag-refill, pagkatapos ay linisin.</string>
-    <string name="notif_event_charging_full_title">Ganap na naka-charge at handa nang umalis. Isang huling pagsusuri: Nalinis na ba ang basura?</string>
-    <string name="notif_event_charging_to_80_title">Ang huling sprint ay 80%. Alisin ang basurahan at mag-empake nang bahagya upang tanggapin ang buong lakas.</string>
-    <string name="notif_event_charging_disconnect_title">I-unplug at i-set off. Tandaan na maglaan ng oras upang linisin ang basura at manatili sa tip-top na hugis.</string>
-    <string name="notif_event_app_update_title">May dumating na bagong bersyon. Ang lahat ng natitira sa lumang bersyon ay ganap na nalinis.</string>
-    <string name="notif_event_network_change_title">Nagbabago ang web! Tingnan ang kasalukuyang katayuan ng network 1</string>
-    <string name="notif_event_screen_lock_title">Ibaba ang iyong telepono at ipaubaya ito sa amin. Oras ng screen ng pahinga = oras ng pag-aalaga.</string>
-    <string name="notif_event_screen_on_after_lock_title">Nagkita ulit tayo, suplado ka ba? Karamihan sa mga ito ay basura, subukang linisin ito.</string>
-    <string name="notif_event_storage_free_drop_title">Nagbago ang storage space. Tingnan natin kung ano ang kumukuha ng espasyo?</string>
-    <string name="notif_event_scheduled_push_1_title">Ang mga basurang matagal nang naipon ay agad na nililimas.</string>
-    <string name="notif_event_scheduled_push_2_title">Ang baterya ba ay hindi kasing tibay ng dati? Suriin ito.</string>
-    <string name="notif_event_app_inactive_title">Matagal nang hindi nagkita, naghintay. Bumalik at itapon ang basura.</string>
-    <string name="notif_event_scheduled_push_3_title">Isang tap sa iyong mga playlist — i-set up ang widget</string>
+    <string name="notif_event_screenshot_title">May mga bagong screenshot. Tingnan kung gusto mong panatilihin ang mga ito.</string>
+    <string name="notif_event_install_title">Kasama ang cache ng bagong na-install na app, buksan para tingnan</string>
+    <string name="notif_event_uninstall_title">Kakadelete lang ng app pero may natitirang bakas pa rin, i-tap para tingnan</string>
+    <string name="notif_clean_reminder_title">Matagal nang hindi na-clear ang telepono at nahihirapan na ito. I-tap para tingnan.</string>
+    <string name="notif_event_battery_below_50_title">I-tap para malaman, linisin muna habang nasa kalahati pa ang baterya</string>
+    <string name="notif_event_battery_below_20_title">Malapit nang maubos ang baterya, huwag nang ipilit, i-tap para maging maayos</string>
+    <string name="notif_event_charging_title">Nakasaksak na sa power supply. Samantalahin para i-tap at tingnan ang cache</string>
+    <string name="notif_event_charging_full_title">Kakasagot lang ng baterya, huwag sayangin, i-tap para tingnan ang cache</string>
+    <string name="notif_event_charging_to_80_title">Nagcha-charge at walang ginagawa, pumasok para ayusin ang mga basura</string>
+    <string name="notif_event_charging_disconnect_title">Alisin ang charger para mag-offline, buksan para tingnan</string>
+    <string name="notif_event_app_update_title">Na-update na ang app, dapat nang i-clear ang lumang cache</string>
+    <string name="notif_event_network_change_title">Nawala ang koneksyon sa internet. I-tap para tingnan ang lokal na cache</string>
+    <string name="notif_event_screen_lock_title">Kapag naka-off ang screen, nagsisimula ang paglilinis sa background</string>
+    <string name="notif_event_screen_on_after_lock_title">Tumunghay lang, nag-on ang screen, buksan para tingnan ang cache</string>
+    <string name="notif_event_storage_free_drop_title">Bumaba na naman ang espasyo, i-tap para makita kung sino ang gumagamit</string>
+    <string name="notif_event_scheduled_push_1_title">Noong huling beses na nag-clear ka, hindi mo natapos, buksan at tingnan</string>
+    <string name="notif_event_scheduled_push_2_title">Palihim na kumakain ng baterya mo ang mga app sa background, i-tap para tingnan</string>
+    <string name="notif_event_app_inactive_title">Matagal na tayong hindi nagkita, akala ko nakalimutan mo na, buksan at tingnan</string>
+    <string name="notif_event_scheduled_push_3_title">Magdagdag ng widget sa home screen para maglinis nang hindi binubuksan ang app</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Isang tap sa iyong mga playlist — i-set up ang widget</item>
-        <item>Gawing mas madali ang lahat gamit ang isang widget — magdagdag ng shortcut sa musika</item>
-        <item>Maglaro nang mabilis nang hindi ina-unlock — paganahin ang home-screen widget</item>
-    </string-array>
-    <string name="notif_event_app_background_title">May nakalimutan ka</string>
+    <item>Magdagdag ng widget sa home screen para maglinis nang hindi binubuksan ang app</item>
+    <item>Magdagdag ng widget para laging madaling maglinis</item>
+    <item>Handa na ang widget mo. Ilagay ito sa home screen</item>
+    <item>Magdagdag ng widget sa isang tap at maglinis mula sa home screen</item>
+    <item>Magdagdag ng widget para mas madaling maglinis</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Bumalik, 3 segundo lang para malinis sa isang tap</string>
     <string name="notif_event_app_background_content">Halina\'t tapusin ang paglilinis upang ito ay maging mas maayos.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>May nakalimutan ka</item>
-        <item>Isang hakbang ang natitira</item>
-        <item>Magandang balita</item>
-        <item>Masyado kang mabilis umalis</item>
-        <item>Huwag mag-iwan ng basura sa magdamag</item>
-    </string-array>
+    <item>Bumalik, 3 segundo lang para malinis sa isang tap</item>
+    <item>May mga junk pa rin na hindi pa nalinis sa page kanina</item>
+    <item>Huwag magmadaling umalis, linisin mo na rin</item>
+    <item>Isang hakbang na lang, bumalik at linisin ang espasyo</item>
+    <item>Huwag umalis, hindi pa tapos ang paglilinis</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Halina\'t tapusin ang paglilinis upang ito ay maging mas maayos.</item>
         <item>Isang tap pa para tapusin ang paglilinis at magbakante ng mas maraming espasyo.</item>
@@ -530,231 +532,236 @@
         <item>Ang iyong telepono ay maaaring maging mas mabilis — tingnan ang pag-optimize.</item>
         <item>Halina\'t tapusin ang paglilinis upang ito ay maging mas maayos.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Handa na ang mga resulta ng pag-scan — kumukuha ng espasyo ang basura. Malinis ngayon</string>
+    <string name="notif_event_scan_done_uncleaned_title">Tapos na ang pag-scan, isang hakbang na lang ang natitira para sa pag-cleanup</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Handa na ang mga resulta ng pag-scan — kumukuha ng espasyo ang basura. Malinis ngayon</item>
-        <item>Isang hakbang ang natitira: bumalik at magbakante ng espasyo kaagad.</item>
-        <item>Nakalimutang linisin pagkatapos ng pag-scan? 10 segundo upang gawing mas magaan ang iyong telepono.</item>
-        <item>Nasa iyong telepono pa rin ang basura — na-save ang mga resulta. Bumalik para sa one-tap clean.</item>
-        <item>Nakahanap ang huling pag-scan ng maraming item na lilinisin. Halika tapusin mo na.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Hindi pa tapos ang paglilinis — tapusin na ang huling hakbang.</string>
+    <item>Tapos na ang pag-scan, isang hakbang na lang ang natitira para sa pag-cleanup</item>
+    <item>Tapos na ang pag-scan, isang tap lang para malinis</item>
+    <item>Tapos na ang pag-scan, pumasok para alisin ang mga junk</item>
+    <item>Tapos na ang pag-scan, hinihintay pa rin ang mga junk na alisin</item>
+    <item>Kakascan mo lang at hindi pa nalinis, pumasok para tingnan</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Hindi pa tapos ang paglilinis, pumasok para ituloy</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Hindi pa tapos ang paglilinis — tapusin na ang huling hakbang.</item>
-        <item>Naputol ang paglilinis: nasa kalagitnaan. Tapusin para sa mas magaan na telepono.</item>
-        <item>Malapit nang matapos ang paglilinis — huwag iwanan ang basura.</item>
-        <item>Umalis ka sa kalagitnaan ng malinis - tapusin ito at damhin ang pagkakaiba.</item>
-        <item>Ang naantala na paglilinis ay maaaring magpatuloy anumang oras. Halika tapusin mo na.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Photo deleted — ligtas na inilipat sa recycle bin.</string>
+    <item>Hindi pa tapos ang paglilinis, pumasok para ituloy</item>
+    <item>Na-interrupt ang paglilinis kanina, ituloy ang paglilinis</item>
+    <item>Kaunti na lang at tapos na ang paglilinis, itutuloy ba?</item>
+    <item>Naka-pause ang paglilinis, ituloy para magbakante ng espasyo</item>
+    <item>Hindi pa tapos ang paglilinis, pumasok para ituloy</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Natanggal na ang mga larawan, pumunta sa Recycle Bin at alisin na rin</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Photo deleted — ligtas na inilipat sa recycle bin.</item>
-        <item>Kaka-delete lang ng 1 larawan — tingnan kung gaano karaming espasyo ang nalaya mo?</item>
-        <item>Tinanggal ang larawan — permanenteng tanggalin sa libreng espasyo ngayon.</item>
-        <item>Ligtas na tinanggal ang larawan — na-update ang katayuan ng imbakan.</item>
-        <item>Na-delete ang larawan — maaari mo ring linisin ang mga katulad na screenshot.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Tinanggal ang video — malaking espasyo ang nililibre.</string>
+    <item>Natanggal na ang mga larawan, pumunta sa Recycle Bin at alisin na rin</item>
+    <item>Natanggal na ang mga larawan, alisin na rin ang mga ito sa Recycle Bin</item>
+    <item>Nasa Recycle Bin na ang mga larawan, pumasok at linisin</item>
+    <item>Kumakain pa rin ng espasyo ang mga larawan sa Recycle Bin, alisin na</item>
+    <item>Mga larawang kakaltanggal lang, gusto mo bang alisin nang tuluyan?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Natanggal na ang mga video, mas makakatipid ng espasyo kung ililinis ang Recycle Bin</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Tinanggal ang video — malaking espasyo ang nililibre.</item>
-        <item>Inalis ang malaking video — humina kaagad ang presyon ng storage.</item>
-        <item>Natanggal ang video — tingnan ang iyong kasalukuyang katayuan ng storage.</item>
-        <item>I-delete ang tapos na — alisan ng laman ang recycle bin upang ganap na mabakante ang espasyo.</item>
-        <item>Na-delete ang video — maaaring may mas maraming nakalimutang malalaking video na lilinisin.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Na-delete ang audio — nagdadagdag ang maliliit na file. Ituloy mo.</string>
+    <item>Natanggal na ang mga video, mas makakatipid ng espasyo kung ililinis ang Recycle Bin</item>
+    <item>Natanggal na ang mga video, pero hindi pa rin nababawi ang espasyo</item>
+    <item>Nasa Recycle Bin na ang video, pumasok para i-clear</item>
+    <item>May isang video na na-delete, kailangang i-clear ang Recycle Bin</item>
+    <item>Nakaka-occupy pa rin ng espasyo ang mga video sa Recycle Bin</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Na-delete na ang audio pero may mga bahagi pa rin sa cache, buksan para tingnan</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Na-delete ang audio — nagdadagdag ang maliliit na file. Ituloy mo.</item>
-        <item>Nawala ang audio na iyon — mas maraming katulad na hindi nagamit na mga file ang maaari ding linisin.</item>
-        <item>Na-delete ang audio — na-update ang mga detalye ng storage. Halika tingnan mo.</item>
-        <item>1 audio file ang tinanggal — na-refresh ang listahan ng imbakan.</item>
-        <item>Tinanggal ang audio — alisan ng laman ang recycle bin upang tapusin ang pagbakante ng espasyo.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Na-delete ang file — medyo nabakante ang storage.</string>
+    <item>Na-delete na ang audio pero may mga bahagi pa rin sa cache, buksan para tingnan</item>
+    <item>Na-delete na ang audio, i-clear na rin ang Recycle Bin</item>
+    <item>Matagumpay na na-delete, pumunta para i-clear ang Recycle Bin</item>
+    <item>May isang audio na na-delete, kailangang i-clear ang Recycle Bin</item>
+    <item>Pumasok para i-clear ang mga lumang recording sa direktoryo ng cache</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Na-delete na ang mga file, pumunta sa Recycle Bin para i-clear</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Na-delete ang file — medyo nabakante ang storage.</item>
-        <item>Na-delete na ang file — hindi na aabalahin ng kalat ang iyong telepono.</item>
-        <item>Na-delete ang file — tingnan kung ano pa ang maaari mong linisin.</item>
-        <item>Tinanggal ang file — na-sync ang mga pagbabago, na-update ang katayuan ng storage.</item>
-        <item>Na-clear na ang file na iyon — nagre-reclaim ng space ngayon.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Na-download ang larawan — buksan ito at tingnan.</string>
+    <item>Na-delete na ang mga file, pumunta sa Recycle Bin para i-clear</item>
+    <item>Tapos nang i-delete ang mga file, hindi pa rin nababakante ang espasyo</item>
+    <item>Nasa Recycle Bin na ang mga file, linisin na rin</item>
+    <item>Tapos nang burahin ang mga file, magbakante ng espasyo</item>
+    <item>Nabura na ang mga file, mas makakatipid kung i-empty ang Recycle Bin</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Tapos nang i-download ang mga larawan, tingnan kung saan naka-save</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Na-download ang larawan — buksan ito at tingnan.</item>
-        <item>Na-download na larawan — linisin ang mga duplicate na larawan sa iyong album habang nandoon ka</item>
-        <item>Tapos na ang pag-download — ligtas na na-save ang imahe. Halika at tingnan ang mga katulad na larawan</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Na-download ang video — hindi ito maliit. Tingnan kung gaano karaming espasyo ang maaaring malaya ng mga lumang video</string>
+    <item>Tapos nang i-download ang mga larawan, tingnan kung saan naka-save</item>
+    <item>Nasa album na ang mga bagong larawan, i-tap para tingnan</item>
+    <item>Tingnan kung may mga bagong larawan na kapareho ng mga dati, i-tap para malaman</item>
+    <item>Tapos nang i-download, dapat nang alisin ang mga kaparehong larawan sa album</item>
+    <item>Tapos nang i-download ang mga larawan, tingnan kung magkano pa ang natitirang storage</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Halos puno na ang direktoryo ng mga video, tingnan</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Na-download ang video — hindi ito maliit. Tingnan kung gaano karaming espasyo ang maaaring malaya ng mga lumang video</item>
-        <item>Bagong video na na-save — maghanap ng malalaking video na tatanggalin at magbakante ng espasyo. Tapikin mo ako</item>
-        <item>Ang mga video ay tumatagal ng espasyo — nakakita kami ng mga bagay na nalilinis upang gumaan ang iyong telepono. Tapikin dito</item>
-        <item>Tapos na ang pag-download! Linisin ang ilang lumang video at babalik ang espasyo. Tapikin mo ako</item>
-        <item>Bagong video inayos — madaling hanapin o linisin. I-tap para makita</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Na-download ang audio — ayusin ang iyong library ng musika sa isang tap. Tapikin mo ako</string>
+    <item>Halos puno na ang direktoryo ng mga video, tingnan</item>
+    <item>I-tap ako para tingnan ang mga bagong na-download na napakalaking file</item>
+    <item>Tapos na ang pag-download, tingnan kung gaano kalaki ang inookupahang espasyo</item>
+    <item>Kakababa lang ng video, medyo puno na ang phone</item>
+    <item>I-tap para piliin ang mga video na nakaka-okupa ng espasyo</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Saan ba nakalagay ang bagong audio? I-tap para malaman</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Na-download ang audio — ayusin ang iyong library ng musika sa isang tap. Tapikin mo ako</item>
-        <item>Bagong audio pinagsunod-sunod — linisin ang lumang audio habang narito ka. Tapikin mo ako</item>
-        <item>Napupuno ang library ng musika? Suriin ang nalilinis na audio. Tapikin dito</item>
-        <item>Na-download ang audio — dedupe sa isang tap. Tapikin ako para maglinis</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Bagong file na na-save — i-clear ang mga lumang file at libreng espasyo. Tapikin dito</string>
+    <item>Saan ba nakalagay ang bagong audio? I-tap para malaman</item>
+    <item>Kakababa lang ng audio, magbakante na ng espasyo</item>
+    <item>Na-download na ang bagong audio, i-tap para tingnan</item>
+    <item>Kakababa lang ng audio, medyo puno na ang phone</item>
+    <item>Na-download na ang audio, dapat nang magbakante ng espasyo sa storage</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Matagumpay na na-download ang file, ayusin na ang storage</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Bagong file na na-save — i-clear ang mga lumang file at libreng espasyo. Tapikin dito</item>
-        <item>Tapos na ang pag-download — tingnan kung aling mga lumang file ang maaari mong linisin. Tapikin mo ako</item>
-        <item>Handa na ang bagong file — matalinong archive + malinis. I-tap ako para magsimula</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Walang laman ang recycle bin — na-refresh ang storage. Suriin ang iyong pinakabagong espasyo.</string>
+    <item>Matagumpay na na-download ang file, ayusin na ang storage</item>
+    <item>Kakababa lang ng file, magbakante na ng espasyo</item>
+    <item>I-tap para maayos na makategorya ang mga bagong file</item>
+    <item>Ano ang bago sa folder ng mga na-download? Buksan para malaman</item>
+    <item>Tapos nang ma-download ang file. Pumasok para ayusin ito</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Tapos nang i-clear. Tingnan kung gaano karaming espasyo ang nabakante</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Walang laman ang recycle bin — na-refresh ang storage. Suriin ang iyong pinakabagong espasyo.</item>
-        <item>Walang laman ang recycle bin — dumating ang mga natirang malinis na malinis.</item>
-        <item>Matagumpay na na-emptyed — mas maraming basurang lilinisin. Halika tingnan mo.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Malinis ngayon</string>
-    <string name="notif_event_action_open_home">Bukas</string>
-    <string name="notif_event_action_manage">Pamahalaan ang mga app</string>
-    <string name="notif_event_action_check_battery">Suriin ang baterya</string>
-    <string name="notif_event_action_check_network">Suriin ang network</string>
+    <item>Tapos nang i-clear. Tingnan kung gaano karaming espasyo ang nabakante</item>
+    <item>Na-clear na ang Recycle Bin. Biglang lumiwanag ang phone</item>
+    <item>Walang laman na ang Recycle Bin. Handa nang gamitin ang phone nang walang abala</item>
+    <item>Na-clear na ang Recycle Bin. Puwede pang mag-clear nang kaunti</item>
+    <item>Tapos nang i-clear. Gaano pa karaming espasyo ang puwedeng gamitin?</item>
+  </string-array>
+    <string name="notif_event_action_clean">Linisin</string>
+    <string name="notif_event_action_open_home">Buksan</string>
+    <string name="notif_event_action_manage">Pamahalaan</string>
+    <string name="notif_event_action_check_battery">Tingnan ang baterya</string>
+    <string name="notif_event_action_check_network">Tingnan ang data</string>
     <string name="notif_days_unit">araw</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Nagbago ang storage space. Tingnan natin kung ano ang kumukuha ng espasyo?</item>
-        <item>Nakita ang mga pagbabago sa spatial. Maaaring may ilang bagong basura, tingnan mo?</item>
-        <item>Ang magagamit na espasyo ay inilipat. Alam mo ba kung sino ang kumain nito? I-click upang tingnan.</item>
-        <item>Mahigpit ba ang espasyo? Nakita lang ang pagbabago, tingnan natin ang mga detalye.</item>
-        <item>Paalala sa pagbabago ng espasyo: Maaari kang makaipon ng maraming basura. Tingnan ito?</item>
-    </string-array>
+    <item>Bumaba na naman ang espasyo, i-tap para makita kung sino ang gumagamit</item>
+    <item>Pumasok para tingnan, puno na naman ng mga bagong larawan ang album</item>
+    <item>Dumadami na ang cache ng chat, buksan para makita ang katotohanan</item>
+    <item>Dumami na naman ang mga junk, pumasok para malaman</item>
+    <item>I-tap ako, bundok na ang mga junk at walang naglilinis</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Mababang baterya. Gusto mong malaman kung sino ang nagnanakaw ng iyong kuryente? I-click upang makita ang mga ranggo.</item>
-        <item>Bottoming out sa lalong madaling panahon. Kung aalisin mo ang mga app na nagnanakaw ng kuryente, makakaligtas ka pa rin sa ilang sandali.</item>
-        <item>Ubos na ang baterya. Ang pag-clear ng ilang background ay mas mahusay kaysa sa walang ginagawa.</item>
-        <item>Ang baterya ay pula. Maaari mo pa ring i-save ito, i-click upang buksan ito at tingnan.</item>
-        <item>Mas mababa sa 20% remains. Gumawa tayo ng pangunang lunas na nakakatipid sa kuryente at maglinis.</item>
-    </string-array>
+    <item>Malapit nang maubos ang baterya, huwag nang ipilit, i-tap para maging maayos</item>
+    <item>Hindi na aabot hanggang sa pag-uwi, pumasok para linisin ang cache</item>
+    <item>Nag-red na ang ilaw ng baterya, pumasok para tingnan</item>
+    <item>Ubos na ang baterya, pumasok para malaman kung sino ang may kagagawan</item>
+    <item>Malapit nang maubos ang baterya, i-tap para makita kung maaayos pa</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Ang baterya ay higit sa kalahating puno. Mag-ingat ka ngayon, tatagal ito hanggang sa pag-uwi mo.</item>
-        <item>Ang baterya ay higit sa kalahating puno. Ang pag-aalaga sa baterya ngayon ay mas madali kaysa maghintay hanggang 20%.</item>
-        <item>Ang baterya ay nawala sa kalahati. Gaano ito katagal? I-click upang tingnan.</item>
-        <item>Ang baterya ay higit sa kalahating puno. Oras na para alagaan ang backend, huwag hintayin na kabahan ito.</item>
-        <item>Kalahati ng baterya ang natitira. Alisin ang malalaking manlalarong gutom sa kapangyarihan at gawing mas matatag ang ikalawang kalahati.</item>
-    </string-array>
+    <item>I-tap para malaman, linisin muna habang nasa kalahati pa ang baterya</item>
+    <item>Bumaba na sa midline, i-tap para i-clear ang cache</item>
+    <item>Kalahating bar na lang, pumasok para ayusin ang album ng mga litrato</item>
+    <item>Matatag ang baterya, i-tap ako para i-clear ang cache</item>
+    <item>Katamtaman ang baterya, i-tap para i-clear ang cache nang walang alalahanin</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Ang huling sprint ay 80%. Alisin ang basurahan at mag-empake nang bahagya upang tanggapin ang buong lakas.</item>
-        <item>20% short pa rin ng full charge. Itigil ang pagtitig sa iyong screen at hayaan kaming mag-ingat sa basura.</item>
-        <item>80%: Isang hakbang ang layo mula sa pagiging perpekto. Mag-click nang isang beses at ito ay ganap na malilinis kapag ang baterya ay ganap na na-charge.</item>
-        <item>80%, a magandang baterya para sa magandang mobile phone. Naglilinis ng isang bilog habang mainit?</item>
-        <item>Ang huling 20% i na ibinigay sa amin. Tinitingnan mo ang baterya, at nililinis namin ang basura.</item>
-    </string-array>
+    <item>Nagcha-charge at walang ginagawa, pumasok para ayusin ang mga basura</item>
+    <item>Malapit nang mapuno at maraming basura, pumasok para alamin kung ano ang dahilan</item>
+    <item>Malapit nang mapuno, i-tap ako para i-clear ang mga basura</item>
+    <item>Malapit nang mapuno ang baterya, i-tap para maglinis</item>
+    <item>Habang nagcha-charge at naghihintay, pumasok para i-clear ang cache</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Ganap na naka-charge at handa nang umalis. Isang huling pagsusuri: Nalinis na ba ang basura?</item>
-        <item>Pagkatapos mag-charge, puno na ang sense of ritual. Paano ang tungkol sa paglilinis ng basura upang gunitain ito?</item>
-        <item>100%, stable ngayon. Isang round pa at walang kamali-mali.</item>
-        <item>100%. Ang huling hakbang bago mag-unplug: tanggalin ang basura, tatlumpung segundo.</item>
-        <item>Natapos nang buong lakas. Isang huling paglilinis, perpekto.</item>
-    </string-array>
+    <item>Kakasagot lang ng baterya, huwag sayangin, i-tap para tingnan ang cache</item>
+    <item>Habang puno ang baterya, samantalahin, pumasok para i-clear ang mga basura</item>
+    <item>Puno na ang baterya, oras na para maglinis. I-tap para i-clear ang cache</item>
+    <item>Puno na ang baterya, oras na para ayusin ang album. Tingnan ito</item>
+    <item>Puno na ang baterya at nasa standby mode. Pumasok para alisin ang mga junk file</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Nagbabago ang web! Tingnan ang kasalukuyang katayuan ng network 1</item>
-        <item>Pag-alis ng network. Huwag tumingin sa signal kapag naglilinis, i-click lamang ito at i-scan.</item>
-        <item>Hindi mabuksan ang pahina? Ang paglilinis ay palaging online.</item>
-        <item>Maaari kang magtrabaho nang offline, at ang iyong basura ay maaaring i-clear ngayon.</item>
-        <item>Kung walang signal, walang data na kinakailangan para sa paglilinis, i-click lamang.</item>
-    </string-array>
+    <item>Nawala ang koneksyon sa internet. I-tap para tingnan ang lokal na cache</item>
+    <item>Nagpalit ng network. Samantalahin ang pagkakataon para i-tap at tingnan ang cache</item>
+    <item>Hindi stable ang koneksyon sa internet. Huwag mag-alala, buksan para maglinis</item>
+    <item>Nawala ang koneksyon. Pumasok para tingnan ang mga lokal na junk file</item>
+    <item>Nakakonekta na ulit sa internet. Pumasok para tingnan ang cache</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Naka-plug in. Ang gawain ngayong gabi: mag-refill, pagkatapos ay linisin.</item>
-        <item>Nagpapahinga ka, nagre-recharge ito. Hayaang linisin din nito ang basura.</item>
-        <item>Sa oras ng pag-charge, sapat na upang alisin ang mga basura na naipon sa mahabang panahon.</item>
-        <item>Kapag nakasaksak lang ang kuryente ay malayang maglakas-loob ang mga tauhan sa backstage na magtrabaho.</item>
-        <item>Medyo naiinitan habang nagcha-charge? Ang pag-clear sa background ay maaaring magpababa ng temperatura.</item>
-    </string-array>
+    <item>Nakasaksak na sa power supply. Samantalahin para i-tap at tingnan ang cache</item>
+    <item>Nagsimula nang mag-charge. Pumasok para magsagawa ng deep cleaning</item>
+    <item>Nagsisimula pa lang mag-charge. I-tap para alisin ang mga junk file</item>
+    <item>Nagsimula na ang pag-charge, mas maaga, buksan para malinis</item>
+    <item>Nasa lugar na ang charger, buksan para tingnan ang cache</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>I-unplug at i-set off. Tandaan na maglaan ng oras upang linisin ang basura at manatili sa tip-top na hugis.</item>
-        <item>Pagkatapos mag-charge, mag-empake at umalis. Linisin lamang ito at ito ay magiging perpekto.</item>
-        <item>Ganap na naka-charge at handa nang gamitin. Ang paglilinis ng basura ay maayos, walang pagkukulang ngayon.</item>
-        <item>Matatapos ang pag-charge. Ang susunod na espasyo ay lilinisin at i-upgrade nang paisa-isa.</item>
-        <item>Huwag tumigil sa mga blackout. Isang bagay ang natitira: paglilinis.</item>
-    </string-array>
+    <item>Alisin ang charger para mag-offline, buksan para tingnan</item>
+    <item>Nawalan ng kuryente, hindi nakadepende sa internet, buksan para tingnan ang lokal</item>
+    <item>Alisin ang power supply, buksan para malinis</item>
+    <item>Nawalan ng kuryente, tingnan kung gaano katagal tatagal ang baterya</item>
+    <item>Naalis na ang cable, buksan para ayusin ang album</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Nagkita ulit tayo, suplado ka ba? Karamihan sa mga ito ay basura, subukang linisin ito.</item>
-        <item>Naka-unlock? Huwag munang magbukas ng ibang app at i-clear ang basurahan sa loob ng tatlumpung segundo.</item>
-        <item>Ang unang i-unlock ay tayo. Alisin ang basura at mas mamahalin ka nito.</item>
-        <item>Tatlumpung segundo pagkatapos ng pag-unlock. Ang pinakamahalagang gamit: paglilinis ng basura.</item>
-        <item>Sabi ng iyong cell phone: Medyo naka-block ang backend, pwede mo ba akong tulungan?</item>
-    </string-array>
+    <item>Tumunghay lang, nag-on ang screen, buksan para tingnan ang cache</item>
+    <item>Na-unlock na, sapat pa ba ang espasyo</item>
+    <item>Nag-on ang screen, tingnan agad ang ginagamit ng telepono</item>
+    <item>Nag-on lang ang screen, buksan para ayusin ang album</item>
+    <item>Madaling buksan ang screen, buksan para malaman ang katotohanan</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Ibaba ang iyong telepono at ipaubaya ito sa amin. Oras ng screen ng pahinga = oras ng pag-aalaga.</item>
-        <item>Ang pagtigil sa trabaho ay hindi nangangahulugan ng pagtigil sa trabaho. Bibigyan kita ng surpresa sa susunod na buksan ko ang screen.</item>
-        <item>Tahimik na gumaganda habang pinapahinga ang screen. Mag-click at gagawin namin ang iba pa.</item>
-        <item>Isang huling bagay bago i-lock ang screen: I-click ang Clean. Isang bagong hitsura bukas ng umaga.</item>
-        <item>Nagdidilim ang screen. Mag-ayos ngayon at tingnan ang mga resulta bukas.</item>
-    </string-array>
+    <item>Kapag naka-off ang screen, nagsisimula ang paglilinis sa background</item>
+    <item>Bago i-lock ang screen, madaling tingnan ang cache</item>
+    <item>Bago matulog, mainam na tingnan at ayusin ang album</item>
+    <item>Malapit nang mag-dim ang screen, buksan para sa walang aberyang paglilinis</item>
+    <item>Bago ma-off ang screen, bigyan ng kaluwagan ang telepono, buksan para malaman</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Lumipat na ang bagong app, at gayundin ang cache. maglinis</item>
-        <item>Naiintindihan namin ang kagalakan ng pag-install ng bagong app. Tahimik lang na tambak ang cache.</item>
-        <item>Bagong App? Nandito rin ang cache, i-clear ito sa isang click.</item>
-        <item>Ang bago ay pumapasok at ang luma ay lumalabas. Linisin ito nang madalas at i-install ito ayon sa gusto mo.</item>
-        <item>Isa pa? Ang espasyo ay lumiliit nang tahimik, halika at linisin ito.</item>
-    </string-array>
+    <item>Kasama ang cache ng bagong na-install na app, buksan para tingnan</item>
+    <item>Pagkatapos ma-install ang bagong app, madaling linisin ang installation package</item>
+    <item>Tahimik na pumasok sa cache ang mga bagong mukha, pumasok para malaman</item>
+    <item>Tingnan, lumalaki ang cache package ng bagong app</item>
+    <item>I-tap ako, kumakain pa rin ng espasyo ang bagong installation package ng app</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Matagumpay na na-uninstall! upang linisin ang mga nalalabi sa file</item>
-        <item>Na-uninstall ngunit hindi nalinis. I-click upang matapos.</item>
-        <item>Na-uninstall ang app, ngunit nandoon pa rin ang buntot. Maglinis sa isang click at magpaalam nang isang beses at para sa lahat.</item>
-        <item>Huwag palampasin ang pangalawang hakbang: tanggalin ang App + i-clear ang nalalabi. Isang pag-click at tapos na.</item>
-        <item>Kakainin ng nalalabi ang kalahati ng nabakanteng espasyo. Malalim na i-scan at i-clear ang lahat.</item>
-    </string-array>
+    <item>Kakadelete lang ng app pero may natitirang bakas pa rin, i-tap para tingnan</item>
+    <item>Pumasok para tingnan, may natitirang bakas pa rin kahit na-uninstall na</item>
+    <item>Na-uninstall na, kailangan pang i-clean para maging malinis</item>
+    <item>May natitirang bakas pa rin kahit na-uninstall na, i-tap para maging malinis</item>
+    <item>Hindi nagbago ang espasyo kahit na-uninstall na? Pumasok para malaman ang dahilan</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>May dumating na bagong bersyon. Ang lahat ng natitira sa lumang bersyon ay ganap na nalinis.</item>
-        <item>+1 para sa bersyon, +1 para sa cache, para sa malalim na pag-scan.</item>
-        <item>Ang pag-update ay nakumpleto at ang natitirang mga pakete ng pag-install ay maaaring malinis sa isang pag-click.</item>
-        <item>Tapos na ang update, tapusin na natin. Linisin mo at ako na ang bahala.</item>
-        <item>Ang bawat pag-update ay mag-iiwan ng mga lumang file at haharapin ang mga ito nang mabilis.</item>
-    </string-array>
+    <item>Na-update na ang app, dapat nang i-clear ang lumang cache</item>
+    <item>Tumaas ulit ang cache pagkatapos ma-update, i-tap para tingnan</item>
+    <item>Ang cache pagkatapos ma-update, pumasok para tingnan para mas mapanatag ang isip</item>
+    <item>Ang update package ay kumokonsumo pa rin ng maraming espasyo, i-tap para i-clear</item>
+    <item>May bagong lokal na natitirang file na kailangan mong i-clear. I-tap ako!</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Isa pang screenshot? 1 Oras na para i-clear ang mga screenshot</item>
-        <item>Nakahanap ng bagong screenshot, i-click upang tingnan at linisin ito~</item>
-        <item>Parami nang parami ang mga screenshot, ang one-click na paglilinis ay makakatulong sa iyo na gumawa ng espasyo</item>
-        <item>Matagumpay na nakuha ang screenshot, maaaring i-filter ang mga duplicate at blur sa isang click.</item>
-        <item>Ang mga bagong screenshot ay idinagdag sa database, at ang mga duplicate na larawan ay nakapila para sa pag-clear sa isang click.</item>
-    </string-array>
+    <item>May mga bagong screenshot. Tingnan kung gusto mong panatilihin ang mga ito.</item>
+    <item>Maraming naipon na screenshot sa album. I-tap para i-clear.</item>
+    <item>Matagumpay na nakunan ang screenshot. Ayusin natin ang album.</item>
+    <item>Bagong screenshot na kakakuha lang. I-tap para sa sorpresa.</item>
+    <item>May mga bagong screenshot sa album. Pumunta roon para mas madaling ayusin.</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Maraming basurang nakatambak. Linisin ito nang sabay-sabay.</item>
-        <item>Huling nalinis %1$d araw na nakalipas, i-click upang iproseso ito ngayon</item>
-        <item>Ilang araw na akong wala rito, kaya lilinisin ko ito at babalik sa larangan ng digmaan nang basta-basta.</item>
-        <item>Ang clearing quota ay hindi nagamit ngayon. Lilinawin ko ito pagbalik ko.</item>
-        <item>Napupuno na ang cache, naghihintay na tingnan mo ito</item>
-    </string-array>
+    <item>Matagal nang hindi na-clear ang telepono at nahihirapan na ito. I-tap para tingnan.</item>
+    <item>Matagal nang naipon ang mga junk file. Pumunta roon para i-clear.</item>
+    <item>Matagal nang hindi na-clear ang telepono at napakarami nang alikabok. I-tap para i-clear.</item>
+    <item>Buksan at tingnan ang album ng mga larawan, matagal nang napakarami ang naka-cache</item>
+    <item>Matagal ka na naming sinamahan sa paghihintay, kaya dapat nang i-clear ang cache, i-tap ako</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Matagal nang hindi nagkita, naghintay. Bumalik at itapon ang basura.</item>
-        <item>Ilang araw na kitang hindi nakikita. Walang pahinga para sa mga basura. Bumalik ka at walisin mo.</item>
-        <item>Nakapila ang cache. Mag-click at mawala sila.</item>
-        <item>Busy ang basura habang wala ka. Walang laman sa isang pag-click at sariwa ang pakiramdam gaya ng dati.</item>
-        <item>Bumalik? Linisin muna ang basura. Sa loob ng tatlumpung segundo, ang telepono ay kasing liwanag ng bago.</item>
-    </string-array>
+    <item>Matagal na tayong hindi nagkita, akala ko nakalimutan mo na, buksan at tingnan</item>
+    <item>Matagal nang hindi binubuksan, pasukin at tingnan para maging maayos</item>
+    <item>Matagal na tayong hindi nagkita, pasukin at alamin, dapat mong tingnan</item>
+    <item>Halos tumubo na ang damo sa icon, i-tap at pasukin para tingnan</item>
+    <item>Siguro ay nakalimutan mo dahil abala ka, matagal na kaming naghihintay, tingnan</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Ang mga basurang matagal nang naipon ay agad na nililimas.</item>
-        <item>Oras na para maglinis. Ang basura ngayon ay naghihintay para sa iyo na mag-click dito.</item>
-        <item>Dumating ang Space Daily ngayong araw. Alisin at panatilihin itong maliwanag.</item>
-        <item>Ang ilang mga file ay mas malaki kaysa sa iyong iniisip, tingnan</item>
-        <item>Hanapin ang taong kumuha ng ilang G\'s at linisin ito</item>
-        <item>Handa na ang malaking listahan ng dokumento, halika at tingnan.</item>
-        <item>Sino ang kumukuha ng pinakamaraming espasyo? Nabunyag sa isang segundo.</item>
-        <item>Ang tuluy-tuloy na pagbaril ay mahusay, ang pagtatapos ay masakit. Ipaubaya sa amin.</item>
-        <item>Naka-line up ang mga katulad na larawan, ikaw ang bahalang pumili kung alin ang pananatilihin</item>
-        <item>Napakaraming katulad na mga larawan? Tutulungan ka naming paghambingin at alisin ang mga duplicate sa isang click lang.</item>
-        <item>Dapat i-clear ang mga naka-cache na offline na video.</item>
-        <item>Ang natitirang audio ay lilinisin din.</item>
-    </string-array>
+    <item>Noong huling beses na nag-clear ka, hindi mo natapos, buksan at tingnan</item>
+    <item>Hindi mo natapos ang pag-clear, pasukin at tingnan kung saan ka huminto</item>
+    <item>Maraming malalaking video na nakatambak at kumakain ng maraming espasyo, i-tap para tingnan</item>
+    <item>May isang napakalaking file na hindi pa na-clear, i-tap para i-clear</item>
+    <item>May isang high-definition na video na kumakain ng maraming espasyo, pumasok para alamin</item>
+    <item>Kumakain ng espasyo ang mga duplicate na litrato, pumasok para tingnan kung ano ang puwedeng i-clear</item>
+    <item>Mga duplicate na mukha sa album ng mga litrato, i-tap ako para makapag-delete ng ilan</item>
+    <item>Maraming magkakatulad na litrato ng tanawin, tingnan para mapili kung ano ang puwedeng i-delete</item>
+    <item>Kumakain ng espasyo ang malalaking video, i-tap para tingnan</item>
+    <item>Puno ng mga voice message ang cache ng chat, pumasok para ayusin</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Ang baterya ba ay hindi kasing tibay ng dati? Suriin ito.</item>
-        <item>Sino ang nagnanakaw ng iyong kuryente? Malalaman mo kapag tiningnan mo ito.</item>
-        <item>Ang pag-off sa mga ito ay magpapahaba ng buhay ng baterya.</item>
-        <item>Ang ilang mga app ay naka-install ngunit hindi kailanman ginagamit. Tingnan kung alin sila?</item>
-        <item>Ang pagpapanatiling mga app na hindi mo ginagamit ay isang pabigat din, ang listahan ay nagawa na</item>
-        <item>Tungkol sa pagkapribado, mas maaga itong hinarap, mas mabuti.</item>
-        <item>Itago ang mga mahalaga at alisin ang mga hindi kailangan. hayaan mo akong tulungan ka</item>
-        <item>Saan napupunta ang traffic? Alamin kung sino ang gumagamit nito.</item>
-        <item>Ang mga detalye ng trapiko ay handa at malinaw sa isang sulyap.</item>
-        <item>Mayroong isang app na lihim na kumokonekta sa Internet sa background.</item>
-    </string-array>
+    <item>Palihim na kumakain ng baterya mo ang mga app sa background, i-tap para tingnan</item>
+    <item>Unti-unting nababawasan ang baterya habang nasa standby mode nang buong gabi, i-tap ako</item>
+    <item>Mas malaki ang araw-araw na pagkonsumo ng baterya kapag naka-on palagi ang pag-sync, pumasok para malaman</item>
+    <item>Maraming app na hindi nabuksan sa loob ng anim na buwan, tingnan</item>
+    <item>Walang silbing nakakaubos ng espasyo ang mga pre-installed na software, pumasok para ayusin</item>
+    <item>Tingnan, hindi gaanong karami ang mga madalas gamiting app</item>
+    <item>Naka-lock ang mga pribadong larawan sa Privacy Space, buksan para tingnan</item>
+    <item>Lihim na itago ang mga selfie para hindi makita ng iba, pumasok para malaman</item>
+    <item>Malapit nang maubos ang data ngayong buwan, buksan para tingnan</item>
+    <item>Napakalaki ng natitipid kapag naka-on ang Data Saving Mode, tingnan</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} ng junk—i-clear ito sa isang tap</string>
     <string name="notif_scheduled_large_files">{total} ng malalaking file—maglinis nang madali</string>
     <string name="notif_scheduled_duplicate_photos">{groups} mga grupo ng mga duplicate na larawan—save {size}</string>
@@ -762,7 +769,7 @@
     <string name="notif_scheduled_videos">{total} ng mga video—tanggalin ang {n} upang magbakante ng espasyo</string>
     <string name="notif_scheduled_audio">{total} ng mga audio file—oras na para mag-ayos</string>
     <string name="notif_scheduled_apps">{size} na ginagamit ng {idle} idle apps</string>
-    <string name="notif_scheduled_data">{back} ng data na ginamit sa background</string>
+    <string name="notif_scheduled_data">{back} ng mobile data ang nagamit sa background</string>
     <string name="app_manager_uninstall_selected">I-uninstall ang napili</string>
     <string name="app_manager_uninstall_selected_count">I-uninstall ang napili (%1$d)</string>
     <string name="cache_removable">Matatanggal</string>

@@ -248,7 +248,6 @@ class PhotoDetailFragment : Fragment() {
         binding.btnShare.isVisible = currentUri != null
         if (currentUri != null) {
             binding.imagePhoto.load(currentUri) {
-                placeholder(R.drawable.ic_media_placeholder)
                 error(R.drawable.ic_media_placeholder)
                 crossfade(false)
                 size(1280)

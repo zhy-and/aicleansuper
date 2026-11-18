@@ -13,6 +13,7 @@ import com.aetherquorion.cleansuperai.databinding.ViewToolItemBinding
 import com.aetherquorion.cleansuperai.databinding.ViewToolTileBinding
 import com.aetherquorion.cleansuperai.ui.clean.CleanCenterFragment
 import com.aetherquorion.cleansuperai.ui.vault.VaultFragment
+import com.aetherquorion.cleansuperai.widget.WidgetPinHelper
 
 class ToolsFragment : Fragment() {
     private var _binding: FragmentToolsBinding? = null
@@ -31,6 +32,9 @@ class ToolsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btnPremium.isVisible = false
         binding.btnSettings.setOnClickListener { (activity as? MainActivity)?.openProfile() }
+        binding.cardWidgetHero.setOnClickListener {
+            WidgetPinHelper.requestPin(requireContext(), "tools_hero")
+        }
 
         configure(
             binding.toolFileManager,
@@ -74,12 +78,6 @@ class ToolsFragment : Fragment() {
             R.drawable.ic_speed,
             R.drawable.bg_home_feature_icon_blue,
         )
-        configure(binding.toolNetworkTraffic, R.string.tool_network_traffic, R.string.tool_network_traffic_desc,
-            R.drawable.ic_chart, R.drawable.bg_home_feature_icon_blue)
-        configure(binding.toolBatteryInfo, R.string.tool_battery_info, R.string.tool_battery_info_desc,
-            R.drawable.ic_home_battery, R.drawable.bg_home_feature_icon_orange)
-        configure(binding.toolDeviceInfo, R.string.tool_device_info, R.string.tool_device_info_desc,
-            R.drawable.ic_phone, R.drawable.bg_home_feature_icon_green)
         configure(binding.toolPrivateVault, R.string.tool_private_vault, R.string.tool_private_vault_desc,
             R.drawable.ic_lock, R.drawable.bg_home_feature_icon_pink)
 
@@ -100,15 +98,6 @@ class ToolsFragment : Fragment() {
         }
         binding.toolSpeedTest.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(SpeedTestFragment(), "speed_test")
-        }
-        binding.toolNetworkTraffic.root.setOnClickListener {
-            (activity as? MainActivity)?.openDetail(NetworkTrafficFragment(), "network_traffic")
-        }
-        binding.toolBatteryInfo.root.setOnClickListener {
-            (activity as? MainActivity)?.openDetail(SystemInfoFragment.battery(), "battery_info")
-        }
-        binding.toolDeviceInfo.root.setOnClickListener {
-            (activity as? MainActivity)?.openDetail(SystemInfoFragment.device(), "device_info")
         }
         binding.toolPrivateVault.root.setOnClickListener {
             (activity as? MainActivity)?.openDetail(VaultFragment(), "vault")

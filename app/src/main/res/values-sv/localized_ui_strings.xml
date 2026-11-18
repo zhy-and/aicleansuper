@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">Välj app</string>
+    <string name="app_manager_uninstall_confirm">Avinstallera de %1$d valda apparna? Android ber dig bekräfta varje avinstallation.</string>
+    <string name="cache_access_required">Tillåt åtkomst till alla filer för att söka igenom cacheminnet</string>
+    <string name="cache_clean_action">Rensa</string>
+    <string name="cache_clean_result">%1$d av %2$d objekt har rensats</string>
+    <string name="cache_confirm_clean">Rensa de %1$d valda objekten?</string>
+    <string name="cleanup_report_complete">Rensningen är klar.</string>
+    <string name="cleanup_report_explore">Utforska fler verktyg</string>
+    <string name="cleanup_report_go">Öppna</string>
+    <string name="home_pending_items_format">Objekt att rensa: %1$d</string>
+    <string name="info_report_title">Rapport</string>
+    <string name="large_file_access_required">Åtkomst till alla filer krävs</string>
+    <string name="large_file_delete">Ta bort</string>
+    <string name="large_file_delete_amount">Ta bort %1$s (%2$d)</string>
+    <string name="large_file_delete_confirm">Ta bort de %1$d valda filerna?</string>
+    <string name="large_file_delete_selected">Ta bort valda</string>
+    <string name="large_file_deleted_summary">%1$d av %2$d filer har tagits bort</string>
+    <string name="large_file_deselect_all">Avmarkera alla</string>
+    <string name="large_file_deselect_all_shown">Avmarkera alla filer som visas</string>
+    <string name="large_file_filter_description">Filter för %1$s: %2$s</string>
+    <string name="large_file_filter_size">Storlek</string>
+    <string name="large_file_filter_time">Tidsperiod</string>
+    <string name="large_file_filter_type">Typ</string>
+    <string name="large_file_open">Öppna</string>
+    <string name="large_file_scanning">Söker igenom filer…</string>
+    <string name="large_file_select_all">Markera alla</string>
+    <string name="large_file_select_all_shown">Markera alla filer som visas</string>
+    <string name="large_file_summary">%1$d filer · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Alla tidsperioder</item>
+        <item>1 vecka</item>
+        <item>1 månad</item>
+        <item>3 månader</item>
+        <item>6 månader</item>
+        <item>1 år</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Alla</item>
+        <item>Bilder</item>
+        <item>Videor</item>
+        <item>Ljud</item>
+        <item>Dokument</item>
+        <item>Arkiv</item>
+        <item>APK</item>
+        <item>Övriga</item>
+    </string-array>
+    <string name="new_feature_badge_description">Ny funktion</string>
+    <string name="sys_android_version">Android-version</string>
+    <string name="sys_discharging">Laddas ur</string>
+    <string name="sys_level">Nivå</string>
+    <string name="sys_status">Status</string>
+    <string name="traffic_empty">Hittade ingen datatrafik för appar</string>
+    <string name="traffic_guide_message">Ge den här appen åtkomst till användningsdata i Inställningar för att se datatrafik per app.</string>
+    <string name="traffic_loading">Läser in…</string>
+    <string name="traffic_usage_required">Åtkomst till användningsdata krävs. Tryck för att ge åtkomst.</string>
+    <string name="vlt_delete_confirm">Ta bort %1$d privata filer permanent?</string>
+    <string name="vlt_deselect_all">Avmarkera alla</string>
+    <string name="vlt_import_media">Importera foton eller videor</string>
+    <string name="vlt_originals_remain">; %1$d originalfiler finns kvar på enheten</string>
+    <string name="vlt_restore_confirm">Återställa %1$d filer till Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">%1$d av %2$d filer har återställts</string>
+    <string name="vlt_select_all">Markera alla</string>
+    <string name="widget_action_files">Filer</string>
+    <string name="widget_action_photos">Foton</string>
+</resources>

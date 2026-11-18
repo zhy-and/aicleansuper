@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Storage alert: {size} of junk found. Clean it in one tap.</item>
+        <item>{size} of cache has built up. Free up space now.</item>
+        <item>Found {apps} apps using {size}. Clean them up.</item>
+        <item>The system found {size} of temporary files. Clean them safely.</item>
+        <item>An app is creating cache. Tap to review it.</item>
+        <item>Found {size} of empty folders and duplicate files. Clean them in one tap.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Your photos are taking up space. Compress them and keep them sharp.</item>
+        <item>Saved {photos} photos? Compress them to make room for more.</item>
+        <item>{photos} photos could free up {size}. Compress them now.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Videos are using {size}. Compress them in a batch and save space.</item>
+        <item>Compress your videos and save up to {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Found {photos} blurry photos. Enhance them for a clearer look.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Found {contacts} duplicate contacts. Merge them in one tap.</item>
+        <item>Found {contacts} contacts without names. Tidy up your address book.</item>
+        <item>Your contacts haven\'t been backed up lately. Keep them safe.</item>
+        <item>{contacts} contact records are incomplete. Fill in the details.</item>
+        <item>Some newly imported contacts are duplicates. Organize them now.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Your next event is coming up. Get ready.</item>
+        <item>Your important event is in {days} days. Are you ready?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>How fast is your connection? Run a quick speed test.</item>
+        <item>Switched networks? Check which one is faster and uses less data.</item>
+    </string-array>
+</resources>

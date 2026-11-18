@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>ทั้งหมด</item>
+        <item>รูปภาพ</item>
+        <item>วิดีโอ</item>
+        <item>เสียง</item>
+        <item>เอกสาร</item>
+        <item>ไฟล์บีบอัด</item>
+        <item>APK</item>
+        <item>อื่นๆ</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>ทุกช่วงเวลา</item>
+        <item>1 สัปดาห์</item>
+        <item>1 เดือน</item>
+        <item>3 เดือน</item>
+        <item>6 เดือน</item>
+        <item>1 ปี</item>
+    </string-array>
+    <string name="large_file_filter_type">ประเภท</string>
+    <string name="large_file_filter_size">ขนาด</string>
+    <string name="large_file_filter_time">ช่วงเวลา</string>
+    <string name="large_file_filter_description">ตัวกรอง%1$s: %2$s</string>
+    <string name="large_file_access_required">ต้องมีสิทธิ์เข้าถึงไฟล์ทั้งหมด</string>
+    <string name="large_file_scanning">กำลังสแกนไฟล์…</string>
+    <string name="large_file_summary">%1$d ไฟล์ · %2$s</string>
+    <string name="large_file_select_all">เลือกทั้งหมด</string>
+    <string name="large_file_deselect_all">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="large_file_select_all_shown">เลือกไฟล์ที่แสดงทั้งหมด</string>
+    <string name="large_file_deselect_all_shown">ยกเลิกการเลือกไฟล์ที่แสดงทั้งหมด</string>
+    <string name="large_file_delete_selected">ลบรายการที่เลือก</string>
+    <string name="large_file_delete_amount">ลบ %1$s (%2$d)</string>
+    <string name="large_file_open">เปิด</string>
+    <string name="large_file_delete">ลบ</string>
+    <string name="large_file_delete_confirm">ลบไฟล์ที่เลือก %1$d ไฟล์ไหม</string>
+    <string name="large_file_deleted_summary">ลบแล้ว %1$d จาก %2$d ไฟล์</string>
+    <string name="sys_level">ระดับ</string>
+    <string name="sys_status">สถานะ</string>
+    <string name="sys_discharging">กำลังใช้พลังงานจากแบตเตอรี่</string>
+    <string name="sys_android_version">เวอร์ชัน Android</string>
+    <string name="traffic_usage_required">ต้องมีสิทธิ์เข้าถึงข้อมูลการใช้งาน แตะเพื่ออนุญาต</string>
+    <string name="traffic_loading">กำลังโหลด…</string>
+    <string name="traffic_empty">ไม่พบข้อมูลการใช้งานเครือข่ายของแอป</string>
+    <string name="traffic_guide_message">อนุญาตให้แอปนี้เข้าถึงข้อมูลการใช้งานในการตั้งค่า เพื่อดูการใช้งานเครือข่ายแยกตามแอป</string>
+    <string name="app_manager_uninstall_confirm">ถอนการติดตั้งแอปที่เลือก %1$d แอปไหม Android จะขอให้ยืนยันทีละแอป</string>
+    <string name="home_pending_items_format">รายการที่ต้องล้าง: %1$d</string>
+    <string name="info_report_title">รายงาน</string>
+    <string name="new_feature_badge_description">ฟีเจอร์ใหม่</string>
+    <string name="cache_access_required">อนุญาตให้เข้าถึงไฟล์ทั้งหมดเพื่อสแกนแคช</string>
+    <string name="cache_confirm_clean">ล้างรายการที่เลือก %1$d รายการไหม</string>
+    <string name="cache_clean_action">ล้าง</string>
+    <string name="cache_clean_result">ล้างแล้ว %1$d จาก %2$d รายการ</string>
+    <string name="cleanup_report_complete">ล้างเสร็จแล้ว</string>
+    <string name="cleanup_report_explore">ดูเครื่องมือเพิ่มเติม</string>
+    <string name="cleanup_report_go">ไป</string>
+    <string name="widget_action_files">ไฟล์</string>
+    <string name="widget_action_photos">รูปภาพ</string>
+    <string name="vlt_select_all">เลือกทั้งหมด</string>
+    <string name="vlt_deselect_all">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="vlt_import_media">นำเข้ารูปภาพหรือวิดีโอ</string>
+    <string name="vlt_originals_remain">; ยังมีไฟล์ต้นฉบับ %1$d ไฟล์อยู่ในอุปกรณ์</string>
+    <string name="vlt_restore_confirm">กู้คืนไฟล์ %1$d ไฟล์ไปที่ Pictures/PurGuClean ไหม</string>
+    <string name="vlt_restored_count">กู้คืนแล้ว %1$d จาก %2$d ไฟล์</string>
+    <string name="vlt_delete_confirm">ลบไฟล์ส่วนตัว %1$d ไฟล์อย่างถาวรไหม</string>
+    <string name="app_manager_select_app">เลือกแอป</string>
+</resources>

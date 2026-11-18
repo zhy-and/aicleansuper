@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Lagringsvarning: {size} skräp hittades. Rengör den i en kran.</item>
+        <item>{size} cache har byggts upp. Frigör utrymme nu.</item>
+        <item>Hittade {apps} appar med {size}. Rensa upp dem.</item>
+        <item>Systemet hittade {size} temporära filer. Rengör dem säkert.</item>
+        <item>En app skapar cache. Tryck för att granska den.</item>
+        <item>Hittade {size} tomma mappar och dubbletter av filer. Rengör dem i en kran.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Dina bilder tar plats. Komprimera dem och håll dem skarpa.</item>
+        <item>Sparade {photos} bilder? Komprimera dem för att göra plats för fler.</item>
+        <item>{photos} foton kan frigöra {size}. Komprimera dem nu.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Videor använder {size}. Komprimera dem i en batch och spara utrymme.</item>
+        <item>Komprimera dina videor och spara upp till {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Hittade {photos} suddiga bilder. Förbättra dem för ett tydligare utseende.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Hittade {contacts} dubbletter av kontakter. Slå ihop dem med ett tryck.</item>
+        <item>Hittade {contacts} kontakter utan namn. Gör i ordning din adressbok.</item>
+        <item>Dina kontakter har inte säkerhetskopierats på sistone. Håll dem säkra.</item>
+        <item>{contacts} kontaktposter är ofullständiga. Fyll i detaljerna.</item>
+        <item>Vissa nyligen importerade kontakter är dubbletter. Organisera dem nu.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Ditt nästa event är på väg. Gör dig redo.</item>
+        <item>Din viktiga händelse är om {days} dagar. Är du redo?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Hur snabb är din uppkoppling? Kör ett snabbt hastighetstest.</item>
+        <item>Bytt nätverk? Kontrollera vilken som är snabbare och använder mindre data.</item>
+    </string-array>
+</resources>

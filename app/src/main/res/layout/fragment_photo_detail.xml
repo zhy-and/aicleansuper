@@ -302,22 +302,6 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/btnRestoreAll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="14dp"
-                    android:background="@drawable/bg_trash_hint"
-                    android:foreground="?attr/selectableItemBackground"
-                    android:gravity="center"
-                    android:minHeight="48dp"
-                    android:paddingHorizontal="18dp"
-                    android:paddingVertical="16dp"
-                    android:text="@string/trash_restore_hint"
-                    android:textColor="@color/action_keep"
-                    android:textSize="16sp" />
-
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerTrashBin"
                     android:layout_width="match_parent"
@@ -338,14 +322,30 @@
                     android:textSize="14sp"
                     android:visibility="gone" />
 
-                <Button
-                    android:id="@+id/btnClearPending"
-                    style="@style/Widget.Cleansuperai.Button.ActionPrimary"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="18dp"
                     android:layout_marginTop="18dp"
-                    android:text="@string/trash_empty_action" />
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnRestoreAll"
+                        style="@style/Widget.Cleansuperai.Button.ActionPrimary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/trash_restore_hint" />
+
+                    <Button
+                        android:id="@+id/btnClearPending"
+                        style="@style/Widget.Cleansuperai.Button.ActionPrimary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/trash_empty_action" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>

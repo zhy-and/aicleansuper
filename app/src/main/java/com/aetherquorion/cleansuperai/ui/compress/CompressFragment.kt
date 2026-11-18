@@ -41,7 +41,9 @@ class CompressFragment : Fragment() {
     private var compressedPreviewFile: File? = null
 
     private val picker = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
-        uri?.let(::showSelection)
+        uri?.let { selected ->
+            (activity as? MainActivity)?.openDetail(newResult(selected), "photo_compress_result")
+        }
     }
 
     override fun onCreateView(
@@ -56,6 +58,18 @@ class CompressFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnPremium.isVisible = false
+        val resultUri = arguments?.getString(ARG_RESULT_URI)?.let(Uri::parse)
+        if (resultUri != null) {
+            binding.btnBack.isVisible = true
+            binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
+            binding.btnSettings.isVisible = false
+            binding.cardVideo.isVisible = false
+            binding.tvPageTitle.setText(R.string.photo_compressor)
+            binding.tvPageTitle.textAlignment = View.TEXT_ALIGNMENT_CENTER
+            binding.tvPageTitle.setPadding(0, 0, (42 * resources.displayMetrics.density).toInt(), 0)
+            binding.btnChoosePhoto.isVisible = false
+            showSelection(resultUri)
+        }
         binding.btnSettings.setOnClickListener { (activity as? MainActivity)?.openProfile() }
         binding.cardVideo.setOnClickListener {
             (activity as? MainActivity)?.openDetail(VideoCompressFragment(), "video_compress")
@@ -87,6 +101,7 @@ class CompressFragment : Fragment() {
 
     private fun showSelection(uri: Uri) {
         selectedUri = uri
+        binding.btnChoosePhoto.isVisible = false
         clearCompressedPreview()
         originalBytes = requireContext().contentResolver.openAssetFileDescriptor(uri, "r")
             ?.use { it.length.coerceAtLeast(0) } ?: 0
@@ -270,4 +285,12 @@ class CompressFragment : Fragment() {
         val file: File,
         val result: CompressionResult,
     )
+
+    companion object {
+        private const val ARG_RESULT_URI = "result_uri"
+
+        private fun newResult(uri: Uri) = CompressFragment().apply {
+            arguments = Bundle().apply { putString(ARG_RESULT_URI, uri.toString()) }
+        }
+    }
 }

@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.ui.common.inlineAdHost
 import com.aetherquorion.cleansuperai.ui.cache.CacheCleanupFragment
 import com.aetherquorion.cleansuperai.ui.common.ParityUi
 import com.aetherquorion.cleansuperai.ui.largefiles.LargeFilesFragment
@@ -36,6 +37,7 @@ class CleanupReportFragment : Fragment() {
         }
         root.addView(content)
         content.addView(ParityUi.back(context) { parentFragmentManager.popBackStack() })
+        content.addView(inlineAdHost(context))
         content.addView(ImageView(context).apply {
             setImageResource(R.drawable.ic_check_circle_filled)
             setBackgroundResource(R.drawable.bg_check_circle)

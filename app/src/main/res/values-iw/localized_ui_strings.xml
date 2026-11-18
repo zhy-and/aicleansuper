@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>הכול</item>
+        <item>תמונות</item>
+        <item>סרטונים</item>
+        <item>שמע</item>
+        <item>מסמכים</item>
+        <item>ארכיונים</item>
+        <item>APK</item>
+        <item>אחר</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>כל התקופות</item>
+        <item>שבוע</item>
+        <item>חודש</item>
+        <item>3 חודשים</item>
+        <item>6 חודשים</item>
+        <item>שנה</item>
+    </string-array>
+    <string name="large_file_filter_type">סוג</string>
+    <string name="large_file_filter_size">גודל</string>
+    <string name="large_file_filter_time">זמן</string>
+    <string name="large_file_filter_description">סינון לפי %1$s: %2$s</string>
+    <string name="large_file_access_required">נדרשת גישה לכל הקבצים</string>
+    <string name="large_file_scanning">הקבצים נסרקים…</string>
+    <string name="large_file_summary">%1$d קבצים · %2$s</string>
+    <string name="large_file_select_all">בחירה של הכול</string>
+    <string name="large_file_deselect_all">ביטול כל הבחירות</string>
+    <string name="large_file_select_all_shown">בחירה של כל הקבצים המוצגים</string>
+    <string name="large_file_deselect_all_shown">ביטול הבחירה של כל הקבצים המוצגים</string>
+    <string name="large_file_delete_selected">מחיקת הפריטים שנבחרו</string>
+    <string name="large_file_delete_amount">מחיקת %1$s (%2$d)</string>
+    <string name="large_file_open">פתיחה</string>
+    <string name="large_file_delete">מחיקה</string>
+    <string name="large_file_delete_confirm">למחוק את %1$d הקבצים שנבחרו?</string>
+    <string name="large_file_deleted_summary">נמחקו %1$d מתוך %2$d קבצים</string>
+    <string name="sys_level">רמה</string>
+    <string name="sys_status">מצב</string>
+    <string name="sys_discharging">הסוללה מתרוקנת</string>
+    <string name="sys_android_version">גרסת Android</string>
+    <string name="traffic_usage_required">נדרשת גישה לנתוני שימוש. יש להקיש כדי לאשר גישה.</string>
+    <string name="traffic_loading">בטעינה…</string>
+    <string name="traffic_empty">לא נמצאו נתוני תעבורת רשת של אפליקציות</string>
+    <string name="traffic_guide_message">כדי לראות את תעבורת הרשת של כל אפליקציה, יש לאפשר לאפליקציה הזו גישה לנתוני שימוש בהגדרות.</string>
+    <string name="app_manager_uninstall_confirm">להסיר את %1$d האפליקציות שנבחרו? מערכת Android תבקש לאשר את ההסרה של כל אפליקציה.</string>
+    <string name="home_pending_items_format">פריטים לניקוי: %1$d</string>
+    <string name="info_report_title">דוח</string>
+    <string name="new_feature_badge_description">תכונה חדשה</string>
+    <string name="cache_access_required">יש לאפשר גישה לכל הקבצים כדי לסרוק את המטמון</string>
+    <string name="cache_confirm_clean">לנקות את %1$d הפריטים שנבחרו?</string>
+    <string name="cache_clean_action">ניקוי</string>
+    <string name="cache_clean_result">נוקו %1$d מתוך %2$d פריטים</string>
+    <string name="cleanup_report_complete">הניקוי הסתיים.</string>
+    <string name="cleanup_report_explore">כלים נוספים</string>
+    <string name="cleanup_report_go">מעבר</string>
+    <string name="widget_action_files">קבצים</string>
+    <string name="widget_action_photos">תמונות</string>
+    <string name="vlt_select_all">בחירה של הכול</string>
+    <string name="vlt_deselect_all">ביטול כל הבחירות</string>
+    <string name="vlt_import_media">ייבוא תמונות או סרטונים</string>
+    <string name="vlt_originals_remain">; %1$d קבצים מקוריים נותרו במכשיר</string>
+    <string name="vlt_restore_confirm">לשחזר %1$d קבצים אל Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">שוחזרו %1$d מתוך %2$d קבצים</string>
+    <string name="vlt_delete_confirm">למחוק לצמיתות %1$d קבצים פרטיים?</string>
+    <string name="app_manager_select_app">בחירת אפליקציה</string>
+</resources>

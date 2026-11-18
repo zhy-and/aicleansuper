@@ -145,6 +145,7 @@
     <string name="app_manager_uninstall_selected">Uninstall selected</string>
     <string name="app_manager_uninstall_selected_count">Uninstall selected (%1$d)</string>
     <string name="app_manager_uninstall_confirm">Uninstall %1$d selected apps? Android will ask you to confirm each app.</string>
+    <string name="app_manager_select_app">Select app</string>
     <string name="filter_100mb">100MB+</string>
     <string name="filter_500mb">500MB+</string>
     <string name="filter_all_videos">All Results</string>
@@ -371,7 +372,8 @@
     <string name="trash_restore_hint">Restore photos</string>
     <string name="action_got_it_short">Got it</string>
     <string name="info_report_title">Report</string>
-    <string name="trash_empty_action">Delete all in trash</string>
+    <string name="trash_empty_action">Delete photos</string>
+    <string name="new_feature_badge_description">New feature</string>
     <string name="trash_restored">Photo restored</string>
     <string name="trash_bin_empty">Trash bin is empty</string>
     <string name="feature_smart_groups">Smart groups</string>
@@ -497,6 +499,8 @@
     <string name="exit_retain_feature_cache">Cache</string>
     <string name="exit_retain_feature_large">Large Files</string>
     <string name="widget_status_storage">Free space</string>
+    <string name="widget_action_files">Files</string>
+    <string name="widget_action_photos">Photos</string>
     <string name="notif_large_file">Large files</string>
     <string name="notif_screenshot">Screenshots</string>
     <string name="exit_retain_message_existing">Your home widget is ready for quick cleaning</string>

@@ -1,0 +1,235 @@
+<resources>
+  <string name="notif_event_scheduled_push_3_title">ホーム画面にウィジェットを追加して、アプリを開かずにクリーンアップ</string>
+  <string-array name="notif_event_scheduled_push_3_titles">
+    <item>ホーム画面にウィジェットを追加して、アプリを開かずにクリーンアップ</item>
+    <item>ウィジェットを追加して、いつでも手軽にクリーンアップ</item>
+    <item>ウィジェットの準備ができました。ホーム画面に配置しましょう</item>
+    <item>ワンタップでウィジェットを追加し、ホーム画面からクリーンアップ</item>
+    <item>ウィジェットを追加して、もっと簡単にクリーンアップ</item>
+  </string-array>
+  <string name="notif_event_action_clean">クリーンアップ</string>
+  <string name="notif_event_action_open_home">開く</string>
+  <string name="notif_event_action_manage">管理する</string>
+  <string name="notif_event_action_check_battery">バッテリーを見る</string>
+  <string name="notif_event_action_check_network">データ使用量を見る</string>
+  <string-array name="notif_event_storage_free_drop_titles">
+    <item>容量がまた減ったよ、誰が占領してるか見てみよう</item>
+    <item>入って見てみよう、アルバムに新しい写真がまた増えてる</item>
+    <item>チャットキャッシュがどんどん溜まってる、開いて真相を見てみよう</item>
+    <item>また大量のゴミが現れた、入って真相を明らかにしよう</item>
+    <item>タップしてよ、ゴミが山積みになって誰も片付けないんだ</item>
+  </string-array>
+  <string-array name="notif_event_battery_below_20_titles">
+    <item>バッテリー残量低すぎ！無理は禁物。タップしてスッキリしよう</item>
+    <item>家に帰るまで持たないなら、キャッシュをクリアしよう</item>
+    <item>バッテリー赤ランプが点灯。中を見てみよう</item>
+    <item>バッテリーが底をついた。原因を探そう</item>
+    <item>もうすぐ切れる。タップしてまだ助かるか確認しよう</item>
+  </string-array>
+  <string-array name="notif_event_battery_below_50_titles">
+    <item>開けばわかる。バッテリーが半分以上ならまず掃除しよう</item>
+    <item>中央線を下回った。開いてキャッシュをクリア</item>
+    <item>半分しか残らない。入ってアルバムを整理</item>
+    <item>バッテリーは安定してる。タップしてキャッシュを掃く</item>
+    <item>バッテリーは普通。タップして楽にキャッシュをクリア</item>
+  </string-array>
+  <string-array name="notif_event_charging_to_80_titles">
+    <item>充電中、ちょっと片付けに来たよ</item>
+    <item>もうすぐ満タンだけどゴミが多いから、元凶を公開しよう</item>
+    <item>満タンまであと少し、私をタップしてゴミを消そう</item>
+    <item>もうすぐバッテリーが満タンだ、開けばきれいになるよ</item>
+    <item>充電しながら待って、タップしてキャッシュを消そう</item>
+  </string-array>
+  <string-array name="notif_event_charging_full_titles">
+    <item>満充電になったら無駄にしないように、キャッシュを確認しよう</item>
+    <item>満充電なら今すぐ、ゴミを整理しよう</item>
+    <item>満充電になったら整理しないと。キャッシュをクリアしよう</item>
+    <item>バッテリー満タンならアルバムも整理しないと。ちょっと見てみよう</item>
+    <item>バッテリー満タンで待機中。ゴミを片付けよう</item>
+  </string-array>
+  <string-array name="notif_event_network_change_titles">
+    <item>ネットが切れました。ローカルキャッシュを覗いてみましょう。</item>
+    <item>ネットワークが変わりました。この機会にキャッシュを覗いてみましょう。</item>
+    <item>ネットが不安定でも焦らないで。開けばきれいになりますよ。</item>
+    <item>接続が切れました。クリックしてローカルのゴミを覗いてみましょう。</item>
+    <item>ネットが再接続されました。クリックしてキャッシュを覗いてみましょう。</item>
+  </string-array>
+  <string-array name="notif_event_charging_titles">
+    <item>充電したらすぐ、キャッシュを確認しよう</item>
+    <item>充電開始。さあ、徹底的なクリーンアップを</item>
+    <item>充電始まったばかり。ゴミ掃除をしよう</item>
+    <item>充電始まったから早く。開けばすぐきれいになるよ</item>
+    <item>充電器が準備完了。さあ、キャッシュを見てみよう</item>
+  </string-array>
+  <string-array name="notif_event_charging_disconnect_titles">
+    <item>充電器を抜いてオフライン。開いて見てみよう</item>
+    <item>電源が切れてネットなし。タップしてローカルデータを見る</item>
+    <item>電源を抜いておくのも便利。開けばきれいになる</item>
+    <item>電源が切れた！バッテリーがどれだけ持つか見てみよう</item>
+    <item>ケーブルを抜いてちょうどいい。入ってアルバムを整理しよう</item>
+  </string-array>
+  <string-array name="notif_event_screen_on_after_lock_titles">
+    <item>ロック解除後すぐに画面が点灯。キャッシュを確認</item>
+    <item>ロック解除成功。ストレージはまだ十分？</item>
+    <item>画面が点灯。一瞬でスマホの使用状況を把握</item>
+    <item>画面が点灯したばかり。アルバムを整理しに来た</item>
+    <item>画面が点灯するだけで便利。開いてみれば真相がわかる</item>
+  </string-array>
+  <string-array name="notif_event_screen_lock_titles">
+    <item>画面がオフになったら、バックグラウンドの整理をちょうど始められます</item>
+    <item>ロック画面になる前に、ついでにキャッシュを確認</item>
+    <item>寝る直前ちょうどいい、アルバムを整理しに行こう</item>
+    <item>画面が暗くなる前に、早く「省心清」を開いて</item>
+    <item>画面がオフになる前にスマホの整理を、開けばすぐ分かります</item>
+  </string-array>
+  <string-array name="notif_event_install_titles">
+    <item>新アプリのキャッシュが追いついてきたよ、開いて見てみよう</item>
+    <item>新しいアプリをインストールしたら、ついでにインストールパッケージを片付けよう</item>
+    <item>新しい顔がこっそりキャッシュに入ってきたよ、見てみよう</item>
+    <item>見てみよう、新しいアプリのキャッシュパッケージが先頭に来てる</item>
+    <item>タップしてね、新しいアプリのインストールパッケージがまだ場所を占領してるよ</item>
+  </string-array>
+  <string-array name="notif_event_uninstall_titles">
+    <item>アプリをアンインストールしたばかりなのに、残骸がまだ残ってる。開いて見てみよう</item>
+    <item>中を見てみよう。アンインストール後もゴミの残骸が残ってる</item>
+    <item>アンインストール完了。掃除しないときれいにならないね</item>
+    <item>アンインストール後も残骸が残ってる。開いてみればスッキリするよ</item>
+    <item>アンインストール後も容量が変わらない？原因を確かめてみよう</item>
+  </string-array>
+  <string-array name="notif_event_app_update_titles">
+    <item>アプリが更新されたばかり。古いキャッシュはクリアすべきだね。</item>
+    <item>更新が終わったばかりなのにまた増えちゃった。開いて見てみよう。</item>
+    <item>更新後のキャッシュだよ。開いて見てみればもっと楽だよ。</item>
+    <item>更新パッケージはまだ結構スペースを占領してる。開いてクリアしよう。</item>
+    <item>新バージョンの残骸がまだ待ってるよ。クリックしてね。</item>
+  </string-array>
+  <string-array name="notif_event_screenshot_titles">
+    <item>新しいスクリーンショットが！残すか考えてみよう</item>
+    <item>アルバムにスクリーンショットが山積み。開けばすっきりするよ</item>
+    <item>スクリーンショット完了！アルバムを整理しよう</item>
+    <item>撮り終わったばかりの新しい画像。開けばサプライズが待ってるよ</item>
+    <item>新しいスクリーンショットがアルバムに追加。開いて見るともっと楽だよ</item>
+  </string-array>
+  <string-array name="notif_event_clean_reminder_titles">
+    <item>久しぶりにスマホを整理しないと息が詰まる。開いて見てみよう</item>
+    <item>ゴミがこんなに長く溜まってる。入って整理しないと</item>
+    <item>スマホのホコリがもうすごい。開いて掃除しよう</item>
+    <item>アルバムを開いてみる。キャッシュがもう山積みだ</item>
+    <item>キャッシュがこんなに長く付き合ってくれたから、そろそろ整理しないと。クリックしてね</item>
+  </string-array>
+  <string-array name="notif_event_app_inactive_titles">
+    <item>久しぶりに見たから、忘れたのかと思ったよ。開いて見てみよう</item>
+    <item>久しぶりに開いたね。入って見て、スッキリしよう</item>
+    <item>久しぶりだね。入って、どんな感じか見てみよう</item>
+    <item>アイコンがもう草が生えそう。クリックして見てみよう</item>
+    <item>忙しくて忘れちゃったかな。みんなずっと待ってたよ。見てみよう</item>
+  </string-array>
+  <string-array name="notif_event_scheduled_push_1_titles">
+    <item>前回の整理は途中で止まっちゃったから、ちょっと見てみよう</item>
+    <item>整理が途中で止まってる。どれか見てみよう</item>
+    <item>大きな動画が山積みになって容量をかなり占領してる。見てみよう</item>
+    <item>超大容量のファイルがまだ残ってる。見て整理しよう</item>
+    <item>高画質動画が大量に容量を占領してる。見てみよう</item>
+    <item>重複写真で容量が足りません。確認して整理しましょう。</item>
+    <item>アルバムに同じ顔が重複しています。タップして削除できます。</item>
+    <item>似たような風景写真が山積みです。確認して削除できるものを選びましょう。</item>
+    <item>大きな動画が容量を占領しています。開いて確認してみましょう。</item>
+    <item>音声メッセージがチャットキャッシュを埋め尽くしています。確認して整理しましょう。</item>
+  </string-array>
+  <string-array name="notif_event_scheduled_push_2_titles">
+    <item>バックグラウンドアプリがこっそり電力を消費してるよ、開いて確認しよう</item>
+    <item>待機中、夜通しバッテリーが静かに減っていく。タップしてね</item>
+    <item>同期アプリは常に開いてると毎日電力を多く消費するよ、開いて確認</item>
+    <item>半年も開いてないアプリがたくさんあるよ、入って見てみよう</item>
+    <item>プリインストールアプリが無駄に場所を占領してるよ、整理しよう</item>
+    <item>見てみて、よく使うアプリは少ないよ</item>
+    <item>プライベートな写真ならプライベートスペースにロック。開いて見てみて</item>
+    <item>自撮りはこっそり隠して、見つからないように。開いて見てみて</item>
+    <item>今月のデータがもうすぐ尽きるよ。開いて見てみて</item>
+    <item>データ節約モードをオンにするとかなり節約できるよ。見てみて</item>
+  </string-array>
+  <string-array name="notif_event_scan_done_uncleaned_titles">
+    <item>スキャン完了、あとは最後の掃除だけ</item>
+    <item>スキャン完了、掃除が少しだけ遅れてる</item>
+    <item>検出完了、さあゴミを片付けましょう</item>
+    <item>スキャン完了、ゴミはまだ片付け待ちです</item>
+    <item>スキャンは終わったけどまだ片付けてないよ、入って見てみて</item>
+  </string-array>
+  <string-array name="notif_event_scan_interrupted_titles">
+    <item>クレンジングはまだ完了していません。続けてください。</item>
+    <item>先ほどのクレンジングが中断しました。続けてください。</item>
+    <item>もう少しで完了です。続けてますか？</item>
+    <item>クレンジングが一時停止されました。引き続きスペースを解放します。</item>
+    <item>クレンジングタスクが完了していません。続けてください。</item>
+  </string-array>
+  <string-array name="notif_event_app_background_titles">
+    <item>戻って！ワンタップで3秒でクリアできるよ</item>
+    <item>さっきのページはまだゴミが残ってるよ</item>
+    <item>急いで行かないで、ついでにクリアしちゃおう</item>
+    <item>あと一歩！戻ってストレージをきれいにしよう</item>
+    <item>退出しないで、クリアはまだ終わってないよ</item>
+  </string-array>
+  <string-array name="notif_event_image_deleted_titles">
+    <item>画像が削除されました。ゴミ箱から削除しましょう</item>
+    <item>画像を削除しました。ゴミ箱も一緒に削除しましょう</item>
+    <item>画像はゴミ箱に入っています。入って片付けましょう</item>
+    <item>ゴミ箱内の画像はまだ容量を占めています。削除しましょう</item>
+    <item>先ほど削除した画像、完全に削除しますか？</item>
+  </string-array>
+  <string-array name="notif_event_video_deleted_titles">
+    <item>動画が削除されました。ゴミ箱を空にすると容量がさらに節約できます</item>
+    <item>動画は削除されましたが、まだ容量が解放されていません</item>
+    <item>動画はゴミ箱に入りました。入ったら整理しましょう</item>
+    <item>動画が1本削除されました。ゴミ箱で整理が必要です</item>
+    <item>ゴミ箱内の動画がまだ容量を占めています</item>
+  </string-array>
+  <string-array name="notif_event_audio_deleted_titles">
+    <item>オーディオを削除しましたが、キャッシュには断片が残っています。クリックして確認してみましょう。</item>
+    <item>オーディオを削除しました。ゴミ箱も一緒にクリアしましょう。</item>
+    <item>削除成功です。ゴミ箱をクリアしましょう。</item>
+    <item>オーディオの一部が削除されました。ゴミ箱がクリア待ちです。</item>
+    <item>キャッシュディレクトリ内の古い録音をクリアしましょう。</item>
+  </string-array>
+  <string-array name="notif_event_file_deleted_titles">
+    <item>ファイルが削除されました。ゴミ箱から整理しましょう。</item>
+    <item>ファイルの削除は完了しましたが、まだ容量が解放されていません。</item>
+    <item>ファイルはゴミ箱に入りました。ついでに整理しましょう。</item>
+    <item>ファイルの削除は完了しました。容量を解放しましょう。</item>
+    <item>ファイルは削除済みです。ゴミ箱を空にするとさらに節約できます。</item>
+  </string-array>
+  <string-array name="notif_event_image_download_titles">
+    <item>画像ダウンロード完了。どこに保存したか確認しよう</item>
+    <item>新しい画像がアルバムに入った。開いて確認しよう</item>
+    <item>新しい画像と古い画像が重複してるか、開いて確認しないとわからない</item>
+    <item>ダウンロード完了。アルバムに重複してるものは整理しないと</item>
+    <item>画像ダウンロード完了。ストレージがどれだけ残っているか確認しよう</item>
+  </string-array>
+  <string-array name="notif_event_video_download_titles">
+    <item>動画フォルダがもういっぱい、見てみよう</item>
+    <item>今ダウンロードした巨大動画をチェックしよう</item>
+    <item>ダウンロード完了。容量がどれだけ占領されてるか見てみよう</item>
+    <item>動画ダウンロードが終わったけど、スマホがちょっといっぱいになった</item>
+    <item>クリックして、場所を占領してる動画を選別しよう</item>
+  </string-array>
+  <string-array name="notif_event_audio_download_titles">
+    <item>新しい音声がどこにあるか、クリックして確かめよう</item>
+    <item>音声がダウンロードされたばかり。ストレージを整理しよう</item>
+    <item>新しい音声がダウンロード済み。ちょっと見てみよう</item>
+    <item>音声がダウンロードされたばかり。スマホが少しパンパンだ</item>
+    <item>音声がダウンロード済み。ストレージも整理した方がいいよ</item>
+  </string-array>
+  <string-array name="notif_event_file_download_titles">
+    <item>ファイルダウンロード完了。ストレージを整理しましょう</item>
+    <item>ファイルがダウンロードされたばかり。スペースを整理しよう</item>
+    <item>クリックして新しいファイルをちゃんと分類しよう</item>
+    <item>ダウンロードフォルダに何が入ったか、クリックして確かめよう</item>
+    <item>ファイルダウンロード完了。中を整理しましょう</item>
+  </string-array>
+  <string-array name="notif_event_trash_emptied_titles">
+    <item>ゴミ箱の整理完了。どれくらい容量が解放されたか確認しましょう</item>
+    <item>ゴミ箱が空になりました。スマホがすっと軽くなりました</item>
+    <item>ゴミ箱が底をつきました。スマホが軽装で使えるようになりました</item>
+    <item>ゴミ箱が完全に空になりました。もう少し整理できますよ</item>
+    <item>整理完了。まだどれくらいの容量が残っているか確認しましょう</item>
+  </string-array>
+</resources>

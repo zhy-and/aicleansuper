@@ -21,6 +21,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.ui.common.inlineAdHost
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.ui.flow.CleanupResult
 import com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment
@@ -69,8 +70,9 @@ class CacheCleanupFragment : Fragment() {
             setBackgroundColor(ContextCompat.getColor(context, R.color.bg_primary))
         }
         root.addView(TopFilterUi.toolbar(context, getString(R.string.home_cache_cleanup)) { parentFragmentManager.popBackStack() })
+        root.addView(inlineAdHost(context))
         root.addView(ImageView(context).apply {
-            setImageResource(R.drawable.purgu_cache_bg)
+            setImageResource(R.drawable.cache_bg)
             layoutParams = LinearLayout.LayoutParams(dp(112), dp(112)).apply {
                 gravity = Gravity.CENTER_HORIZONTAL; topMargin = dp(38)
             }

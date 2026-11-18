@@ -61,13 +61,6 @@ class ProfileFragment : Fragment() {
         ) { openPrivacyPolicy() }
 
         configureRow(
-            binding.rowTermsOfUse,
-            R.drawable.ic_about,
-            R.string.settings_terms_title,
-            R.string.settings_terms_subtitle,
-        ) { (activity as? MainActivity)?.openDetail(TermsOfUseFragment(), "terms_of_use") }
-
-        configureRow(
             binding.rowWidget,
             R.drawable.ic_clean,
             R.string.settings_widget_title,
@@ -80,6 +73,11 @@ class ProfileFragment : Fragment() {
             R.string.settings_clear_cache_title,
             R.string.settings_clear_cache_subtitle,
         ) { confirmClearCache() }
+
+        listOf(binding.rowLanguage, binding.rowAbout, binding.rowPrivacyPolicy,
+            binding.rowWidget, binding.rowClearCache).forEach { row ->
+            row.tvToolBadge.visibility = View.GONE
+        }
 
         renderLanguageSummary()
     }

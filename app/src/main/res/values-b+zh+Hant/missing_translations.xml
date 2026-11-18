@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">垃圾桶 (%1$s)</string>
     <string name="trash_bin_title_empty">垃圾桶</string>
     <string name="trash_restore_hint">點擊即可恢復照片</string>
-    <string name="trash_empty_action">删除垃圾箱中的所有内容</string>
+    <string name="trash_empty_action">刪除照片</string>
     <string name="trash_restored">照片已恢復</string>
     <string name="trash_bin_empty">垃圾桶已空</string>
     <string name="feature_smart_groups">智慧群組</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">清理提醒</string>
     <string name="notif_event_channel_desc">截圖、安裝、卸載後本地提醒</string>
     <string name="notif_event_summary_channel_name">清理提醒總結</string>
-    <string name="notif_event_screenshot_title">另一張截圖？ 1 是時候清理截圖了</string>
-    <string name="notif_event_install_title">新應用程式已移入，快取也已移入。清理</string>
-    <string name="notif_event_uninstall_title">卸載成功！清理文件殘留</string>
-    <string name="notif_clean_reminder_title">有很多垃圾堆積起來。一次全部清理乾淨。</string>
-    <string name="notif_event_battery_below_50_title">電池電量已超過一半。現在就照顧好它，它會持續到你回家為止。</string>
-    <string name="notif_event_battery_below_20_title">電池電量低。想知道誰在偷你的電嗎？點擊查看排名。</string>
-    <string name="notif_event_charging_title">接通電源。今晚的任務：重新填充，然後清理。</string>
-    <string name="notif_event_charging_full_title">已充滿電並準備就緒。最後一項檢查：垃圾是否已清除？</string>
-    <string name="notif_event_charging_to_80_title">最終衝刺是80%。卸下垃圾，輕裝上陣，迎接滿電。</string>
-    <string name="notif_event_charging_disconnect_title">拔掉插頭並出發。請記住花時間清理垃圾並保持最佳狀態。</string>
-    <string name="notif_event_app_update_title">新版本已經到來。舊版留下的所有內容都被徹底清理。</string>
-    <string name="notif_event_network_change_title">網路改變了！查看目前網路狀態1</string>
-    <string name="notif_event_screen_lock_title">放下您的手機，交給我們。休息螢幕時間=哺乳時間。</string>
-    <string name="notif_event_screen_on_after_lock_title">我們又見面了，你還困嗎？大部分都是垃圾，請試著清理掉。</string>
-    <string name="notif_event_storage_free_drop_title">儲存空間發生了變化。我們看看什麼佔了空間？</string>
-    <string name="notif_event_scheduled_push_1_title">堆積了這麼久的垃圾一下子就被清理掉了。</string>
-    <string name="notif_event_scheduled_push_2_title">電池沒有以前那麼耐用了嗎？一探究竟。</string>
-    <string name="notif_event_app_inactive_title">好久不見，一直在等待。回來清理垃圾。</string>
-    <string name="notif_event_scheduled_push_3_title">一鍵存取您的播放清單 — 設定小工具</string>
+    <string name="notif_event_screenshot_title">又有新截圖，看看要不要保留</string>
+    <string name="notif_event_install_title">新裝應用缓存跟來了，開個看看</string>
+    <string name="notif_event_uninstall_title">應用剛卸掉，殘餘的東西還殘留著，開個看看</string>
+    <string name="notif_clean_reminder_title">好久冇清理手機，真係喘不過氣，開個看看啦</string>
+    <string name="notif_event_battery_below_50_title">開起來就明白，電池剩一半先清理</string>
+    <string name="notif_event_battery_below_20_title">电量告急，别硬撐，打開就清爽</string>
+    <string name="notif_event_charging_title">已經插上電啦，顺手開個缓存看看</string>
+    <string name="notif_event_charging_full_title">電池刚充滿，别浪費，開個看看缓存</string>
+    <string name="notif_event_charging_to_80_title">充電中，來整理垃圾吧</string>
+    <string name="notif_event_charging_disconnect_title">拔掉充電器就脫線，開個看看</string>
+    <string name="notif_event_app_update_title">應用剛剛更新，舊缓存該清理啦</string>
+    <string name="notif_event_network_change_title">斷網啦，開個看看本地缓存</string>
+    <string name="notif_event_screen_lock_title">熄屏了，后台清理正好開始</string>
+    <string name="notif_event_screen_on_after_lock_title">剛打開屏幕，點開確認缓存</string>
+    <string name="notif_event_storage_free_drop_title">空間又縮了，開開看看誰佔用啦</string>
+    <string name="notif_event_scheduled_push_1_title">上次清理到一半就停手了，開個看看</string>
+    <string name="notif_event_scheduled_push_2_title">后台應用偷偷消耗你的電量，開個看看</string>
+    <string name="notif_event_app_inactive_title">好久沒見，以為你忘了，開個看看</string>
+    <string name="notif_event_scheduled_push_3_title">在桌面加入小工具，不用開啟 App 也能清理。</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>一鍵存取您的播放清單 — 設定小工具</item>
-        <item>使用小部件讓一切變得更輕鬆 - 添加音樂快捷方式</item>
-        <item>無需解鎖即可快速暢玩 — 啟用主螢幕小工具</item>
-    </string-array>
-    <string name="notif_event_app_background_title">你忘了什麼</string>
+    <item>在桌面加入小工具，不用開啟 App 也能清理。</item>
+    <item>加入小工具，讓清理隨手可及。</item>
+    <item>小工具已準備好，就等你在桌面給它一個位置。</item>
+    <item>一鍵加入小工具，直接從桌面清理。</item>
+    <item>加入小工具，清理更方便。</item>
+  </string-array>
+    <string name="notif_event_app_background_title">回來啦，單點清理只需3秒</string>
     <string name="notif_event_app_background_content">快來完成清理工作，使其運作更順暢。</string>
     <string-array name="notif_event_app_background_titles">
-        <item>你忘了什麼</item>
-        <item>還剩一步</item>
-        <item>好消息</item>
-        <item>你離開得太快</item>
-        <item>不要讓垃圾過夜</item>
-    </string-array>
+    <item>回來啦，單點清理只需3秒</item>
+    <item>剛剛那個頁面還有垃圾未清理</item>
+    <item>别急走，順便清理一下吧</item>
+    <item>只差一步，回來把空間清理乾淨</item>
+    <item>别退出，清理還沒完呢</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>快來完成清理工作，使其運作更順暢。</item>
         <item>再輕按一下即可完成清理並釋放更多空間。</item>
@@ -530,231 +532,236 @@
         <item>您的手機可以更快 - 快來看看優化情況。</item>
         <item>快來完成清理工作，使其運作更順暢。</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">掃描結果已準備就緒 - 垃圾正在佔用空間。立即清理</string>
+    <string name="notif_event_scan_done_uncleaned_title">掃描完成，只差最後一步清理</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>掃描結果已準備就緒 - 垃圾正在佔用空間。立即清理</item>
-        <item>還剩一步：返回並立即釋放空間。</item>
-        <item>掃描後忘記清理？ 10秒讓你的手機變得更輕。</item>
-        <item>垃圾仍然在您的手機上 - 結果已保存。返回一鍵清理。</item>
-        <item>上次掃描發現多個需要清理的物品。快來完成。</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">清理工作還沒完成──來完成最後一步。</string>
+    <item>掃描完成，只差最後一步清理</item>
+    <item>掃描完成，清理只差一點</item>
+    <item>檢測完畢，進來把垃圾清掉吧</item>
+    <item>已掃描完成，垃圾還在等著清理呢</item>
+    <item>你剛剛掃完但還沒清理，進來看看</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">清理尚未完成，進來繼續吧</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>清理工作還沒完成──來完成最後一步。</item>
-        <item>清理中斷：中途。完成更輕的手機。</item>
-        <item>清理即將完成 - 不要留下垃圾。</item>
-        <item>你中途乾淨地離開了——完成它並感受不同。</item>
-        <item>中斷的清理可以隨時繼續。快來完成。</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">照片已刪除 — 安全移至回收站。</string>
+    <item>清理尚未完成，進來繼續吧</item>
+    <item>剛剛的清理被中斷了，繼續清</item>
+    <item>差一點就清完了，繼續嗎</item>
+    <item>清理暫停，繼續釋放空間</item>
+    <item>清理任務尚未完成，來繼續</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">圖片已删除，去回收站清理吧</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>照片已刪除 — 安全移至回收站。</item>
-        <item>剛剛刪除了 1 張照片 — 看看您釋放了多少空間？</item>
-        <item>照片已刪除 — 立即永久刪除以釋放空間。</item>
-        <item>照片已安全刪除 — 儲存狀態已更新。</item>
-        <item>照片已刪除 - 您也可以清理類似的螢幕截圖。</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">影片已刪除——釋放了大空間。</string>
+    <item>圖片已删除，去回收站清理吧</item>
+    <item>圖片刪了，連回收站一起清理吧</item>
+    <item>圖片已進回收站，進來清理一下</item>
+    <item>回收站裡的圖片還佔空間，清理掉吧</item>
+    <item>剛刪的圖片，要徹底清理嗎</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">影片已删除，清空回收站可節省更多空間</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>影片已刪除——釋放了大空間。</item>
-        <item>刪除了大影片－儲存壓力立即得到緩解。</item>
-        <item>影片已刪除 — 檢查您目前的儲存狀態。</item>
-        <item>刪除完成 — 清空回收站以完全釋放空間。</item>
-        <item>影片已刪除——可能還有更多被遺忘的大影片需要清理。</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">音訊被刪除——小檔案加起來。繼續前進。</string>
+    <item>影片已删除，清空回收站可節省更多空間</item>
+    <item>影片已删除，但空間尚未釋放</item>
+    <item>影片已進入回收站，快來清理吧</item>
+    <item>一段影片已被删除，回收站待清理</item>
+    <item>回收站中的影片仍佔用空間</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">音頻已删除，但缓存仍有片段，開聽看看</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>音訊被刪除——小檔案加起來。繼續前進。</item>
-        <item>該音訊消失了 - 也可以清理更多類似的未使用檔案。</item>
-        <item>音訊已刪除 - 儲存詳細資訊已更新。快來看看。</item>
-        <item>已刪除 1 個音訊檔案 — 刷新儲存清單。</item>
-        <item>音訊已刪除 — 清空回收站以釋放空間。</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">檔案已刪除 - 釋放了更多儲存空間。</string>
+    <item>音頻已删除，但缓存仍有片段，開聽看看</item>
+    <item>音頻已删除，連回收站一起清掉吧</item>
+    <item>刪除成功，來清空回收站吧</item>
+    <item>有一段音頻已删除，回收站待清理</item>
+    <item>進來清理缓存目錄中的舊錄音吧</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">文件已删除，去回收站清理一下</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>檔案已刪除 - 釋放了更多儲存空間。</item>
-        <item>文件已刪除 - 雜亂不會再打擾您的手機。</item>
-        <item>文件已刪除 - 看看還有什麼可以清理。</item>
-        <item>檔案已刪除 - 變更已同步，儲存狀態已更新。</item>
-        <item>該文件已被清除——現在正在回收空間。</item>
-    </string-array>
-    <string name="notif_event_image_download_title">圖片已下載 - 開啟並查看。</string>
+    <item>文件已删除，去回收站清理一下</item>
+    <item>文件删除完成，但空间尚未释放</item>
+    <item>文件已进回收站，顺手清理一下</item>
+    <item>文件删除完成，来释放空间吧</item>
+    <item>文件已删除，清空回收站更省空间</item>
+  </string-array>
+    <string name="notif_event_image_download_title">圖片下載完成，去確認存在哪裡吧</string>
     <string-array name="notif_event_image_download_titles">
-        <item>圖片已下載 - 開啟並查看。</item>
-        <item>圖片已下載 — 清理相簿中的重複照片</item>
-        <item>下載完成 — 影像安全保存。快來看看類似的照片</item>
-    </string-array>
-    <string name="notif_event_video_download_title">下載的影片——它並不小。查看舊影片可以釋放多少空間</string>
+    <item>圖片下載完成，去確認存在哪裡吧</item>
+    <item>新圖剛進入相簿，開看看</item>
+    <item>新圖和舊的有重複嗎？開看看就知道了</item>
+    <item>下載完成，相簿中的重複圖片該清理了</item>
+    <item>圖片下載完成，看看儲存空間还剩多少</item>
+  </string-array>
+    <string name="notif_event_video_download_title">影片分類快放不下了，去看看吧</string>
     <string-array name="notif_event_video_download_titles">
-        <item>下載的影片——它並不小。查看舊影片可以釋放多少空間</item>
-        <item>已儲存新影片 - 尋找要刪除的大影片並釋放空間。點我</item>
-        <item>影片佔用空間 - 我們找到了可清理的物品來減輕您的手機重量。點擊此處</item>
-        <item>下載完成！清理一些舊視頻，空間就會回來。點我</item>
-        <item>新影片已排序 - 易於找到或清理。點按即可查看</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">下載音訊 — 一鍵整理您的音樂庫。點我</string>
+    <item>影片分類快放不下了，去看看吧</item>
+    <item>點我看看剛下載完的巨型影片吧</item>
+    <item>下載完成，看看空間被佔用多少</item>
+    <item>影片剛下載完，手機有點滿了</item>
+    <item>點进来挑出佔空間的影片吧</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">新音頻插在哪？開開看就知道了</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>下載音訊 — 一鍵整理您的音樂庫。點我</item>
-        <item>新音訊已排序 - 當您在這裡時清理舊音訊。點我</item>
-        <item>音樂庫已滿？檢查可清理的音訊。點擊此處</item>
-        <item>下載的音訊 — 一鍵刪除重複資料。點我來整理</item>
-    </string-array>
-    <string name="notif_event_file_download_title">已儲存新檔案 - 清除舊檔案和可用空間。點擊此處</string>
+    <item>新音頻插在哪？開開看就知道了</item>
+    <item>音頻剛下載完，來清一清空間吧</item>
+    <item>新音頻已下載，進來看看</item>
+    <item>音頻剛下載完，手機有點塞了</item>
+    <item>音頻已下載，儲存空間也该清一清了</item>
+  </string-array>
+    <string name="notif_event_file_download_title">文件下載成功，來整理儲存空間吧</string>
     <string-array name="notif_event_file_download_titles">
-        <item>已儲存新檔案 - 清除舊檔案和可用空間。點擊此處</item>
-        <item>下載完成 - 查看可以清理哪些舊檔案。點我</item>
-        <item>新文件準備就緒－智慧存檔+清理。點我開始</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">回收站已清空 — 儲存已刷新。檢查您的最新空間。</string>
+    <item>文件下載成功，來整理儲存空間吧</item>
+    <item>文件下載完，清一清空間吧</item>
+    <item>點進來好好分類新文件</item>
+    <item>下載夾裡新添咗啲咩，開吓先知道</item>
+    <item>文件下載完成，進來整理一下</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">清空完成，看看釋放了多少空間</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>回收站已清空 — 儲存已刷新。檢查您的最新空間。</item>
-        <item>回收站清空－來深度清理殘留檔案。</item>
-        <item>已成功清空－還有更多垃圾需要清理。快來看看。</item>
-    </string-array>
-    <string name="notif_event_action_clean">立即清理</string>
+    <item>清空完成，看看釋放了多少空間</item>
+    <item>回收站已清，手機瞬間輕鬆</item>
+    <item>回收站见底，手機輕裝上阵</item>
+    <item>回收站已清空，還能再清一點</item>
+    <item>清空完成，還剩多少空間可以用</item>
+  </string-array>
+    <string name="notif_event_action_clean">去清理</string>
     <string name="notif_event_action_open_home">打開</string>
-    <string name="notif_event_action_manage">管理應用程式</string>
-    <string name="notif_event_action_check_battery">檢查電池</string>
-    <string name="notif_event_action_check_network">檢查網路</string>
+    <string name="notif_event_action_manage">去管理</string>
+    <string name="notif_event_action_check_battery">查看電池</string>
+    <string name="notif_event_action_check_network">查看流量</string>
     <string name="notif_days_unit">日</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>儲存空間發生了變化。讓我們看看什麼佔據了空間？</item>
-        <item>檢測到空間變化。可能有新的垃圾，你看？</item>
-        <item>可用空間已移動。你知道是誰吃的嗎？點擊查看。</item>
-        <item>空間緊張嗎？剛剛檢測到變化，讓我們看一下詳細資訊。</item>
-        <item>空間更換提醒：您可能會累積很多垃圾。一探究竟？</item>
-    </string-array>
+    <item>空間又縮了，開開看看誰佔用啦</item>
+    <item>進去瞧瞧，相簿又堆了新圖</item>
+    <item>聊天缓存越積越多，打開看看真相</item>
+    <item>又冒出成堆垃圾，進來揭晓</item>
+    <item>戳我，垃圾堆成山没人清</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>電池電量低。想知道誰在偷你的電嗎？點擊查看排名。</item>
-        <item>很快就見底了。如果你清理掉那些偷電的應用程序，你還能生存一段時間。</item>
-        <item>電池電量低。清除一些背景比什麼都不做要好。</item>
-        <item>電池是紅色的。您仍然可以保存它，單擊打開它並查看。</item>
-        <item>少於 20% remains。讓我們做一些省電急救和清理工作。</item>
-    </string-array>
+    <item>电量告急，别硬撐，打開就清爽</item>
+    <item>撐到回家都冇，進來清理缓存</item>
+    <item>電池紅燈亮了，進去看看</item>
+    <item>电量见底，進來看看元凶</item>
+    <item>快冇電喇，打開看看還有救</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>電池電量已超過一半。現在就照顧好它，它會持續到你回家為止。</item>
-        <item>電池電量已超過一半。現在保養電池比等到 20% 電量要容易得多。</item>
-        <item>電池沒電了一半。能持續多久？點擊查看。</item>
-        <item>電池電量已超過一半。是時候照顧後端了，別等它緊張了。</item>
-        <item>電池還剩一半。清理掉那些耗力大的球員，讓下半場更穩定。</item>
-    </string-array>
+    <item>開起來就明白，電池剩一半先清理</item>
+    <item>已跌破中線，開起來清理緩存</item>
+    <item>只剩半格，進去整理相簿</item>
+    <item>電池穩定，戳我掃緩存</item>
+    <item>電池中等，開起來省心清緩存</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>最終衝刺是80%。卸下垃圾，輕裝上陣，迎接滿電。</item>
-        <item>距離充滿還差 20%。趁現在清理一下垃圾吧。</item>
-        <item>80%：距離完美只有一步之遙。單擊一次，當電池充滿電時，它會完全清除。</item>
-        <item>電量達到 80%，趁充電時清理一輪吧。</item>
-        <item>最後 20% 的充電時間，也能用來清理垃圾。</item>
-    </string-array>
+    <item>充電中，來整理垃圾吧</item>
+    <item>快滿電了，垃圾好多，進來看看元凶</item>
+    <item>就差滿格了，點我清垃圾</item>
+    <item>就差滿電了，打開就乾淨</item>
+    <item>一邊充電一邊等，點進來清緩存</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>已充滿電並準備就緒。最後一項檢查：垃圾是否已清除？</item>
-        <item>充電後，儀式感十足。清理垃圾來紀念一下怎麼樣？</item>
-        <item>今天電量已達 100%。再清理一次，手機更清爽。</item>
-        <item>100%。拔掉電源之前的最後一步：清理垃圾，三十秒。</item>
-        <item>全力完成。最後一次清理，完美。</item>
-    </string-array>
+    <item>電池刚充滿，别浪費，開個看看缓存</item>
+    <item>電池滿電，趁熱清垃圾</item>
+    <item>電池充滿了，該清理了，開個清缓存</item>
+    <item>電池滿電，相簿該整理啦，去瞧瞧</item>
+    <item>電池滿電，正在待機，進來收拾垃圾</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>網路改變了！查看目前網路狀態1</item>
-        <item>網路遺棄。清理時不要看訊號，只需點擊它並掃描即可。</item>
-        <item>打不開頁面？清理工作始終在線。</item>
-        <item>您可以離線工作，並且您的垃圾現在可以清除。</item>
-        <item>如果沒有訊號，則清理時不需要數據，只需點擊即可。</item>
-    </string-array>
+    <item>斷網啦，開個看看本地缓存</item>
+    <item>換網啦，趁機開個看看缓存</item>
+    <item>網絡不穩定，别急，開開就乾淨</item>
+    <item>斷線啦，點進看看本地垃圾</item>
+    <item>網絡重連啦，進去瞧瞧缓存</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>接通電源。今晚的任務：重新填充，然後清理。</item>
-        <item>你在休息，它在充電。讓它也清理垃圾。</item>
-        <item>充電的時候，就足以清理掉長期累積的垃圾。</item>
-        <item>只有插上電，後台工作人員才敢自由工作。</item>
-        <item>充電時有點熱？清除背景可以降低溫度。</item>
-    </string-array>
+    <item>已經插上電啦，顺手開個缓存看看</item>
+    <item>充電開始啦，進來做次深度清理</item>
+    <item>充電才開始呢，開個清垃圾吧</item>
+    <item>充電開始啦，趁早開，一開就乾淨</item>
+    <item>充電器就位啦，進去看看缓存</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>拔掉插頭並出發。請記住花時間清理垃圾並保持最佳狀態。</item>
-        <item>充電完畢，收拾行李出發。只要把它清理乾淨就完美了。</item>
-        <item>已充滿電並可使用。清理垃圾順利，今天沒有任何缺點。</item>
-        <item>充電結束。下一個空間將被清理並一次升級一級。</item>
-        <item>不要在停電時停下來。剩下一件事：清理。</item>
-    </string-array>
+    <item>拔掉充電器就脫線，開個看看</item>
+    <item>斷電了，不用網絡，點開看本地</item>
+    <item>拔掉電源就方便，開開就乾淨</item>
+    <item>斷電啦，看看電池夠用幾久</item>
+    <item>線拔掉正好，進去整理相簿</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>我們又見面了，你還困嗎？大部分都是垃圾，請試著清理掉。</item>
-        <item>解鎖了？先不要打開其他應用程序，並在三十秒內清除垃圾。</item>
-        <item>第一個解鎖的是我們自己。清除垃圾，它會更愛你。</item>
-        <item>解鎖後三十秒。最有價值的用途：清理垃圾。</item>
-        <item>你的手機說：後端有點阻塞，你能幫我嗎？</item>
-    </string-array>
+    <item>剛打開屏幕，點開確認缓存</item>
+    <item>解鎖成功，空間還夠用嗎？</item>
+    <item>屏幕亮了，一眼看清手機佔用情況</item>
+    <item>屏幕剛亮，進來整理相册</item>
+    <item>屏幕一開就方便，點開就明白狀況</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>放下您的手機，交給我們。休息螢幕時間=哺乳時間。</item>
-        <item>停止工作並不意味著停止工作。下次打開螢幕的時候我會給你一個驚喜。</item>
-        <item>在休息螢幕的同時，安靜地變得更好。單擊，我們將完成剩下的工作。</item>
-        <item>鎖定螢幕之前的最後一件事：點擊「清理」。明天早上會有新的面貌。</item>
-        <item>螢幕變暗。現在就安排，明天再看看結果。</item>
-    </string-array>
+    <item>熄屏了，后台清理正好開始</item>
+    <item>鎖屏前順便進去看看缓存</item>
+    <item>睡前正好，去整理相簿吧</item>
+    <item>屏幕要暗了，趁早開省心清</item>
+    <item>熄屏前幫手機松绑，開開就懂</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>新應用程式已移入，快取也已移入。清理</item>
-        <item>我們了解安裝新應用程式的樂趣。只是儲藏室會悄悄堆積起來。</item>
-        <item>新應用程式？快取也在這裡，一鍵清空。</item>
-        <item>新的進來，舊的出去。經常清理並根據需要安裝。</item>
-        <item>另一個？空間悄悄變小，快來清理一下吧。</item>
-    </string-array>
+    <item>新裝應用缓存跟來了，開個看看</item>
+    <item>新應用裝好，順便清理個安裝包</item>
+    <item>新面孔悄悄搬進缓存，進來揭晓</item>
+    <item>看看去，新應用缓存包在冒尖</item>
+    <item>戳我，新應用安裝包還佔着地</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>卸載成功！清理文件殘留</item>
-        <item>已卸載但未清理。單擊完成。</item>
-        <item>應用程式已卸載，但尾巴仍然存在。一鍵清理，一勞永逸地告別。</item>
-        <item>不要錯過第二步：刪除App+清除殘留量。一鍵點擊完成。</item>
-        <item>殘留物會吃掉一半的空出空間。深度掃描並清除一切。</item>
-    </string-array>
+    <item>應用剛卸掉，殘餘的東西還殘留著，開個看看</item>
+    <item>進去瞧瞧，卸完後垃圾餘尾還在</item>
+    <item>卸載成功，清理一下先，先乾淨再乾淨</item>
+    <item>卸載後殘餘的東西還殘留著，開個就清爽</item>
+    <item>卸載後空間沒變？進來看看原因</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>新版本已經到來。舊版留下的所有內容都被徹底清理。</item>
-        <item>+1 表示版本，+1 表示緩存，用於深度掃描。</item>
-        <item>更新完成，可一鍵清理剩餘安裝包。</item>
-        <item>更新完畢，總結一下。清理乾淨，我會接管。</item>
-        <item>每次更新都會留下舊文件並快速處理。</item>
-    </string-array>
+    <item>應用剛剛更新，舊缓存該清理啦</item>
+    <item>更新完之後缓存又變多了，開個看看</item>
+    <item>更新後的缓存，進去看看更省心</item>
+    <item>更新包還佔著不少空間，開個清理</item>
+    <item>新版本還留著殘餘，等你清理，點我啦</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>另一張截圖？ 1 是時候清理截圖了</item>
-        <item>發現新截圖，點擊看清理~</item>
-        <item>截圖越來越多，一鍵清理可以幫你騰出空間</item>
-        <item>截圖成功，重複、模糊的可以一鍵過濾掉。</item>
-        <item>新的螢幕截圖已新增至資料庫中，重複的圖像已排隊等待一鍵清除。</item>
-    </string-array>
+    <item>又有新截圖，看看要不要保留</item>
+    <item>相册截圖累積成堆，開出來就清爽</item>
+    <item>截圖成功，來整理一下相册吧</item>
+    <item>剛截完的新圖，開出來有驚喜等你</item>
+    <item>新截圖已放入相册，進去看看更省心</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>有很多垃圾堆積起來。一次全部清理乾淨。</item>
-        <item>上次清理 %1$d 幾天前，點選立即處理</item>
-        <item>幾天沒來了，收拾一下就輕裝上陣了。</item>
-        <item>今日清算額度尚未使用。當我回來時我會清除它。</item>
-        <item>快取已滿，等待您查看</item>
-    </string-array>
+    <item>好久冇清理手機，真係喘不過氣，開個看看啦</item>
+    <item>垃圾積咗咁耐，入去睇下該清理啦</item>
+    <item>手機好耐冇掃過，灰積咗好多，開個清理啦</item>
+    <item>打開睇下相簿，缓存早就堆成山喇</item>
+    <item>缓存陪你熬咗咁耐，該清理喇，點我啦</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>好久不見，一直在等待。回來清理垃圾。</item>
-        <item>有幾天沒見到你了。垃圾沒有休息的時間。回來掃一掃。</item>
-        <item>緩存已排隊。單擊，它們就會消失。</item>
-        <item>當您不在時，垃圾箱正忙著。一鍵清空，感覺煥然一新。</item>
-        <item>後退？先清理垃圾。三十秒後，手機就輕如新了。</item>
-    </string-array>
+    <item>好久沒見，以為你忘了，開個看看</item>
+    <item>好久沒開，進去看看再清爽</item>
+    <item>好久不見了，進來揭晓該看看</item>
+    <item>圖標都快長草了，點進來看看</item>
+    <item>忙忘了吧，我们都等好久了，去看看吧</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>堆積了這麼久的垃圾一下子就被清理掉了。</item>
-        <item>是時候清理了。今天的垃圾正在等你點擊。</item>
-        <item>今天的《太空日報》到了。清除並保持光線充足。</item>
-        <item>有些文件比你想像的要大得多，看一下</item>
-        <item>找到那個佔用了幾個G的傢伙並清理掉它</item>
-        <item>大文件清單已備好，快來看看。</item>
-        <item>誰佔用的空間最多？一秒鐘就顯露出來。</item>
-        <item>連續射擊很棒，完成射擊很痛苦。交給我們吧。</item>
-        <item>相似的照片已排成一排，由您選擇保留哪一張</item>
-        <item>類似的圖片太多？我們將幫助您一鍵比較並刪除重複項。</item>
-        <item>應清除快取的離線影片。</item>
-        <item>剩餘的音訊也將被清理。</item>
-    </string-array>
+    <item>上次清理到一半就停手了，開個看看</item>
+    <item>清理停到一半，進去看看到哪了</item>
+    <item>累積了一堆大影片，佔不少空間，開個看看</item>
+    <item>有個超大文件還未清理，開個清理</item>
+    <item>有一段高清影片佔好多空間，進來看看</item>
+    <item>重複照片佔空間，進去看看可以清理</item>
+    <item>相簿裡重複的臉，點我就可以刪一些</item>
+    <item>相似風景照堆成山，進去看看可以刪的</item>
+    <item>大影片霸佔空間，點開看看</item>
+    <item>語音訊息擠滿聊天缓存，進去整理</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>電池沒有以前那麼耐用了嗎？一探究竟。</item>
-        <item>誰在偷你的電？你查一下就知道了。</item>
-        <item>關閉這些將延長電池壽命。</item>
-        <item>有些應用程式已安裝但從未使用過。看看他們是哪幾個？</item>
-        <item>保留不使用的應用程式也是一種負擔，清單已列出</item>
-        <item>關於隱私，越早處理越好。</item>
-        <item>隱藏重要的並刪除不必要的。讓我幫你</item>
-        <item>交通流向哪裡？找出誰在使用它。</item>
-        <item>交通詳情一目了然，一目了然。</item>
-        <item>有一個應用程式在後台秘密連接互聯網。</item>
-    </string-array>
+    <item>后台應用偷偷消耗你的電量，開個看看</item>
+    <item>靜態模式下整夜電量悄悄掉，戳我</item>
+    <item>同步功能常開每天多耗電，進來發現</item>
+    <item>好多應用半年沒開過，進去瞧瞧</item>
+    <item>預裝軟件白白佔位，進來整理</item>
+    <item>來睇吓，常用應用其實唔多</item>
+    <item>私密照片鎖入私隱空間，點擊睇吓</item>
+    <item>自拍照偷偷藏好，唔好畀人翻出嚟，進來發現</item>
+    <item>本月流量快用完喇，點擊睇吓</item>
+    <item>開省流量模式可以省好多，去睇吓</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} 的垃圾 — 一鍵清除</string>
     <string name="notif_scheduled_large_files">{total} 個大檔案 — 輕鬆清理</string>
     <string name="notif_scheduled_duplicate_photos">{groups} 群組重複照片 - 儲存 {size}</string>
@@ -762,7 +769,7 @@
     <string name="notif_scheduled_videos">{total} 個影片 - 刪除 {n} 個以釋放空間</string>
     <string name="notif_scheduled_audio">{total} 個音訊檔案 - 需要整理一下</string>
     <string name="notif_scheduled_apps">{size} 由 {idle} 個空閒應用程式使用</string>
-    <string name="notif_scheduled_data">後台所使用的資料的{back}</string>
+    <string name="notif_scheduled_data">背景使用了 {back} 行動數據</string>
     <string name="app_manager_uninstall_selected">卸載所選應用</string>
     <string name="app_manager_uninstall_selected_count">卸載所選應用 (%1$d)</string>
     <string name="cache_removable">可清理</string>
@@ -772,4 +779,14 @@
     <string name="cache_confirm_clean">清理選取的 %1$d 項？</string>
     <string name="cache_clean_action">清理</string>
     <string name="cache_clean_result">已清理 %1$d / %2$d 項</string>
+    <string name="app_manager_select_app">選取應用程式</string>
+    <string name="app_manager_uninstall_confirm">要解除安裝選取的 %1$d 個應用程式嗎？Android 會要求你逐一確認。</string>
+    <string name="home_pending_items_format">待清理項目：%1$d 項</string>
+    <string name="info_report_title">報告</string>
+    <string name="new_feature_badge_description">新功能</string>
+    <string name="cleanup_report_complete">清理已完成。</string>
+    <string name="cleanup_report_explore">探索更多工具</string>
+    <string name="cleanup_report_go">前往</string>
+    <string name="widget_action_files">檔案</string>
+    <string name="widget_action_photos">照片</string>
 </resources>

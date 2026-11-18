@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">App auswählen</string>
+    <string name="app_manager_uninstall_confirm">Möchten Sie die %1$d ausgewählten Apps deinstallieren? Android fordert Sie für jede App zur Bestätigung auf.</string>
+    <string name="cache_access_required">Erlauben Sie den Zugriff auf alle Dateien, um den Cache zu durchsuchen</string>
+    <string name="cache_clean_action">Bereinigen</string>
+    <string name="cache_clean_result">%1$d von %2$d Elementen bereinigt</string>
+    <string name="cache_confirm_clean">%1$d ausgewählte Elemente bereinigen?</string>
+    <string name="home_pending_items_format">Zu bereinigende Elemente: %1$d</string>
+    <string name="info_report_title">Bericht</string>
+    <string name="large_file_access_required">Zugriff auf alle Dateien erforderlich</string>
+    <string name="large_file_delete">Löschen</string>
+    <string name="large_file_delete_amount">%1$s löschen (%2$d)</string>
+    <string name="large_file_delete_confirm">%1$d ausgewählte Dateien löschen?</string>
+    <string name="large_file_delete_selected">Ausgewählte löschen</string>
+    <string name="large_file_deleted_summary">%1$d von %2$d Dateien gelöscht</string>
+    <string name="large_file_deselect_all">Gesamte Auswahl aufheben</string>
+    <string name="large_file_deselect_all_shown">Auswahl für alle angezeigten Dateien aufheben</string>
+    <string name="large_file_filter_description">Filter „%1$s“: %2$s</string>
+    <string name="large_file_filter_size">Größe</string>
+    <string name="large_file_filter_time">Zeitraum</string>
+    <string name="large_file_filter_type">Typ</string>
+    <string name="large_file_open">Öffnen</string>
+    <string name="large_file_scanning">Dateien werden durchsucht…</string>
+    <string name="large_file_select_all">Alle auswählen</string>
+    <string name="large_file_select_all_shown">Alle angezeigten Dateien auswählen</string>
+    <string name="large_file_summary">%1$d Dateien · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Gesamter Zeitraum</item>
+        <item>1 Woche</item>
+        <item>1 Monat</item>
+        <item>3 Monate</item>
+        <item>6 Monate</item>
+        <item>1 Jahr</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Alle</item>
+        <item>Bilder</item>
+        <item>Videos</item>
+        <item>Audio</item>
+        <item>Dokumente</item>
+        <item>Archive</item>
+        <item>APK</item>
+        <item>Sonstige</item>
+    </string-array>
+    <string name="new_feature_badge_description">Neue Funktion</string>
+    <string name="sys_android_version">Android-Version</string>
+    <string name="sys_discharging">Wird entladen</string>
+    <string name="sys_level">Ladestand</string>
+    <string name="sys_status">Status</string>
+    <string name="traffic_empty">Kein Datenverbrauch für Apps gefunden</string>
+    <string name="traffic_guide_message">Erlauben Sie dieser App in den Einstellungen den Zugriff auf Nutzungsdaten, um den Datenverbrauch pro App anzuzeigen.</string>
+    <string name="traffic_loading">Wird geladen…</string>
+    <string name="traffic_usage_required">Zugriff auf Nutzungsdaten erforderlich. Tippen Sie hier, um den Zugriff zu erlauben.</string>
+    <string name="vlt_delete_confirm">%1$d private Dateien dauerhaft löschen?</string>
+    <string name="vlt_deselect_all">Gesamte Auswahl aufheben</string>
+    <string name="vlt_import_media">Fotos oder Videos importieren</string>
+    <string name="vlt_originals_remain">; %1$d Originaldateien bleiben auf dem Gerät</string>
+    <string name="vlt_restore_confirm">%1$d Dateien in Pictures/PurGuClean wiederherstellen?</string>
+    <string name="vlt_restored_count">%1$d von %2$d Dateien wiederhergestellt</string>
+    <string name="vlt_select_all">Alle auswählen</string>
+    <string name="widget_action_files">Dateien</string>
+    <string name="widget_action_photos">Fotos</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>すべて</item>
+        <item>画像</item>
+        <item>動画</item>
+        <item>音声</item>
+        <item>ドキュメント</item>
+        <item>アーカイブ</item>
+        <item>APK</item>
+        <item>その他</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>すべての期間</item>
+        <item>1週間</item>
+        <item>1か月</item>
+        <item>3か月</item>
+        <item>6か月</item>
+        <item>1年</item>
+    </string-array>
+    <string name="large_file_filter_type">種類</string>
+    <string name="large_file_filter_size">サイズ</string>
+    <string name="large_file_filter_time">期間</string>
+    <string name="large_file_filter_description">%1$sの絞り込み：%2$s</string>
+    <string name="large_file_access_required">すべてのファイルへのアクセス権限が必要です</string>
+    <string name="large_file_scanning">ファイルをスキャン中…</string>
+    <string name="large_file_summary">%1$d件のファイル · %2$s</string>
+    <string name="large_file_select_all">すべて選択</string>
+    <string name="large_file_deselect_all">選択をすべて解除</string>
+    <string name="large_file_select_all_shown">表示中の項目をすべて選択</string>
+    <string name="large_file_deselect_all_shown">表示中の項目の選択をすべて解除</string>
+    <string name="large_file_delete_selected">選択した項目を削除</string>
+    <string name="large_file_delete_amount">%1$sを削除（%2$d件）</string>
+    <string name="large_file_open">開く</string>
+    <string name="large_file_delete">削除</string>
+    <string name="large_file_delete_confirm">選択した%1$d件のファイルを削除しますか？</string>
+    <string name="large_file_deleted_summary">%2$d件中%1$d件のファイルを削除しました</string>
+</resources>

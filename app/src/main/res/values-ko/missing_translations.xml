@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">쓰레기통 (%1$s)</string>
     <string name="trash_bin_title_empty">쓰레기통</string>
     <string name="trash_restore_hint">사진을 복원하려면 탭하세요.</string>
-    <string name="trash_empty_action">휴지통에서 모두 삭제</string>
+    <string name="trash_empty_action">사진 삭제</string>
     <string name="trash_restored">사진이 복원되었습니다.</string>
     <string name="trash_bin_empty">휴지통이 비어 있습니다.</string>
     <string name="feature_smart_groups">스마트 그룹</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">알림 정리</string>
     <string name="notif_event_channel_desc">스크린샷, 설치 및 제거 후 로컬 알림</string>
     <string name="notif_event_summary_channel_name">알림 요약 정리</string>
-    <string name="notif_event_screenshot_title">또 다른 스크린샷이요? 1 이제 스크린샷을 정리할 시간입니다</string>
-    <string name="notif_event_install_title">새 앱이 이전되었으며 캐시도 마찬가지입니다. 청소하다</string>
-    <string name="notif_event_uninstall_title">성공적으로 제거되었습니다! 파일 잔여물을 정리하려면</string>
-    <string name="notif_clean_reminder_title">쓰레기가 잔뜩 쌓여있습니다. 한번에 모두 청소해보세요.</string>
-    <string name="notif_event_battery_below_50_title">배터리가 절반 이상 충전되었습니다. 지금 잘 처리하세요. 집에 도착할 때까지 지속됩니다.</string>
-    <string name="notif_event_battery_below_20_title">배터리가 부족합니다. 누가 당신의 전기를 훔치고 있는지 알고 싶으십니까? 클릭하시면 순위를 보실 수 있습니다.</string>
-    <string name="notif_event_charging_title">전원을 연결했습니다. 오늘 밤의 작업은 물을 채우고 청소하는 것입니다.</string>
-    <string name="notif_event_charging_full_title">완전히 충전되었으며 사용할 준비가 되었습니다. 마지막 확인: 쓰레기를 치웠나요?</string>
-    <string name="notif_event_charging_to_80_title">최종 스프린트는 80%입니다. 쓰레기를 버리고 가볍게 짐을 싸서 최대의 힘을 맞이하세요.</string>
-    <string name="notif_event_charging_disconnect_title">플러그를 뽑고 출발하세요. 시간을 내어 쓰레기를 치우고 최상의 상태를 유지하는 것을 잊지 마십시오.</string>
-    <string name="notif_event_app_update_title">새 버전이 도착했습니다. 이전 버전에서 남은 모든 것이 완전히 정리되었습니다.</string>
-    <string name="notif_event_network_change_title">웹이 변한다! 현재 네트워크 상태 보기 1</string>
-    <string name="notif_event_screen_lock_title">휴대폰은 내려놓고 저희에게 맡겨주세요. 휴식 화면 시간 = 간호 시간.</string>
-    <string name="notif_event_screen_on_after_lock_title">우리 다시 만나요, 막혔나요? 대부분이 쓰레기입니다. 청소해 보세요.</string>
-    <string name="notif_event_storage_free_drop_title">저장공간이 변경되었습니다. 공간을 차지하는 것이 무엇인지 볼까요?</string>
-    <string name="notif_event_scheduled_push_1_title">오랫동안 쌓인 쓰레기가 한 번에 치워집니다.</string>
-    <string name="notif_event_scheduled_push_2_title">배터리가 이전만큼 내구성이 없나요? 확인해 보세요.</string>
-    <string name="notif_event_app_inactive_title">오랫동안 기다려왔습니다. 돌아와서 쓰레기를 치우십시오.</string>
-    <string name="notif_event_scheduled_push_3_title">재생 목록을 한 번 탭하여 위젯을 설정하세요</string>
+    <string name="notif_event_screenshot_title">새로운 스크린샷이 나왔어요, 저장할까요?</string>
+    <string name="notif_event_install_title">새로 설치한 앱 캐시가 따라왔어요, 한번 열어보세요</string>
+    <string name="notif_event_uninstall_title">앱 삭제했는데 잔여물이 남아있네요, 한번 열어보세요</string>
+    <string name="notif_clean_reminder_title">오래 만에 휴대폰 청소해야겠어요, 한번 열어볼게요</string>
+    <string name="notif_event_battery_below_50_title">클릭하면 바로 알 수 있어요, 배터리 50% 이상이면 먼저 정리하세요</string>
+    <string name="notif_event_battery_below_20_title">배터리 부족하면 버티지 마세요, 앱 닫고 바로 정리하세요</string>
+    <string name="notif_event_charging_title">전원 연결했으니 바로 캐시 확인해 볼게요</string>
+    <string name="notif_event_charging_full_title">완충 끝났는데 낭비하지 마세요. 캐시 확인해 보세요.</string>
+    <string name="notif_event_charging_to_80_title">충전 중인데 쓸 일이 없네, 쓰레기 정리하러 들어와</string>
+    <string name="notif_event_charging_disconnect_title">충전기 뽑고 오프라인 상태, 열어보세요</string>
+    <string name="notif_event_app_update_title">앱이 갱신됐어요, 오래된 캐시는 정리해야죠</string>
+    <string name="notif_event_network_change_title">인터넷 끊겼어요, 로컬 캐시 확인해 보세요</string>
+    <string name="notif_event_screen_lock_title">화면 꺼졌어요, 백그라운드 정리 시작할 때네요</string>
+    <string name="notif_event_screen_on_after_lock_title">잠에서 깨서 화면이 켜졌어요, 캐시 확인하러 들어와요</string>
+    <string name="notif_event_storage_free_drop_title">공간 또 줄었네요, 클릭해서 누가 차지했는지 확인해 보세요</string>
+    <string name="notif_event_scheduled_push_1_title">지난번에 반쯤만 정리하고 멈췄는데, 한번 열어볼게요</string>
+    <string name="notif_event_scheduled_push_2_title">백그라운드 앱이 몰래 배터리 소모 중, 한번 확인해 보세요</string>
+    <string name="notif_event_app_inactive_title">오래 못 봤는데 잊어버린 줄 알았네, 한번 열어봐</string>
+    <string name="notif_event_scheduled_push_3_title">홈 화면에 위젯을 추가하고 앱을 열지 않고 정리하세요</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>재생 목록을 한 번 탭하여 위젯을 설정하세요</item>
-        <item>위젯으로 모든 것을 더 쉽게 만드세요 - 음악 바로가기를 추가하세요</item>
-        <item>잠금 해제 없이 빠르게 플레이 - 홈 화면 위젯을 활성화하세요</item>
-    </string-array>
-    <string name="notif_event_app_background_title">잊어버린 게 있어요</string>
+    <item>홈 화면에 위젯을 추가하고 앱을 열지 않고 정리하세요</item>
+    <item>위젯을 추가해 정리 기능을 가까이 두세요</item>
+    <item>위젯이 준비됐어요. 홈 화면에 배치해 보세요</item>
+    <item>한 번 탭해 위젯을 추가하고 홈 화면에서 정리하세요</item>
+    <item>위젯을 추가해 더 쉽게 정리하세요</item>
+  </string-array>
+    <string name="notif_event_app_background_title">돌아와요, 한 번 클릭으로 3초 만에 정리할 수 있어요</string>
     <string name="notif_event_app_background_content">더 원활하게 작동하도록 청소를 마무리하세요.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>잊어버린 게 있어요</item>
-        <item>한 걸음 남았습니다</item>
-        <item>좋은 소식</item>
-        <item>너무 빨리 떠나셨네요</item>
-        <item>밤새도록 쓰레기를 놔두지 마세요</item>
-    </string-array>
+    <item>돌아와요, 한 번 클릭으로 3초 만에 정리할 수 있어요</item>
+    <item>방금 그 페이지에 아직 정리 안 한 것들이 있네요</item>
+    <item>조급해하지 마세요, 같이 정리해 볼까요</item>
+    <item>한 단계만 남았어요, 돌아와서 공간을 깨끗하게 정리해 보세요</item>
+    <item>안 나와요, 정리 아직 안 끝났어요</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>더 원활하게 작동하도록 청소를 마무리하세요.</item>
         <item>한 번 더 탭하면 청소가 완료되고 더 많은 공간이 확보됩니다.</item>
@@ -530,231 +532,236 @@
         <item>귀하의 휴대전화가 훨씬 더 빨라질 수 있습니다. 최적화를 확인해보세요.</item>
         <item>더 원활하게 작동하도록 청소를 마무리하세요.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">스캔 결과가 준비되었습니다. 정크가 공간을 차지하고 있습니다. 지금 청소하세요</string>
+    <string name="notif_event_scan_done_uncleaned_title">스캔 완료, 마지막 단계만 남았어요</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>스캔 결과가 준비되었습니다. 정크가 공간을 차지하고 있습니다. 지금 청소하세요</item>
-        <item>한 단계 남았습니다. 돌아와서 즉시 여유 공간을 확보하세요.</item>
-        <item>스캔 후 청소하는 것을 잊으셨나요? 10초만 투자하면 휴대폰이 더 가벼워집니다.</item>
-        <item>정크 파일이 여전히 휴대전화에 있습니다. 결과가 저장되었습니다. 원터치 청소를 위해 다시 오세요.</item>
-        <item>마지막 스캔에서 청소할 항목이 여러 개 발견되었습니다. 와서 끝내세요.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">청소가 아직 완료되지 않았습니다. 와서 마지막 단계를 완료하세요.</string>
+    <item>스캔 완료, 마지막 단계만 남았어요</item>
+    <item>스캔 완료, 청소만 조금 남았어요</item>
+    <item>검측 완료, 지금 바로 쓰레기 청소하러 가요</item>
+    <item>스캔 완료, 쓰레기들이 아직 청소 대기 중이에요</item>
+    <item>방금 스캔했는데 아직 청소 안 했어요, 들어와서 확인해 보세요</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">클린업이 아직 끝나지 않았습니다. 계속 진행하세요.</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>청소가 아직 완료되지 않았습니다. 와서 마지막 단계를 완료하세요.</item>
-        <item>청소 중단됨: 중간에 왔습니다. 더 가벼운 휴대폰으로 마무리하세요.</item>
-        <item>청소가 거의 완료되었습니다. 쓰레기를 남겨두지 마세요.</item>
-        <item>중간에 청소를 마쳤습니다. 마무리하고 차이를 느껴보세요.</item>
-        <item>중단된 청소는 언제든지 계속될 수 있습니다. 와서 끝내세요.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">사진이 삭제되었습니다. 휴지통으로 안전하게 이동되었습니다.</string>
+    <item>클린업이 아직 끝나지 않았습니다. 계속 진행하세요.</item>
+    <item>방금 클린업이 중단되었습니다. 계속 진행하세요.</item>
+    <item>거의 다 끝났습니다. 계속할까요?</item>
+    <item>클린업이 잠시 중단되었습니다. 공간 확보를 계속하세요.</item>
+    <item>클린업 작업이 아직 완료되지 않았습니다. 계속 진행하세요.</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">이미지 삭제되었습니다. 휴지통으로 정리하세요.</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>사진이 삭제되었습니다. 휴지통으로 안전하게 이동되었습니다.</item>
-        <item>방금 사진 1장을 삭제했습니다. 얼마나 많은 공간을 확보했는지 확인하세요.</item>
-        <item>사진이 삭제되었습니다. 이제 영구 삭제하여 여유 공간을 확보하세요.</item>
-        <item>사진이 안전하게 삭제되었습니다. 저장 상태가 업데이트되었습니다.</item>
-        <item>사진이 삭제되었습니다. 유사한 스크린샷도 정리할 수 있습니다.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">비디오가 삭제되었습니다. 넓은 공간이 확보되었습니다.</string>
+    <item>이미지 삭제되었습니다. 휴지통으로 정리하세요.</item>
+    <item>이미지 삭제되었습니다. 휴지통도 함께 정리하세요.</item>
+    <item>이미지가 휴지통으로 이동했습니다. 들어가서 정리하세요.</item>
+    <item>휴지통에 있는 이미지들이 아직 공간을 차지하고 있습니다. 정리하세요.</item>
+    <item>방금 삭제한 이미지, 완전히 제거하시겠습니까?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">비디오가 삭제되었습니다. 휴지통을 비우면 공간을 더 절약할 수 있습니다</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>비디오가 삭제되었습니다. 넓은 공간이 확보되었습니다.</item>
-        <item>대형 비디오가 제거되었습니다. 저장 공간의 부담이 즉시 완화되었습니다.</item>
-        <item>동영상이 삭제되었습니다. 현재 저장 상태를 확인하세요.</item>
-        <item>삭제 완료 — 휴지통을 비워 공간을 완전히 확보하세요.</item>
-        <item>동영상이 삭제되었습니다. 정리해야 할 잊혀진 대용량 동영상이 더 있을 수 있습니다.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">오디오 삭제됨 - 작은 파일이 추가됩니다. 계속하세요.</string>
+    <item>비디오가 삭제되었습니다. 휴지통을 비우면 공간을 더 절약할 수 있습니다</item>
+    <item>비디오가 삭제되었지만, 아직 공간이 확보되지 않았습니다</item>
+    <item>비디오가 휴지통으로 이동했습니다. 들어가서 정리해 보세요</item>
+    <item>비디오 한 개가 삭제되어 휴지통에 남아있습니다</item>
+    <item>휴지통에 있는 비디오가 아직 공간을 차지하고 있습니다</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">오디오 삭제했지만 캐시에는 일부만 남았어요. 열어보세요.</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>오디오 삭제됨 - 작은 파일이 추가됩니다. 계속하세요.</item>
-        <item>해당 오디오는 사라졌습니다. 더 유사한 사용하지 않는 파일도 정리할 수 있습니다.</item>
-        <item>오디오가 삭제되었습니다. 저장용량 세부정보가 업데이트되었습니다. 와서 한 번 보세요.</item>
-        <item>오디오 파일 1개 삭제됨 - 저장소 목록이 새로 고쳐졌습니다.</item>
-        <item>오디오가 삭제되었습니다. 휴지통을 비워 공간 확보를 완료하세요.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">파일이 삭제되었습니다. 조금 더 여유 공간이 확보되었습니다.</string>
+    <item>오디오 삭제했지만 캐시에는 일부만 남았어요. 열어보세요.</item>
+    <item>오디오 삭제됐으니 휴지통도 같이 비워버리죠.</item>
+    <item>삭제 성공! 이제 휴지통을 비워볼까요?</item>
+    <item>오디오 한 편이 삭제됐어요. 휴지통에 남아있네요.</item>
+    <item>캐시 디렉터리의 오래된 녹음을 비우러 들어오세요.</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">파일 삭제 완료, 휴지통으로 가서 정리하세요</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>파일이 삭제되었습니다. 조금 더 여유 공간이 확보되었습니다.</item>
-        <item>파일이 삭제되었습니다. 더 이상 휴대폰이 복잡해지지 않습니다.</item>
-        <item>파일이 삭제되었습니다. 정리할 수 있는 다른 항목을 확인하세요.</item>
-        <item>파일이 삭제됨 - 변경 사항이 동기화되고 저장소 상태가 업데이트되었습니다.</item>
-        <item>해당 파일이 지워졌습니다. 이제 공간을 확보하는 중입니다.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">이미지가 다운로드되었습니다. 이미지를 열고 살펴보세요.</string>
+    <item>파일 삭제 완료, 휴지통으로 가서 정리하세요</item>
+    <item>파일 삭제 완료, 아직 공간이 남았습니다</item>
+    <item>파일이 휴지통으로 이동했습니다, 함께 정리해 보세요</item>
+    <item>파일 삭제 완료, 공간 확보하러 가세요</item>
+    <item>파일 삭제 완료, 휴지통을 비우면 더 절약됩니다</item>
+  </string-array>
+    <string name="notif_event_image_download_title">이미지 다운로드 완료, 어디 저장했는지 확인해 보세요</string>
     <string-array name="notif_event_image_download_titles">
-        <item>이미지가 다운로드되었습니다. 이미지를 열고 살펴보세요.</item>
-        <item>이미지 다운로드됨 - 앨범에 있는 중복 사진을 정리하는 동안</item>
-        <item>다운로드 완료 — 이미지가 안전하게 저장되었습니다. 비슷한 사진을 확인하러 오세요</item>
-    </string-array>
-    <string name="notif_event_video_download_title">다운로드된 비디오 — 작지 않습니다. 오래된 비디오에서 얼마나 많은 공간을 확보할 수 있는지 확인하세요</string>
+    <item>이미지 다운로드 완료, 어디 저장했는지 확인해 보세요</item>
+    <item>새 사진 앨범에 새로 추가됐어요, 열어보세요</item>
+    <item>새 사진이 기존 사진과 중복되는지 확인하려면 열어보세요</item>
+    <item>다운로드 완료, 앨범에 중복된 건 정리해야겠어요</item>
+    <item>이미지 다운로드 완료, 저장 공간이 얼마나 남았는지 확인해 보세요</item>
+  </string-array>
+    <string name="notif_event_video_download_title">영상 목록이 거의 꽉 차서 확인해 보세요</string>
     <string-array name="notif_event_video_download_titles">
-        <item>다운로드된 비디오 — 작지 않습니다. 오래된 비디오에서 얼마나 많은 공간을 확보할 수 있는지 확인하세요</item>
-        <item>새 비디오가 저장되었습니다. 삭제할 대용량 비디오를 찾아 여유 공간을 확보하세요. 나를 탭하세요</item>
-        <item>동영상은 공간을 차지합니다. 휴대전화를 가볍게 해줄 청소 가능한 품목을 찾았습니다. 여기를 탭하세요</item>
-        <item>다운로드 완료! 오래된 동영상 몇 개를 정리하면 공간이 다시 나타납니다. 나를 탭하세요</item>
-        <item>새 비디오가 정렬되어 있어 쉽게 찾거나 정리할 수 있습니다. 보려면 탭하세요.</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">오디오 다운로드 — 탭 한 번으로 음악 라이브러리를 정리하세요. 나를 탭하세요</string>
+    <item>영상 목록이 거의 꽉 차서 확인해 보세요</item>
+    <item>방금 다운로드한 거 큰 거 한번 보세요</item>
+    <item>다운로드 완료, 저장 공간 얼마나 차지했는지 확인해 보세요</item>
+    <item>영상 다운로드 막 끝났는데, 폰이 좀 꽉 찼네요</item>
+    <item>클릭해서 공간을 차지하는 영상들을 골라내세요</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">새 오디오가 어디에 들어갔는지, 클릭해서 확인하세요</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>오디오 다운로드 — 탭 한 번으로 음악 라이브러리를 정리하세요. 나를 탭하세요</item>
-        <item>새 오디오가 정렬되었습니다. 여기에 있는 동안 오래된 오디오를 정리하세요. 나를 탭하세요</item>
-        <item>음악 라이브러리가 가득 차나요? 청소 가능한 오디오를 확인하세요. 여기를 탭하세요</item>
-        <item>오디오 다운로드 — 탭 한 번으로 중복 제거 나를 탭해서 정리하세요</item>
-    </string-array>
-    <string name="notif_event_file_download_title">새 파일이 저장되었습니다. 오래된 파일과 여유 공간을 지웁니다. 여기를 탭하세요</string>
+    <item>새 오디오가 어디에 들어갔는지, 클릭해서 확인하세요</item>
+    <item>오디오 다운로드 vừa 끝났어요, 저장 공간 정리해 볼까요?</item>
+    <item>새 오디오 다운로드 완료, 들어와서 확인해 보세요</item>
+    <item>오디오 다운로드 vừa 끝났는데, 폰이 좀 꽉 차네요</item>
+    <item>오디오 다운로드 완료, 저장 공간도 정리해야겠어요</item>
+  </string-array>
+    <string name="notif_event_file_download_title">파일 다운로드 완료, 저장 공간 정리해 보세요</string>
     <string-array name="notif_event_file_download_titles">
-        <item>새 파일이 저장되었습니다. 오래된 파일과 여유 공간을 지웁니다. 여기를 탭하세요</item>
-        <item>다운로드 완료 - 어떤 오래된 파일을 정리할 수 있는지 확인하세요. 나를 탭하세요</item>
-        <item>새 파일 준비 — 스마트 아카이브 + 정리. 시작하려면 저를 탭하세요</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">휴지통이 비워졌습니다. 저장소가 새로 고쳐졌습니다. 최근 공간을 확인해보세요.</string>
+    <item>파일 다운로드 완료, 저장 공간 정리해 보세요</item>
+    <item>파일 다운로드 막 끝났어요, 공간 좀 비워요</item>
+    <item>클릭해서 새 파일 잘 분류해 주세요</item>
+    <item>다운로드 폴더에 뭐가 추가됐는지 클릭해서 확인해 보세요</item>
+    <item>파일 다운로드 완료, 들어와서 정리해 주세요</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">제거 완료, 얼마나 공간이 확보되었는지 확인하세요</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>휴지통이 비워졌습니다. 저장소가 새로 고쳐졌습니다. 최근 공간을 확인해보세요.</item>
-        <item>휴지통을 비우고 남은 음식을 철저하게 청소하세요.</item>
-        <item>성공적으로 비웠습니다. 청소할 정크가 더 많습니다. 와서 한 번 보세요.</item>
-    </string-array>
-    <string name="notif_event_action_clean">지금 청소하세요</string>
+    <item>제거 완료, 얼마나 공간이 확보되었는지 확인하세요</item>
+    <item>휴지통 비우기 완료, 스마트폰이 순식간에 가벼워져요</item>
+    <item>휴지통 바닥까지 비웠어요, 스마트폰이 가벼워졌네요</item>
+    <item>휴지통 비웠어요, 조금 더 비우면 되겠네요</item>
+    <item>제거 완료, 얼마나 공간이 남았는지 확인하세요</item>
+  </string-array>
+    <string name="notif_event_action_clean">청소</string>
     <string name="notif_event_action_open_home">열기</string>
-    <string name="notif_event_action_manage">앱 관리</string>
+    <string name="notif_event_action_manage">관리</string>
     <string name="notif_event_action_check_battery">배터리 확인</string>
-    <string name="notif_event_action_check_network">네트워크 확인</string>
+    <string name="notif_event_action_check_network">데이터 확인</string>
     <string name="notif_days_unit">일</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>저장공간이 변경되었습니다. 무엇이 공간을 차지하는지 볼까요?</item>
-        <item>공간적 변화가 감지되었습니다. 새로운 쓰레기가 있을지도 모릅니다. 살펴 보시겠습니까?</item>
-        <item>사용 가능한 공간이 이동되었습니다. 누가 먹었는지 아세요? 클릭해서 살펴보세요.</item>
-        <item>공간이 협소한가요? 방금 변경 사항을 감지했습니다. 세부 사항을 살펴보겠습니다.</item>
-        <item>공간 변경 알림: 쓰레기가 많이 쌓일 수 있습니다. 확인해 보세요.</item>
-    </string-array>
+    <item>공간 또 줄었네요, 클릭해서 누가 차지했는지 확인해 보세요</item>
+    <item>들어와서 확인해 보세요, 앨범에 새 사진이 더 쌓였어요</item>
+    <item>채팅 캐시 계속 쌓여가네요, 열어보세요 진짜 모습을</item>
+    <item>또 쌓인 쓰레기들이 나타났어요, 들어와서 확인해 보세요</item>
+    <item>저를 클릭하세요, 쓰레기가 산처럼 쌓여도 아무도 정리 안 하네요</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>배터리가 부족합니다. 누가 당신의 전기를 훔치고 있는지 알고 싶으십니까? 클릭하시면 순위를 보실 수 있습니다.</item>
-        <item>곧 바닥이 난다. 전기를 훔치는 앱만 없애면 당분간은 살아남을 수 있다.</item>
-        <item>배터리가 부족합니다. 아무것도 하지 않는 것보다 몇 가지 배경을 지우는 것이 낫습니다.</item>
-        <item>배터리가 빨간색입니다. 여전히 저장할 수 있으며, 클릭하여 열고 살펴보세요.</item>
-        <item>20% remain 미만입니다. 절전형 응급처치를 하고 청소를 합시다.</item>
-    </string-array>
+    <item>배터리 부족하면 버티지 마세요, 앱 닫고 바로 정리하세요</item>
+    <item>집에 도착하기 전에, 앱 닫고 캐시 정리하세요</item>
+    <item>배터리 경고등이 켜졌어요, 들어가서 확인해 보세요</item>
+    <item>배터리가 거의 다 남았어요, 들어가서 원인을 확인해 보세요</item>
+    <item>곧 배터리 다 떨어질 거예요, 앱 닫고 확인해 보세요</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>배터리가 절반 이상 충전되었습니다. 지금 잘 처리하세요. 집에 도착할 때까지 지속됩니다.</item>
-        <item>배터리가 절반 이상 충전되었습니다. 이제 배터리를 관리하는 것이 20%가 될 때까지 기다리는 것보다 훨씬 쉽습니다.</item>
-        <item>배터리가 반쯤 나갔네요. 얼마나 오래 지속될 수 있나요? 클릭해서 살펴보세요.</item>
-        <item>배터리가 절반 이상 충전되었습니다. 이제 백엔드를 관리할 시간입니다. 긴장할 때까지 기다리지 마세요.</item>
-        <item>배터리가 절반 남았습니다. 파워에 굶주린 큰 선수들을 제거하고 후반전을 더욱 안정되게 만드세요.</item>
-    </string-array>
+    <item>클릭하면 바로 알 수 있어요, 배터리 50% 이상이면 먼저 정리하세요</item>
+    <item>중간선 아래로 떨어졌어요, 클릭해서 캐시 정리하세요</item>
+    <item>반칸밖에 안 남았어요, 들어가서 앨범 정리하세요</item>
+    <item>배터리가 안정적이에요, 클릭해서 캐시 삭제하세요</item>
+    <item>배터리가 중간 정도예요, 클릭해서 걱정 없이 캐시 정리하세요</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>최종 스프린트는 80%입니다. 쓰레기를 버리고 가볍게 짐을 싸서 최대의 힘을 맞이하세요.</item>
-        <item>아직 20% s완전 충전이 부족합니다. 더 이상 화면을 쳐다보지 말고 우리가 쓰레기를 처리하도록 하세요.</item>
-        <item>80%: 완벽함에서 한 발짝 떨어져 있습니다. 한 번 클릭하면 배터리가 완전히 충전되면 완전히 지워집니다.</item>
-        <item>80%, a 좋은 휴대폰에 좋은 배터리. 더운데 라운드를 청소하시나요?</item>
-        <item>우리에게 주어진 마지막 20% i입니다. 배터리를 보면 쓰레기를 청소합니다.</item>
-    </string-array>
+    <item>충전 중인데 쓸 일이 없네, 쓰레기 정리하러 들어와</item>
+    <item>거의 다 차는데 쓰레기가 많네, 원흉을 공개하러 들어와</item>
+    <item>전력 다 차기만 기다리고 있네, 나를 눌러서 쓰레기 정리해</item>
+    <item>전력 거의 다 차는데, 열기만 하면 깨끗해져</item>
+    <item>충전하면서 기다리네, 클릭해서 캐시 정리해</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>완전히 충전되었으며 사용할 준비가 되었습니다. 마지막 확인: 쓰레기를 치웠나요?</item>
-        <item>충전 후 의식의 느낌이 가득합니다. 기념으로 쓰레기를 치워보는 건 어떨까요?</item>
-        <item>오늘은 100%, s테이블입니다. 한 번 더 라운드하면 완벽합니다.</item>
-        <item>100%. 플러그를 뽑기 전 마지막 단계: 30초 동안 휴지통을 비웁니다.</item>
-        <item>풀파워로 마무리했습니다. 마지막 정리가 완료되었습니다. 완벽합니다.</item>
-    </string-array>
+    <item>완충 끝났는데 낭비하지 마세요. 캐시 확인해 보세요.</item>
+    <item>전력 가득한 상태이니, 지금 바로 잡것 정리하세요.</item>
+    <item>전력 가득했으니 정리할 때네요. 캐시 정리해 보세요.</item>
+    <item>전력 가득한 앨범은 정리해야죠. 한번 확인해 보세요.</item>
+    <item>전력 가득한 대기 중이네요. 들어와서 잡것 정리하세요.</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>웹이 변한다! 현재 네트워크 상태 보기 1</item>
-        <item>네트워크 이탈. 청소할 때 신호를 보지 말고 클릭하고 스캔하십시오.</item>
-        <item>페이지를 열 수 없나요? 정리는 항상 온라인 상태입니다.</item>
-        <item>이제 오프라인으로 작업할 수 있으며 휴지통을 비울 수 있습니다.</item>
-        <item>신호가 없으면 청소에 데이터가 필요하지 않으며 클릭만 하면 됩니다.</item>
-    </string-array>
+    <item>인터넷 끊겼어요, 로컬 캐시 확인해 보세요</item>
+    <item>인터넷 바뀐 거죠, 이 기회에 캐시 확인해 보세요</item>
+    <item>인터넷 불안정하더라도 걱정 마세요, 열면 깨끗해져요</item>
+    <item>연결 끊겼어요, 클릭해서 로컬 잡것 확인해 보세요</item>
+    <item>인터넷 다시 연결됐어요, 들어가서 캐시 확인해 보세요</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>전원을 연결했습니다. 오늘 밤의 작업: 물을 채우고 청소하세요.</item>
-        <item>당신은 쉬고 있고, 재충전 중입니다. 쓰레기도 치워주세요.</item>
-        <item>충전하는 동안 오랫동안 쌓인 쓰레기를 치우는 데 충분합니다.</item>
-        <item>전기가 연결되어야 무대 뒤 스태프들이 감히 자유롭게 일할 수 있다.</item>
-        <item>충전하는 동안 조금 뜨거워지나요? 배경을 지우면 온도를 낮출 수 있습니다.</item>
-    </string-array>
+    <item>전원 연결했으니 바로 캐시 확인해 볼게요</item>
+    <item>충전 시작, 들어가서 심층 클리닝 한번 해볼게요</item>
+    <item>아직 충전 시작 단계인데, 쓰레기 정리 앱 열어볼게요</item>
+    <item>충전 시작했으니 빨리 열어봐요, 바로 깨끗해져요</item>
+    <item>충전기 준비 완료, 들어가서 캐시 한번 볼게요</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>플러그를 뽑고 출발하세요. 시간을 내어 쓰레기를 치우고 최상의 상태를 유지하는 것을 잊지 마십시오.</item>
-        <item>충전이 끝나면 짐을 챙기고 출발하세요. 그냥 청소하면 완벽해질 것입니다.</item>
-        <item>완전히 충전되어 사용할 준비가 되었습니다. 쓰레기 청소도 원활하게, 오늘도 부족함이 없습니다.</item>
-        <item>충전이 종료됩니다. 다음 공간은 한 단계씩 정리하고 업그레이드할 예정이다.</item>
-        <item>정전 시에도 멈추지 마십시오. 남은 한 가지는 정리입니다.</item>
-    </string-array>
+    <item>충전기 뽑고 오프라인 상태, 열어보세요</item>
+    <item>전원 끊겨서 인터넷 없이 로컬 데이터 확인하세요</item>
+    <item>전원 뽑으면 바로 깨끗하게 정리할 수 있어요</item>
+    <item>전원 끊겼어요, 배터리 얼마나 버틸지 확인해 보세요</item>
+    <item>케이블 뽑았으니 바로 앨범 정리하러 들어가세요</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>우리 다시 만나요, 막혔나요? 대부분이 쓰레기입니다. 청소해 보세요.</item>
-        <item>잠금 해제되었나요? 다른 앱을 먼저 열지 말고 30초 동안 휴지통을 비우세요.</item>
-        <item>가장 먼저 잠금을 해제할 대상은 바로 우리입니다. 쓰레기를 치우면 당신을 더 사랑할 것입니다.</item>
-        <item>잠금 해제 후 30초. 가장 가치 있는 용도: 쓰레기 청소.</item>
-        <item>휴대전화에 \'백엔드가 약간 막혔습니다. 도와주실 수 있나요?</item>
-    </string-array>
+    <item>잠에서 깨서 화면이 켜졌어요, 캐시 확인하러 들어와요</item>
+    <item>잠금 해제 성공, 저장 공간 아직 충분해요?</item>
+    <item>화면이 켜졌어요, 한눈에 앱 사용량 확인</item>
+    <item>화면이 켜지자마자 앨범 정리하러 들어왔어요</item>
+    <item>화면이 켜지니 바로, 클릭해서 바로 알겠어요</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>휴대폰은 내려놓고 저희에게 맡겨주세요. 휴식 화면 시간 = 간호 시간.</item>
-        <item>일을 멈추는 것은 일을 멈추는 것을 의미하지 않습니다. 다음에 화면을 켜면 깜짝 선물을 드릴게요.</item>
-        <item>화면을 쉬면서 조용히 나아지고 있어요. 클릭하시면 나머지는 저희가 알아서 처리하겠습니다.</item>
-        <item>화면을 잠그기 전 마지막으로 할 일: 정리를 클릭하세요. 내일 아침 새로운 모습.</item>
-        <item>화면이 어두워집니다. 지금 준비하고 내일 결과를 확인하세요.</item>
-    </string-array>
+    <item>화면 꺼졌어요, 백그라운드 정리 시작할 때네요</item>
+    <item>액정 잠기기 전에 가볍게 캐시 확인해 볼게요</item>
+    <item>잠들기 직전 딱 좋네요, 앨범 정리 좀 할게요</item>
+    <item>화면 어두워지기 전에 빨리 클릭해서省心清을 시작해요</item>
+    <item>화면 꺼지기 전에 휴대폰을 좀 정리할게요, 클릭하면 바로 알 거예요</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>새 앱이 이전되었으며 캐시도 마찬가지입니다. 청소하다</item>
-        <item>우리는 새로운 앱을 설치하는 기쁨을 이해합니다. 단지 캐시가 조용히 쌓일 뿐입니다.</item>
-        <item>새로운 앱이요? 캐시도 여기에 있으므로 한 번의 클릭으로 지울 수 있습니다.</item>
-        <item>새로운 것이 들어오고 오래된 것이 나가게 됩니다. 자주 청소하고 원하는 대로 설치하세요.</item>
-        <item>또 하나? 공간이 조용히 작아지고 있으니 오셔서 청소해주세요.</item>
-    </string-array>
+    <item>새로 설치한 앱 캐시가 따라왔어요, 한번 열어보세요</item>
+    <item>새 앱 설치했는데, 이왕이면 설치 파일도 정리해 볼까요?</item>
+    <item>새로운 얼굴이 조용히 캐시에 들어왔어요, 들어가서 확인해 볼게요</item>
+    <item>봐봐요, 새 앱 캐시 파일이 계속 쌓여 있네요</item>
+    <item>클릭해 보세요, 새 앱 설치 파일이 아직 자리 차지하고 있어요</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>성공적으로 제거되었습니다! 파일 잔여물을 정리하려면</item>
-        <item>제거되었지만 정리되지 않았습니다. 완료하려면 클릭하세요.</item>
-        <item>앱은 제거되었지만 꼬리는 여전히 남아 있습니다. 한 번의 클릭으로 정리하고 영원히 작별 인사를 하세요.</item>
-        <item>두 번째 단계를 놓치지 마세요. 앱을 삭제하고 남은 부분을 삭제하세요. 한 번의 클릭으로 완료됩니다.</item>
-        <item>잔여물은 비워진 공간의 절반을 차지하게 됩니다. 정밀 스캔하고 모든 것을 지웁니다.</item>
-    </string-array>
+    <item>앱 삭제했는데 잔여물이 남아있네요, 한번 열어보세요</item>
+    <item>들어와서 확인해 보세요, 삭제했는데 잔여물이 아직 남아있어요</item>
+    <item>삭제 성공! 청소해야 깨끗해져요</item>
+    <item>삭제 후에도 잔여물이 남아있네요, 열어보세요</item>
+    <item>삭제 후 공간이 변하지 않나요? 들어와서 원인을 확인해 보세요</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>새 버전이 도착했습니다. 이전 버전에서 남은 모든 것이 완전히 정리되었습니다.</item>
-        <item>심층 스캔의 경우 버전 +1, 캐시 +1입니다.</item>
-        <item>업데이트가 완료되고 한 번의 클릭으로 나머지 설치 패키지를 정리할 수 있습니다.</item>
-        <item>업데이트가 완료되었습니다. 마무리하겠습니다. 청소하면 제가 맡겠습니다.</item>
-        <item>모든 업데이트는 오래된 파일을 남기고 신속하게 처리합니다.</item>
-    </string-array>
+    <item>앱이 갱신됐어요, 오래된 캐시는 정리해야죠</item>
+    <item>갱신하고 바로 캐시 늘었네요, 한번 열어볼까요</item>
+    <item>갱신된 캐시인데, 들어가서 확인해 보면 더 편할 거예요</item>
+    <item>갱신된 패키지가 아직 공간 많이 차지하고 있어요, 열어서 정리해 보세요</item>
+    <item>새 버전의 잔여물이 아직 기다리고 있어요, 저를 클릭해 주세요</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>또 다른 스크린샷이요? 1 이제 스크린샷을 정리할 시간입니다</item>
-        <item>새 스크린샷을 찾았습니다. 클릭하여 보고 정리하세요~</item>
-        <item>스크린샷이 점점 많아지고 있습니다. 원클릭 정리로 공간 확보에 도움이 됩니다.</item>
-        <item>스크린샷이 성공적으로 촬영되었습니다. 중복되거나 흐릿한 스크린샷은 한 번의 클릭으로 필터링할 수 있습니다.</item>
-        <item>새로운 스크린샷이 데이터베이스에 추가되고, 한 번의 클릭으로 삭제하기 위해 중복된 이미지가 대기열에 추가되었습니다.</item>
-    </string-array>
+    <item>새로운 스크린샷이 나왔어요, 저장할까요?</item>
+    <item>앨범에 스크린샷이 쌓였는데, 열면 깔끔해져요</item>
+    <item>스크린샷 성공! 이제 앨범 정리해 볼까요?</item>
+    <item>방금 찍은 새 사진이에요, 열면 놀라운 сюрпри스가 기다리고 있어요</item>
+    <item>새 스크린샷이 앨범에 추가됐어요, 들어가서 확인해 보세요</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>쓰레기가 잔뜩 쌓여있습니다. 한번에 모두 청소해보세요.</item>
-        <item>일 전에 %1$d를 마지막으로 청소했습니다. 지금 처리하려면 클릭하세요.</item>
-        <item>며칠 동안 이곳에 없었으니 깨끗이 치우고 가볍게 전장으로 돌아가겠습니다.</item>
-        <item>오늘은 청산 할당량을 사용하지 않았습니다. 돌아오면 클리어하겠습니다.</item>
-        <item>캐시가 가득 차서 확인을 기다리고 있습니다.</item>
-    </string-array>
+    <item>오래 만에 휴대폰 청소해야겠어요, 한번 열어볼게요</item>
+    <item>쓰레기 이렇게 오래 쌓였는데, 들어가서 청소해야겠어요</item>
+    <item>휴대폰 청소 안 했더니 먼지가 많이 쌓였네요, 열어 청소할게요</item>
+    <item>앨범 열어보면 캐시가 이미 산처럼 쌓여 있어요</item>
+    <item>캐시가 이렇게 오래 함께했는데 청소해야죠, 저를 클릭하세요</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>오랫동안 기다려왔습니다. 돌아와서 쓰레기를 치우십시오.</item>
-        <item>며칠 동안 당신을 보지 못했어요. 쓰레기에게는 휴식이 없습니다. 돌아와서 쓸어 버리세요.</item>
-        <item>캐시가 대기열에 추가되었습니다. 클릭하면 사라집니다.</item>
-        <item>당신이 자리를 비운 동안 휴지통이 가득 찼습니다. 한 번의 클릭으로 비우고 그 어느 때보다 상쾌한 기분을 느껴보세요.</item>
-        <item>뒤쪽에? 먼저 휴지통을 비우십시오. 30초만 지나면 전화기는 새것처럼 가벼워집니다.</item>
-    </string-array>
+    <item>오래 못 봤는데 잊어버린 줄 알았네, 한번 열어봐</item>
+    <item>오래 안 켰었네, 들어가서 한번 확인해봐</item>
+    <item>오래 못 봤네, 들어와서 확인해봐</item>
+    <item>아이콘이 거의 자라 죽을 지경인데, 클릭해서 확인해봐</item>
+    <item>바빠서 잊었겠지, 우리 다 오래 기다렸어, 한번 봐봐</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>오랫동안 쌓인 쓰레기가 한 번에 치워집니다.</item>
-        <item>청소할 시간입니다. 오늘의 휴지통은 당신이 클릭하기를 기다리고 있습니다.</item>
-        <item>오늘의 스페이스 데일리가 도착했습니다. 깨끗이 비우고 밝게 유지하세요.</item>
-        <item>일부 파일은 생각보다 훨씬 큽니다. 살펴보세요.</item>
-        <item>몇 G를 차지한 놈을 찾아서 청소해</item>
-        <item>큰 문서 목록이 준비되어 있으니 오셔서 살펴보세요.</item>
-        <item>누가 가장 많은 공간을 차지합니까? 1초만에 공개됩니다.</item>
-        <item>연속 촬영은 훌륭하지만 마무리는 고통스럽습니다. 우리에게 맡겨주세요.</item>
-        <item>유사한 사진이 나열되어 있으며 어떤 사진을 유지할지는 귀하의 선택입니다</item>
-        <item>비슷한 사진이 너무 많나요? 단 한 번의 클릭으로 중복 항목을 비교하고 제거할 수 있도록 도와드리겠습니다.</item>
-        <item>캐시된 오프라인 동영상을 삭제해야 합니다.</item>
-        <item>나머지 오디오도 정리됩니다.</item>
-    </string-array>
+    <item>지난번에 반쯤만 정리하고 멈췄는데, 한번 열어볼게요</item>
+    <item>정리하다가 중간에 멈췄네요, 들어가서 어디까지 했는지 볼게요</item>
+    <item>영상 파일이 많이 쌓여서 공간도 꽤 차지하네요, 열어볼게요</item>
+    <item>정리 안 한 거 엄청 큰 파일이 하나 있는데, 열어서 정리할게요</item>
+    <item>고화질 영상이 한참 공간을 차지하고 있네요, 들어가서 확인해 볼게요</item>
+    <item>중복 사진으로 공간 많이 차지해요. 들어가서 정리해 보세요.</item>
+    <item>앨범에 중복된 얼굴이 많아요. 클릭해서 삭제할 수 있어요.</item>
+    <item>유사한 풍경 사진이 많이 쌓여 있어요. 들어가서 삭제할 걸 고르세요.</item>
+    <item>큰 동영상으로 공간이 많이 차지해요. 클릭해서 확인해 보세요.</item>
+    <item>음성 메시지로 채팅 캐시가 가득 차 있어요. 들어가서 정리해 보세요.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>배터리가 이전만큼 내구성이 없나요? 확인해 보세요.</item>
-        <item>누가 당신의 전기를 훔치고 있나요? 한번 찾아보시면 알게 될 것입니다.</item>
-        <item>이 기능을 끄면 배터리 수명이 연장됩니다.</item>
-        <item>일부 앱은 설치되었지만 사용되지 않습니다. 어떤 것들이 있는지 보시겠어요?</item>
-        <item>안쓰는 앱 보관하는것도 부담이라 목록을 만들었어요</item>
-        <item>개인정보 보호에 관해서는 빨리 처리할수록 좋습니다.</item>
-        <item>중요한 것은 숨기고 불필요한 것은 제거하세요. 내가 당신을 도와 드리겠습니다</item>
-        <item>교통은 어디로 가나요? 누가 사용하고 있는지 알아보세요.</item>
-        <item>교통 정보가 한 눈에 준비되어 명확합니다.</item>
-        <item>백그라운드에서 비밀리에 인터넷에 연결되는 앱이 있습니다.</item>
-    </string-array>
+    <item>백그라운드 앱이 몰래 배터리 소모 중, 한번 확인해 보세요</item>
+    <item>밤새 대기하면 배터리가 조용히 줄어들어요, 클릭해 보세요</item>
+    <item>동기화 앱은 항상 켜져 있어 매일 배터리 많이 소모되는데, 들어와서 확인해 보세요</item>
+    <item>많은 앱이 반년 동안 열리지 않았어요, 들어가서 확인해 보세요</item>
+    <item>미리 설치된 앱이 공짜로 공간을 차지하고 있어요, 들어와서 정리해 보세요</item>
+    <item>보시죠, 자주 쓰는 앱은 많지 않아요</item>
+    <item>개인 사진은 개인 공간에 잠가두세요, 클릭해서 확인해 보세요</item>
+    <item>셀카는 몰래 숨겨두세요, 들어와서 확인해 보세요</item>
+    <item>이번 달 데이터 거의 다 남았어요, 클릭해서 확인해 보세요</item>
+    <item>데이터 절약 모드를 켜면 많이 절약되니까, 가서 확인해 보세요</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">정크의 {size}—탭 한 번으로 정리</string>
     <string name="notif_scheduled_large_files">{total}개의 대용량 파일—손쉬운 정리</string>
     <string name="notif_scheduled_duplicate_photos">중복 사진 그룹 {groups}개—{size} 저장</string>
@@ -762,7 +769,7 @@
     <string name="notif_scheduled_videos">동영상 {total}개—공간을 확보하려면 {n}개를 삭제하세요.</string>
     <string name="notif_scheduled_audio">{total}개의 오디오 파일—정리할 시간입니다</string>
     <string name="notif_scheduled_apps">{idle} 유휴 앱에서 사용되는 {size}</string>
-    <string name="notif_scheduled_data">백그라운드에서 사용되는 데이터의 {back}</string>
+    <string name="notif_scheduled_data">백그라운드에서 모바일 데이터 {back} 사용</string>
     <string name="app_manager_uninstall_selected">선택한 앱 제거</string>
     <string name="app_manager_uninstall_selected_count">선택한 앱 제거 (%1$d)</string>
     <string name="cache_removable">이동할 수 있는</string>

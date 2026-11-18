@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>Tất cả</item>
+        <item>Hình ảnh</item>
+        <item>Video</item>
+        <item>Âm thanh</item>
+        <item>Tài liệu</item>
+        <item>Tệp nén</item>
+        <item>APK</item>
+        <item>Khác</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>Mọi thời điểm</item>
+        <item>1 tuần</item>
+        <item>1 tháng</item>
+        <item>3 tháng</item>
+        <item>6 tháng</item>
+        <item>1 năm</item>
+    </string-array>
+    <string name="large_file_filter_type">Loại</string>
+    <string name="large_file_filter_size">Kích thước</string>
+    <string name="large_file_filter_time">Thời gian</string>
+    <string name="large_file_filter_description">Bộ lọc %1$s: %2$s</string>
+    <string name="large_file_access_required">Cần quyền truy cập tất cả tệp</string>
+    <string name="large_file_scanning">Đang quét tệp…</string>
+    <string name="large_file_summary">%1$d tệp · %2$s</string>
+    <string name="large_file_select_all">Chọn tất cả</string>
+    <string name="large_file_deselect_all">Bỏ chọn tất cả</string>
+    <string name="large_file_select_all_shown">Chọn tất cả tệp đang hiển thị</string>
+    <string name="large_file_deselect_all_shown">Bỏ chọn tất cả tệp đang hiển thị</string>
+    <string name="large_file_delete_selected">Xóa mục đã chọn</string>
+    <string name="large_file_delete_amount">Xóa %1$s (%2$d)</string>
+    <string name="large_file_open">Mở</string>
+    <string name="large_file_delete">Xóa</string>
+    <string name="large_file_delete_confirm">Xóa %1$d tệp đã chọn?</string>
+    <string name="large_file_deleted_summary">Đã xóa %1$d trong số %2$d tệp</string>
+    <string name="sys_level">Mức</string>
+    <string name="sys_status">Trạng thái</string>
+    <string name="sys_discharging">Đang xả pin</string>
+    <string name="sys_android_version">Phiên bản Android</string>
+    <string name="traffic_usage_required">Cần quyền truy cập dữ liệu sử dụng. Nhấn để cấp quyền.</string>
+    <string name="traffic_loading">Đang tải…</string>
+    <string name="traffic_empty">Không tìm thấy dữ liệu lưu lượng mạng của ứng dụng</string>
+    <string name="traffic_guide_message">Bật quyền truy cập dữ liệu sử dụng cho ứng dụng này trong phần Cài đặt để xem lưu lượng mạng của từng ứng dụng.</string>
+    <string name="app_manager_uninstall_confirm">Gỡ cài đặt %1$d ứng dụng đã chọn? Android sẽ yêu cầu xác nhận cho từng ứng dụng.</string>
+    <string name="home_pending_items_format">Số mục cần dọn: %1$d</string>
+    <string name="info_report_title">Báo cáo</string>
+    <string name="new_feature_badge_description">Tính năng mới</string>
+    <string name="cache_access_required">Cho phép truy cập tất cả tệp để quét bộ nhớ đệm</string>
+    <string name="cache_confirm_clean">Dọn dẹp %1$d mục đã chọn?</string>
+    <string name="cache_clean_action">Dọn dẹp</string>
+    <string name="cache_clean_result">Đã dọn %1$d trong số %2$d mục</string>
+    <string name="cleanup_report_complete">Đã dọn dẹp xong.</string>
+    <string name="cleanup_report_explore">Khám phá thêm công cụ</string>
+    <string name="cleanup_report_go">Mở</string>
+    <string name="widget_action_files">Tệp</string>
+    <string name="widget_action_photos">Ảnh</string>
+    <string name="vlt_select_all">Chọn tất cả</string>
+    <string name="vlt_deselect_all">Bỏ chọn tất cả</string>
+    <string name="vlt_import_media">Nhập ảnh hoặc video</string>
+    <string name="vlt_originals_remain">; còn %1$d tệp gốc trên thiết bị</string>
+    <string name="vlt_restore_confirm">Khôi phục %1$d tệp vào Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">Đã khôi phục %1$d trong số %2$d tệp</string>
+    <string name="vlt_delete_confirm">Xóa vĩnh viễn %1$d tệp riêng tư?</string>
+    <string name="app_manager_select_app">Chọn ứng dụng</string>
+</resources>

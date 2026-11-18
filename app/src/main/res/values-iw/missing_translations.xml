@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">פח אשפה (%1$s)</string>
     <string name="trash_bin_title_empty">פח אשפה</string>
     <string name="trash_restore_hint">הקש כדי לשחזר תמונות</string>
-    <string name="trash_empty_action">מחק הכל באשפה</string>
+    <string name="trash_empty_action">מחיקת תמונות</string>
     <string name="trash_restored">התמונה שוחזרה</string>
     <string name="trash_bin_empty">פח האשפה ריק</string>
     <string name="feature_smart_groups">קבוצות חכמות</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">תזכורות נקיות</string>
     <string name="notif_event_channel_desc">תזכורות מקומיות לאחר צילומי מסך, התקנות והסרות</string>
     <string name="notif_event_summary_channel_name">סיכום תזכורת נקי</string>
-    <string name="notif_event_screenshot_title">עוד צילום מסך? 1 הגיע הזמן לנקות את צילומי המסך</string>
-    <string name="notif_event_install_title">האפליקציה החדשה נכנסה, וכך גם המטמון. לנקות</string>
-    <string name="notif_event_uninstall_title">הוסר בהצלחה! כדי לנקות שאריות קבצים</string>
-    <string name="notif_clean_reminder_title">יש הרבה זבל שנערם. נקה הכל בבת אחת.</string>
-    <string name="notif_event_battery_below_50_title">הסוללה מלאה יותר מחצי. תטפל בזה עכשיו, זה יימשך עד שתחזור הביתה.</string>
-    <string name="notif_event_battery_below_20_title">סוללה חלשה. רוצים לדעת מי גונב לכם את החשמל? לחץ כדי לראות את הדירוג.</string>
-    <string name="notif_event_charging_title">מחובר לחשמל. המשימה של הערב: למלא מחדש, ואז לנקות.</string>
-    <string name="notif_event_charging_full_title">טעון במלואו ומוכן לשימוש. בדיקה אחרונה: האם האשפה פונתה?</string>
-    <string name="notif_event_charging_to_80_title">ספרינט הגמר הוא 80%. פרק את האשפה וארוז קלות כדי לקבל את מלוא העוצמה.</string>
-    <string name="notif_event_charging_disconnect_title">נתק וצא לדרך. זכור לקחת את הזמן לנקות את האשפה ולהישאר בכושר טיפ-טופ.</string>
-    <string name="notif_event_app_update_title">גרסה חדשה הגיעה. כל מה שנשאר מהגרסה הישנה מנוקה לחלוטין.</string>
-    <string name="notif_event_network_change_title">הרשת משתנה! הצג את מצב הרשת הנוכחי 1</string>
-    <string name="notif_event_screen_lock_title">הניח את הטלפון שלך והשאיר לנו אותו. זמן מסך מנוחה = זמן הנקה.</string>
-    <string name="notif_event_screen_on_after_lock_title">אנחנו נפגשים שוב, אתה תקוע? רובו הוא זבל, נסה לנקות אותו.</string>
-    <string name="notif_event_storage_free_drop_title">שטח האחסון השתנה. בוא נראה מה תופס מקום?</string>
-    <string name="notif_event_scheduled_push_1_title">האשפה שהצטברה כל כך הרבה זמן מתפנה בבת אחת.</string>
-    <string name="notif_event_scheduled_push_2_title">האם הסוללה לא עמידה כמו קודם? בדוק את זה.</string>
-    <string name="notif_event_app_inactive_title">הרבה זמן לא ראיתי, זה חיכה. תחזור ותפנה את האשפה.</string>
-    <string name="notif_event_scheduled_push_3_title">הקשה אחת לרשימות ההשמעה שלך - הגדר את הווידג\'ט</string>
+    <string name="notif_event_screenshot_title">יש עוד צילום מסך חדש, נראה אם כדאי לשמור אותו</string>
+    <string name="notif_event_install_title">הקצת של היישום החדש כבר בא, נפתח ונראה</string>
+    <string name="notif_event_uninstall_title">האפליקציה נמחקה, אבל יש עוד שאריות — נפתח ונראה</string>
+    <string name="notif_clean_reminder_title">זה כבר הרבה זמן שלא ניקיתי את הטלפון, לא מספיק אוויר — פותחתי לראות מה יש</string>
+    <string name="notif_event_battery_below_50_title">פתח ותיבין — אם הכarge עוד יותר מן המחצית, תחילה תמחק את הקצת</string>
+    <string name="notif_event_battery_below_20_title">הסוללה בסיכון – אל תתעקש להמשיך, פתח ותהיה נקי ומהיר</string>
+    <string name="notif_event_charging_title">החשמל מחובר, נכנס לשם ופשוט נפתח כדי לבדוק את הקצת</string>
+    <string name="notif_event_charging_full_title">עוד מלא לחלוטין — אל תבזבז, פתח ודווקא בדק את הקצת</string>
+    <string name="notif_event_charging_to_80_title">מתחילים להטעין, נכנסים לנקות את הזבל</string>
+    <string name="notif_event_charging_disconnect_title">הסרת הטלג\'ר — עכשיו חוץ מהאינטרנט, פתח וצפה</string>
+    <string name="notif_event_app_update_title">האפליקציה עודכן זה עתה, עכשיו זמן לנקות את הקזזות הישנות</string>
+    <string name="notif_event_network_change_title">האינטרנט נעצר, פתחו וצפו בקצת קצתה המקומית</string>
+    <string name="notif_event_screen_lock_title">המסך נכבה, והניקוי ברקע מתחיל בדיוק עכשיו</string>
+    <string name="notif_event_screen_on_after_lock_title">המסך נדלק מיד אחרי שמתעלים, לחצו לפתוח את הקצת זיכרון</string>
+    <string name="notif_event_storage_free_drop_title">המחסן שוב קטן יותר, פתחו וראו מי מקיח אותו</string>
+    <string name="notif_event_scheduled_push_1_title">הפעם הקודם הורדתי רק עד מחצית ולא נעתי יותר, נפתח כדי לבדוק</string>
+    <string name="notif_event_scheduled_push_2_title">האפליקציה הרקעית מרוקנת את הסוללה שלך בלי שמעתך — פתח וראה</string>
+    <string name="notif_event_app_inactive_title">לא ראינו זה את זה כבר הרבה זמן, חשבתי ששכחת. נפתח ונראה</string>
+    <string name="notif_event_scheduled_push_3_title">הוסיפו ווידג׳ט למסך הבית כדי לנקות בלי לפתוח את האפליקציה</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>הקשה אחת לרשימות ההשמעה שלך - הגדר את הווידג\'ט</item>
-        <item>הפוך הכל לקל יותר עם ווידג\'ט - הוסף קיצור דרך למוזיקה</item>
-        <item>שחק מהר מבלי לפתוח - הפעל את הווידג\'ט של מסך הבית</item>
-    </string-array>
-    <string name="notif_event_app_background_title">שכחת משהו</string>
+    <item>הוסיפו ווידג׳ט למסך הבית כדי לנקות בלי לפתוח את האפליקציה</item>
+    <item>הוסיפו ווידג׳ט כדי שהניקוי יהיה תמיד בהישג יד</item>
+    <item>הווידג׳ט מוכן. תנו לו מקום במסך הבית</item>
+    <item>הוסיפו ווידג׳ט בנגיעה אחת ונקו ממסך הבית</item>
+    <item>הוסיפו ווידג׳ט לניקוי קל יותר</item>
+  </string-array>
+    <string name="notif_event_app_background_title">חזור, ניקוי בלחיצה אחת נמשך רק 3 שניות</string>
     <string name="notif_event_app_background_content">בוא לסיים לנקות כך שהוא יפעל חלק יותר.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>שכחת משהו</item>
-        <item>נותר צעד אחד</item>
-        <item>חדשות טובות</item>
-        <item>עזבת מהר מדי</item>
-        <item>אל תשאיר זבל בן לילה</item>
-    </string-array>
+    <item>חזור, ניקוי בלחיצה אחת נמשך רק 3 שניות</item>
+    <item>עוד יש שם זבל שלא ניקוי</item>
+    <item>אל תלך עוד, ניקוי קטן כבר עכשיו</item>
+    <item>נותר רק צעד אחד, חזור וניקוי את המקום לגמרי</item>
+    <item>אל תצא, הניקוי עוד לא סיים</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>בוא לסיים לנקות כך שהוא יפעל חלק יותר.</item>
         <item>עוד הקשה אחת כדי לסיים את הניקוי ולפנות עוד מקום.</item>
@@ -530,239 +532,244 @@
         <item>הטלפון שלך יכול להיות אפילו מהיר יותר - בוא לראות את האופטימיזציה.</item>
         <item>בוא לסיים לנקות כך שהוא יפעל חלק יותר.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">תוצאות הסריקה מוכנות - זבל לוקח מקום. נקה עכשיו</string>
+    <string name="notif_event_scan_done_uncleaned_title">הסקן סיים, נותר רק השלב האחרון של הניקוי</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>תוצאות הסריקה מוכנות - זבל לוקח מקום. נקה עכשיו</item>
-        <item>צעד אחד נותר: חזור ופנה מקום באופן מיידי.</item>
-        <item>שכחת לנקות אחרי הסריקה? 10 שניות כדי להפוך את הטלפון שלך לקל יותר.</item>
-        <item>זבל עדיין בטלפון שלך - התוצאות נשמרו. חזור לניקוי בלחיצה אחת.</item>
-        <item>בסריקה האחרונה נמצאו פריטים מרובים לניקוי. בוא תסיים את זה.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">הניקוי עדיין לא נעשה - בוא לסיים את השלב האחרון.</string>
+    <item>הסקן סיים, נותר רק השלב האחרון של הניקוי</item>
+    <item>הסקן סיים, רק קצת נותר לניקוי</item>
+    <item>הבדיקה סוימה, נכנסו וניקו את הזבל</item>
+    <item>הסקן סיים, הזבל עדיין מחכה לניקוי</item>
+    <item>רק סיימתם לסקן, עדיין לא ניקתם. נכנסו לבדוק</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">הניקוי עדיין לא סיים, נכנסו ונמשיך</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>הניקוי עדיין לא נעשה - בוא לסיים את השלב האחרון.</item>
-        <item>ניקיון מופרע: באמצע הדרך. סיים לטלפון קל יותר.</item>
-        <item>הניקוי כמעט הסתיים - אל תשאיר את הזבל מאחור.</item>
-        <item>יצאת באמצע נקי - סיים את זה ותרגיש את ההבדל.</item>
-        <item>ניקוי מופרע יכול להמשיך בכל עת. בוא תסיים את זה.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">התמונה נמחקה - הועברה בבטחה לפח המיחזור.</string>
+    <item>הניקוי עדיין לא סיים, נכנסו ונמשיך</item>
+    <item>הניקוי נפסק לפני רגע, נמשיך לניקוי</item>
+    <item>נותר רק קצת, נמשיך?</item>
+    <item>הניקוי הופסק, נמשיך לשחרר מקום</item>
+    <item>משימת הניקוי לא סוימה, בואו נמשיך</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">התמונה הוסרה. נכנסו לתיבת הזבל והסירו אותה</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>התמונה נמחקה - הועברה בבטחה לפח המיחזור.</item>
-        <item>זה עתה מחקת תמונה אחת - ראה כמה מקום פינוי?</item>
-        <item>התמונה נמחקה - מחק לצמיתות כדי לפנות מקום כעת.</item>
-        <item>התמונה נמחקה בבטחה - סטטוס האחסון עודכן.</item>
-        <item>תמונה נמחקה - אתה יכול לנקות גם צילומי מסך דומים.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">הסרטון נמחק — מקום גדול מתפנה.</string>
+    <item>התמונה הוסרה. נכנסו לתיבת הזבל והסירו אותה</item>
+    <item>התמונה הוסרה, נכנסו גם לתיבת הזבל והסירו אותה</item>
+    <item>התמונה כבר נכנסה לתיבת הזבל, נכנסו להסיר אותה</item>
+    <item>התמונות בתיבת הזבל עדיין מקיימות מקום, נסו אותן</item>
+    <item>התמונה הוסרה זה עתה, רוצים להסיר אותה לחלוטין?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">הווידאו הוחזר, ניקוי קופה יחסוך עוד מקום</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>הסרטון נמחק — מקום גדול מתפנה.</item>
-        <item>סרטון גדול הוסר - לחץ האחסון הוקל מיד.</item>
-        <item>הסרטון נמחק — בדוק את מצב האחסון הנוכחי שלך.</item>
-        <item>מחק בוצע - רוקן את סל המיחזור כדי לפנות מקום מלא.</item>
-        <item>הסרטון נמחק - ייתכן שיש עוד סרטונים גדולים שנשכחו לניקוי.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">אודיו נמחק - קבצים קטנים מתווספים. לְהַמשִׁיך לָלֶכֶת.</string>
+    <item>הווידאו הוחזר, ניקוי קופה יחסוך עוד מקום</item>
+    <item>הווידאו הוחזר, אבל המקום עדיין לא פורק</item>
+    <item>הווידאו נכנס לקופה, בואו לנקות אותה</item>
+    <item>ווידאו אחד הוחזר, עדיין צריך לנקות את הקופה</item>
+    <item>הווידאו בקופה עדיין תופס מקום</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">האודיו נמחק, אבל הקצב נשארה. נפתח ונראה</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>אודיו נמחק - קבצים קטנים מתווספים. לְהַמשִׁיך לָלֶכֶת.</item>
-        <item>האודיו הזה נעלם - ניתן לנקות גם קבצים דומים שאינם בשימוש.</item>
-        <item>האודיו נמחק - פרטי האחסון עודכנו. בוא להסתכל.</item>
-        <item>קובץ שמע אחד נמחק - רשימת האחסון רענון.</item>
-        <item>האודיו נמחק - רוקן את סל המיחזור כדי לסיים לפנות מקום.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">הקובץ נמחק - קצת יותר שטח אחסון פנוי.</string>
+    <item>האודיו נמחק, אבל הקצב נשארה. נפתח ונראה</item>
+    <item>האודיו נמחק, נמח גם את קופת הזבל</item>
+    <item>המחיקה נעשתה בהצלחה, בואו נמח את קופת הזבל</item>
+    <item>קטע אודיו נמחק, קופת הזבל עדיין צריכה להימח</item>
+    <item>בואו נמח את הקלטות הישנות במדף הק缓存</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">הקובץ הוחסל, נלך לניקוי במחזר</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>הקובץ נמחק - קצת יותר שטח אחסון פנוי.</item>
-        <item>הקובץ נמחק - העומס לא יפריע לטלפון שלך יותר.</item>
-        <item>הקובץ נמחק - ראה מה עוד אתה יכול לנקות.</item>
-        <item>הקובץ נמחק - השינויים מסונכרנים, סטטוס האחסון עודכן.</item>
-        <item>הקובץ הזה נוקה - תופס מקום כעת.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">תמונה שהורדה - פתח אותה והסתכל.</string>
+    <item>הקובץ הוחסל, נלך לניקוי במחזר</item>
+    <item>הקובץ הוחסל, אבל המקום עדיין לא שוחרר</item>
+    <item>הקובץ נכנס למחזר, אפשר לנקות גם אותו</item>
+    <item>הקובץ הוחסל, בואו לשחרר מקום</item>
+    <item>הקובץ הוחסל, לנקות את המחזר יהיה חסכוני יותר</item>
+  </string-array>
+    <string name="notif_event_image_download_title">הורדת התמונה סוימת, לך תראה איפה היא שמורה</string>
     <string-array name="notif_event_image_download_titles">
-        <item>תמונה שהורדה - פתח אותה והסתכל.</item>
-        <item>תמונה שהורדה - נקה תמונות כפולות באלבום שלך תוך כדי</item>
-        <item>ההורדה בוצעה - התמונה נשמרה בבטחה. בואו לבדוק תמונות דומות</item>
-    </string-array>
-    <string name="notif_event_video_download_title">הורד סרטון - הוא לא קטן. ראה כמה מקום סרטונים ישנים יכולים לפנות</string>
+    <item>הורדת התמונה סוימת, לך תראה איפה היא שמורה</item>
+    <item>תמונה חדשה עכשיו נכנסה לאלבום, פתח אותה ותראה</item>
+    <item>האם יש תמונה חדשה שחוזרת על ישנה? תפתח ותדע</item>
+    <item>הורדה סוימת, עכשיו אפשר לנקות את מה שחוזר עליו באלבום</item>
+    <item>הורדת התמונה סוימת, לך תראה כמה מקום נותר</item>
+  </string-array>
+    <string name="notif_event_video_download_title">קטלוג הווידאו כבר כמעט לא מתאים, לך תראה</string>
     <string-array name="notif_event_video_download_titles">
-        <item>הורד סרטון - הוא לא קטן. ראה כמה מקום סרטונים ישנים יכולים לפנות</item>
-        <item>סרטון חדש נשמר - מצא סרטונים גדולים למחיקה ופנוי מקום. הקש עליי</item>
-        <item>סרטונים לוקחים מקום - מצאנו פריטים שניתנים לניקוי כדי להקל על הטלפון שלך. הקש כאן</item>
-        <item>ההורדה בוצעה! נקה כמה סרטונים ישנים והמקום חוזר. הקש עליי</item>
-        <item>סרטון חדש ממוין - קל למצוא או לנקות. הקש כדי לראות</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">הורדת אודיו - סדר את ספריית המוזיקה שלך בהקשה אחת. הקש עליי</string>
+    <item>קטלוג הווידאו כבר כמעט לא מתאים, לך תראה</item>
+    <item>לחץ עליי ותראה את הגדול שטמון עכשיו</item>
+    <item>ההוראה סוימת, תראה כמה מקום הוא תפוס</item>
+    <item>הווידאו זה עתה הורד, הטלפון כבר קצת מלא</item>
+    <item>לחץ פנימה ותבחר את הווידאו שתופס מקום</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">איפה החדש צריך להיכנס? תפתח ותדע</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>הורדת אודיו - סדר את ספריית המוזיקה שלך בהקשה אחת. הקש עליי</item>
-        <item>אודיו חדש ממוין - נקה אודיו ישן בזמן שאתה כאן. הקש עליי</item>
-        <item>ספריית המוזיקה מתמלאת? בדוק אודיו שניתן לניקוי. הקש כאן</item>
-        <item>הורד אודיו - הסר טמבל בהקשה אחת. הקש עליי כדי לסדר</item>
-    </string-array>
-    <string name="notif_event_file_download_title">קובץ חדש נשמר - נקה קבצים ישנים ושטח פנוי. הקש כאן</string>
+    <item>איפה החדש צריך להיכנס? תפתח ותדע</item>
+    <item>האודיו הורד עכשיו, עכשיו אפשר לנקות קצת את המחסن</item>
+    <item>החדש הורד, בואו תראו</item>
+    <item>האודיו הורד עכשיו, הטלפון כבר קצת צפוף</item>
+    <item>האודיו הורד, גם את המחסן כבר צריך לנקות קצת</item>
+  </string-array>
+    <string name="notif_event_file_download_title">ההוראה של הקובץ נעשתה בהצלחה, בואו לסדר את האחסון</string>
     <string-array name="notif_event_file_download_titles">
-        <item>קובץ חדש נשמר - נקה קבצים ישנים ושטח פנוי. הקש כאן</item>
-        <item>ההורדה בוצעה - ראה אילו קבצים ישנים אתה יכול לנקות. הקש עליי</item>
-        <item>קובץ חדש מוכן - ארכיון חכם + נקי. הקש עליי כדי להתחיל</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">סל המיחזור רוקן - האחסון רענן. בדוק את השטח האחרון שלך.</string>
+    <item>ההוראה של הקובץ נעשתה בהצלחה, בואו לסדר את האחסון</item>
+    <item>הקובץ הורא עכשיו, בואו נפנוע קצת את המקום</item>
+    <item>לחצו פנימה כדי לסדר היטב את הקובץ החדש</item>
+    <item>מה הוסף בתוך תיק ההוראות? תדעו רק אחרי שתפתחו אותו</item>
+    <item>ההוראה של הקובץ סוימת, בואו לסדר קצת</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">המחיקה סוימת, בואו נראה כמה מקום נפטר</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>סל המיחזור רוקן - האחסון רענן. בדוק את השטח האחרון שלך.</item>
-        <item>סל המיחזור מרוקן - בוא נקה שאריות עמוק.</item>
-        <item>התרוקן בהצלחה - עוד זבל לניקוי. בוא להסתכל.</item>
-    </string-array>
-    <string name="notif_event_action_clean">נקה עכשיו</string>
-    <string name="notif_event_action_open_home">פתוח</string>
-    <string name="notif_event_action_manage">נהל אפליקציות</string>
-    <string name="notif_event_action_check_battery">בדוק את הסוללה</string>
-    <string name="notif_event_action_check_network">בדוק את הרשת</string>
+    <item>המחיקה סוימת, בואו נראה כמה מקום נפטר</item>
+    <item>הקופה נמחקה, הטלפון נהיה קל מיד</item>
+    <item>הקופה נמחקה לחלוטין, הטלפון עכשיו קל ונעים לשימוש</item>
+    <item>הקופה נמחקה, אפשר להמחיק עוד קצת</item>
+    <item>המחיקה סוימת, כמה מקום נותר לשימוש?</item>
+  </string-array>
+    <string name="notif_event_action_clean">לנקות</string>
+    <string name="notif_event_action_open_home">לפתוח</string>
+    <string name="notif_event_action_manage">לנהל</string>
+    <string name="notif_event_action_check_battery">לבדוק את הסוללה</string>
+    <string name="notif_event_action_check_network">לבדוק את הנתונים</string>
     <string name="notif_days_unit">יום</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>שטח האחסון השתנה. בוא נראה מה תופס מקום?</item>
-        <item>זוהו שינויים מרחביים. אולי יש אשפה חדשה, תסתכל?</item>
-        <item>השטח הפנוי זז. אתה יודע מי אכל את זה? לחץ כדי להסתכל.</item>
-        <item>האם המקום מצומצם? זה עתה זיהיתי את השינוי, בואו נסתכל על הפרטים.</item>
-        <item>תזכורת לשינוי חלל: אתה עלול לצבור הרבה אשפה. לבדוק את זה?</item>
-    </string-array>
+    <item>המחסן שוב קטן יותר, פתחו וראו מי מקיח אותו</item>
+    <item>כנסו לראות, האלבום שוב מלא בתמונות חדשות</item>
+    <item>הקזזת השיחות נעשית גדלה ונעשית גדלה, פתחו כדי לראות את האמת</item>
+    <item>שוב הופיעה ערמה של זבל, כנסו כדי לגלות את האמת</item>
+    <item>לחצו עליי, המטמון הזבל כבר גבוה כמו הר, ואף אחד לא סווג אותו</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>סוללה חלשה. רוצים לדעת מי גונב לכם את החשמל? לחץ כדי לראות את הדירוג.</item>
-        <item>סופם בקרוב. אם תנקה את האפליקציות שגונבות חשמל, אתה עדיין יכול לשרוד לזמן מה.</item>
-        <item>הסוללה מתרוקנת. לנקות כמה רקעים עדיף מאשר לא לעשות כלום.</item>
-        <item>הסוללה אדומה. אתה עדיין יכול לשמור אותו, לחץ כדי לפתוח אותו ולהסתכל.</item>
-        <item>פחות מ-20% rmains. בואו נעשה עזרה ראשונה לחסכון בחשמל וננקה.</item>
-    </string-array>
+    <item>הסוללה בסיכון – אל תתעקש להמשיך, פתח ותהיה נקי ומהיר</item>
+    <item>לא תצליח להחזיק עד הבית? נכנס ותנקה את הקצת</item>
+    <item>האזהרה של הסוללה כבר צהובה – נכנס לבדוק</item>
+    <item>הסוללה כבר בסיף – נכנס ותגלה את הגורם</item>
+    <item>הסוללה עומדת להסתיים – פתח וראה אם עוד אפשר להציל אותה</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>הסוללה מלאה יותר מחצי. תטפל בזה עכשיו, זה יימשך עד שתחזור הביתה.</item>
-        <item>הסוללה מלאה יותר מחצי. טיפול בסוללה עכשיו הוא הרבה יותר קל מאשר לחכות עד 20%.</item>
-        <item>הסוללה חצי נגמרה. כמה זמן זה יכול להימשך? לחץ כדי להסתכל.</item>
-        <item>הסוללה מלאה יותר מחצי. זה הזמן לטפל ב-backend, אל תחכו שהוא יתעצבן.</item>
-        <item>נותרה חצי מהסוללה. נקה את השחקנים הגדולים תאבי הכוח והפכו את המחצית השנייה ליציבה יותר.</item>
-    </string-array>
+    <item>פתח ותיבין — אם הכarge עוד יותר מן המחצית, תחילה תמחק את הקצת</item>
+    <item>זה כבר נפל מתחת לקו המרכזי; פתח ותמחק את הקצת</item>
+    <item>נשארה רק מחצית מן המסך; נכנס ותארגן את האלבום</item>
+    <item>הכarge יציב; לחץ עליי כדי למחוק את הקצת</item>
+    <item>הכarge בינוני; פתח ותמחק את הקצת בלי דאגות</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>ספרינט הגמר הוא 80%. פרק את האשפה וארוז קלות כדי לקבל את מלוא העוצמה.</item>
-        <item>עדיין 20% short של טעינה מלאה. תפסיק לבהות במסך שלך ותנו לנו לטפל בפח.</item>
-        <item>80%: צעד אחד רחוק מהשלמות. לחץ פעם אחת והוא ימוקה לחלוטין כשהסוללה טעונה במלואה.</item>
-        <item>80%, a סוללה טובה לטלפון נייד טוב. מנקים סיבוב בזמן שחם?</item>
-        <item>20% i האחרונים שניתנו לנו. אתה מסתכל על הסוללה, ואנחנו מנקים את האשפה.</item>
-    </string-array>
+    <item>מתחילים להטעין, נכנסים לנקות את הזבל</item>
+    <item>כבר כמעט מלא, יש הרבה זבל — נכנסים לראות מי האחראי</item>
+    <item>נותר רק עוד קצת עד שיהיה מלא, לחצו עליי כדי לנקות את הזבל</item>
+    <item>רק עוד קצת עד שיהיה מלא — פותחים ומייד נקי</item>
+    <item>מתחילים להטעין ומחכים, לחצו פנימה כדי לנקות את הקזזת הזיכרון</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>טעון במלואו ומוכן לשימוש. בדיקה אחרונה: האם האשפה פונתה?</item>
-        <item>לאחר הטעינה, תחושת הטקס מלאה. מה דעתך לפנות את האשפה כדי להנציח אותו?</item>
-        <item>100%, stable היום. עוד סיבוב אחד וזה ללא רבב.</item>
-        <item>100%. השלב האחרון לפני הניתוק: נקה את האשפה, שלושים שניות.</item>
-        <item>סיים במלוא העוצמה. ניקוי אחרון, מושלם.</item>
-    </string-array>
+    <item>עוד מלא לחלוטין — אל תבזבז, פתח ודווקא בדק את הקצת</item>
+    <item>הסוללה מלאה ועוד חמימה — נכנס לנקות את הזבל</item>
+    <item>הסוללה מלאה, עכשיו זמן לנקות — פתח וניקה את הקצת</item>
+    <item>הסוללה מלאה והאלבומים כבר זקוקים לניקוי — נכנס לראות</item>
+    <item>הסוללה מלאה והמכשיר מוכן לחכות — נכנס לנקות את הזבל</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>הרשת משתנה! הצג את מצב הרשת הנוכחי 1</item>
-        <item>עריקת רשת. אל תסתכל על האות בעת ניקוי, פשוט לחץ עליו וסרוק.</item>
-        <item>לא מצליחים לפתוח את הדף? הניקוי תמיד מקוון.</item>
-        <item>אתה יכול לעבוד במצב לא מקוון, וניתן לנקות את האשפה שלך עכשיו.</item>
-        <item>אם אין אות, אין צורך בנתונים לניקוי, פשוט לחץ.</item>
-    </string-array>
+    <item>האינטרנט נעצר, פתחו וצפו בקצת קצתה המקומית</item>
+    <item>האינטרנט השתנה, תעשה זאת עכשיו ופתח את הקצתה</item>
+    <item>הרשת לא יציבה, אל תמהר, פתח וזה יהיה נקי</item>
+    <item>החיבור נשבר, פתח וצפו בבלגן המקומי</item>
+    <item>הרשת חוזרת ליצירת חיבור, נכנסו וצפו בקצתה</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>מחובר לחשמל. המשימה של הערב: מילוי מחדש, ואז נקה.</item>
-        <item>אתה נח, זה נטען מחדש. תן לזה לנקות גם את האשפה.</item>
-        <item>בזמן הטעינה מספיק לפנות את האשפה שהצטברה במשך זמן רב.</item>
-        <item>רק כשהחשמל מחובר לחשמל, הצוות מאחורי הקלעים יכול להעז לעבוד בחופשיות.</item>
-        <item>מתחמם קצת בזמן הטעינה? ניקוי הרקע יכול להוריד את הטמפרטורה.</item>
-    </string-array>
+    <item>החשמל מחובר, נכנס לשם ופשוט נפתח כדי לבדוק את הקצת</item>
+    <item>הטעינה התחילה, נכנסו לעשות ניקוי עמוק</item>
+    <item>הטעינה רק התחילה, נפתח כדי לנקות את הזבל</item>
+    <item>הטעינה כבר התחילה, עכשיו נפתח וזה יהיה נקי</item>
+    <item>הטעינה כבר מוכנה, נכנסו לבדוק את הקצת</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>נתק וצא לדרך. זכור לקחת את הזמן לנקות את האשפה ולהישאר בכושר טיפ-טופ.</item>
-        <item>לאחר סיום הטעינה, ארזו וצאו לדרך. פשוט נקה את זה וזה יהיה מושלם.</item>
-        <item>טעון במלואו ומוכן לשימוש. מנקים את האשפה בצורה חלקה, אין חסרון היום.</item>
-        <item>הטעינה מסתיימת. את החלל הבא יש לנקות ולשדרג רמה אחת בכל פעם.</item>
-        <item>אל תעצור בהפסקות. נשאר דבר אחד: ניקיון.</item>
-    </string-array>
+    <item>הסרת הטלג\'ר — עכשיו חוץ מהאינטרנט, פתח וצפה</item>
+    <item>החשמל נכבה, לא צריך אינטרנט — פתח וצפה במקומיים</item>
+    <item>הסרת החשמל נוחה, פתח וזה יהיה נקי</item>
+    <item>החשמל נכבה, צפה כמה זמן עוד יחזיקה המחסנית</item>
+    <item>הקבלה נסחפה, כעת נכנס לorganize את האלבום</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>אנחנו נפגשים שוב, אתה תקוע? רובו הוא זבל, נסה לנקות אותו.</item>
-        <item>לא נעול? אל תפתח קודם אפליקציות אחרות ותנקה את האשפה למשך שלושים שניות.</item>
-        <item>הדבר הראשון שצריך לפתוח זה אנחנו. נקה את האשפה וזה יאהב אותך יותר.</item>
-        <item>שלושים שניות לאחר פתיחת הנעילה. השימוש היקר ביותר: ניקוי אשפה.</item>
-        <item>הטלפון הנייד שלך אמר: הקצה האחורי קצת חסום, תוכל לעזור לי?</item>
-    </string-array>
+    <item>המסך נדלק מיד אחרי שמתעלים, לחצו לפתוח את הקצת זיכרון</item>
+    <item>ההתחברות הצליחה, עוד יש מספיק מקום?</item>
+    <item>המסך נדלק, אפשר לראות מיד כמה מקום נשאר</item>
+    <item>המסך בדיוק נדלק, נכנסתי לסדר את האלבומים</item>
+    <item>המסך נדלק מיד, פותחים ומוכנים להבין את האמת</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>הניח את הטלפון שלך והשאיר לנו אותו. זמן מסך מנוחה = זמן הנקה.</item>
-        <item>הפסקת עבודה אין פירושה הפסקת עבודה. אני אתן לך הפתעה בפעם הבאה שאדליק את המסך.</item>
-        <item>משתפר בשקט בזמן מנוחה של המסך. לחץ ואנחנו נעשה את השאר.</item>
-        <item>דבר אחרון לפני נעילת המסך: לחץ על נקי. מראה חדש מחר בבוקר.</item>
-        <item>המסך מחשיך. עשו סידורים עכשיו ותראו את התוצאות מחר.</item>
-    </string-array>
+    <item>המסך נכבה, והניקוי ברקע מתחיל בדיוק עכשיו</item>
+    <item>מועד טוב לפני סגירת המסך, נכנסו לבדוק את הקז</item>
+    <item>מועד טוב לפני השינה, נכנסו לנהל את האלבומים</item>
+    <item>המסך עומד להתחמק, פתחו כבר את Xinwenqing</item>
+    <item>לפני שהמסך נכבה, פשוט פתחו את Xinwenqing ותבינו מה זה עושה</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>האפליקציה החדשה נכנסה, וכך גם המטמון. לנקות</item>
-        <item>אנו מבינים את השמחה בהתקנת אפליקציה חדשה. רק שהמטמון ייערם בשקט.</item>
-        <item>אפליקציה חדשה? המטמון גם כאן, נקה אותו בלחיצה אחת.</item>
-        <item>החדש נכנס והישן יוצא. נקה אותו לעתים קרובות והתקן אותו כרצונך.</item>
-        <item>עוד אחד? החלל הולך וקטן בשקט, בואו לנקות אותו.</item>
-    </string-array>
+    <item>הקצת של היישום החדש כבר בא, נפתח ונראה</item>
+    <item>היישום החדש התקין, עכשיו אפשר לנקות את חבילת ההתקנה</item>
+    <item>פנים חדשות נכנסו בשקט לקצת, בואו נגלה</item>
+    <item>בואו נראה, חבילת הקצת של היישום החדש כבר עולה</item>
+    <item>לחץ כאן, חבילת ההתקנה של היישום החדש עדיין תופסת מקום</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>הוסר בהצלחה! כדי לנקות שאריות קבצים</item>
-        <item>הוסר אך לא נוקה. לחץ כדי לסיים.</item>
-        <item>האפליקציה הוסרה, אבל הזנב עדיין שם. נקה בלחיצה אחת ונפרד אחת ולתמיד.</item>
-        <item>אל תחמיצו את השלב השני: מחק את האפליקציה + נקה את השאריות. קליק אחד וסיימתי.</item>
-        <item>השאריות יאכלו חצי מהשטח שהתפנה. סרוק עמוק ונקה הכל.</item>
-    </string-array>
+    <item>האפליקציה נמחקה, אבל יש עוד שאריות — נפתח ונראה</item>
+    <item>נכנס לראות, גם אחרי ההמחיקה עדיין יש שאריות</item>
+    <item>ההמחיקה נעשתה בהצלחה, רק אחרי ניקוי יהיה נקי</item>
+    <item>אפילו אחרי ההמחיקה עדיין יש שאריות — נפתח ויהיה נקי</item>
+    <item>המרחב לא השתנה אחרי ההמחיקה? נכנס לראות מה הסיבה</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>גרסה חדשה הגיעה. כל מה שנשאר מהגרסה הישנה מנוקה לחלוטין.</item>
-        <item>+1 עבור גרסה, +1 עבור מטמון, עבור סריקה עמוקה.</item>
-        <item>העדכון הושלם וניתן לנקות את שאר חבילות ההתקנה בלחיצה אחת.</item>
-        <item>העדכון הסתיים, בואו נסיים. נקה את זה ואני אשתלט.</item>
-        <item>כל עדכון ישאיר קבצים ישנים ויטפל בהם במהירות.</item>
-    </string-array>
+    <item>האפליקציה עודכן זה עתה, עכשיו זמן לנקות את הקזזות הישנות</item>
+    <item>אחרי ההתאמה, הקזזות שוב גדלו. נפתח ונראה</item>
+    <item>קזזות לאחר ההתאמה — נכנס ונראה, זה יהיה נוח יותר</item>
+    <item>חבילת ההתאמה עדיין תופסת לא מעט מקום, נפתח וניקוי</item>
+    <item>אחרי הגרסה החדשה עדיין יש שאריות שצריך לנקות — לחץ עליי!</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>עוד צילום מסך? 1 הגיע הזמן לנקות את צילומי המסך</item>
-        <item>נמצא צילום מסך חדש, לחץ כדי להציג ולנקות אותו~</item>
-        <item>יש יותר ויותר צילומי מסך, ניקוי בלחיצה אחת יכול לעזור לך לפנות מקום</item>
-        <item>צילום המסך צולם בהצלחה, ניתן לסנן כפולים ומטושטשים בלחיצה אחת.</item>
-        <item>צילומי מסך חדשים מתווספים למסד הנתונים, ותמונות כפולות הועמדו בתור לניקוי בלחיצה אחת.</item>
-    </string-array>
+    <item>יש עוד צילום מסך חדש, נראה אם כדאי לשמור אותו</item>
+    <item>צילומי מסך מהאלבום צטופו, פותחים ומיד נוח</item>
+    <item>צילום מסך נעשה בהצלחה, בואו לסדר את האלבום</item>
+    <item>צילום חדש שצילמתי עכשיו, פותחים ומצפים לכם הפתעות</item>
+    <item>צילום מסך חדש נכנס לאלבום, נכנסו לבדוק ויהיה לכם נוח יותר</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>יש הרבה זבל שנערם. נקה הכל בבת אחת.</item>
-        <item>ניקה לאחרונה %1$d לפני ימים, לחץ כדי לעבד אותו כעת</item>
-        <item>לא הייתי כאן כמה ימים, אז אני אנקה את זה ואחזור לשדה הקרב בקלילות.</item>
-        <item>מכסת הסליקה לא נוצלה היום. אני אנקה את זה כשאחזור.</item>
-        <item>המטמון מתמלא, מחכה שתבדוק אותו</item>
-    </string-array>
+    <item>זה כבר הרבה זמן שלא ניקיתי את הטלפון, לא מספיק אוויר — פותחתי לראות מה יש</item>
+    <item>הזבל צבר את זה כל כך הרבה זמן, כדאי להיכנס ולנקות</item>
+    <item>הטלפון לא ניקוי כבר הרבה זמן והאבק צבר את זה — פותחתי לניקוי</item>
+    <item>פתחתי לראות את האלבום, הקצת כבר צבר את עצמו כמו הר</item>
+    <item>הקצת כבר נאחז בך כל כך הרבה זמן, כדאי לנקות — לחץ עליי!</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>הרבה זמן לא ראיתי, זה חיכה. תחזור ותפנה את האשפה.</item>
-        <item>לא ראיתי אותך כמה ימים. אין מנוחה לזבל. תחזור ותטאטא את זה.</item>
-        <item>המטמון נמצא בתור. לחץ והם נעלמים.</item>
-        <item>האשפה תפוס בזמן שאתה לא. התרוקן בלחיצה אחת והרגיש רענן כתמיד.</item>
-        <item>בְּחֲזָרָה? תחילה נקה את האשפה. תוך שלושים שניות, הטלפון קל כמו חדש.</item>
-    </string-array>
+    <item>לא ראינו זה את זה כבר הרבה זמן, חשבתי ששכחת. נפתח ונראה</item>
+    <item>לא פתחת זה כבר הרבה זמן, נכנס ונראה איך זה נראה כעת</item>
+    <item>לא ראינו זה את זה כבר הרבה זמן, נכנס ונראה מה קורה</item>
+    <item>הסמל כמעט כבר נשכח, נכנס ונראה</item>
+    <item>כנראה שכחת מזה בזמן שהיית עסוק. בוא נראה</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>האשפה שהצטברה כל כך הרבה זמן מתפנה בבת אחת.</item>
-        <item>הגיע הזמן לנקות. האשפה של היום מחכה שתלחץ עליו.</item>
-        <item>ה- Space Daily של היום הגיע. נקה ושמור אותו קל.</item>
-        <item>חלק מהקבצים הם הרבה יותר גדולים ממה שאתה חושב, תסתכל</item>
-        <item>מצא את הבחור שלקח כמה G\'s ונקה אותו</item>
-        <item>רשימת המסמכים הגדולה מוכנה, בואו להציץ.</item>
-        <item>מי תופס הכי הרבה מקום? נחשף בשנייה אחת.</item>
-        <item>צילום רציף נהדר, גימור כואב. תשאיר את זה לנו.</item>
-        <item>תמונות דומות מסודרות בשורה, זה תלוי בך לבחור איזה מהם לשמור</item>
-        <item>יותר מדי תמונות דומות? אנו נעזור לך להשוות ולהסיר כפילויות בלחיצה אחת בלבד.</item>
-        <item>יש לנקות את הסרטונים הלא מקוונים המאוחסנים במטמון.</item>
-        <item>גם שאר האודיו ינוקה.</item>
-    </string-array>
+    <item>הפעם הקודם הורדתי רק עד מחצית ולא נעתי יותר, נפתח כדי לבדוק</item>
+    <item>ההורדה עצרה באמצע, נכנס כדי לראות איפה זה נשאר</item>
+    <item>אצלי יש ערמה של סרטונים גדולים שמכניסים לא מעט מקום, נפתח כדי לבדוק</item>
+    <item>יש קובץ ענק שעדיין לא הורדתי, נפתח כדי להוריד אותו</item>
+    <item>יש סרטון ברזולוציה גבוהה שמכניס הרבה מקום, נכנס כדי לגלות מה זה</item>
+    <item>תמונות חוזרות תופעות מקום — נכנסו וניקבו</item>
+    <item>פנים חוזרות באלבום — לחצו לי כדי למחוק כמה</item>
+    <item>תמונות נוף דומות צצות במוצב — נכנסו לבחור מה להמחוק</item>
+    <item>ווידאו גדול תופע מקום — פתחו ולראו</item>
+    <item>הודעות קוליות מלאות את הקז\' של השיחות — נכנסו לסדר</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>האם הסוללה לא עמידה כמו קודם? בדוק את זה.</item>
-        <item>מי גונב לך את החשמל? אתה תדע ברגע שתחפש את זה.</item>
-        <item>כיבוי אלה יאריך את חיי הסוללה.</item>
-        <item>חלק מהאפליקציות מותקנות אך מעולם לא נעשה בהן שימוש. רואים אילו הם?</item>
-        <item>גם שמירה על אפליקציות שאינך משתמש בהן מהווה נטל, הרשימה הוכנה</item>
-        <item>לגבי פרטיות, ככל שהטיפול יטופל מוקדם יותר, כך ייטב.</item>
-        <item>הסתירו את החשובים והיפטרו מהמיותרים. תן לי לעזור לך</item>
-        <item>לאן התנועה הולכת? גלה מי משתמש בו.</item>
-        <item>פרטי התנועה מוכנים וברורים במבט אחד.</item>
-        <item>ברקע יש אפליקציה שמתחברת לאינטרנט בסתר.</item>
-    </string-array>
+    <item>האפליקציה הרקעית מרוקנת את הסוללה שלך בלי שמעתך — פתח וראה</item>
+    <item>הסוללה יורדת בשקט כל הלילה בזמן מנוחה — לחץ עליי</item>
+    <item>הסינכרון תמיד פעיל ומרוקן יותר סוללה בכל יום — נכנס וראה</item>
+    <item>רבות מהאפליקציות לא נפתחו במשך חצי שנה — נכנס ויראה</item>
+    <item>תוכנות מובנות מחזיקות מקום ללא צורך — נכנס וסדר את זה</item>
+    <item>בואו תראו, אין הרבה אפליקציות ששימוש בן לכולם</item>
+    <item>הכנסו את התמונות הפרטיות למרחב פרטי, פתחו ותראו</item>
+    <item>שמרו את הסלפי בחשאי כדי שאף אחד לא ימצא אותו, בואו ותגלו</item>
+    <item>הנתחון הזה של החודש עומד להסתיים, פתחו ותראו</item>
+    <item>מצב חיסכון בנתחון חוסך הרבה, לכו ותראו</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} של זבל - נקה אותו בהקשה אחת</string>
-    <string name="notif_scheduled_large_files">{סה"כ} של קבצים גדולים - נקה בקלות</string>
+    <string name="notif_scheduled_large_files">{total} של קבצים גדולים - נקה בקלות</string>
     <string name="notif_scheduled_duplicate_photos">{groups} קבוצות של תמונות כפולות - שמור {size}</string>
     <string name="notif_scheduled_similar_photos">{size} של תמונות דומות - בחר מה לנקות</string>
     <string name="notif_scheduled_videos">{total} של סרטונים - מחק {n} כדי לפנות מקום</string>
-    <string name="notif_scheduled_audio">{סה"כ} של קבצי אודיו - הגיע הזמן לסדר</string>
+    <string name="notif_scheduled_audio">{total} של קבצי אודיו - הגיע הזמן לסדר</string>
     <string name="notif_scheduled_apps">{size} בשימוש על ידי {idle} אפליקציות סרק</string>
-    <string name="notif_scheduled_data">{back} של נתונים בשימוש ברקע</string>
+    <string name="notif_scheduled_data">{back} מהנתונים הסלולריים שימשו ברקע</string>
     <string name="app_manager_uninstall_selected">הסרת האפליקציות שנבחרו</string>
     <string name="app_manager_uninstall_selected_count">הסרת האפליקציות שנבחרו (%1$d)</string>
     <string name="cache_removable">ניתן להסרה</string>

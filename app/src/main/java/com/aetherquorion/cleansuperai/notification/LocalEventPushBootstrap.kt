@@ -43,7 +43,6 @@ object LocalEventPushBootstrap {
         schedulePeriodic(app)
         scheduleFixed(app)
         ScheduledPushRecoveryJob.ensureScheduled(app)
-        ScheduledPushDispatcher.recover(app)
     }
 
     fun restartSchedules(context: Context) {
@@ -51,7 +50,6 @@ object LocalEventPushBootstrap {
         schedulePeriodic(context.applicationContext)
         scheduleFixed(context.applicationContext)
         ScheduledPushRecoveryJob.ensureScheduled(context.applicationContext)
-        ScheduledPushDispatcher.recover(context.applicationContext)
     }
 
     private fun schedulePeriodic(context: Context) {

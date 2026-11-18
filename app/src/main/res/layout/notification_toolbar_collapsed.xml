@@ -21,7 +21,7 @@
             <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_gravity="bottom|start" android:background="@drawable/bg_notif_feature_cache" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_notif_junk" />
             <ImageView android:layout_width="9dp" android:layout_height="9dp" android:layout_gravity="top|end" android:background="@drawable/bg_notif_tip_dot" android:contentDescription="@null" />
         </FrameLayout>
-        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_junk" android:textColor="@color/text_primary" android:textSize="10sp" />
+        <TextView android:id="@+id/notif_label_cache" style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_junk" android:textColor="@color/text_primary" android:textSize="10sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +35,7 @@
             <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_gravity="bottom|start" android:background="@drawable/bg_notif_feature_photos" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_notif_photos" />
             <ImageView android:layout_width="9dp" android:layout_height="9dp" android:layout_gravity="top|end" android:background="@drawable/bg_notif_tip_dot" android:contentDescription="@null" />
         </FrameLayout>
-        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/photo_photos_label" android:textColor="@color/text_primary" android:textSize="10sp" />
+        <TextView android:id="@+id/notif_label_photos" style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/photo_photos_label" android:textColor="@color/text_primary" android:textSize="10sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -46,7 +46,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
         <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_marginTop="4dp" android:background="@drawable/bg_notif_feature_apps" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_notif_apps" android:tint="@android:color/white" />
-        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_apps" android:textColor="@color/text_primary" android:textSize="10sp" />
+        <TextView android:id="@+id/notif_label_apps" style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_apps" android:textColor="@color/text_primary" android:textSize="10sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -57,7 +57,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
         <ImageView android:layout_width="27dp" android:layout_height="27dp" android:layout_marginTop="4dp" android:background="@drawable/bg_notif_feature_large" android:contentDescription="@null" android:padding="6dp" android:src="@drawable/ic_notif_large_file" />
-        <TextView style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_large_file" android:textColor="@color/text_primary" android:textSize="10sp" />
+        <TextView android:id="@+id/notif_label_large" style="@style/TextAppearance.Compat.Notification.Line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:singleLine="true" android:text="@string/notif_large_file" android:textColor="@color/text_primary" android:textSize="10sp" />
     </LinearLayout>
 
     <ImageView

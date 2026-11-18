@@ -22,6 +22,24 @@ class SimilarGroupAdapter(
     private val onToggle: (SimilarPhotoItem) -> Unit,
 ) : ListAdapter<SimilarPhotoGroup, SimilarGroupAdapter.SimilarGroupViewHolder>(DiffCallback) {
 
+    fun refreshSelection() {
+        attachedRecyclerView?.let { list ->
+            for (index in 0 until list.childCount) {
+                (list.getChildViewHolder(list.getChildAt(index)) as? SimilarGroupViewHolder)?.refreshSelection()
+            }
+        }
+    }
+
+    private var attachedRecyclerView: RecyclerView? = null
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+        super.onAttachedToRecyclerView(recyclerView)
+        attachedRecyclerView = recyclerView
+    }
+    override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
+        attachedRecyclerView = null
+        super.onDetachedFromRecyclerView(recyclerView)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SimilarGroupViewHolder {
         val binding = ItemSimilarGroupBinding.inflate(
             LayoutInflater.from(parent.context),
@@ -33,6 +51,11 @@ class SimilarGroupAdapter(
 
     override fun onBindViewHolder(holder: SimilarGroupViewHolder, position: Int) {
         holder.bind(getItem(position), position + 1)
+    }
+
+    override fun onBindViewHolder(holder: SimilarGroupViewHolder, position: Int, payloads: MutableList<Any>) {
+        if (payloads.contains(SELECTION_PAYLOAD)) holder.refreshSelection()
+        else super.onBindViewHolder(holder, position, payloads)
     }
 
     class SimilarGroupViewHolder(
@@ -86,8 +109,10 @@ class SimilarGroupAdapter(
             binding.keepRow.setOnClickListener { onPreview(keep) }
 
             val others = group.items.filterNot { it.id == group.recommendedKeepId }
-            thumbnails.submitList(others) { thumbnails.notifyDataSetChanged() }
+            thumbnails.submitList(others)
         }
+
+        fun refreshSelection() = thumbnails.refreshSelection(binding.othersList)
     }
 
     private class ThumbnailAdapter(
@@ -98,6 +123,18 @@ class SimilarGroupAdapter(
         override fun areItemsTheSame(oldItem: SimilarPhotoItem, newItem: SimilarPhotoItem) = oldItem.id == newItem.id
         override fun areContentsTheSame(oldItem: SimilarPhotoItem, newItem: SimilarPhotoItem) = oldItem == newItem
     }) {
+        fun refreshSelection(list: RecyclerView) {
+            for (index in 0 until list.childCount) {
+                val holder = list.getChildViewHolder(list.getChildAt(index)) as? Holder ?: continue
+                val position = holder.bindingAdapterPosition
+                if (position in 0 until itemCount) holder.bindSelection(getItem(position), selectedIds)
+            }
+        }
+
+        override fun onBindViewHolder(holder: Holder, position: Int, payloads: MutableList<Any>) {
+            if (payloads.contains(SELECTION_PAYLOAD)) holder.bindSelection(getItem(position), selectedIds)
+            else super.onBindViewHolder(holder, position, payloads)
+        }
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder = Holder(
             ItemSimilarThumbBinding.inflate(LayoutInflater.from(parent.context), parent, false),
         )
@@ -115,13 +152,17 @@ class SimilarGroupAdapter(
                     error(R.drawable.ic_media_placeholder)
                     size(192)
                 }
+                bindSelection(item, selectedIds)
+                binding.imageThumb.setOnClickListener { onPreview(item) }
+                binding.btnSelect.setOnClickListener { onToggle(item) }
+            }
+
+            fun bindSelection(item: SimilarPhotoItem, selectedIds: Set<Long>) {
                 binding.imageSelect.setBackgroundResource(
                     if (item.id in selectedIds) R.drawable.bg_select_checkbox_checked else R.drawable.bg_select_checkbox,
                 )
                 binding.imageSelect.setImageResource(if (item.id in selectedIds) R.drawable.ic_check else R.drawable.ic_circle_outline)
                 binding.imageSelect.imageTintList = ContextCompat.getColorStateList(binding.root.context, R.color.white)
-                binding.imageThumb.setOnClickListener { onPreview(item) }
-                binding.btnSelect.setOnClickListener { onToggle(item) }
             }
         }
     }
@@ -135,4 +176,6 @@ class SimilarGroupAdapter(
             return oldItem == newItem
         }
     }
+
+    private companion object { const val SELECTION_PAYLOAD = "selection" }
 }

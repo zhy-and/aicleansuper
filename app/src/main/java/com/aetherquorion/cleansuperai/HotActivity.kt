@@ -26,6 +26,7 @@ class HotActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        PendingShortcutRoute.remember(intent?.getStringExtra(MainActivity.EXTRA_WIDGET_ROUTE))
         AnalysisDataUtil.markHotLaunch()
         enableEdgeToEdge()
         WindowCompat.setDecorFitsSystemWindows(window, false)
@@ -40,6 +41,12 @@ class HotActivity : AppCompatActivity() {
         initData()
         CleanSuperAiApp.umengLoadFlag = true
         jmHome()
+    }
+
+    override fun onNewIntent(intent: android.content.Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        PendingShortcutRoute.remember(intent.getStringExtra(MainActivity.EXTRA_WIDGET_ROUTE))
     }
 
     private fun initData() {
@@ -58,6 +65,7 @@ class HotActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         launchProgress.stop()
+        if (!isChangingConfigurations) PendingShortcutRoute.dispatch(this)
         super.onDestroy()
         messages?.removeCallbacksAndMessages(null)
         messages = null
@@ -78,6 +86,10 @@ class HotActivity : AppCompatActivity() {
 
     private fun navigateHomeAndFinish() {
         launchProgress.complete()
+        if (PendingShortcutRoute.dispatch(this)) {
+            finish()
+            return
+        }
         if (!ActivityUtils.isActivityExistsInStack(MainActivity::class.java)) {
             ActivityUtils.startActivity(MainActivity::class.java)
         }

@@ -554,6 +554,111 @@
         "style_red_event"
       ],
       "router": "picture_clean"
+    },
+    "scheduled_cache_scan": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "cache_clean",
+      "times": [
+        "11:30"
+      ]
+    },
+    "scheduled_photo_compress": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "photo_compress",
+      "times": [
+        "12:30"
+      ]
+    },
+    "scheduled_video_compress": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "video_compress",
+      "times": [
+        "13:30"
+      ]
+    },
+    "scheduled_image_enhance": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "image_enhancer",
+      "times": [
+        "14:30"
+      ]
+    },
+    "scheduled_contacts_manage": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "contacts_cleanup",
+      "times": [
+        "15:30"
+      ]
+    },
+    "scheduled_calendar_manage": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "clean_calendar",
+      "times": [
+        "16:30"
+      ]
+    },
+    "scheduled_speed_test": {
+      "enabled": true,
+      "bucket": "normal_ntf",
+      "periodic": false,
+      "priority": 55,
+      "daily_max": 1,
+      "cooldown_sec": 86400,
+      "template_ids": [
+        "style_green_event"
+      ],
+      "router": "speed_test",
+      "times": [
+        "17:30"
+      ]
     }
   },
   "templates": {

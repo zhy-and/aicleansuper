@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Cảnh báo lưu trữ: tìm thấy {size} rác. Làm sạch nó trong một lần nhấn.</item>
+        <item>{size} bộ nhớ đệm đã được tạo. Giải phóng không gian ngay bây giờ.</item>
+        <item>Đã tìm thấy {apps} ứng dụng sử dụng {size}. Hãy dọn sạch chúng.</item>
+        <item>Hệ thống tìm thấy {size} tệp tạm thời. Làm sạch chúng một cách an toàn.</item>
+        <item>Một ứng dụng đang tạo bộ nhớ đệm. Nhấn để xem lại nó.</item>
+        <item>Đã tìm thấy {size} thư mục trống và tệp trùng lặp. Làm sạch chúng chỉ bằng một cú chạm.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Ảnh của bạn đang chiếm dung lượng. Nén chúng và giữ cho chúng sắc nét.</item>
+        <item>Đã lưu {photos} ảnh? Nén chúng để nhường chỗ cho nhiều thứ hơn.</item>
+        <item>{photos} ảnh có thể giải phóng {size}. Hãy nén chúng ngay bây giờ.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Video đang sử dụng {size}. Nén chúng hàng loạt và tiết kiệm dung lượng.</item>
+        <item>Nén video của bạn và lưu tới {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Tìm thấy {photos} ảnh bị mờ. Tăng cường chúng để có cái nhìn rõ ràng hơn.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Đã tìm thấy {contacts} địa chỉ liên hệ trùng lặp. Hợp nhất chúng trong một lần nhấn.</item>
+        <item>Tìm thấy {contacts} liên hệ không có tên. Hãy dọn dẹp sổ địa chỉ của bạn.</item>
+        <item>Gần đây danh bạ của bạn chưa được sao lưu. Giữ chúng an toàn.</item>
+        <item>Hồ sơ liên hệ {contacts} không đầy đủ. Điền vào các chi tiết.</item>
+        <item>Một số liên hệ mới được nhập là trùng lặp. Hãy tổ chức chúng ngay bây giờ.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Sự kiện tiếp theo của bạn sắp diễn ra. Hãy sẵn sàng.</item>
+        <item>Sự kiện quan trọng của bạn diễn ra trong {days} ngày tới. Bạn đã sẵn sàng chưa?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Kết nối của bạn nhanh đến mức nào? Chạy thử nghiệm tốc độ nhanh.</item>
+        <item>Mạng chuyển đổi? Kiểm tra xem cái nào nhanh hơn và sử dụng ít dữ liệu hơn.</item>
+    </string-array>
+</resources>

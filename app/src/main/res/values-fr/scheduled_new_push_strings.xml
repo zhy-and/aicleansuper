@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Alerte de stockage : {size} de déchets trouvés. Nettoyez-le en un seul clic.</item>
+        <item>{size} de cache ont été créés. Libérez de l\'espace maintenant.</item>
+        <item>{apps} applications trouvées utilisant {size}. Nettoyez-les.</item>
+        <item>Le système a trouvé {size} fichiers temporaires. Nettoyez-les en toute sécurité.</item>
+        <item>Une application crée un cache. Appuyez pour l\'examiner.</item>
+        <item>Trouvé {size} dossiers vides et fichiers en double. Nettoyez-les en un seul clic.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Vos photos prennent de la place. Compressez-les et gardez-les nets.</item>
+        <item>Vous avez enregistré {photos} photos ? Compressez-les pour faire de la place pour davantage.</item>
+        <item>{photos} photos pourraient en libérer {size}. Compressez-les maintenant.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Les vidéos utilisent {size}. Compressez-les par lots et économisez de l\'espace.</item>
+        <item>Compressez vos vidéos et enregistrez jusqu\'à {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Trouvé {photos} photos floues. Améliorez-les pour un look plus clair.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>{contacts} contacts en double ont été trouvés. Fusionnez-les en un seul clic.</item>
+        <item>Trouvé {contacts} contacts sans noms. Rangez votre carnet d\'adresses.</item>
+        <item>Vos contacts n\'ont pas été sauvegardés ces derniers temps. Gardez-les en sécurité.</item>
+        <item>Les enregistrements de contacts {contacts} sont incomplets. Remplissez les détails.</item>
+        <item>Certains contacts nouvellement importés sont des doublons. Organisez-les maintenant.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Votre prochain événement approche. Se préparer.</item>
+        <item>Votre événement important est dans {days} jours. Es-tu prêt?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Quelle est la vitesse de votre connexion ? Exécutez un test de vitesse rapide.</item>
+        <item>Réseaux commutés ? Vérifiez lequel est le plus rapide et utilise le moins de données.</item>
+    </string-array>
+</resources>

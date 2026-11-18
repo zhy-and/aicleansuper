@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>Все</item>
+        <item>Изображения</item>
+        <item>Видео</item>
+        <item>Аудио</item>
+        <item>Документы</item>
+        <item>Архивы</item>
+        <item>APK</item>
+        <item>Другое</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>За всё время</item>
+        <item>1 неделя</item>
+        <item>1 месяц</item>
+        <item>3 месяца</item>
+        <item>6 месяцев</item>
+        <item>1 год</item>
+    </string-array>
+    <string name="large_file_filter_type">Тип</string>
+    <string name="large_file_filter_size">Размер</string>
+    <string name="large_file_filter_time">Период</string>
+    <string name="large_file_filter_description">Фильтр «%1$s»: %2$s</string>
+    <string name="large_file_access_required">Требуется доступ ко всем файлам</string>
+    <string name="large_file_scanning">Поиск файлов…</string>
+    <string name="large_file_summary">Файлов: %1$d · %2$s</string>
+    <string name="large_file_select_all">Выбрать всё</string>
+    <string name="large_file_deselect_all">Снять весь выбор</string>
+    <string name="large_file_select_all_shown">Выбрать все показанные файлы</string>
+    <string name="large_file_deselect_all_shown">Снять выбор со всех показанных файлов</string>
+    <string name="large_file_delete_selected">Удалить выбранное</string>
+    <string name="large_file_delete_amount">Удалить %1$s (%2$d)</string>
+    <string name="large_file_open">Открыть</string>
+    <string name="large_file_delete">Удалить</string>
+    <string name="large_file_delete_confirm">Удалить выбранные файлы (%1$d)?</string>
+    <string name="large_file_deleted_summary">Удалено файлов: %1$d из %2$d</string>
+    <string name="sys_level">Уровень</string>
+    <string name="sys_status">Состояние</string>
+    <string name="sys_discharging">Разряжается</string>
+    <string name="sys_android_version">Версия Android</string>
+    <string name="traffic_usage_required">Требуется доступ к данным об использовании. Нажмите, чтобы разрешить доступ.</string>
+    <string name="traffic_loading">Загрузка…</string>
+    <string name="traffic_empty">Данных о трафике приложений нет</string>
+    <string name="traffic_guide_message">Разрешите этому приложению доступ к данным об использовании в настройках, чтобы увидеть трафик каждого приложения.</string>
+    <string name="app_manager_uninstall_confirm">Удалить выбранные приложения (%1$d)? Android запросит подтверждение для каждого приложения.</string>
+    <string name="home_pending_items_format">Объектов для очистки: %1$d</string>
+    <string name="info_report_title">Отчёт</string>
+    <string name="new_feature_badge_description">Новая функция</string>
+    <string name="cache_access_required">Разрешите доступ ко всем файлам, чтобы просканировать кеш</string>
+    <string name="cache_confirm_clean">Очистить выбранные объекты (%1$d)?</string>
+    <string name="cache_clean_action">Очистить</string>
+    <string name="cache_clean_result">Очищено объектов: %1$d из %2$d</string>
+    <string name="cleanup_report_complete">Очистка завершена.</string>
+    <string name="cleanup_report_explore">Другие инструменты</string>
+    <string name="cleanup_report_go">Перейти</string>
+    <string name="widget_action_files">Файлы</string>
+    <string name="widget_action_photos">Фото</string>
+    <string name="vlt_select_all">Выбрать всё</string>
+    <string name="vlt_deselect_all">Снять весь выбор</string>
+    <string name="vlt_import_media">Импортировать фото или видео</string>
+    <string name="vlt_originals_remain">; на устройстве осталось оригиналов: %1$d</string>
+    <string name="vlt_restore_confirm">Восстановить файлы (%1$d) в Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">Восстановлено файлов: %1$d из %2$d</string>
+    <string name="vlt_delete_confirm">Удалить личные файлы (%1$d) навсегда?</string>
+    <string name="app_manager_select_app">Выбрать приложение</string>
+</resources>

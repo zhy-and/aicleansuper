@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>Semua</item>
+        <item>Imej</item>
+        <item>Video</item>
+        <item>Audio</item>
+        <item>Dokumen</item>
+        <item>Arkib</item>
+        <item>APK</item>
+        <item>Lain-lain</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>Sepanjang masa</item>
+        <item>1 minggu</item>
+        <item>1 bulan</item>
+        <item>3 bulan</item>
+        <item>6 bulan</item>
+        <item>1 tahun</item>
+    </string-array>
+    <string name="large_file_filter_type">Jenis</string>
+    <string name="large_file_filter_size">Saiz</string>
+    <string name="large_file_filter_time">Masa</string>
+    <string name="large_file_filter_description">Penapis %1$s: %2$s</string>
+    <string name="large_file_access_required">Akses kepada semua fail diperlukan</string>
+    <string name="large_file_scanning">Mengimbas fail…</string>
+    <string name="large_file_summary">%1$d fail · %2$s</string>
+    <string name="large_file_select_all">Pilih semua</string>
+    <string name="large_file_deselect_all">Nyahpilih semua</string>
+    <string name="large_file_select_all_shown">Pilih semua yang dipaparkan</string>
+    <string name="large_file_deselect_all_shown">Nyahpilih semua yang dipaparkan</string>
+    <string name="large_file_delete_selected">Padam yang dipilih</string>
+    <string name="large_file_delete_amount">Padam %1$s (%2$d)</string>
+    <string name="large_file_open">Buka</string>
+    <string name="large_file_delete">Padam</string>
+    <string name="large_file_delete_confirm">Padam %1$d fail yang dipilih?</string>
+    <string name="large_file_deleted_summary">%1$d daripada %2$d fail dipadam</string>
+    <string name="sys_level">Paras</string>
+    <string name="sys_status">Status</string>
+    <string name="sys_discharging">Bateri sedang menyahcas</string>
+    <string name="sys_android_version">Versi Android</string>
+    <string name="traffic_usage_required">Akses penggunaan diperlukan. Ketik untuk memberikan akses.</string>
+    <string name="traffic_loading">Memuatkan…</string>
+    <string name="traffic_empty">Tiada data trafik apl ditemui</string>
+    <string name="traffic_guide_message">Benarkan akses penggunaan untuk apl ini dalam Tetapan bagi memaparkan trafik setiap apl.</string>
+    <string name="app_manager_uninstall_confirm">Nyahpasang %1$d apl yang dipilih? Android akan meminta pengesahan untuk setiap apl.</string>
+    <string name="home_pending_items_format">Item untuk dibersihkan: %1$d</string>
+    <string name="info_report_title">Laporan</string>
+    <string name="new_feature_badge_description">Ciri baharu</string>
+    <string name="cache_access_required">Benarkan akses kepada semua fail untuk mengimbas cache</string>
+    <string name="cache_confirm_clean">Bersihkan %1$d item yang dipilih?</string>
+    <string name="cache_clean_action">Bersihkan</string>
+    <string name="cache_clean_result">%1$d daripada %2$d item dibersihkan</string>
+    <string name="cleanup_report_complete">Pembersihan selesai.</string>
+    <string name="cleanup_report_explore">Terokai lebih banyak alat</string>
+    <string name="cleanup_report_go">Pergi</string>
+    <string name="widget_action_files">Fail</string>
+    <string name="widget_action_photos">Foto</string>
+    <string name="vlt_select_all">Pilih semua</string>
+    <string name="vlt_deselect_all">Nyahpilih semua</string>
+    <string name="vlt_import_media">Import foto atau video</string>
+    <string name="vlt_originals_remain">; %1$d fail asal masih ada pada peranti</string>
+    <string name="vlt_restore_confirm">Pulihkan %1$d fail ke Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">%1$d daripada %2$d fail dipulihkan</string>
+    <string name="vlt_delete_confirm">Padam %1$d fail peribadi secara kekal?</string>
+    <string name="app_manager_select_app">Pilih apl</string>
+</resources>

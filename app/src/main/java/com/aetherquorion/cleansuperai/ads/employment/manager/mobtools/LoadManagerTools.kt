@@ -58,6 +58,30 @@ import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.videoCompressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.videoCompressInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.appManagerNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.appManagerInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCalendarNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCalendarInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.imageEnhancerNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.imageEnhancerInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.speedTestNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.speedTestInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.largeFilesNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.largeFilesInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cacheCleanupNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cacheCleanupInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.networkTrafficNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.networkTrafficInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.batteryInfoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.batteryInfoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.deviceInfoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.deviceInfoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.vaultNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.vaultInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanupReportNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanupReportInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.manager.NativeTools.createFaceListener
 import com.aetherquorion.cleansuperai.ads.employment.manager.start.StartViewRequestTools
 import com.aetherquorion.cleansuperai.ads.model.AdPlaceBean
@@ -215,7 +239,8 @@ class LoadManagerTools {
             }
             homeNativeAd(), swipeNativeAd(), compressNativeAd(), toolsNativeAd(), detailNativeAd(),
             swipeDetailNativeAd(), cleanCenterNativeAd(), contactsNativeAd(), largeVideoNativeAd(),
-            similarImagesNativeAd(), screenshotListNativeAd(), duplicateVideoNativeAd(), settingNative() -> {
+            similarImagesNativeAd(), screenshotListNativeAd(), duplicateVideoNativeAd(), settingNative(),
+            videoCompressNativeAd(), appManagerNativeAd(), cleanCalendarNativeAd(), imageEnhancerNativeAd(), speedTestNativeAd(), largeFilesNativeAd(), cacheCleanupNativeAd(), networkTrafficNativeAd(), batteryInfoNativeAd(), deviceInfoNativeAd(), vaultNativeAd(), cleanupReportNativeAd() -> {
                 if (!TextUtils.isEmpty(bean.aaojq)) {
                     bannerAdUnitIdsByPosition[bean.vlthm] = bean.aaojq.orEmpty()
                     Log.e(TAG, "config native id ------" + AnalysisDataUtil.eventAds(bean.vlthm) + bean.aaojq)
@@ -225,6 +250,7 @@ class LoadManagerTools {
             toolsInterstitialAd(), detailInterstitialAd(), swipeDetailInterstitialAd(), cleanCenterInterstitialAd(),
             contactsInterstitialAd(), largeVideoInterstitialAd(), similarImagesInterstitialAd(),
             screenshotListInterstitialAd(), duplicateVideoInterstitialAd(), settingInter(), backSpecialToCy(),
+            videoCompressInterstitialAd(), appManagerInterstitialAd(), cleanCalendarInterstitialAd(), imageEnhancerInterstitialAd(), speedTestInterstitialAd(), largeFilesInterstitialAd(), cacheCleanupInterstitialAd(), networkTrafficInterstitialAd(), batteryInfoInterstitialAd(), deviceInfoInterstitialAd(), vaultInterstitialAd(), cleanupReportInterstitialAd(),
             languageTranslateCy(), detAllInter(), qufengTabInter() -> {
                 if (!TextUtils.isEmpty(bean.aaojq)) {
                     interSpecialToTransAdsId = bean.aaojq

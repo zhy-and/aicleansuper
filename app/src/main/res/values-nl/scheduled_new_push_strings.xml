@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Opslagwaarschuwing: {size} rommel gevonden. Maak hem schoon met één tik.</item>
+        <item>Er is {size} cache opgebouwd. Maak nu ruimte vrij.</item>
+        <item>{apps} apps gevonden met {size}. Ruim ze op.</item>
+        <item>Het systeem heeft {size} tijdelijke bestanden gevonden. Maak ze veilig schoon.</item>
+        <item>Een app maakt cache aan. Tik om het te bekijken.</item>
+        <item>{size} lege mappen en dubbele bestanden gevonden. Maak ze schoon met één kraan.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Je foto\'s nemen ruimte in beslag. Comprimeer ze en houd ze scherp.</item>
+        <item>{photos} foto\'s opgeslagen? Comprimeer ze om ruimte te maken voor meer.</item>
+        <item>{photos} foto\'s kunnen {size} vrijmaken. Comprimeer ze nu.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Video\'s gebruiken {size}. Comprimeer ze in een batch en bespaar ruimte.</item>
+        <item>Comprimeer uw video\'s en sla maximaal {saving} op.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>{photos} wazige foto\'s gevonden. Verbeter ze voor een duidelijker uiterlijk.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>{contacts} dubbele contacten gevonden. Voeg ze met één tik samen.</item>
+        <item>{contacts} contacten zonder naam gevonden. Ruim uw adresboek op.</item>
+        <item>Er is de laatste tijd geen back-up van uw contacten gemaakt. Bewaar ze veilig.</item>
+        <item>{contacts} contactgegevens zijn onvolledig. Vul de details in.</item>
+        <item>Sommige nieuw geïmporteerde contacten zijn duplicaten. Organiseer ze nu.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Je volgende evenement komt eraan. Maak je klaar.</item>
+        <item>Uw belangrijke gebeurtenis vindt plaats over {days} dagen. Ben je klaar?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Hoe snel is uw verbinding? Voer een snelle snelheidstest uit.</item>
+        <item>Geschakelde netwerken? Kijk welke sneller is en minder data verbruikt.</item>
+    </string-array>
+</resources>

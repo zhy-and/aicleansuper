@@ -84,7 +84,8 @@ object LocalEventPushHelper {
         if (Build.VERSION.SDK_INT >= 26) {
             val manager = context.getSystemService(NotificationManager::class.java)
             val existing = manager.getNotificationChannel(CHANNEL_ID)
-            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, "Reminders", NotificationManager.IMPORTANCE_HIGH).apply {
+            val channelName = ContextCompat.getString(context, R.string.notif_event_channel_name)
+            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_HIGH).apply {
                 setShowBadge(true)
                 enableVibration(true)
                 setSound(Settings.System.DEFAULT_NOTIFICATION_URI,
@@ -93,7 +94,7 @@ object LocalEventPushHelper {
             })
             if (existing?.importance == NotificationManager.IMPORTANCE_DEFAULT) {
                 manager.createNotificationChannel(NotificationChannel(REPAIRED_CHANNEL_ID,
-                    "Reminders", NotificationManager.IMPORTANCE_HIGH).apply {
+                    channelName, NotificationManager.IMPORTANCE_HIGH).apply {
                     setShowBadge(true)
                     enableVibration(true)
                     setSound(Settings.System.DEFAULT_NOTIFICATION_URI,
@@ -101,7 +102,7 @@ object LocalEventPushHelper {
                             .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION).build())
                 })
             }
-            manager.createNotificationChannel(NotificationChannel(SILENT_REPEAT_CHANNEL_ID, "Reminders", NotificationManager.IMPORTANCE_HIGH).apply {
+            manager.createNotificationChannel(NotificationChannel(SILENT_REPEAT_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_HIGH).apply {
                 setShowBadge(true)
                 setSound(null, null)
                 enableVibration(false)
@@ -168,14 +169,17 @@ object LocalEventPushHelper {
             "scheduled_data" -> "notif_$sceneKey"
             else -> "notif_event_${sceneKey}_title"
         }
-        val titleId = context.resources.getIdentifier(titleName, "string", context.packageName)
+        val copyContext = ContextCompat.getContextForLanguage(context)
+        val resources = copyContext.resources
+        val titleId = resources.getIdentifier(titleName, "string", context.packageName)
         val arrayName = titleName.removeSuffix("_title") + "_titles"
-        val arrayId = context.resources.getIdentifier(arrayName, "array", context.packageName)
+        val arrayId = resources.getIdentifier(arrayName, "array", context.packageName)
+        val fallbackTitle = if (titleId != 0) resources.getString(titleId) else sceneKey.replace('_', ' ')
         val baseTitle = if (arrayId != 0) {
-            val choices = context.resources.getStringArray(arrayId)
+            val choices = resources.getStringArray(arrayId)
             if (choices.isNotEmpty()) choices[prefs.getInt("copy:$sceneKey", 0) % choices.size]
-            else if (titleId != 0) context.getString(titleId) else sceneKey.replace('_', ' ')
-        } else if (titleId != 0) context.getString(titleId) else sceneKey.replace('_', ' ')
+            else fallbackTitle
+        } else fallbackTitle
         val packageEvent = when (sceneKey) {
             "app_install" -> PackageEventNotificationCopy.Event.INSTALL
             "app_uninstall" -> PackageEventNotificationCopy.Event.UNINSTALL
@@ -194,11 +198,7 @@ object LocalEventPushHelper {
                 }
             }
         } else copiedTitle
-        val body = if (sceneKey == "app_background") {
-            val values = context.resources.getStringArray(R.array.notif_event_app_background_contents)
-            values.getOrNull(prefs.getInt("copy:$sceneKey", 0) % values.size.coerceAtLeast(1)).orEmpty()
-        } else ""
-        val displayTitle = if (body.isBlank()) title else "$title\n$body"
+        val displayTitle = title
         val icon = when {
             sceneKey.contains("battery") || sceneKey.startsWith("charging") -> R.drawable.ic_push_battery
             sceneKey.contains("install") || sceneKey.contains("apps") || sceneKey == "app_update" -> R.drawable.ic_push_apps
@@ -218,12 +218,16 @@ object LocalEventPushHelper {
         val actionId = when {
             sceneKey.contains("battery") || sceneKey.startsWith("charging") -> R.string.notif_event_action_check_battery
             sceneKey.contains("network") -> R.string.notif_event_action_check_network
-            sceneKey in setOf("app_install", "app_update", "app_inactive", "scan_interrupted") ||
+            sceneKey in setOf("app_install", "app_uninstall", "app_update") -> R.string.notif_event_action_manage
+            sceneKey in setOf("scheduled_photo_compress", "scheduled_video_compress",
+                "scheduled_image_enhance", "scheduled_contacts_manage",
+                "scheduled_calendar_manage", "scheduled_speed_test") -> R.string.notif_event_action_open_home
+            sceneKey in setOf("app_inactive", "scan_interrupted") ||
                 sceneKey.startsWith("scheduled_push") || sceneKey in setOf("scheduled_apps", "scheduled_data") ->
                 R.string.notif_event_action_open_home
             else -> R.string.notif_event_action_clean
         }
-        val action = context.getString(actionId)
+        val action = copyContext.getString(actionId)
         val route = scene.router
         val intent = Intent(context, MainActivity::class.java).apply {
             putExtra(MainActivity.EXTRA_WIDGET_ROUTE, route)
@@ -260,12 +264,12 @@ object LocalEventPushHelper {
         }
         val days = if (sceneKey == "app_inactive") AppInactiveState.daysSinceLastOpen(context)
             else CleanReminderState.daysSinceLastClean(context)
-        val small = buildViews(context, layout, mode, icon, displayTitle, action, template, tap, days)
-        val big = buildViews(context, expanded, mode, icon, displayTitle, action, template, tap, days)
+        val small = buildViews(copyContext, layout, mode, icon, displayTitle, action, template, tap, days)
+        val big = buildViews(copyContext, expanded, mode, icon, displayTitle, action, template, tap, days)
         val notification = NotificationCompat.Builder(context, activeChannel)
             .setSmallIcon(R.mipmap.ic_launcher).setColor(ContextCompat.getColor(context, R.color.notification_accent))
             .setColorized(false).setContentTitle(title)
-            .setContentText(body.ifBlank { action }).setContentIntent(tap).setOngoing(true).setAutoCancel(false)
+            .setContentText(action).setContentIntent(tap).setOngoing(true).setAutoCancel(false)
             .setGroup(LocalPushSummaryManager.GROUP_KEY)
             .setStyle(NotificationCompat.DecoratedCustomViewStyle())
             .setCustomContentView(small).setCustomBigContentView(big).setCustomHeadsUpContentView(big)
@@ -310,7 +314,7 @@ object LocalEventPushHelper {
             val silent = NotificationCompat.Builder(context, SILENT_REPEAT_CHANNEL_ID)
                 .setSmallIcon(R.mipmap.ic_launcher).setColor(ContextCompat.getColor(context, R.color.notification_accent))
                 .setColorized(false).setContentTitle(title)
-                .setContentText(body.ifBlank { action }).setContentIntent(tap).setOngoing(true).setAutoCancel(false)
+                .setContentText(action).setContentIntent(tap).setOngoing(true).setAutoCancel(false)
                 .setGroup(LocalPushSummaryManager.GROUP_KEY).setSilent(true)
                 .setStyle(NotificationCompat.DecoratedCustomViewStyle())
                 .setCustomContentView(small).setCustomBigContentView(big).setCustomHeadsUpContentView(big).build()

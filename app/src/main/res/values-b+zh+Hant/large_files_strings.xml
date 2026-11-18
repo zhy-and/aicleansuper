@@ -1,0 +1,27 @@
+<resources>
+    <string-array name="large_file_type_options">
+        <item>全部</item><item>圖片</item><item>影片</item><item>音訊</item>
+        <item>文件</item><item>壓縮檔</item><item>APK</item><item>其他</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>不限時間</item><item>1 週</item><item>1 個月</item>
+        <item>3 個月</item><item>6 個月</item><item>1 年</item>
+    </string-array>
+    <string name="large_file_filter_type">類型</string>
+    <string name="large_file_filter_size">大小</string>
+    <string name="large_file_filter_time">時間</string>
+    <string name="large_file_filter_description">%1$s篩選條件：%2$s</string>
+    <string name="large_file_access_required">需要授予所有檔案存取權限</string>
+    <string name="large_file_scanning">正在掃描檔案…</string>
+    <string name="large_file_summary">%1$d 個檔案 · %2$s</string>
+    <string name="large_file_select_all">全選</string>
+    <string name="large_file_deselect_all">取消全選</string>
+    <string name="large_file_select_all_shown">全選目前顯示的檔案</string>
+    <string name="large_file_deselect_all_shown">取消選取目前顯示的檔案</string>
+    <string name="large_file_delete_selected">刪除選取的檔案</string>
+    <string name="large_file_delete_amount">刪除 %1$s（%2$d）</string>
+    <string name="large_file_open">開啟</string>
+    <string name="large_file_delete">刪除</string>
+    <string name="large_file_delete_confirm">要刪除選取的 %1$d 個檔案嗎？</string>
+    <string name="large_file_deleted_summary">已刪除 %1$d / %2$d 個檔案</string>
+</resources>

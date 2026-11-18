@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>儲存警報：發現 {size} 個垃圾。一鍵清潔。</item>
+        <item>已建立 {size} 的快取。立即釋放空間。</item>
+        <item>使用 {size} 找到 {apps} 個應用程式。清理它們。</item>
+        <item>系統發現{size}個臨時檔案。安全地清潔它們。</item>
+        <item>應用程式正在創建快取。點擊即可查看。</item>
+        <item>發現 {size} 個空資料夾和重複檔案。一鍵清潔它們。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>你的照片佔據了空間。壓縮它們並保持鋒利。</item>
+        <item>保存了 {photos} 張照片？壓縮它們以便為更多內容騰出空間。</item>
+        <item>{photos} 張照片可以釋放 {size} 張照片。立即壓縮它們。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>影片使用{size}，批量壓縮，節省空間。</item>
+        <item>壓縮您的影片並最多保存 {saving}。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>找到 {photos} 張模糊照片。增強它們以獲得更清晰的外觀。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>找出 {contacts} 個重複的聯絡人。一鍵合併它們。</item>
+        <item>找到 {contacts} 個沒有姓名的聯絡人。整理你的通訊錄。</item>
+        <item>您的聯絡人最近尚未備份。確保他們的安全。</item>
+        <item>{contacts} 聯絡記錄不完整。填寫詳細資料。</item>
+        <item>一些新導入的聯絡人是重複的。現在就組織起來吧。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>您的下一個活動即將舉行。準備。</item>
+        <item>您的重要事件將在 {days} 天後發生。你準備好了嗎？</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>您的連線速度有多快？運行快速速度測試。</item>
+        <item>交換網路？檢查哪一個速度較快且使用的資料較少。</item>
+    </string-array>
+</resources>

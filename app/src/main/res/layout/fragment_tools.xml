@@ -9,7 +9,7 @@
       </FrameLayout>
     </LinearLayout>
     <FrameLayout android:id="@+id/inlineAdContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:visibility="gone"/>
-    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:cardBackgroundColor="@color/home_scan_green" app:cardCornerRadius="26dp" app:cardElevation="0dp" app:strokeWidth="0dp">
+    <com.google.android.material.card.MaterialCardView android:id="@+id/cardWidgetHero" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:clickable="true" android:focusable="true" android:contentDescription="@string/settings_widget_title" android:foreground="?attr/selectableItemBackground" app:cardBackgroundColor="@color/home_scan_green" app:cardCornerRadius="26dp" app:cardElevation="0dp" app:strokeWidth="0dp">
       <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
         <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_home_scan_badge" android:paddingHorizontal="10dp" android:paddingVertical="5dp" android:text="@string/app_name" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
@@ -46,12 +46,6 @@
         <include android:id="@+id/toolEnhancer" layout="@layout/view_tool_item"/>
         <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginHorizontal="18dp" android:background="@color/stroke_light"/>
         <include android:id="@+id/toolSpeedTest" layout="@layout/view_tool_item"/>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginHorizontal="18dp" android:background="@color/stroke_light"/>
-        <include android:id="@+id/toolNetworkTraffic" layout="@layout/view_tool_item"/>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginHorizontal="18dp" android:background="@color/stroke_light"/>
-        <include android:id="@+id/toolBatteryInfo" layout="@layout/view_tool_item"/>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginHorizontal="18dp" android:background="@color/stroke_light"/>
-        <include android:id="@+id/toolDeviceInfo" layout="@layout/view_tool_item"/>
       </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
   </LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>저장소 경고: {size}개의 정크가 발견되었습니다. 한 번의 탭으로 청소하세요.</item>
+        <item>{size}개의 캐시가 구축되었습니다. 지금 공간을 확보하세요.</item>
+        <item>{size}을 사용하는 {apps}개의 앱을 찾았습니다. 정리하세요.</item>
+        <item>시스템이 {size}개의 임시 파일을 발견했습니다. 안전하게 청소하세요.</item>
+        <item>앱이 캐시를 생성하는 중입니다. 검토하려면 탭하세요.</item>
+        <item>{size}개의 빈 폴더와 중복 파일이 발견되었습니다. 한 번의 탭으로 청소하세요.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>사진이 공간을 차지하고 있습니다. 압축하여 날카롭게 유지하세요.</item>
+        <item>{photos}장의 사진을 저장하셨나요? 더 많은 공간을 확보하려면 압축하세요.</item>
+        <item>{photos}장의 사진을 통해 {size}장의 사진을 확보할 수 있습니다. 지금 압축하세요.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>동영상은 {size}을 사용하고 있습니다. 일괄 압축하여 공간을 절약하세요.</item>
+        <item>비디오를 압축하여 최대 {saving}까지 저장하세요.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>{photos}개의 흐릿한 사진을 발견했습니다. 더 명확하게 보이도록 강화하십시오.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>{contacts}개의 중복된 연락처를 찾았습니다. 탭 한 번으로 병합하세요.</item>
+        <item>이름이 없는 연락처 {contacts}개를 찾았습니다. 주소록을 정리해보세요.</item>
+        <item>최근에 연락처가 백업되지 않았습니다. 안전하게 보관하세요.</item>
+        <item>{contacts} 연락처 기록이 불완전합니다. 세부정보를 입력하세요.</item>
+        <item>새로 가져온 연락처 중 일부가 중복되었습니다. 지금 정리하세요.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>다음 이벤트가 곧 시작됩니다. 준비하세요.</item>
+        <item>당신의 중요한 이벤트는 {days}일 뒤에 있습니다. 준비됐나요?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>연결 속도는 얼마나 되나요? 빠른 속도 테스트를 실행하세요.</item>
+        <item>네트워크를 전환했나요? 어느 것이 더 빠르고 데이터를 적게 사용하는지 확인하세요.</item>
+    </string-array>
+</resources>

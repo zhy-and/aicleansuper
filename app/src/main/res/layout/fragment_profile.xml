@@ -103,10 +103,6 @@
                     layout="@layout/view_tool_item" />
 
                 <include
-                    android:id="@+id/rowTermsOfUse"
-                    layout="@layout/view_tool_item" />
-
-                <include
                     android:id="@+id/rowWidget"
                     layout="@layout/view_tool_item" />
 

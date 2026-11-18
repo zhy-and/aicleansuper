@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>전체</item>
+        <item>이미지</item>
+        <item>동영상</item>
+        <item>오디오</item>
+        <item>문서</item>
+        <item>압축 파일</item>
+        <item>APK</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>전체 기간</item>
+        <item>1주</item>
+        <item>1개월</item>
+        <item>3개월</item>
+        <item>6개월</item>
+        <item>1년</item>
+    </string-array>
+    <string name="large_file_filter_type">유형</string>
+    <string name="large_file_filter_size">크기</string>
+    <string name="large_file_filter_time">기간</string>
+    <string name="large_file_filter_description">%1$s 필터: %2$s</string>
+    <string name="large_file_access_required">모든 파일에 대한 접근 권한이 필요합니다</string>
+    <string name="large_file_scanning">파일을 검색하는 중…</string>
+    <string name="large_file_summary">파일 %1$d개 · %2$s</string>
+    <string name="large_file_select_all">모두 선택</string>
+    <string name="large_file_deselect_all">모두 선택 해제</string>
+    <string name="large_file_select_all_shown">표시된 파일 모두 선택</string>
+    <string name="large_file_deselect_all_shown">표시된 파일 모두 선택 해제</string>
+    <string name="large_file_delete_selected">선택한 항목 삭제</string>
+    <string name="large_file_delete_amount">%1$s 삭제 (%2$d개)</string>
+    <string name="large_file_open">열기</string>
+    <string name="large_file_delete">삭제</string>
+    <string name="large_file_delete_confirm">선택한 파일 %1$d개를 삭제할까요?</string>
+    <string name="large_file_deleted_summary">파일 %2$d개 중 %1$d개를 삭제했습니다</string>
+    <string name="sys_level">수준</string>
+    <string name="sys_status">상태</string>
+    <string name="sys_discharging">방전 중</string>
+    <string name="sys_android_version">Android 버전</string>
+    <string name="traffic_usage_required">사용 기록에 대한 접근 권한이 필요합니다. 탭하여 허용하세요.</string>
+    <string name="traffic_loading">불러오는 중…</string>
+    <string name="traffic_empty">앱별 네트워크 사용량이 없습니다</string>
+    <string name="traffic_guide_message">앱별 네트워크 사용량을 보려면 설정에서 이 앱의 사용 기록 접근을 허용하세요.</string>
+    <string name="app_manager_uninstall_confirm">선택한 앱 %1$d개를 제거할까요? Android에서 앱마다 제거를 확인합니다.</string>
+    <string name="home_pending_items_format">정리할 항목: %1$d개</string>
+    <string name="info_report_title">보고서</string>
+    <string name="new_feature_badge_description">새 기능</string>
+    <string name="cache_access_required">캐시를 검색하려면 모든 파일에 대한 접근을 허용하세요</string>
+    <string name="cache_confirm_clean">선택한 항목 %1$d개를 정리할까요?</string>
+    <string name="cache_clean_action">정리</string>
+    <string name="cache_clean_result">항목 %2$d개 중 %1$d개를 정리했습니다</string>
+    <string name="cleanup_report_complete">정리가 완료되었습니다.</string>
+    <string name="cleanup_report_explore">다른 도구 살펴보기</string>
+    <string name="cleanup_report_go">이동</string>
+    <string name="widget_action_files">파일</string>
+    <string name="widget_action_photos">사진</string>
+    <string name="vlt_select_all">모두 선택</string>
+    <string name="vlt_deselect_all">모두 선택 해제</string>
+    <string name="vlt_import_media">사진 또는 동영상 가져오기</string>
+    <string name="vlt_originals_remain">; 원본 파일 %1$d개가 기기에 남아 있습니다</string>
+    <string name="vlt_restore_confirm">파일 %1$d개를 Pictures/PurGuClean에 복원할까요?</string>
+    <string name="vlt_restored_count">파일 %2$d개 중 %1$d개를 복원했습니다</string>
+    <string name="vlt_delete_confirm">비공개 파일 %1$d개를 영구적으로 삭제할까요?</string>
+    <string name="app_manager_select_app">앱 선택</string>
+</resources>

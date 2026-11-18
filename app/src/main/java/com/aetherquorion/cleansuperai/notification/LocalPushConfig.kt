@@ -5,8 +5,13 @@ import com.aetherquorion.cleansuperai.R
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 
-/** Purgu's 39-scene default is kept byte-for-byte in res/raw/local_push_default.json. */
+/** Local defaults include the original 39 scenes and seven fixed-time feature reminders. */
 object LocalPushConfig {
+    private val addedFixedScenes = setOf(
+        "scheduled_cache_scan", "scheduled_photo_compress", "scheduled_video_compress",
+        "scheduled_image_enhance", "scheduled_contacts_manage",
+        "scheduled_calendar_manage", "scheduled_speed_test",
+    )
     data class Config(
         val enabled: Boolean = true,
         val global: Global = Global(),
@@ -72,13 +77,15 @@ object LocalPushConfig {
         return "{\"organic\":$segment,\"paid\":$segment}"
     }
     /** Accepts the FRC dual-segment envelope; caller determines the user's segment. */
-    fun applyJson(raw: String, segment: String = "organic"): Boolean = runCatching {
+    fun applyJson(raw: String, segment: String = "organic", context: Context? = null): Boolean = runCatching {
         val root = com.google.gson.JsonParser.parseString(raw).asJsonObject
         val selected = if (root.has("scenes")) root else root.getAsJsonObject(segment)
         require(LocalPushSnapshotPolicy.isValid(selected.toString()))
         val parsed = Gson().fromJson(selected, Config::class.java)
         require(parsed.scenes.isNotEmpty() && parsed.buckets.isNotEmpty())
-        active = parsed
+        val defaults = context?.let { Gson().fromJson(defaultSegmentJson(it), Config::class.java) }
+        active = if (defaults == null) parsed else parsed.copy(scenes =
+            parsed.scenes + defaults.scenes.filterKeys { it in addedFixedScenes && it !in parsed.scenes })
         if (parsed.global.repeatSubmit?.enabled != true) LocalPushRepeatSubmitter.cancelAll()
         true
     }.getOrDefault(false)

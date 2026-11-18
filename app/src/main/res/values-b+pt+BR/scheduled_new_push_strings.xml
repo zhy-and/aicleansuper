@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Alerta de armazenamento: {size} de lixo encontrado. Limpe-o com um toque.</item>
+        <item>{size} de cache foram acumulados. Libere espaço agora.</item>
+        <item>Foram encontrados {apps} aplicativos usando {size}. Limpe-os.</item>
+        <item>O sistema encontrou {size} arquivos temporários. Limpe-os com segurança.</item>
+        <item>Um aplicativo está criando cache. Toque para revisá-lo.</item>
+        <item>Foram encontradas {size} pastas vazias e arquivos duplicados. Limpe-os com um toque.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Suas fotos estão ocupando espaço. Comprima-os e mantenha-os afiados.</item>
+        <item>Salvou {photos} fotos? Comprima-os para abrir espaço para mais.</item>
+        <item>{photos} fotos podem liberar {size}. Compacte-as agora.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Os vídeos estão usando {size}. Compacte-os em lote e economize espaço.</item>
+        <item>Comprima seus vídeos e salve até {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Encontradas {photos} fotos desfocadas. Aprimore-os para uma aparência mais clara.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Foram encontrados {contacts} contatos duplicados. Mescle-os com um toque.</item>
+        <item>Foram encontrados {contacts} contatos sem nomes. Organize sua agenda de endereços.</item>
+        <item>Seus contatos não foram salvos em backup recentemente. Mantenha-os seguros.</item>
+        <item>{contacts} registros de contato estão incompletos. Preencha os detalhes.</item>
+        <item>Alguns contatos recém-importados são duplicados. Organize-os agora.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Seu próximo evento está chegando. Prepare-se.</item>
+        <item>Seu evento importante será em {days} dias. Você está pronto?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Quão rápida é sua conexão? Execute um teste rápido de velocidade.</item>
+        <item>Redes comutadas? Verifique qual é mais rápido e usa menos dados.</item>
+    </string-array>
+</resources>

@@ -58,7 +58,7 @@ class CleanSuperAiApp : Application() {
             AnalyticsBridge.logKaOutcome(context, route, reason.value, result, detail)
         }
         SegmentedRemoteConfig.onSnapshotChanged = { snapshot ->
-            LocalPushConfig.applyJson(snapshot.localPushJson)
+            LocalPushConfig.applyJson(snapshot.localPushJson, context = this)
             val switches = JsonParser.parseString(snapshot.keepAliveJson).asJsonObject.entrySet()
                 .associate { it.key to it.value.asString }
             com.aetherquorion.cleansuperai.keepalive.KeepAliveConfig.applySwitches(this, switches)
@@ -90,6 +90,7 @@ class CleanSuperAiApp : Application() {
                             isFirstLauch = true
                             return
                         }
+                        if (ActivityUtils.getTopActivity() is UninstallGuideActivity) return
                         anyCount += 1
                         if (anyCount >= 15) return
                         ActivityUtils.startActivity(HotActivity::class.java)

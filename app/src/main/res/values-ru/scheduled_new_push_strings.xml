@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Оповещение о хранилище: найдено {size} мусора. Очистите его одним краном.</item>
+        <item>Накоплено {size} кэша. Освободите место прямо сейчас.</item>
+        <item>Найдено {apps} приложений, использующих {size}. Очистите их.</item>
+        <item>Система обнаружила {size} временных файлов. Очищайте их безопасно.</item>
+        <item>Приложение создает кэш. Нажмите, чтобы просмотреть его.</item>
+        <item>Найдено {size} пустых папок и дубликатов файлов. Очистите их одним краном.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Ваши фотографии занимают место. Сжимайте их и сохраняйте острыми.</item>
+        <item>Сохранено {photos} фотографий? Сожмите их, чтобы освободить место для большего.</item>
+        <item>{photos} фотографий могут освободить {size}. Сожмите их сейчас.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Видео используют {size}. Сжимайте их пакетно и экономьте место.</item>
+        <item>Сжимайте видео и сохраняйте до {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Найдено {photos} размытых фотографий. Улучшите их для более четкого вида.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Найдено {contacts} повторяющихся контактов. Объедините их в один кран.</item>
+        <item>Найдено {contacts} контактов без имен. Наведите порядок в своей адресной книге.</item>
+        <item>Резервные копии ваших контактов в последнее время не создавались. Держите их в безопасности.</item>
+        <item>{contacts} записи контактов неполные. Заполните детали.</item>
+        <item>Некоторые недавно импортированные контакты являются дубликатами. Организуйте их сейчас.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Приближается ваше следующее мероприятие. Будьте готовы.</item>
+        <item>Ваше важное событие наступит через {days} дней. Вы готовы?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Насколько быстро у вас соединение? Запустите быстрый тест скорости.</item>
+        <item>Коммутируемые сети? Проверьте, какой из них быстрее и использует меньше данных.</item>
+    </string-array>
+</resources>

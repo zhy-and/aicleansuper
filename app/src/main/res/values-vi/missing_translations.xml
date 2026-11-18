@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Thùng rác (%1$s)</string>
     <string name="trash_bin_title_empty">Thùng rác</string>
     <string name="trash_restore_hint">Nhấn để khôi phục ảnh</string>
-    <string name="trash_empty_action">Xóa tất cả vào thùng rác</string>
+    <string name="trash_empty_action">Xóa ảnh</string>
     <string name="trash_restored">Đã khôi phục ảnh</string>
     <string name="trash_bin_empty">Thùng rác trống rỗng</string>
     <string name="feature_smart_groups">Nhóm thông minh</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Lời nhắc sạch</string>
     <string name="notif_event_channel_desc">Lời nhắc cục bộ sau khi chụp ảnh màn hình, cài đặt và gỡ cài đặt</string>
     <string name="notif_event_summary_channel_name">Tóm tắt lời nhắc sạch</string>
-    <string name="notif_event_screenshot_title">Một ảnh chụp màn hình khác? 1 Đã đến lúc xóa ảnh chụp màn hình</string>
-    <string name="notif_event_install_title">Ứng dụng mới đã được chuyển đến và bộ đệm cũng vậy. dọn dẹp</string>
-    <string name="notif_event_uninstall_title">Đã gỡ cài đặt thành công! để dọn dẹp dư lượng tập tin</string>
-    <string name="notif_clean_reminder_title">Có rất nhiều rác chất đống. Làm sạch tất cả cùng một lúc.</string>
-    <string name="notif_event_battery_below_50_title">Pin đã đầy hơn một nửa. Hãy chăm sóc nó ngay bây giờ, nó sẽ kéo dài cho đến khi bạn về đến nhà.</string>
-    <string name="notif_event_battery_below_20_title">Pin yếu. Bạn muốn biết ai đang ăn cắp điện của bạn? Nhấn vào đây để xem bảng xếp hạng.</string>
-    <string name="notif_event_charging_title">Đã cắm điện. Nhiệm vụ của tối nay: đổ đầy pin, sau đó làm sạch.</string>
-    <string name="notif_event_charging_full_title">Sạc đầy và sẵn sàng để đi. Kiểm tra lần cuối: Thùng rác đã được dọn sạch chưa?</string>
-    <string name="notif_event_charging_to_80_title">Lần chạy nước rút cuối cùng là 80%. Dỡ rác và đóng gói nhẹ nhàng để chào đón toàn bộ sức mạnh.</string>
-    <string name="notif_event_charging_disconnect_title">Rút phích cắm và khởi hành. Hãy nhớ dành thời gian để dọn rác và giữ dáng ở trạng thái tốt nhất.</string>
-    <string name="notif_event_app_update_title">Một phiên bản mới đã đến. Mọi thứ còn sót lại từ phiên bản cũ đều được dọn sạch hoàn toàn.</string>
-    <string name="notif_event_network_change_title">Trang web thay đổi! Xem trạng thái mạng hiện tại 1</string>
-    <string name="notif_event_screen_lock_title">Hãy đặt điện thoại của bạn xuống và để việc đó cho chúng tôi. Thời gian nghỉ ngơi trên màn hình = thời gian cho con bú.</string>
-    <string name="notif_event_screen_on_after_lock_title">Chúng ta lại gặp nhau, bạn có bị mắc kẹt không? Hầu hết là rác, hãy thử dọn sạch nó.</string>
-    <string name="notif_event_storage_free_drop_title">Không gian lưu trữ đã thay đổi. Hãy xem những gì chiếm không gian?</string>
-    <string name="notif_event_scheduled_push_1_title">Rác tích tụ bấy lâu nay sẽ được dọn sạch ngay lập tức.</string>
-    <string name="notif_event_scheduled_push_2_title">Pin không còn bền như trước nữa? Hãy kiểm tra nó.</string>
-    <string name="notif_event_app_inactive_title">Đã lâu không gặp, nó đã chờ đợi. Hãy quay lại và dọn rác.</string>
-    <string name="notif_event_scheduled_push_3_title">Một lần nhấn vào danh sách phát của bạn - thiết lập tiện ích</string>
+    <string name="notif_event_screenshot_title">Có ảnh chụp màn hình mới rồi, xem có cần giữ lại không nhé</string>
+    <string name="notif_event_install_title">Bộ nhớ đệm ứng dụng mới vừa được tải về, mở ra xem nào</string>
+    <string name="notif_event_uninstall_title">Ứng dụng vừa gỡ nhưng vẫn còn sót lại, mở xem thử nhé</string>
+    <string name="notif_clean_reminder_title">Lâu rồi chưa dọn điện thoại, không thở nổi nữa, mở ra xem thôi</string>
+    <string name="notif_event_battery_below_50_title">Mở là hiểu ngay, pin còn hơn nửa thì dọn dẹp trước nhé</string>
+    <string name="notif_event_battery_below_20_title">Pin sắp hết, đừng cố chịu đựng nữa, mở app là sạch sẽ ngay</string>
+    <string name="notif_event_charging_title">Đã cắm điện rồi, tiện tay mở xem bộ nhớ đệm đi</string>
+    <string name="notif_event_charging_full_title">Đã sạc đầy rồi đừng lãng phí, mở xem bộ nhớ đệm đi</string>
+    <string name="notif_event_charging_to_80_title">Đang sạc, vào dọn rác đi</string>
+    <string name="notif_event_charging_disconnect_title">Rút sạc, ngoại tuyến rồi, mở xem nhé</string>
+    <string name="notif_event_app_update_title">Ứng dụng vừa cập nhật, nên dọn cache cũ đi thôi</string>
+    <string name="notif_event_network_change_title">Đã mất mạng, mở xem bộ nhớ đệm cục bộ nhé</string>
+    <string name="notif_event_screen_lock_title">Đóng màn rồi, dọn dẹp ứng dụng nền bắt đầu ngay</string>
+    <string name="notif_event_screen_on_after_lock_title">Vừa mở màn hình, nhấn vào xem bộ nhớ đệm</string>
+    <string name="notif_event_storage_free_drop_title">Không gian lại giảm rồi, mở xem ai chiếm nhiều nhất nào</string>
+    <string name="notif_event_scheduled_push_1_title">Lần trước dọn đến nửa đường rồi không động nữa, mở ra xem sao</string>
+    <string name="notif_event_scheduled_push_2_title">Ứng dụng chạy ngầm đang làm hao pin của bạn, mở xem đi</string>
+    <string name="notif_event_app_inactive_title">Lâu rồi không gặp, tưởng bạn quên rồi, mở ra xem nào</string>
+    <string name="notif_event_scheduled_push_3_title">Thêm tiện ích vào màn hình chính để dọn dẹp mà không cần mở ứng dụng</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Một lần nhấn vào danh sách phát của bạn - thiết lập tiện ích</item>
-        <item>Làm mọi thứ dễ dàng hơn với tiện ích - thêm lối tắt nhạc</item>
-        <item>Chơi nhanh mà không cần mở khóa — bật tiện ích màn hình chính</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Bạn đã quên điều gì đó</string>
+    <item>Thêm tiện ích vào màn hình chính để dọn dẹp mà không cần mở ứng dụng</item>
+    <item>Thêm tiện ích để dọn dẹp ngay khi cần</item>
+    <item>Tiện ích đã sẵn sàng. Hãy đặt trên màn hình chính</item>
+    <item>Thêm tiện ích bằng một lần chạm và dọn dẹp từ màn hình chính</item>
+    <item>Thêm tiện ích để dọn dẹp dễ hơn</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Quay lại đi, dọn dẹp một chạm chỉ mất 3 giây thôi</string>
     <string name="notif_event_app_background_content">Hãy dọn dẹp xong để nó chạy mượt mà hơn.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Bạn đã quên điều gì đó</item>
-        <item>Còn một bước nữa</item>
-        <item>tin tốt</item>
-        <item>Bạn đã rời đi quá nhanh</item>
-        <item>Đừng để rác qua đêm</item>
-    </string-array>
+    <item>Quay lại đi, dọn dẹp một chạm chỉ mất 3 giây thôi</item>
+    <item>Trang vừa rồi vẫn còn rác chưa dọn</item>
+    <item>Đừng vội đi, tiện tay dọn dẹp chút đi</item>
+    <item>Chỉ còn một bước nữa thôi, quay lại dọn dẹp không gian sạch sẽ đi</item>
+    <item>Đừng thoát ra, dọn dẹp vẫn chưa xong đâu</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Hãy dọn dẹp xong để nó chạy mượt mà hơn.</item>
         <item>Nhấn thêm một lần nữa để hoàn tất quá trình dọn dẹp và giải phóng thêm dung lượng.</item>
@@ -530,239 +532,244 @@
         <item>Điện thoại của bạn có thể còn nhanh hơn nữa — hãy đến xem tính năng tối ưu hóa.</item>
         <item>Hãy dọn dẹp xong để nó chạy mượt mà hơn.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Kết quả quét đã sẵn sàng — rác đang chiếm dung lượng. Dọn dẹp ngay bây giờ</string>
+    <string name="notif_event_scan_done_uncleaned_title">Quét xong rồi, chỉ còn bước dọn dẹp cuối cùng thôi</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Kết quả quét đã sẵn sàng — rác đang chiếm dung lượng. Dọn dẹp ngay bây giờ</item>
-        <item>Còn một bước nữa: quay lại và giải phóng không gian ngay lập tức.</item>
-        <item>Quên làm sạch sau khi quét? 10 giây để làm cho điện thoại của bạn nhẹ hơn.</item>
-        <item>Thư rác vẫn còn trên điện thoại của bạn — đã lưu kết quả. Hãy quay lại để làm sạch bằng một cú chạm.</item>
-        <item>Lần quét cuối cùng đã tìm thấy nhiều mục cần dọn dẹp. Hãy hoàn thành nó.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Việc dọn dẹp vẫn chưa xong - hãy hoàn thành bước cuối cùng.</string>
+    <item>Quét xong rồi, chỉ còn bước dọn dẹp cuối cùng thôi</item>
+    <item>Quét xong, chỉ còn thiếu một chút là dọn dẹp được rồi</item>
+    <item>Kiểm tra xong rồi, vào đây dọn rác đi nhé</item>
+    <item>Quét xong hết rồi, rác vẫn đang chờ dọn đấy</item>
+    <item>Bạn vừa quét xong nhưng vẫn chưa dọn, vào xem nào</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Quá trình dọn dẹp vẫn chưa hoàn tất, vào tiếp nào</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Việc dọn dẹp vẫn chưa xong - hãy hoàn thành bước cuối cùng.</item>
-        <item>Việc dọn dẹp bị gián đoạn: được nửa đường. Kết thúc cho một chiếc điện thoại nhẹ hơn.</item>
-        <item>Việc dọn dẹp gần như đã hoàn tất - đừng bỏ lại rác.</item>
-        <item>Bạn dọn dẹp giữa chừng - hãy hoàn thành nó và cảm nhận sự khác biệt.</item>
-        <item>Việc dọn dẹp bị gián đoạn có thể tiếp tục bất cứ lúc nào. Hãy hoàn thành nó.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Đã xóa ảnh - được chuyển vào thùng rác một cách an toàn.</string>
+    <item>Quá trình dọn dẹp vẫn chưa hoàn tất, vào tiếp nào</item>
+    <item>Quá trình dọn dẹp vừa rồi bị gián đoạn, tiếp tục nào</item>
+    <item>Còn một chút nữa là xong rồi, tiếp tục không?</item>
+    <item>Quá trình dọn dẹp tạm dừng, tiếp tục giải phóng dung lượng nhé</item>
+    <item>Nhiệm vụ dọn dẹp chưa hoàn thành, vào tiếp nào</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Hình đã bị xóa, vào thùng rác dọn đi nhé</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Đã xóa ảnh - được chuyển vào thùng rác một cách an toàn.</item>
-        <item>Vừa xóa 1 ảnh - hãy xem bạn đã giải phóng bao nhiêu dung lượng?</item>
-        <item>Đã xóa ảnh — xóa vĩnh viễn để giải phóng dung lượng ngay bây giờ.</item>
-        <item>Ảnh đã được xóa an toàn - trạng thái lưu trữ đã được cập nhật.</item>
-        <item>Đã xóa ảnh - bạn cũng có thể xóa các ảnh chụp màn hình tương tự.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Video đã bị xóa - không gian rộng lớn được giải phóng.</string>
+    <item>Hình đã bị xóa, vào thùng rác dọn đi nhé</item>
+    <item>Hình đã xóa, dọn luôn thùng rác đi nhé</item>
+    <item>Hình đã vào thùng rác rồi, vào dọn dẹp đi</item>
+    <item>Hình trong thùng rác vẫn còn chiếm dung lượng, dọn đi nhé</item>
+    <item>Hình vừa mới xóa, có cần dọn sạch hoàn toàn không?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Video đã bị xóa, dọn dẹp thùng rác sẽ tiết kiệm không gian hơn</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Video đã bị xóa - không gian rộng lớn được giải phóng.</item>
-        <item>Đã xóa video lớn — áp lực lưu trữ giảm ngay lập tức.</item>
-        <item>Đã xóa video — hãy kiểm tra trạng thái lưu trữ hiện tại của bạn.</item>
-        <item>Xóa xong — dọn sạch thùng rác để giải phóng hoàn toàn dung lượng.</item>
-        <item>Đã xóa video — có thể còn nhiều video lớn bị lãng quên cần dọn dẹp.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Âm thanh đã bị xóa - các tập tin nhỏ được thêm vào. Tiếp tục đi.</string>
+    <item>Video đã bị xóa, dọn dẹp thùng rác sẽ tiết kiệm không gian hơn</item>
+    <item>Video đã bị xóa, nhưng không gian vẫn chưa được giải phóng</item>
+    <item>Video đã vào thùng rác, vào đây dọn dẹp đi</item>
+    <item>Một video đã bị xóa, đang chờ dọn dẹp trong thùng rác</item>
+    <item>Video trong thùng rác vẫn đang chiếm không gian</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Đã xóa âm thanh nhưng vẫn còn đoạn trong bộ nhớ đệm, mở nghe thử nhé</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Âm thanh đã bị xóa - các tập tin nhỏ được thêm vào. Tiếp tục đi.</item>
-        <item>Âm thanh đó đã biến mất - nhiều tệp không sử dụng tương tự khác cũng có thể được xóa.</item>
-        <item>Đã xóa âm thanh - đã cập nhật chi tiết bộ nhớ. Hãy đến xem.</item>
-        <item>Đã xóa 1 tệp âm thanh - danh sách lưu trữ được làm mới.</item>
-        <item>Đã xóa âm thanh — dọn sạch thùng rác để hoàn tất việc giải phóng dung lượng.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Đã xóa tệp - giải phóng thêm một chút dung lượng lưu trữ.</string>
+    <item>Đã xóa âm thanh nhưng vẫn còn đoạn trong bộ nhớ đệm, mở nghe thử nhé</item>
+    <item>Đã xóa âm thanh, dọn dẹp thùng rác luôn đi</item>
+    <item>Xóa thành công, đến dọn thùng rác thôi</item>
+    <item>Một đoạn âm thanh đã bị xóa, đang chờ dọn thùng rác</item>
+    <item>Đến đây dọn dẹp các bản ghi âm cũ trong thư mục bộ nhớ đệm đi</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Tệp đã bị xóa, hãy đi dọn dẹp thùng rác nhé</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Đã xóa tệp - giải phóng thêm một chút dung lượng lưu trữ.</item>
-        <item>Đã xóa tệp - sự lộn xộn sẽ không làm phiền điện thoại của bạn nữa.</item>
-        <item>Tệp đã bị xóa - hãy xem bạn có thể xóa những gì khác.</item>
-        <item>Tệp đã bị xóa - các thay đổi được đồng bộ hóa, trạng thái lưu trữ được cập nhật.</item>
-        <item>Tệp đó đã bị xóa - hiện đang lấy lại dung lượng.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Hình ảnh đã tải xuống - hãy mở nó và xem.</string>
+    <item>Tệp đã bị xóa, hãy đi dọn dẹp thùng rác nhé</item>
+    <item>Tệp đã xóa xong, nhưng không gian vẫn chưa được giải phóng</item>
+    <item>Tệp đã vào thùng rác, tiện thể dọn dẹp đi</item>
+    <item>Tệp đã xóa xong, hãy giải phóng không gian đi</item>
+    <item>Tệp đã bị xóa, dọn sạch thùng rác sẽ tiết kiệm hơn</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Tải hình ảnh xong rồi, đi xem đã lưu ở đâu nào</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Hình ảnh đã tải xuống - hãy mở nó và xem.</item>
-        <item>Đã tải xuống hình ảnh — xóa các ảnh trùng lặp trong album của bạn khi bạn đang ở đó</item>
-        <item>Tải xuống xong - hình ảnh được lưu an toàn. Hãy đến kiểm tra các bức ảnh tương tự</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Video đã tải xuống — nó không hề nhỏ. Xem video cũ có thể giải phóng bao nhiêu dung lượng</string>
+    <item>Tải hình ảnh xong rồi, đi xem đã lưu ở đâu nào</item>
+    <item>Ảnh mới vừa vào album, mở ra xem thử nhé</item>
+    <item>Ảnh mới có trùng với ảnh cũ không, mở ra mới biết</item>
+    <item>Tải xong rồi, album có ảnh trùng thì nên dọn dẹp thôi</item>
+    <item>Tải hình ảnh xong rồi, xem còn lưu lại bao nhiêu nhé</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Danh mục video sắp đầy rồi, đi xem nào</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Video đã tải xuống — nó không hề nhỏ. Xem video cũ có thể giải phóng bao nhiêu dung lượng</item>
-        <item>Đã lưu video mới — tìm các video lớn để xóa và giải phóng dung lượng. Nhấn vào tôi</item>
-        <item>Video chiếm dung lượng — chúng tôi đã tìm thấy những vật dụng có thể làm sạch để làm nhẹ điện thoại của bạn. Nhấn vào đây</item>
-        <item>Tải xuống xong! Làm sạch một vài video cũ và dung lượng sẽ quay trở lại. Nhấn vào tôi</item>
-        <item>Video mới được sắp xếp — dễ tìm hoặc sạch. Nhấn để xem</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Đã tải xuống âm thanh - dọn dẹp thư viện nhạc của bạn chỉ bằng một cú chạm. Nhấn vào tôi</string>
+    <item>Danh mục video sắp đầy rồi, đi xem nào</item>
+    <item>Nhấp vào xem siêu phẩm vừa tải về nhé</item>
+    <item>Tải xong rồi, xem xem chiếm bao nhiêu dung lượng nhé</item>
+    <item>Vừa tải xong video, điện thoại hơi đầy rồi</item>
+    <item>Nhấp vào để chọn ra video chiếm chỗ nhé</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Âm thanh mới đặt ở đâu, mở xem mới biết</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Đã tải xuống âm thanh - dọn dẹp thư viện nhạc của bạn chỉ bằng một cú chạm. Nhấn vào tôi</item>
-        <item>Đã sắp xếp âm thanh mới — xóa sạch âm thanh cũ khi bạn ở đây. Nhấn vào tôi</item>
-        <item>Thư viện nhạc sắp đầy? Kiểm tra âm thanh có thể làm sạch. Nhấn vào đây</item>
-        <item>Đã tải xuống âm thanh - loại bỏ trùng lặp chỉ bằng một lần nhấn. Nhấn vào tôi để dọn dẹp</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Đã lưu tệp mới - xóa các tệp cũ và giải phóng dung lượng. Nhấn vào đây</string>
+    <item>Âm thanh mới đặt ở đâu, mở xem mới biết</item>
+    <item>Mới tải xong âm thanh, dọn dẹp chút dung lượng đi</item>
+    <item>Âm thanh mới đã tải xong, vào xem nào</item>
+    <item>Mới tải xong âm thanh, điện thoại hơi chật rồi</item>
+    <item>Âm thanh đã tải xong, cũng nên dọn dẹp bộ nhớ rồi</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Tải file thành công, đến đây sắp xếp kho lưu trữ đi</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Đã lưu tệp mới - xóa các tệp cũ và giải phóng dung lượng. Nhấn vào đây</item>
-        <item>Tải xuống xong - xem những tập tin cũ nào bạn có thể xóa. Nhấn vào tôi</item>
-        <item>Tệp mới đã sẵn sàng — lưu trữ thông minh + sạch sẽ. Hãy nhấn vào tôi để bắt đầu</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Thùng rác đã trống - bộ nhớ đã được làm mới. Kiểm tra không gian mới nhất của bạn.</string>
+    <item>Tải file thành công, đến đây sắp xếp kho lưu trữ đi</item>
+    <item>Vừa tải xong file, dọn dẹp chút không gian đi</item>
+    <item>Nhấp vào đây để phân loại tốt cho file mới nhé</item>
+    <item>Trong thư mục tải về có thêm gì mới không, mở ra mới biết</item>
+    <item>Tải file xong rồi, vào đây sắp xếp lại đi</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Xóa hoàn tất, xem đã giải phóng được bao nhiêu dung lượng nhé</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Thùng rác đã trống - bộ nhớ đã được làm mới. Kiểm tra không gian mới nhất của bạn.</item>
-        <item>Thùng rác đã trống - hãy dọn sạch thức ăn thừa.</item>
-        <item>Đã dọn sạch thành công — còn nhiều rác cần dọn dẹp hơn. Hãy đến xem.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Dọn dẹp ngay bây giờ</string>
+    <item>Xóa hoàn tất, xem đã giải phóng được bao nhiêu dung lượng nhé</item>
+    <item>Thùng rác đã xóa, điện thoại nhẹ nhàng ngay lập tức</item>
+    <item>Thùng rác cạn sạch, điện thoại nhẹ nhàng như mới</item>
+    <item>Thùng rác đã xóa sạch, vẫn còn thể xóa thêm một chút nữa</item>
+    <item>Xóa hoàn tất, còn lại bao nhiêu dung lượng để dùng</item>
+  </string-array>
+    <string name="notif_event_action_clean">Đi dọn dẹp</string>
     <string name="notif_event_action_open_home">Mở</string>
-    <string name="notif_event_action_manage">Quản lý ứng dụng</string>
+    <string name="notif_event_action_manage">Đi quản lý</string>
     <string name="notif_event_action_check_battery">Kiểm tra pin</string>
-    <string name="notif_event_action_check_network">Kiểm tra mạng</string>
+    <string name="notif_event_action_check_network">Kiểm tra dữ liệu</string>
     <string name="notif_days_unit">ngày</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Không gian lưu trữ đã thay đổi. Hãy xem những gì chiếm không gian?</item>
-        <item>Những thay đổi không gian được phát hiện. Có thể có một số rác mới, hãy xem?</item>
-        <item>Không gian có sẵn đã di chuyển. Bạn có biết ai đã ăn nó không? Nhấn vào đây để xem.</item>
-        <item>Không gian có chật hẹp không? Vừa phát hiện ra sự thay đổi, chúng ta cùng xem chi tiết nhé.</item>
-        <item>Nhắc nhở thay đổi không gian: Bạn có thể tích lũy rất nhiều rác. Kiểm tra xem nó ra?</item>
-    </string-array>
+    <item>Không gian lại giảm rồi, mở xem ai chiếm nhiều nhất nào</item>
+    <item>Vào xem đi, album lại chất đầy ảnh mới rồi</item>
+    <item>Bộ nhớ tạm thời chat ngày càng nhiều, mở ra xem sự thật đi</item>
+    <item>Lại xuất hiện một đống rác, vào xem ngay thôi</item>
+    <item>Nhấp vào tôi đi, đống rác chất cao như núi mà không ai dọn</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Pin yếu. Bạn muốn biết ai đang ăn cắp điện của bạn? Nhấn vào đây để xem bảng xếp hạng.</item>
-        <item>Sắp chạm đáy. Nếu bạn dọn sạch những ứng dụng ăn cắp điện thì bạn vẫn có thể sống sót được một thời gian.</item>
-        <item>Pin sắp hết. Xóa một vài hình nền sẽ tốt hơn là không làm gì cả.</item>
-        <item>Pin có màu đỏ. Bạn vẫn có thể lưu nó, bấm vào để mở nó và xem qua.</item>
-        <item>Ít hơn 20% remain. Hãy thực hiện một số thao tác sơ cứu tiết kiệm năng lượng và dọn dẹp.</item>
-    </string-array>
+    <item>Pin sắp hết, đừng cố chịu đựng nữa, mở app là sạch sẽ ngay</item>
+    <item>Chưa kịp về nhà, vào đây dọn cache đi</item>
+    <item>Đèn đỏ pin sáng rồi, vào xem thử nhé</item>
+    <item>Pin cạn kiệt rồi, vào đây xem thủ phạm là ai</item>
+    <item>Sắp hết pin rồi, mở app xem còn cứu được không</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Pin đã đầy hơn một nửa. Hãy chăm sóc nó ngay bây giờ, nó sẽ kéo dài cho đến khi bạn về đến nhà.</item>
-        <item>Pin đã đầy hơn một nửa. Việc chăm sóc pin lúc này dễ dàng hơn rất nhiều so với việc đợi đến 20%.</item>
-        <item>Pin đã hết một nửa. Nó có thể kéo dài bao lâu? Nhấn vào đây để xem.</item>
-        <item>Pin đã đầy hơn một nửa. Đã đến lúc chăm sóc phần phụ trợ, đừng đợi nó lo lắng.</item>
-        <item>Còn một nửa pin. Loại bỏ những cầu thủ háu năng lượng lớn và giúp hiệp hai ổn định hơn.</item>
-    </string-array>
+    <item>Mở là hiểu ngay, pin còn hơn nửa thì dọn dẹp trước nhé</item>
+    <item>Pin đã xuống dưới vạch trung rồi, mở để dọn cache đi</item>
+    <item>Chỉ còn nửa vạch thôi, vào đây sắp xếp album ảnh đi</item>
+    <item>Pin vẫn ổn định, nhấn vào để quét cache nhé</item>
+    <item>Pin ở mức trung bình, mở để dọn cache một cách dễ dàng</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Lần chạy nước rút cuối cùng là 80%. Dỡ rác và đóng gói nhẹ nhàng để chào đón toàn bộ sức mạnh.</item>
-        <item>Vẫn còn 20% short sạc đầy. Hãy ngừng nhìn chằm chằm vào màn hình của bạn và để chúng tôi xử lý thùng rác.</item>
-        <item>80%: Còn một bước nữa là tới sự hoàn hảo. Bấm một lần và nó sẽ bị xóa hoàn toàn khi pin được sạc đầy.</item>
-        <item>80%, a pin tốt cho một chiếc điện thoại di động tốt. Dọn dẹp một lúc khi trời còn nóng?</item>
-        <item>20% i cuối cùng được trao cho chúng tôi. Bạn nhìn vào pin và chúng tôi dọn rác.</item>
-    </string-array>
+    <item>Đang sạc, vào dọn rác đi</item>
+    <item>Sạc gần đầy rồi, rác nhiều quá, vào xem thủ phạm nào</item>
+    <item>Chỉ còn chờ đầy pin thôi, nhấn vào dọn rác nhé</item>
+    <item>Chỉ còn thiếu chút pin nữa, mở lên là sạch sẽ ngay</item>
+    <item>Sạc vừa chờ, nhấn vào dọn bộ nhớ đệm đi</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Sạc đầy và sẵn sàng để đi. Kiểm tra lần cuối: Thùng rác đã được dọn sạch chưa?</item>
-        <item>Sau khi sạc, cảm giác nghi lễ tràn đầy. Làm thế nào về việc dọn rác để kỷ niệm nó?</item>
-        <item>100%, sbàn hôm nay. Thêm một vòng nữa và nó hoàn hảo.</item>
-        <item>100%. Bước cuối cùng trước khi rút phích cắm: dọn sạch thùng rác, ba mươi giây.</item>
-        <item>Hoàn thành với toàn bộ sức mạnh. Một lần dọn dẹp cuối cùng, hoàn hảo.</item>
-    </string-array>
+    <item>Đã sạc đầy rồi đừng lãng phí, mở xem bộ nhớ đệm đi</item>
+    <item>Pin đầy rồi, hãy vào dọn rác ngay khi còn nóng</item>
+    <item>Đã sạc đầy rồi, nên dọn dẹp thôi, mở để dọn bộ nhớ đệm</item>
+    <item>Pin đầy rồi, album ảnh cần dọn dẹp rồi, vào xem thử nhé</item>
+    <item>Pin đầy đang chờ, vào dọn dẹp rác đi</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Trang web thay đổi! Xem trạng thái mạng hiện tại 1</item>
-        <item>Sự đào ngũ của mạng. Đừng nhìn vào tín hiệu khi làm sạch, chỉ cần nhấp vào nó và quét.</item>
-        <item>Không thể mở trang? Dọn dẹp luôn trực tuyến.</item>
-        <item>Bạn có thể làm việc ngoại tuyến và thùng rác của bạn có thể được xóa ngay bây giờ.</item>
-        <item>Nếu không có tín hiệu, không cần dữ liệu để dọn dẹp, chỉ cần nhấp chuột.</item>
-    </string-array>
+    <item>Đã mất mạng, mở xem bộ nhớ đệm cục bộ nhé</item>
+    <item>Đã đổi mạng rồi, hãy vào xem bộ nhớ đệm thôi</item>
+    <item>Mạng không ổn định, đừng vội, mở lên là sạch sẽ ngay</item>
+    <item>Đã mất kết nối, vào xem rác cục bộ đi</item>
+    <item>Mạng đã kết nối lại rồi, vào xem bộ nhớ đệm nhé</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Đã cắm điện. Nhiệm vụ của tối nay: nạp tiền, sau đó dọn dẹp.</item>
-        <item>Bạn đang nghỉ ngơi, nó đang sạc lại. Hãy để nó dọn sạch thùng rác là tốt.</item>
-        <item>Trong thời gian sạc, chỉ cần dọn sạch rác tích tụ lâu ngày là đủ.</item>
-        <item>Chỉ khi có điện, nhân viên hậu trường mới dám làm việc thoải mái.</item>
-        <item>Bị nóng một chút trong khi sạc? Xóa nền có thể làm giảm nhiệt độ.</item>
-    </string-array>
+    <item>Đã cắm điện rồi, tiện tay mở xem bộ nhớ đệm đi</item>
+    <item>Đang sạc điện, vào đây làm một lần dọn dẹp sâu đi</item>
+    <item>Vừa mới bắt đầu sạc, mở app dọn rác đi</item>
+    <item>Đang sạc rồi thì mau vào đi, mở là sạch sẽ ngay</item>
+    <item>Đèn sạc đã sẵn sàng rồi, vào xem bộ nhớ đệm đi</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Rút phích cắm và khởi hành. Hãy nhớ dành thời gian để dọn rác và giữ dáng ở trạng thái tốt nhất.</item>
-        <item>Sau khi sạc xong, thu dọn đồ đạc và khởi hành. Chỉ cần làm sạch nó và nó sẽ hoàn hảo.</item>
-        <item>Sạc đầy và sẵn sàng để sử dụng. Dọn rác một cách suôn sẻ, hôm nay không có thiếu sót gì.</item>
-        <item>Quá trình sạc kết thúc. Không gian tiếp theo sẽ được dọn dẹp và nâng cấp từng cấp một.</item>
-        <item>Đừng dừng lại ở việc mất điện. Còn lại một việc: dọn dẹp.</item>
-    </string-array>
+    <item>Rút sạc, ngoại tuyến rồi, mở xem nhé</item>
+    <item>Đã hết pin, không cần mạng, nhấn vào xem cục bộ</item>
+    <item>Rút nguồn tiện tay, mở lên là sạch sẽ</item>
+    <item>Đã hết pin rồi, xem pin còn dùng được bao lâu</item>
+    <item>Rút dây đúng lúc, vào sắp xếp album ảnh thôi</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Chúng ta lại gặp nhau, bạn có bị mắc kẹt không? Hầu hết là rác, hãy thử dọn sạch nó.</item>
-        <item>Đã mở khóa? Đừng mở các ứng dụng khác trước và dọn thùng rác trong ba mươi giây.</item>
-        <item>Điều đầu tiên để mở khóa là chúng tôi. Hãy dọn rác và nó sẽ yêu bạn nhiều hơn.</item>
-        <item>Ba mươi giây sau khi mở khóa. Công dụng có giá trị nhất: dọn rác.</item>
-        <item>Điện thoại di động của bạn cho biết: Phần phụ trợ hơi bị chặn, bạn có thể giúp tôi không?</item>
-    </string-array>
+    <item>Vừa mở màn hình, nhấn vào xem bộ nhớ đệm</item>
+    <item>Mở khóa thành công, dung lượng còn đủ không?</item>
+    <item>Màn hình sáng rồi, nhìn qua là biết chiếm dụng bao nhiêu</item>
+    <item>Màn hình vừa sáng lên, vào sắp xếp album ảnh</item>
+    <item>Màn hình sáng lên tiện thật, mở ra là hiểu ngay sự thật</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Hãy đặt điện thoại của bạn xuống và để việc đó cho chúng tôi. Thời gian nghỉ ngơi trên màn hình = thời gian cho con bú.</item>
-        <item>Dừng công việc không có nghĩa là dừng công việc. Tôi sẽ mang đến cho bạn một điều bất ngờ vào lần tới khi tôi bật màn hình lên.</item>
-        <item>Âm thầm trở nên tốt hơn trong khi nghỉ ngơi màn hình. Hãy nhấp vào và chúng tôi sẽ làm phần còn lại.</item>
-        <item>Điều cuối cùng trước khi khóa màn hình: Nhấp vào Clean. Một diện mạo mới vào sáng mai.</item>
-        <item>Màn hình tối đi. Hãy sắp xếp ngay bây giờ và xem kết quả vào ngày mai.</item>
-    </string-array>
+    <item>Đóng màn rồi, dọn dẹp ứng dụng nền bắt đầu ngay</item>
+    <item>Trước khi khóa màn, tiện tay vào xem bộ nhớ đệm</item>
+    <item>Ngay trước khi ngủ, xem qua rồi dọn dẹp album ảnh</item>
+    <item>Màn hình sắp tối rồi, mở ngay ứng dụng dọn dẹp cho tiện</item>
+    <item>Trước khi tắt màn, giải phóng dung lượng cho điện thoại, mở là hiểu ngay</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Ứng dụng mới đã được chuyển đến và bộ đệm cũng vậy. dọn dẹp</item>
-        <item>Chúng tôi hiểu niềm vui của việc cài đặt một ứng dụng mới. Chỉ là bộ nhớ đệm sẽ âm thầm tích tụ.</item>
-        <item>Ứng dụng mới? Bộ nhớ đệm cũng ở đây, hãy xóa nó bằng một cú nhấp chuột.</item>
-        <item>Cái mới đến và cái cũ đi ra. Làm sạch nó thường xuyên và cài đặt nó theo ý muốn.</item>
-        <item>Một cái khác? Không gian dần dần thu hẹp lại, hãy đến và dọn dẹp nó.</item>
-    </string-array>
+    <item>Bộ nhớ đệm ứng dụng mới vừa được tải về, mở ra xem nào</item>
+    <item>Đã cài xong ứng dụng mới, tiện thể dọn dẹp gói cài đặt đi</item>
+    <item>Khuôn mặt mới đã lặng lẽ vào bộ nhớ đệm, vào xem ngay nào</item>
+    <item>Xem này, gói bộ nhớ đệm của ứng dụng mới đang nổi lên rồi kìa</item>
+    <item>Nhấn vào đây, gói cài đặt ứng dụng mới vẫn còn chiếm chỗ đấy</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Đã gỡ cài đặt thành công! để dọn dẹp dư lượng tập tin</item>
-        <item>Đã gỡ bỏ nhưng chưa dọn sạch. Bấm để hoàn tất.</item>
-        <item>Ứng dụng đã được gỡ cài đặt nhưng phần đuôi vẫn còn đó. Dọn dẹp chỉ bằng một cú nhấp chuột và nói lời tạm biệt một lần và mãi mãi.</item>
-        <item>Đừng bỏ lỡ bước thứ hai: xóa Ứng dụng + xóa cặn. Một cú nhấp chuột và hoàn tất.</item>
-        <item>Phần còn lại sẽ chiếm hết một nửa không gian trống. Quét sâu và xóa mọi thứ.</item>
-    </string-array>
+    <item>Ứng dụng vừa gỡ nhưng vẫn còn sót lại, mở xem thử nhé</item>
+    <item>Vào xem, gỡ xong vẫn còn dấu vết rác rưởi</item>
+    <item>Gỡ thành công rồi, dọn dẹp một chút mới sạch sẽ</item>
+    <item>Gỡ xong vẫn còn sót lại, mở vào là gọn gàng ngay</item>
+    <item>Sau khi gỡ không thay đổi gì à? Vào xem nguyên nhân nhé</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>Một phiên bản mới đã đến. Mọi thứ còn sót lại từ phiên bản cũ đều được dọn sạch hoàn toàn.</item>
-        <item>+1 cho phiên bản, +1 cho bộ đệm, để quét sâu.</item>
-        <item>Quá trình cập nhật hoàn tất và các gói cài đặt còn lại có thể được dọn sạch chỉ bằng một cú nhấp chuột.</item>
-        <item>Quá trình cập nhật đã hoàn tất, hãy kết thúc. Hãy dọn dẹp nó và tôi sẽ tiếp quản.</item>
-        <item>Mỗi bản cập nhật sẽ để lại các tập tin cũ và xử lý chúng một cách nhanh chóng.</item>
-    </string-array>
+    <item>Ứng dụng vừa cập nhật, nên dọn cache cũ đi thôi</item>
+    <item>Vừa cập nhật xong cache lại tăng lên, mở xem thử nhé</item>
+    <item>Cache sau khi cập nhật, vào xem sẽ tiện hơn</item>
+    <item>Bản cập nhật vẫn chiếm khá nhiều dung lượng, mở dọn đi</item>
+    <item>Phần còn sót lại của phiên bản mới vẫn đang chờ bạn dọn, click vào tôi nhé</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Một ảnh chụp màn hình khác? 1 Đã đến lúc xóa ảnh chụp màn hình</item>
-        <item>Đã tìm thấy ảnh chụp màn hình mới, nhấp để xem và dọn dẹp nó ~</item>
-        <item>Ngày càng có nhiều ảnh chụp màn hình, việc dọn dẹp chỉ bằng một cú nhấp chuột có thể giúp bạn giải phóng không gian</item>
-        <item>Ảnh chụp màn hình đã được chụp thành công, những ảnh trùng lặp và bị mờ có thể được lọc ra chỉ bằng một cú nhấp chuột.</item>
-        <item>Ảnh chụp màn hình mới được thêm vào cơ sở dữ liệu và các hình ảnh trùng lặp đã được xếp hàng để xóa chỉ bằng một cú nhấp chuột.</item>
-    </string-array>
+    <item>Có ảnh chụp màn hình mới rồi, xem có cần giữ lại không nhé</item>
+    <item>Ảnh chụp màn hình trong album chất đống, mở ra là gọn gàng ngay</item>
+    <item>Chụp màn hình thành công rồi, đến lúc sắp xếp album thôi</item>
+    <item>Ảnh mới vừa chụp xong, mở ra sẽ có bất ngờ chờ bạn</item>
+    <item>Ảnh chụp màn hình mới đã vào album, vào xem sẽ tiện hơn nhiều</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Có rất nhiều rác chất đống. Làm sạch tất cả cùng một lúc.</item>
-        <item>%1$d được làm sạch lần cuối cách đây vài ngày, nhấp để xử lý ngay bây giờ</item>
-        <item>Đã mấy ngày không đến đây, tôi sẽ dọn dẹp sạch sẽ rồi nhẹ nhàng quay lại chiến trường.</item>
-        <item>Hạn ngạch thanh toán bù trừ vẫn chưa được sử dụng ngày hôm nay. Tôi sẽ xóa nó khi tôi trở lại.</item>
-        <item>Bộ nhớ đệm sắp đầy, chờ bạn kiểm tra</item>
-    </string-array>
+    <item>Lâu rồi chưa dọn điện thoại, không thở nổi nữa, mở ra xem thôi</item>
+    <item>Rác tích tụ lâu rồi, vào xem cần dọn thôi</item>
+    <item>Điện thoại lâu rồi chưa dọn, bụi bám dày rồi, mở ra dọn thôi</item>
+    <item>Mở xem album đi, bộ nhớ đệm chất thành núi rồi</item>
+    <item>Bộ nhớ đệm đã ở bên bạn lâu rồi, cần dọn rồi, click vào tôi đi</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Đã lâu không gặp, nó đã chờ đợi. Hãy quay lại và dọn rác.</item>
-        <item>Đã mấy ngày không gặp bạn. Không có phần còn lại cho rác. Hãy quay lại và quét nó lên.</item>
-        <item>Bộ đệm được xếp hàng đợi. Nhấp vào và chúng biến mất.</item>
-        <item>Thùng rác đang bận khi bạn đi vắng. Làm trống chỉ bằng một cú nhấp chuột và cảm thấy tươi mới hơn bao giờ hết.</item>
-        <item>Mặt sau? Hãy dọn rác trước. Trong ba mươi giây, điện thoại sẽ nhẹ như mới.</item>
-    </string-array>
+    <item>Lâu rồi không gặp, tưởng bạn quên rồi, mở ra xem nào</item>
+    <item>Lâu rồi chưa mở, vào xem sao đã, sảng khoái hẳn lên</item>
+    <item>Lâu rồi không gặp, vào đây để khám phá nhé</item>
+    <item>Biểu tượng sắp mọc cỏ rồi, click vào xem nào</item>
+    <item>Chắc là bận quên rồi, chúng ta đợi lâu lắm rồi, vào xem đi</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Rác tích tụ bấy lâu nay sẽ được dọn sạch ngay lập tức.</item>
-        <item>Đã đến lúc dọn dẹp. Thùng rác của ngày hôm nay đang chờ bạn nhấp vào.</item>
-        <item>Tờ Space Daily hôm nay đã đến. Dọn dẹp và giữ cho nó nhẹ nhàng.</item>
-        <item>Một số tệp lớn hơn nhiều so với bạn nghĩ, hãy xem qua</item>
-        <item>Tìm anh chàng đã lấy được vài điểm G và dọn dẹp nó</item>
-        <item>Danh sách tài liệu lớn đã sẵn sàng, hãy đến xem.</item>
-        <item>Ai chiếm nhiều không gian nhất? Tiết lộ trong một giây.</item>
-        <item>Chụp liên tục thì tuyệt, hoàn thiện thì đau. Hãy để nó cho chúng tôi.</item>
-        <item>Những bức ảnh tương tự được xếp thành hàng, bạn có thể chọn giữ bức nào</item>
-        <item>Có quá nhiều hình ảnh giống nhau? Chúng tôi sẽ giúp bạn so sánh và loại bỏ các bản sao chỉ bằng một cú nhấp chuột.</item>
-        <item>Các video ngoại tuyến được lưu trong bộ nhớ đệm sẽ bị xóa.</item>
-        <item>Âm thanh còn lại cũng sẽ được làm sạch.</item>
-    </string-array>
+    <item>Lần trước dọn đến nửa đường rồi không động nữa, mở ra xem sao</item>
+    <item>Dọn dẹp dừng giữa chừng, vào xem đã đến đâu rồi</item>
+    <item>Tích một đống video lớn chiếm nhiều dung lượng, mở ra xem</item>
+    <item>Còn một tệp siêu lớn chưa dọn, mở ra dọn đi</item>
+    <item>Có một đoạn video HD chiếm nhiều dung lượng, vào xem nào</item>
+    <item>Ảnh trùng chiếm nhiều dung lượng, vào xem có thể dọn dẹp được không</item>
+    <item>Trong album có mặt người trùng lặp, nhấn vào tôi để xóa một ít</item>
+    <item>Ảnh phong cảnh tương tự chất đống, xem đi chọn những cái có thể xóa</item>
+    <item>Video lớn chiếm nhiều dung lượng, mở ra xem</item>
+    <item>Tin nhắn thoại đầy cache chat, vào sắp xếp đi</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Pin không còn bền như trước nữa? Hãy kiểm tra nó.</item>
-        <item>Ai đang ăn cắp điện của bạn? Bạn sẽ biết khi bạn tra cứu nó.</item>
-        <item>Tắt những thứ này sẽ kéo dài tuổi thọ pin.</item>
-        <item>Một số ứng dụng được cài đặt nhưng không bao giờ được sử dụng. Hãy xem họ là ai?</item>
-        <item>Giữ lại những ứng dụng bạn không dùng cũng là một gánh nặng, danh sách đã được lập sẵn</item>
-        <item>Về quyền riêng tư, việc xử lý càng sớm thì càng tốt.</item>
-        <item>Ẩn những cái quan trọng và loại bỏ những cái không cần thiết. hãy để tôi giúp bạn</item>
-        <item>Giao thông đi đâu? Tìm hiểu xem ai đang sử dụng nó.</item>
-        <item>Thông tin chi tiết về giao thông luôn sẵn sàng và rõ ràng trong nháy mắt.</item>
-        <item>Có một ứng dụng bí mật kết nối Internet ở chế độ nền.</item>
-    </string-array>
+    <item>Ứng dụng chạy ngầm đang làm hao pin của bạn, mở xem đi</item>
+    <item>Pin giảm dần khi máy ở chế độ chờ cả đêm, nhấn vào tôi nhé</item>
+    <item>Đồng bộ hóa luôn bật sẽ tốn nhiều pin mỗi ngày, vào xem đi</item>
+    <item>Rất nhiều ứng dụng đã không mở nửa năm rồi, vào kiểm tra xem</item>
+    <item>Phần mềm cài sẵn chiếm chỗ vô ích, vào dọn dẹp đi</item>
+    <item>Xem này, ứng dụng thường dùng không nhiều đâu</item>
+    <item>Ảnh riêng tư được khóa trong không gian riêng, mở ra xem nhé</item>
+    <item>Ảnh tự chụp giấu kỹ đi đừng để ai xem, vào đây khám phá nhé</item>
+    <item>Dữ liệu tháng này sắp hết rồi, mở ra xem nhé</item>
+    <item>Chế độ tiết kiệm dữ liệu bật lên tiết kiệm nhiều lắm, xem đi</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} rác—xóa nó chỉ bằng một lần nhấn</string>
-    <string name="notif_scheduled_large_files">{tổng cộng} tệp lớn—dọn dẹp dễ dàng</string>
+    <string name="notif_scheduled_large_files">{total} tệp lớn—dọn dẹp dễ dàng</string>
     <string name="notif_scheduled_duplicate_photos">{groups} nhóm ảnh trùng lặp—tiết kiệm {size}</string>
     <string name="notif_scheduled_similar_photos">{size} của các ảnh tương tự—chọn nội dung cần xóa</string>
     <string name="notif_scheduled_videos">{total} video—xóa {n} để giải phóng dung lượng</string>
-    <string name="notif_scheduled_audio">{tổng cộng} tệp âm thanh—đã đến lúc dọn dẹp</string>
+    <string name="notif_scheduled_audio">{total} tệp âm thanh—đã đến lúc dọn dẹp</string>
     <string name="notif_scheduled_apps">{size} được sử dụng bởi các ứng dụng nhàn rỗi {idle}</string>
-    <string name="notif_scheduled_data">{trở lại} dữ liệu được sử dụng ở chế độ nền</string>
+    <string name="notif_scheduled_data">Đã dùng {back} dữ liệu di động trong nền</string>
     <string name="app_manager_uninstall_selected">Gỡ cài đặt mục đã chọn</string>
     <string name="app_manager_uninstall_selected_count">Gỡ cài đặt mục đã chọn (%1$d)</string>
     <string name="cache_removable">Có thể tháo rời</string>

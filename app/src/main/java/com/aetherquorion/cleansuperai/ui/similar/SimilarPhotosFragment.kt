@@ -30,6 +30,7 @@ class SimilarPhotosFragment : Fragment() {
     private val binding get() = _binding!!
     private val viewModel: SimilarPhotosViewModel by viewModels()
     private val selectedIds = linkedSetOf<Long>()
+    private var candidateIds: Set<Long> = emptySet()
     private var pendingCleanupResult: com.aetherquorion.cleansuperai.ui.flow.CleanupResult? = null
     private var initializedSelection = false
     private lateinit var adapter: SimilarGroupAdapter
@@ -129,10 +130,8 @@ class SimilarPhotosFragment : Fragment() {
         binding.emptyContainer.isVisible = !state.isLoading && state.groups.isEmpty()
         binding.actionContainer.isVisible = state.groups.isNotEmpty()
         binding.tvEmptyBody.text = state.errorMessage ?: emptyBodyForMode()
-        binding.btnDeleteSelected.isEnabled = selectedIds.isNotEmpty()
-        binding.tvNote.text = getString(R.string.selected_count_format, selectedIds.size)
-        binding.checkSelectCandidates.isChecked = validIds.isNotEmpty() && selectedIds.size == validIds.size
-        binding.btnDeleteSelected.text = getString(R.string.similar_delete_count_action, selectedIds.size)
+        candidateIds = validIds
+        renderSelectionState()
 
         val reclaimBytes = state.groups.sumOf { it.estimatedReclaimBytes }
         val reclaimText = Formatter.formatFileSize(requireContext(), reclaimBytes)
@@ -172,26 +171,34 @@ class SimilarPhotosFragment : Fragment() {
         } else {
             selectedIds.add(item.id)
         }
-        render(viewModel.uiState.value)
-        adapter.notifyDataSetChanged()
+        renderSelectionState()
+        adapter.refreshSelection()
     }
 
     private fun selectAllCandidates() {
-        val candidates = viewModel.uiState.value.groups
-            .flatMap { group -> group.items.filterNot { it.id == group.recommendedKeepId } }
-            .map { it.id }
-        if (selectedIds.size == candidates.size && candidates.isNotEmpty()) {
+        if (selectedIds.size == candidateIds.size && candidateIds.isNotEmpty()) {
             selectedIds.clear()
         } else {
             selectedIds.clear()
-            selectedIds.addAll(candidates)
+            selectedIds.addAll(candidateIds)
         }
-        render(viewModel.uiState.value)
-        adapter.notifyDataSetChanged()
+        renderSelectionState()
+        adapter.refreshSelection()
+    }
+
+    private fun renderSelectionState() {
+        binding.btnDeleteSelected.isEnabled = selectedIds.isNotEmpty()
+        binding.tvNote.text = getString(R.string.selected_count_format, selectedIds.size)
+        binding.checkSelectCandidates.isChecked = candidateIds.isNotEmpty() && selectedIds.size == candidateIds.size
+        binding.btnDeleteSelected.text = getString(R.string.similar_delete_count_action, selectedIds.size)
     }
 
     private fun confirmDeleteSelected() {
         if (selectedIds.isEmpty()) return
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            deleteSelectedItems()
+            return
+        }
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.delete_similar_dialog_title)
             .setMessage(getString(R.string.delete_similar_dialog_message_format, selectedIds.size))

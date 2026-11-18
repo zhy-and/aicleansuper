@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Peringatan penyimpanan: {size} sampah ditemukan. Bersihkan dalam satu ketukan.</item>
+        <item>{size} cache telah terkumpul. Kosongkan ruang sekarang.</item>
+        <item>Ditemukan {apps} aplikasi menggunakan {size}. Bersihkan aplikasi tersebut.</item>
+        <item>Sistem menemukan {size} file sementara. Bersihkan dengan aman.</item>
+        <item>Sebuah aplikasi sedang membuat cache. Ketuk untuk meninjaunya.</item>
+        <item>Ditemukan {size} folder kosong dan file duplikat. Bersihkan dalam satu ketukan.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Foto Anda menghabiskan ruang. Kompres dan jaga agar tetap tajam.</item>
+        <item>Menyimpan {photos} foto? Kompres untuk memberi ruang lebih banyak.</item>
+        <item>{photos} foto dapat mengosongkan {size}. Kompres sekarang.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Video menggunakan {size}. Kompres secara bersamaan dan hemat ruang.</item>
+        <item>Kompres video Anda dan simpan hingga {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Ditemukan {photos} foto buram. Tingkatkan mereka untuk tampilan yang lebih jelas.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Ditemukan {contacts} kontak duplikat. Gabungkan semuanya dalam satu ketukan.</item>
+        <item>Ditemukan {contacts} kontak tanpa nama. Rapikan buku alamat Anda.</item>
+        <item>Kontak Anda belum dicadangkan akhir-akhir ini. Jaga keamanan mereka.</item>
+        <item>{contacts} catatan kontak tidak lengkap. Isi detailnya.</item>
+        <item>Beberapa kontak yang baru diimpor merupakan duplikat. Atur mereka sekarang.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Acara Anda berikutnya akan segera hadir. Bersiap.</item>
+        <item>Acara penting Anda dalam {days} hari. Apakah kamu siap?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Seberapa cepat koneksi Anda? Jalankan tes kecepatan cepat.</item>
+        <item>Jaringan berpindah? Periksa mana yang lebih cepat dan menggunakan lebih sedikit data.</item>
+    </string-array>
+</resources>

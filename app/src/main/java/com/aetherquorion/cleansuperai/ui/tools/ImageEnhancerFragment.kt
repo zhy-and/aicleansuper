@@ -22,11 +22,12 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.withResumed
 import coil.load
+import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.databinding.FragmentImageEnhancerBinding
 import com.aetherquorion.cleansuperai.ui.common.MediaActions
-import java.io.ByteArrayOutputStream
 import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -36,11 +37,10 @@ class ImageEnhancerFragment : Fragment() {
     private var _binding: FragmentImageEnhancerBinding? = null
     private val binding get() = _binding!!
     private var selectedUri: Uri? = null
-    private var enhancedBitmap: Bitmap? = null
     private var enhancedPreviewFile: File? = null
 
     private val picker = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
-        uri?.let(::showSelection)
+        uri?.let(::enhanceSelection)
     }
 
     override fun onCreateView(
@@ -57,7 +57,8 @@ class ImageEnhancerFragment : Fragment() {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.btnChoosePhoto.setOnClickListener { picker.launch("image/*") }
         binding.emptyGuide.setOnClickListener { picker.launch("image/*") }
-        binding.btnEnhance.setOnClickListener { enhanceSelected() }
+        binding.btnEnhance.isVisible = false
+        binding.btnSave.isVisible = false
         binding.btnSave.setOnClickListener { saveEnhanced() }
         binding.cardBeforePreview.setOnClickListener {
             selectedUri?.let { uri ->
@@ -70,38 +71,30 @@ class ImageEnhancerFragment : Fragment() {
                     getString(R.string.preview_enhanced_photo_label))
             }
         }
+        arguments?.getString(ARG_ENHANCED_FILE)?.let { path -> showResult(File(path)) }
     }
 
     override fun onDestroyView() {
-        clearEnhancedPreview()
-        enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
-        enhancedBitmap = null
         super.onDestroyView()
         _binding = null
     }
 
-    private fun showSelection(uri: Uri) {
+    override fun onDestroy() {
+        if (isRemoving) clearEnhancedPreview()
+        super.onDestroy()
+    }
+
+    private fun enhanceSelection(uri: Uri) {
         selectedUri = uri
-        clearEnhancedPreview()
-        enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
-        enhancedBitmap = null
-        binding.emptyGuide.isVisible = false
-        binding.previewContainer.isVisible = true
-        binding.tvBeforeLabel.isVisible = true
-        binding.cardBeforePreview.isVisible = true
-        binding.imagePreviewBefore.load(uri)
-        binding.tvAfterLabel.isVisible = false
-        binding.cardAfterPreview.isVisible = false
         binding.tvStatus.isVisible = true
-        binding.tvStatus.setText(R.string.image_enhancer_ready)
-        binding.btnEnhance.isEnabled = true
-        binding.btnSave.isEnabled = false
+        binding.tvStatus.setText(R.string.image_enhancer_working)
+        binding.btnChoosePhoto.isEnabled = false
+        binding.emptyGuide.isEnabled = false
+        enhanceSelected()
     }
 
     private fun enhanceSelected() {
         val uri = selectedUri ?: return
-        binding.btnEnhance.isEnabled = false
-        binding.btnEnhance.text = getString(R.string.image_enhancer_working)
         viewLifecycleOwner.lifecycleScope.launch {
             runCatching {
                 withContext(Dispatchers.IO) {
@@ -117,34 +110,48 @@ class ImageEnhancerFragment : Fragment() {
                     enhanced to file
                 }
             }.onSuccess { (bitmap, file) ->
-                clearEnhancedPreview()
-                enhancedBitmap?.takeIf { !it.isRecycled }?.recycle()
-                enhancedBitmap = bitmap
-                enhancedPreviewFile = file
-                binding.tvAfterLabel.isVisible = true
-                binding.cardAfterPreview.isVisible = true
-                binding.imagePreviewAfter.setImageBitmap(bitmap)
-                binding.tvStatus.isVisible = true
-                binding.tvStatus.setText(R.string.image_enhancer_done)
-                binding.btnSave.isEnabled = true
+                if (!bitmap.isRecycled) bitmap.recycle()
+                requireActivity().lifecycle.withResumed {
+                    (activity as? MainActivity)?.replaceCurrentDetail(
+                        resultPage(uri, file), "image_enhancer_result",
+                    )
+                }
             }.onFailure {
                 Toast.makeText(requireContext(), R.string.image_enhancer_failed, Toast.LENGTH_SHORT)
                     .show()
+                binding.tvStatus.isVisible = false
             }
-            binding.btnEnhance.isEnabled = selectedUri != null
-            binding.btnEnhance.text = getString(R.string.image_enhancer_action)
+            _binding?.btnChoosePhoto?.isEnabled = true
+            _binding?.emptyGuide?.isEnabled = true
         }
     }
 
+    private fun showResult(file: File) {
+        val uri = arguments?.getString(ARG_ORIGINAL_URI)?.let(Uri::parse) ?: return
+        selectedUri = uri
+        enhancedPreviewFile = file
+        binding.emptyGuide.isVisible = false
+        binding.previewContainer.isVisible = true
+        binding.tvBeforeLabel.isVisible = true
+        binding.cardBeforePreview.isVisible = true
+        binding.imagePreviewBefore.load(uri)
+        binding.tvAfterLabel.isVisible = true
+        binding.cardAfterPreview.isVisible = true
+        binding.imagePreviewAfter.load(file)
+        binding.tvStatus.isVisible = true
+        binding.tvStatus.setText(R.string.image_enhancer_done)
+        binding.btnChoosePhoto.isVisible = false
+        binding.btnSave.isVisible = true
+        binding.btnSave.isEnabled = file.exists()
+    }
+
     private fun saveEnhanced() {
-        val bitmap = enhancedBitmap ?: return
+        val file = enhancedPreviewFile?.takeIf(File::exists) ?: return
         binding.btnSave.isEnabled = false
         viewLifecycleOwner.lifecycleScope.launch {
             runCatching {
                 withContext(Dispatchers.IO) {
-                    val output = ByteArrayOutputStream()
-                    bitmap.compress(Bitmap.CompressFormat.JPEG, 92, output)
-                    saveToMediaStore(output.toByteArray())
+                    saveToMediaStore(file.readBytes())
                 }
             }.onSuccess {
                 Toast.makeText(requireContext(), R.string.image_enhancer_saved, Toast.LENGTH_SHORT)
@@ -153,7 +160,7 @@ class ImageEnhancerFragment : Fragment() {
                 Toast.makeText(requireContext(), R.string.image_enhancer_failed, Toast.LENGTH_SHORT)
                     .show()
             }
-            binding.btnSave.isEnabled = enhancedBitmap != null
+            binding.btnSave.isEnabled = file.exists()
         }
     }
 
@@ -297,6 +304,18 @@ class ImageEnhancerFragment : Fragment() {
         } catch (throwable: Throwable) {
             resolver.delete(target, null, null)
             throw throwable
+        }
+    }
+
+    companion object {
+        private const val ARG_ORIGINAL_URI = "original_uri"
+        private const val ARG_ENHANCED_FILE = "enhanced_file"
+
+        private fun resultPage(uri: Uri, file: File) = ImageEnhancerFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_ORIGINAL_URI, uri.toString())
+                putString(ARG_ENHANCED_FILE, file.absolutePath)
+            }
         }
     }
 }

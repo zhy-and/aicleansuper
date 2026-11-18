@@ -27,6 +27,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.ui.common.inlineAdHost
 import com.aetherquorion.cleansuperai.ui.clean.detail.DisplayMediaItem
 import com.aetherquorion.cleansuperai.ui.clean.detail.MediaCleanupAdapter
 import com.aetherquorion.cleansuperai.ui.common.ParityUi
@@ -75,6 +76,7 @@ class VaultFragment : Fragment() {
             setBackgroundColor(ContextCompat.getColor(ctx, R.color.bg_primary))
         }
         root.addView(TopFilterUi.toolbar(ctx, getString(R.string.tool_private_vault)) { VaultSession.lock(); parentFragmentManager.popBackStack() })
+        root.addView(inlineAdHost(ctx))
         val summary = LinearLayout(ctx).apply {
             gravity = Gravity.CENTER_VERTICAL
             layoutParams = LinearLayout.LayoutParams(-1, dp(48)).apply { topMargin = dp(10) }
@@ -111,8 +113,13 @@ class VaultFragment : Fragment() {
             addView(list, FrameLayout.LayoutParams(-1, -1))
             addView(emptyView, FrameLayout.LayoutParams(-1, -1))
         })
-        restoreButton = ParityUi.button(ctx).apply { text = getString(R.string.vlt_restore); setOnClickListener { restore() } }
-        deleteButton = ParityUi.button(ctx, ParityUi.ButtonKind.DANGER).apply { text = getString(R.string.vlt_delete); setOnClickListener { delete() } }
+        restoreButton = ParityUi.button(ctx, ParityUi.ButtonKind.PRIMARY).apply { text = getString(R.string.vlt_restore); setOnClickListener { restore() } }
+        deleteButton = ParityUi.button(ctx, ParityUi.ButtonKind.DANGER).apply {
+            text = getString(R.string.vlt_delete)
+            setBackgroundResource(R.drawable.bg_vault_delete_button)
+            setTextColor(ContextCompat.getColor(ctx, R.color.white))
+            setOnClickListener { delete() }
+        }
         val actions = LinearLayout(ctx).apply {
             gravity = Gravity.CENTER
             layoutParams = LinearLayout.LayoutParams(-1, dp(64)).apply { bottomMargin = dp(12) }

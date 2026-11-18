@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">Selectează aplicația</string>
+    <string name="app_manager_uninstall_confirm">Dezinstalezi cele %1$d aplicații selectate? Android îți va cere să confirmi fiecare dezinstalare.</string>
+    <string name="cache_access_required">Permite accesul la toate fișierele pentru a scana memoria cache</string>
+    <string name="cache_clean_action">Curăță</string>
+    <string name="cache_clean_result">S-au curățat %1$d din %2$d elemente</string>
+    <string name="cache_confirm_clean">Cureți cele %1$d elemente selectate?</string>
+    <string name="cleanup_report_complete">Curățarea s-a încheiat.</string>
+    <string name="cleanup_report_explore">Explorează mai multe instrumente</string>
+    <string name="cleanup_report_go">Deschide</string>
+    <string name="home_pending_items_format">Elemente de curățat: %1$d</string>
+    <string name="info_report_title">Raport</string>
+    <string name="large_file_access_required">Este necesar accesul la toate fișierele</string>
+    <string name="large_file_delete">Șterge</string>
+    <string name="large_file_delete_amount">Șterge %1$s (%2$d)</string>
+    <string name="large_file_delete_confirm">Ștergi cele %1$d fișiere selectate?</string>
+    <string name="large_file_delete_selected">Șterge selecția</string>
+    <string name="large_file_deleted_summary">S-au șters %1$d din %2$d fișiere</string>
+    <string name="large_file_deselect_all">Deselectează tot</string>
+    <string name="large_file_deselect_all_shown">Deselectează toate fișierele afișate</string>
+    <string name="large_file_filter_description">Filtru %1$s: %2$s</string>
+    <string name="large_file_filter_size">Dimensiune</string>
+    <string name="large_file_filter_time">Perioadă</string>
+    <string name="large_file_filter_type">Tip</string>
+    <string name="large_file_open">Deschide</string>
+    <string name="large_file_scanning">Se scanează fișierele…</string>
+    <string name="large_file_select_all">Selectează tot</string>
+    <string name="large_file_select_all_shown">Selectează toate fișierele afișate</string>
+    <string name="large_file_summary">%1$d fișiere · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Orice perioadă</item>
+        <item>1 săptămână</item>
+        <item>1 lună</item>
+        <item>3 luni</item>
+        <item>6 luni</item>
+        <item>1 an</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Toate</item>
+        <item>Imagini</item>
+        <item>Videoclipuri</item>
+        <item>Audio</item>
+        <item>Documente</item>
+        <item>Arhive</item>
+        <item>APK</item>
+        <item>Altele</item>
+    </string-array>
+    <string name="new_feature_badge_description">Funcție nouă</string>
+    <string name="sys_android_version">Versiunea Android</string>
+    <string name="sys_discharging">Se descarcă</string>
+    <string name="sys_level">Nivel</string>
+    <string name="sys_status">Stare</string>
+    <string name="traffic_empty">Nu s-a găsit trafic de date pentru aplicații</string>
+    <string name="traffic_guide_message">Permite în Setări accesul acestei aplicații la datele de utilizare pentru a vedea traficul fiecărei aplicații.</string>
+    <string name="traffic_loading">Se încarcă…</string>
+    <string name="traffic_usage_required">Este necesar accesul la datele de utilizare. Atinge pentru a-l permite.</string>
+    <string name="vlt_delete_confirm">Ștergi definitiv %1$d fișiere private?</string>
+    <string name="vlt_deselect_all">Deselectează tot</string>
+    <string name="vlt_import_media">Importă fotografii sau videoclipuri</string>
+    <string name="vlt_originals_remain">; %1$d fișiere originale rămân pe dispozitiv</string>
+    <string name="vlt_restore_confirm">Restaurezi %1$d fișiere în Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">S-au restaurat %1$d din %2$d fișiere</string>
+    <string name="vlt_select_all">Selectează tot</string>
+    <string name="widget_action_files">Fișiere</string>
+    <string name="widget_action_photos">Fotografii</string>
+</resources>

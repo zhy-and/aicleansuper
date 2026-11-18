@@ -25,6 +25,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.ui.common.inlineAdHost
 import com.aetherquorion.cleansuperai.ui.common.FeatureAccess
 import com.aetherquorion.cleansuperai.ui.common.FeaturePermissionCoordinator
 import com.aetherquorion.cleansuperai.ui.common.ParityUi
@@ -57,6 +58,7 @@ class NetworkTrafficFragment : Fragment() {
             setBackgroundColor(ContextCompat.getColor(ctx, R.color.bg_primary))
         }
         root.addView(TopFilterUi.toolbar(ctx, getString(R.string.tool_network_traffic)) { parentFragmentManager.popBackStack() })
+        root.addView(inlineAdHost(ctx))
         val bar = TopFilterUi.bar(ctx, 50).apply { setPadding(dp(3), dp(3), dp(3), dp(3)) }
         rangeTabs = listOf(getString(R.string.traffic_month), getString(R.string.traffic_30_days), getString(R.string.traffic_24_hours)).mapIndexed { index, label ->
             TopFilterUi.label(ctx, label).also { tab ->

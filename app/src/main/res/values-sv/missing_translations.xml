@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Papperskorgen (%1$s)</string>
     <string name="trash_bin_title_empty">Papperskorgen</string>
     <string name="trash_restore_hint">Tryck för att återställa foton</string>
-    <string name="trash_empty_action">Ta bort allt i papperskorgen</string>
+    <string name="trash_empty_action">Ta bort foton</string>
     <string name="trash_restored">Fotot återställt</string>
     <string name="trash_bin_empty">Papperskorgen är tom</string>
     <string name="feature_smart_groups">Smarta grupper</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Rena påminnelser</string>
     <string name="notif_event_channel_desc">Lokala påminnelser efter skärmdumpar, installationer och avinstallationer</string>
     <string name="notif_event_summary_channel_name">Ren påminnelsesammanfattning</string>
-    <string name="notif_event_screenshot_title">Ännu en skärmdump? 1 Det är dags att rensa skärmdumparna</string>
-    <string name="notif_event_install_title">Den nya appen har flyttat in, och cachen likaså. städa upp</string>
-    <string name="notif_event_uninstall_title">Avinstallerades framgångsrikt! för att rensa upp filrester</string>
-    <string name="notif_clean_reminder_title">Det ligger mycket skräp på hög. Rengör allt på en gång.</string>
-    <string name="notif_event_battery_below_50_title">Batteriet är mer än halvfullt. Ta hand om det nu, det håller i sig tills du kommer hem.</string>
-    <string name="notif_event_battery_below_20_title">Lågt batteri. Vill du veta vem som stjäl din el? Klicka för att se rankingen.</string>
-    <string name="notif_event_charging_title">Inkopplad. Kvällens uppgift: fylla på och sedan rengöra.</string>
-    <string name="notif_event_charging_full_title">Fulladdad och redo att gå. En sista kontroll: Har soporna rensats?</string>
-    <string name="notif_event_charging_to_80_title">Slutspurten är 80 %. Töm soporna och packa lätt för att välkomna full kraft.</string>
-    <string name="notif_event_charging_disconnect_title">Koppla ur och kör iväg. Kom ihåg att ta dig tid att rensa ur soporna och hålla dig i toppform.</string>
-    <string name="notif_event_app_update_title">En ny version har kommit. Allt som blir över från den gamla versionen är helt sanerat.</string>
-    <string name="notif_event_network_change_title">Webben förändras! Visa aktuell nätverksstatus 1</string>
-    <string name="notif_event_screen_lock_title">Lägg ifrån dig telefonen och lämna den till oss. Viloskärmstid = vårdtid.</string>
-    <string name="notif_event_screen_on_after_lock_title">Vi träffas igen, har du fastnat? Det mesta är skräp, försök rensa bort det.</string>
-    <string name="notif_event_storage_free_drop_title">Lagringsutrymmet har ändrats. Låt oss se vad som tar plats?</string>
-    <string name="notif_event_scheduled_push_1_title">Det skräp som har samlats så länge rensas ut på en gång.</string>
-    <string name="notif_event_scheduled_push_2_title">Är batteriet inte lika hållbart som tidigare? Kolla in det.</string>
-    <string name="notif_event_app_inactive_title">Länge utan att se, det har väntat. Kom tillbaka och rensa ut soporna.</string>
-    <string name="notif_event_scheduled_push_3_title">Ett tryck till dina spellistor – ställ in widgeten</string>
+    <string name="notif_event_screenshot_title">Ny skärmdump här, se om du vill behålla den</string>
+    <string name="notif_event_install_title">Den nya appens cache är här, klicka och se</string>
+    <string name="notif_event_uninstall_title">Appen är precis avinstallerad, men det finns fortfarande rester kvar. Kolla in det.</string>
+    <string name="notif_clean_reminder_title">Har inte rensat mobilen på länge, det känns tungt. Kollar bara.</string>
+    <string name="notif_event_battery_below_50_title">Klicka här så förstår du – rensa först när batterin är över hälften</string>
+    <string name="notif_event_battery_below_20_title">Laddningen är låg, håll inte ut – öppna och bli klar</string>
+    <string name="notif_event_charging_title">Nu är den ansluten, öppna bara för att kolla på cachan</string>
+    <string name="notif_event_charging_full_title">Den är fulladdad nu, slösa inte bort den. Kolla cache-nivån.</string>
+    <string name="notif_event_charging_to_80_title">Laddar, men har tid att rensa skräp</string>
+    <string name="notif_event_charging_disconnect_title">Ta ut laddaren och gå offline, öppna och titta</string>
+    <string name="notif_event_app_update_title">Appen har precis uppdaterats, det är dags att rensa den gamla cachan</string>
+    <string name="notif_event_network_change_title">Internetet är nere, öppna och kolla lokal cachning</string>
+    <string name="notif_event_screen_lock_title">Skärmen är avstängd, bakgrundsrengöringen börjar nu</string>
+    <string name="notif_event_screen_on_after_lock_title">Skärmen tänds direkt när du tittar upp, klicka för att kontrollera cachan</string>
+    <string name="notif_event_storage_free_drop_title">Platsen är liten igen, klicka och se vem som tar upp plats</string>
+    <string name="notif_event_scheduled_push_1_title">Förra gången rensade jag bara halvvägs och slutade sedan. Kollar nu.</string>
+    <string name="notif_event_scheduled_push_2_title">Bakgrundsappar dränerar din batteri i tysthet, kolla in det</string>
+    <string name="notif_event_app_inactive_title">Det var länge sedan, jag trodde du hade glömt. Klicka och kolla.</string>
+    <string name="notif_event_scheduled_push_3_title">Lägg till en widget på hemskärmen och rensa utan att öppna appen</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Ett tryck till dina spellistor – ställ in widgeten</item>
-        <item>Gör allt enklare med en widget – lägg till en musikgenväg</item>
-        <item>Spela snabbt utan att låsa upp – aktivera startskärmswidgeten</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Du glömde något</string>
+    <item>Lägg till en widget på hemskärmen och rensa utan att öppna appen</item>
+    <item>Lägg till en widget så att rensningen alltid finns nära</item>
+    <item>Din widget är klar. Ge den en plats på hemskärmen</item>
+    <item>Lägg till en widget med ett tryck och rensa från hemskärmen</item>
+    <item>Lägg till en widget för enklare rensning</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Kom tillbaka, enklare rengöring på bara 3 sekunder</string>
     <string name="notif_event_app_background_content">Kom och avsluta rengöringen så går det smidigare.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Du glömde något</item>
-        <item>Ett steg kvar</item>
-        <item>Goda nyheter</item>
-        <item>Du gick för snabbt</item>
-        <item>Lämna inte skräp över natten</item>
-    </string-array>
+    <item>Kom tillbaka, enklare rengöring på bara 3 sekunder</item>
+    <item>Det fanns fortfarande skräp på den sidan</item>
+    <item>Skynda inte att gå, rengör bara lite snabbt</item>
+    <item>Bara ett steg kvar, kom tillbaka och rensa upp</item>
+    <item>Gå inte ut, rengöringen är inte klar än</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Kom och avsluta rengöringen så går det smidigare.</item>
         <item>Ett tryck till för att avsluta rengöringen och frigöra mer utrymme.</item>
@@ -530,231 +532,236 @@
         <item>Din telefon kan vara ännu snabbare — kom och se optimeringen.</item>
         <item>Kom och avsluta rengöringen så går det smidigare.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Skanningsresultaten är klara – skräp tar plats. Rengör nu</string>
+    <string name="notif_event_scan_done_uncleaned_title">Skanning är klar, bara det sista stadiet kvar att rengöra</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Skanningsresultaten är klara – skräp tar plats. Rengör nu</item>
-        <item>Ett steg kvar: kom tillbaka och frigör utrymme direkt.</item>
-        <item>Har du glömt att rengöra efter skanningen? 10 sekunder för att göra din telefon lättare.</item>
-        <item>Skräp finns kvar på din telefon – resultaten sparade. Kom tillbaka för att rengöra med ett tryck.</item>
-        <item>Senaste genomsökningen hittade flera föremål att rengöra. Kom och avsluta det.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Städningen är inte klar än – kom och avsluta det sista steget.</string>
+    <item>Skanning är klar, bara det sista stadiet kvar att rengöra</item>
+    <item>Skanning klar, bara en liten stund kvar att rengöra</item>
+    <item>Test är klart, kom in och rensa skräpet nu</item>
+    <item>Skanning är klar, skräpet väntar fortfarande på att rensas</item>
+    <item>Du har precis skannat men inte rengjort än, kom in och kolla</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Rengöringen är inte klar än, kom tillbaka och fortsätt</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Städningen är inte klar än – kom och avsluta det sista steget.</item>
-        <item>Städning avbruten: halvvägs. Avsluta för en lättare telefon.</item>
-        <item>Städningen är nästan klar — lämna inte skräpet bakom dig.</item>
-        <item>Du lämnade mitten rent — avsluta det och känn skillnaden.</item>
-        <item>Avbruten rengöring kan fortsätta när som helst. Kom och avsluta det.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Fotot raderat — säkert flyttat till papperskorgen.</string>
+    <item>Rengöringen är inte klar än, kom tillbaka och fortsätt</item>
+    <item>Rengöringen avbröts nyss, fortsätt rengöra</item>
+    <item>Det är bara lite kvar, vill du fortsätta?</item>
+    <item>Rengöringen är pausad, fortsätt frigöra utrymme</item>
+    <item>Rengöringsuppgiften är inte klar, kom tillbaka och fortsätt</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Bilden har raderats, gå till papperskorgen och rensa upp</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Fotot raderat — säkert flyttat till papperskorgen.</item>
-        <item>Har precis tagit bort ett foto — se hur mycket utrymme du frigjorde?</item>
-        <item>Foto raderad — radera permanent för att frigöra utrymme nu.</item>
-        <item>Foto säkert raderat — lagringsstatus uppdaterad.</item>
-        <item>Foto raderade - du kan rensa liknande skärmdumpar också.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Video raderad — stort utrymme frigörs.</string>
+    <item>Bilden har raderats, gå till papperskorgen och rensa upp</item>
+    <item>Bilden är borttagen, rensa papperskorgen också</item>
+    <item>Bilden har hamnat i papperskorgen, kom in och rensa upp</item>
+    <item>Bilderna i papperskorgen tar fortfarande plats, rensa dem</item>
+    <item>Den nyligen raderade bilden, vill du verkligen rensa bort den?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Videon har raderats, töm återvinningsskåpet för att spara mer utrymme</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Video raderad — stort utrymme frigörs.</item>
-        <item>Stor video togs bort — lagringstrycket lättade direkt.</item>
-        <item>Video raderad — kontrollera din nuvarande lagringsstatus.</item>
-        <item>Radera klar — töm papperskorgen för att frigöra utrymme helt.</item>
-        <item>Video raderad — det kan finnas fler bortglömda stora videor att rensa.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Ljud raderat – små filer läggs till. Fortsätta.</string>
+    <item>Videon har raderats, töm återvinningsskåpet för att spara mer utrymme</item>
+    <item>Videon har raderats, men utrymmet är inte frigivet än</item>
+    <item>Videon har lagts i återvinningsskåpet, kom och rensa upp</item>
+    <item>En video har raderats, återvinningsskåpet behöver rensas</item>
+    <item>Det finns fortfarande utrymme i återvinningsskåpet som behöver tas bort</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Ljudet är borta, men cachningen har kvar några fragment. Klicka för att se.</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Ljud raderat – små filer läggs till. Fortsätta.</item>
-        <item>Det ljudet är borta - fler liknande oanvända filer kan också rengöras.</item>
-        <item>Ljud raderat — lagringsinformation uppdaterad. Kom och titta.</item>
-        <item>1 ljudfil raderad — lagringslistan uppdaterad.</item>
-        <item>Ljud raderat — töm papperskorgen för att slutföra frigörandet av utrymme.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Filen raderad – lite mer lagringsutrymme frigjort.</string>
+    <item>Ljudet är borta, men cachningen har kvar några fragment. Klicka för att se.</item>
+    <item>Ljudet är borta, rensa också återvinningsbehållaren.</item>
+    <item>Rensning lyckades. Kom och töm återvinningsbehållaren nu.</item>
+    <item>Ett ljudavsnitt har raderats, återvinningsbehållaren behöver rensas.</item>
+    <item>Kom in och rensa gamla inspelningar i cachningskatalogen.</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Filen har raderats, rensa återvinningsspåret</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Filen raderad – lite mer lagringsutrymme frigjort.</item>
-        <item>Filen raderad – röran kommer inte att störa din telefon längre.</item>
-        <item>Fil raderad - se vad mer du kan rensa.</item>
-        <item>Fil raderad — ändringar synkroniserade, lagringsstatus uppdaterad.</item>
-        <item>Den filen är rensad – tar tillbaka utrymme nu.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Bild nedladdad — öppna den och ta en titt.</string>
+    <item>Filen har raderats, rensa återvinningsspåret</item>
+    <item>Filen har raderats, men utrymmet är inte frigivet än</item>
+    <item>Filen har hamnat i återvinningsspåret, rensa det lite</item>
+    <item>Filen har raderats, kom och frigör lite utrymme</item>
+    <item>Filen har raderats, det är ännu bättre att tömma återvinningsspåret</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Bildladdning klar, kolla var den sparades</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Bild nedladdad — öppna den och ta en titt.</item>
-        <item>Bild nedladdad — rensa dubbletter av foton i ditt album medan du håller på</item>
-        <item>Hämtning klar — bilden sparas säkert. Kom och kolla liknande bilder</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Video nedladdad — den är inte liten. Se hur mycket utrymme gamla videor kan frigöra</string>
+    <item>Bildladdning klar, kolla var den sparades</item>
+    <item>Ny bild har precis lagts till i albumet, öppna och kolla</item>
+    <item>Är nya bilderna dubbletter av gamla? Kolla för att ta reda på det</item>
+    <item>Laddning klar, dags att rensa bort dubbletter i albumet</item>
+    <item>Bildladdning klar, kolla hur mycket utrymme som återstår</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Videolistan är snart full, gå och kolla</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Video nedladdad — den är inte liten. Se hur mycket utrymme gamla videor kan frigöra</item>
-        <item>Ny video sparad – hitta stora videor att radera och frigöra utrymme. Knacka på mig</item>
-        <item>Videor tar plats – vi hittade städbara föremål för att göra din telefon lättare. Tryck här</item>
-        <item>Nedladdningen klar! Rengör några gamla videor och utrymme kommer tillbaka. Knacka på mig</item>
-        <item>Ny video sorterad — lätt att hitta eller rengöra. Tryck för att se</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Ljud nedladdat — gör i ordning ditt musikbibliotek med ett tryck. Knacka på mig</string>
+    <item>Videolistan är snart full, gå och kolla</item>
+    <item>Klicka här för att se den stora videon som precis laddats ner</item>
+    <item>Nedladdning klar, kolla hur mycket utrymme som är upptaget</item>
+    <item>Precis klart med videon, mobilen är lite full nu</item>
+    <item>Klicka här för att välja ut videorna som tar upp plats</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Var är den nya ljudfilen? Kolla när du öppnar appen.</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Ljud nedladdat — gör i ordning ditt musikbibliotek med ett tryck. Knacka på mig</item>
-        <item>Nytt ljud sorterat — rengör gammalt ljud medan du är här. Knacka på mig</item>
-        <item>Blir musikbiblioteket fullt? Kontrollera rengörbart ljud. Tryck här</item>
-        <item>Ljud nedladdat — dedupe med ett tryck. Knacka på mig för att städa</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Ny fil sparad — rensa gamla filer och ledigt utrymme. Tryck här</string>
+    <item>Var är den nya ljudfilen? Kolla när du öppnar appen.</item>
+    <item>Ljudfilen är precis nedladdad, det är dags att rensa upp lite på lagret.</item>
+    <item>Ny ljudfil har laddats ner, kom in och kolla.</item>
+    <item>Ljudfilen är precis nedladdad, mobilen känns lite trång nu.</item>
+    <item>Ljudfilen är nedladdad, det är också dags att rensa upp lite på lagret.</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Filen har laddats ner, dags att organisera lagringen</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Ny fil sparad — rensa gamla filer och ledigt utrymme. Tryck här</item>
-        <item>Ladda ner klar – se vilka gamla filer du kan rensa. Knacka på mig</item>
-        <item>Ny fil klar — smart arkiv + ren. Tryck på mig för att börja</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Papperskorgen tömd — lagringen uppdaterad. Kontrollera ditt senaste utrymme.</string>
+    <item>Filen har laddats ner, dags att organisera lagringen</item>
+    <item>Filen är precis nedladdad, låt oss rensa lite utrymme</item>
+    <item>Klicka här för att klassificera den nya filen ordentligt</item>
+    <item>Vad som laddades ner till den nya mappen får du se när du öppnar den</item>
+    <item>Filen är nedladdad, kom in och organisera den lite</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Tomma klart, se hur mycket utrymme som frigjorts</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Papperskorgen tömd — lagringen uppdaterad. Kontrollera ditt senaste utrymme.</item>
-        <item>Papperskorgen tömd — kom djuprengör resterna.</item>
-        <item>Tömdes framgångsrikt — mer skräp att rengöra. Kom och titta.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Rengör nu</string>
+    <item>Tomma klart, se hur mycket utrymme som frigjorts</item>
+    <item>Papperskorgen är tom, mobilen är plötsligt lättare</item>
+    <item>Papperskorgen är helt tom, mobilen är lättare att använda</item>
+    <item>Papperskorgen är helt tom, det finns fortfarande lite utrymme kvar</item>
+    <item>Tomma klart, hur mycket utrymme finns det kvar att använda?</item>
+  </string-array>
+    <string name="notif_event_action_clean">Rensa</string>
     <string name="notif_event_action_open_home">Öppna</string>
-    <string name="notif_event_action_manage">Hantera appar</string>
-    <string name="notif_event_action_check_battery">Kontrollera batteriet</string>
-    <string name="notif_event_action_check_network">Kontrollera nätverket</string>
+    <string name="notif_event_action_manage">Hantera</string>
+    <string name="notif_event_action_check_battery">Kolla batteri</string>
+    <string name="notif_event_action_check_network">Visa dataanvändning</string>
     <string name="notif_days_unit">dag</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Lagringsutrymmet har ändrats. Låt oss se vad som tar plats?</item>
-        <item>Rumsliga förändringar har upptäckts. Det kan finnas lite nytt skräp, ta en titt?</item>
-        <item>Det tillgängliga utrymmet har flyttats. Vet du vem som åt det? Klicka för att ta en titt.</item>
-        <item>Är utrymmet knappt? Har precis upptäckt ändringen, låt oss ta en titt på detaljerna.</item>
-        <item>Påminnelse om utrymmesbyte: Du kan samla på dig mycket sopor. Kolla upp det?</item>
-    </string-array>
+    <item>Platsen är liten igen, klicka och se vem som tar upp plats</item>
+    <item>Gå in och titta, albumet har fått nya bilder</item>
+    <item>Chatt-cacheen blir bara större, öppna och se sanningen</item>
+    <item>En hög med skräp har dykt upp igen, kom in och se vad det är</item>
+    <item>Klicka här, skräpmassan är stor men ingen har rensat den</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Lågt batteri. Vill du veta vem som stjäl din el? Klicka för att se rankingen.</item>
-        <item>Bottnar snart. Om du rensar bort apparna som stjäl elektricitet kan du fortfarande överleva ett tag.</item>
-        <item>Batteriet börjar ta slut. Att rensa bort några bakgrunder är bättre än att inte göra någonting.</item>
-        <item>Batteriet är rött. Du kan fortfarande spara den, klicka för att öppna den och ta en titt.</item>
-        <item>Mindre än 20% rmains. Låt oss göra lite energibesparande första hjälpen och städa upp.</item>
-    </string-array>
+    <item>Laddningen är låg, håll inte ut – öppna och bli klar</item>
+    <item>Orkar inte vänta till hemmet, kom in och rensa cacheminnet</item>
+    <item>Laddningsindikatorn är röd, gå in och kolla</item>
+    <item>Laddningen är slut, kom in och se vem som är skyldig</item>
+    <item>Laddningen är snart slut, öppna och se om det fortfarande går att rädda</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Batteriet är mer än halvfullt. Ta hand om det nu, det håller i sig tills du kommer hem.</item>
-        <item>Batteriet är mer än halvfullt. Att ta hand om batteriet nu är mycket lättare än att vänta till 20 %.</item>
-        <item>Batteriet är halvt slut. Hur länge kan det pågå? Klicka för att ta en titt.</item>
-        <item>Batteriet är mer än halvfullt. Det är dags att ta hand om backend, vänta inte på att det ska bli nervöst.</item>
-        <item>Halva batteriet är kvar. Rensa bort de stora kraftsugna spelarna och gör andra halvlek mer stabil.</item>
-    </string-array>
+    <item>Klicka här så förstår du – rensa först när batterin är över hälften</item>
+    <item>Batterin har sjunkit under mittlinjen, klicka för att rensa cachet</item>
+    <item>Bara halva laddning kvar, gå in och organisera albumen</item>
+    <item>Batterin är stabilt, klicka för att skanna och rensa cachet</item>
+    <item>Batterin är på medelnivå, klicka för att enkelt rensa cachet</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Slutspurten är 80 %. Töm soporna och packa lätt för att välkomna full kraft.</item>
-        <item>Fortfarande 20% short full laddning. Sluta stirra på din skärm och låt oss ta hand om soporna.</item>
-        <item>80 %: Ett steg bort från perfektion. Klicka en gång så rensas den helt när batteriet är fulladdat.</item>
-        <item>80%, a bra batteri för en bra mobiltelefon. Städar du en runda medan det är varmt?</item>
-        <item>De senaste 20% i som vi fick. Du tittar på batteriet och vi städar soporna.</item>
-    </string-array>
+    <item>Laddar, men har tid att rensa skräp</item>
+    <item>Nästan fullt, mycket skräp, kom och se vem som är skyldig</item>
+    <item>Bara en liten stund kvar, klicka för att rensa skräp</item>
+    <item>Bara lite batteri kvar, öppna och bli ren</item>
+    <item>Laddar medan du väntar, klicka för att rensa cachet</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Fulladdad och redo att gå. En sista kontroll: Har soporna rensats?</item>
-        <item>Efter laddning är känslan av ritual full. Vad sägs om att rensa ut skräpet för att fira det?</item>
-        <item>100%, sbord idag. En omgång till och det är felfritt.</item>
-        <item>100 %. Det sista steget innan du drar ut kontakten: rensa ur papperskorgen, trettio sekunder.</item>
-        <item>Avslutad med full kraft. En sista städning, perfekt.</item>
-    </string-array>
+    <item>Den är fulladdad nu, slösa inte bort den. Kolla cache-nivån.</item>
+    <item>Den är fulladdad, kom in och rensa skräpet medan det är färskt.</item>
+    <item>Den är fulladdad, dags att rensa. Klicka för att rensa cache.</item>
+    <item>Den är fulladdad och bildgalleriet behöver rensas. Kom och kolla.</item>
+    <item>Den är fulladdad och väntar. Kom in och städa upp skräpet.</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Webben förändras! Visa aktuell nätverksstatus 1</item>
-        <item>Nätverksdesertering. Titta inte på signalen när du städar, klicka bara på den och skanna.</item>
-        <item>Kan du inte öppna sidan? Rengöring är alltid online.</item>
-        <item>Du kan arbeta offline och papperskorgen kan rensas nu.</item>
-        <item>Om det inte finns någon signal krävs ingen data för rengöring, klicka bara.</item>
-    </string-array>
+    <item>Internetet är nere, öppna och kolla lokal cachning</item>
+    <item>Nu när nätverket har bytts, öppna och kolla cachningen</item>
+    <item>Nätverket är instabilt, men oroa dig inte, öppna och rengör allt</item>
+    <item>Anslutningen är borta, klicka in och kolla det lokala skräpet</item>
+    <item>Nätverket är återanslutet, gå in och kolla cachningen</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Inkopplad. Kvällens uppgift: fylla på och sedan rengöra.</item>
-        <item>Du vilar, den laddas. Låt den också städa upp soporna.</item>
-        <item>Under laddningstiden räcker det med att rensa bort skräpet som har samlats under lång tid.</item>
-        <item>Först när elen är inkopplad kan backstagepersonalen våga jobba fritt.</item>
-        <item>Blir du lite varm när du laddar? Att rensa bakgrunden kan sänka temperaturen.</item>
-    </string-array>
+    <item>Nu är den ansluten, öppna bara för att kolla på cachan</item>
+    <item>Laddning börjar, kom in och gör en djuprengörning</item>
+    <item>Den har precis börjat laddas, öppna och rensa skräpet</item>
+    <item>Laddningen har börjat, öppna nu så blir det rent direkt</item>
+    <item>Laddaren är redo, gå in och kolla på cachan</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Koppla ur och kör iväg. Kom ihåg att ta dig tid att rensa ur soporna och hålla dig i toppform.</item>
-        <item>När laddningen är över, packa ihop och ge dig av. Rensa bara upp det så blir det perfekt.</item>
-        <item>Fulladdad och redo att användas. Att städa soporna smidigt, det är ingen brist idag.</item>
-        <item>Laddningen slutar. Nästa utrymme ska städas upp och uppgraderas en nivå i taget.</item>
-        <item>Stanna inte vid strömavbrott. En sak kvar: städning.</item>
-    </string-array>
+    <item>Ta ut laddaren och gå offline, öppna och titta</item>
+    <item>Strömmen är av, utan nätverk, klicka för att se lokalt</item>
+    <item>Ta ut strömmen och öppna direkt, så blir allt rent</item>
+    <item>Strömmen är av, se hur länge batteriet räcker</item>
+    <item>Kabeln är utdragen perfekt, gå in och organisera albumen</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Vi träffas igen, har du fastnat? Det mesta är skräp, försök rensa bort det.</item>
-        <item>Olåst? Öppna inte andra appar först och rensa papperskorgen i trettio sekunder.</item>
-        <item>Det första att låsa upp är vi. Rensa ut soporna så kommer den att älska dig mer.</item>
-        <item>Trettio sekunder efter upplåsning. Den mest värdefulla användningen: rengöring av sopor.</item>
-        <item>Din mobiltelefon sa: Backend är lite blockerad, kan du hjälpa mig?</item>
-    </string-array>
+    <item>Skärmen tänds direkt när du tittar upp, klicka för att kontrollera cachan</item>
+    <item>Uppslåckt, finns det fortfarande tillräckligt med utrymme?</item>
+    <item>Skärmen är tänd, en snabb blick visar hur mycket utrymme som används</item>
+    <item>Skärmen har precis tänds, kom in och organisera bilderna</item>
+    <item>Skärmen är tänd, klicka bara och du förstår sanningen direkt</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Lägg ifrån dig telefonen och lämna den till oss. Viloskärmstid = vårdtid.</item>
-        <item>Att sluta arbeta betyder inte att sluta arbeta. Jag ska ge dig en överraskning nästa gång jag sätter på skärmen.</item>
-        <item>Blir lugnt bättre medan du vilar skärmen. Klicka så gör vi resten.</item>
-        <item>En sista sak innan du låser skärmen: Klicka på Rensa. Nytt utseende i morgon bitti.</item>
-        <item>Skärmen blir mörk. Gör arrangemang nu och se resultatet imorgon.</item>
-    </string-array>
+    <item>Skärmen är avstängd, bakgrundsrengöringen börjar nu</item>
+    <item>Bra att göra innan låsskärmen, kolla cache:n snabbt</item>
+    <item>Perfekt innan sänggåendet, kolla och organisera albumen</item>
+    <item>Skärmen kommer snart att vara mörk, öppna Snabbt Rengöring</item>
+    <item>Lägg av på mobilen innan skärmen släcks, öppna och förstå direkt</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Den nya appen har flyttat in, och cachen likaså. städa upp</item>
-        <item>Vi förstår glädjen med att installera en ny app. Det är bara det att cachen lugnt hopar sig.</item>
-        <item>Ny app? Cachen finns också här, rensa den med ett klick.</item>
-        <item>Det nya kommer in och det gamla går ut. Rengör den ofta och installera den som du vill.</item>
-        <item>En till? Utrymmet blir tyst och tyst, kom och städa upp det.</item>
-    </string-array>
+    <item>Den nya appens cache är här, klicka och se</item>
+    <item>Nytt app är installerat, dags att rensa installationspaketet</item>
+    <item>Ett nytt ansikte har tyst flyttat in i cacheminnet, kom och se</item>
+    <item>Kolla, det nya appens cachepaket är på väg upp</item>
+    <item>Klicka här, det nya appens installationspaket tar fortfarande plats</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Avinstallerad framgångsrikt! för att rensa upp filrester</item>
-        <item>Avinstallerad men inte rensad. Klicka för att avsluta.</item>
-        <item>Appen är avinstallerad, men svansen finns kvar. Städa upp med ett klick och säg hejdå en gång för alla.</item>
-        <item>Missa inte det andra steget: ta bort appen + ta bort resterna. Ett klick och klart.</item>
-        <item>Återstoden kommer att äta upp hälften av det lediga utrymmet. Skanna djupt och rensa allt.</item>
-    </string-array>
+    <item>Appen är precis avinstallerad, men det finns fortfarande rester kvar. Kolla in det.</item>
+    <item>Gå in och kolla, även efter avinstallation finns det fortfarande skräp kvar.</item>
+    <item>Avinstallationen lyckades, men det blir bara rent efter en rensning.</item>
+    <item>Efter avinstallation finns det fortfarande rester kvar. Kolla in det för en renare känsla.</item>
+    <item>Rymden har inte ändrats efter avinstallationen? Gå in och se varför.</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>En ny version har kommit. Allt som blir över från den gamla versionen är helt sanerat.</item>
-        <item>+1 för version, +1 för cache, för djupskanning.</item>
-        <item>Uppdateringen är klar och de återstående installationspaketen kan rensas upp med ett klick.</item>
-        <item>Uppdateringen är klar, låt oss avsluta. Rensa upp det så tar jag över.</item>
-        <item>Varje uppdatering kommer att lämna gamla filer och hantera dem snabbt.</item>
-    </string-array>
+    <item>Appen har precis uppdaterats, det är dags att rensa den gamla cachan</item>
+    <item>Cachen har ökat igen direkt efter uppdateringen, kolla in den</item>
+    <item>Efter uppdateringen, kolla in cachan för enklare upplevelse</item>
+    <item>Uppdateringspaketet tar fortfarande upp ganska mycket plats, öppna och rensa</item>
+    <item>Nytt versionsrester väntar fortfarande på att du rensar dem, klicka på mig!</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Ännu en skärmdump? 1 Det är dags att rensa skärmdumparna</item>
-        <item>Hittade en ny skärmdump, klicka för att visa och rensa upp den~</item>
-        <item>Det finns fler och fler skärmdumpar, rengöring med ett klick kan hjälpa dig att göra utrymme</item>
-        <item>Skärmdumpen togs framgångsrikt, dubbletter och suddiga kan filtreras bort med ett klick.</item>
-        <item>Nya skärmdumpar läggs till i databasen och dubbletter av bilder har ställts i kö för att rensas med ett klick.</item>
-    </string-array>
+    <item>Ny skärmdump här, se om du vill behålla den</item>
+    <item>En hel hög med skärmdumpar i albumet, öppna bara för att få allt snyggt</item>
+    <item>Skärmdumpen är klar, dags att organisera albumet lite</item>
+    <item>Ny bild precis tagen, öppna den för en överraskning</item>
+    <item>Ny skärmdump i albumet, gå in och titta för enklare</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Det ligger en hel del skräp på hög. Rengör allt på en gång.</item>
-        <item>Senast rengöras för %1$d för dagar sedan, klicka för att bearbeta det nu</item>
-        <item>Jag har inte varit här på några dagar, så jag ska städa upp det och gå tillbaka till slagfältet lätt.</item>
-        <item>Clearingkvoten är inte utnyttjad idag. Jag kommer att rensa det när jag kommer tillbaka.</item>
-        <item>Cachen börjar bli full och väntar på att du ska kolla in den</item>
-    </string-array>
+    <item>Har inte rensat mobilen på länge, det känns tungt. Kollar bara.</item>
+    <item>Har samlat på mig skräp så länge, dags att gå in och rensa lite.</item>
+    <item>Mobilen har varit så dammig länge, öppnar och rensar nu.</item>
+    <item>Öppnar albumet, cachan har redan blivit en bergskedja.</item>
+    <item>Cachen har hållit dig uppe så länge, dags att rensa. Klicka på mig!</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Länge utan att se, det har väntat. Kom tillbaka och rensa ut soporna.</item>
-        <item>Har inte sett dig på flera dagar. Det finns ingen vila för soporna. Kom tillbaka och sopa upp det.</item>
-        <item>Cachen står i kö. Klicka och de försvinner.</item>
-        <item>Papperskorgen är upptagen när du är borta. Töm med ett klick och känn dig lika fräsch som alltid.</item>
-        <item>Tillbaka? Rensa soporna först. På trettio sekunder är telefonen lika lätt som ny.</item>
-    </string-array>
+    <item>Det var länge sedan, jag trodde du hade glömt. Klicka och kolla.</item>
+    <item>Har inte öppnat det på länge, gå in och se hur fräscht det är.</item>
+    <item>Det var länge sedan. Kom in och se vad som hänt.</item>
+    <item>Ikonen ser nästan ut att ha blivit gräs. Klicka och kolla.</item>
+    <item>Ni måste ha glömt, vi har väntat länge. Kom och kolla.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Det skräp som har samlats så länge rensas ut på en gång.</item>
-        <item>Dags att städa. Dagens skräp väntar på att du ska klicka på det.</item>
-        <item>Dagens Space Daily anlände. Rensa ut och håll det lätt.</item>
-        <item>Vissa filer är mycket större än du tror, ta en titt</item>
-        <item>Hitta killen som tog upp några G\'s och rensa upp det</item>
-        <item>Den stora dokumentlistan är klar, kom och ta en titt.</item>
-        <item>Vem tar mest plats? Avslöjas på en sekund.</item>
-        <item>Serietagning är bra, efterbehandling är smärtsamt. Lämna det till oss.</item>
-        <item>Liknande foton står i rad, det är upp till dig att välja vilken du vill behålla</item>
-        <item>För många liknande bilder? Vi hjälper dig att jämföra och ta bort dubbletter med bara ett klick.</item>
-        <item>De cachade offlinevideorna bör rensas.</item>
-        <item>Det återstående ljudet kommer också att rengöras.</item>
-    </string-array>
+    <item>Förra gången rensade jag bara halvvägs och slutade sedan. Kollar nu.</item>
+    <item>Renserna stannade halvvägs, går in och kollar var det är.</item>
+    <item>Har samlat på mig en massa stora videor som tar mycket plats, kollar nu.</item>
+    <item>Det finns en superstor fil som fortfarande är kvar och inte rensad, öppnar den nu.</item>
+    <item>Det finns en HD-video som tar mycket plats, kollar in den nu.</item>
+    <item>Dubbla bilder tar upp plats, kolla in dem så kan du rensa</item>
+    <item>Dubbletter av ansikten i albumet, tryck på mig för att ta bort några</item>
+    <item>Många liknande landskapsbilder, kolla och välj ut vad du kan ta bort</item>
+    <item>Stora videor tar upp plats, öppna dem och kolla</item>
+    <item>Röstmeddelanden fyller chatt-cache, gå in och organisera dem</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Är batteriet inte lika hållbart som tidigare? Kolla in det.</item>
-        <item>Vem stjäl din el? Du kommer att veta när du slår upp det.</item>
-        <item>Att stänga av dessa förlänger batteriets livslängd.</item>
-        <item>Vissa appar är installerade men används aldrig. Se vilka de är?</item>
-        <item>Att behålla appar som du inte använder är också en börda, listan har gjorts</item>
-        <item>När det gäller integritet, ju tidigare det tas om hand, desto bättre.</item>
-        <item>Göm de viktiga och bli av med de onödiga. låt mig hjälpa dig</item>
-        <item>Vart tar trafiken vägen? Ta reda på vem som använder den.</item>
-        <item>Trafikdetaljerna är klara och tydliga med ett ögonkast.</item>
-        <item>Det finns en app som i hemlighet ansluter till Internet i bakgrunden.</item>
-    </string-array>
+    <item>Bakgrundsappar dränerar din batteri i tysthet, kolla in det</item>
+    <item>Batteriet sjunker i smyg under hela natten, tryck på mig</item>
+    <item>Synkroniserade appar förbrukar mer energi varje dag, kolla in det</item>
+    <item>Många appar har inte öppnats på ett halvår, gå in och kolla</item>
+    <item>Förinstallerade program tar bara plats, gå in och städa upp</item>
+    <item>Titta här, det finns inte så många vanliga appar</item>
+    <item>Lås privata bilder i ett privat utrymme, klicka och titta</item>
+    <item>Dölj dina selfies i smyg så ingen hittar dem, kom in och upptäck dem</item>
+    <item>Dagens data är snart slut, klicka och titta</item>
+    <item>Energisparläget sparar massor av data, gå och se det</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} av skräp – rensa det med ett tryck</string>
     <string name="notif_scheduled_large_files">{total} stora filer – rensa upp med lätthet</string>
     <string name="notif_scheduled_duplicate_photos">{groups} grupper av dubbletter av foton – spara {size}</string>
@@ -762,7 +769,7 @@
     <string name="notif_scheduled_videos">{total} av videoklipp – ta bort {n} för att frigöra utrymme</string>
     <string name="notif_scheduled_audio">{total} ljudfiler – dags att städa</string>
     <string name="notif_scheduled_apps">{size} används av {idle} lediga appar</string>
-    <string name="notif_scheduled_data">{back} av data som används i bakgrunden</string>
+    <string name="notif_scheduled_data">{back} mobildata användes i bakgrunden</string>
     <string name="app_manager_uninstall_selected">Avinstallera valda</string>
     <string name="app_manager_uninstall_selected_count">Avinstallera valda (%1$d)</string>
     <string name="cache_removable">Avtagbar</string>

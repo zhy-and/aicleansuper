@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Depolama uyarısı: {size} adet önemsiz öğe bulundu. Tek dokunuşla temizleyin.</item>
+        <item>{size} önbellek oluşturuldu. Şimdi yer açın.</item>
+        <item>{size}\'ü kullanarak {apps} uygulama bulundu. Bunları temizleyin.</item>
+        <item>Sistem {size} adet geçici dosya buldu. Bunları güvenli bir şekilde temizleyin.</item>
+        <item>Bir uygulama önbellek oluşturuyor. İncelemek için dokunun.</item>
+        <item>{size} adet boş klasör ve yinelenen dosya bulundu. Bunları tek dokunuşla temizleyin.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Fotoğraflarınız yer kaplıyor. Onları sıkıştırın ve keskin tutun.</item>
+        <item>{photos} fotoğraf mı kaydedildi? Daha fazlasına yer açmak için bunları sıkıştırın.</item>
+        <item>{photos} fotoğraf {size} adet yer açabilir. Şimdi bunları sıkıştırın.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Videolar {size} kullanıyor. Bunları toplu olarak sıkıştırın ve yerden tasarruf edin.</item>
+        <item>Videolarınızı sıkıştırın ve {saving}\'e kadar kaydedin.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>{photos} bulanık fotoğraf bulundu. Daha net bir görünüm için bunları geliştirin.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>{contacts} yinelenen kişi bulundu. Bunları tek dokunuşla birleştirin.</item>
+        <item>İsimsiz {contacts} kişi bulundu. Adres defterinizi düzenleyin.</item>
+        <item>Kişileriniz son zamanlarda yedeklenmedi. Onları güvende tutun.</item>
+        <item>{contacts} iletişim kayıtları eksik. Ayrıntıları doldurun.</item>
+        <item>Yeni içe aktarılan bazı kişiler kopyadır. Şimdi onları düzenleyin.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Bir sonraki etkinliğiniz yaklaşıyor. Hazır ol.</item>
+        <item>Önemli etkinliğiniz {days} gün sonra. Hazır mısın?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Bağlantınız ne kadar hızlı? Hızlı bir hız testi çalıştırın.</item>
+        <item>Ağlar mı değiştirildi? Hangisinin daha hızlı olduğunu ve daha az veri kullandığını kontrol edin.</item>
+    </string-array>
+</resources>

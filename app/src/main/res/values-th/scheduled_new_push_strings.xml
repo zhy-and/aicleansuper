@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>การแจ้งเตือนการจัดเก็บ: พบขยะ {size} รายการ ทำความสะอาดด้วยการแตะเพียงครั้งเดียว</item>
+        <item>แคช {size} ถูกสร้างขึ้น เพิ่มพื้นที่ว่างทันที</item>
+        <item>พบแอป {apps} รายการที่ใช้ {size} ทำความสะอาดแอปเหล่านั้น</item>
+        <item>ระบบพบไฟล์ชั่วคราว {size} ไฟล์ ทำความสะอาดอย่างปลอดภัย</item>
+        <item>แอปกำลังสร้างแคช แตะเพื่อตรวจสอบ</item>
+        <item>พบโฟลเดอร์ว่างและไฟล์ที่ซ้ำกัน {size} รายการ ทำความสะอาดด้วยการแตะเพียงครั้งเดียว</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>รูปภาพของคุณกำลังกินพื้นที่ บีบอัดและรักษาให้คม</item>
+        <item>บันทึกรูปภาพแล้ว {photos} รูปใช่ไหม บีบอัดเพื่อให้มีที่ว่างมากขึ้น</item>
+        <item>รูปภาพ {photos} สามารถเพิ่มพื้นที่ว่างได้ {size} บีบอัดรูปภาพทันที</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>วิดีโอใช้ {size} บีบอัดเป็นกลุ่มและประหยัดพื้นที่</item>
+        <item>บีบอัดวิดีโอของคุณและบันทึกได้ถึง {saving}</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>พบภาพถ่ายไม่ชัดจำนวน {photos} ภาพ ปรับปรุงให้ดูชัดเจนยิ่งขึ้น</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>พบผู้ติดต่อที่ซ้ำกัน {contacts} รายการ ผสานเข้าด้วยกันในการแตะเพียงครั้งเดียว</item>
+        <item>พบผู้ติดต่อ {contacts} รายที่ไม่มีชื่อ จัดระเบียบสมุดที่อยู่ของคุณ</item>
+        <item>รายชื่อติดต่อของคุณไม่ได้รับการสำรองข้อมูลเมื่อเร็วๆ นี้ ให้พวกเขาปลอดภัย</item>
+        <item>บันทึกการติดต่อ{contacts}ไม่สมบูรณ์ กรอกรายละเอียด</item>
+        <item>ผู้ติดต่อที่นำเข้าใหม่บางรายการซ้ำกัน จัดระเบียบพวกเขาตอนนี้</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>กิจกรรมต่อไปของคุณกำลังจะมาถึง เตรียมตัวให้พร้อม</item>
+        <item>เหตุการณ์สำคัญของคุณคือใน {days} วัน คุณพร้อมหรือยัง?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>การเชื่อมต่อของคุณเร็วแค่ไหน? ทำการทดสอบความเร็วอย่างรวดเร็ว</item>
+        <item>สลับเครือข่าย? ตรวจสอบว่าอันไหนเร็วกว่าและใช้ข้อมูลน้อยกว่า</item>
+    </string-array>
+</resources>

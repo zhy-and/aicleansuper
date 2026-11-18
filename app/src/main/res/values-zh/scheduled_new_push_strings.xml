@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>存储空间告急！发现 {size} 垃圾文件，一键清理释放空间</item>
+        <item>已累积 {size} 缓存垃圾，现在清理让手机飞起来</item>
+        <item>发现 {apps} 个应用卸载残留，占用 {size}，清理它们</item>
+        <item>系统升级留下 {size} 临时文件，帮你清理干净</item>
+        <item>检测到一个应用正在疯狂产生缓存，点我处理</item>
+        <item>发现 {size} 空文件夹和重复文件，一键整理</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>照片占用了不少空间，压缩后也能保持清晰。</item>
+        <item>截图堆了 {photos} 张，压缩整理让相册清爽起来</item>
+        <item>{photos} 张照片可释放 {size}，帮你压缩省出空间</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>视频已占用 {size}，批量压缩省出一大半</item>
+        <item>视频压缩后可省 {saving}，马上试试</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>发现 {photos} 张模糊照片，增强后重获清晰</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>通讯录里有 {contacts} 个重复联系人，一键合并</item>
+        <item>发现 {contacts} 个无效联系人，清理让通讯录更干净</item>
+        <item>联系人好久没备份了，一键备份防丢失</item>
+        <item>{contacts} 个联系人信息不全，补全后更好用</item>
+        <item>刚导入的联系人有重复，帮你合并整理</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>「日程」即将来临，别忘了准备</item>
+        <item>距离「重要日程」还有 {days} 天，准备好了吗？</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>你的网速有点慢，测一下看看问题在哪</item>
+        <item>网络切换了，测下哪个更快更省流量</item>
+    </string-array>
+</resources>

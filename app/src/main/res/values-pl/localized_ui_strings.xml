@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">Wybierz aplikację</string>
+    <string name="app_manager_uninstall_confirm">Odinstalować wybrane aplikacje (%1$d)? Android poprosi o potwierdzenie każdej dezinstalacji.</string>
+    <string name="cache_access_required">Zezwól na dostęp do wszystkich plików, aby przeskanować pamięć podręczną</string>
+    <string name="cache_clean_action">Wyczyść</string>
+    <string name="cache_clean_result">Wyczyszczono %1$d z %2$d elementów</string>
+    <string name="cache_confirm_clean">Wyczyścić wybrane elementy (%1$d)?</string>
+    <string name="cleanup_report_complete">Czyszczenie zostało zakończone.</string>
+    <string name="cleanup_report_explore">Zobacz więcej narzędzi</string>
+    <string name="cleanup_report_go">Otwórz</string>
+    <string name="home_pending_items_format">Elementy do wyczyszczenia: %1$d</string>
+    <string name="info_report_title">Raport</string>
+    <string name="large_file_access_required">Wymagany jest dostęp do wszystkich plików</string>
+    <string name="large_file_delete">Usuń</string>
+    <string name="large_file_delete_amount">Usuń %1$s (%2$d)</string>
+    <string name="large_file_delete_confirm">Usunąć wybrane pliki (%1$d)?</string>
+    <string name="large_file_delete_selected">Usuń zaznaczone</string>
+    <string name="large_file_deleted_summary">Usunięto %1$d z %2$d plików</string>
+    <string name="large_file_deselect_all">Odznacz wszystko</string>
+    <string name="large_file_deselect_all_shown">Odznacz wszystkie widoczne pliki</string>
+    <string name="large_file_filter_description">Filtr „%1$s”: %2$s</string>
+    <string name="large_file_filter_size">Rozmiar</string>
+    <string name="large_file_filter_time">Okres</string>
+    <string name="large_file_filter_type">Typ</string>
+    <string name="large_file_open">Otwórz</string>
+    <string name="large_file_scanning">Skanowanie plików…</string>
+    <string name="large_file_select_all">Zaznacz wszystko</string>
+    <string name="large_file_select_all_shown">Zaznacz wszystkie widoczne pliki</string>
+    <string name="large_file_summary">Pliki: %1$d · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Dowolny okres</item>
+        <item>1 tydzień</item>
+        <item>1 miesiąc</item>
+        <item>3 miesiące</item>
+        <item>6 miesięcy</item>
+        <item>1 rok</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Wszystkie</item>
+        <item>Obrazy</item>
+        <item>Filmy</item>
+        <item>Dźwięk</item>
+        <item>Dokumenty</item>
+        <item>Archiwa</item>
+        <item>APK</item>
+        <item>Inne</item>
+    </string-array>
+    <string name="new_feature_badge_description">Nowa funkcja</string>
+    <string name="sys_android_version">Wersja Androida</string>
+    <string name="sys_discharging">Rozładowywanie</string>
+    <string name="sys_level">Poziom</string>
+    <string name="sys_status">Stan</string>
+    <string name="traffic_empty">Brak danych o ruchu sieciowym aplikacji</string>
+    <string name="traffic_guide_message">Zezwól tej aplikacji w Ustawieniach na dostęp do danych o użytkowaniu, aby zobaczyć ruch sieciowy poszczególnych aplikacji.</string>
+    <string name="traffic_loading">Wczytywanie…</string>
+    <string name="traffic_usage_required">Wymagany jest dostęp do danych o użytkowaniu. Dotknij, aby przyznać dostęp.</string>
+    <string name="vlt_delete_confirm">Trwale usunąć prywatne pliki (%1$d)?</string>
+    <string name="vlt_deselect_all">Odznacz wszystko</string>
+    <string name="vlt_import_media">Importuj zdjęcia lub filmy</string>
+    <string name="vlt_originals_remain">; liczba oryginałów pozostających na urządzeniu: %1$d</string>
+    <string name="vlt_restore_confirm">Przywrócić pliki (%1$d) do Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">Przywrócono %1$d z %2$d plików</string>
+    <string name="vlt_select_all">Zaznacz wszystko</string>
+    <string name="widget_action_files">Pliki</string>
+    <string name="widget_action_photos">Zdjęcia</string>
+</resources>

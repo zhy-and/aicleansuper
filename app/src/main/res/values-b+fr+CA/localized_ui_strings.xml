@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">Sélectionner l’application</string>
+    <string name="app_manager_uninstall_confirm">Désinstaller les %1$d applications sélectionnées ? Android vous demandera de confirmer chaque désinstallation.</string>
+    <string name="cache_access_required">Autorisez l’accès à tous les fichiers pour analyser le cache</string>
+    <string name="cache_clean_action">Nettoyer</string>
+    <string name="cache_clean_result">%1$d éléments nettoyés sur %2$d</string>
+    <string name="cache_confirm_clean">Nettoyer les %1$d éléments sélectionnés ?</string>
+    <string name="cleanup_report_complete">Le nettoyage est terminé.</string>
+    <string name="cleanup_report_explore">Découvrir d’autres outils</string>
+    <string name="cleanup_report_go">Ouvrir</string>
+    <string name="home_pending_items_format">Éléments à nettoyer : %1$d</string>
+    <string name="info_report_title">Rapport</string>
+    <string name="large_file_access_required">L’accès à tous les fichiers est nécessaire</string>
+    <string name="large_file_delete">Supprimer</string>
+    <string name="large_file_delete_amount">Supprimer %1$s (%2$d)</string>
+    <string name="large_file_delete_confirm">Supprimer les %1$d fichiers sélectionnés ?</string>
+    <string name="large_file_delete_selected">Supprimer la sélection</string>
+    <string name="large_file_deleted_summary">%1$d fichiers supprimés sur %2$d</string>
+    <string name="large_file_deselect_all">Tout désélectionner</string>
+    <string name="large_file_deselect_all_shown">Désélectionner tous les fichiers affichés</string>
+    <string name="large_file_filter_description">Filtre « %1$s » : %2$s</string>
+    <string name="large_file_filter_size">Taille</string>
+    <string name="large_file_filter_time">Période</string>
+    <string name="large_file_filter_type">Type</string>
+    <string name="large_file_open">Ouvrir</string>
+    <string name="large_file_scanning">Analyse des fichiers…</string>
+    <string name="large_file_select_all">Tout sélectionner</string>
+    <string name="large_file_select_all_shown">Sélectionner tous les fichiers affichés</string>
+    <string name="large_file_summary">%1$d fichiers · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Toutes les périodes</item>
+        <item>1 semaine</item>
+        <item>1 mois</item>
+        <item>3 mois</item>
+        <item>6 mois</item>
+        <item>1 an</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Tous</item>
+        <item>Images</item>
+        <item>Vidéos</item>
+        <item>Audio</item>
+        <item>Documents</item>
+        <item>Archives</item>
+        <item>APK</item>
+        <item>Autres</item>
+    </string-array>
+    <string name="new_feature_badge_description">Nouvelle fonctionnalité</string>
+    <string name="sys_android_version">Version d’Android</string>
+    <string name="sys_discharging">En décharge</string>
+    <string name="sys_level">Niveau</string>
+    <string name="sys_status">État</string>
+    <string name="traffic_empty">Aucun trafic détecté pour les applications</string>
+    <string name="traffic_guide_message">Dans les paramètres, autorisez cette application à accéder aux données d’utilisation pour voir le trafic par application.</string>
+    <string name="traffic_loading">Chargement…</string>
+    <string name="traffic_usage_required">L’accès aux données d’utilisation est nécessaire. Appuyez pour l’autoriser.</string>
+    <string name="vlt_delete_confirm">Supprimer définitivement %1$d fichiers privés ?</string>
+    <string name="vlt_deselect_all">Tout désélectionner</string>
+    <string name="vlt_import_media">Importer des photos ou des vidéos</string>
+    <string name="vlt_originals_remain">; %1$d fichiers d’origine restent sur l’appareil</string>
+    <string name="vlt_restore_confirm">Restaurer %1$d fichiers dans Pictures/PurGuClean ?</string>
+    <string name="vlt_restored_count">%1$d fichiers restaurés sur %2$d</string>
+    <string name="vlt_select_all">Tout sélectionner</string>
+    <string name="widget_action_files">Fichiers</string>
+    <string name="widget_action_photos">Photos</string>
+</resources>

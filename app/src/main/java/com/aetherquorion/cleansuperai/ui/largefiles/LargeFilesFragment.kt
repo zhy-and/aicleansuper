@@ -22,6 +22,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aetherquorion.cleansuperai.R
+import com.aetherquorion.cleansuperai.ui.common.inlineAdHost
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.ui.flow.CleanupResult
 import com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment
@@ -44,15 +45,15 @@ class LargeFilesFragment : Fragment() {
     private lateinit var status: TextView
     private lateinit var progress: ProgressBar
     private val filterSelections = intArrayOf(0, 0, 0)
-    private val filterOptions = listOf(
-        LargeFileType.entries.map { it.name.lowercase().replaceFirstChar(Char::uppercase) },
+    private val filterOptions by lazy { listOf(
+        resources.getStringArray(R.array.large_file_type_options).toList(),
         listOf("10 MB", "50 MB", "100 MB", "500 MB", "1 GB"),
-        listOf("All time", "1 week", "1 month", "3 months", "6 months", "1 year"),
-    )
+        resources.getStringArray(R.array.large_file_time_options).toList(),
+    ) }
     private lateinit var delete: Button
     private lateinit var selectAll: Button
     private val accessLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        if (hasAccess()) scan() else status.text = "All files access is required"
+        if (hasAccess()) scan() else status.setText(R.string.large_file_access_required)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, state: Bundle?): View {
@@ -62,12 +63,15 @@ class LargeFilesFragment : Fragment() {
             setPadding(dp(20), dp(12), dp(20), dp(16))
             setBackgroundColor(ContextCompat.getColor(ctx, R.color.bg_primary))
         }
-        root.addView(TopFilterUi.toolbar(ctx, "Large files") { parentFragmentManager.popBackStack() })
+        root.addView(TopFilterUi.toolbar(ctx, getString(R.string.home_large_files)) { parentFragmentManager.popBackStack() })
+        root.addView(inlineAdHost(ctx))
         val filters = TopFilterUi.bar(ctx, 48)
-        listOf("Type", "Size", "Time").forEachIndexed { index, title ->
+        listOf(R.string.large_file_filter_type, R.string.large_file_filter_size,
+            R.string.large_file_filter_time).forEachIndexed { index, titleRes ->
             val tab = TopFilterUi.label(ctx, "${filterOptions[index][0]}  ▾")
             filters.addView(tab, LinearLayout.LayoutParams(0, -1, 1f))
-            tab.contentDescription = "$title filter: ${filterOptions[index][0]}"
+            tab.contentDescription = getString(R.string.large_file_filter_description,
+                getString(titleRes), filterOptions[index][0])
             tab.setOnClickListener {
                 val menu = LinearLayout(ctx).apply {
                     orientation = LinearLayout.VERTICAL
@@ -75,7 +79,7 @@ class LargeFilesFragment : Fragment() {
                     background = TopFilterUi.surface(ctx)
                 }
                 menu.addView(TextView(ctx).apply {
-                    text = title
+                    setText(titleRes)
                     textSize = 12f
                     setTextColor(ContextCompat.getColor(ctx, R.color.text_secondary))
                 })
@@ -92,7 +96,8 @@ class LargeFilesFragment : Fragment() {
                         setOnClickListener {
                         filterSelections[index] = choice
                         tab.text = "${filterOptions[index][choice]}  ▾"
-                        tab.contentDescription = "$title filter: ${filterOptions[index][choice]}"
+                        tab.contentDescription = getString(R.string.large_file_filter_description,
+                            getString(titleRes), filterOptions[index][choice])
                         popup.dismiss()
                         render()
                         }
@@ -109,7 +114,7 @@ class LargeFilesFragment : Fragment() {
         status = ParityUi.status(ctx).apply { layoutParams = LinearLayout.LayoutParams(0, -2, 1f) }
         summary.addView(status)
         selectAll = ParityUi.button(ctx).apply {
-            text = "Select all"
+            setText(R.string.large_file_select_all)
             textSize = 13f
             minHeight = dp(34)
             setPadding(dp(12), 0, dp(12), 0)
@@ -129,7 +134,7 @@ class LargeFilesFragment : Fragment() {
         }
         root.addView(list)
         delete = ParityUi.button(ctx, ParityUi.ButtonKind.PRIMARY).apply {
-            text = "Delete selected"
+            setText(R.string.large_file_delete_selected)
             layoutParams = LinearLayout.LayoutParams(-1, dp(64)).apply {
                 leftMargin = dp(8); rightMargin = dp(8); bottomMargin = dp(12)
             }
@@ -144,7 +149,7 @@ class LargeFilesFragment : Fragment() {
         if (hasAccess() && !loaded) scan()
         else if (!hasAccess() && !accessRequested) {
             accessRequested = true
-            status.text = "All files access is required"
+            status.setText(R.string.large_file_access_required)
             accessLauncher.launch(FeaturePermissionCoordinator.settingsIntent(requireContext(), FeatureAccess.ALL_FILES))
         }
     }
@@ -155,7 +160,7 @@ class LargeFilesFragment : Fragment() {
         if (loaded || !isAdded) return
         loaded = true
         progress.visibility = View.VISIBLE
-        status.text = "Scanning files…"
+        status.setText(R.string.large_file_scanning)
         viewLifecycleOwner.lifecycleScope.launch {
             entries = withContext(Dispatchers.IO) {
                 Environment.getExternalStorageDirectory().walkTopDown()
@@ -180,18 +185,23 @@ class LargeFilesFragment : Fragment() {
             it.matches(LargeFileType.entries[filterSelections[0]], sizes[filterSelections[1]],
                 days[filterSelections[2]].takeIf { day -> day > 0 }?.times(24 * 60 * 60 * 1000), now)
         }
-        status.text = "${visible.size} files · ${Formatter.formatShortFileSize(requireContext(), visible.sumOf { it.sizeBytes })}"
-        selectAll.text = if (visible.isNotEmpty() && visible.all { it.path in selected }) "Deselect all" else "Select all"
+        status.text = getString(R.string.large_file_summary, visible.size,
+            Formatter.formatShortFileSize(requireContext(), visible.sumOf { it.sizeBytes }))
+        selectAll.setText(if (visible.isNotEmpty() && visible.all { it.path in selected })
+            R.string.large_file_deselect_all else R.string.large_file_select_all)
         listAdapter.submit(visible, selected)
         delete.isEnabled = selected.isNotEmpty()
-        delete.text = "Delete ${Formatter.formatShortFileSize(requireContext(), entries.filter { it.path in selected }.sumOf { it.sizeBytes })} (${selected.size})"
+        delete.text = getString(R.string.large_file_delete_amount,
+            Formatter.formatShortFileSize(requireContext(), entries.filter { it.path in selected }.sumOf { it.sizeBytes }),
+            selected.size)
     }
 
     private fun toggleEntry(item: LargeFileEntry) {
         if (!selected.add(item.path)) selected.remove(item.path)
         listAdapter.selectionChanged(item.path)
         delete.isEnabled = selected.isNotEmpty()
-        selectAll.text = if (listAdapterVisiblePaths().all { it in selected }) "Deselect all shown" else "Select all shown"
+        selectAll.setText(if (listAdapterVisiblePaths().all { it in selected })
+            R.string.large_file_deselect_all_shown else R.string.large_file_select_all_shown)
     }
 
     private fun listAdapterVisiblePaths(): List<String> {
@@ -220,9 +230,9 @@ class LargeFilesFragment : Fragment() {
     private fun showDetails(item: LargeFileEntry) {
         AlertDialog.Builder(requireContext())
             .setTitle(item.name)
-            .setMessage("${item.type} · ${Formatter.formatShortFileSize(requireContext(), item.sizeBytes)}\n${item.path}")
+            .setMessage("${filterOptions[0][item.type.ordinal]} · ${Formatter.formatShortFileSize(requireContext(), item.sizeBytes)}\n${item.path}")
             .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton("Open") { _, _ ->
+            .setPositiveButton(R.string.large_file_open) { _, _ ->
                 val uri = FileProvider.getUriForFile(requireContext(), "${requireContext().packageName}.files", File(item.path))
                 val intent = Intent(Intent.ACTION_VIEW).apply {
                     setDataAndType(uri, requireContext().contentResolver.getType(uri) ?: "*/*")
@@ -236,19 +246,19 @@ class LargeFilesFragment : Fragment() {
         val targets = entries.filter { it.path in selected }
         if (targets.isEmpty()) return
         AlertDialog.Builder(requireContext())
-            .setMessage("Delete ${targets.size} selected files?")
+            .setMessage(getString(R.string.large_file_delete_confirm, targets.size))
             .setNegativeButton(android.R.string.cancel, null)
-            .setPositiveButton("Delete") { _, _ ->
+            .setPositiveButton(R.string.large_file_delete) { _, _ ->
                 viewLifecycleOwner.lifecycleScope.launch {
                     val deleted = withContext(Dispatchers.IO) { targets.filter { File(it.path).delete() } }
                     val paths = deleted.map { it.path }.toSet()
                     entries = entries.filterNot { it.path in paths }
                     selected.removeAll(paths)
                     render()
-                    status.text = "Deleted ${deleted.size} of ${targets.size} files"
+                    status.text = getString(R.string.large_file_deleted_summary, deleted.size, targets.size)
                     if (deleted.isNotEmpty()) {
                         (activity as? MainActivity)?.openDetail(CleanupReportFragment.newInstance(
-                            "Large files", CleanupResult(targets.size, deleted.size, deleted.sumOf { it.sizeBytes })
+                            getString(R.string.home_large_files), CleanupResult(targets.size, deleted.size, deleted.sumOf { it.sizeBytes })
                         ), "cleanup_report")
                     }
                 }

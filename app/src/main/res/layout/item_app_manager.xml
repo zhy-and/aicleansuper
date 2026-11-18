@@ -64,6 +64,6 @@
             android:id="@+id/checkSelected"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Select app" />
+            android:contentDescription="@string/app_manager_select_app" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

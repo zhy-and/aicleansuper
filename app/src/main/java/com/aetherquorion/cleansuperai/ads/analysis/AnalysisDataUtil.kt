@@ -40,6 +40,30 @@ import com.aetherquorion.cleansuperai.ads.employment.swipeInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.videoCompressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.videoCompressInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.appManagerNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.appManagerInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCalendarNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCalendarInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.imageEnhancerNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.imageEnhancerInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.speedTestNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.speedTestInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.largeFilesNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.largeFilesInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cacheCleanupNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cacheCleanupInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.networkTrafficNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.networkTrafficInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.batteryInfoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.batteryInfoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.deviceInfoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.deviceInfoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.vaultNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.vaultInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanupReportNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanupReportInterstitialAd
 import com.tencent.mmkv.MMKV
 import java.util.Calendar
 
@@ -67,7 +91,12 @@ object AnalysisDataUtil {
             !interspaceStudyRules(screenshotListInterstitialAd()) ||
             !interspaceStudyRules(duplicateVideoInterstitialAd()) ||
             !interspaceStudyRules(settingInter()) ||
-            !interspaceStudyRules(backSpecialToCy())
+            !interspaceStudyRules(backSpecialToCy()) ||
+            listOf(videoCompressInterstitialAd(), appManagerInterstitialAd(), cleanCalendarInterstitialAd(),
+                imageEnhancerInterstitialAd(), speedTestInterstitialAd(), largeFilesInterstitialAd(),
+                cacheCleanupInterstitialAd(), networkTrafficInterstitialAd(), batteryInfoInterstitialAd(),
+                deviceInfoInterstitialAd(), vaultInterstitialAd(), cleanupReportInterstitialAd())
+                .any { !interspaceStudyRules(it) }
     }
 
     fun interspaceStudyRules(artPos: Long): Boolean {

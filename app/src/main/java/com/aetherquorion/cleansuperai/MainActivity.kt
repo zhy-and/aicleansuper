@@ -22,6 +22,7 @@ import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
+import com.google.android.material.badge.BadgeDrawable
 import com.aetherquorion.cleansuperai.ads.ListenerTrans
 import com.aetherquorion.cleansuperai.ads.banner.BannerView
 import com.aetherquorion.cleansuperai.ads.employment.backSpecialToCy
@@ -51,6 +52,30 @@ import com.aetherquorion.cleansuperai.ads.employment.swipeNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsInterstitialAd
 import com.aetherquorion.cleansuperai.ads.employment.toolsNativeAd
 import com.aetherquorion.cleansuperai.ads.employment.manager.mobtools.LoadManagerTools
+import com.aetherquorion.cleansuperai.ads.employment.videoCompressNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.videoCompressInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.appManagerNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.appManagerInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCalendarNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanCalendarInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.imageEnhancerNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.imageEnhancerInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.speedTestNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.speedTestInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.largeFilesNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.largeFilesInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cacheCleanupNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cacheCleanupInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.networkTrafficNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.networkTrafficInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.batteryInfoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.batteryInfoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.deviceInfoNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.deviceInfoInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.vaultNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.vaultInterstitialAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanupReportNativeAd
+import com.aetherquorion.cleansuperai.ads.employment.cleanupReportInterstitialAd
 import com.aetherquorion.cleansuperai.databinding.ActivityMainBinding
 import com.aetherquorion.cleansuperai.ui.compress.CompressFragment
 import com.aetherquorion.cleansuperai.ui.home.HomeFragment
@@ -70,6 +95,11 @@ import com.aetherquorion.cleansuperai.ui.tools.NetworkTrafficFragment
 import com.aetherquorion.cleansuperai.ui.tools.SystemInfoFragment
 import com.aetherquorion.cleansuperai.ui.media.CategoryMediaFragment
 import com.aetherquorion.cleansuperai.ui.largefiles.LargeFilesFragment
+import com.aetherquorion.cleansuperai.ui.contacts.ContactsCleanupFragment
+import com.aetherquorion.cleansuperai.ui.compress.VideoCompressFragment
+import com.aetherquorion.cleansuperai.ui.tools.ImageEnhancerFragment
+import com.aetherquorion.cleansuperai.ui.tools.CleanCalendarFragment
+import com.aetherquorion.cleansuperai.ui.tools.SpeedTestFragment
 import com.aetherquorion.cleansuperai.ui.clean.detail.ScreenshotListFragment
 import com.aetherquorion.cleansuperai.widget.CleanWidgetProvider
 import com.aetherquorion.cleansuperai.notification.NotificationPermissionFlow
@@ -153,6 +183,12 @@ class MainActivity : AppCompatActivity() {
                 showSwipeStoragePermissionPrompt()
             }
         }
+        binding.bottomNavigation.getOrCreateBadge(R.id.menu_swipe).apply {
+            clearNumber()
+            backgroundColor = android.graphics.Color.rgb(245, 75, 75)
+            badgeTextColor = getColor(android.R.color.white)
+            badgeGravity = BadgeDrawable.TOP_END
+        }
 
         previousBackStackEntryCount = supportFragmentManager.backStackEntryCount
         supportFragmentManager.addOnBackStackChangedListener {
@@ -189,6 +225,11 @@ class MainActivity : AppCompatActivity() {
                 finishHomePermissionSequence()
             }
         }, 500)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        LauncherShortcuts.refresh(this)
     }
 
     private fun finishHomePermissionSequence() {
@@ -244,6 +285,12 @@ class MainActivity : AppCompatActivity() {
             "audio_clean" -> openDetail(CategoryMediaFragment.audio(), "audio_cleanup")
             "battery_info" -> openDetail(SystemInfoFragment.battery(), "battery_info")
             "network_traffic" -> openDetail(NetworkTrafficFragment(), "network_traffic")
+            "photo_compress" -> selectDestination(R.id.menu_compress)
+            "video_compress" -> openDetail(VideoCompressFragment(), "video_compress")
+            "image_enhancer" -> openDetail(ImageEnhancerFragment(), "image_enhancer")
+            "contacts_cleanup" -> openDetail(ContactsCleanupFragment(), "contacts_cleanup")
+            "clean_calendar" -> openDetail(CleanCalendarFragment(), "clean_calendar")
+            "speed_test" -> openDetail(SpeedTestFragment(), "speed_test")
         }
     }
 
@@ -334,13 +381,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openDetail(fragment: Fragment, tag: String) {
-        showInterstitial(detailInterstitialPosition(tag))
+        detailInterstitialPosition(tag)?.let(::showInterstitial)
         supportFragmentManager.commit {
             replace(R.id.fragmentContainer, fragment, tag)
             addToBackStack(tag)
         }
         supportFragmentManager.executePendingTransactions()
-        showNativeAd(detailNativePosition(tag))
+        detailNativePosition(tag)?.let(::showNativeAd) ?: clearNativeAd()
+    }
+
+    fun replaceCurrentDetail(fragment: Fragment, tag: String) {
+        if (supportFragmentManager.isStateSaved) return
+        supportFragmentManager.popBackStackImmediate()
+        openDetail(fragment, tag)
     }
 
     private fun showFragment(fragment: Fragment, tag: String) {
@@ -372,6 +425,13 @@ class MainActivity : AppCompatActivity() {
     private fun showNativeAd(position: Long) {
         currentNativePosition = position
         showNativeAdIfAvailable(position, loadIfMissing = true)
+    }
+
+    private fun clearNativeAd() {
+        currentNativePosition = null
+        currentAdHost?.removeAllViews()
+        currentAdHost?.isVisible = false
+        currentAdHost = null
     }
 
     private fun showNativeAdIfAvailable(position: Long, loadIfMissing: Boolean) {
@@ -448,9 +508,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun detailNativePosition(tag: String): Long {
+    private fun detailNativePosition(tag: String): Long? {
         return when (tag) {
-            "profile", "language_settings" -> settingNative()
+            "language_settings" -> null
+            "profile" -> settingNative()
+            "video_compress" -> videoCompressNativeAd()
+            "app_manager" -> appManagerNativeAd()
+            "clean_calendar" -> cleanCalendarNativeAd()
+            "image_enhancer" -> imageEnhancerNativeAd()
+            "speed_test" -> speedTestNativeAd()
+            "large_files" -> largeFilesNativeAd()
+            "cache_cleanup" -> cacheCleanupNativeAd()
+            "network_traffic" -> networkTrafficNativeAd()
+            "battery_info" -> batteryInfoNativeAd()
+            "device_info" -> deviceInfoNativeAd()
+            "vault" -> vaultNativeAd()
+            "cleanup_report" -> cleanupReportNativeAd()
             "photo_detail" -> swipeDetailNativeAd()
             "clean_center" -> cleanCenterNativeAd()
             "contacts_cleanup" -> contactsNativeAd()
@@ -462,9 +535,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun detailInterstitialPosition(tag: String): Long {
+    private fun detailInterstitialPosition(tag: String): Long? {
         return when (tag) {
-            "profile", "language_settings" -> settingInter()
+            "language_settings" -> null
+            "profile" -> settingInter()
+            "video_compress" -> videoCompressInterstitialAd()
+            "app_manager" -> appManagerInterstitialAd()
+            "clean_calendar" -> cleanCalendarInterstitialAd()
+            "image_enhancer" -> imageEnhancerInterstitialAd()
+            "speed_test" -> speedTestInterstitialAd()
+            "large_files" -> largeFilesInterstitialAd()
+            "cache_cleanup" -> cacheCleanupInterstitialAd()
+            "network_traffic" -> networkTrafficInterstitialAd()
+            "battery_info" -> batteryInfoInterstitialAd()
+            "device_info" -> deviceInfoInterstitialAd()
+            "vault" -> vaultInterstitialAd()
+            "cleanup_report" -> cleanupReportInterstitialAd()
             "photo_detail" -> swipeDetailInterstitialAd()
             "clean_center" -> cleanCenterInterstitialAd()
             "contacts_cleanup" -> contactsInterstitialAd()

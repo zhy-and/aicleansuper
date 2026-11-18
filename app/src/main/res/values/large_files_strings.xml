@@ -1,0 +1,27 @@
+<resources>
+    <string-array name="large_file_type_options">
+        <item>All</item><item>Images</item><item>Videos</item><item>Audio</item>
+        <item>Documents</item><item>Archives</item><item>APK</item><item>Other</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>All time</item><item>1 week</item><item>1 month</item>
+        <item>3 months</item><item>6 months</item><item>1 year</item>
+    </string-array>
+    <string name="large_file_filter_type">Type</string>
+    <string name="large_file_filter_size">Size</string>
+    <string name="large_file_filter_time">Time</string>
+    <string name="large_file_filter_description">%1$s filter: %2$s</string>
+    <string name="large_file_access_required">All files access is required</string>
+    <string name="large_file_scanning">Scanning files…</string>
+    <string name="large_file_summary">%1$d files · %2$s</string>
+    <string name="large_file_select_all">Select all</string>
+    <string name="large_file_deselect_all">Deselect all</string>
+    <string name="large_file_select_all_shown">Select all shown</string>
+    <string name="large_file_deselect_all_shown">Deselect all shown</string>
+    <string name="large_file_delete_selected">Delete selected</string>
+    <string name="large_file_delete_amount">Delete %1$s (%2$d)</string>
+    <string name="large_file_open">Open</string>
+    <string name="large_file_delete">Delete</string>
+    <string name="large_file_delete_confirm">Delete %1$d selected files?</string>
+    <string name="large_file_deleted_summary">Deleted %1$d of %2$d files</string>
+</resources>

@@ -104,6 +104,7 @@ class SplashActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java).apply {
                 intent?.getStringExtra(MainActivity.EXTRA_WIDGET_ROUTE)?.let {
                     putExtra(MainActivity.EXTRA_WIDGET_ROUTE, it)
+                    intent?.removeExtra(MainActivity.EXTRA_WIDGET_ROUTE)
                 }
             })
             finish()
@@ -120,6 +121,10 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         launchProgress.stop()
+        if (!isChangingConfigurations) {
+            PendingShortcutRoute.remember(intent?.getStringExtra(MainActivity.EXTRA_WIDGET_ROUTE))
+            PendingShortcutRoute.dispatch(this)
+        }
         AnalysisDataUtil.markHotLaunch()
         super.onDestroy()
         messages?.removeCallbacksAndMessages(null)

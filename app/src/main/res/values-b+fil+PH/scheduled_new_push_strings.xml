@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Alerto sa storage: {size} ng junk ang natagpuan. Linisin ito sa isang gripo.</item>
+        <item>{size} ng cache ang naipon. Magbakante ng espasyo ngayon.</item>
+        <item>Nakakita ng {apps} app gamit ang {size}. Linisin ang mga ito.</item>
+        <item>Nakahanap ang system ng {size} ng mga pansamantalang file. Linisin ang mga ito nang ligtas.</item>
+        <item>Gumagawa ng cache ang isang app. I-tap para suriin ito.</item>
+        <item>Nakakita ng {size} ng mga walang laman na folder at mga duplicate na file. Linisin ang mga ito sa isang gripo.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Ang iyong mga larawan ay kumukuha ng espasyo. I-compress ang mga ito at panatilihing matalim.</item>
+        <item>Nai-save ang {photos} mga larawan? I-compress ang mga ito upang magkaroon ng espasyo para sa higit pa.</item>
+        <item>Maaaring magbakante ng {size} ang {photos} na mga larawan. I-compress ang mga ito ngayon.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Gumagamit ang mga video ng {size}. I-compress ang mga ito sa isang batch at makatipid ng espasyo.</item>
+        <item>I-compress ang iyong mga video at mag-save ng hanggang {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Nakakita ng {photos} malabong larawan. Pagandahin ang mga ito para sa isang mas malinaw na hitsura.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Nakakita ng {contacts} mga duplicate na contact. Pagsamahin ang mga ito sa isang tap.</item>
+        <item>Nakahanap ng {contacts} contact na walang pangalan. Ayusin mo ang iyong address book.</item>
+        <item>Ang iyong mga contact ay hindi na-back up kamakailan. Panatilihin silang ligtas.</item>
+        <item>{contacts} ang mga contact record ay hindi kumpleto. Punan ang mga detalye.</item>
+        <item>Ang ilang mga bagong import na contact ay mga duplicate. Ayusin sila ngayon.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Malapit na ang iyong susunod na kaganapan. Humanda ka.</item>
+        <item>Ang iyong mahalagang kaganapan ay nasa {days} araw. Handa ka na ba?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Gaano kabilis ang iyong koneksyon? Magpatakbo ng isang mabilis na pagsubok sa bilis.</item>
+        <item>Lumipat ng network? Suriin kung alin ang mas mabilis at gumagamit ng mas kaunting data.</item>
+    </string-array>
+</resources>

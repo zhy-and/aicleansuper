@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Makluman storan: {size} sampah ditemui. Bersihkannya dalam satu paip.</item>
+        <item>{size} cache telah dibina. Kosongkan ruang sekarang.</item>
+        <item>Menemui {apps} apl menggunakan {size}. Bersihkan apl tersebut.</item>
+        <item>Sistem ini menemui {size} fail sementara. Bersihkan mereka dengan selamat.</item>
+        <item>Apl sedang membuat cache. Ketik untuk menyemaknya.</item>
+        <item>Menemui {size} folder kosong dan fail pendua. Bersihkan mereka dalam satu paip.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Foto anda mengambil ruang. Mampatkan dan pastikan ia tajam.</item>
+        <item>Menyimpan {photos} foto? Mampatkannya untuk memberi ruang untuk lebih banyak lagi.</item>
+        <item>{photos} foto boleh membebaskan {size}. Mampatkannya sekarang.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Video menggunakan {size}. Mampatkannya dalam satu kelompok dan menjimatkan ruang.</item>
+        <item>Mampatkan video anda dan simpan sehingga {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>Menemui {photos} foto kabur. Tingkatkan mereka untuk penampilan yang lebih jelas.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>Menjumpai {contacts} kenalan pendua. Gabungkan mereka dalam satu ketikan.</item>
+        <item>Menjumpai {contacts} kenalan tanpa nama. Kemas buku alamat anda.</item>
+        <item>Kenalan anda tidak disandarkan kebelakangan ini. Pastikan mereka selamat.</item>
+        <item>Rekod hubungan {contacts} tidak lengkap. Isikan butiran.</item>
+        <item>Beberapa kenalan yang baru diimport adalah pendua. Susun mereka sekarang.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Acara seterusnya anda akan datang. Bersedialah.</item>
+        <item>Acara penting anda adalah dalam {days} hari. Adakah anda bersedia?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Seberapa pantas sambungan anda? Jalankan ujian kelajuan pantas.</item>
+        <item>Bertukar rangkaian? Semak yang mana lebih cepat dan menggunakan kurang data.</item>
+    </string-array>
+</resources>

@@ -29,11 +29,12 @@ class ScreenshotListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: ScreenshotListViewModel by viewModels()
+    private val selectedIds = linkedSetOf<Long>()
     private val adapter = MediaCleanupAdapter(
         onPreviewClick = ::openPreview,
         onSelectionClick = ::toggleSelection,
+        selectedIds = selectedIds,
     )
-    private val selectedIds = linkedSetOf<Long>()
     private var pendingCleanupResult: com.aetherquorion.cleansuperai.ui.flow.CleanupResult? = null
     private var currentItems: List<ScreenshotItem> = emptyList()
 
@@ -120,7 +121,8 @@ class ScreenshotListFragment : Fragment() {
         } else {
             selectedIds.add(item.stableId)
         }
-        render(viewModel.uiState.value)
+        adapter.refreshVisibleSelection(binding.recyclerView)
+        renderSelectionState(currentItems.size)
     }
 
     private fun toggleSelectAll() {
@@ -130,7 +132,8 @@ class ScreenshotListFragment : Fragment() {
             selectedIds.clear()
             selectedIds.addAll(currentItems.map { it.id })
         }
-        render(viewModel.uiState.value)
+        adapter.refreshVisibleSelection(binding.recyclerView)
+        renderSelectionState(currentItems.size)
     }
 
     private fun renderSelectionState(totalItems: Int) {
@@ -142,6 +145,10 @@ class ScreenshotListFragment : Fragment() {
 
     private fun confirmDeleteSelected() {
         if (selectedIds.isEmpty()) return
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            deleteSelectedItems()
+            return
+        }
 
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.delete_dialog_title)

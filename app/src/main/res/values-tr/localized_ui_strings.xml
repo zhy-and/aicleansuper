@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>Tümü</item>
+        <item>Görseller</item>
+        <item>Videolar</item>
+        <item>Ses</item>
+        <item>Dokümanlar</item>
+        <item>Arşivler</item>
+        <item>APK</item>
+        <item>Diğer</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>Tüm zamanlar</item>
+        <item>1 hafta</item>
+        <item>1 ay</item>
+        <item>3 ay</item>
+        <item>6 ay</item>
+        <item>1 yıl</item>
+    </string-array>
+    <string name="large_file_filter_type">Tür</string>
+    <string name="large_file_filter_size">Boyut</string>
+    <string name="large_file_filter_time">Zaman</string>
+    <string name="large_file_filter_description">%1$s filtresi: %2$s</string>
+    <string name="large_file_access_required">Tüm dosyalara erişim gerekiyor</string>
+    <string name="large_file_scanning">Dosyalar taranıyor…</string>
+    <string name="large_file_summary">%1$d dosya · %2$s</string>
+    <string name="large_file_select_all">Tümünü seç</string>
+    <string name="large_file_deselect_all">Tüm seçimleri kaldır</string>
+    <string name="large_file_select_all_shown">Gösterilenlerin tümünü seç</string>
+    <string name="large_file_deselect_all_shown">Gösterilenlerin seçimini kaldır</string>
+    <string name="large_file_delete_selected">Seçilenleri sil</string>
+    <string name="large_file_delete_amount">%1$s sil (%2$d)</string>
+    <string name="large_file_open">Aç</string>
+    <string name="large_file_delete">Sil</string>
+    <string name="large_file_delete_confirm">Seçilen %1$d dosya silinsin mi?</string>
+    <string name="large_file_deleted_summary">%2$d dosyadan %1$d tanesi silindi</string>
+    <string name="sys_level">Seviye</string>
+    <string name="sys_status">Durum</string>
+    <string name="sys_discharging">Pil boşalıyor</string>
+    <string name="sys_android_version">Android sürümü</string>
+    <string name="traffic_usage_required">Kullanım erişimi gerekiyor. İzin vermek için dokunun.</string>
+    <string name="traffic_loading">Yükleniyor…</string>
+    <string name="traffic_empty">Uygulamaların ağ trafiği bulunamadı</string>
+    <string name="traffic_guide_message">Uygulama başına ağ trafiğini görmek için Ayarlar\'dan bu uygulamaya kullanım erişimi verin.</string>
+    <string name="app_manager_uninstall_confirm">Seçilen %1$d uygulama kaldırılsın mı? Android her uygulama için onay isteyecek.</string>
+    <string name="home_pending_items_format">Temizlenecek öğe: %1$d</string>
+    <string name="info_report_title">Rapor</string>
+    <string name="new_feature_badge_description">Yeni özellik</string>
+    <string name="cache_access_required">Önbelleği taramak için tüm dosyalara erişim izni verin</string>
+    <string name="cache_confirm_clean">Seçilen %1$d öğe temizlensin mi?</string>
+    <string name="cache_clean_action">Temizle</string>
+    <string name="cache_clean_result">%2$d öğeden %1$d tanesi temizlendi</string>
+    <string name="cleanup_report_complete">Temizleme tamamlandı.</string>
+    <string name="cleanup_report_explore">Diğer araçları keşfet</string>
+    <string name="cleanup_report_go">Git</string>
+    <string name="widget_action_files">Dosyalar</string>
+    <string name="widget_action_photos">Fotoğraflar</string>
+    <string name="vlt_select_all">Tümünü seç</string>
+    <string name="vlt_deselect_all">Tüm seçimleri kaldır</string>
+    <string name="vlt_import_media">Fotoğraf veya video içe aktar</string>
+    <string name="vlt_originals_remain">; %1$d orijinal dosya cihazda duruyor</string>
+    <string name="vlt_restore_confirm">%1$d dosya Pictures/PurGuClean klasörüne geri yüklensin mi?</string>
+    <string name="vlt_restored_count">%2$d dosyadan %1$d tanesi geri yüklendi</string>
+    <string name="vlt_delete_confirm">%1$d özel dosya kalıcı olarak silinsin mi?</string>
+    <string name="app_manager_select_app">Uygulama seç</string>
+</resources>

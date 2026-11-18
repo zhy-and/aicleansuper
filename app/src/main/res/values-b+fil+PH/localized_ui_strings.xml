@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>Lahat</item>
+        <item>Mga larawan</item>
+        <item>Mga video</item>
+        <item>Audio</item>
+        <item>Mga dokumento</item>
+        <item>Mga archive</item>
+        <item>APK</item>
+        <item>Iba pa</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>Lahat ng panahon</item>
+        <item>1 linggo</item>
+        <item>1 buwan</item>
+        <item>3 buwan</item>
+        <item>6 na buwan</item>
+        <item>1 taon</item>
+    </string-array>
+    <string name="large_file_filter_type">Uri</string>
+    <string name="large_file_filter_size">Laki</string>
+    <string name="large_file_filter_time">Panahon</string>
+    <string name="large_file_filter_description">Filter na %1$s: %2$s</string>
+    <string name="large_file_access_required">Kailangan ang access sa lahat ng file</string>
+    <string name="large_file_scanning">Sinusuri ang mga file…</string>
+    <string name="large_file_summary">%1$d file · %2$s</string>
+    <string name="large_file_select_all">Piliin lahat</string>
+    <string name="large_file_deselect_all">Alisin ang lahat ng pagpili</string>
+    <string name="large_file_select_all_shown">Piliin lahat ng nakikita</string>
+    <string name="large_file_deselect_all_shown">Alisin sa pagpili lahat ng nakikita</string>
+    <string name="large_file_delete_selected">I-delete ang napili</string>
+    <string name="large_file_delete_amount">I-delete ang %1$s (%2$d)</string>
+    <string name="large_file_open">Buksan</string>
+    <string name="large_file_delete">I-delete</string>
+    <string name="large_file_delete_confirm">I-delete ang %1$d napiling file?</string>
+    <string name="large_file_deleted_summary">Na-delete ang %1$d sa %2$d file</string>
+    <string name="sys_level">Antas</string>
+    <string name="sys_status">Katayuan</string>
+    <string name="sys_discharging">Nababawasan ang charge</string>
+    <string name="sys_android_version">Bersyon ng Android</string>
+    <string name="traffic_usage_required">Kailangan ang access sa data ng paggamit. I-tap para payagan.</string>
+    <string name="traffic_loading">Naglo-load…</string>
+    <string name="traffic_empty">Walang nakitang paggamit ng data ng mga app</string>
+    <string name="traffic_guide_message">Sa Mga Setting, payagan ang app na ito na i-access ang data ng paggamit para makita ang paggamit ng data ng bawat app.</string>
+    <string name="app_manager_uninstall_confirm">I-uninstall ang %1$d napiling app? Hihilingin ng Android na kumpirmahin ang bawat app.</string>
+    <string name="home_pending_items_format">Mga item na lilinisin: %1$d</string>
+    <string name="info_report_title">Ulat</string>
+    <string name="new_feature_badge_description">Bagong feature</string>
+    <string name="cache_access_required">Payagan ang access sa lahat ng file para masuri ang cache</string>
+    <string name="cache_confirm_clean">Linisin ang %1$d napiling item?</string>
+    <string name="cache_clean_action">Linisin</string>
+    <string name="cache_clean_result">Nalinis ang %1$d sa %2$d item</string>
+    <string name="cleanup_report_complete">Tapos na ang paglilinis.</string>
+    <string name="cleanup_report_explore">Tumingin ng iba pang tool</string>
+    <string name="cleanup_report_go">Pumunta</string>
+    <string name="widget_action_files">Mga file</string>
+    <string name="widget_action_photos">Mga larawan</string>
+    <string name="vlt_select_all">Piliin lahat</string>
+    <string name="vlt_deselect_all">Alisin ang lahat ng pagpili</string>
+    <string name="vlt_import_media">Mag-import ng mga larawan o video</string>
+    <string name="vlt_originals_remain">; nananatili sa device ang %1$d orihinal na file</string>
+    <string name="vlt_restore_confirm">I-restore ang %1$d file sa Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">Na-restore ang %1$d sa %2$d file</string>
+    <string name="vlt_delete_confirm">Permanenteng i-delete ang %1$d pribadong file?</string>
+    <string name="app_manager_select_app">Pumili ng app</string>
+</resources>

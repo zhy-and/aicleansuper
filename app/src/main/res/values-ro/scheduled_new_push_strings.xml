@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>Alertă de stocare: {size} de mesaje nedorite găsite. Curățați-l dintr-o singură apăsare.</item>
+        <item>S-au acumulat {size} de cache. Eliberați spațiu acum.</item>
+        <item>S-au găsit {apps} aplicații folosind {size}. Curățați-le.</item>
+        <item>Sistemul a găsit {size} de fișiere temporare. Curățați-le în siguranță.</item>
+        <item>O aplicație creează memoria cache. Atingeți pentru a o revizui.</item>
+        <item>S-au găsit {size} de foldere goale și fișiere duplicate. Curățați-le cu o singură atingere.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>Fotografiile tale ocupă spațiu. Comprimați-le și mențineți-le ascuțite.</item>
+        <item>Ați salvat {photos} fotografii? Comprimați-le pentru a face loc pentru mai multe.</item>
+        <item>{photos} fotografii ar putea elibera {size}. Comprimați-le acum.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>Videoclipurile folosesc {size}. Comprimați-le într-un lot și economisiți spațiu.</item>
+        <item>Comprimați-vă videoclipurile și salvați până la {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>S-au găsit {photos} fotografii neclare. Îmbunătățiți-le pentru un aspect mai clar.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>S-au găsit {contacts} persoane de contact duplicat. Îmbină-le într-o singură atingere.</item>
+        <item>S-au găsit {contacts} persoane de contact fără nume. Faceți ordine în agenda dvs.</item>
+        <item>Nu s-a făcut backup pentru persoanele de contact în ultima vreme. Păstrați-le în siguranță.</item>
+        <item>Înregistrările de contact {contacts} sunt incomplete. Completați detaliile.</item>
+        <item>Unele contacte nou importate sunt duplicate. Organizați-le acum.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>Următorul tău eveniment urmează. Pregătește-te.</item>
+        <item>Evenimentul dvs. important este în {days} zile. Sunteţi gata?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>Cât de rapidă este conexiunea ta? Efectuați un test rapid de viteză.</item>
+        <item>Rețele comutate? Verificați care dintre ele este mai rapidă și utilizează mai puține date.</item>
+    </string-array>
+</resources>

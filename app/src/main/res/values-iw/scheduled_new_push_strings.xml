@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>התראת אחסון: נמצאו {size} זבל. נקה אותו בברז אחד.</item>
+        <item>הצטברו {size} מטמון. פנה מקום עכשיו.</item>
+        <item>נמצאו {apps} אפליקציות באמצעות {size}. נקה אותן.</item>
+        <item>המערכת מצאה {size} קבצים זמניים. נקה אותם בבטחה.</item>
+        <item>אפליקציה יוצרת מטמון. הקש כדי לסקור אותו.</item>
+        <item>נמצא {size} של תיקיות ריקות וקבצים כפולים. נקו אותם בברז אחד.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>התמונות שלך תופסות מקום. דחוס אותם ושמור אותם חדים.</item>
+        <item>שמרת {photos} תמונות? דחוס אותם כדי לפנות מקום לעוד.</item>
+        <item>{photos} תמונות יכולות לפנות {size}. דחוס אותן עכשיו.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>סרטונים משתמשים ב-{size}. דחוס אותם באצווה וחסוך מקום.</item>
+        <item>דחוס את הסרטונים שלך ושמור עד {saving}.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>נמצאו {photos} תמונות מטושטשות. שפר אותם למראה ברור יותר.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>נמצאו {contacts} אנשי קשר כפולים. מיזוג אותם בהקשה אחת.</item>
+        <item>נמצאו {contacts} אנשי קשר ללא שמות. סדר את ספר הכתובות שלך.</item>
+        <item>אנשי הקשר שלך לא גובו לאחרונה. שמור עליהם בטוחים.</item>
+        <item>{contacts} רשומות אנשי קשר אינן שלמות. מלאו את הפרטים.</item>
+        <item>חלק מאנשי הקשר שיובאו לאחרונה הם כפילויות. ארגנו אותם עכשיו.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>האירוע הבא שלך מתקרב. לְהִתְכּוֹנֵן.</item>
+        <item>האירוע החשוב שלך יהיה בעוד {days} ימים. האם אתה מוכן?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>כמה מהיר החיבור שלך? הפעל בדיקת מהירות מהירה.</item>
+        <item>החלפת רשתות? בדוק איזה מהם מהיר יותר וצורך פחות נתונים.</item>
+    </string-array>
+</resources>

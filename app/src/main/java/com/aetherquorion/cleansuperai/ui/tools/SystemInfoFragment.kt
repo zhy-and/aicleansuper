@@ -11,6 +11,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -19,6 +21,7 @@ import com.aetherquorion.cleansuperai.R
 import com.aetherquorion.cleansuperai.MainActivity
 import com.aetherquorion.cleansuperai.ui.common.ParityUi
 import com.aetherquorion.cleansuperai.ui.common.TopFilterUi
+import com.aetherquorion.cleansuperai.ui.common.inlineAdHost
 import com.aetherquorion.cleansuperai.ui.flow.CleanupReportFragment
 import java.net.Inet4Address
 import java.net.NetworkInterface
@@ -36,6 +39,31 @@ class SystemInfoFragment : Fragment() {
             context,
             getString(if (battery) R.string.tool_battery_info else R.string.tool_device_info),
         ) { parentFragmentManager.popBackStack() })
+        content.addView(inlineAdHost(context))
+        content.addView(FrameLayout(context).apply {
+            setBackgroundResource(R.drawable.bg_system_info_banner)
+            clipToOutline = true
+            addView(ImageView(context).apply {
+                setImageResource(if (battery) R.drawable.banner_battery_info else R.drawable.banner_device_info)
+                scaleType = ImageView.ScaleType.CENTER_CROP
+                contentDescription = getString(if (battery) R.string.tool_battery_info else R.string.tool_device_info)
+            }, FrameLayout.LayoutParams(-1, -1))
+            addView(LinearLayout(context).apply {
+                orientation = LinearLayout.VERTICAL
+                gravity = Gravity.CENTER_VERTICAL
+                setPadding(dp(18), 0, 0, 0)
+                addView(text(context, getString(if (battery) R.string.tool_battery_info else R.string.tool_device_info), 19).apply {
+                    setTextColor(if (battery) android.graphics.Color.rgb(20, 83, 64) else android.graphics.Color.WHITE)
+                })
+                addView(text(context, getString(if (battery) R.string.tool_battery_info_desc else R.string.tool_device_info_desc), 11).apply {
+                    setTextColor(if (battery) android.graphics.Color.rgb(42, 106, 84) else android.graphics.Color.WHITE)
+                    if (!battery) alpha = 0.85f
+                })
+            }, FrameLayout.LayoutParams(dp(155), -1, Gravity.START))
+        }, LinearLayout.LayoutParams(-1, dp(154)).apply {
+            topMargin = dp(16)
+            bottomMargin = dp(12)
+        })
         if (battery) addBatteryRows(content) else addDeviceRows(content)
         val root = LinearLayout(context).apply {
             orientation = LinearLayout.VERTICAL

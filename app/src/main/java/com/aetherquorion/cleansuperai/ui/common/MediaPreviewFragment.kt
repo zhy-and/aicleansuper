@@ -32,8 +32,7 @@ class MediaPreviewFragment : Fragment() {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         if (uri != null) {
             binding.imagePreview.load(uri) {
-                crossfade(true)
-                placeholder(R.drawable.ic_media_placeholder)
+                crossfade(false)
                 error(R.drawable.ic_media_placeholder)
             }
         }

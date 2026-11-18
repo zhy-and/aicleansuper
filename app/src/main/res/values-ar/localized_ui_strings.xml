@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>الكل</item>
+        <item>الصور</item>
+        <item>الفيديوهات</item>
+        <item>الصوتيات</item>
+        <item>المستندات</item>
+        <item>الأرشيفات</item>
+        <item>APK</item>
+        <item>أخرى</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>كل الأوقات</item>
+        <item>أسبوع واحد</item>
+        <item>شهر واحد</item>
+        <item>3 أشهر</item>
+        <item>6 أشهر</item>
+        <item>سنة واحدة</item>
+    </string-array>
+    <string name="large_file_filter_type">النوع</string>
+    <string name="large_file_filter_size">الحجم</string>
+    <string name="large_file_filter_time">الوقت</string>
+    <string name="large_file_filter_description">تصفية حسب %1$s: %2$s</string>
+    <string name="large_file_access_required">يلزم السماح بالوصول إلى جميع الملفات</string>
+    <string name="large_file_scanning">جارٍ فحص الملفات…</string>
+    <string name="large_file_summary">عدد الملفات: %1$d · %2$s</string>
+    <string name="large_file_select_all">تحديد الكل</string>
+    <string name="large_file_deselect_all">إلغاء تحديد الكل</string>
+    <string name="large_file_select_all_shown">تحديد كل الملفات المعروضة</string>
+    <string name="large_file_deselect_all_shown">إلغاء تحديد كل الملفات المعروضة</string>
+    <string name="large_file_delete_selected">حذف المحدد</string>
+    <string name="large_file_delete_amount">حذف %1$s (%2$d)</string>
+    <string name="large_file_open">فتح</string>
+    <string name="large_file_delete">حذف</string>
+    <string name="large_file_delete_confirm">هل تريد حذف الملفات المحددة (%1$d)؟</string>
+    <string name="large_file_deleted_summary">تم حذف %1$d من أصل %2$d ملفًا</string>
+    <string name="sys_level">المستوى</string>
+    <string name="sys_status">الحالة</string>
+    <string name="sys_discharging">البطارية قيد التفريغ</string>
+    <string name="sys_android_version">إصدار Android</string>
+    <string name="traffic_usage_required">يلزم السماح بالوصول إلى بيانات الاستخدام. اضغط لمنح الإذن.</string>
+    <string name="traffic_loading">جارٍ التحميل…</string>
+    <string name="traffic_empty">لا توجد بيانات عن استهلاك التطبيقات للشبكة</string>
+    <string name="traffic_guide_message">اسمح لهذا التطبيق بالوصول إلى بيانات الاستخدام في الإعدادات لعرض استهلاك الشبكة لكل تطبيق.</string>
+    <string name="app_manager_uninstall_confirm">هل تريد إلغاء تثبيت التطبيقات المحددة (%1$d)؟ سيطلب Android تأكيد إلغاء تثبيت كل تطبيق.</string>
+    <string name="home_pending_items_format">العناصر المطلوب تنظيفها: %1$d</string>
+    <string name="info_report_title">التقرير</string>
+    <string name="new_feature_badge_description">ميزة جديدة</string>
+    <string name="cache_access_required">اسمح بالوصول إلى جميع الملفات لفحص ذاكرة التخزين المؤقت</string>
+    <string name="cache_confirm_clean">هل تريد تنظيف العناصر المحددة (%1$d)؟</string>
+    <string name="cache_clean_action">تنظيف</string>
+    <string name="cache_clean_result">تم تنظيف %1$d من أصل %2$d عنصرًا</string>
+    <string name="cleanup_report_complete">اكتمل التنظيف.</string>
+    <string name="cleanup_report_explore">استكشف مزيدًا من الأدوات</string>
+    <string name="cleanup_report_go">انتقال</string>
+    <string name="widget_action_files">الملفات</string>
+    <string name="widget_action_photos">الصور</string>
+    <string name="vlt_select_all">تحديد الكل</string>
+    <string name="vlt_deselect_all">إلغاء تحديد الكل</string>
+    <string name="vlt_import_media">استيراد صور أو فيديوهات</string>
+    <string name="vlt_originals_remain">؛ بقي على الجهاز %1$d من الملفات الأصلية</string>
+    <string name="vlt_restore_confirm">هل تريد استعادة الملفات (%1$d) إلى Pictures/PurGuClean؟</string>
+    <string name="vlt_restored_count">تمت استعادة %1$d من أصل %2$d ملفًا</string>
+    <string name="vlt_delete_confirm">هل تريد حذف الملفات الخاصة (%1$d) نهائيًا؟</string>
+    <string name="app_manager_select_app">اختيار التطبيق</string>
+</resources>

@@ -168,6 +168,7 @@ class VideoCompressFragment : Fragment() {
                     getString(R.string.compressed_result_format, compressed, saved)
                 binding.btnSaveCompressed.isEnabled = true
                 binding.btnSaveCompressed.isVisible = true
+                binding.btnChooseVideo.isVisible = false
             }.onFailure {
                 clearCompressedPreview()
                 binding.tvCompressionResult.text =

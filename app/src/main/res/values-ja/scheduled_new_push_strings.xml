@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>ストレージ アラート: {size} のジャンクが見つかりました。ワンタップで掃除できます。</item>
+        <item>{size} のキャッシュが蓄積されました。今すぐスペースを解放してください。</item>
+        <item>{size} を使用しているアプリが {apps} 個見つかりました。クリーンアップしてください。</item>
+        <item>システムは {size} 個の一時ファイルを検出しました。安全に掃除してください。</item>
+        <item>アプリがキャッシュを作成しています。タップして確認してください。</item>
+        <item>空のフォルダーと重複ファイルが {size} 個見つかりました。ワンタップで掃除できます。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>写真がスペースを占有しています。圧縮して鮮明な状態に保ちます。</item>
+        <item>{photos} 枚の写真を保存しましたか?圧縮して、より多くのスペースを確保します。</item>
+        <item>{photos} 枚の写真で {size} 枚を解放できます。今すぐ圧縮してください。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>動画は {size} を使用しています。バッチで圧縮してスペースを節約します。</item>
+        <item>ビデオを圧縮して最大 {saving} まで保存します。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>{photos} 枚のぼやけた写真が見つかりました。より鮮明に見えるように強調します。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>{contacts} 件の重複した連絡先が見つかりました。ワンタップでそれらを結合します。</item>
+        <item>名前のない連絡先が {contacts} 件見つかりました。アドレス帳を整理しましょう。</item>
+        <item>最近連絡先がバックアップされていません。安全に保管してください。</item>
+        <item>{contacts} 連絡先記録が不完全です。詳細を入力します。</item>
+        <item>新しくインポートされた連絡先の一部が重複しています。今すぐ整理しましょう。</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>次のイベントが近づいています。準備をしましょう。</item>
+        <item>あなたの重要なイベントは {days} 日後です。準備はできたか？</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>接続速度はどれくらいですか?簡単な速度テストを実行します。</item>
+        <item>スイッチドネットワーク?どちらが速く、より少ないデータ量を使用するかを確認してください。</item>
+    </string-array>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notif_event_scheduled_cache_scan_titles">
+        <item>சேமிப்பக எச்சரிக்கை: {size} குப்பைகள் கண்டறியப்பட்டன. ஒரே குழாயில் சுத்தம் செய்யுங்கள்.</item>
+        <item>{size} கேச் கட்டப்பட்டுள்ளது. இப்போது இடத்தை விடுவிக்கவும்.</item>
+        <item>{size} ஐப் பயன்படுத்தி {apps} பயன்பாடுகள் கண்டறியப்பட்டன. அவற்றைச் சுத்தம் செய்யவும்.</item>
+        <item>கணினி {size} தற்காலிக கோப்புகளைக் கண்டறிந்தது. அவற்றை பாதுகாப்பாக சுத்தம் செய்யவும்.</item>
+        <item>ஒரு பயன்பாடு தற்காலிக சேமிப்பை உருவாக்குகிறது. அதை மதிப்பாய்வு செய்ய தட்டவும்.</item>
+        <item>{size} வெற்று கோப்புறைகள் மற்றும் நகல் கோப்புகள் கண்டறியப்பட்டன. ஒரே குழாயில் அவற்றை சுத்தம் செய்யவும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_photo_compress_titles">
+        <item>உங்கள் படங்கள் இடத்தைப் பிடிக்கின்றன. அவற்றை அழுத்தி கூர்மையாக வைத்திருங்கள்.</item>
+        <item>{photos} புகைப்படங்கள் சேமிக்கப்பட்டுள்ளதா? மேலும் இடமளிக்க அவற்றை சுருக்கவும்.</item>
+        <item>{photos} புகைப்படங்கள் {size} ஐ விடுவிக்கலாம். இப்போது அவற்றை சுருக்கவும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_video_compress_titles">
+        <item>வீடியோக்கள் {size} ஐப் பயன்படுத்துகின்றன. அவற்றை ஒரு தொகுப்பாக சுருக்கி இடத்தை சேமிக்கவும்.</item>
+        <item>உங்கள் வீடியோக்களை சுருக்கி {saving} வரை சேமிக்கவும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_image_enhance_titles">
+        <item>{photos} மங்கலான புகைப்படங்கள் உள்ளன. தெளிவான தோற்றத்திற்கு அவற்றை மேம்படுத்தவும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_contacts_manage_titles">
+        <item>{contacts} நகல் தொடர்புகள் உள்ளன. ஒரே தட்டலில் அவற்றை ஒன்றிணைக்கவும்.</item>
+        <item>பெயர்கள் இல்லாத {contacts} தொடர்புகள் கண்டறியப்பட்டன. உங்கள் முகவரி புத்தகத்தை ஒழுங்கமைக்கவும்.</item>
+        <item>உங்கள் தொடர்புகள் சமீபத்தில் காப்புப் பிரதி எடுக்கப்படவில்லை. அவற்றைப் பாதுகாப்பாக வைத்திருங்கள்.</item>
+        <item>{contacts} தொடர்பு பதிவுகள் முழுமையடையவில்லை. விவரங்களை நிரப்பவும்.</item>
+        <item>புதிதாக இறக்குமதி செய்யப்பட்ட சில தொடர்புகள் நகல்களாகும். இப்போது அவற்றை ஒழுங்கமைக்கவும்.</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_calendar_manage_titles">
+        <item>உங்கள் அடுத்த நிகழ்வு வரவிருக்கிறது. தயாராகுங்கள்.</item>
+        <item>உங்கள் முக்கியமான நிகழ்வு {days} நாட்களில். நீங்கள் தயாரா?</item>
+    </string-array>
+    <string-array name="notif_event_scheduled_speed_test_titles">
+        <item>உங்கள் இணைப்பு எவ்வளவு வேகமாக உள்ளது? விரைவான வேக சோதனையை இயக்கவும்.</item>
+        <item>நெட்வொர்க்குகள் மாறியதா? எது வேகமானது மற்றும் குறைவான டேட்டாவைப் பயன்படுத்துகிறது என்பதைச் சரிபார்க்கவும்.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_preview_status_storage" translatable="false">Free space</string>
+    <string name="widget_preview_action_files" translatable="false">Files</string>
+    <string name="widget_preview_action_photos" translatable="false">Photos</string>
+</resources>

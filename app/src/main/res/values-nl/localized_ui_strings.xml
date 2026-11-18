@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">App selecteren</string>
+    <string name="app_manager_uninstall_confirm">De %1$d geselecteerde apps verwijderen? Android vraagt je om elke verwijdering te bevestigen.</string>
+    <string name="cache_access_required">Sta toegang tot alle bestanden toe om de cache te scannen</string>
+    <string name="cache_clean_action">Opschonen</string>
+    <string name="cache_clean_result">%1$d van %2$d items opgeschoond</string>
+    <string name="cache_confirm_clean">De %1$d geselecteerde items opschonen?</string>
+    <string name="cleanup_report_complete">Het opschonen is voltooid.</string>
+    <string name="cleanup_report_explore">Meer tools ontdekken</string>
+    <string name="cleanup_report_go">Openen</string>
+    <string name="home_pending_items_format">Op te schonen items: %1$d</string>
+    <string name="info_report_title">Rapport</string>
+    <string name="large_file_access_required">Toegang tot alle bestanden is vereist</string>
+    <string name="large_file_delete">Verwijderen</string>
+    <string name="large_file_delete_amount">%1$s verwijderen (%2$d)</string>
+    <string name="large_file_delete_confirm">De %1$d geselecteerde bestanden verwijderen?</string>
+    <string name="large_file_delete_selected">Geselecteerde bestanden verwijderen</string>
+    <string name="large_file_deleted_summary">%1$d van %2$d bestanden verwijderd</string>
+    <string name="large_file_deselect_all">Alles deselecteren</string>
+    <string name="large_file_deselect_all_shown">Alle getoonde bestanden deselecteren</string>
+    <string name="large_file_filter_description">Filter %1$s: %2$s</string>
+    <string name="large_file_filter_size">Grootte</string>
+    <string name="large_file_filter_time">Periode</string>
+    <string name="large_file_filter_type">Type</string>
+    <string name="large_file_open">Openen</string>
+    <string name="large_file_scanning">Bestanden scannen…</string>
+    <string name="large_file_select_all">Alles selecteren</string>
+    <string name="large_file_select_all_shown">Alle getoonde bestanden selecteren</string>
+    <string name="large_file_summary">%1$d bestanden · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Alle perioden</item>
+        <item>1 week</item>
+        <item>1 maand</item>
+        <item>3 maanden</item>
+        <item>6 maanden</item>
+        <item>1 jaar</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Alles</item>
+        <item>Afbeeldingen</item>
+        <item>Video’s</item>
+        <item>Audio</item>
+        <item>Documenten</item>
+        <item>Archieven</item>
+        <item>APK</item>
+        <item>Overige</item>
+    </string-array>
+    <string name="new_feature_badge_description">Nieuwe functie</string>
+    <string name="sys_android_version">Android-versie</string>
+    <string name="sys_discharging">Wordt ontladen</string>
+    <string name="sys_level">Niveau</string>
+    <string name="sys_status">Status</string>
+    <string name="traffic_empty">Geen appverkeer gevonden</string>
+    <string name="traffic_guide_message">Geef deze app in Instellingen toegang tot gebruiksgegevens om het gegevensverkeer per app te bekijken.</string>
+    <string name="traffic_loading">Laden…</string>
+    <string name="traffic_usage_required">Toegang tot gebruiksgegevens is vereist. Tik om toegang te geven.</string>
+    <string name="vlt_delete_confirm">%1$d privébestanden permanent verwijderen?</string>
+    <string name="vlt_deselect_all">Alles deselecteren</string>
+    <string name="vlt_import_media">Foto’s of video’s importeren</string>
+    <string name="vlt_originals_remain">; %1$d originele bestanden blijven op het apparaat</string>
+    <string name="vlt_restore_confirm">%1$d bestanden terugzetten in Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">%1$d van %2$d bestanden teruggezet</string>
+    <string name="vlt_select_all">Alles selecteren</string>
+    <string name="widget_action_files">Bestanden</string>
+    <string name="widget_action_photos">Foto’s</string>
+</resources>

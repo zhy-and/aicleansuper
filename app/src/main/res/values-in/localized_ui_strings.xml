@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="large_file_type_options">
+        <item>Semua</item>
+        <item>Gambar</item>
+        <item>Video</item>
+        <item>Audio</item>
+        <item>Dokumen</item>
+        <item>Arsip</item>
+        <item>APK</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="large_file_time_options">
+        <item>Sepanjang waktu</item>
+        <item>1 minggu</item>
+        <item>1 bulan</item>
+        <item>3 bulan</item>
+        <item>6 bulan</item>
+        <item>1 tahun</item>
+    </string-array>
+    <string name="large_file_filter_type">Jenis</string>
+    <string name="large_file_filter_size">Ukuran</string>
+    <string name="large_file_filter_time">Waktu</string>
+    <string name="large_file_filter_description">Filter %1$s: %2$s</string>
+    <string name="large_file_access_required">Akses ke semua file diperlukan</string>
+    <string name="large_file_scanning">Memindai file…</string>
+    <string name="large_file_summary">%1$d file · %2$s</string>
+    <string name="large_file_select_all">Pilih semua</string>
+    <string name="large_file_deselect_all">Batalkan semua pilihan</string>
+    <string name="large_file_select_all_shown">Pilih semua yang ditampilkan</string>
+    <string name="large_file_deselect_all_shown">Batalkan pilihan semua yang ditampilkan</string>
+    <string name="large_file_delete_selected">Hapus yang dipilih</string>
+    <string name="large_file_delete_amount">Hapus %1$s (%2$d)</string>
+    <string name="large_file_open">Buka</string>
+    <string name="large_file_delete">Hapus</string>
+    <string name="large_file_delete_confirm">Hapus %1$d file yang dipilih?</string>
+    <string name="large_file_deleted_summary">%1$d dari %2$d file dihapus</string>
+    <string name="sys_level">Level</string>
+    <string name="sys_status">Status</string>
+    <string name="sys_discharging">Daya baterai sedang berkurang</string>
+    <string name="sys_android_version">Versi Android</string>
+    <string name="traffic_usage_required">Akses penggunaan diperlukan. Ketuk untuk memberikan akses.</string>
+    <string name="traffic_loading">Memuat…</string>
+    <string name="traffic_empty">Tidak ada data lalu lintas aplikasi</string>
+    <string name="traffic_guide_message">Aktifkan akses penggunaan untuk aplikasi ini di Setelan agar lalu lintas setiap aplikasi ditampilkan.</string>
+    <string name="app_manager_uninstall_confirm">Uninstal %1$d aplikasi yang dipilih? Android akan meminta konfirmasi untuk setiap aplikasi.</string>
+    <string name="home_pending_items_format">Item yang akan dibersihkan: %1$d</string>
+    <string name="info_report_title">Laporan</string>
+    <string name="new_feature_badge_description">Fitur baru</string>
+    <string name="cache_access_required">Izinkan akses ke semua file untuk memindai cache</string>
+    <string name="cache_confirm_clean">Bersihkan %1$d item yang dipilih?</string>
+    <string name="cache_clean_action">Bersihkan</string>
+    <string name="cache_clean_result">%1$d dari %2$d item dibersihkan</string>
+    <string name="cleanup_report_complete">Pembersihan selesai.</string>
+    <string name="cleanup_report_explore">Jelajahi alat lainnya</string>
+    <string name="cleanup_report_go">Buka</string>
+    <string name="widget_action_files">File</string>
+    <string name="widget_action_photos">Foto</string>
+    <string name="vlt_select_all">Pilih semua</string>
+    <string name="vlt_deselect_all">Batalkan semua pilihan</string>
+    <string name="vlt_import_media">Impor foto atau video</string>
+    <string name="vlt_originals_remain">; %1$d file asli masih ada di perangkat</string>
+    <string name="vlt_restore_confirm">Pulihkan %1$d file ke Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">%1$d dari %2$d file dipulihkan</string>
+    <string name="vlt_delete_confirm">Hapus %1$d file pribadi secara permanen?</string>
+    <string name="app_manager_select_app">Pilih aplikasi</string>
+</resources>

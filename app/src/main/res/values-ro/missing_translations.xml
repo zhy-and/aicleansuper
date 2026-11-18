@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Coș de gunoi (%1$s)</string>
     <string name="trash_bin_title_empty">Coș de gunoi</string>
     <string name="trash_restore_hint">Atingeți pentru a restabili fotografiile</string>
-    <string name="trash_empty_action">Ștergeți totul din coșul de gunoi</string>
+    <string name="trash_empty_action">Șterge fotografiile</string>
     <string name="trash_restored">Fotografie restaurată</string>
     <string name="trash_bin_empty">Coșul de gunoi este gol</string>
     <string name="feature_smart_groups">Grupuri inteligente</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Mementouri curate</string>
     <string name="notif_event_channel_desc">Mementouri locale după capturi de ecran, instalări și dezinstalări</string>
     <string name="notif_event_summary_channel_name">Curățați rezumatul mementoului</string>
-    <string name="notif_event_screenshot_title">O altă captură de ecran? 1 Este timpul să clarificați capturile de ecran</string>
-    <string name="notif_event_install_title">Noua aplicație s-a mutat, la fel și cache-ul. curata</string>
-    <string name="notif_event_uninstall_title">Dezinstalat cu succes! pentru a curăța reziduurile de fișiere</string>
-    <string name="notif_clean_reminder_title">Există o mulțime de gunoi îngrămădiți. Curățați-l pe toate deodată.</string>
-    <string name="notif_event_battery_below_50_title">Bateria este plină mai mult de jumătate. Ai grijă de el acum, va dura până ajungi acasă.</string>
-    <string name="notif_event_battery_below_20_title">Baterie descărcată. Vrei să știi cine îți fură electricitatea? Click pentru a vedea clasamentele.</string>
-    <string name="notif_event_charging_title">Conectat. Sarcina din seara asta: umpleți, apoi curățați.</string>
-    <string name="notif_event_charging_full_title">Complet încărcat și gata de plecare. O ultimă verificare: a fost curățat gunoiul?</string>
-    <string name="notif_event_charging_to_80_title">Sprintul final este de 80%. Descărcați gunoiul și împachetați ușor pentru a primi puterea maximă.</string>
-    <string name="notif_event_charging_disconnect_title">Deconectați și porniți. Amintiți-vă să vă faceți timp pentru a curăța gunoiul și a rămâne în formă.</string>
-    <string name="notif_event_app_update_title">A sosit o nouă versiune. Tot ce a rămas din versiunea veche este complet curățat.</string>
-    <string name="notif_event_network_change_title">Web-ul se schimbă! Vedeți starea curentă a rețelei 1</string>
-    <string name="notif_event_screen_lock_title">Pune telefonul jos și lasă-l nouă. Timp de odihnă pe ecran = timpul de alăptare.</string>
-    <string name="notif_event_screen_on_after_lock_title">Ne întâlnim din nou, ești blocat? Majoritatea sunt gunoi, încercați să-l curățați.</string>
-    <string name="notif_event_storage_free_drop_title">Spațiul de depozitare s-a schimbat. Să vedem ce ocupă spațiu?</string>
-    <string name="notif_event_scheduled_push_1_title">Gunoiul care s-a acumulat atât de mult timp este curățat imediat.</string>
-    <string name="notif_event_scheduled_push_2_title">Bateria nu este la fel de durabilă ca înainte? Verifică.</string>
-    <string name="notif_event_app_inactive_title">Multă vreme nu ne-am văzut, a așteptat. Întoarceți-vă și curățați gunoiul.</string>
-    <string name="notif_event_scheduled_push_3_title">O atingere a listelor de redare — configurați widgetul</string>
+    <string name="notif_event_screenshot_title">Iată o nouă captură de ecran, să vedem dacă o păstrăm</string>
+    <string name="notif_event_install_title">Cache-ul aplicației noi a apărut, deschide și aruncă o privire</string>
+    <string name="notif_event_uninstall_title">Aplicația tocmai a fost dezinstalată, dar rămân niște reziduuri. Hai să vedem ce e.</string>
+    <string name="notif_clean_reminder_title">Nu am mai curățat telefonul de mult, mă simt sufocat. Hai să verific.</string>
+    <string name="notif_event_battery_below_50_title">Deschide și vei înțelege: curăță mai întâi dacă bateria e peste 50%.</string>
+    <string name="notif_event_battery_below_20_title">Bateria e aproape goală, nu mai rezista! Deschide și te simți bine!</string>
+    <string name="notif_event_charging_title">Conectat la curent, hai să verificăm cache-ul</string>
+    <string name="notif_event_charging_full_title">Abia s-a încărcat complet, nu irosi bateria, deschide și verifică cache-ul</string>
+    <string name="notif_event_charging_to_80_title">Se încarcă, dar e timpul să curăț gunoiul</string>
+    <string name="notif_event_charging_disconnect_title">Scoateți încărcătorul și fiți offline, apoi deschideți pentru a vedea</string>
+    <string name="notif_event_app_update_title">Aplicația tocmai s-a actualizat, e timpul să curățăm cache-ul vechi.</string>
+    <string name="notif_event_network_change_title">Netul s-a întrerupt, deschide și verifică cache-ul local</string>
+    <string name="notif_event_screen_lock_title">Ecranul e stins, curățarea în fundal începe acum</string>
+    <string name="notif_event_screen_on_after_lock_title">Ecranul s-a aprins imediat ce am ridicat capul, dau clic să verific cache-ul</string>
+    <string name="notif_event_storage_free_drop_title">Spațiul s-a redus din nou, deschide și vezi cine ocupă locul.</string>
+    <string name="notif_event_scheduled_push_1_title">Data trecută am terminat doar pe jumătate, hai să verific.</string>
+    <string name="notif_event_scheduled_push_2_title">Aplicațiile din fundal îți consumă bateria în tăcere, deschide și verifică</string>
+    <string name="notif_event_app_inactive_title">Nu te-am mai văzut de mult, am crezut că ai uitat. Hai să aruncăm o privire.</string>
+    <string name="notif_event_scheduled_push_3_title">Adaugă un widget pe ecranul principal și curăță fără să deschizi aplicația</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>O atingere a listelor de redare — configurați widgetul</item>
-        <item>Faceți totul mai ușor cu un widget - adăugați o comandă rapidă muzicală</item>
-        <item>Jucați rapid fără deblocare — activați widgetul de pe ecranul de pornire</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Ai uitat ceva</string>
+    <item>Adaugă un widget pe ecranul principal și curăță fără să deschizi aplicația</item>
+    <item>Adaugă un widget pentru a avea curățarea la îndemână</item>
+    <item>Widgetul este gata. Pune-l pe ecranul principal</item>
+    <item>Adaugă un widget cu o atingere și curăță din ecranul principal</item>
+    <item>Adaugă un widget pentru curățare mai ușoară</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Întoarce-te, curățarea cu un singur clic durează doar 3 secunde</string>
     <string name="notif_event_app_background_content">Vino, termină curățarea, astfel încât să funcționeze mai bine.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Ai uitat ceva</item>
-        <item>Un pas a mai rămas</item>
-        <item>Vești bune</item>
-        <item>Ai plecat prea repede</item>
-        <item>Nu lăsa gunoaie peste noapte</item>
-    </string-array>
+    <item>Întoarce-te, curățarea cu un singur clic durează doar 3 secunde</item>
+    <item>Pe pagina de mai devreme mai era niște gunoi de curățat</item>
+    <item>Nu pleca încă, curăță și asta pe drum</item>
+    <item>Mai e doar un pas, întoarce-te și curăță spațiul complet</item>
+    <item>Nu ieși încă, curățarea nu s-a terminat</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Vino, termină curățarea, astfel încât să funcționeze mai bine.</item>
         <item>Încă o atingere pentru a termina curățarea și a elibera mai mult spațiu.</item>
@@ -530,239 +532,244 @@
         <item>Telefonul tău poate fi și mai rapid – vino să vezi optimizarea.</item>
         <item>Vino, termină curățarea, astfel încât să funcționeze mai bine.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Rezultatele scanării sunt gata – mesajele nedorite ocupă spațiu. Curăță acum</string>
+    <string name="notif_event_scan_done_uncleaned_title">Scanul este finalizat, mai rămâne doar ultimul pas de curățare</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Rezultatele scanării sunt gata – mesajele nedorite ocupă spațiu. Curăță acum</item>
-        <item>Un pas a mai rămas: întoarce-te și eliberează spațiu instantaneu.</item>
-        <item>Ați uitat să curățați după scanare? 10 secunde pentru a vă face telefonul mai ușor.</item>
-        <item>Numărul nedorit este încă pe telefonul dvs. — rezultate salvate. Întoarce-te pentru o curățare cu o singură atingere.</item>
-        <item>Ultima scanare a găsit mai multe elemente de curățat. Vino termină.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Curățarea nu s-a terminat încă. Vino să termini ultimul pas.</string>
+    <item>Scanul este finalizat, mai rămâne doar ultimul pas de curățare</item>
+    <item>Scanul este finalizat, mai trebuie doar puțin pentru curățare</item>
+    <item>Detectarea este finalizată, intră și elimină gunoiul</item>
+    <item>Scanul este complet, gunoiul încă așteaptă să fie curățat</item>
+    <item>Tocmai ai terminat scanarea, dar încă nu ai curățat. Intră să vezi</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Curățarea nu este încă finalizată, hai să continuăm</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Curățarea nu s-a terminat încă. Vino să termini ultimul pas.</item>
-        <item>Curățenie întreruptă: la jumătatea drumului. Termină pentru un telefon mai ușor.</item>
-        <item>Curățarea este aproape gata - nu lăsa gunoiul în urmă.</item>
-        <item>Ai plecat la mijlocul curățeniei — termină-l și simți diferența.</item>
-        <item>Curățarea întreruptă poate continua oricând. Vino termină.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Fotografia a fost ștearsă — mutată în siguranță în coșul de reciclare.</string>
+    <item>Curățarea nu este încă finalizată, hai să continuăm</item>
+    <item>Curățarea s-a întrerupt adineauri, continuăm</item>
+    <item>Mai e puțin și terminăm, continuăm?</item>
+    <item>Curățarea a fost oprită, continuăm să eliberăm spațiu</item>
+    <item>Misiunea de curățare nu este finalizată, hai să continuăm</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Imaginea a fost eliminată. Du-te la coșul de reciclare și curăță-o.</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Fotografia a fost ștearsă — mutată în siguranță în coșul de reciclare.</item>
-        <item>Tocmai ai șters o fotografie — vezi cât spațiu ai eliberat?</item>
-        <item>Fotografia a fost ștearsă — ștergeți definitiv pentru a elibera spațiu acum.</item>
-        <item>Fotografie ștearsă în siguranță — starea stocării a fost actualizată.</item>
-        <item>Fotografia a fost ștearsă — puteți curăța și capturi de ecran similare.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Videoclip șters — spațiu mare în curs de eliberare.</string>
+    <item>Imaginea a fost eliminată. Du-te la coșul de reciclare și curăță-o.</item>
+    <item>Imaginea a fost ștersă. Curăță și coșul de reciclare.</item>
+    <item>Imaginea a ajuns deja în coșul de reciclare. Intră și curăță-o.</item>
+    <item>Imaginile din coșul de reciclare încă ocupă spațiu. Curăță-le.</item>
+    <item>Imaginea a fost tocmai ștersă. Vrei să o cureți complet?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Video-ul a fost șters, golirea coșului de reciclare economisește mai mult spațiu</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Videoclip șters — spațiu mare în curs de eliberare.</item>
-        <item>Videoclipul mare a fost eliminat - presiunea de stocare a scăzut imediat.</item>
-        <item>Videoclip șters — verificați starea actuală a stocării.</item>
-        <item>Ștergeți gata — goliți coșul de reciclare pentru a elibera spațiu complet.</item>
-        <item>Videoclip șters — este posibil să fie mai multe videoclipuri mari uitate de curățat.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Audio șters — fișierele mici se adună. Continuă.</string>
+    <item>Video-ul a fost șters, golirea coșului de reciclare economisește mai mult spațiu</item>
+    <item>Video-ul a fost șters, dar spațiul nu a fost încă eliberat</item>
+    <item>Video-ul a ajuns în coșul de reciclare, intrați să curățați</item>
+    <item>Un video a fost șters, așteaptă să fie curățat din coșul de reciclare</item>
+    <item>Video-urile din coșul de reciclare încă ocupă spațiu</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Audio-ul a fost șters, dar cache-ul încă păstrează fragmente. Deschide și verifică.</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Audio șters — fișierele mici se adună. Continuă.</item>
-        <item>Acel sunet a dispărut - și mai multe fișiere similare neutilizate pot fi curățate.</item>
-        <item>Audio șters — detaliile de stocare au fost actualizate. Vino să arunci o privire.</item>
-        <item>1 fișier audio șters — lista de stocare a fost reîmprospătată.</item>
-        <item>Audio șters — goliți coșul de reciclare pentru a termina de eliberat spațiu.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Fișierul a fost șters - puțin mai mult spațiu de stocare eliberat.</string>
+    <item>Audio-ul a fost șters, dar cache-ul încă păstrează fragmente. Deschide și verifică.</item>
+    <item>Audio-ul a fost șters. Hai să curățăm și coșul de reciclare.</item>
+    <item>Ștergere reușită. Hai să golim coșul de reciclare.</item>
+    <item>Un fragment de audio a fost șters, coșul de reciclare trebuie curățat.</item>
+    <item>Intră și curăță înregistrările vechi din directorul de cache.</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Fișierul a fost șters, curățați coșul de reciclare</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Fișierul a fost șters - puțin mai mult spațiu de stocare eliberat.</item>
-        <item>Fișierul a fost șters — dezordinea nu vă va mai deranja telefonul.</item>
-        <item>Fișier șters — vezi ce mai poți curăța.</item>
-        <item>Fișier șters — modificările sincronizate, starea stocării a fost actualizată.</item>
-        <item>Fișierul este șters - acum se recuperează spațiu.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Imaginea descărcată — deschideți-o și aruncați o privire.</string>
+    <item>Fișierul a fost șters, curățați coșul de reciclare</item>
+    <item>Ștergerea fișierului este finalizată, dar spațiul nu a fost eliberat încă</item>
+    <item>Fișierul a ajuns în coșul de reciclare, curățați-l și pe el</item>
+    <item>Ștergerea fișierului este finalizată, veniți să eliberați spațiu</item>
+    <item>Fișierul a fost șters, golirea coșului de reciclare economisește mai mult spațiu</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Descărcarea imaginii este finalizată, să vedem unde e salvată</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Imaginea descărcată — deschideți-o și aruncați o privire.</item>
-        <item>Imagine descărcată — curățați fotografiile duplicate din albumul dvs. în timp ce vă aflați</item>
-        <item>Descărcare finalizată — imaginea salvată în siguranță. Vino să verifici fotografii similare</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Video descărcat - nu este mic. Vedeți cât spațiu pot elibera videoclipurile vechi</string>
+    <item>Descărcarea imaginii este finalizată, să vedem unde e salvată</item>
+    <item>Imaginea nouă tocmai a intrat în album, deschide și aruncă o privire</item>
+    <item>Imaginea nouă se repetă cu cea veche? Trebuie să deschizi pentru a afla</item>
+    <item>Descărcarea este finalizată, ar trebui să eliminăm duplicatele din album</item>
+    <item>Descărcarea imaginii este finalizată, să vedem cât spațiu mai rămâne</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Directorul de videoclipuri e aproape plin, du-te și aruncă o privire</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Video descărcat - nu este mic. Vedeți cât spațiu pot elibera videoclipurile vechi</item>
-        <item>Videoclip nou salvat — găsiți videoclipuri mari de șters și eliberați spațiu. Atinge-mă</item>
-        <item>Videoclipurile ocupă spațiu — am găsit articole care pot fi curățate pentru a vă ușura telefonul. Atingeți aici</item>
-        <item>Descărcarea gata! Curățați câteva videoclipuri vechi și spațiul revine. Atinge-mă</item>
-        <item>Videoclip nou sortat — ușor de găsit sau de curățat. Atingeți pentru a vedea</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Audio descărcat — ordonați-vă biblioteca muzicală cu o singură atingere. Atinge-mă</string>
+    <item>Directorul de videoclipuri e aproape plin, du-te și aruncă o privire</item>
+    <item>Click aici să vezi gigantul care tocmai s-a descărcat</item>
+    <item>Descărcare finalizată, să vedem cât spațiu ocupă</item>
+    <item>Tocmai am terminat de descărcat videoclipuri, telefonul e puțin plin</item>
+    <item>Click aici pentru a selecta videoclipurile care ocupă spațiu</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Unde e nouul audio? Ascultă-l și vei afla.</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Audio descărcat — ordonați-vă biblioteca muzicală cu o singură atingere. Atinge-mă</item>
-        <item>Sunet nou sortat — curățați sunetul vechi cât timp sunteți aici. Atinge-mă</item>
-        <item>Biblioteca muzicală se umple? Verificați sunetul care poate fi curățat. Atingeți aici</item>
-        <item>Audio descărcat — dedupătură dintr-o singură atingere. Atinge-mă pentru a face ordine</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Fișier nou salvat — ștergeți fișierele vechi și eliberați spațiu. Atingeți aici</string>
+    <item>Unde e nouul audio? Ascultă-l și vei afla.</item>
+    <item>Audio-ul tocmai s-a descărcat, curăță puțin spațiul.</item>
+    <item>Audio-ul nou a fost descărcat, intră să vezi.</item>
+    <item>Audio-ul tocmai s-a descărcat, telefonul e puțin plin acum.</item>
+    <item>Audio-ul a fost descărcat, ar trebui să curăț și stocarea.</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Descărcarea fișierului a fost finalizată, hai să aranjezi stocarea</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Fișier nou salvat — ștergeți fișierele vechi și eliberați spațiu. Atingeți aici</item>
-        <item>Descărcare finalizată — vedeți ce fișiere vechi puteți curăța. Atinge-mă</item>
-        <item>Fișier nou gata — arhivă inteligentă + curățare. Atinge-mă pentru a începe</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Coșul de reciclare a fost golit — spațiul de stocare a fost reîmprospătat. Verificați cel mai recent spațiu al dvs.</string>
+    <item>Descărcarea fișierului a fost finalizată, hai să aranjezi stocarea</item>
+    <item>Fișierul tocmai s-a descărcat, hai să golești puțin spațiul</item>
+    <item>Click aici pentru a clasifica corect fișierele noi</item>
+    <item>Ce s-a adăugat în folderul de descărcări? Trebuie să dai clic pentru a afla</item>
+    <item>Descărcarea fișierului este finalizată, intră să aranjezi puțin</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Gestionare finalizată. Să vedem cât spațiu s-a eliberat.</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Coșul de reciclare a fost golit — spațiul de stocare a fost reîmprospătat. Verificați cel mai recent spațiu al dvs.</item>
-        <item>Coșul de reciclare golit - vin resturi curățate în profunzime.</item>
-        <item>Golit cu succes — mai multe deșeuri de curățat. Vino să arunci o privire.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Curăță acum</string>
+    <item>Gestionare finalizată. Să vedem cât spațiu s-a eliberat.</item>
+    <item>Coșul de reciclare este gol, telefonul devine instantaneu mai ușor.</item>
+    <item>Coșul de reciclare este gol, telefonul este ușor și liber.</item>
+    <item>Coșul de reciclare este gol. Mai poate fi golit puțin.</item>
+    <item>Gestionare finalizată. Cât spațiu mai este disponibil?</item>
+  </string-array>
+    <string name="notif_event_action_clean">Curățare</string>
     <string name="notif_event_action_open_home">Deschide</string>
-    <string name="notif_event_action_manage">Gestionați aplicațiile</string>
-    <string name="notif_event_action_check_battery">Verificați bateria</string>
-    <string name="notif_event_action_check_network">Verificați rețeaua</string>
+    <string name="notif_event_action_manage">Gestionare</string>
+    <string name="notif_event_action_check_battery">Verifică bateria</string>
+    <string name="notif_event_action_check_network">Verifică datele</string>
     <string name="notif_days_unit">zi</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Spațiul de depozitare s-a schimbat. Să vedem ce ocupă spațiu?</item>
-        <item>S-au detectat modificări spațiale. Ar putea fi niște gunoi noi, aruncați o privire?</item>
-        <item>Spațiul disponibil s-a mutat. Știi cine l-a mâncat? Faceți clic pentru a arunca o privire.</item>
-        <item>Spațiul este îngust? Tocmai am detectat modificarea, haideți să aruncăm o privire la detalii.</item>
-        <item>Memento privind schimbarea spațiului: este posibil să acumulați o mulțime de gunoi. Verifică?</item>
-    </string-array>
+    <item>Spațiul s-a redus din nou, deschide și vezi cine ocupă locul.</item>
+    <item>Intră și arată, în album s-au adunat iar imagini noi.</item>
+    <item>Cachetul de chat se acumulează tot mai mult, deschide și vezi adevărul.</item>
+    <item>Iar au apărut o grămadă de gunoi, intră și descoperă.</item>
+    <item>Apasă aici, grăma de gunoi s-a îngrămadat și nimeni nu o curăță.</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Baterie descărcată. Vrei să știi cine îți fură electricitatea? Click pentru a vedea clasamentele.</item>
-        <item>Se termină în curând. Dacă ștergeți aplicațiile care fură electricitate, puteți supraviețui încă o perioadă.</item>
-        <item>Bateria este descărcată. E mai bine să ștergi câteva fundaluri decât să nu faci nimic.</item>
-        <item>Bateria este roșie. Îl puteți salva în continuare, faceți clic pentru al deschide și aruncați o privire.</item>
-        <item>Mai puțin de 20% remaine. Haideți să acordăm un prim ajutor pentru economisirea energiei și să curățăm.</item>
-    </string-array>
+    <item>Bateria e aproape goală, nu mai rezista! Deschide și te simți bine!</item>
+    <item>Nu mai ai timp să ajungi acasă, intră să cureți cache-ul.</item>
+    <item>Indicatorul de baterie e roșu, intră să vezi ce se întâmplă.</item>
+    <item>Bateria e aproape pe zero, intră să descoperi vinovatul.</item>
+    <item>Bateria e pe cale să se termine, deschide și vezi dacă mai poate fi salvată.</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Bateria este plină mai mult de jumătate. Ai grijă de el acum, va dura până ajungi acasă.</item>
-        <item>Bateria este plină mai mult de jumătate. Să ai grijă de baterie acum este mult mai ușor decât să aștepți până la 20%.</item>
-        <item>Bateria a dispărut pe jumătate. Cât poate dura? Faceți clic pentru a arunca o privire.</item>
-        <item>Bateria este plină mai mult de jumătate. Este timpul să aveți grijă de backend, nu așteptați să devină nervos.</item>
-        <item>Jumătate din baterie a rămas. Îndepărtează-i pe marii jucători avizi de putere și fă a doua jumătate mai stabilă.</item>
-    </string-array>
+    <item>Deschide și vei înțelege: curăță mai întâi dacă bateria e peste 50%.</item>
+    <item>A scăzut sub linia mediană, deschide și curăță cache-ul.</item>
+    <item>Mai e doar jumătate de bară, intră și organizează galeria.</item>
+    <item>Bateria e stabilă, apasă pe mine pentru a curăța cache-ul.</item>
+    <item>Bateria e la medie, deschide și curăță cache-ul fără griji.</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Sprintul final este de 80%. Descărcați gunoiul și împachetați ușor pentru a primi puterea maximă.</item>
-        <item>Încă 20% sîncărcare completă. Nu te mai uita la ecranul tău și lasă-ne pe noi să ne ocupăm de gunoi.</item>
-        <item>80%: La un pas de perfecțiune. Faceți clic o dată și va fi complet șters când bateria este complet încărcată.</item>
-        <item>80%, a baterie bună pentru un telefon mobil bun. Curățați o rundă când este cald?</item>
-        <item>Ultimele 20% i care ni s-au dat. Te uiți la baterie și noi curățăm gunoiul.</item>
-    </string-array>
+    <item>Se încarcă, dar e timpul să curăț gunoiul</item>
+    <item>E aproape plin, dar e mult gunoi. Hai să vedem vinovatul!</item>
+    <item>Mai puțin și e plin. Apasă-mă să curăț gunoiul</item>
+    <item>Mai puțin și bateria e plină. Deschide și totul va fi curat</item>
+    <item>Încarcă și așteaptă, apasă aici pentru a curăța cache-ul</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Complet încărcat și gata de plecare. O ultimă verificare: a fost curățat gunoiul?</item>
-        <item>După încărcare, simțul ritualului este plin. Ce zici să curățați gunoiul pentru a-l comemora?</item>
-        <item>100%, stabel astăzi. Încă o rundă și e impecabilă.</item>
-        <item>100%. Ultimul pas înainte de deconectare: curățați gunoiul, treizeci de secunde.</item>
-        <item>Finisat cu putere maxima. O ultimă curățare, perfect.</item>
-    </string-array>
+    <item>Abia s-a încărcat complet, nu irosi bateria, deschide și verifică cache-ul</item>
+    <item>Cu bateria plină, profită de moment și curăță fișierele inutile</item>
+    <item>Bateria e plină, e timpul să cureți, deschide și curăță cache-ul</item>
+    <item>Bateria e plină, e timpul să aranjezi galeria, intră și aruncă o privire</item>
+    <item>Cu bateria plină, e în modul standby, intră și fă curățenie</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Web-ul se schimbă! Vedeți starea curentă a rețelei 1</item>
-        <item>Dezertarea rețelei. Nu vă uitați la semnal când curățați, doar faceți clic pe el și scanați.</item>
-        <item>Nu puteți deschide pagina? Curățarea este întotdeauna online.</item>
-        <item>Puteți lucra offline, iar coșul de gunoi poate fi curățat acum.</item>
-        <item>Dacă nu există semnal, nu sunt necesare date pentru curățare, trebuie doar să faceți clic.</item>
-    </string-array>
+    <item>Netul s-a întrerupt, deschide și verifică cache-ul local</item>
+    <item>Dacă ai schimbat rețeaua, profită de ocazie și deschide pentru a verifica cache-ul</item>
+    <item>Rețeaua e instabilă, dar nu te îngrijora, deschide și totul va fi curat</item>
+    <item>Conexiunea s-a rupt, intră și verifică gunoiul local</item>
+    <item>Rețeaua s-a reconectat, intră și aruncă o privire la cache</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Conectat. Sarcina diseară: reumpleți, apoi curățați.</item>
-        <item>Te odihnești, se reîncarcă. Lasă-l să curețe și gunoiul.</item>
-        <item>În timpul de încărcare, este suficient să curățați gunoiul care s-a acumulat de mult timp.</item>
-        <item>Doar atunci când este conectat la priză, personalul din culise poate îndrăzni să lucreze liber.</item>
-        <item>Se încălzește puțin în timpul încărcării? Ștergerea fundalului poate scădea temperatura.</item>
-    </string-array>
+    <item>Conectat la curent, hai să verificăm cache-ul</item>
+    <item>Încărcarea a început, intră și fă o curățare profundă</item>
+    <item>Încărcarea abia a început, deschide și curăță</item>
+    <item>Încărcarea a început, intră devreme și va fi curat</item>
+    <item>Încărcătorul este gata, intră să verifici cache-ul</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Deconectați și porniți. Amintiți-vă să vă faceți timp pentru a curăța gunoiul și a rămâne în formă.</item>
-        <item>După terminarea încărcării, împachetați și porniți. Doar curățați-l și va fi perfect.</item>
-        <item>Complet încărcat și gata de utilizare. Curățând gunoiul fără probleme, astăzi nu există niciun defect.</item>
-        <item>Încărcarea se termină. Următorul spațiu urmează să fie curățat și actualizat pe rând.</item>
-        <item>Nu te opri la pene de curent. Un lucru a mai rămas: curățare.</item>
-    </string-array>
+    <item>Scoateți încărcătorul și fiți offline, apoi deschideți pentru a vedea</item>
+    <item>Fără curent, fără internet, apasăți pentru a vedea datele locale</item>
+    <item>Scoateți sursa de alimentare, deschideți și totul este curat</item>
+    <item>Fără curent, să vedem cât timp mai rezistă bateria</item>
+    <item>Cablul este scos, perfect, intrați să aranjați albumul</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Ne întâlnim din nou, ești blocat? Majoritatea sunt gunoi, încercați să-l curățați.</item>
-        <item>Deblocat? Nu deschide mai întâi alte aplicații și șterge coșul de gunoi timp de treizeci de secunde.</item>
-        <item>Primul lucru de deblocat suntem noi. Scoateți gunoiul și vă va iubi mai mult.</item>
-        <item>Treizeci de secunde după deblocare. Cea mai valoroasă utilizare: curățarea gunoiului.</item>
-        <item>Telefonul tău mobil a spus: Backend-ul este puțin blocat, mă poți ajuta?</item>
-    </string-array>
+    <item>Ecranul s-a aprins imediat ce am ridicat capul, dau clic să verific cache-ul</item>
+    <item>Desblocare reușită, mai e suficient spațiu?</item>
+    <item>Ecranul s-a aprins, pot vedea instantaneu ocuparea memoriei telefonului</item>
+    <item>Ecranul tocmai s-a aprins, intru să aranjez galeria</item>
+    <item>Ecranul s-a aprins perfect, dau clic și înțeleg imediat situația</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Pune telefonul jos și lasă-l nouă. Timp de odihnă pe ecran = timpul de alăptare.</item>
-        <item>Oprirea muncii nu înseamnă oprirea muncii. Îți voi face o surpriză data viitoare când pornesc ecranul.</item>
-        <item>Devine mai bine în liniște în timp ce odihnești ecranul. Faceți clic și noi ne vom ocupa de restul.</item>
-        <item>Un ultim lucru înainte de a bloca ecranul: faceți clic pe Curățare. Un nou look mâine dimineață.</item>
-        <item>Ecranul se întunecă. Faceți aranjamente acum și vedeți rezultatele mâine.</item>
-    </string-array>
+    <item>Ecranul e stins, curățarea în fundal începe acum</item>
+    <item>Înainte de a bloca ecranul, aruncăm o privire la cache</item>
+    <item>Perfect înainte de culcare, să verificăm și să aranjăm galeria</item>
+    <item>Ecranul se stinge curând, deschideți aplicația de curățare pentru a vă relaxa</item>
+    <item>Înainte ca ecranul să se stingă, eliberați telefonul; deschideți și veți înțelege</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Noua aplicație s-a mutat, la fel și cache-ul. curata</item>
-        <item>Înțelegem bucuria instalării unei noi aplicații. Doar că memoria cache se va îngrămădi în liniște.</item>
-        <item>Aplicație nouă? Cache-ul este și el aici, ștergeți-l cu un singur clic.</item>
-        <item>Noul intră și vechiul se stinge. Curățați-l des și instalați-l după cum doriți.</item>
-        <item>Altul? Spațiul se micșorează în liniște, vino și curăță-l.</item>
-    </string-array>
+    <item>Cache-ul aplicației noi a apărut, deschide și aruncă o privire</item>
+    <item>Aplicația nouă este instalată, curăță și pachetul de instalare</item>
+    <item>O față nouă s-a strecurat în cache, hai să vedem</item>
+    <item>Uite, pachetul de cache al aplicației noi crește</item>
+    <item>Apasă aici, pachetul de instalare al aplicației noi încă ocupă spațiu</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Dezinstalat cu succes! pentru a curăța reziduurile de fișiere</item>
-        <item>Dezinstalat, dar nu curățat. Click pentru a termina.</item>
-        <item>Aplicația este dezinstalată, dar coada este încă acolo. Curățați cu un singur clic și spuneți la revedere odată pentru totdeauna.</item>
-        <item>Nu ratați al doilea pas: ștergeți aplicația + ștergeți reziduurile. Un clic și gata.</item>
-        <item>Reziduul va consuma jumătate din spațiul eliberat. Scanați în profunzime și ștergeți totul.</item>
-    </string-array>
+    <item>Aplicația tocmai a fost dezinstalată, dar rămân niște reziduuri. Hai să vedem ce e.</item>
+    <item>Intră și verifică, chiar și după dezinstalare mai rămân niște gunoaie.</item>
+    <item>Dezinstalare reușită. Trebuie curățat puțin ca să fie complet.</item>
+    <item>După dezinstalare, mai rămân niște reziduuri. Intri și totul devine curat.</item>
+    <item>Spațiul nu s-a schimbat după dezinstalare? Intri să vezi motivul.</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>A sosit o nouă versiune. Tot ce a rămas din versiunea veche este complet curățat.</item>
-        <item>+1 pentru versiune, +1 pentru cache, pentru scanare profundă.</item>
-        <item>Actualizarea este finalizată, iar pachetele de instalare rămase pot fi curățate cu un singur clic.</item>
-        <item>Actualizarea s-a terminat, să încheiem. Curăță-l și voi prelua eu.</item>
-        <item>Fiecare actualizare va lăsa fișiere vechi și le va rezolva rapid.</item>
-    </string-array>
+    <item>Aplicația tocmai s-a actualizat, e timpul să curățăm cache-ul vechi.</item>
+    <item>După actualizare, cache-ul a crescut din nou. Hai să verificăm.</item>
+    <item>Acesta este cache-ul după actualizare. Intră și arată-l pentru mai mult confort.</item>
+    <item>Pachetul de actualizare încă ocupă destul spațiu. Hai să intrăm și să curățăm.</item>
+    <item>Reziduurile noii versiuni te așteaptă să le cureți. Click pe mine!</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>O altă captură de ecran? 1 Este timpul să clarificați capturile de ecran</item>
-        <item>Am găsit o nouă captură de ecran, faceți clic pentru a o vizualiza și curăța~</item>
-        <item>Există din ce în ce mai multe capturi de ecran, curățarea cu un singur clic vă poate ajuta să faceți spațiu</item>
-        <item>Captura de ecran a fost realizată cu succes, cele duplicate și cele neclare pot fi filtrate cu un singur clic.</item>
-        <item>Noi capturi de ecran sunt adăugate în baza de date, iar imaginile duplicate au fost puse în coadă pentru ștergere cu un singur clic.</item>
-    </string-array>
+    <item>Iată o nouă captură de ecran, să vedem dacă o păstrăm</item>
+    <item>Capturile din album s-au adunat, dar odată deschise, totul devine clar</item>
+    <item>Captura a fost salvată cu succes, hai să aranjez puțin albumul</item>
+    <item>Imaginea nouă tocmai capturată, o deschizi și te așteaptă o surpriză</item>
+    <item>Noua captură a intrat în album, intră și aruncă o privire pentru mai mult confort</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Există o mulțime de gunoi îngrămădiți. Curățați-l pe toate deodată.</item>
-        <item>Ultima curățare %1$d cu câteva zile în urmă, faceți clic pentru a o procesa acum</item>
-        <item>Nu am fost aici de câteva zile, așa că o voi curăța și mă voi întoarce ușor pe câmpul de luptă.</item>
-        <item>Cota de compensare nu a fost folosită astăzi. Voi șterge când mă întorc.</item>
-        <item>Cache-ul se umple, așteaptă să îl verificați</item>
-    </string-array>
+    <item>Nu am mai curățat telefonul de mult, mă simt sufocat. Hai să verific.</item>
+    <item>Am adunat atâta gunoi de mult timp, e timpul să intru și să curăț.</item>
+    <item>Telefonul nu s-a curățat de mult, s-a adunat mult praf. Hai să curăț.</item>
+    <item>Să deschid galeria, cache-ul s-a acumulat deja ca un munte.</item>
+    <item>Cache-ul ți-a suportat atâta timp, e timpul să-l cureți. Click pe mine!</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Multă vreme nu ne-am văzut, a așteptat. Întoarceți-vă și curățați gunoiul.</item>
-        <item>Nu te-am văzut de câteva zile. Nu există odihnă pentru gunoi. Vino înapoi și mătură-l.</item>
-        <item>Cache-ul este în coadă. Faceți clic și ele dispar.</item>
-        <item>Coșul de gunoi este ocupat în timp ce sunteți plecat. Goliți cu un singur clic și simțiți-vă la fel de proaspăt ca întotdeauna.</item>
-        <item>Spate? Mai întâi, curățați coșul de gunoi. În treizeci de secunde, telefonul este ușor ca nou.</item>
-    </string-array>
+    <item>Nu te-am mai văzut de mult, am crezut că ai uitat. Hai să aruncăm o privire.</item>
+    <item>Nu l-am deschis de mult, intră și aruncă o privire, arată mai curat.</item>
+    <item>Nu ne-am văzut de mult, intră și află ce s-a întâmplat.</item>
+    <item>Iconița aproape că a murit de nefolosită, intră și aruncă o privire.</item>
+    <item>Probabil am uitat din cauza agitației, am așteptat mult. Hai să vedem.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Gunoiul care s-a acumulat atât de mult timp este curățat imediat.</item>
-        <item>E timpul să faci curățenie. Coșul de gunoi de astăzi vă așteaptă să dați clic pe el.</item>
-        <item>A sosit Space Daily de astăzi. Curățați-l și păstrați-l ușor.</item>
-        <item>Unele fișiere sunt mult mai mari decât credeți, aruncați o privire</item>
-        <item>Găsește-l pe tipul care a luat câteva G\ și curăță-l</item>
-        <item>Lista mare de documente este gata, vino să arunci o privire.</item>
-        <item>Cine ocupă cel mai mult spațiu? Dezvăluit într-o secundă.</item>
-        <item>Fotografierea continuă este grozavă, finisarea este dureroasă. Lasă-ne pe noi.</item>
-        <item>Fotografiile similare sunt aliniate, depinde de tine să alegi pe care să o păstrezi</item>
-        <item>Prea multe poze similare? Vă vom ajuta să comparați și să eliminați duplicatele cu un singur clic.</item>
-        <item>Videoclipurile offline stocate în cache ar trebui șterse.</item>
-        <item>Sunetul rămas va fi, de asemenea, curățat.</item>
-    </string-array>
+    <item>Data trecută am terminat doar pe jumătate, hai să verific.</item>
+    <item>Curățarea s-a oprit la jumătate, hai să vedem unde am rămas.</item>
+    <item>Am adunat o grămadă de videoclipuri mari care ocupă mult spațiu, hai să verific.</item>
+    <item>Mai am un fișier uriaș care nu a fost curățat, hai să-l curăț.</item>
+    <item>Există un videoclip HD care ocupă mult spațiu, hai să vedem ce e.</item>
+    <item>Fotografiile duplicate ocupă spațiu, intră și curăță-le.</item>
+    <item>Fețe duplicate în album, apasă pe mine să ștergi câteva.</item>
+    <item>O mulțime de fotografii cu peisaje similare, aruncă o privire și alege-le pe cele care pot fi șterse.</item>
+    <item>Videoclipurile mari ocupă mult spațiu, deschide-le și aruncă o privire.</item>
+    <item>Mesajele vocale umplu memoria chat-ului, intră și aranjează-le.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Bateria nu este la fel de durabilă ca înainte? Verifică.</item>
-        <item>Cine îți fură curentul? Vei ști odată ce o vei căuta.</item>
-        <item>Oprirea acestora va prelungi durata de viață a bateriei.</item>
-        <item>Unele aplicații sunt instalate, dar nu sunt folosite niciodată. Vezi care sunt?</item>
-        <item>Păstrarea aplicațiilor pe care nu le utilizați este, de asemenea, o povară, lista a fost făcută</item>
-        <item>În ceea ce privește confidențialitatea, cu cât este tratată mai repede, cu atât mai bine.</item>
-        <item>Ascunde-le pe cele importante și scapă de cele inutile. lasa-ma sa te ajut</item>
-        <item>Unde merge traficul? Aflați cine îl folosește.</item>
-        <item>Detaliile de trafic sunt gata și clare dintr-o privire.</item>
-        <item>Există o aplicație care se conectează în secret la Internet în fundal.</item>
-    </string-array>
-    <string name="notif_scheduled_storage_clean">{dimensiunea} de nedorit - ștergeți-l dintr-o singură atingere</string>
+    <item>Aplicațiile din fundal îți consumă bateria în tăcere, deschide și verifică</item>
+    <item>Bateria scade discret toată noaptea în modul standby, dă clic pe mine</item>
+    <item>Sincronizarea deschisă consumă mai multă energie zilnic, intră și vezi</item>
+    <item>Multe aplicații nu au fost deschise de jumătate de an, intră și aruncă o privire</item>
+    <item>Aplicațiile preinstalate ocupă spațiu inutil, intră și aranjează-le</item>
+    <item>Uite, nu sunt multe aplicații folosite frecvent</item>
+    <item>Imaginele private sunt încuiate în spațiul privat, deschide și arată-le</item>
+    <item>Ascunde selfie-urile ascuns, nu le lăsa să fie găsite, intră și descoperă-le</item>
+    <item>Datele din luna aceasta sunt aproape epuizate, deschide și arată-le</item>
+    <item>Modul de economisire a datelor economisește mult, du-te și verifică</item>
+  </string-array>
+    <string name="notif_scheduled_storage_clean">{size} de nedorit - ștergeți-l dintr-o singură atingere</string>
     <string name="notif_scheduled_large_files">{total} de fișiere mari - curățați cu ușurință</string>
     <string name="notif_scheduled_duplicate_photos">{groups} grupuri de fotografii duplicate—salvați {size}</string>
     <string name="notif_scheduled_similar_photos">{size} fotografii similare—alegeți ce să curățați</string>
     <string name="notif_scheduled_videos">{total} de videoclipuri: ștergeți {n} pentru a elibera spațiu</string>
     <string name="notif_scheduled_audio">{total} de fișiere audio - timpul pentru a face ordine</string>
     <string name="notif_scheduled_apps">{size} folosit de {idle} aplicații inactive</string>
-    <string name="notif_scheduled_data">{back} a datelor utilizate în fundal</string>
+    <string name="notif_scheduled_data">{back} de date mobile au fost folosite în fundal</string>
     <string name="app_manager_uninstall_selected">Dezinstalează selecția</string>
     <string name="app_manager_uninstall_selected_count">Dezinstalează selecția (%1$d)</string>
     <string name="cache_removable">Amovibil</string>

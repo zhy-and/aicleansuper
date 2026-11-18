@@ -49,12 +49,15 @@ class CategoryMediaFragment : Fragment() {
     private var asked = false
     private var pendingTargets = emptyList<MediaItem>()
     private var recentVisibleCount = 0
+    private var recentItemIds: Set<Long> = emptySet()
+    private var olderItemIds: Set<Long> = emptySet()
+    private var totalSizeText = ""
     private val recentHeader = MediaSectionAdapter({ toggleSection(true) }, { selectSection(true) })
     private val olderHeader = MediaSectionAdapter({ toggleSection(false) }, { selectSection(false) })
-    private val recentMedia = MediaCleanupAdapter(::openPreview, ::toggleSelection)
-    private val olderMedia = MediaCleanupAdapter(::openPreview, ::toggleSelection)
-    private val recentAudio = AudioCleanupAdapter(::openPreview, ::toggleSelection)
-    private val olderAudio = AudioCleanupAdapter(::openPreview, ::toggleSelection)
+    private val recentMedia = MediaCleanupAdapter(::openPreview, ::toggleSelection, selectedIds)
+    private val olderMedia = MediaCleanupAdapter(::openPreview, ::toggleSelection, selectedIds)
+    private val recentAudio = AudioCleanupAdapter(::openPreview, ::toggleSelection, selectedIds)
+    private val olderAudio = AudioCleanupAdapter(::openPreview, ::toggleSelection, selectedIds)
     private val sectionAdapter by lazy {
         if (kind() == 2) ConcatAdapter(recentHeader, recentAudio, olderHeader, olderAudio)
         else ConcatAdapter(recentHeader, recentMedia, olderHeader, olderMedia)
@@ -183,6 +186,9 @@ class CategoryMediaFragment : Fragment() {
         selectedIds.retainAll(items.map { it.id }.toSet())
         val cutoff = System.currentTimeMillis() - 30L * 24 * 60 * 60 * 1000
         val (recent, older) = items.partition { it.modifiedAt >= cutoff }
+        recentItemIds = recent.mapTo(hashSetOf()) { it.id }
+        olderItemIds = older.mapTo(hashSetOf()) { it.id }
+        totalSizeText = Formatter.formatShortFileSize(requireContext(), items.sumOf { it.size })
         recentVisibleCount = if (recentHeader.expanded) recent.size else 0
         val dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM)
         fun display(item: MediaItem) =
@@ -224,15 +230,10 @@ class CategoryMediaFragment : Fragment() {
         ui.tvEmptyTitle.setText(if (error == null) R.string.media_empty_title else R.string.media_error_title)
         ui.tvEmptyBody.text = error ?: getString(R.string.media_empty_body)
         ui.tvNote.text = getString(R.string.media_count_summary, items.size,
-            Formatter.formatShortFileSize(requireContext(), items.sumOf { it.size }), selectedIds.size)
+            totalSizeText, selectedIds.size)
         ui.checkSelectAll.isChecked = items.isNotEmpty() && selectedIds.size == items.size
         ui.btnPrimaryAction.text = getString(R.string.similar_delete_count_action, selectedIds.size)
         ui.btnPrimaryAction.isEnabled = selectedIds.isNotEmpty()
-    }
-
-    private fun recentItems(): List<MediaItem> {
-        val cutoff = System.currentTimeMillis() - 30L * 24 * 60 * 60 * 1000
-        return items.filter { it.modifiedAt >= cutoff }
     }
 
     private fun toggleSection(recent: Boolean) {
@@ -242,11 +243,10 @@ class CategoryMediaFragment : Fragment() {
     }
 
     private fun selectSection(recent: Boolean) {
-        val recentItems = recentItems()
-        val group = if (recent) recentItems else items.filter { it.modifiedAt < System.currentTimeMillis() - 30L * 24 * 60 * 60 * 1000 }
-        if (group.all { it.id in selectedIds }) selectedIds.removeAll(group.map { it.id }.toSet())
-        else selectedIds.addAll(group.map { it.id })
-        render()
+        val group = if (recent) recentItemIds else olderItemIds
+        if (group.isNotEmpty() && selectedIds.containsAll(group)) selectedIds.removeAll(group)
+        else selectedIds.addAll(group)
+        renderSelectionOnly()
     }
 
     private fun openPreview(item: DisplayMediaItem) {
@@ -277,35 +277,21 @@ class CategoryMediaFragment : Fragment() {
     }
 
     private fun renderSelectionOnly() {
-        fun update(adapter: MediaCleanupAdapter) {
-            adapter.submitList(adapter.currentList.map { item ->
-                val selected = item.stableId in selectedIds
-                if (item.isSelected == selected) item else item.copy(isSelected = selected)
-            })
-        }
-        fun updateAudio(adapter: AudioCleanupAdapter) {
-            adapter.submitList(adapter.currentList.map { item ->
-                val selected = item.stableId in selectedIds
-                if (item.isSelected == selected) item else item.copy(isSelected = selected)
-            })
-        }
         if (kind() == 2) {
-            updateAudio(recentAudio)
-            updateAudio(olderAudio)
+            recentAudio.refreshVisibleSelection(binding.recyclerView)
+            olderAudio.refreshVisibleSelection(binding.recyclerView)
         } else {
-            update(recentMedia)
-            update(olderMedia)
+            recentMedia.refreshVisibleSelection(binding.recyclerView)
+            olderMedia.refreshVisibleSelection(binding.recyclerView)
         }
-        val recent = recentItems()
-        val older = items.size - recent.size
-        recentHeader.selectLabel = getString(if (recent.isNotEmpty() && recent.all { it.id in selectedIds })
+        recentHeader.selectLabel = getString(if (recentItemIds.isNotEmpty() && selectedIds.containsAll(recentItemIds))
             R.string.clear_selected_action else R.string.select_all_action)
-        olderHeader.selectLabel = getString(if (older > 0 && items.asSequence().filterNot { it.modifiedAt >= System.currentTimeMillis() - 30L * 24 * 60 * 60 * 1000 }.all { it.id in selectedIds })
+        olderHeader.selectLabel = getString(if (olderItemIds.isNotEmpty() && selectedIds.containsAll(olderItemIds))
             R.string.clear_selected_action else R.string.select_all_action)
         recentHeader.refresh()
         olderHeader.refresh()
         binding.tvNote.text = getString(R.string.media_count_summary, items.size,
-            Formatter.formatShortFileSize(requireContext(), items.sumOf { it.size }), selectedIds.size)
+            totalSizeText, selectedIds.size)
         binding.checkSelectAll.isChecked = items.isNotEmpty() && selectedIds.size == items.size
         binding.btnPrimaryAction.text = getString(R.string.similar_delete_count_action, selectedIds.size)
         binding.btnPrimaryAction.isEnabled = selectedIds.isNotEmpty()
@@ -314,6 +300,10 @@ class CategoryMediaFragment : Fragment() {
     private fun confirmDelete() {
         val targets = items.filter { it.id in selectedIds }
         if (targets.isEmpty()) return
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            performDelete(targets)
+            return
+        }
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.media_delete_title)
             .setMessage(getString(R.string.media_delete_message, targets.size))

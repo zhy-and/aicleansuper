@@ -9,6 +9,9 @@ internal object ScheduledInsightCopy {
         "scheduled_storage_clean", "scheduled_large_files", "scheduled_duplicate_photos",
         "scheduled_similar_photos", "scheduled_videos", "scheduled_audio",
         "scheduled_apps", "scheduled_data",
+        "scheduled_cache_scan", "scheduled_photo_compress", "scheduled_video_compress",
+        "scheduled_image_enhance", "scheduled_contacts_manage",
+        "scheduled_calendar_manage", "scheduled_speed_test",
     )
 
     fun isInsight(key: String): Boolean = key in keys
@@ -28,6 +31,13 @@ internal object ScheduledInsightCopy {
             "scheduled_audio" -> mapOf("total" to gb(2, 14))
             "scheduled_apps" -> mapOf("size" to gb(5, 28), "idle" to random.nextInt(5, 19).toString())
             "scheduled_data" -> mapOf("back" to mb(150, 960))
+            "scheduled_cache_scan" -> mapOf("size" to mb(120, 990), "apps" to random.nextInt(2, 12).toString())
+            "scheduled_photo_compress" -> mapOf("photos" to random.nextInt(20, 150).toString(), "size" to mb(100, 900))
+            "scheduled_video_compress" -> mapOf("size" to gb(20, 95), "saving" to mb(200, 990))
+            "scheduled_image_enhance" -> mapOf("photos" to random.nextInt(2, 30).toString())
+            "scheduled_contacts_manage" -> mapOf("contacts" to random.nextInt(2, 30).toString())
+            "scheduled_calendar_manage" -> mapOf("days" to random.nextInt(2, 8).toString())
+            "scheduled_speed_test" -> emptyMap()
             else -> emptyMap()
         }
     }

@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Çöp Kutusu (%1$s)</string>
     <string name="trash_bin_title_empty">Çöp Kutusu</string>
     <string name="trash_restore_hint">Fotoğrafları geri yüklemek için dokunun</string>
-    <string name="trash_empty_action">Çöp kutusundakilerin hepsini sil</string>
+    <string name="trash_empty_action">Fotoğrafları sil</string>
     <string name="trash_restored">Fotoğraf geri yüklendi</string>
     <string name="trash_bin_empty">Çöp kutusu boş</string>
     <string name="feature_smart_groups">Akıllı gruplar</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Hatırlatıcıları temizle</string>
     <string name="notif_event_channel_desc">Ekran görüntüleri, yüklemeler ve kaldırma işlemlerinin ardından yerel hatırlatıcılar</string>
     <string name="notif_event_summary_channel_name">Temiz hatırlatma özeti</string>
-    <string name="notif_event_screenshot_title">Başka bir ekran görüntüsü? 1 Ekran görüntülerini temizlemenin zamanı geldi</string>
-    <string name="notif_event_install_title">Yeni uygulama ve önbellek de taşındı. temizlemek</string>
-    <string name="notif_event_uninstall_title">Başarıyla kaldırıldı! dosya kalıntılarını temizlemek için</string>
-    <string name="notif_clean_reminder_title">Birikmiş çok fazla çöp var. Hepsini bir kerede temizleyin.</string>
-    <string name="notif_event_battery_below_50_title">Pil yarıdan fazlası dolu. Şimdilik kendine iyi bak, sen eve dönene kadar sürecek.</string>
-    <string name="notif_event_battery_below_20_title">Düşük pil. Elektriğinizi kimin çaldığını bilmek ister misiniz? Sıralamaları görmek için tıklayın.</string>
-    <string name="notif_event_charging_title">Fişe takıldı. Bu gecenin görevi: yeniden doldurmak, sonra temizlemek.</string>
-    <string name="notif_event_charging_full_title">Tamamen şarj edilmiş ve kullanıma hazır. Son bir kontrol: Çöp temizlendi mi?</string>
-    <string name="notif_event_charging_to_80_title">Son sprint %80\'dir. Tam gücü karşılamak için çöpü boşaltın ve hafifçe toplayın.</string>
-    <string name="notif_event_charging_disconnect_title">Fişi çekin ve yola çıkın. Çöpleri temizlemek ve en iyi durumda kalmak için zaman ayırmayı unutmayın.</string>
-    <string name="notif_event_app_update_title">Yeni bir sürüm geldi. Eski versiyondan kalan her şey tamamen temizlendi.</string>
-    <string name="notif_event_network_change_title">İnternet değişiyor! Mevcut ağ durumunu görüntüle 1</string>
-    <string name="notif_event_screen_lock_title">Telefonunuzu bırakın ve bize bırakın. Dinlenme ekranı süresi = emzirme süresi.</string>
-    <string name="notif_event_screen_on_after_lock_title">Tekrar buluştuk, sıkıştın mı? Çoğu çöp, temizlemeyi deneyin.</string>
-    <string name="notif_event_storage_free_drop_title">Depolama alanı değişti. Bakalım neler yer kaplıyor?</string>
-    <string name="notif_event_scheduled_push_1_title">Uzun süredir biriken çöpler bir anda temizleniyor.</string>
-    <string name="notif_event_scheduled_push_2_title">Pil eskisi kadar dayanıklı değil mi? Buna bir bak.</string>
-    <string name="notif_event_app_inactive_title">Uzun zamandır görüşemiyoruz, bekliyorduk. Geri gelin ve çöpleri temizleyin.</string>
-    <string name="notif_event_scheduled_push_3_title">Çalma listelerinize tek dokunuşla widget\'ı kurun</string>
+    <string name="notif_event_screenshot_title">Yeni ekran görüntüleri var, saklayıp saklamayacağımıza bir bakalım</string>
+    <string name="notif_event_install_title">Yeni uygulama önbelleği geldi, açıp bir bakalım</string>
+    <string name="notif_event_uninstall_title">Uygulama kaldırıldı ama kalıntıları kaldı, bir açıp bakalım</string>
+    <string name="notif_clean_reminder_title">Uzun zamandır telefonu temizlemiyordum, nefesim kesildi, açayım bir bakayım</string>
+    <string name="notif_event_battery_below_50_title">Açınca anlarsın, şarj yarıdan fazlaysa önce temizle</string>
+    <string name="notif_event_battery_below_20_title">Pil seviyesi kritik, beklemeyin, açın ve temizlenin</string>
+    <string name="notif_event_charging_title">Şarj etmeye başladım, hemen önbelleğe bir göz atayım</string>
+    <string name="notif_event_charging_full_title">Tam şarj olunca israf etmeyin, önbelleğe bir göz atın</string>
+    <string name="notif_event_charging_to_80_title">Şarj oluyor, boş zamanlarda temizliğe gelin</string>
+    <string name="notif_event_charging_disconnect_title">Şarj kablosunu çekin, çevrimdışı olun ve bir göz atın</string>
+    <string name="notif_event_app_update_title">Uygulama yeni güncellendi, eski önbelleği temizlemek lazım</string>
+    <string name="notif_event_network_change_title">İnternet kesildi, yerel önbelleğe bir göz atın</string>
+    <string name="notif_event_screen_lock_title">Ekran kapandı, arka plan temizlemesi tam zamanında başladı</string>
+    <string name="notif_event_screen_on_after_lock_title">Ekran açıldı, hızlıca önbelleğe bakıyorum</string>
+    <string name="notif_event_storage_free_drop_title">Depolama alanı yine azaldı, açıp bakalım kim kullanıyor?</string>
+    <string name="notif_event_scheduled_push_1_title">Son temizlemede yarıda kaldım, açıp bir bakayım</string>
+    <string name="notif_event_scheduled_push_2_title">Arka plandaki uygulamalar gizlice şarjınızı tüketiyor, açın ve kontrol edin</string>
+    <string name="notif_event_app_inactive_title">Uzun zamandır görmedik, unuttun sanmıştım, açıp bir bakalım</string>
+    <string name="notif_event_scheduled_push_3_title">Uygulamayı açmadan temizlemek için ana ekrana bir widget ekle</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Çalma listelerinize tek dokunuşla widget\'ı kurun</item>
-        <item>Bir widget ile her şeyi kolaylaştırın; müzik kısayolu ekleyin</item>
-        <item>Kilidi açmadan hızlı oynayın; ana ekran widget\'ını etkinleştirin</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Bir şeyi unuttun</string>
+    <item>Uygulamayı açmadan temizlemek için ana ekrana bir widget ekle</item>
+    <item>Temizliğe kolayca ulaşmak için widget ekle</item>
+    <item>Widget hazır. Ana ekranda ona bir yer aç</item>
+    <item>Tek dokunuşla widget ekle ve ana ekrandan temizle</item>
+    <item>Daha kolay temizlik için widget ekle</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Geri dön, tek tıkla temizleme sadece 3 saniye sürer</string>
     <string name="notif_event_app_background_content">Gelin temizliği bitirin, böylece daha düzgün çalışır.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Bir şeyi unuttun</item>
-        <item>Bir adım kaldı</item>
-        <item>İyi haber</item>
-        <item>Çok hızlı gittin</item>
-        <item>Gece boyunca çöp bırakmayın</item>
-    </string-array>
+    <item>Geri dön, tek tıkla temizleme sadece 3 saniye sürer</item>
+    <item>Az önceki sayfada hala temizlenmemiş çöp var</item>
+    <item>Acele etme, yoluna devam etmeden önce bir temizleme yap</item>
+    <item>Sadece bir adım kaldı, geri dön ve alanı tamamen temizle</item>
+    <item>Çıkma, temizleme daha bitmedi</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Gelin temizliği bitirin, böylece daha düzgün çalışır.</item>
         <item>Temizliği bitirmek ve daha fazla yer açmak için bir kez daha dokunun.</item>
@@ -530,231 +532,236 @@
         <item>Telefonunuz daha da hızlı olabilir; gelin optimizasyonu görün.</item>
         <item>Gelin temizliği bitirin, böylece daha düzgün çalışır.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Tarama sonuçları hazır; çöpler yer kaplıyor. Şimdi temizle</string>
+    <string name="notif_event_scan_done_uncleaned_title">Tarama tamamlandı, sadece son temizleme adımını bekliyoruz</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Tarama sonuçları hazır; çöpler yer kaplıyor. Şimdi temizle</item>
-        <item>Bir adım kaldı: geri gelin ve anında yer açın.</item>
-        <item>Taramadan sonra temizlemeyi mi unuttunuz? Telefonunuzu hafifletmek için 10 saniye.</item>
-        <item>Önemsiz dosyalar hâlâ telefonunuzda; sonuçlar kaydedildi. Tek dokunuşla temizlik için geri gelin.</item>
-        <item>Son taramada temizlenmesi gereken birden fazla öğe bulundu. Gelin bitirin.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Temizlik henüz tamamlanmadı; gelin son adımı tamamlayın.</string>
+    <item>Tarama tamamlandı, sadece son temizleme adımını bekliyoruz</item>
+    <item>Tarama tamamlandı, temizleme sadece biraz kaldı</item>
+    <item>Tespit tamamlandı, gelin artık çöpleri temizleyelim</item>
+    <item>Tarama tamamlandı, çöpler hala temizlenmeyi bekliyor</item>
+    <item>Taramayı yeni bitirdin, daha temizlemedin mi? Gel bir bak</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Temizleme henüz tamamlandı değil, gelip devam edelim</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Temizlik henüz tamamlanmadı; gelin son adımı tamamlayın.</item>
-        <item>Temizlik kesintiye uğradı: yarı yolda. Daha hafif bir telefon için bitirin.</item>
-        <item>Temizlik neredeyse bitti; çöpleri arkanızda bırakmayın.</item>
-        <item>Temizliğin ortasında kaldınız; bitirin ve farkı hissedin.</item>
-        <item>Kesintiye uğrayan temizlik her zaman devam edebilir. Gelin bitirin.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Fotoğraf silindi — güvenli bir şekilde geri dönüşüm kutusuna taşındı.</string>
+    <item>Temizleme henüz tamamlandı değil, gelip devam edelim</item>
+    <item>Az önceki temizleme kesildi, devam edelim</item>
+    <item>Neredeyse tamamlandı, devam ediyor muyuz?</item>
+    <item>Temizleme durduruldu, alanı boşaltmaya devam edelim</item>
+    <item>Temizleme görevi tamamlanmadı, gelip devam edelim</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Resim silindi, geri alım kutusundan temizleyin</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Fotoğraf silindi — güvenli bir şekilde geri dönüşüm kutusuna taşındı.</item>
-        <item>Az önce 1 fotoğrafı sildim — ne kadar yer açtığınızı gördünüz mü?</item>
-        <item>Fotoğraf silindi — şimdi yer açmak için kalıcı olarak silin.</item>
-        <item>Fotoğraf güvenle silindi — depolama durumu güncellendi.</item>
-        <item>Fotoğraf silindi — benzer ekran görüntülerini de temizleyebilirsiniz.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Video silindi — geniş alan boşaltılıyor.</string>
+    <item>Resim silindi, geri alım kutusundan temizleyin</item>
+    <item>Resim silindi, geri alım kutusunu da temizleyelim</item>
+    <item>Resim geri alım kutusuna girdi, içeri gelip temizleyin</item>
+    <item>Geri alım kutusundaki resimler hala yer kaplıyor, temizleyin</item>
+    <item>Az önce silinen resim, tamamen temizlenmeli mi?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Video silindi, geri dönüşüm kutusunu boşaltmak daha fazla yer tasarrufu sağlar</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Video silindi — geniş alan boşaltılıyor.</item>
-        <item>Büyük video kaldırıldı; depolama baskısı hemen azaldı.</item>
-        <item>Video silindi — mevcut depolama durumunuzu kontrol edin.</item>
-        <item>Silme işlemi tamamlandı — alanı tamamen boşaltmak için geri dönüşüm kutusunu boşaltın.</item>
-        <item>Video silindi — Temizlenecek daha fazla unutulmuş büyük video olabilir.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Ses silindi — küçük dosyalar birikiyor. Devam etmek.</string>
+    <item>Video silindi, geri dönüşüm kutusunu boşaltmak daha fazla yer tasarrufu sağlar</item>
+    <item>Video silindi ancak yer henüz serbestleşmedi</item>
+    <item>Video geri dönüşüm kutusuna girdi, gelip temizleyin</item>
+    <item>Bir video silindi, geri dönüşüm kutusu temizlenmeyi bekliyor</item>
+    <item>Geri dönüşüm kutusundaki videolar hala yer kaplıyor</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Ses silindi ama önbellekte kısımlar kaldı, açıp bir bakın</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Ses silindi — küçük dosyalar birikiyor. Devam etmek.</item>
-        <item>Bu ses gitti; daha fazla benzer kullanılmayan dosyalar da temizlenebilir.</item>
-        <item>Ses silindi — depolama ayrıntıları güncellendi. Gelin bir göz atın.</item>
-        <item>1 ses dosyası silindi — depolama listesi yenilendi.</item>
-        <item>Ses silindi — yer açmayı tamamlamak için geri dönüşüm kutusunu boşaltın.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Dosya silindi; depolama alanında biraz daha yer açıldı.</string>
+    <item>Ses silindi ama önbellekte kısımlar kaldı, açıp bir bakın</item>
+    <item>Ses silindi, geri dönüşüm kutusunu da temizleyelim</item>
+    <item>Silme başarılı, şimdi geri dönüşüm kutusunu boşaltalım</item>
+    <item>Bir ses silindi, geri dönüşüm kutusu temizlenmesi gerekiyor</item>
+    <item>Girin ve önbellek dizinindeki eski kayıtları temizleyin</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Dosya silindi, geri kazanım kutusunu temizleyin</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Dosya silindi; depolama alanında biraz daha yer açıldı.</item>
-        <item>Dosya silindi — Dağınıklık artık telefonunuzu rahatsız etmeyecek.</item>
-        <item>Dosya silindi — başka neleri temizleyebileceğinizi görün.</item>
-        <item>Dosya silindi — değişiklikler senkronize edildi, depolama durumu güncellendi.</item>
-        <item>Bu dosya temizlendi; şimdi yer kazanılıyor.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">İndirilen resim — açın ve bir göz atın.</string>
+    <item>Dosya silindi, geri kazanım kutusunu temizleyin</item>
+    <item>Dosya silindi, ancak alan henüz serbestleşmedi</item>
+    <item>Dosya geri kazanım kutusuna girdi, hemen temizleyin</item>
+    <item>Dosya silindi, alanı serbest bırakın</item>
+    <item>Dosya silindi, geri kazanım kutusunu boşaltmak daha ekonomik</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Resim indirimi tamamlandı, nereye kaydedildiğine bir bakın</string>
     <string-array name="notif_event_image_download_titles">
-        <item>İndirilen resim — açın ve bir göz atın.</item>
-        <item>Resim indirildi — albümünüzdeki yinelenen fotoğrafları bu sırada temizleyin</item>
-        <item>İndirme tamamlandı — resim güvenli bir şekilde kaydedildi. Gelin benzer fotoğrafları kontrol edin</item>
-    </string-array>
-    <string name="notif_event_video_download_title">İndirilen video — küçük değil. Eski videoların ne kadar yer açabileceğini görün</string>
+    <item>Resim indirimi tamamlandı, nereye kaydedildiğine bir bakın</item>
+    <item>Yeni resim albüme yeni eklendi, açıp bir bakın</item>
+    <item>Yeni resim eskiyle aynı mı, açınca anlarsınız</item>
+    <item>İndirme tamamlandı, albümdeki tekrarlayanlar temizlenmeli</item>
+    <item>Resim indirimi tamamlandı, depoda ne kadar kaldığına bir bakın</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Video dizini dolmaya başladı, bakmaya git</string>
     <string-array name="notif_event_video_download_titles">
-        <item>İndirilen video — küçük değil. Eski videoların ne kadar yer açabileceğini görün</item>
-        <item>Yeni video kaydedildi — silinecek ve yer açacak büyük videolar bulun. Bana dokun</item>
-        <item>Videolar yer kaplar; telefonunuzu hafifletecek temizlenebilir öğeler bulduk. Buraya dokunun</item>
-        <item>İndirme işlemi tamamlandı! Birkaç eski videoyu temizlediğinizde alan geri gelir. Bana dokun</item>
-        <item>Yeni video sıralandı; bulunması veya temizlenmesi kolay. Görmek için dokunun</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">İndirilen ses — tek dokunuşla müzik kitaplığınızı düzenleyin. Bana dokun</string>
+    <item>Video dizini dolmaya başladı, bakmaya git</item>
+    <item>Yeni indirilen dev videoya bir göz at</item>
+    <item>İndirme tamamlandı, alanın ne kadar dolduğunu kontrol et</item>
+    <item>Videoyu yeni indirdim, telefon biraz dolu</item>
+    <item>İçeri gir ve yer kaplayan videoları seç</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Yeni ses nerede? Açınca anlarsın.</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>İndirilen ses — tek dokunuşla müzik kitaplığınızı düzenleyin. Bana dokun</item>
-        <item>Yeni ses sıralandı — buradayken eski sesi temizleyin. Bana dokun</item>
-        <item>Müzik kütüphanesi doluyor mu? Temizlenebilir sesi kontrol edin. Buraya dokunun</item>
-        <item>İndirilen ses — tek dokunuşla tekilleştirme. Düzenlemek için bana dokunun</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Yeni dosya kaydedildi — eski dosyaları temizleyin ve boş alan açın. Buraya dokunun</string>
+    <item>Yeni ses nerede? Açınca anlarsın.</item>
+    <item>Ses az önce indirildi, alanı biraz temizleyelim.</item>
+    <item>Yeni ses indirildi, gelip bir bak.</item>
+    <item>Ses az önce indirildi, telefon biraz dolu gibi.</item>
+    <item>Ses indirildi, depolama alanını da temizlemek lazım.</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Dosya indirme başarılı, depoyu düzenleyelim</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Yeni dosya kaydedildi — eski dosyaları temizleyin ve boş alan açın. Buraya dokunun</item>
-        <item>İndirme işlemi tamamlandı — hangi eski dosyaları temizleyebileceğinizi görün. Bana dokun</item>
-        <item>Yeni dosya hazır — akıllı arşiv + temizleme. Başlamak için bana dokunun</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Geri dönüşüm kutusu boşaltıldı — depolama alanı yenilendi. En son alanınızı kontrol edin.</string>
+    <item>Dosya indirme başarılı, depoyu düzenleyelim</item>
+    <item>Dosya indirimi yeni tamamlandı, alanı biraz boşaltalım</item>
+    <item>Yeni dosyaları düzenlemek için buraya tıkla</item>
+    <item>İndirilen klasöre ne eklendi, açınca görürüz</item>
+    <item>Dosya indirme tamamlandı, içeri gelip düzenleyelim</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Çöp kutusu boşaltıldı, ne kadar alan serbest kaldığına bir bakın</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Geri dönüşüm kutusu boşaltıldı — depolama alanı yenilendi. En son alanınızı kontrol edin.</item>
-        <item>Geri dönüşüm kutusu boşaltıldı; artıklar derinlemesine temizlendi.</item>
-        <item>Başarıyla boşaltıldı; temizlenmesi gereken daha fazla çöp var. Gelin bir göz atın.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Şimdi temizle</string>
-    <string name="notif_event_action_open_home">Açık</string>
-    <string name="notif_event_action_manage">Uygulamaları yönet</string>
-    <string name="notif_event_action_check_battery">Pili kontrol edin</string>
-    <string name="notif_event_action_check_network">Ağı kontrol et</string>
+    <item>Çöp kutusu boşaltıldı, ne kadar alan serbest kaldığına bir bakın</item>
+    <item>Çöp kutusu temizlendi, telefon anında hafifledi</item>
+    <item>Çöp kutusu tamamen boşaldı, telefon daha hafif çalışıyor</item>
+    <item>Çöp kutusu temizlendi, biraz daha temizlenebilir</item>
+    <item>Çöp kutusu boşaltıldı, ne kadar alan kalmış?</item>
+  </string-array>
+    <string name="notif_event_action_clean">Temizle</string>
+    <string name="notif_event_action_open_home">Aç</string>
+    <string name="notif_event_action_manage">Yönet</string>
+    <string name="notif_event_action_check_battery">Pili kontrol et</string>
+    <string name="notif_event_action_check_network">Veriyi kontrol et</string>
     <string name="notif_days_unit">gün</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Depolama alanı değişti. Bakalım neler yer kaplıyor?</item>
-        <item>Uzamsal değişiklikler algılandı. Yeni çöpler olabilir, bir bakar mısınız?</item>
-        <item>Kullanılabilir alan taşındı. Kimin yediğini biliyor musun? Göz atmak için tıklayın.</item>
-        <item>Alan dar mı? Değişikliği yeni farkettik, detaylara bakalım.</item>
-        <item>Alan değişikliği hatırlatıcısı: Çok fazla çöp biriktirebilirsiniz. Buna bir bak?</item>
-    </string-array>
+    <item>Depolama alanı yine azaldı, açıp bakalım kim kullanıyor?</item>
+    <item>İçeri girip bakalım, albümde yeni fotoğraflar birikmiş.</item>
+    <item>Sohbet önbelleği giderek artıyor, açın ve gerçeği görün.</item>
+    <item>Yine bir yığın çöp ortaya çıktı, içeri girip görün.</item>
+    <item>Tıklama, çöp dağ gibi birikmiş, kimse temizlemiyor.</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Düşük pil. Elektriğinizi kimin çaldığını bilmek ister misiniz? Sıralamaları görmek için tıklayın.</item>
-        <item>Yakında dibe vururuz. Elektrik çalan uygulamaları temizlerseniz bir süre daha hayatta kalabilirsiniz.</item>
-        <item>Pil azalıyor. Birkaç arka planı temizlemek hiçbir şey yapmamaktan daha iyidir.</item>
-        <item>Pil kırmızıdır. Hala kaydedebilirsiniz, açmak için tıklayın ve bir göz atın.</item>
-        <item>20% remains\'den az. Biraz güç tasarrufu sağlayan ilk yardım yapalım ve ortalığı temizleyelim.</item>
-    </string-array>
+    <item>Pil seviyesi kritik, beklemeyin, açın ve temizlenin</item>
+    <item>Eve ulaşamayacaksınız, içeri girip önbelleği temizleyin</item>
+    <item>Pil ışığı kırmızıya döndü, içeri girip bir bakın</item>
+    <item>Pil tamamen bitti, içeri girip sorunu bulun</item>
+    <item>Pil neredeyse bitti, açın ve hala kurtarılabileceğini görün</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Pil yarıdan fazlası dolu. Şimdilik kendine iyi bak, sen eve dönene kadar sürecek.</item>
-        <item>Pil yarıdan fazlası dolu. Artık pilin bakımını yapmak %20\'ye kadar beklemekten çok daha kolay.</item>
-        <item>Pilin yarısı bitti. Ne kadar süre dayanabilir? Göz atmak için tıklayın.</item>
-        <item>Pil yarıdan fazlası dolu. Arka uçla ilgilenmenin zamanı geldi, gerginleşmesini beklemeyin.</item>
-        <item>Pilin yarısı kaldı. Güce aç olan büyük oyuncuları temizleyin ve ikinci yarıyı daha istikrarlı hale getirin.</item>
-    </string-array>
+    <item>Açınca anlarsın, şarj yarıdan fazlaysa önce temizle</item>
+    <item>Orta çizgiyi geçti, açarak önbelleği temizle</item>
+    <item>Sadece yarım bar kaldı, girip albümü düzenle</item>
+    <item>Şarj stabil, açarak önbelleği temizle</item>
+    <item>Şarj orta seviyede, açarak zahmetsizce önbelleği temizle</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Son sprint %80\'dir. Tam gücü karşılamak için çöpü boşaltın ve hafifçe toplayın.</item>
-        <item>Hala 20% short tam şarj var. Ekranınıza bakmayı bırakın ve bırakın çöpleri biz halledelim.</item>
-        <item>%80: Mükemmelliğe bir adım uzakta. Bir kez tıklayın ve pil tamamen şarj olduğunda tamamen silinecektir.</item>
-        <item>80%, a İyi bir cep telefonu için iyi bir batarya. Sıcakken bir raundu mu temizliyorsunuz?</item>
-        <item>Bize verilen son 20% i. Siz aküye bakıyorsunuz, biz de çöpü temizliyoruz.</item>
-    </string-array>
+    <item>Şarj oluyor, boş zamanlarda temizliğe gelin</item>
+    <item>Neredeyse dolu, çok fazla çöp var, gelin suçluyu ortaya çıkaralım</item>
+    <item>Sadece tam dolu beklemek kaldı, temizlik için beni tıklayın</item>
+    <item>Neredeyse pil tam dolu, açın ve temizlenin</item>
+    <item>Şarj olurken bekleyin, içeri tıklayıp önbelleği temizleyin</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Tamamen şarj edilmiş ve kullanıma hazır. Son bir kontrol: Çöp temizlendi mi?</item>
-        <item>Şarj ettikten sonra ritüel duygusu doluyor. Bunu anmak için çöpleri temizlemeye ne dersiniz?</item>
-        <item>100%, sbugünkü tablo. Bir tur daha ve kusursuz.</item>
-        <item>%100. Fişi çıkarmadan önceki son adım: otuz saniye içinde çöpü temizleyin.</item>
-        <item>Tam güçle tamamlandı. Son bir temizlik, mükemmel.</item>
-    </string-array>
+    <item>Tam şarj olunca israf etmeyin, önbelleğe bir göz atın</item>
+    <item>Tam şarj durumunda, temizlik için hemen girin</item>
+    <item>Tam şarj oldu, temizlik zamanı. Önbelleği temizlemek için açın</item>
+    <item>Şarj dolu, albüm düzenleme zamanı. Gidip bir bakın</item>
+    <item>Tam şarjda beklemedeyiz, temizlik için girin</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>İnternet değişiyor! Mevcut ağ durumunu görüntüle 1</item>
-        <item>Ağ terki. Temizlerken sinyale bakmayın, sadece üzerine tıklayın ve tarayın.</item>
-        <item>Sayfayı açamıyor musunuz? Temizleme her zaman çevrimiçidir.</item>
-        <item>Çevrimdışı çalışabilirsiniz ve çöp kutunuz artık temizlenebilir.</item>
-        <item>Sinyal yoksa temizlik için veriye gerek yoktur, tıklamanız yeterlidir.</item>
-    </string-array>
+    <item>İnternet kesildi, yerel önbelleğe bir göz atın</item>
+    <item>Ağ değişti, bu fırsatı değerlendirin ve önbelleğe bakın</item>
+    <item>Ağ istikrarsız, acele etmeyin, açın ve temizlenin</item>
+    <item>Bağlantı kesildi, tıklayın ve yerel çöpleri görün</item>
+    <item>Ağ yeniden bağlandı, içeri girip önbelleğe bir bakın</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Fişe takıldı. Bu gecenin görevi: yeniden doldurmak ve temizlemek.</item>
-        <item>Sen dinleniyorsun, o yeniden şarj oluyor. Çöpleri de temizlesin.</item>
-        <item>Şarj süresi boyunca uzun süre biriken çöplerin temizlenmesi yeterlidir.</item>
-        <item>Ancak elektrikler prize takıldığında sahne arkası çalışanları özgürce çalışmaya cesaret edebiliyor.</item>
-        <item>Şarj ederken biraz ısınıyor musunuz? Arka planı temizlemek sıcaklığı düşürebilir.</item>
-    </string-array>
+    <item>Şarj etmeye başladım, hemen önbelleğe bir göz atayım</item>
+    <item>Şarj başladı, girip derin bir temizlik yapalım</item>
+    <item>Şarj daha yeni başladı, çöp temizlemeye tıklayalım</item>
+    <item>Şarj başladı, erken başlasak daha iyi, açınca temiz olur</item>
+    <item>Şarj aleti hazır, girip önbelleğe bir bakayım</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Fişi çekin ve yola çıkın. Çöpleri temizlemek ve en iyi durumda kalmak için zaman ayırmayı unutmayın.</item>
-        <item>Şarj işlemi bittikten sonra toplanıp yola çıkın. Sadece temizleyin ve mükemmel olacak.</item>
-        <item>Tamamen şarj edilmiş ve kullanıma hazır. Çöpleri sorunsuz bir şekilde temizliyoruz, bugün hiçbir eksiklik yok.</item>
-        <item>Şarj işlemi biter. Bir sonraki alan temizlenecek ve her seferinde bir seviye yükseltilecektir.</item>
-        <item>Elektrik kesintilerinde durmayın. Geriye bir şey kaldı: temizlik.</item>
-    </string-array>
+    <item>Şarj kablosunu çekin, çevrimdışı olun ve bir göz atın</item>
+    <item>Elektrik kesildi, internet olmadan yerel verileri kontrol edin</item>
+    <item>Güç kaynağını çekmek kolay, açın ve temizlenin</item>
+    <item>Elektrik kesildi, şarjın ne kadar dayanacağını kontrol edin</item>
+    <item>Kablo çekildi, tam zamanında, fotoğrafları düzenlemeye başlayın</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Tekrar buluştuk, sıkıştın mı? Çoğu çöp, temizlemeyi deneyin.</item>
-        <item>Kilitli mi? Önce diğer uygulamaları açmayın ve otuz saniye boyunca çöp kutusunu temizlemeyin.</item>
-        <item>Kilidini açacak ilk şey biziz. Çöpü temizle ve seni daha çok sevecek.</item>
-        <item>Kilit açıldıktan otuz saniye sonra. En değerli kullanım alanı: çöplerin temizlenmesi.</item>
-        <item>Cep telefonunuz şöyle dedi: Arka uç biraz tıkalı, bana yardım edebilir misiniz?</item>
-    </string-array>
+    <item>Ekran açıldı, hızlıca önbelleğe bakıyorum</item>
+    <item>Kilit açıldı, yer yeterli mi?</item>
+    <item>Ekran açıldı, telefonun alanını bir bakışta görebiliyorum</item>
+    <item>Ekran yeni açıldı, fotoğrafları düzenlemeye geliyorum</item>
+    <item>Ekran açıldı, hemen açıp durumu anlıyorum</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Telefonunuzu bırakın ve bize bırakın. Dinlenme ekranı süresi = emzirme süresi.</item>
-        <item>İşin durdurulması işin durdurulması anlamına gelmez. Bir dahaki sefere ekranı açtığımda sana bir sürpriz yapacağım.</item>
-        <item>Ekranı dinlendirirken sessizce iyileşiyor. Tıklayın, gerisini biz hallederiz.</item>
-        <item>Ekranı kilitlemeden önce son bir şey: Temizle\'ye tıklayın. Yarın sabah yeni bir görünüm.</item>
-        <item>Ekran kararıyor. Şimdi düzenlemeleri yapın ve sonuçları yarın görün.</item>
-    </string-array>
+    <item>Ekran kapandı, arka plan temizlemesi tam zamanında başladı</item>
+    <item>Ekran kilitlenmeden önce, gidip önbelleğe bir göz atalım</item>
+    <item>Uyumadan hemen önce tam zamanında, gidip albümleri düzenleyelim</item>
+    <item>Ekran kararmak üzere, erken açalım ve Sorunsuz Temizlemeyi başlatalım</item>
+    <item>Ekran kapanmadan önce telefonu rahatlatalım, açınca anlarsınız</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Yeni uygulama ve önbellek de taşındı. temizlemek</item>
-        <item>Yeni bir uygulama yüklemenin keyfini anlıyoruz. Sadece önbellek sessizce birikecek.</item>
-        <item>Yeni Uygulama mı? Önbellek de burada, tek tıklamayla temizleyin.</item>
-        <item>Yeni gelir, eski gider. Sık sık temizleyin ve istediğiniz gibi kurun.</item>
-        <item>Başka bir tane mi? Alan giderek daralıyor, gelin temizleyin.</item>
-    </string-array>
+    <item>Yeni uygulama önbelleği geldi, açıp bir bakalım</item>
+    <item>Yeni uygulama kuruldu, paketleri temizleyelim</item>
+    <item>Yeni bir yüz sessizce önbelleğe girdi, içeri girip görün</item>
+    <item>Bakın, yeni uygulama önbellek paketi yükseliyor</item>
+    <item>Tıkladığınızda, yeni uygulama paketleri hala yer kaplıyor</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Başarıyla kaldırıldı! dosya kalıntılarını temizlemek için</item>
-        <item>Kaldırıldı ancak temizlenmedi. Bitirmek için tıklayın.</item>
-        <item>Uygulama kaldırıldı ancak kuyruk hala orada. Tek tıklamayla temizleyin ve sonsuza kadar veda edin.</item>
-        <item>İkinci adımı kaçırmayın: Uygulamayı silin ve kalıntıları temizleyin. Tek tıkla ve bitti.</item>
-        <item>Kalıntı, boşalan alanın yarısını tüketecektir. Derin tarama yapın ve her şeyi temizleyin.</item>
-    </string-array>
+    <item>Uygulama kaldırıldı ama kalıntıları kaldı, bir açıp bakalım</item>
+    <item>İçeri girip bakalım, kaldırıldıktan sonra bile artıklar var</item>
+    <item>Kaldırma başarılı, temizlemek için biraz daha gerekebilir</item>
+    <item>Kaldırıldıktan sonra hala kalıntılar var, açıp bakınca temizlenir</item>
+    <item>Kaldırıldıktan sonra alan değişmedi mi? Nedenini görmek için içeri girin</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>Yeni bir sürüm geldi. Eski versiyondan kalan her şey tamamen temizlendi.</item>
-        <item>Sürüm için +1, önbellek için +1, derin tarama için.</item>
-        <item>Güncelleme tamamlanır ve kalan kurulum paketleri tek tıklamayla temizlenebilir.</item>
-        <item>Güncelleme bitti, toparlayalım. Burayı temizle, ben devralacağım.</item>
-        <item>Her güncelleme eski dosyaları bırakacak ve onlarla hızlı bir şekilde ilgilenecektir.</item>
-    </string-array>
+    <item>Uygulama yeni güncellendi, eski önbelleği temizlemek lazım</item>
+    <item>Güncelleme bitti ama önbellek yine arttı, açıp bir bakayım</item>
+    <item>Güncellenmiş önbellek, içeri girip daha rahat bir şekilde bakalım</item>
+    <item>Güncelleme paketi hala epey yer kaplıyor, açıp temizleyelim</item>
+    <item>Yeni sürümün kalıntıları hala bekliyor, beni tıkla</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Başka bir ekran görüntüsü? 1 Ekran görüntülerini temizlemenin zamanı geldi</item>
-        <item>Yeni bir ekran görüntüsü buldum, görüntülemek ve temizlemek için tıklayın~</item>
-        <item>Giderek daha fazla ekran görüntüsü var; tek tıklamayla temizleme, yer açmanıza yardımcı olabilir</item>
-        <item>Ekran görüntüsü başarıyla alındı, kopya ve bulanık olanlar tek tıklamayla filtrelenebilir.</item>
-        <item>Veritabanına yeni ekran görüntüleri eklendi ve yinelenen görüntüler tek tıklamayla silinmek üzere sıraya konuldu.</item>
-    </string-array>
+    <item>Yeni ekran görüntüleri var, saklayıp saklamayacağımıza bir bakalım</item>
+    <item>Fotoğraf albümünde bir yığın ekran görüntüsü birikti, açınca ferahlayacak</item>
+    <item>Ekran görüntüsü alındı, gelin fotoğraf albümünü düzenleyelim</item>
+    <item>Az önce alınan yeni görüntü, açınca sizi bekleyen bir sürpriz var</item>
+    <item>Yeni ekran görüntüsü albüme eklendi, içeri girip bir göz atın daha rahat olur</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Birikmiş çok fazla çöp var. Hepsini bir kerede temizleyin.</item>
-        <item>En son %1$d gün önce temizlendi, şimdi işlemek için tıklayın</item>
-        <item>Birkaç gündür burada değilim, bu yüzden etrafı temizleyeceğim ve savaş alanına hafifçe geri döneceğim.</item>
-        <item>Takas kotası bugün kullanılmamıştır. Geri döndüğümde temizleyeceğim.</item>
-        <item>Önbellek doluyor, kontrol etmenizi bekliyoruz</item>
-    </string-array>
+    <item>Uzun zamandır telefonu temizlemiyordum, nefesim kesildi, açayım bir bakayım</item>
+    <item>Çok uzun zamandır çöpler birikti, girip temizlemem lazım</item>
+    <item>Telefonum uzun zamandır temizlenmedi, toz birikti, açıp temizleyeyim</item>
+    <item>Fotoğraf albümünü açayım, önbellek çoktan dağ gibi birikti</item>
+    <item>Önbellek bu kadar uzun süre seninle kaldı, artık temizlenmesi lazım, tıkla beni</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Uzun zamandır görüşemiyoruz, bekliyorduk. Geri gelin ve çöpleri temizleyin.</item>
-        <item>Birkaç gündür seni görmüyorum. Çöpe dinlenme yok. Geri gelip süpürün.</item>
-        <item>Önbellek sıraya alındı. Tıkladığınızda kaybolurlar.</item>
-        <item>Siz uzaktayken çöp kutusu meşgul. Tek tıklamayla boşaltın ve her zamanki gibi taze hissedin.</item>
-        <item>Geri? Önce çöpü temizle. Otuz saniye içinde telefon yeni kadar hafif oluyor.</item>
-    </string-array>
+    <item>Uzun zamandır görmedik, unuttun sanmıştım, açıp bir bakalım</item>
+    <item>Uzun zamandır açmadın, girip bir bak da ne kadar temiz olduğunu gör</item>
+    <item>Uzun zaman oldu, girip durumu öğrenelim</item>
+    <item>İkon neredeyse bitmiş, girip bir bakalım</item>
+    <item>Meşgul olduğumuz için unuttuk galiba, uzun zamandır bekliyoruz, hadi bir bakalım</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Uzun süredir biriken çöpler bir anda temizleniyor.</item>
-        <item>Temizleme zamanı. Bugünün çöp kutusu tıklamanızı bekliyor.</item>
-        <item>Bugünün Space Daily\'si geldi. Ortalığı boşaltın ve hafif tutun.</item>
-        <item>Bazı dosyalar sandığınızdan çok daha büyük, bir göz atın</item>
-        <item>Birkaç G\'yi alan adamı bulun ve ortalığı temizleyin</item>
-        <item>Büyük evrak listesi hazır gelin bir göz atın.</item>
-        <item>En çok alanı kim kaplıyor? Bir saniyede ortaya çıktı.</item>
-        <item>Sürekli çekim harika, bitirmek acı verici. Bize bırakın.</item>
-        <item>Benzer fotoğraflar sıralanmıştır; hangisini saklayacağınızı seçmek size kalmıştır</item>
-        <item>Çok fazla benzer resim mi var? Tek tıklamayla kopyaları karşılaştırmanıza ve kaldırmanıza yardımcı olacağız.</item>
-        <item>Önbelleğe alınan çevrimdışı videolar temizlenmelidir.</item>
-        <item>Kalan ses de temizlenecektir.</item>
-    </string-array>
+    <item>Son temizlemede yarıda kaldım, açıp bir bakayım</item>
+    <item>Temizleme yarıda kaldı, içeri girip nereye kaldığına bakayım</item>
+    <item>Bir sürü büyük video çok yer kaplıyor, açıp bir bakayım</item>
+    <item>Hâlâ temizlenmemiş devasa bir dosya var, açıp temizleyeyim</item>
+    <item>Bir sürü yer kaplayan yüksek çözünürlüklü video var, içeri girip görelim</item>
+    <item>Tekrarlayan fotoğraflar yer kaplıyor, girip temizleyebilirsin</item>
+    <item>Fotoğraflarında aynı yüzler var, tıkla biraz sil</item>
+    <item>Benzer manzara fotoğrafları yığılmış, girip silmek için seç</item>
+    <item>Büyük videolar yer kaplıyor, açıp bir bak</item>
+    <item>Sesli mesajlar sohbet önbelleğini doldurmuş, girip düzenle</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Pil eskisi kadar dayanıklı değil mi? Buna bir bak.</item>
-        <item>Elektriğinizi kim çalıyor? Bir kez baktığınızda anlayacaksınız.</item>
-        <item>Bunları kapatmak pil ömrünü uzatacaktır.</item>
-        <item>Bazı uygulamalar yüklenir ancak hiç kullanılmaz. Hangileri olduklarını gördün mü?</item>
-        <item>Kullanmadığınız uygulamaları saklamak da bir yüktür, liste hazırlandı</item>
-        <item>Gizlilikle ilgili olarak, ne kadar erken halledilirse o kadar iyi olur.</item>
-        <item>Önemli olanları gizleyin ve gereksiz olanlardan kurtulun. sana yardım etmeme izin ver</item>
-        <item>Trafik nereye gidiyor? Kimin kullandığını öğrenin.</item>
-        <item>Trafik ayrıntıları bir bakışta hazır ve nettir.</item>
-        <item>Arka planda gizlice internete bağlanan bir uygulama var.</item>
-    </string-array>
+    <item>Arka plandaki uygulamalar gizlice şarjınızı tüketiyor, açın ve kontrol edin</item>
+    <item>Geceleri beklemedeyken şarjınız sessizce düşüyor, bana tıklayın</item>
+    <item>Sincronizasyon sürekli açık kalırsa her gün daha fazla güç tüketir, içeri girip görün</item>
+    <item>Birçok uygulama yarım yıldır açılmadı, içeri girip bakın</item>
+    <item>Önceden yüklenmiş uygulamalar boş yeri işgal ediyor, içeri girip düzenleyin</item>
+    <item>Bakın, sık kullandığımız uygulamalar çok az.</item>
+    <item>Özel fotoğraflarınızı özel alana kilitleyin, açıp bakın.</item>
+    <item>Selfie\'lerinizi gizlice saklayın, başkaları bulmasın. İçeri girip görün.</item>
+    <item>Bu ayki veri limitiniz bitmek üzere, açıp bakın.</item>
+    <item>Veri tasarrufu modu açıkken çok tasarruf ediyorsunuz, gidin bakın.</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} kadar çöp; tek dokunuşla temizleyin</string>
     <string name="notif_scheduled_large_files">{total} büyük dosya; kolaylıkla temizleyin</string>
     <string name="notif_scheduled_duplicate_photos">{groups} grup yinelenen fotoğraf; {size} tasarruf edin</string>
@@ -762,7 +769,7 @@
     <string name="notif_scheduled_videos">{total} video; yer açmak için {n} tanesini silin</string>
     <string name="notif_scheduled_audio">{total} ses dosyası; düzenleme zamanı</string>
     <string name="notif_scheduled_apps">{idle} boştaki uygulamalar tarafından kullanılan {size}</string>
-    <string name="notif_scheduled_data">Arka planda kullanılan verilerin {gerisi}</string>
+    <string name="notif_scheduled_data">Arka planda {back} mobil veri kullanıldı</string>
     <string name="app_manager_uninstall_selected">Seçilenleri kaldır</string>
     <string name="app_manager_uninstall_selected_count">Seçilenleri kaldır (%1$d)</string>
     <string name="cache_removable">Çıkarılabilir</string>

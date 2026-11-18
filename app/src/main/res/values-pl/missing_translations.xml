@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Kosz na śmieci (%1$s)</string>
     <string name="trash_bin_title_empty">Kosz na śmieci</string>
     <string name="trash_restore_hint">Kliknij, aby przywrócić zdjęcia</string>
-    <string name="trash_empty_action">Usuń wszystko z kosza</string>
+    <string name="trash_empty_action">Usuń zdjęcia</string>
     <string name="trash_restored">Zdjęcie przywrócone</string>
     <string name="trash_bin_empty">Kosz na śmieci jest pusty</string>
     <string name="feature_smart_groups">Inteligentne grupy</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Czyste przypomnienia</string>
     <string name="notif_event_channel_desc">Lokalne przypomnienia po zrzutach ekranu, instalacjach i deinstalacjach</string>
     <string name="notif_event_summary_channel_name">Czyste podsumowanie przypomnienia</string>
-    <string name="notif_event_screenshot_title">Kolejny zrzut ekranu? 1 Czas uporządkować zrzuty ekranu</string>
-    <string name="notif_event_install_title">Nowa aplikacja została wprowadzona, podobnie jak pamięć podręczna. posprzątać</string>
-    <string name="notif_event_uninstall_title">Odinstalowano pomyślnie! do czyszczenia pozostałości plików</string>
-    <string name="notif_clean_reminder_title">Jest mnóstwo śmieci, które się piętrzą. Wyczyść wszystko na raz.</string>
-    <string name="notif_event_battery_below_50_title">Bateria jest naładowana w ponad połowie. Zadbaj o to teraz, posłuży do czasu, aż wrócisz do domu.</string>
-    <string name="notif_event_battery_below_20_title">Niski poziom baterii. Chcesz wiedzieć, kto kradnie Twój prąd? Kliknij, żeby zobaczyć rankingi.</string>
-    <string name="notif_event_charging_title">Podłączony. Dzisiejsze zadanie: napełnij, a następnie wyczyść.</string>
-    <string name="notif_event_charging_full_title">W pełni naładowany i gotowy do pracy. Ostatnia kontrola: czy śmieci zostały usunięte?</string>
-    <string name="notif_event_charging_to_80_title">Końcowy sprint to 80%. Wyładuj śmieci i lekko się spakuj, aby powitać pełną moc.</string>
-    <string name="notif_event_charging_disconnect_title">Odłącz i ruszaj. Pamiętaj, aby poświęcić trochę czasu na sprzątanie śmieci i zachować doskonałą formę.</string>
-    <string name="notif_event_app_update_title">Nadeszła nowa wersja. Wszystko, co pozostało ze starej wersji, zostało całkowicie oczyszczone.</string>
-    <string name="notif_event_network_change_title">Sieć się zmienia! Wyświetl aktualny stan sieci 1</string>
-    <string name="notif_event_screen_lock_title">Odłóż telefon i zostaw go nam. Czas odpoczynku przed ekranem = czas karmienia.</string>
-    <string name="notif_event_screen_on_after_lock_title">Spotykamy się ponownie, utknąłeś? Większość to śmieci, spróbuj je wyczyścić.</string>
-    <string name="notif_event_storage_free_drop_title">Miejsce do przechowywania uległo zmianie. Zobaczmy, co zajmuje miejsce?</string>
-    <string name="notif_event_scheduled_push_1_title">Śmieci, które gromadziły się przez długi czas, są natychmiast usuwane.</string>
-    <string name="notif_event_scheduled_push_2_title">Bateria nie jest tak wytrzymała jak wcześniej? Sprawdź to.</string>
-    <string name="notif_event_app_inactive_title">Dawno się nie widzieliśmy, czekaliśmy. Wróć i wyrzuć śmieci.</string>
-    <string name="notif_event_scheduled_push_3_title">Jedno dotknięcie i dostęp do list odtwarzania — skonfiguruj widżet</string>
+    <string name="notif_event_screenshot_title">Nowy zrzut ekranu, sprawdź, czy chcesz go zachować</string>
+    <string name="notif_event_install_title">Nowe aplikacje zostawiły po sobie bufor, kliknij i sprawdź</string>
+    <string name="notif_event_uninstall_title">Aplikacja została usunięta, ale coś pozostało. Otwórzmy i zobaczmy.</string>
+    <string name="notif_clean_reminder_title">Dawno nie czyszczyłem telefonu, aż nie mogę oddychać. Otwieram i sprawdzam.</string>
+    <string name="notif_event_battery_below_50_title">Otwórz i zrozumiesz – jeśli bateria jest powyżej połowy, najpierw oczyść pliki</string>
+    <string name="notif_event_battery_below_20_title">Akumulator na wyczerpaniu? Nie czekaj, otwórz i odśwież!</string>
+    <string name="notif_event_charging_title">Podłączono, czas sprawdzić pamięć podręczną</string>
+    <string name="notif_event_charging_full_title">Dopiero naładowane, nie marnuj energii – otwórz i sprawdź pamięć podręczną</string>
+    <string name="notif_event_charging_to_80_title">Ładowanie trwa, a ja przyszedłem usunąć śmieci</string>
+    <string name="notif_event_charging_disconnect_title">Odłącz ładowarkę, aby być offline. Otwórz i sprawdź.</string>
+    <string name="notif_event_app_update_title">Aplikacja została właśnie zaktualizowana, czas usunąć stare bufory</string>
+    <string name="notif_event_network_change_title">Brak połączenia z internetem, otwórz i sprawdź lokalne cache</string>
+    <string name="notif_event_screen_lock_title">Ekran wygasł, czyszczenie w tle właśnie się zaczyna</string>
+    <string name="notif_event_screen_on_after_lock_title">Ekran się podświetlił, od razu sprawdzam pamięć cache</string>
+    <string name="notif_event_storage_free_drop_title">Pojemność znowu maleje, kliknij i zobacz, kto ją zajmuje</string>
+    <string name="notif_event_scheduled_push_1_title">Ostatnio czyszczenie zostało w połowie, więc otwieram i sprawdzam</string>
+    <string name="notif_event_scheduled_push_2_title">Założone aplikacje potajemnie zużywają twoją baterię, sprawdź to</string>
+    <string name="notif_event_app_inactive_title">Dawno się nie widzieliśmy, myślałem, że zapomniałeś. Otwórz i zobacz.</string>
+    <string name="notif_event_scheduled_push_3_title">Dodaj widżet do ekranu głównego i sprzątaj bez otwierania aplikacji</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Jedno dotknięcie i dostęp do list odtwarzania — skonfiguruj widżet</item>
-        <item>Ułatw sobie wszystko dzięki widżetowi — dodaj skrót muzyczny</item>
-        <item>Graj szybko bez odblokowywania — włącz widżet na ekranie głównym</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Zapomniałeś o czymś</string>
+    <item>Dodaj widżet do ekranu głównego i sprzątaj bez otwierania aplikacji</item>
+    <item>Dodaj widżet, by mieć sprzątanie pod ręką</item>
+    <item>Widżet jest gotowy. Umieść go na ekranie głównym</item>
+    <item>Dodaj widżet jednym dotknięciem i sprzątaj z ekranu głównego</item>
+    <item>Dodaj widżet, aby łatwiej sprzątać</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Wróć, czyszczenie jednym kliknięciem zajmuje tylko 3 sekundy</string>
     <string name="notif_event_app_background_content">Przyjdź i dokończ sprzątanie, żeby działało płynniej.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Zapomniałeś o czymś</item>
-        <item>Pozostał jeden krok</item>
-        <item>Dobra wiadomość</item>
-        <item>Odszedłeś za szybko</item>
-        <item>Nie zostawiaj śmieci na noc</item>
-    </string-array>
+    <item>Wróć, czyszczenie jednym kliknięciem zajmuje tylko 3 sekundy</item>
+    <item>Na tej stronie wciąż jest trochę śmieci do usunięcia</item>
+    <item>Nie spiesz się z wyjściem, po prostu zrób to szybko</item>
+    <item>Został tylko jeden krok, wróć i wyczyść całą przestrzeń</item>
+    <item>Nie wychodź, czyszczenie jeszcze nie jest zakończone</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Przyjdź i dokończ sprzątanie, żeby działało płynniej.</item>
         <item>Jeszcze jedno dotknięcie, aby zakończyć czyszczenie i zwolnić więcej miejsca.</item>
@@ -530,239 +532,244 @@
         <item>Twój telefon może być jeszcze szybszy — przyjdź i zobacz optymalizację.</item>
         <item>Przyjdź i dokończ sprzątanie, żeby działało płynniej.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Wyniki skanowania są gotowe — śmieci zajmują miejsce. Wyczyść teraz</string>
+    <string name="notif_event_scan_done_uncleaned_title">Skanowanie zakończone, brak tylko ostatniego kroku czyszczenia</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Wyniki skanowania są gotowe — śmieci zajmują miejsce. Wyczyść teraz</item>
-        <item>Pozostał jeden krok: wróć i natychmiast zwolnij miejsce.</item>
-        <item>Zapomniałeś posprzątać po skanowaniu? 10 sekund, aby Twój telefon był lżejszy.</item>
-        <item>Śmieci nadal znajdują się na Twoim telefonie — wyniki zostały zapisane. Wróć i wyczyść jednym dotknięciem.</item>
-        <item>Podczas ostatniego skanowania znaleziono wiele elementów do wyczyszczenia. Chodź, dokończ to.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Czyszczenie jeszcze się nie skończyło — wykonaj ostatni krok.</string>
+    <item>Skanowanie zakończone, brak tylko ostatniego kroku czyszczenia</item>
+    <item>Skanowanie zakończone, do czyszczenia brakuje tylko chwili</item>
+    <item>Sprawdzenie zakończone, chodźmy usunąć śmieci</item>
+    <item>Skanowanie zakończone, śmieci wciąż czekają na usunięcie</item>
+    <item>Dopiero skończyłeś skanować, ale jeszcze nie wyczyściłeś, chodź sprawdzić</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Wyczyślenie nie zostało zakończone, wróćmy do tego</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Czyszczenie jeszcze się nie skończyło — wykonaj ostatni krok.</item>
-        <item>Czyszczenie przerwane: w połowie drogi. Wykończenie dla lżejszego telefonu.</item>
-        <item>Sprzątanie prawie się skończyło — nie zostawiaj śmieci.</item>
-        <item>Wyszedłeś w połowie czysty — zakończ i poczuj różnicę.</item>
-        <item>Przerwane czyszczenie można kontynuować w dowolnym momencie. Chodź, dokończ to.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Zdjęcie usunięte — bezpiecznie przeniesione do kosza.</string>
+    <item>Wyczyślenie nie zostało zakończone, wróćmy do tego</item>
+    <item>Wyczyślenie zostało przerwane, kontynuujmy</item>
+    <item>Pozostało już tylko trochę, kontynuować?</item>
+    <item>Wyczyślenie zostało wstrzymane, kontynuujmy zwalnianie miejsca</item>
+    <item>Zadanie wyczyślenia nie zostało zakończone, wróćmy do tego</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Zdjęcie zostało usunięte, usuń je z kosza</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Zdjęcie usunięte — bezpiecznie przeniesione do kosza.</item>
-        <item>Właśnie usunąłem 1 zdjęcie — zobacz, ile miejsca zwolniłeś?</item>
-        <item>Zdjęcie usunięte — usuń teraz trwale, aby zwolnić miejsce.</item>
-        <item>Zdjęcie zostało bezpiecznie usunięte — zaktualizowano stan przechowywania.</item>
-        <item>Zdjęcie usunięte — możesz także wyczyścić podobne zrzuty ekranu.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Film usunięty — zwalniana jest duża przestrzeń.</string>
+    <item>Zdjęcie zostało usunięte, usuń je z kosza</item>
+    <item>Zdjęcie usunięte, usuń też kosz</item>
+    <item>Zdjęcie trafiło do kosza, wejdź i wyczyść je</item>
+    <item>Zdjęcia w koszu zajmują miejsce, usuń je</item>
+    <item>Czy usunięte zdjęcia trzeba całkowicie wyczyścić?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Filmik usunięty, opróżnienie kosza oszczędza więcej miejsca</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Film usunięty — zwalniana jest duża przestrzeń.</item>
-        <item>Usunięto duży plik wideo — od razu zmniejszono obciążenie pamięci.</item>
-        <item>Film usunięty — sprawdź aktualny stan pamięci.</item>
-        <item>Usuń gotowe — opróżnij kosz, aby całkowicie zwolnić miejsce.</item>
-        <item>Film usunięty — może być więcej zapomnianych dużych filmów do wyczyszczenia.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Dźwięk został usunięty — dodają się małe pliki. Kontynuować.</string>
+    <item>Filmik usunięty, opróżnienie kosza oszczędza więcej miejsca</item>
+    <item>Filmik usunięty, ale miejsce nie zostało jeszcze zwolnione</item>
+    <item>Filmik trafił do kosza, chodź go wyczyścić</item>
+    <item>Jeden filmik został usunięty, czeka w koszu na wyczyszczenie</item>
+    <item>Filmy w koszu wciąż zajmują miejsce</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Audio usunięte, ale pamięć podręczna wciąż zawiera fragmenty. Otwórz i sprawdź.</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Dźwięk został usunięty — dodają się małe pliki. Kontynuować.</item>
-        <item>Dźwięk zniknął — można także wyczyścić więcej podobnych, nieużywanych plików.</item>
-        <item>Dźwięk usunięty — zaktualizowano szczegóły przechowywania. Przyjdź i spójrz.</item>
-        <item>Usunięto 1 plik audio — odświeżono listę przechowywania.</item>
-        <item>Dźwięk usunięty — opróżnij kosz, aby zwolnić miejsce.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Plik usunięty — zwolniono nieco więcej miejsca.</string>
+    <item>Audio usunięte, ale pamięć podręczna wciąż zawiera fragmenty. Otwórz i sprawdź.</item>
+    <item>Audio usunięte. Wypróżnij też kosz.</item>
+    <item>Usunięcie zakończone. Czas opróżnić kosz.</item>
+    <item>Jeden fragment audio został usunięty, czeka na opróżnienie z kosza.</item>
+    <item>Wejdź, aby opróżnić stare nagrania z katalogu pamięci podręcznej.</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Plik został usunięty, spróbuj wyczyścić kosz na śmieci</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Plik usunięty — zwolniono nieco więcej miejsca.</item>
-        <item>Plik został usunięty — bałagan nie będzie już przeszkadzał Twojemu telefonowi.</item>
-        <item>Plik usunięty — zobacz, co jeszcze możesz wyczyścić.</item>
-        <item>Plik usunięty — zmiany zsynchronizowane, stan przechowywania zaktualizowany.</item>
-        <item>Ten plik został wyczyszczony — teraz odzyskuję miejsce.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Pobrany obraz — otwórz go i spójrz.</string>
+    <item>Plik został usunięty, spróbuj wyczyścić kosz na śmieci</item>
+    <item>Usunięcie pliku zakończone, miejsce jeszcze nie zostało zwolnione</item>
+    <item>Plik trafił do kosza, warto go wyczyścić</item>
+    <item>Usunięcie pliku zakończone, czas zwolnić miejsce</item>
+    <item>Plik został usunięty, czyszczenie kosza jest jeszcze bardziej efektywne</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Pobranie obrazu zakończone, sprawdź, gdzie jest zapisany</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Pobrany obraz — otwórz go i spójrz.</item>
-        <item>Obraz pobrany — usuń zduplikowane zdjęcia ze swojego albumu, gdy już to zrobisz</item>
-        <item>Pobieranie zakończone — obraz został bezpiecznie zapisany. Przyjdź i zobacz podobne zdjęcia</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Pobrany film — nie jest mały. Zobacz, ile miejsca mogą zwolnić stare filmy</string>
+    <item>Pobranie obrazu zakończone, sprawdź, gdzie jest zapisany</item>
+    <item>Nowy obrazek właśnie trafił do albumu, otwórz i zobacz</item>
+    <item>Czy nowy obrazek jest powtórką starego? Sprawdź, żeby się przekonać</item>
+    <item>Pobranie zakończone, czas usunąć powtórki z albumu</item>
+    <item>Pobranie obrazu zakończone, sprawdź, ile miejsca zostało w pamięci</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Katalog wideo jest już prawie pełny, idź zobaczyć</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Pobrany film — nie jest mały. Zobacz, ile miejsca mogą zwolnić stare filmy</item>
-        <item>Zapisano nowy film — znajdź duże filmy do usunięcia i zwolnij miejsce. Dotknij mnie</item>
-        <item>Filmy zajmują miejsce — znaleźliśmy elementy, które można wyczyścić, aby odciążyć Twój telefon. Kliknij tutaj</item>
-        <item>Pobieranie zakończone! Wyczyść kilka starych filmów, a przestrzeń wróci. Dotknij mnie</item>
-        <item>Nowy film posortowany — łatwy do znalezienia lub wyczyszczenia. Kliknij, żeby zobaczyć</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Pobrano dźwięk — uporządkuj swoją bibliotekę muzyczną jednym dotknięciem. Dotknij mnie</string>
+    <item>Katalog wideo jest już prawie pełny, idź zobaczyć</item>
+    <item>Kliknij, żeby zobaczyć ten ogromny plik, który właśnie pobrałem</item>
+    <item>Pobranie zakończone, zobacz, ile miejsca zajmuje</item>
+    <item>Właśnie skończyłem pobierać wideo, telefon jest już trochę pełny</item>
+    <item>Kliknij, żeby wybrać filmy zajmujące miejsce</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Gdzie jest nowy dźwięk? Sprawdź, gdy klikniesz.</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Pobrano dźwięk — uporządkuj swoją bibliotekę muzyczną jednym dotknięciem. Dotknij mnie</item>
-        <item>Posortowano nowy dźwięk — wyczyść stary dźwięk, gdy tu jesteś. Dotknij mnie</item>
-        <item>Biblioteka muzyczna się zapełnia? Sprawdź dźwięk, który można wyczyścić. Kliknij tutaj</item>
-        <item>Pobrany dźwięk — odszyfruj go jednym dotknięciem. Dotknij mnie, żeby posprzątać</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Zapisano nowy plik — usuń stare pliki i zwolnij miejsce. Kliknij tutaj</string>
+    <item>Gdzie jest nowy dźwięk? Sprawdź, gdy klikniesz.</item>
+    <item>Dźwięk właśnie został pobrany, spróbuj oczyścić pamięć.</item>
+    <item>Nowy dźwięk już pobrany, wpadnij sprawdzić.</item>
+    <item>Dźwięk właśnie został pobrany, telefon jest już trochę pełny.</item>
+    <item>Dźwięk już pobrany, czas też oczyścić pamięć masową.</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Pobranie pliku zakończone pomyślnie, czas uporządkować pamięć</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Zapisano nowy plik — usuń stare pliki i zwolnij miejsce. Kliknij tutaj</item>
-        <item>Pobieranie zakończone — zobacz, które stare pliki możesz wyczyścić. Dotknij mnie</item>
-        <item>Nowy plik gotowy — inteligentne archiwum + czyszczenie. Kliknij mnie, aby rozpocząć</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Kosz został opróżniony — pamięć została odświeżona. Sprawdź swoje ostatnie miejsce.</string>
+    <item>Pobranie pliku zakończone pomyślnie, czas uporządkować pamięć</item>
+    <item>Plik właśnie został pobrany, spróbujmy opróżnić trochę miejsca</item>
+    <item>Kliknij, aby dobrze sklasyfikować nowy plik</item>
+    <item>Co nowego dodano do folderu pobranych? Sprawdź, klikając</item>
+    <item>Pobranie pliku zakończone, chodź i uporządkuj je</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Pusty, sprawdź, ile miejsca zostało uwolnione</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Kosz został opróżniony — pamięć została odświeżona. Sprawdź swoje ostatnie miejsce.</item>
-        <item>Kosz jest opróżniony — przyjdź i dokładnie wyczyść resztki.</item>
-        <item>Opróżniono pomyślnie — więcej śmieci do wyczyszczenia. Przyjdź i spójrz.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Wyczyść teraz</string>
+    <item>Pusty, sprawdź, ile miejsca zostało uwolnione</item>
+    <item>Koszik jest pusty, telefon jest teraz lżejszy</item>
+    <item>Koszik jest pusty, telefon jest teraz lekki</item>
+    <item>Koszik jest pusty, można jeszcze trochę opróżnić</item>
+    <item>Pusty, ile miejsca jeszcze zostało do wykorzystania</item>
+  </string-array>
+    <string name="notif_event_action_clean">Wyczyść</string>
     <string name="notif_event_action_open_home">Otwórz</string>
-    <string name="notif_event_action_manage">Zarządzaj aplikacjami</string>
+    <string name="notif_event_action_manage">Idź do zarządzania</string>
     <string name="notif_event_action_check_battery">Sprawdź baterię</string>
-    <string name="notif_event_action_check_network">Sprawdź sieć</string>
+    <string name="notif_event_action_check_network">Zobacz zużycie danych</string>
     <string name="notif_days_unit">dzień</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Miejsce do przechowywania uległo zmianie. Zobaczmy, co zajmuje miejsce?</item>
-        <item>Wykryto zmiany przestrzenne. Być może pojawiło się trochę nowych śmieci, spójrz?</item>
-        <item>Dostępna przestrzeń została przeniesiona. Czy wiesz, kto to jadł? Kliknij, aby rzucić okiem.</item>
-        <item>Czy przestrzeń jest ciasna? Właśnie wykryłem zmianę, przyjrzyjmy się szczegółom.</item>
-        <item>Przypomnienie o zmianie miejsca: Możesz zgromadzić dużo śmieci. Sprawdź to?</item>
-    </string-array>
+    <item>Pojemność znowu maleje, kliknij i zobacz, kto ją zajmuje</item>
+    <item>Wejdź i sprawdź, w albumie znowu jest mnóstwo nowych zdjęć</item>
+    <item>Pamięć czatowa gromadzi się coraz bardziej, otwórz i zobacz prawdę</item>
+    <item>Znowu pojawiła się masa śmieci, wejdź i odkryj</item>
+    <item>Kliknij mnie, śmieci się piętrzą jak góra, nikt ich nie sprząta</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Niski poziom baterii. Chcesz wiedzieć, kto kradnie Twój prąd? Kliknij, żeby zobaczyć rankingi.</item>
-        <item>Wkrótce osiągnięcie dna. Jeśli usuniesz aplikacje kradnące energię elektryczną, nadal możesz przetrwać przez jakiś czas.</item>
-        <item>Bateria jest na wyczerpaniu. Lepiej wyczyścić kilka środowisk, niż nic nie robić.</item>
-        <item>Bateria jest czerwona. Nadal możesz go zapisać, kliknij, aby go otworzyć i rzucić okiem.</item>
-        <item>Mniej niż 20% remains. Zróbmy pierwszą pomoc oszczędzającą energię i posprzątajmy.</item>
-    </string-array>
+    <item>Akumulator na wyczerpaniu? Nie czekaj, otwórz i odśwież!</item>
+    <item>Nie dasz rady do domu? Wejdź i wyczyść pamięć podręczną.</item>
+    <item>Świecące czerwone światło baterii? Wejdź i sprawdź.</item>
+    <item>Akumulator na ostatnim etapie? Wejdź i odkryj przyczynę.</item>
+    <item>Bateria zaraz się wyładuje? Otwórz i zobacz, czy da się jeszcze uratować.</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Bateria jest naładowana w ponad połowie. Zadbaj o to teraz, posłuży do czasu, aż wrócisz do domu.</item>
-        <item>Bateria jest naładowana w ponad połowie. Dbanie o baterię jest teraz znacznie łatwiejsze niż czekanie do 20%.</item>
-        <item>Bateria wyczerpała się w połowie. Jak długo to może trwać? Kliknij, aby rzucić okiem.</item>
-        <item>Bateria jest naładowana w ponad połowie. Czas zadbać o backend, nie czekaj aż się zdenerwuje.</item>
-        <item>Pozostała połowa baterii. Usuń dużych, żądnych władzy graczy i spraw, aby druga połowa była bardziej stabilna.</item>
-    </string-array>
+    <item>Otwórz i zrozumiesz – jeśli bateria jest powyżej połowy, najpierw oczyść pliki</item>
+    <item>Poziom spadł poniżej średniej – otwórz i oczyść pamięć podręczną</item>
+    <item>Została tylko połowa baterii – wejdź i uporządkuj albumy</item>
+    <item>Bateria jest stabilna – kliknij, aby usunąć pamięć podręczną</item>
+    <item>Bateria na średnim poziomie – otwórz i wyeliminuj pamięć podręczną bez wysiłku</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Końcowy sprint to 80%. Wyładuj śmieci i lekko się spakuj, aby powitać pełną moc.</item>
-        <item>Nadal 20% short pełnego naładowania. Przestań się gapić na swój ekran i pozwól nam zająć się śmieciami.</item>
-        <item>80%: Jeden krok od doskonałości. Kliknij raz, a po całkowitym naładowaniu akumulatora zostanie on całkowicie wyczyszczony.</item>
-        <item>80%, a dobra bateria do dobrego telefonu komórkowego. Sprzątanie rundy, póki jest gorąco?</item>
-        <item>Ostatnie 20% i przekazane nam. Ty patrzysz na akumulator, a my sprzątamy śmieci.</item>
-    </string-array>
+    <item>Ładowanie trwa, a ja przyszedłem usunąć śmieci</item>
+    <item>Prawie pełny, ale dużo śmieci, zobaczmy, kto za tym stoi</item>
+    <item>Zostało już tylko trochę, kliknij, żeby usunąć śmieci</item>
+    <item>Prawie pełna bateria, otwórz i wszystko będzie czyste</item>
+    <item>Ładuję i czekam, kliknij, żeby usunąć pamięć podręczną</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>W pełni naładowany i gotowy do pracy. Ostatnia kontrola: czy śmieci zostały usunięte?</item>
-        <item>Po naładowaniu poczucie rytuału jest pełne. A może by tak uczcić pamięć o wyrzuceniu śmieci?</item>
-        <item>100%, stabela dzisiaj. Jeszcze jedna runda i będzie bezbłędnie.</item>
-        <item>100%. Ostatni krok przed odłączeniem: wyczyść śmieci, trzydzieści sekund.</item>
-        <item>Skończono z pełną mocą. Ostatnie sprzątanie, idealnie.</item>
-    </string-array>
+    <item>Dopiero naładowane, nie marnuj energii – otwórz i sprawdź pamięć podręczną</item>
+    <item>Pełna bateria, korzystaj z okazji – wejdź i usuń śmieci</item>
+    <item>Bateria jest pełna, czas na sprzątanie – otwórz i usuń pamięć podręczną</item>
+    <item>Pełna bateria, czas uporządkować albumy – wejdź i sprawdź</item>
+    <item>Pełna bateria, gotowy do działania – wejdź i posprzątaj śmieci</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Sieć się zmienia! Wyświetl aktualny stan sieci 1</item>
-        <item>Dezercja z sieci. Nie patrz na sygnał podczas czyszczenia, po prostu kliknij na niego i zeskanuj.</item>
-        <item>Nie możesz otworzyć strony? Sprzątanie jest zawsze online.</item>
-        <item>Możesz pracować w trybie offline, a Twoje śmieci mogą zostać teraz usunięte.</item>
-        <item>Jeśli nie ma sygnału, do czyszczenia nie są potrzebne żadne dane, wystarczy kliknąć.</item>
-    </string-array>
+    <item>Brak połączenia z internetem, otwórz i sprawdź lokalne cache</item>
+    <item>Zmieniłeś sieć, skorzystaj z okazji, kliknij i sprawdź cache</item>
+    <item>Sieć jest niestabilna, nie martw się, po otwarciu wszystko będzie czyste</item>
+    <item>Połączenie zerwane, kliknij i zobacz lokalny śmieć</item>
+    <item>Połączenie z internetem zostało przywrócone, wejdź i sprawdź cache</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Podłączony. Zadanie na dziś: napełnij, a następnie wyczyść.</item>
-        <item>Ty odpoczywasz, urządzenie się ładuje. Niech też sprząta śmieci.</item>
-        <item>W czasie ładowania wystarczy usunąć śmieci, które gromadziły się przez długi czas.</item>
-        <item>Dopiero po podłączeniu prądu ekipa za kulisami może odważyć się na swobodną pracę.</item>
-        <item>Robi się trochę gorąco podczas ładowania? Oczyszczenie tła może obniżyć temperaturę.</item>
-    </string-array>
+    <item>Podłączono, czas sprawdzić pamięć podręczną</item>
+    <item>Ładowanie rozpoczęte, przejdź na głęboką czyszczenie</item>
+    <item>Ładowanie się zaczyna, otwórz, żeby usunąć śmieci</item>
+    <item>Ładowanie już się zaczęło, otwórz i od razu będzie czysto</item>
+    <item>Ładowarka gotowa, wejdź i sprawdź pamięć podręczną</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Odłącz i ruszaj. Pamiętaj, aby poświęcić trochę czasu na sprzątanie śmieci i zachować doskonałą formę.</item>
-        <item>Po zakończeniu ładowania spakuj się i wyrusz w drogę. Wystarczy to wyczyścić i będzie idealnie.</item>
-        <item>W pełni naładowany i gotowy do użycia. Sprawne sprzątanie śmieci, dzisiaj nie ma żadnych mankamentów.</item>
-        <item>Ładowanie się kończy. Następną przestrzeń należy oczyścić i ulepszyć o jeden poziom na raz.</item>
-        <item>Nie zatrzymuj się na przerwach w dostawie prądu. Pozostała jedna rzecz: sprzątanie.</item>
-    </string-array>
+    <item>Odłącz ładowarkę, aby być offline. Otwórz i sprawdź.</item>
+    <item>Za brak prądu bez internetu. Kliknij, aby sprawdzić lokalnie.</item>
+    <item>Odłącz zasilanie, a wszystko będzie czyste po otwarciu.</item>
+    <item>Zabrakło prądu! Sprawdź, jak długo wystarczy bateria.</item>
+    <item>Przy okazji odłączyłem kabel. Wchodzę, żeby uporządkować albumy.</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Spotykamy się ponownie, utknąłeś? Większość to śmieci, spróbuj je wyczyścić.</item>
-        <item>Odblokowany? Nie otwieraj najpierw innych aplikacji i wyczyść kosz na trzydzieści sekund.</item>
-        <item>Pierwszą rzeczą do odblokowania jesteśmy my. Wyczyść śmieci, a będzie cię bardziej kochać.</item>
-        <item>Trzydzieści sekund po odblokowaniu. Najcenniejsze zastosowanie: czyszczenie śmieci.</item>
-        <item>Twój telefon komórkowy powiedział: Backend jest trochę zablokowany, czy możesz mi pomóc?</item>
-    </string-array>
+    <item>Ekran się podświetlił, od razu sprawdzam pamięć cache</item>
+    <item>Odblokowanie pomyślne, czy miejsca wciąż wystarczy?</item>
+    <item>Ekran się podświetlił, od razu widać, ile miejsca zajmuje telefon</item>
+    <item>Ekran się właśnie zapalił, wchodzę, żeby uporządkować albumy</item>
+    <item>Ekran się podświetlił, klikam i od razu widzę prawdę</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Odłóż telefon i zostaw go nam. Czas odpoczynku przed ekranem = czas karmienia.</item>
-        <item>Przerwanie pracy nie oznacza zaprzestania pracy. Następnym razem, gdy włączę ekran, zrobię ci niespodziankę.</item>
-        <item>Cicho się poprawia podczas odpoczynku ekranu. Kliknij, a my zajmiemy się resztą.</item>
-        <item>Ostatnia rzecz przed zablokowaniem ekranu: kliknij Wyczyść. Jutro rano nowy wygląd.</item>
-        <item>Ekran gaśnie. Dokonaj ustaleń już teraz, a jutro zobaczysz rezultaty.</item>
-    </string-array>
+    <item>Ekran wygasł, czyszczenie w tle właśnie się zaczyna</item>
+    <item>Przed zablokowaniem ekranu, szybko sprawdzić pamięć podręczną</item>
+    <item>Idealnie przed snem, sprawdź i uporządkuj albumy</item>
+    <item>Ekran zaraz się zgasi, otwórz aplikację i zaoszczędź sobie kłopotów</item>
+    <item>Przed wyłączeniem ekranu, zwolnij telefon – otwórz i zrozumiesz</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Nowa aplikacja została wprowadzona, podobnie jak pamięć podręczna. posprzątać</item>
-        <item>Rozumiemy radość z zainstalowania nowej aplikacji. Po prostu pamięć podręczna będzie się po cichu gromadzić.</item>
-        <item>Nowa aplikacja? Pamięć podręczna również tu jest, wyczyść ją jednym kliknięciem.</item>
-        <item>Pojawia się nowe, a stare odchodzi. Czyść go często i instaluj tak, jak chcesz.</item>
-        <item>Kolejny? Przestrzeń po cichu się zmniejsza, przyjdź i posprzątaj.</item>
-    </string-array>
+    <item>Nowe aplikacje zostawiły po sobie bufor, kliknij i sprawdź</item>
+    <item>Po zainstalowaniu nowej aplikacji, spróbuj usunąć pakiet instalacyjny</item>
+    <item>Nowe twarze cicho wkraczają do bufora, przyjdź i odkryj</item>
+    <item>Spójrz, nowy pakiet bufora aplikacji jest już na górze</item>
+    <item>Kliknij, pakiet instalacyjny nowej aplikacji wciąż zajmuje miejsce</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Odinstalowano pomyślnie! do czyszczenia pozostałości plików</item>
-        <item>Odinstalowany, ale nie oczyszczony. Kliknij, aby zakończyć.</item>
-        <item>Aplikacja została odinstalowana, ale ogon nadal tam jest. Posprzątaj jednym kliknięciem i pożegnaj się raz na zawsze.</item>
-        <item>Nie przegap drugiego kroku: usuń aplikację + usuń pozostałości. Jedno kliknięcie i gotowe.</item>
-        <item>Pozostałość pochłonie połowę wolnego miejsca. Dogłębne skanowanie i wyczyszczenie wszystkiego.</item>
-    </string-array>
+    <item>Aplikacja została usunięta, ale coś pozostało. Otwórzmy i zobaczmy.</item>
+    <item>Wchodzę sprawdzić, po usunięciu wciąż są ślady zbytku.</item>
+    <item>Usunięcie zakończone. Muszę tylko trochę posprzątać, żeby było czysto.</item>
+    <item>Po usunięciu wciąż coś zostaje. Otwórzmy i poczućmy świeżość.</item>
+    <item>Pojemność nie zmieniła się po usunięciu? Wchodzę sprawdzić przyczynę.</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>Nadeszła nowa wersja. Wszystko, co pozostało ze starej wersji, zostało całkowicie oczyszczone.</item>
-        <item>+1 dla wersji, +1 dla pamięci podręcznej, dla głębokiego skanowania.</item>
-        <item>Aktualizacja zostanie zakończona, a pozostałe pakiety instalacyjne można wyczyścić jednym kliknięciem.</item>
-        <item>Aktualizacja została zakończona, zakończmy. Posprzątaj, a ja przejmę kontrolę.</item>
-        <item>Każda aktualizacja pozostawi stare pliki i szybko się z nimi upora.</item>
-    </string-array>
+    <item>Aplikacja została właśnie zaktualizowana, czas usunąć stare bufory</item>
+    <item>Po aktualizacji bufor znowu się powiększył, otwórzmy i zobaczmy</item>
+    <item>Bufter po aktualizacji, wejdź i sprawdź, żeby było łatwiej</item>
+    <item>Pakiet aktualizacji wciąż zajmuje sporo miejsca, otwórz i usuń</item>
+    <item>W nowym wersje wciąż są resztki, czekają na twoje usunięcie, kliknij mnie</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Kolejny zrzut ekranu? 1 Czas uporządkować zrzuty ekranu</item>
-        <item>Znaleziono nowy zrzut ekranu, kliknij, aby go wyświetlić i oczyścić~</item>
-        <item>Jest coraz więcej zrzutów ekranu, czyszczenie jednym kliknięciem może pomóc zwolnić miejsce</item>
-        <item>Zrzut ekranu został pomyślnie wykonany, zduplikowane i niewyraźne można odfiltrować jednym kliknięciem.</item>
-        <item>Nowe zrzuty ekranu są dodawane do bazy danych, a zduplikowane obrazy są umieszczane w kolejce do usunięcia jednym kliknięciem.</item>
-    </string-array>
+    <item>Nowy zrzut ekranu, sprawdź, czy chcesz go zachować</item>
+    <item>Zrzuty ekranu z albumu się kumulują, otwórz i poczuć świeżość</item>
+    <item>Zrzut ekranu udany, czas uporządkować album</item>
+    <item>Nowy obrazek właśnie zrobiony, otwórz i czekają na ciebie niespodzianki</item>
+    <item>Nowy zrzut ekranu w albumie, wejdź i sprawdź, żeby było łatwiej</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Jest mnóstwo śmieci, które się piętrzą. Wyczyść wszystko na raz.</item>
-        <item>Ostatnio czyszczone %1$d kilka dni temu. Kliknij, aby przetworzyć je teraz</item>
-        <item>Nie było mnie tu kilka dni, więc wszystko posprzątam i na luzie wrócę na pole bitwy.</item>
-        <item>W dniu dzisiejszym kwota rozliczeniowa nie została wykorzystana. Wyjaśnię to po powrocie.</item>
-        <item>Pamięć podręczna się zapełnia i czeka, aż ją sprawdzisz</item>
-    </string-array>
+    <item>Dawno nie czyszczyłem telefonu, aż nie mogę oddychać. Otwieram i sprawdzam.</item>
+    <item>Tak wiele śmieci się nagromadziło, czas wejść i je usunąć.</item>
+    <item>Telefon od dawna nie był czyszczony, na nim się dużo kurzu zebrało. Otwieram i czyszczę.</item>
+    <item>Otwieram, żeby sprawdzić albumy, pamięć podręczna już się nagromadziła jak góra.</item>
+    <item>Pamięć podręczna towarzyszyła ci tak długo, czas ją wyczyścić. Kliknij mnie!</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Dawno się nie widzieliśmy, czekaliśmy. Wróć i wyrzuć śmieci.</item>
-        <item>Nie widziałem cię od kilku dni. Dla śmieci nie ma odpoczynku. Wróć i posprzątaj to.</item>
-        <item>Pamięć podręczna jest w kolejce. Kliknij, a znikną.</item>
-        <item>Kosz jest zajęty, gdy Cię nie ma. Opróżnij jednym kliknięciem i poczuj się świeżo jak nigdy dotąd.</item>
-        <item>Z powrotem? Najpierw usuń śmieci. W trzydzieści sekund telefon jest lekki jak nowy.</item>
-    </string-array>
+    <item>Dawno się nie widzieliśmy, myślałem, że zapomniałeś. Otwórz i zobacz.</item>
+    <item>Dawno nie otwierałeś, wejdź i sprawdź, co nowego.</item>
+    <item>Dawno się nie widzieliśmy, wejdź i odkryj, co nowego.</item>
+    <item>Ikona już prawie się zgnilizła, kliknij i zobacz.</item>
+    <item>Pewnie zapomnieliśmy, bo długo czekaliśmy. Chodźmy zobaczyć.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Śmieci, które gromadziły się przez długi czas, są natychmiast usuwane.</item>
-        <item>Czas posprzątać. Dzisiejszy kosz czeka, aż go klikniesz.</item>
-        <item>Dzisiaj ukazał się „Space Daily”. Wyczyść i utrzymuj światło.</item>
-        <item>Niektóre pliki są znacznie większe niż myślisz, spójrz</item>
-        <item>Znajdź faceta, który wziął kilka G i posprzątaj</item>
-        <item>Duża lista dokumentów jest gotowa, przyjdź i zobacz.</item>
-        <item>Kto zajmuje najwięcej miejsca? Ujawnione w ciągu jednej sekundy.</item>
-        <item>Ciągłe strzelanie jest świetne, wykończenie jest bolesne. Zostaw to nam.</item>
-        <item>Podobne zdjęcia są ułożone w kolejce. Od Ciebie zależy, które z nich zatrzymasz</item>
-        <item>Za dużo podobnych zdjęć? Pomożemy Ci porównać i usunąć duplikaty jednym kliknięciem.</item>
-        <item>Filmy offline zapisane w pamięci podręcznej powinny zostać wyczyszczone.</item>
-        <item>Pozostała część dźwięku również zostanie wyczyszczona.</item>
-    </string-array>
+    <item>Ostatnio czyszczenie zostało w połowie, więc otwieram i sprawdzam</item>
+    <item>Czyszczenie zostało w połowie, wchodzę i sprawdzam, gdzie jest problem</item>
+    <item>Zgromadziłem sporo dużych filmów, które zajmują dużo miejsca, otwieram i sprawdzam</item>
+    <item>Jest jeden bardzo duży plik, którego jeszcze nie wyczyściłem, otwieram i czyszczę</item>
+    <item>Jest tam fragment wideo w wysokiej rozdzielczości, który zajmuje dużo miejsca, wchodzę i sprawdzam</item>
+    <item>Powtarzające się zdjęcia zajmują miejsce, sprawdź, co można usunąć</item>
+    <item>Podobne twarze w albumie, kliknij, by usunąć niektóre</item>
+    <item>Stos podobnych zdjęć krajobrazów, sprawdź i wybierz te do usunięcia</item>
+    <item>Duże filmy zajmują dużo miejsca, kliknij, by sprawdzić</item>
+    <item>Wiadomości głosowe wypełniają pamięć czatu, wejdź i uporządkuj</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Bateria nie jest tak wytrzymała jak wcześniej? Sprawdź to.</item>
-        <item>Kto kradnie Twój prąd? Dowiesz się, kiedy to sprawdzisz.</item>
-        <item>Wyłączenie tych opcji wydłuży żywotność baterii.</item>
-        <item>Niektóre aplikacje są zainstalowane, ale nigdy nie są używane. Zobacz, które to są?</item>
-        <item>Przechowywanie aplikacji, których nie używasz, również jest obciążeniem, lista została utworzona</item>
-        <item>Jeśli chodzi o prywatność, im szybciej się z nią uporamy, tym lepiej.</item>
-        <item>Ukryj ważne i pozbądź się niepotrzebnych. pozwól, że ci pomogę</item>
-        <item>Dokąd zmierza ruch? Dowiedz się, kto z niego korzysta.</item>
-        <item>Szczegóły ruchu drogowego są widoczne i widoczne na pierwszy rzut oka.</item>
-        <item>W tle działa aplikacja, która potajemnie łączy się z Internetem.</item>
-    </string-array>
+    <item>Założone aplikacje potajemnie zużywają twoją baterię, sprawdź to</item>
+    <item>Bateria spada cicho przez całą noc w trybie czuwania, kliknij</item>
+    <item>Założone aplikacje zużywają więcej energii przy ciągłym działaniu, sprawdź</item>
+    <item>Wiele aplikacji nie było otwartych od pół roku, wejdź i sprawdź</item>
+    <item>Założone aplikacje zajmują miejsce na darmo, wejdź i uporządkuj</item>
+    <item>Spójrz, nie ma tu wielu często używanych aplikacji</item>
+    <item>Prywatne zdjęcia są zablokowane w przestrzeni prywatnej, kliknij, aby zobaczyć</item>
+    <item>Ukryj selfie, żeby nikt cię nie znalazł, a potem odkryj je</item>
+    <item>Tego miesiąca prawie skończyłeś używać danych, kliknij, aby sprawdzić</item>
+    <item>Tryb oszczędzania danych jest bardzo efektywny, zobacz</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} śmieci — usuń je jednym kliknięciem</string>
     <string name="notif_scheduled_large_files">{total} dużych plików — łatwe czyszczenie</string>
-    <string name="notif_scheduled_duplicate_photos">{groups} grupy zduplikowanych zdjęć — zaoszczędź {rozmiar}</string>
-    <string name="notif_scheduled_similar_photos">{rozmiar} podobnych zdjęć — wybierz, co wyczyścić</string>
+    <string name="notif_scheduled_duplicate_photos">{groups} grupy zduplikowanych zdjęć — zaoszczędź {size}</string>
+    <string name="notif_scheduled_similar_photos">{size} podobnych zdjęć — wybierz, co wyczyścić</string>
     <string name="notif_scheduled_videos">{total} filmów — usuń {n}, aby zwolnić miejsce</string>
     <string name="notif_scheduled_audio">{total} plików audio — czas na porządki</string>
     <string name="notif_scheduled_apps">{size} używany przez {idle} bezczynne aplikacje</string>
-    <string name="notif_scheduled_data">{back} danych używanych w tle</string>
+    <string name="notif_scheduled_data">{back} danych mobilnych wykorzystano w tle</string>
     <string name="app_manager_uninstall_selected">Odinstaluj wybrane</string>
     <string name="app_manager_uninstall_selected_count">Odinstaluj wybrane (%1$d)</string>
     <string name="cache_removable">Usuwany</string>

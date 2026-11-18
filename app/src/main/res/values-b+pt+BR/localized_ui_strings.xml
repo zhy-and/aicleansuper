@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_manager_select_app">Selecionar app</string>
+    <string name="app_manager_uninstall_confirm">Desinstalar os %1$d apps selecionados? O Android solicitará a confirmação de cada desinstalação.</string>
+    <string name="cache_access_required">Permita o acesso a todos os arquivos para verificar o cache</string>
+    <string name="cache_clean_action">Limpar</string>
+    <string name="cache_clean_result">%1$d de %2$d itens limpos</string>
+    <string name="cache_confirm_clean">Limpar os %1$d itens selecionados?</string>
+    <string name="cleanup_report_complete">A limpeza foi concluída.</string>
+    <string name="cleanup_report_explore">Explorar mais ferramentas</string>
+    <string name="cleanup_report_go">Abrir</string>
+    <string name="home_pending_items_format">Itens a limpar: %1$d</string>
+    <string name="info_report_title">Relatório</string>
+    <string name="large_file_access_required">É necessário acessar todos os arquivos</string>
+    <string name="large_file_delete">Excluir</string>
+    <string name="large_file_delete_amount">Excluir %1$s (%2$d)</string>
+    <string name="large_file_delete_confirm">Excluir os %1$d arquivos selecionados?</string>
+    <string name="large_file_delete_selected">Excluir selecionados</string>
+    <string name="large_file_deleted_summary">%1$d de %2$d arquivos excluídos</string>
+    <string name="large_file_deselect_all">Desmarcar tudo</string>
+    <string name="large_file_deselect_all_shown">Desmarcar todos os arquivos exibidos</string>
+    <string name="large_file_filter_description">Filtro de %1$s: %2$s</string>
+    <string name="large_file_filter_size">Tamanho</string>
+    <string name="large_file_filter_time">Período</string>
+    <string name="large_file_filter_type">Tipo</string>
+    <string name="large_file_open">Abrir</string>
+    <string name="large_file_scanning">Verificando arquivos…</string>
+    <string name="large_file_select_all">Selecionar tudo</string>
+    <string name="large_file_select_all_shown">Selecionar todos os arquivos exibidos</string>
+    <string name="large_file_summary">%1$d arquivos · %2$s</string>
+    <string-array name="large_file_time_options">
+        <item>Qualquer período</item>
+        <item>1 semana</item>
+        <item>1 mês</item>
+        <item>3 meses</item>
+        <item>6 meses</item>
+        <item>1 ano</item>
+    </string-array>
+    <string-array name="large_file_type_options">
+        <item>Todos</item>
+        <item>Imagens</item>
+        <item>Vídeos</item>
+        <item>Áudio</item>
+        <item>Documentos</item>
+        <item>Arquivos compactados</item>
+        <item>APK</item>
+        <item>Outros</item>
+    </string-array>
+    <string name="new_feature_badge_description">Novo recurso</string>
+    <string name="sys_android_version">Versão do Android</string>
+    <string name="sys_discharging">Descarregando</string>
+    <string name="sys_level">Nível</string>
+    <string name="sys_status">Status</string>
+    <string name="traffic_empty">Nenhum tráfego de apps encontrado</string>
+    <string name="traffic_guide_message">Nas configurações, permita que este app acesse os dados de uso para mostrar o tráfego por app.</string>
+    <string name="traffic_loading">Carregando…</string>
+    <string name="traffic_usage_required">É necessário acessar os dados de uso. Toque para permitir o acesso.</string>
+    <string name="vlt_delete_confirm">Excluir permanentemente %1$d arquivos privados?</string>
+    <string name="vlt_deselect_all">Desmarcar tudo</string>
+    <string name="vlt_import_media">Importar fotos ou vídeos</string>
+    <string name="vlt_originals_remain">; %1$d arquivos originais permanecem no dispositivo</string>
+    <string name="vlt_restore_confirm">Restaurar %1$d arquivos em Pictures/PurGuClean?</string>
+    <string name="vlt_restored_count">%1$d de %2$d arquivos restaurados</string>
+    <string name="vlt_select_all">Selecionar tudo</string>
+    <string name="widget_action_files">Arquivos</string>
+    <string name="widget_action_photos">Fotos</string>
+</resources>

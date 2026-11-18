@@ -20,7 +20,24 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
+            <FrameLayout
+                android:id="@+id/btnBack"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_icon_button"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/detail_back"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/text_primary" />
+            </FrameLayout>
+
             <TextView
+                android:id="@+id/tvPageTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -70,11 +87,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor="@color/accent_primary_soft"
+            app:cardBackgroundColor="@color/home_scan_green"
             app:cardCornerRadius="24dp"
             app:cardElevation="0dp"
-            app:strokeColor="@color/surface_dark_secondary"
-            app:strokeWidth="1dp">
+            app:strokeWidth="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -87,7 +103,7 @@
                 <FrameLayout
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:background="@drawable/bg_icon_container_accent">
+                    android:background="@drawable/bg_home_scan_badge">
 
                     <ImageView
                         android:layout_width="26dp"
@@ -95,7 +111,7 @@
                         android:layout_gravity="center"
                         android:contentDescription="@null"
                         android:src="@drawable/ic_home_duplicate_videos"
-                        app:tint="@color/accent_primary" />
+                        app:tint="@color/white" />
                 </FrameLayout>
 
                 <LinearLayout
@@ -108,7 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/video_compressor"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
                     <TextView
@@ -116,7 +132,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="@string/video_compress_card_hint"
-                        android:textColor="@color/text_secondary"
+                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -125,7 +141,7 @@
                     android:layout_height="22dp"
                     android:contentDescription="@null"
                     android:src="@drawable/ic_chevron_right"
-                    app:tint="@color/text_tertiary" />
+                    app:tint="@color/white" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

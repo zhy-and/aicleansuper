@@ -29,11 +29,12 @@ class LargeVideoListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: LargeVideoListViewModel by viewModels()
+    private val selectedIds = linkedSetOf<Long>()
     private val adapter = MediaCleanupAdapter(
         onPreviewClick = ::openPreview,
         onSelectionClick = ::toggleSelection,
+        selectedIds = selectedIds,
     )
-    private val selectedIds = linkedSetOf<Long>()
     private var pendingCleanupResult: com.aetherquorion.cleansuperai.ui.flow.CleanupResult? = null
     private var currentFilteredItems: List<LargeVideoItem> = emptyList()
     private var minSizeBytes: Long = THRESHOLD_100_MB
@@ -131,7 +132,8 @@ class LargeVideoListFragment : Fragment() {
         } else {
             selectedIds.add(item.stableId)
         }
-        render(viewModel.uiState.value)
+        adapter.refreshVisibleSelection(binding.recyclerView)
+        renderSelectionState(currentFilteredItems.size)
     }
 
     private fun toggleSelectAll() {
@@ -141,7 +143,8 @@ class LargeVideoListFragment : Fragment() {
             selectedIds.clear()
             selectedIds.addAll(currentFilteredItems.map { it.id })
         }
-        render(viewModel.uiState.value)
+        adapter.refreshVisibleSelection(binding.recyclerView)
+        renderSelectionState(currentFilteredItems.size)
     }
 
     private fun renderSelectionState(totalItems: Int) {
@@ -158,6 +161,10 @@ class LargeVideoListFragment : Fragment() {
 
     private fun confirmDeleteSelected() {
         if (selectedIds.isEmpty()) return
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            deleteSelectedItems()
+            return
+        }
 
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.delete_video_dialog_title)

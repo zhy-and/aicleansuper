@@ -365,7 +365,7 @@
     <string name="trash_bin_title_format">Tong Sampah (%1$s)</string>
     <string name="trash_bin_title_empty">Tong Sampah</string>
     <string name="trash_restore_hint">Ketik untuk memulihkan foto</string>
-    <string name="trash_empty_action">Padam semua dalam sampah</string>
+    <string name="trash_empty_action">Padam foto</string>
     <string name="trash_restored">Foto dipulihkan</string>
     <string name="trash_bin_empty">Tong sampah kosong</string>
     <string name="feature_smart_groups">Kumpulan pintar</string>
@@ -490,39 +490,41 @@
     <string name="notif_event_channel_name">Peringatan bersih</string>
     <string name="notif_event_channel_desc">Peringatan setempat selepas tangkapan skrin, pemasangan dan nyahpasang</string>
     <string name="notif_event_summary_channel_name">Ringkasan peringatan bersih</string>
-    <string name="notif_event_screenshot_title">Satu lagi tangkapan skrin? 1 Tiba masanya untuk mengosongkan tangkapan skrin</string>
-    <string name="notif_event_install_title">Apl baharu telah dipindahkan, begitu juga dengan cache. membersihkan diri</string>
-    <string name="notif_event_uninstall_title">Berjaya dinyahpasang! untuk membersihkan sisa fail</string>
-    <string name="notif_clean_reminder_title">Terdapat banyak sampah yang bertimbun. Bersihkan semuanya sekaligus.</string>
-    <string name="notif_event_battery_below_50_title">Bateri lebih separuh penuh. Jaga ia sekarang, ia akan bertahan sehingga anda pulang ke rumah.</string>
-    <string name="notif_event_battery_below_20_title">Bateri lemah. Ingin tahu siapa yang mencuri elektrik anda? Klik untuk melihat kedudukan.</string>
-    <string name="notif_event_charging_title">Dipasangkan. Tugas malam ini: isi semula, kemudian bersihkan.</string>
-    <string name="notif_event_charging_full_title">Dicas sepenuhnya dan sedia untuk digunakan. Satu pemeriksaan terakhir: Adakah sampah telah dibersihkan?</string>
-    <string name="notif_event_charging_to_80_title">Pecutan terakhir ialah 80%. Punggah sampah dan bungkus dengan ringan untuk mengalu-alukan kuasa penuh.</string>
-    <string name="notif_event_charging_disconnect_title">Cabut plag dan matikan. Ingatlah untuk meluangkan masa untuk membersihkan sampah dan kekal dalam bentuk terbaik.</string>
-    <string name="notif_event_app_update_title">Versi baharu telah tiba. Semua yang tinggal daripada versi lama dibersihkan sepenuhnya.</string>
-    <string name="notif_event_network_change_title">Web berubah! Lihat status rangkaian semasa 1</string>
-    <string name="notif_event_screen_lock_title">Letakkan telefon anda dan serahkan kepada kami. Masa skrin rehat = masa menyusu.</string>
-    <string name="notif_event_screen_on_after_lock_title">Kita jumpa lagi, awak buntu? Kebanyakannya adalah sampah, cuba bersihkan.</string>
-    <string name="notif_event_storage_free_drop_title">Ruang storan telah berubah. Mari lihat apa yang memerlukan ruang?</string>
-    <string name="notif_event_scheduled_push_1_title">Sampah yang terkumpul sekian lama dibersihkan.</string>
-    <string name="notif_event_scheduled_push_2_title">Adakah bateri tidak tahan lama seperti dahulu? Semak ia keluar.</string>
-    <string name="notif_event_app_inactive_title">Lama tidak berjumpa, ia telah menunggu. Kembali dan buang sampah.</string>
-    <string name="notif_event_scheduled_push_3_title">Satu ketik pada senarai main anda — sediakan widget</string>
+    <string name="notif_event_screenshot_title">Ada tangkapan skrin baharu. Lihat sama ada anda mahu menyimpannya atau tidak.</string>
+    <string name="notif_event_install_title">Cache aplikasi baharu yang dipasang turut serta, ketik untuk melihat</string>
+    <string name="notif_event_uninstall_title">Aplikasi baru sahaja dinyahpasang, tetapi masih ada sisa, klik untuk melihat</string>
+    <string name="notif_clean_reminder_title">Sudah lama tidak membersihkan telefon dan ia terasa sesak. Ketik untuk melihatnya.</string>
+    <string name="notif_event_battery_below_50_title">Buka untuk mengetahuinya, bersihkan apabila bateri sudah separuh</string>
+    <string name="notif_event_battery_below_20_title">Bateri hampir habis, buka untuk membersihkannya</string>
+    <string name="notif_event_charging_title">Bateri telah dipasang. Ambil kesempatan ini untuk mengetik dan melihat cache</string>
+    <string name="notif_event_charging_full_title">Baru sahaja dicas penuh, jangan sia-siakan, ketik untuk melihat cache</string>
+    <string name="notif_event_charging_to_80_title">Sedang dicas dan ada masa lapang, masuk untuk membersihkan sampah</string>
+    <string name="notif_event_charging_disconnect_title">Cabut pengecas untuk berada di luar talian, ketik untuk melihat</string>
+    <string name="notif_event_app_update_title">Aplikasi baru sahaja dikemas kini, cache lama perlu dibersihkan</string>
+    <string name="notif_event_network_change_title">Sambungan internet terputus. Ketik untuk melihat cache tempatan</string>
+    <string name="notif_event_screen_lock_title">Skrin dimatikan, pembersihan latar belakang bermula tepat pada masanya</string>
+    <string name="notif_event_screen_on_after_lock_title">Skrin baru sahaja dinyalakan, ketik untuk melihat cache</string>
+    <string name="notif_event_storage_free_drop_title">Ruang semakin berkurangan, buka untuk melihat siapa yang mengambilnya</string>
+    <string name="notif_event_scheduled_push_1_title">Kali terakhir anda membersihkannya, anda berhenti di tengah jalan. Buka dan lihat.</string>
+    <string name="notif_event_scheduled_push_2_title">Aplikasi latar belakang diam-diam menggunakan bateri anda. Buka untuk melihatnya</string>
+    <string name="notif_event_app_inactive_title">Sudah lama tidak berjumpa. Saya ingat anda sudah terlupa. Buka dan lihat.</string>
+    <string name="notif_event_scheduled_push_3_title">Tambah widget pada skrin utama untuk bersihkan tanpa membuka aplikasi</string>
     <string-array name="notif_event_scheduled_push_3_titles">
-        <item>Satu ketik pada senarai main anda — sediakan widget</item>
-        <item>Jadikan segala-galanya lebih mudah dengan widget — tambahkan pintasan muzik</item>
-        <item>Main pantas tanpa membuka kunci — dayakan widget skrin utama</item>
-    </string-array>
-    <string name="notif_event_app_background_title">Awak terlupa sesuatu</string>
+    <item>Tambah widget pada skrin utama untuk bersihkan tanpa membuka aplikasi</item>
+    <item>Tambah widget supaya pembersihan sentiasa mudah dicapai</item>
+    <item>Widget sudah sedia. Letakkannya pada skrin utama</item>
+    <item>Tambah widget dengan sekali ketik dan bersihkan dari skrin utama</item>
+    <item>Tambah widget untuk pembersihan yang lebih mudah</item>
+  </string-array>
+    <string name="notif_event_app_background_title">Kembali. Hanya 3 saat untuk membersihkannya dengan satu klik</string>
     <string name="notif_event_app_background_content">Mari selesaikan pembersihan supaya ia berjalan dengan lebih lancar.</string>
     <string-array name="notif_event_app_background_titles">
-        <item>Awak terlupa sesuatu</item>
-        <item>Selangkah lagi</item>
-        <item>Berita baik</item>
-        <item>Anda pergi terlalu cepat</item>
-        <item>Jangan tinggalkan sampah semalaman</item>
-    </string-array>
+    <item>Kembali. Hanya 3 saat untuk membersihkannya dengan satu klik</item>
+    <item>Masih ada sampah yang belum dibersihkan pada halaman tadi</item>
+    <item>Jangan tergesa-gesa untuk pergi, kemaskan sekali jalan</item>
+    <item>Hanya tinggal satu langkah lagi, kembalilah untuk membersihkan ruang</item>
+    <item>Jangan keluar, pembersihan belum selesai</item>
+  </string-array>
     <string-array name="notif_event_app_background_contents">
         <item>Mari selesaikan pembersihan supaya ia berjalan dengan lebih lancar.</item>
         <item>Satu ketik lagi untuk menyelesaikan pembersihan dan mengosongkan lebih banyak ruang.</item>
@@ -530,239 +532,244 @@
         <item>Telefon anda boleh menjadi lebih pantas — mari lihat pengoptimuman.</item>
         <item>Mari selesaikan pembersihan supaya ia berjalan dengan lebih lancar.</item>
     </string-array>
-    <string name="notif_event_scan_done_uncleaned_title">Hasil imbasan sudah sedia — sampah mengambil ruang. Bersih sekarang</string>
+    <string name="notif_event_scan_done_uncleaned_title">Imbasan telah selesai. Hanya tinggal langkah terakhir untuk membersihkannya</string>
     <string-array name="notif_event_scan_done_uncleaned_titles">
-        <item>Hasil imbasan sudah sedia — sampah mengambil ruang. Bersih sekarang</item>
-        <item>Selangkah lagi: kembali dan kosongkan ruang serta-merta.</item>
-        <item>Terlupa membersihkan selepas imbasan? 10 saat untuk menjadikan telefon anda lebih ringan.</item>
-        <item>Sarap masih ada pada telefon anda — keputusan disimpan. Kembali untuk pembersihan sekali ketuk.</item>
-        <item>Imbasan terakhir menemui berbilang item untuk dibersihkan. Ayuh selesaikannya.</item>
-    </string-array>
-    <string name="notif_event_scan_interrupted_title">Pembersihan belum dilakukan — mari selesaikan langkah terakhir.</string>
+    <item>Imbasan telah selesai. Hanya tinggal langkah terakhir untuk membersihkannya</item>
+    <item>Imbasan selesai. Hanya tinggal satu klik untuk membersihkannya</item>
+    <item>Pemeriksaan selesai. Masuk dan bersihkan sampah</item>
+    <item>Imbasan selesai. Sampah masih menunggu untuk dibersihkan</item>
+    <item>Anda baru sahaja selesai mengimbas tetapi belum membersihkannya. Masuk dan lihat</item>
+  </string-array>
+    <string name="notif_event_scan_interrupted_title">Pembersihan belum selesai. Masuk dan teruskan</string>
     <string-array name="notif_event_scan_interrupted_titles">
-        <item>Pembersihan belum dilakukan — mari selesaikan langkah terakhir.</item>
-        <item>Pembersihan terganggu: separuh jalan ke sana. Selesai untuk telefon yang lebih ringan.</item>
-        <item>Pembersihan hampir selesai — jangan tinggalkan sampah.</item>
-        <item>Anda keluar dalam keadaan bersih — selesaikan dan rasai perbezaannya.</item>
-        <item>Pembersihan yang terganggu boleh diteruskan pada bila-bila masa. Ayuh selesaikannya.</item>
-    </string-array>
-    <string name="notif_event_image_deleted_title">Foto dipadam — dialihkan dengan selamat ke tong kitar semula.</string>
+    <item>Pembersihan belum selesai. Masuk dan teruskan</item>
+    <item>Pembersihan tadi terganggu. Teruskan pembersihan</item>
+    <item>Hanya tinggal sedikit lagi untuk selesai membersihkannya. Teruskan?</item>
+    <item>Pembersihan dihentikan seketika. Teruskan untuk mengosongkan ruang</item>
+    <item>Tugas pembersihan belum selesai. Mari teruskan</item>
+  </string-array>
+    <string name="notif_event_image_deleted_title">Gambar telah dihapuskan, pergi ke Tong Kitar Semula untuk membersihkannya</string>
     <string-array name="notif_event_image_deleted_titles">
-        <item>Foto dipadam — dialihkan dengan selamat ke tong kitar semula.</item>
-        <item>Baru memadamkan 1 foto — lihat berapa banyak ruang yang anda kosongkan?</item>
-        <item>Foto dipadam — padamkan secara kekal ke ruang kosong sekarang.</item>
-        <item>Foto dipadam dengan selamat — status storan dikemas kini.</item>
-        <item>Foto dipadamkan — anda juga boleh membersihkan tangkapan skrin yang serupa.</item>
-    </string-array>
-    <string name="notif_event_video_deleted_title">Video dipadam — ruang besar dibebaskan.</string>
+    <item>Gambar telah dihapuskan, pergi ke Tong Kitar Semula untuk membersihkannya</item>
+    <item>Gambar telah dihapuskan, bersihkan sekali Tong Kitar Semula</item>
+    <item>Gambar telah masuk ke Tong Kitar Semula, masuklah untuk membersihkannya</item>
+    <item>Gambar dalam Tong Kitar Semula masih mengambil ruang, bersihkanlah ia</item>
+    <item>Gambar yang baru sahaja dihapuskan, mahu menghapuskannya sepenuhnya?</item>
+  </string-array>
+    <string name="notif_event_video_deleted_title">Video telah dihapuskan, kosongkan Tong Kitar Semula untuk menjimatkan lebih banyak ruang</string>
     <string-array name="notif_event_video_deleted_titles">
-        <item>Video dipadam — ruang besar dibebaskan.</item>
-        <item>Video besar dialih keluar — tekanan storan berkurangan serta-merta.</item>
-        <item>Video dipadam — semak status storan semasa anda.</item>
-        <item>Padam selesai — kosongkan tong kitar semula untuk mengosongkan ruang sepenuhnya.</item>
-        <item>Video dipadamkan — mungkin terdapat lebih banyak video besar yang terlupa untuk dibersihkan.</item>
-    </string-array>
-    <string name="notif_event_audio_deleted_title">Audio dipadam — fail kecil ditambah. Teruskan.</string>
+    <item>Video telah dihapuskan, kosongkan Tong Kitar Semula untuk menjimatkan lebih banyak ruang</item>
+    <item>Video telah dihapuskan, tetapi ruang belum dibebaskan</item>
+    <item>Video telah dipindahkan ke tong kitar semula, sila masuk untuk membersihkannya</item>
+    <item>Satu video telah dihapuskan, tong kitar semula menunggu untuk dibersihkan</item>
+    <item>Video dalam tong kitar semula masih mengambil ruang</item>
+  </string-array>
+    <string name="notif_event_audio_deleted_title">Audio telah dihapuskan, tetapi cebisan masih ada dalam cache, klik untuk melihatnya</string>
     <string-array name="notif_event_audio_deleted_titles">
-        <item>Audio dipadam — fail kecil ditambah. Teruskan.</item>
-        <item>Audio itu hilang — lebih banyak fail tidak digunakan yang serupa boleh dibersihkan juga.</item>
-        <item>Audio dipadam — butiran storan dikemas kini. Jom tengok.</item>
-        <item>1 fail audio dipadam — senarai storan dimuat semula.</item>
-        <item>Audio dipadam — kosongkan tong kitar semula untuk menyelesaikan ruang kosong.</item>
-    </string-array>
-    <string name="notif_event_file_deleted_title">Fail dipadam — sedikit lagi storan dibebaskan.</string>
+    <item>Audio telah dihapuskan, tetapi cebisan masih ada dalam cache, klik untuk melihatnya</item>
+    <item>Audio telah dihapuskan, sila bersihkan tong kitar semula sekali gus</item>
+    <item>Penghapusan berjaya, sila kosongkan tong kitar semula</item>
+    <item>Satu audio telah dihapuskan, tong kitar semula menunggu untuk dibersihkan</item>
+    <item>Sila masuk untuk membersihkan rakaman lama dalam direktori cache</item>
+  </string-array>
+    <string name="notif_event_file_deleted_title">Fail telah dihapuskan, sila pergi ke tong kitar semula untuk membersihkannya</string>
     <string-array name="notif_event_file_deleted_titles">
-        <item>Fail dipadam — sedikit lagi storan dibebaskan.</item>
-        <item>Fail dipadamkan — kekacauan tidak akan mengganggu telefon anda lagi.</item>
-        <item>Fail dipadam — lihat apa lagi yang boleh anda bersihkan.</item>
-        <item>Fail dipadam — perubahan disegerakkan, status storan dikemas kini.</item>
-        <item>Fail itu dikosongkan — menuntut semula ruang sekarang.</item>
-    </string-array>
-    <string name="notif_event_image_download_title">Imej dimuat turun — buka dan lihat.</string>
+    <item>Fail telah dihapuskan, sila pergi ke tong kitar semula untuk membersihkannya</item>
+    <item>Penghapusan fail selesai, tetapi ruang masih belum dikosongkan</item>
+    <item>Fail telah dipindahkan ke Tong Kitar Semula, bersihkan sekali jalan</item>
+    <item>Penghapusan fail selesai, ayuh kosongkan ruang</item>
+    <item>Fail telah dihapuskan, kosongkan Tong Kitar Semula untuk menjimatkan lebih banyak ruang</item>
+  </string-array>
+    <string name="notif_event_image_download_title">Muat turun imej selesai, ayuh lihat di mana ia disimpan</string>
     <string-array name="notif_event_image_download_titles">
-        <item>Imej dimuat turun — buka dan lihat.</item>
-        <item>Imej dimuat turun — bersihkan foto pendua dalam album anda semasa anda melakukannya</item>
-        <item>Muat turun selesai — imej disimpan dengan selamat. Jom semak foto yang serupa</item>
-    </string-array>
-    <string name="notif_event_video_download_title">Video dimuat turun — ia bukan kecil. Lihat berapa banyak ruang yang boleh dikosongkan oleh video lama</string>
+    <item>Muat turun imej selesai, ayuh lihat di mana ia disimpan</item>
+    <item>Imej baharu baru sahaja masuk ke dalam album, ketik untuk melihatnya</item>
+    <item>Adakah imej baharu dan lama bertindih? Ketik untuk mengetahuinya</item>
+    <item>Muat turun selesai, imej yang bertindih dalam album perlu dibersihkan</item>
+    <item>Muat turun imej selesai, lihat berapa banyak ruang storan yang masih ada</item>
+  </string-array>
+    <string name="notif_event_video_download_title">Direktori video hampir penuh, ayuh lihat</string>
     <string-array name="notif_event_video_download_titles">
-        <item>Video dimuat turun — ia bukan kecil. Lihat berapa banyak ruang yang boleh dikosongkan oleh video lama</item>
-        <item>Video baharu disimpan — cari video besar untuk dipadamkan dan ruang kosong. Ketik saya</item>
-        <item>Video mengambil ruang — kami menemui item yang boleh dibersihkan untuk meringankan telefon anda. Ketik di sini</item>
-        <item>Muat turun selesai! Bersihkan beberapa video lama dan ruang kembali. Ketik saya</item>
-        <item>Video baharu diisih — mudah dicari atau dibersihkan. Ketik untuk melihat</item>
-    </string-array>
-    <string name="notif_event_audio_download_title">Audio dimuat turun — kemas pustaka muzik anda dalam satu ketikan. Ketik saya</string>
+    <item>Direktori video hampir penuh, ayuh lihat</item>
+    <item>Ketik saya untuk melihat imej besar yang baru sahaja dimuat turun</item>
+    <item>Muat turun selesai. Lihat berapa banyak ruang yang digunakan</item>
+    <item>Baru sahaja selesai memuat turun video. Telefon agak penuh</item>
+    <item>Ketik di sini untuk memilih video yang menggunakan ruang</item>
+  </string-array>
+    <string name="notif_event_audio_download_title">Di manakah audio baharu diletakkan? Ketik untuk mengetahuinya</string>
     <string-array name="notif_event_audio_download_titles">
-        <item>Audio dimuat turun — kemas pustaka muzik anda dalam satu ketikan. Ketik saya</item>
-        <item>Audio baharu diisih — bersihkan audio lama semasa anda berada di sini. Ketik saya</item>
-        <item>Perpustakaan muzik semakin penuh? Semak audio yang boleh dibersihkan. Ketik di sini</item>
-        <item>Audio dimuat turun — dedupe dalam satu ketikan. Ketik saya untuk mengemas</item>
-    </string-array>
-    <string name="notif_event_file_download_title">Fail baharu disimpan — kosongkan fail lama dan ruang kosong. Ketik di sini</string>
+    <item>Di manakah audio baharu diletakkan? Ketik untuk mengetahuinya</item>
+    <item>Baru sahaja selesai memuat turun audio. Mari kosongkan ruang</item>
+    <item>Audio baharu telah dimuat turun. Ketik untuk melihatnya</item>
+    <item>Baru sahaja selesai memuat turun audio. Telefon agak sesak</item>
+    <item>Audio telah dimuat turun. Storan juga perlu dikosongkan</item>
+  </string-array>
+    <string name="notif_event_file_download_title">Muat turun fail berjaya. Mari kemas kini storan</string>
     <string-array name="notif_event_file_download_titles">
-        <item>Fail baharu disimpan — kosongkan fail lama dan ruang kosong. Ketik di sini</item>
-        <item>Muat turun selesai — lihat fail lama yang boleh anda bersihkan. Ketik saya</item>
-        <item>Fail baharu sedia — arkib pintar + bersih. Ketik saya untuk memulakan</item>
-    </string-array>
-    <string name="notif_event_trash_emptied_title">Tong kitar semula dikosongkan — storan disegarkan. Semak ruang terkini anda.</string>
+    <item>Muat turun fail berjaya. Mari kemas kini storan</item>
+    <item>Baru sahaja selesai memuat turun fail. Mari kosongkan ruang</item>
+    <item>Ketik di sini untuk mengkategorikan fail baharu dengan baik</item>
+    <item>Apa yang baharu dalam folder muat turun? Ketik untuk mengetahuinya</item>
+    <item>Muat turun fail selesai. Masuk untuk menyusunnya</item>
+  </string-array>
+    <string name="notif_event_trash_emptied_title">Pembersihan selesai. Lihat berapa banyak ruang yang telah dibebaskan</string>
     <string-array name="notif_event_trash_emptied_titles">
-        <item>Tong kitar semula dikosongkan — storan disegarkan. Semak ruang terkini anda.</item>
-        <item>Tong kitar semula dikosongkan — datangkan sisa makanan yang bersih.</item>
-        <item>Berjaya dikosongkan — lebih banyak sampah untuk dibersihkan. Jom tengok.</item>
-    </string-array>
-    <string name="notif_event_action_clean">Bersih sekarang</string>
+    <item>Pembersihan selesai. Lihat berapa banyak ruang yang telah dibebaskan</item>
+    <item>Tong kitar semula telah dikosongkan. Telefon bimbit anda kini lebih ringan</item>
+    <item>Tong kitar semula kosong. Telefon bimbit anda kini lebih ringan</item>
+    <item>Tong kitar semula telah dikosongkan. Masih ada ruang yang boleh dibersihkan</item>
+    <item>Pembersihan selesai. Berapa banyak ruang lagi yang boleh digunakan?</item>
+  </string-array>
+    <string name="notif_event_action_clean">Bersihkan</string>
     <string name="notif_event_action_open_home">Buka</string>
-    <string name="notif_event_action_manage">Urus apl</string>
-    <string name="notif_event_action_check_battery">Periksa bateri</string>
-    <string name="notif_event_action_check_network">Semak rangkaian</string>
+    <string name="notif_event_action_manage">Urus</string>
+    <string name="notif_event_action_check_battery">Semak bateri</string>
+    <string name="notif_event_action_check_network">Lihat penggunaan data</string>
     <string name="notif_days_unit">hari</string>
     <string-array name="notif_event_storage_free_drop_titles">
-        <item>Ruang storan telah berubah. Mari lihat apa yang memerlukan ruang?</item>
-        <item>Perubahan spatial dikesan. Mungkin ada sampah baharu, lihat?</item>
-        <item>Ruang yang ada telah berpindah. Adakah anda tahu siapa yang memakannya? Klik untuk melihat.</item>
-        <item>Adakah ruang sempit? Baru sahaja mengesan perubahan itu, mari kita lihat butirannya.</item>
-        <item>Peringatan perubahan ruang: Anda mungkin mengumpul banyak sampah. Semak ia keluar?</item>
-    </string-array>
+    <item>Ruang semakin berkurangan, buka untuk melihat siapa yang mengambilnya</item>
+    <item>Masuk dan lihat, album foto dipenuhi dengan gambar baharu</item>
+    <item>Cache sembang semakin banyak, buka untuk melihat kebenarannya</item>
+    <item>Timbunan sampah muncul lagi, masuk untuk mendedahkannya</item>
+    <item>Ketik saya, timbunan sampah yang tiada siapa yang membersihkannya</item>
+  </string-array>
     <string-array name="notif_event_battery_below_20_titles">
-        <item>Bateri lemah. Ingin tahu siapa yang mencuri elektrik anda? Klik untuk melihat kedudukan.</item>
-        <item>Tidak lama lagi. Jika anda memadamkan apl yang mencuri elektrik, anda masih boleh bertahan untuk seketika.</item>
-        <item>Bateri hampir habis. Membersihkan beberapa latar belakang adalah lebih baik daripada tidak melakukan apa-apa.</item>
-        <item>Bateri merah. Anda masih boleh menyimpannya, klik untuk membukanya dan lihat.</item>
-        <item>Kurang daripada 20% remains. Mari lakukan pertolongan cemas penjimatan kuasa dan bersihkan.</item>
-    </string-array>
+    <item>Bateri hampir habis, buka untuk membersihkannya</item>
+    <item>Tidak tahan sehingga pulang ke rumah, masuk untuk membersihkan cache</item>
+    <item>Lampu merah bateri menyala, masuk dan lihat</item>
+    <item>Bateri hampir habis, masuk untuk mendedahkan pelakunya</item>
+    <item>Bateri hampir habis, buka untuk melihat sama ada ia boleh diselamatkan</item>
+  </string-array>
     <string-array name="notif_event_battery_below_50_titles">
-        <item>Bateri lebih separuh penuh. Jaga ia sekarang, ia akan bertahan sehingga anda pulang ke rumah.</item>
-        <item>Bateri lebih separuh penuh. Menjaga bateri sekarang adalah lebih mudah daripada menunggu sehingga 20%.</item>
-        <item>Bateri habis separuh. Berapa lama ia boleh bertahan? Klik untuk melihat.</item>
-        <item>Bateri lebih separuh penuh. Sudah tiba masanya untuk menjaga bahagian belakang, jangan tunggu ia gementar.</item>
-        <item>Separuh bateri tinggal. Keluarkan pemain besar yang haus kuasa dan buat separuh masa kedua lebih stabil.</item>
-    </string-array>
+    <item>Buka untuk mengetahuinya, bersihkan apabila bateri sudah separuh</item>
+    <item>Sudah jatuh di bawah garis tengah, ketik untuk mengosongkan cache</item>
+    <item>Hanya tinggal separuh bar, masuk untuk menyusun album foto</item>
+    <item>Kuasa bateri stabil, ketik saya untuk mengosongkan cache</item>
+    <item>Kuasa bateri sederhana, ketik untuk mengosongkan cache dengan mudah</item>
+  </string-array>
     <string-array name="notif_event_charging_to_80_titles">
-        <item>Pecutan terakhir ialah 80%. Punggah sampah dan bungkus dengan ringan untuk mengalu-alukan kuasa penuh.</item>
-        <item>Masih 20% short cas penuh. Berhenti menatap skrin anda dan biarkan kami menjaga sampah.</item>
-        <item>80%: Selangkah lagi dari kesempurnaan. Klik sekali dan ia akan dikosongkan sepenuhnya apabila bateri dicas sepenuhnya.</item>
-        <item>80%, a bateri yang baik untuk telefon mudah alih yang baik. Membersihkan pusingan semasa panas?</item>
-        <item>20% i terakhir yang diberikan kepada kami. Anda melihat bateri, dan kami membersihkan sampah.</item>
-    </string-array>
+    <item>Sedang dicas dan ada masa lapang, masuk untuk membersihkan sampah</item>
+    <item>Hampir penuh dan banyak sampah, masuk untuk mengetahui punca masalah</item>
+    <item>Hanya tinggal sedikit lagi untuk penuh, ketik saya untuk membersihkan sampah</item>
+    <item>Hanya tinggal sedikit lagi untuk penuh, buka untuk membersihkan</item>
+    <item>Sambil dicas dan menunggu, ketik untuk masuk dan mengosongkan cache</item>
+  </string-array>
     <string-array name="notif_event_charging_full_titles">
-        <item>Dicas sepenuhnya dan sedia untuk digunakan. Satu pemeriksaan terakhir: Adakah sampah telah dibersihkan?</item>
-        <item>Selepas mengecas, rasa ritual penuh. Bagaimana pula dengan membersihkan sampah untuk memperingatinya?</item>
-        <item>100%, sjadual hari ini. Satu pusingan lagi dan ia sempurna.</item>
-        <item>100%. Langkah terakhir sebelum mencabut plag: buang sampah, tiga puluh saat.</item>
-        <item>Selesai dengan kuasa penuh. Satu pembersihan terakhir, sempurna.</item>
-    </string-array>
+    <item>Baru sahaja dicas penuh, jangan sia-siakan, ketik untuk melihat cache</item>
+    <item>Dalam keadaan dicas penuh, manfaatkan masa ini, masuk untuk membersihkan sampah</item>
+    <item>Bateri sudah penuh, sudah tiba masanya untuk membersihkan. Ketik untuk membersihkan cache</item>
+    <item>Bateri sudah penuh, sudah tiba masanya untuk mengemas galeri. Mari lihat</item>
+    <item>Bateri sudah penuh dan dalam mod sedia. Masuklah untuk membersihkan sampah</item>
+  </string-array>
     <string-array name="notif_event_network_change_titles">
-        <item>Web berubah! Lihat status rangkaian semasa 1</item>
-        <item>Penyingkiran rangkaian. Jangan lihat isyarat semasa membersihkan, cuma klik padanya dan imbas.</item>
-        <item>Tidak boleh membuka halaman? Pembersihan sentiasa dalam talian.</item>
-        <item>Anda boleh bekerja di luar talian dan sampah anda boleh dikosongkan sekarang.</item>
-        <item>Jika tiada isyarat, tiada data diperlukan untuk pembersihan, klik sahaja.</item>
-    </string-array>
+    <item>Sambungan internet terputus. Ketik untuk melihat cache tempatan</item>
+    <item>Rangkaian telah bertukar. Ambil kesempatan ini untuk mengetik dan melihat cache</item>
+    <item>Rangkaian tidak stabil, jangan panik. Buka sahaja untuk membersihkannya</item>
+    <item>Sambungan terputus. Ketik untuk melihat sampah tempatan</item>
+    <item>Sambungan rangkaian telah disambung semula. Masuklah untuk melihat cache</item>
+  </string-array>
     <string-array name="notif_event_charging_titles">
-        <item>Dipasangkan. Tugas malam ini: isi semula, kemudian bersihkan.</item>
-        <item>Anda sedang berehat, ia sedang dicas semula. Biarkan ia membersihkan sampah juga.</item>
-        <item>Semasa masa pengecasan, ia cukup untuk membersihkan sampah yang telah terkumpul untuk masa yang lama.</item>
-        <item>Hanya apabila elektrik dipasang barulah kakitangan belakang pentas berani bekerja dengan bebas.</item>
-        <item>Menjadi sedikit panas semasa mengecas? Membersihkan latar belakang boleh menurunkan suhu.</item>
-    </string-array>
+    <item>Bateri telah dipasang. Ambil kesempatan ini untuk mengetik dan melihat cache</item>
+    <item>Pengecasan telah bermula. Masuklah untuk melakukan pembersihan menyeluruh</item>
+    <item>Pengecasan baru sahaja bermula. Ketik untuk membersihkan sampah</item>
+    <item>Pengecasan bermula lebih awal, buka sahaja untuk membersihkannya</item>
+    <item>Pengecas sudah sedia, masuk dan lihat cache</item>
+  </string-array>
     <string-array name="notif_event_charging_disconnect_titles">
-        <item>Cabut plag dan matikan. Ingatlah untuk meluangkan masa untuk membersihkan sampah dan kekal dalam bentuk terbaik.</item>
-        <item>Selepas pengecasan selesai, kemas dan berangkat. Hanya bersihkan dan ia akan menjadi sempurna.</item>
-        <item>Dicas sepenuhnya dan sedia untuk digunakan. Bersihkan sampah dengan lancar, tiada kekurangan hari ini.</item>
-        <item>Pengecasan tamat. Ruang seterusnya perlu dibersihkan dan dinaik taraf satu peringkat pada satu masa.</item>
-        <item>Jangan berhenti pada pemadaman. Satu perkara yang tinggal: pembersihan.</item>
-    </string-array>
+    <item>Cabut pengecas untuk berada di luar talian, ketik untuk melihat</item>
+    <item>Tiada kuasa, tidak bergantung pada rangkaian, ketik untuk melihat kandungan tempatan</item>
+    <item>Cabut bekalan kuasa dengan mudah, buka sahaja untuk membersihkannya</item>
+    <item>Tiada kuasa, lihat berapa lama bateri boleh bertahan</item>
+    <item>Kabel sudah dicabut, masuk dan kemas album</item>
+  </string-array>
     <string-array name="notif_event_screen_on_after_lock_titles">
-        <item>Kita jumpa lagi, awak buntu? Kebanyakannya adalah sampah, cuba bersihkan.</item>
-        <item>Tidak berkunci? Jangan buka apl lain dahulu dan kosongkan sampah selama tiga puluh saat.</item>
-        <item>Perkara pertama yang perlu dibuka adalah kami. Kosongkan sampah dan ia akan lebih menyayangi anda.</item>
-        <item>Tiga puluh saat selepas membuka kunci. Penggunaan yang paling berharga: membersihkan sampah.</item>
-        <item>Telefon bimbit anda berkata: Bahagian belakang agak tersekat, bolehkah anda membantu saya?</item>
-    </string-array>
+    <item>Skrin baru sahaja dinyalakan, ketik untuk melihat cache</item>
+    <item>Berjaya membuka kunci, adakah ruang masih mencukupi</item>
+    <item>Skrin sudah dinyalakan, lihat sepintas lalu penggunaan telefon</item>
+    <item>Skrin baru sahaja dinyalakan, masuk dan kemas album</item>
+    <item>Skrin menyala dengan mudah, ketik untuk mengetahui kebenarannya</item>
+  </string-array>
     <string-array name="notif_event_screen_lock_titles">
-        <item>Letakkan telefon anda dan serahkan kepada kami. Masa skrin rehat = masa menyusu.</item>
-        <item>Berhenti kerja bukan bermakna berhenti kerja. Saya akan memberi anda kejutan lain kali saya menghidupkan skrin.</item>
-        <item>Diam-diam menjadi lebih baik semasa merehatkan skrin. Klik dan kami akan lakukan yang lain.</item>
-        <item>Satu perkara terakhir sebelum mengunci skrin: Klik Bersih. Muka baru esok pagi.</item>
-        <item>Skrin menjadi gelap. Buat persiapan sekarang dan lihat hasilnya esok.</item>
-    </string-array>
+    <item>Skrin dimatikan, pembersihan latar belakang bermula tepat pada masanya</item>
+    <item>Sebelum skrin dikunci, ketik untuk melihat cache</item>
+    <item>Tepat sebelum tidur, lihat dan kemas album</item>
+    <item>Skrin akan menjadi gelap tidak lama lagi, ketik untuk pembersihan yang mudah</item>
+    <item>Sebelum skrin dimatikan, bebaskan telefon, ketik untuk mengetahui</item>
+  </string-array>
     <string-array name="notif_event_install_titles">
-        <item>Apl baharu telah dipindahkan, begitu juga dengan cache. membersihkan diri</item>
-        <item>Kami memahami kegembiraan memasang apl baharu. Cuma cache akan terkumpul secara senyap-senyap.</item>
-        <item>Apl Baharu? Cache juga ada di sini, kosongkan dengan satu klik.</item>
-        <item>Yang baru masuk dan yang lama keluar. Bersihkannya dengan kerap dan pasangkannya mengikut kehendak anda.</item>
-        <item>Satu lagi? Ruang semakin kecil secara senyap, datang dan bersihkannya.</item>
-    </string-array>
+    <item>Cache aplikasi baharu yang dipasang turut serta, ketik untuk melihat</item>
+    <item>Selepas memasang aplikasi baharu, ketik untuk membersihkan pakej pemasangan</item>
+    <item>Wajah baharu diam-diam berpindah ke cache, masuk untuk mendedahkannya</item>
+    <item>Lihat, pakej cache aplikasi baharu sedang memuncak</item>
+    <item>Klik saya, pakej pemasangan aplikasi baharu masih mengambil ruang</item>
+  </string-array>
     <string-array name="notif_event_uninstall_titles">
-        <item>Berjaya dinyahpasang! untuk membersihkan sisa fail</item>
-        <item>Dinyahpasang tetapi tidak dibersihkan. Klik untuk selesai.</item>
-        <item>Apl itu dinyahpasang, tetapi ekornya masih ada. Bersihkan dengan satu klik dan ucapkan selamat tinggal sekali dan untuk semua.</item>
-        <item>Jangan terlepas langkah kedua: padamkan Apl + kosongkan sisa. Satu klik dan selesai.</item>
-        <item>Sisa akan memakan separuh daripada ruang yang dikosongkan. Imbasan mendalam dan kosongkan segala-galanya.</item>
-    </string-array>
+    <item>Aplikasi baru sahaja dinyahpasang, tetapi masih ada sisa, klik untuk melihat</item>
+    <item>Masuk dan lihat, selepas dinyahpasang, masih ada sisa sampah</item>
+    <item>Pemasangan berjaya, bersihkan untuk memastikan ia bersih</item>
+    <item>Selepas dinyahpasang, masih ada sisa, klik untuk membersihkannya</item>
+    <item>Ruang tidak berubah selepas dinyahpasang? Masuk dan lihat sebabnya</item>
+  </string-array>
     <string-array name="notif_event_app_update_titles">
-        <item>Versi baharu telah tiba. Semua yang tinggal daripada versi lama dibersihkan sepenuhnya.</item>
-        <item>+1 untuk versi, +1 untuk cache, untuk pengimbasan dalam.</item>
-        <item>Kemas kini telah selesai dan pakej pemasangan yang tinggal boleh dibersihkan dengan satu klik.</item>
-        <item>Kemas kini telah selesai, mari kita selesaikan. Bersihkan dan saya akan ambil alih.</item>
-        <item>Setiap kemas kini akan meninggalkan fail lama dan menanganinya dengan cepat.</item>
-    </string-array>
+    <item>Aplikasi baru sahaja dikemas kini, cache lama perlu dibersihkan</item>
+    <item>Selepas dikemas kini, cache bertambah lagi, klik untuk melihatnya</item>
+    <item>Cache selepas dikemas kini, masuk dan lihat untuk lebih tenang</item>
+    <item>Pakej kemas kini masih mengambil banyak ruang, klik untuk membersihkannya</item>
+    <item>Sisa tempatan baharu masih menanti anda untuk dibersihkan. Ketik saya!</item>
+  </string-array>
     <string-array name="notif_event_screenshot_titles">
-        <item>Satu lagi tangkapan skrin? 1 Tiba masanya untuk mengosongkan tangkapan skrin</item>
-        <item>Menemui tangkapan skrin baharu, klik untuk melihat dan membersihkannya~</item>
-        <item>Terdapat lebih banyak tangkapan skrin, pembersihan satu klik boleh membantu anda membuat ruang</item>
-        <item>Tangkapan skrin berjaya diambil, pendua dan kabur boleh ditapis dengan satu klik.</item>
-        <item>Tangkapan skrin baharu ditambahkan pada pangkalan data, dan imej pendua telah dibariskan untuk dibersihkan dengan satu klik.</item>
-    </string-array>
+    <item>Ada tangkapan skrin baharu. Lihat sama ada anda mahu menyimpannya atau tidak.</item>
+    <item>Tangkapan skrin dalam album terkumpul menjadi timbunan. Ketik untuk membersihkannya.</item>
+    <item>Tangkapan skrin berjaya. Mari kemas album.</item>
+    <item>Tangkapan skrin baharu yang baru sahaja diambil. Ketik untuk melihat kejutan yang menanti anda.</item>
+    <item>Tangkapan skrin baharu masuk ke dalam album. Masuk dan lihat untuk lebih tenang.</item>
+  </string-array>
     <string-array name="notif_event_clean_reminder_titles">
-        <item>Terdapat banyak sampah yang bertimbun. Bersihkan semuanya sekaligus.</item>
-        <item>Terakhir dibersihkan %1$d hari yang lalu, klik untuk memprosesnya sekarang</item>
-        <item>Saya tidak berada di sini selama beberapa hari, jadi saya akan membersihkannya dan kembali ke medan perang dengan ringan.</item>
-        <item>Kuota penjelasan belum digunakan hari ini. Saya akan membersihkannya apabila saya kembali.</item>
-        <item>Cache semakin penuh, menunggu anda menyemaknya</item>
-    </string-array>
+    <item>Sudah lama tidak membersihkan telefon dan ia terasa sesak. Ketik untuk melihatnya.</item>
+    <item>Sampah telah terkumpul begitu lama. Masuk dan lihat, sudah tiba masanya untuk dibersihkan.</item>
+    <item>Sudah lama tidak membersihkan telefon dan habuknya tebal. Ketik untuk membersihkannya.</item>
+    <item>Buka dan lihat album foto. Cache sudah bertimbun-timbun.</item>
+    <item>Cache telah menemani anda begitu lama. Sudah tiba masanya untuk membersihkannya. Klik saya.</item>
+  </string-array>
     <string-array name="notif_event_app_inactive_titles">
-        <item>Lama tidak berjumpa, ia telah menunggu. Kembali dan buang sampah.</item>
-        <item>Dah beberapa hari tak jumpa awak. Tiada rehat untuk sampah. Kembali dan sapu ia.</item>
-        <item>Cache beratur. Klik dan mereka hilang.</item>
-        <item>Sampah sibuk semasa anda tiada. Kosong dengan satu klik dan rasa segar seperti biasa.</item>
-        <item>Balik? Kosongkan sampah dahulu. Dalam masa tiga puluh saat, telefon itu ringan seperti baharu.</item>
-    </string-array>
+    <item>Sudah lama tidak berjumpa. Saya ingat anda sudah terlupa. Buka dan lihat.</item>
+    <item>Sudah lama tidak dibuka. Masuk dan lihat untuk kesegaran.</item>
+    <item>Sudah lama tidak berjumpa. Masuk dan lihat apa yang perlu dilihat.</item>
+    <item>Ikon sudah hampir ditumbuhi rumput. Klik dan masuk untuk melihat.</item>
+    <item>Anda sibuk sehingga terlupa. Kami sudah menunggu lama. Mari lihat.</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_1_titles">
-        <item>Sampah yang terkumpul sekian lama dibersihkan.</item>
-        <item>Masa untuk membersihkan. Sampah hari ini sedang menunggu anda untuk mengklik padanya.</item>
-        <item>Hari ini Space Daily tiba. Kosongkan dan pastikan ia ringan.</item>
-        <item>Sesetengah fail adalah lebih besar daripada yang anda fikirkan, sila lihat</item>
-        <item>Cari lelaki yang menggunakan beberapa G dan bersihkannya</item>
-        <item>Senarai dokumen besar sudah siap, datang dan lihat.</item>
-        <item>Siapa yang mengambil paling banyak ruang? Terbongkar dalam satu saat.</item>
-        <item>Penggambaran berterusan adalah hebat, penamat adalah menyakitkan. Serahkan kepada kami.</item>
-        <item>Foto yang serupa dibariskan, terpulang kepada anda untuk memilih yang mana satu untuk disimpan</item>
-        <item>Terlalu banyak gambar yang serupa? Kami akan membantu anda membandingkan dan mengalih keluar pendua dengan hanya satu klik.</item>
-        <item>Video luar talian yang dicache hendaklah dikosongkan.</item>
-        <item>Audio yang tinggal juga akan dibersihkan.</item>
-    </string-array>
+    <item>Kali terakhir anda membersihkannya, anda berhenti di tengah jalan. Buka dan lihat.</item>
+    <item>Pembersihan terhenti di tengah jalan. Masuk dan lihat di mana ia terhenti.</item>
+    <item>Banyak video besar yang telah dikumpulkan mengambil banyak ruang. Buka untuk melihatnya</item>
+    <item>Ada fail yang sangat besar yang masih belum dibersihkan. Buka untuk membersihkannya</item>
+    <item>Ada video berdefinisi tinggi yang mengambil banyak ruang. Masuk untuk melihatnya</item>
+    <item>Gambar-gambar yang berulang mengambil ruang. Masuk untuk melihat apa yang boleh dibersihkan</item>
+    <item>Wajah-wajah yang sama dalam album gambar. Ketik saya untuk menghapuskan beberapa daripadanya</item>
+    <item>Banyak gambar pemandangan yang serupa. Lihat untuk memilih apa yang boleh dihapuskan</item>
+    <item>Video-video besar mengambil ruang. Buka untuk melihatnya</item>
+    <item>Mesej suara memenuhi cache sembang. Masuk untuk mengemaskannya</item>
+  </string-array>
     <string-array name="notif_event_scheduled_push_2_titles">
-        <item>Adakah bateri tidak tahan lama seperti dahulu? Semak ia keluar.</item>
-        <item>Siapa yang mencuri elektrik anda? Anda akan tahu sebaik sahaja anda melihatnya.</item>
-        <item>Mematikan ini akan memanjangkan hayat bateri.</item>
-        <item>Sesetengah apl dipasang tetapi tidak pernah digunakan. Lihat yang mana mereka?</item>
-        <item>Menyimpan apl yang anda tidak gunakan juga membebankan, senarai itu telah dibuat</item>
-        <item>Mengenai privasi, lebih cepat ia ditangani, lebih baik.</item>
-        <item>Sembunyikan yang penting dan singkirkan yang tidak perlu. biar saya bantu awak</item>
-        <item>Ke mana lalu lintas pergi? Ketahui siapa yang menggunakannya.</item>
-        <item>Butiran trafik sedia dan jelas sekali imbas.</item>
-        <item>Terdapat aplikasi secara rahsia menyambung ke Internet di latar belakang.</item>
-    </string-array>
+    <item>Aplikasi latar belakang diam-diam menggunakan bateri anda. Buka untuk melihatnya</item>
+    <item>Bateri berkurangan sedikit demi sedikit sepanjang malam dalam mod sedia. Ketik saya</item>
+    <item>Mod penyegerakan sentiasa dihidupkan menyebabkan penggunaan kuasa tambahan setiap hari. Masuk untuk mengetahuinya</item>
+    <item>Banyak aplikasi tidak dibuka selama enam bulan. Masuk untuk melihatnya</item>
+    <item>Perisian yang diprapasang mengambil ruang tanpa guna. Masuk untuk menguruskannya</item>
+    <item>Mari lihat. Tidak banyak aplikasi yang kerap digunakan</item>
+    <item>Gambar peribadi dikunci dalam Ruang Privasi. Ketik untuk melihatnya</item>
+    <item>Gambar swafoto disembunyikan supaya tidak dilihat orang. Masuk untuk mengetahuinya</item>
+    <item>Data bulan ini hampir habis. Ketik untuk melihatnya</item>
+    <item>Mod penjimatan data dihidupkan untuk menjimatkan banyak data. Lihatlah</item>
+  </string-array>
     <string name="notif_scheduled_storage_clean">{size} sampah—kosongkannya dalam satu ketikan</string>
     <string name="notif_scheduled_large_files">{total} fail besar—bersihkan dengan mudah</string>
     <string name="notif_scheduled_duplicate_photos">{groups} kumpulan foto pendua—simpan {size}</string>
     <string name="notif_scheduled_similar_photos">{size} foto serupa—pilih apa yang hendak dibersihkan</string>
     <string name="notif_scheduled_videos">{total} video—padam {n} untuk mengosongkan ruang</string>
     <string name="notif_scheduled_audio">{total} fail audio—masa untuk mengemas</string>
-    <string name="notif_scheduled_apps">{size} digunakan oleh {terbiar} apl terbiar</string>
-    <string name="notif_scheduled_data">{back} data yang digunakan di latar belakang</string>
+    <string name="notif_scheduled_apps">{size} digunakan oleh {idle} apl terbiar</string>
+    <string name="notif_scheduled_data">{back} data mudah alih digunakan di latar belakang</string>
     <string name="app_manager_uninstall_selected">Nyahpasang yang dipilih</string>
     <string name="app_manager_uninstall_selected_count">Nyahpasang yang dipilih (%1$d)</string>
     <string name="cache_removable">Boleh tanggal</string>
