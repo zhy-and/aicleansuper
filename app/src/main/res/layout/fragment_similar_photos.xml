@@ -146,6 +146,13 @@
             android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_weight="1"
+            android:autoSizeMaxTextSize="16sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:minWidth="0dp"
+            android:paddingHorizontal="8dp"
             android:text="@string/delete_selected_action" />
     </LinearLayout>
 
