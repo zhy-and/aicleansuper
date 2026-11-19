@@ -339,11 +339,12 @@
 
                     <Button
                         android:id="@+id/btnClearPending"
-                        style="@style/Widget.Cleansuperai.Button.ActionPrimary"
+                        style="@style/Widget.Cleansuperai.Button.ActionDangerPrimary"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
+                        app:backgroundTint="@color/trash_delete_button_tint"
                         android:text="@string/trash_empty_action" />
                 </LinearLayout>
             </LinearLayout>

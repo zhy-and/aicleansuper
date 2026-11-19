@@ -66,6 +66,8 @@ class ProfileFragment : Fragment() {
             R.string.settings_widget_title,
             R.string.settings_widget_subtitle,
         ) { pinWidget() }
+        binding.rowWidget.iconContainer.setBackgroundResource(R.drawable.bg_home_feature_icon_blue)
+        binding.rowWidget.widgetIconDot.visibility = View.VISIBLE
 
         configureRow(
             binding.rowClearCache,

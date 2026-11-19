@@ -24,6 +24,15 @@
             android:contentDescription="@null"
             android:src="@drawable/ic_apps"
             app:tint="@color/white" />
+
+        <View
+            android:id="@+id/widgetIconDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bg_home_number_badge"
+            android:contentDescription="@string/new_feature_badge_description"
+            android:visibility="gone" />
     </FrameLayout>
 
     <LinearLayout

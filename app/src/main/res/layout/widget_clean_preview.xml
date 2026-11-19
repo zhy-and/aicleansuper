@@ -1,117 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/widgetRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_widget_surface"
-    android:gravity="center_vertical"
-    android:orientation="horizontal"
-    android:padding="14dp">
+    android:paddingHorizontal="0dp"
+    android:paddingVertical="0dp">
 
     <LinearLayout
-        android:id="@+id/widgetCleanAction"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1.15"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_widget_surface"
         android:gravity="center_vertical"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:contentDescription="@null"
-            android:src="@drawable/ic_widget_space" />
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="6dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/widgetCleanAction"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="bottom"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingVertical="2dp">
+
+            <FrameLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_widget_clean_circle">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_widget_storage" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/widgetSizeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:text="92.9" />
+
+                    <TextView
+                        android:id="@+id/widgetSizeUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="#F2FFFC"
+                        android:textSize="7sp"
+                        android:textStyle="bold"
+                        android:text="GB" />
+                </LinearLayout>
+            </FrameLayout>
+
             <TextView
-                android:id="@+id/widgetSizeValue"
+                android:id="@+id/widgetStatusText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:text="92.9"
-                android:textColor="@color/text_primary"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-            <TextView
-                android:id="@+id/widgetSizeUnit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginBottom="2dp"
-                android:includeFontPadding="false"
-                android:text="GB"
-                android:textColor="@color/accent_primary"
+                android:layout_marginTop="3dp"
+                android:text="Storage"
+                android:textColor="@color/text_secondary"
                 android:textSize="10sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/widgetStatusText"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="@string/widget_preview_status_storage"
-            android:textColor="@color/text_secondary"
-            android:textSize="10sp" />
-    </LinearLayout>
+            android:layout_marginStart="8dp"
+            android:layout_weight="1.08"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:id="@+id/widgetLargeAction"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_widget_action_card"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="27dp"
-                android:layout_height="27dp"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_widget_files" />
-            <TextView
+            <LinearLayout
+                android:id="@+id/widgetLargeAction"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:gravity="center"
-                android:maxLines="1"
-                android:text="@string/widget_preview_action_files"
-                android:textColor="@color/text_primary"
-                android:textSize="10sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/widgetScreenshotAction"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="6dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_widget_action_card"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="27dp"
-                android:layout_height="27dp"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_widget_photo" />
-            <TextView
+                android:layout_height="36dp"
+                android:background="@drawable/bg_widget_action_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/bg_widget_action_icon_chip"
+                    android:contentDescription="@string/notif_large_file"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_widget_large_files" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Large File"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/widgetScreenshotAction"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="36dp"
                 android:layout_marginTop="7dp"
-                android:gravity="center"
-                android:maxLines="1"
-                android:text="@string/widget_preview_action_photos"
-                android:textColor="@color/text_primary"
-                android:textSize="10sp" />
+                android:background="@drawable/bg_widget_action_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/bg_widget_action_icon_chip"
+                    android:contentDescription="@string/notif_screenshot"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_widget_screenshot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Screenshot"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</FrameLayout>

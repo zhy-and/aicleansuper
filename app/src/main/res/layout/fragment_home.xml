@@ -225,14 +225,6 @@
             </FrameLayout>
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/inlineAdContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:visibility="gone" />
-
-
         <LinearLayout
             android:id="@+id/contentContainer"
             android:layout_width="match_parent"
@@ -413,6 +405,13 @@
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <FrameLayout
+                android:id="@+id/inlineAdContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -523,7 +522,7 @@
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
-                    android:id="@+id/cardLargeFiles"
+                    android:id="@+id/cardPictureCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -567,7 +566,7 @@
                 android:minHeight="100dp"
                 android:orientation="horizontal">
                 <include
-                    android:id="@+id/cardPictureCleanup"
+                    android:id="@+id/cardLargeFiles"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
