@@ -337,7 +337,7 @@ class HomeFragment : Fragment() {
         val quickCards = listOf(binding.cardSimilarPhotos, binding.cardDuplicatePhotos,
             binding.cardScreenshots, binding.cardDuplicateVideos, binding.cardAllVideos, binding.cardSwipePhotos)
         quickCards.forEach { card ->
-            (card.root.getChildAt(0) as ViewGroup).setPadding(dp(18), dp(12), dp(12), dp(12))
+            (card.root.getChildAt(0) as ViewGroup).setPaddingRelative(dp(18), dp(12), dp(12), dp(12))
             card.iconContainer.layoutParams = card.iconContainer.layoutParams.apply {
                 width = dp(48); height = dp(48)
             }
@@ -345,15 +345,6 @@ class HomeFragment : Fragment() {
                 width = dp(28); height = dp(28)
             }
             card.tvFeatureTitle.textSize = 15f
-            card.iconContainer.translationY = dp(2).toFloat()
-            card.tvFeatureTitle.translationY = -dp(6).toFloat()
-        }
-        val moreCards = listOf(binding.cardBatteryInfo, binding.cardDeviceInfo, binding.cardLargeFiles,
-            binding.cardCacheCleanup, binding.cardNetworkTraffic, binding.cardVault,
-            binding.cardPictureCleanup, binding.cardVideoCleanup, binding.cardAudioCleanup)
-        moreCards.forEach { card ->
-            card.iconContainer.translationY = dp(6).toFloat()
-            card.tvFeatureTitle.translationY = -dp(3).toFloat()
         }
     }
 

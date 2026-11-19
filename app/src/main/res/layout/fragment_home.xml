@@ -427,13 +427,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:baselineAligned="false"
+                android:minHeight="112dp"
                 android:orientation="horizontal">
 
                 <include
                     android:id="@+id/cardSimilarPhotos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
 
@@ -441,7 +442,7 @@
                     android:id="@+id/cardDuplicatePhotos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -451,13 +452,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:baselineAligned="false"
+                android:minHeight="112dp"
                 android:orientation="horizontal">
 
                 <include
                     android:id="@+id/cardScreenshots"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
 
@@ -465,7 +467,7 @@
                     android:id="@+id/cardDuplicateVideos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -474,19 +476,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:baselineAligned="false"
+                android:minHeight="112dp"
                 android:orientation="horizontal">
                 <include
                     android:id="@+id/cardAllVideos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardSwipePhotos"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="112dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -502,26 +505,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:minHeight="100dp"
                 android:orientation="horizontal">
                 <include
                     android:id="@+id/cardBatteryInfo"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardDeviceInfo"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardLargeFiles"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -529,26 +534,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:minHeight="100dp"
                 android:orientation="horizontal">
                 <include
                     android:id="@+id/cardCacheCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardNetworkTraffic"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardVault"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1" />
             </LinearLayout>
@@ -556,25 +563,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:minHeight="100dp"
                 android:orientation="horizontal">
                 <include
                     android:id="@+id/cardPictureCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardVideoCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1" />
                 <include
                     android:id="@+id/cardAudioCleanup"
                     layout="@layout/view_home_feature_card"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>

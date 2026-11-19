@@ -24,6 +24,8 @@ import com.aetherquorion.cleansuperai.ui.cleaner.CompressionResult
 import com.aetherquorion.cleansuperai.ui.common.MediaActions
 import java.io.File
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
@@ -108,7 +110,7 @@ class VideoCompressFragment : Fragment() {
                 append(getString(R.string.video_compression_preparing))
             }
         viewLifecycleOwner.lifecycleScope.launch {
-            runCatching {
+            val compression = runCatching {
                 withTimeout(VIDEO_COMPRESSION_TIMEOUT_MS) {
                     val compressedFile = VideoCompressor.compress(
                         context = requireContext(),
@@ -155,7 +157,9 @@ class VideoCompressFragment : Fragment() {
                         compressedFile to CompressionResult(originalBytes, compressedFile.length())
                     }
                 }
-            }.onSuccess { (file, result) ->
+            }
+            currentCoroutineContext().ensureActive()
+            compression.onSuccess { (file, result) ->
                 clearCompressedPreview()
                 compressedPreviewFile = file
                 binding.tvAfterLabel.isVisible = true
@@ -193,11 +197,13 @@ class VideoCompressFragment : Fragment() {
         val file = compressedPreviewFile ?: return
         binding.btnSaveCompressed.isEnabled = false
         viewLifecycleOwner.lifecycleScope.launch {
-            runCatching {
+            val save = runCatching {
                 withContext(Dispatchers.IO) {
                     saveToMediaStore(file)
                 }
-            }.onSuccess {
+            }
+            currentCoroutineContext().ensureActive()
+            save.onSuccess {
                 Toast.makeText(requireContext(), R.string.video_compression_saved, Toast.LENGTH_SHORT)
                     .show()
             }.onFailure {
