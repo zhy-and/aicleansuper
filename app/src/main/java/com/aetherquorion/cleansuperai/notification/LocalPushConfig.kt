@@ -1,7 +1,6 @@
 package com.aetherquorion.cleansuperai.notification
 
 import android.content.Context
-import com.aetherquorion.cleansuperai.R
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
 
@@ -70,8 +69,7 @@ object LocalPushConfig {
     fun current(context: Context): Config = active ?: synchronized(this) {
         active ?: Gson().fromJson(defaultSegmentJson(context), Config::class.java).also { active = it }
     }
-    fun defaultSegmentJson(context: Context): String = context.resources.openRawResource(R.raw.local_push_default)
-        .bufferedReader().use { it.readText() }
+    fun defaultSegmentJson(context: Context): String = LocalPushDefaults.JSON
     fun defaultConfigJson(context: Context): String {
         val segment = defaultSegmentJson(context)
         return "{\"organic\":$segment,\"paid\":$segment}"

@@ -1,3 +1,8 @@
+package com.aetherquorion.cleansuperai.notification
+
+/** Bundled fallback for offline use. */
+internal object LocalPushDefaults {
+    const val JSON = """
 {
   "version": 0,
   "enabled": true,
@@ -705,4 +710,6 @@
       "button_anim": "scale"
     }
   }
+}
+"""
 }
